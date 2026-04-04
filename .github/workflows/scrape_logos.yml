@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * *' # Ejecutar una vez al día a la medianoche UTC
   workflow_dispatch: # Permitir ejecución manual
 
+permissions:
+  contents: write
+
 jobs:
   scrape_logos:
     runs-on: ubuntu-latest

@@ -5,6 +5,9 @@ on:
     - cron: "0 * * * *"  # Ejecuta el workflow al inicio de cada hora
   workflow_dispatch:      # Permite ejecutar manualmente
 
+permissions:
+  contents: write
+
 jobs:
   update-list:
     runs-on: ubuntu-latest

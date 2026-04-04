@@ -5,6 +5,9 @@ on:
     - cron: '0 * * * *'  # Ejecuta cada hora
   workflow_dispatch:  # Permite ejecución manual
 
+permissions:
+  contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest

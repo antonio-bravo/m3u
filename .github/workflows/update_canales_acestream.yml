@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: '0 * * * *' # Ejecuta cada hora
 
+permissions:
+  contents: write
+
 jobs:
   update-list:
     runs-on: ubuntu-latest

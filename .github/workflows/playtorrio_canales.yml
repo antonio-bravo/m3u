@@ -5,6 +5,9 @@ on:
     - cron: '0 * * * *'  # Se ejecuta exactamente cada 1 hora
   workflow_dispatch:      # Botón para ejecutar manualmente
 
+permissions:
+  contents: write
+
 # Evita colisiones si una ejecución anterior se quedó colgada
 concurrency:
   group: ${{ github.workflow }}
