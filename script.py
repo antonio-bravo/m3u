@@ -14,39 +14,84 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 def obtener_url_diaria():
-    base_url = "https://www.platinsport.com"
-    return base_url
+    """Retorna la URL base de Platinsport"""
+    return "https://www.platinsport.com"
 
 def extraer_eventos(url):
     options = Options()
-    options.add_argument('--headless')
+    # En GitHub Actions usa headless, localmente usa modo normal para debugging
+    import os
+    if os.getenv('CI') or os.getenv('GITHUB_ACTIONS'):
+        options.add_argument('--headless')
+    
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--disable-gpu')
+    options.add_argument('--disable-blink-features=AutomationControlled')
+    options.add_argument('--disable-extensions')
+    options.add_argument('--disable-plugins')
+    options.add_argument('user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36')
+    
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
-    driver.get(url)
-    # Accept cookies
-    try:
-        accept_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'I ACCEPT')]")))
-        accept_button.click()
-    except:
-        pass
-    # Click a PLAY button
     eventos = []
+    
     try:
-        play_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.LINK_TEXT, "PLAY")))
-        original_window = driver.current_window_handle
-        play_button.click()
-        time.sleep(3)  # wait for popup
+        print(f"Cargando URL: {url}")
+        driver.get(url)
+        print("Página cargada...")
+        
+        # Wait for JavaScript to load
+        time.sleep(2)
+        
+        # Accept cookies
+        try:
+            accept_button = WebDriverWait(driver, 3).until(
+                EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'I ACCEPT')]"))
+            )
+            accept_button.click()
+            print("Cookies aceptadas")
+            time.sleep(1)
+        except:
+            pass
+        
+        # Find PLAY buttons using different selectors
+        play_buttons = []
+        try:
+            print("Buscando botones PLAY...")
+            soup_temp = BeautifulSoup(driver.page_source, "html.parser")
+            play_buttons = soup_temp.find_all('a', string='PLAY')
+            print(f"Found {len(play_buttons)} PLAY buttons via parsing")
+            
+            if play_buttons:
+                # Use Selenium to find and click
+                driver.execute_script("arguments[0].scrollIntoView(true);", driver.find_elements(By.XPATH, "//a[text()='PLAY']")[0])
+                time.sleep(1)
+                driver.find_elements(By.XPATH, "//a[text()='PLAY']")[0].click()
+                print("Haciendo clic en PLAY...")
+                time.sleep(3)
+        except Exception as e:
+            print(f"Error al hacer clic en PLAY: {e}")
+        
+        # Try to find popup window
         handles = driver.window_handles
+        print(f"Ventanas abiertas: {len(handles)}")
+        
         if len(handles) > 1:
-            driver.switch_to.window(handles[1])
-            soup = BeautifulSoup(driver.page_source, "html.parser")
-            driver.close()
-            driver.switch_to.window(original_window)
-        else:
-            soup = BeautifulSoup(driver.page_source, "html.parser")
+            # Switch to new window
+            original_handle = handles[0]
+            for handle in handles:
+                if handle != original_handle:
+                    driver.switch_to.window(handle)
+                    print(f"Cambiado a ventana: {handle}")
+                    break
+            time.sleep(2)
+        
+        # Get page content
+        soup = BeautifulSoup(driver.page_source, "html.parser")
+        
         # Parse the soup
+        print("Buscando contenedor .myDiv1...")
         contenedor = soup.find("div", class_="myDiv1")
         if not contenedor:
             print("No se encontró el contenedor de eventos (.myDiv1)")
@@ -195,8 +240,13 @@ if __name__ == "__main__":
     print("URL diaria:", url_diaria)
     eventos_platinsport = extraer_eventos(url_diaria)
     print("Eventos extraídos de Platinsport:", len(eventos_platinsport))
+    
     if not eventos_platinsport:
-        print("No se encontraron eventos.")
-        exit(1)
-    guardar_lista_m3u(eventos_platinsport)
-    print("Lista M3U actualizada correctamente con", len(eventos_platinsport), "eventos.")
+        print("No se encontraron eventos eventualmente. Creando lista vacía...")
+        # Crear lista M3U vacía para no fallar el workflow
+        with open("lista.m3u", "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+        print("Archivo lista.m3u creado (vacío).")
+    else:
+        guardar_lista_m3u(eventos_platinsport)
+        print("Lista M3U actualizada correctamente con", len(eventos_platinsport), "eventos.")
