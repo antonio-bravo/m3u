@@ -33,7 +33,7 @@ jobs:
         run: python script_detector_deportes.py
 
       - name: Sube deportes-detectados.xml
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Añade archivo deportes-detectados.xml generado automáticamente
           file_pattern: deportes-detectados.xml
