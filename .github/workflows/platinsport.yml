@@ -1,0 +1,103 @@
+name: Update Platinsport M3U
+
+on:
+  schedule:
+    # Ejecutar cada 1 hora al minuto 0
+    - cron: '0 * * * *'
+  workflow_dispatch:  # Permitir ejecución manual
+
+jobs:
+  update-m3u:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq \
+            libnspr4 \
+            libnss3 \
+            libdbus-1-3 \
+            libatk1.0-0 \
+            libatk-bridge2.0-0 \
+            libcups2 \
+            libdrm2 \
+            libxkbcommon0 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxfixes3 \
+            libxrandr2 \
+            libgbm1 \
+            libasound2t64 \
+            libpango-1.0-0 \
+            libcairo2 \
+            fonts-liberation
+      
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install playwright beautifulsoup4 lxml
+      
+      - name: Install Playwright browsers
+        run: |
+          playwright install chromium
+      
+      - name: Run platinsport scraper
+        run: |
+          python platinsport.py
+        continue-on-error: false
+      
+      - name: Verify M3U file
+        run: |
+          if [ ! -f lista.m3u ]; then
+            echo "ERROR: lista.m3u no fue generado"
+            exit 1
+          fi
+          
+          lines=$(wc -l < lista.m3u)
+          if [ "$lines" -lt 10 ]; then
+            echo "ERROR: lista.m3u tiene muy pocas líneas ($lines)"
+            cat lista.m3u
+            exit 1
+          fi
+          
+          echo "✓ lista.m3u generado correctamente ($lines líneas)"
+          echo "Primeras 20 líneas:"
+          head -20 lista.m3u
+      
+      - name: Upload debug artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-files
+          path: debug/
+          retention-days: 7
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add lista.m3u
+          
+          if git diff --staged --quiet; then
+            echo "No hay cambios en lista.m3u"
+            exit 0
+          fi
+          
+          timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          git commit -m "Actualizar lista.m3u - $timestamp"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,69 @@
+name: PlayTorrio_Canales M3U Updater
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Se ejecuta exactamente cada 1 hora
+  workflow_dispatch:      # Botón para ejecutar manualmente
+
+# Evita colisiones si una ejecución anterior se quedó colgada
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  update-m3u:
+    runs-on: ubuntu-latest
+    
+    # Permisos explícitos para que el bot pueda escribir en el repo
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright requests
+          playwright install chromium
+
+      - name: Run scraper script
+        run: python playtorrio_canales.py
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: playtorrio-canales
+          path: |
+            playtorrio_canales.m3u
+            channels_final.json
+
+      - name: Commit and push changes
+        run: |
+          # Configurar identidad del bot
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Añadir los archivos generados
+          git add playtorrio_canales.m3u channels_final.json
+          
+          # Comprobar si hay cambios reales antes de intentar commitear
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          
+          # Crear el commit
+          git commit -m "🔄 Update playtorrio_canales.m3u - $(date -u)"
+          
+          # --- FIX CRÍTICO: Sincronizar antes de subir ---
+          git pull --rebase origin main
+          
+          # Subir cambios
+          git push

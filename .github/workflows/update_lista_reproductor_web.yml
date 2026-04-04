@@ -1,0 +1,54 @@
+name: Update lista_reproductor_web
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Ejecutar cada hora
+  workflow_dispatch:  # Permitir ejecución manual
+
+jobs:
+  update-files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install selenium webdriver-manager beautifulsoup4
+
+    - name: Set up Git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+    - name: Pull latest changes
+      run: git pull origin main
+
+    - name: Run your script to update the files
+      run: python script_reproductor_web.py
+
+    - name: Check for changes
+      id: changes
+      run: |
+        git add lista_reproductor_web.xml lista_reproductor_web.m3u
+        if git diff-index --quiet HEAD; then
+          echo "No changes to commit"
+          echo "::set-output name=changes::false"
+        else
+          echo "::set-output name=changes::true"
+        fi
+
+    - name: Commit and push changes if there are any
+      if: steps.changes.outputs.changes == 'true'
+      run: |
+        git commit -m "Update lista_reproductor_web.xml and lista_reproductor_web.m3u"
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

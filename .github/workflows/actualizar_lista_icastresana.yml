@@ -1,0 +1,62 @@
+name: Actualizar Lista Icastresana
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Se ejecuta cada hora
+  workflow_dispatch:  # Permite ejecución manual
+
+jobs:
+  update_script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del repositorio
+      uses: actions/checkout@v2
+
+    - name: Configurar Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Instalar dependencias
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Ejecutar el script
+      run: python script_lista_icastresana.py
+
+    - name: Verificar cambios en lista_icastresana.m3u
+      id: check_changes
+      run: |
+        git diff --quiet lista_icastresana.m3u || echo "CHANGES_FOUND=1" >> $GITHUB_ENV
+
+    - name: Stash cambios no confirmados
+      if: env.CHANGES_FOUND == '1'
+      run: |
+        git stash
+
+    - name: Pull de la última versión del repositorio
+      run: |
+        git pull --rebase origin main
+
+    - name: Aplicar cambios stashed
+      if: env.CHANGES_FOUND == '1'
+      run: |
+        git stash pop
+
+    - name: Commit y push si hay cambios
+      if: env.CHANGES_FOUND == '1'
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        git add lista_icastresana.m3u
+        git commit -m "Actualizar lista_icastresana.m3u con nuevos logos"
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Notificar si no hay cambios
+      if: env.CHANGES_FOUND != '1'
+      run: echo "No hay cambios en lista_icastresana.m3u"
