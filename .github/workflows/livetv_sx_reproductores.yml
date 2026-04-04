@@ -34,7 +34,7 @@ jobs:
         fi
     
     - name: Upload XML artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: eventos-livetv-xml
         path: eventos_livetv_sx_con_reproductores.xml
