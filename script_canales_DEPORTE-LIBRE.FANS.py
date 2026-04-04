@@ -5,7 +5,8 @@ from xml.dom import minidom
 import difflib
 
 # URL principal para scrapear
-main_url = 'https://deporte-libre.click/en-vivo-online/+canales/'
+#main_url = 'https://deporte-libre.click/en-vivo-online/+canales/'
+main_url = 'https://deporte-libre.click/canales-24-7.php'
 logos_url = 'https://raw.githubusercontent.com/tutw/platinsport-m3u-updater/refs/heads/main/logos.xml'
 
 # Función para obtener el contenido HTML de una URL
