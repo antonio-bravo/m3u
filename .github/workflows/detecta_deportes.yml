@@ -8,6 +8,10 @@ on:
       - requirements.txt
       - .github/workflows/detecta_deportes.yml
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   detecta_deportes:
     runs-on: ubuntu-latest
