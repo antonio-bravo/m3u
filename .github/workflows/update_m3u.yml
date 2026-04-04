@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout del repositorio
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Configurar Python
         uses: actions/setup-python@v4
