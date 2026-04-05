@@ -1,6 +1,7 @@
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 import re
+import base64
 from datetime import datetime, timezone, timedelta
 import os
 import sys
@@ -142,6 +143,14 @@ def clean_channel_name(raw_name: str) -> str:
     
     return name
 
+
+def build_source_list_url(date: datetime | None = None) -> str:
+    """Construye la URL de source-list.php con la clave de fecha requerida."""
+    if date is None:
+        date = datetime.now(timezone.utc)
+    key = base64.b64encode(f"{date.strftime('%Y-%m-%d')}PLATINSPORT".encode()).decode()
+    return f"https://www.platinsport.com/link/source-list.php?key={key}"
+
 def parse_html_for_streams(html_content: str):
     """
     Parsea el HTML y extrae streams con información de liga.
@@ -250,6 +259,12 @@ def parse_html_for_streams(html_content: str):
     
     for a in all_acestream_links:
         href = clean_text(a.get("href", ""))
+        
+        # Validar que sea una URL de acestream válida
+        if not re.match(r'^acestream://[a-fA-F0-9]{40}$', href):
+            print(f"  ⚠ Omitiendo enlace inválido: {href}")
+            continue
+            
         if not href.startswith("acestream://"):
             continue
         
@@ -257,7 +272,7 @@ def parse_html_for_streams(html_content: str):
         if any(e["url"] == href for e in entries):
             continue
         
-        print(f"  ➕ Procesando enlace adicional: {href}")
+        print(f"  ➕ Procesando enlace adicional válido: {href}")
         
         lang_code = extract_lang_from_flag(a)
         country_name = COUNTRY_CODES.get(lang_code, lang_code)
@@ -349,10 +364,16 @@ def parse_html_for_streams(html_content: str):
     
     for url in acestream_urls:
         url = url.strip()
+        
+        # Validar que sea una URL de acestream válida
+        if not re.match(r'^acestream://[a-fA-F0-9]{40}$', url):
+            print(f"  ⚠ Omitiendo URL inválida: {url}")
+            continue
+            
         if any(e["url"] == url for e in entries):
             continue
         
-        print(f"  ➕ Procesando URL de texto: {url}")
+        print(f"  ➕ Procesando URL de texto válida: {url}")
         
         entries.append({
             "time": "",
@@ -510,22 +531,43 @@ def main():
             nonlocal raw_html
             
             url = request.url
+            lower_url = url.lower()
             
-            # Solo interceptar requests que probablemente contengan texto/HTML
-            content_type_likely_text = any(ext in url.lower() for ext in [
+            allowed_external_hosts = [
+                "fonts.googleapis.com",
+                "fonts.gstatic.com",
+                "googleapis.com",
+                "gstatic.com",
+                "s.w.org",
+            ]
+            
+            is_external = "platinsport.com" not in lower_url and not any(host in lower_url for host in allowed_external_hosts)
+            
+            if request.is_navigation_request() and is_external:
+                print(f"[4] Abortando navegación externa: {url}")
+                route.abort()
+                return
+            
+            if is_external and request.resource_type in ["script", "image", "stylesheet", "font", "xhr", "fetch", "document"]:
+                print(f"[4] Abortando recurso externo: {url}")
+                route.abort()
+                return
+            
+            # Solo interceptar requests que probablemente contengan texto/HTML dentro de platinsport.com
+            content_type_likely_text = any(ext in lower_url for ext in [
                 '.html', '.htm', '.php', '.asp', '.jsp', '.xml', '.json', '.txt'
-            ]) or any(keyword in url.lower() for keyword in [
+            ]) or any(keyword in lower_url for keyword in [
                 'source-list', 'streams', 'acestream', 'matches', 'events', 
                 'schedule', 'api', 'data', 'content'
             ])
             
             # Excluir archivos binarios conocidos
-            is_binary_file = any(ext in url.lower() for ext in [
+            is_binary_file = any(ext in lower_url for ext in [
                 '.png', '.jpg', '.jpeg', '.gif', '.ico', '.svg', '.woff', '.woff2', 
                 '.ttf', '.eot', '.css', '.js'
             ])
             
-            if content_type_likely_text and not is_binary_file and "platinsport.com" in url:
+            if content_type_likely_text and not is_binary_file and "platinsport.com" in lower_url:
                 print(f"[4] Interceptando posible fuente de texto: {url}")
                 
                 try:
@@ -573,55 +615,55 @@ def main():
                 print(f"     🚫 REDIRECCIÓN PROBLEMÁTICA: {url}")
                 browser.close()
                 sys.exit(1)
-            elif "platinsport.com" not in url and url != BASE_URL and not any(allowed in url for allowed in ['fonts.googleapis.com', 'fonts.gstatic.com', 'googleapis.com', 'gstatic.com']):
+            elif "platinsport.com" not in url and url != BASE_URL and not any(allowed in url for allowed in ['fonts.googleapis.com', 'fonts.gstatic.com', 'googleapis.com', 'gstatic.com', 's.w.org']):
                 print(f"     ⚠ Redirección externa: {url}")
 
         page.on("response", lambda response: handle_response(response))
 
-        print(f"[7] Navegando a {BASE_URL}...")
+        source_list_url = build_source_list_url()
+        print(f"[7] Navegando a la lista de streams: {source_list_url}")
         try:
-            # Simular comportamiento humano antes de navegar
             page.goto("about:blank")
             time.sleep(1)
+            page.goto(source_list_url, timeout=120000, wait_until="domcontentloaded", referer=BASE_URL)
             
-            # Navegar al sitio
-            page.goto(BASE_URL, timeout=120000, wait_until="domcontentloaded")
-            
-            # Verificar si estamos en la URL correcta después de la navegación
             current_url = page.url
             if "platinsport.com" not in current_url:
                 print(f"     🚫 Redirigido fuera del sitio: {current_url}")
                 browser.close()
                 sys.exit(1)
-                
-            # Simular comportamiento humano: esperar y hacer scroll pequeño
-            time.sleep(3)
-            page.evaluate("window.scrollTo(0, 100)")
-            time.sleep(1)
-            page.evaluate("window.scrollTo(0, 0)")
-            time.sleep(1)
-            
-            print("     Pagina principal cargada")
+
+            print("     Página source-list cargada")
         except Exception as e:
-            print(f"     Error: {e}")
+            print(f"     Error al cargar source-list: {e}")
             browser.close()
             sys.exit(1)
 
-        print("[8] Intentando extraer contenido directamente de la página...")
+        print("[8] Capturando contenido de la lista de streams...")
         try:
-            # Esperar a que la página cargue completamente
-            page.wait_for_load_state("networkidle", timeout=30000)
-            time.sleep(5)  # Esperar más tiempo por contenido dinámico
+            # Esperar a que la página cargue completamente (con timeout más corto y manejo de errores)
+            try:
+                page.wait_for_load_state("networkidle", timeout=15000)
+                print("     Estado networkidle alcanzado")
+            except Exception as e:
+                print(f"     ⚠ No se alcanzó networkidle en 15s: {e}")
+                print("     Continuando con la extracción...")
+            
+            time.sleep(3)  # Esperar un poco más por contenido dinámico
             
             # Intentar múltiples estrategias para cargar contenido
             print("     Cargando contenido dinámico...")
             
-            # Estrategia 1: Hacer scroll agresivo
+            # Estrategia 1: Hacer scroll agresivo con manejo de errores
             for i in range(5):
-                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                time.sleep(2)
-                page.evaluate("window.scrollTo(0, 0)")
-                time.sleep(1)
+                try:
+                    page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                    time.sleep(2)
+                    page.evaluate("window.scrollTo(0, 0)")
+                    time.sleep(1)
+                except Exception as e:
+                    print(f"     ⚠ Error en scroll agresivo {i+1}: {e}")
+                    break  # Salir del bucle si hay error
             
             # Estrategia 2: Buscar y hacer click en elementos que puedan cargar contenido
             try:
@@ -641,18 +683,22 @@ def main():
                                 elem.click()
                                 time.sleep(3)
                                 print(f"     Clickeado elemento de carga: {selector}")
-                            except:
-                                pass
-                    except:
-                        pass
+                            except Exception as e:
+                                print(f"     ⚠ Error clickeando elemento {selector}: {e}")
+                    except Exception as e:
+                        print(f"     ⚠ Error buscando elementos {selector}: {e}")
                 
                 # Estrategia 3: Esperar por cambios en el DOM
-                initial_height = page.evaluate("document.body.scrollHeight")
-                time.sleep(5)
-                final_height = page.evaluate("document.body.scrollHeight")
-                
-                if final_height > initial_height:
-                    print(f"     Contenido dinámico cargado: altura cambió de {initial_height} a {final_height}")
+                try:
+                    initial_height = page.evaluate("document.body.scrollHeight")
+                    time.sleep(5)
+                    final_height = page.evaluate("document.body.scrollHeight")
+                    
+                    if final_height > initial_height:
+                        print(f"     Contenido dinámico cargado: altura cambió de {initial_height} a {final_height}")
+                except Exception as e:
+                    print(f"     ⚠ Error evaluando altura del DOM: {e}")
+                    initial_height = final_height = 0
                 
             except Exception as e:
                 print(f"     Error en estrategias de carga dinámica: {e}")
