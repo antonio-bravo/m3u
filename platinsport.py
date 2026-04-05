@@ -222,12 +222,31 @@ def parse_html_for_streams(html_content: str):
     
     # Estrategia 2: Buscar todos los enlaces acestream directamente
     print("  🔍 Buscando todos los enlaces acestream...")
-    all_acestream_links = soup.find_all("a", href=re.compile(r"^acestream://"))
-    print(f"  📊 Encontrados {len(all_acestream_links)} enlaces acestream totales")
+    
+    # Buscar con múltiples patrones
+    patterns = [
+        r'acestream://[^\s"\'<>]+',  # Patrón original
+        r'acestream://[^<\s]+',      # Más permisivo
+        r'acestream://[^\s]+',       # Aún más permisivo
+    ]
+    
+    all_acestream_links = []
+    for pattern in patterns:
+        links = soup.find_all("a", href=re.compile(pattern))
+        all_acestream_links.extend(links)
+    
+    # También buscar en todo el texto del HTML
+    text_acestream = re.findall(r'acestream://[^\s"\'<>]+', html_content)
+    
+    print(f"  📊 Encontrados {len(all_acestream_links)} enlaces acestream en soup")
+    print(f"  📊 Encontrados {len(text_acestream)} enlaces acestream en texto")
     
     # DEBUG: Mostrar algunos links encontrados
     for i, link in enumerate(all_acestream_links[:5]):
         print(f"    [{i+1}] {link.get('href')} - Text: '{link.get_text().strip()}'")
+    
+    for i, url in enumerate(text_acestream[:5]):
+        print(f"    [T{i+1}] {url}")
     
     for a in all_acestream_links:
         href = clean_text(a.get("href", ""))
@@ -290,12 +309,43 @@ def parse_html_for_streams(html_content: str):
     # Estrategia 3: Buscar patrones de texto con acestream://
     print("  🔍 Buscando patrones de texto con acestream...")
     text_content = soup.get_text()
-    acestream_urls = re.findall(r'acestream://[^\s"\'<>]+', text_content)
-    print(f"  📊 Encontrados {len(acestream_urls)} URLs acestream en texto")
+    
+    # Múltiples patrones para encontrar URLs
+    text_patterns = [
+        r'acestream://[^\s"\'<>]+',
+        r'acestream://[^\s]+',
+        r'acestream://[^<\s]+',
+    ]
+    
+    all_text_urls = []
+    for pattern in text_patterns:
+        urls = re.findall(pattern, text_content)
+        all_text_urls.extend(urls)
+    
+    # También buscar en el HTML crudo
+    raw_patterns = [
+        r'acestream://[^\s"\'<>]+',
+        r'acestream://[^\s]+',
+        r'acestream://[^<\s]+',
+    ]
+    
+    all_raw_urls = []
+    for pattern in raw_patterns:
+        urls = re.findall(pattern, html_content)
+        all_raw_urls.extend(urls)
+    
+    print(f"  📊 Encontrados {len(all_text_urls)} URLs acestream en texto parseado")
+    print(f"  📊 Encontrados {len(all_raw_urls)} URLs acestream en HTML crudo")
     
     # DEBUG: Mostrar URLs encontradas en texto
-    for i, url in enumerate(acestream_urls[:5]):
-        print(f"    [{i+1}] {url}")
+    for i, url in enumerate(all_text_urls[:5]):
+        print(f"    [T{i+1}] {url}")
+    
+    for i, url in enumerate(all_raw_urls[:5]):
+        print(f"    [R{i+1}] {url}")
+    
+    # Usar la combinación de todas las URLs encontradas
+    acestream_urls = list(set(all_text_urls + all_raw_urls))
     
     for url in acestream_urls:
         url = url.strip()
@@ -626,8 +676,41 @@ def main():
                 print(f"     ✓ Contenido con {acestream_count} enlaces acestream encontrado")
                 # Mostrar las primeras ocurrencias para debugging
                 import re
-                urls = re.findall(r'acestream://[^\s"\'<>]+', raw_html)
-                print(f"     📋 Primeras URLs encontradas: {urls[:3]}")
+                
+                # Buscar todas las apariciones de "acestream" para debugging
+                acestream_positions = []
+                start = 0
+                while True:
+                    pos = raw_html.find("acestream", start)
+                    if pos == -1:
+                        break
+                    # Extraer contexto alrededor de la posición
+                    context_start = max(0, pos - 50)
+                    context_end = min(len(raw_html), pos + 100)
+                    context = raw_html[context_start:context_end]
+                    context = context.replace('\n', ' ').replace('\r', ' ')
+                    # Escapar caracteres de control para mostrar
+                    context = repr(context)
+                    acestream_positions.append(f"Pos {pos}: {context}")
+                    start = pos + 1
+                
+                print(f"     📋 Posiciones de 'acestream' encontradas: {len(acestream_positions)}")
+                for pos_info in acestream_positions[:3]:  # Mostrar las primeras 3
+                    print(f"        {pos_info}")
+                
+                # Intentar múltiples patrones regex
+                patterns = [
+                    r'acestream://[^\s"\'<>]+',
+                    r'acestream://[^\s]+',
+                    r'acestream://[^<\s]+',
+                    r'acestream[^<\s]*',  # Más amplio
+                ]
+                
+                for i, pattern in enumerate(patterns):
+                    matches = re.findall(pattern, raw_html)
+                    print(f"     📋 Patrón {i+1} ({pattern}): {len(matches)} matches")
+                    if matches:
+                        print(f"        Primeros: {matches[:3]}")
                 daily_url = page.url
             else:
                 print("     ⚠ No se encontraron enlaces acestream en el HTML final")
@@ -657,8 +740,41 @@ def main():
     print(f"\n🔍 Verificación final: {final_count} enlaces acestream en HTML a parsear")
     if final_count > 0:
         import re
-        urls = re.findall(r'acestream://[^\s"\'<>]+', raw_html)
-        print(f"🔍 URLs encontradas: {urls[:5]}")
+        
+        # Buscar todas las apariciones de "acestream" para debugging
+        acestream_positions = []
+        start = 0
+        while True:
+            pos = raw_html.find("acestream", start)
+            if pos == -1:
+                break
+            # Extraer contexto alrededor de la posición
+            context_start = max(0, pos - 50)
+            context_end = min(len(raw_html), pos + 100)
+            context = raw_html[context_start:context_end]
+            context = context.replace('\n', ' ').replace('\r', ' ')
+            # Escapar caracteres de control para mostrar
+            context = repr(context)
+            acestream_positions.append(f"Pos {pos}: {context}")
+            start = pos + 1
+        
+        print(f"🔍 Posiciones finales de 'acestream': {len(acestream_positions)}")
+        for pos_info in acestream_positions[:3]:  # Mostrar las primeras 3
+            print(f"   {pos_info}")
+        
+        # Intentar múltiples patrones regex
+        patterns = [
+            r'acestream://[^\s"\'<>]+',
+            r'acestream://[^\s]+',
+            r'acestream://[^<\s]+',
+            r'acestream[^<\s]*',  # Más amplio
+        ]
+        
+        for i, pattern in enumerate(patterns):
+            matches = re.findall(pattern, raw_html)
+            print(f"🔍 Patrón {i+1} ({pattern}): {len(matches)} matches")
+            if matches:
+                print(f"   Primeros: {matches[:3]}")
     
     print("\n" + "=" * 70)
     print("PARSEANDO STREAMS CON DETECCIÓN DE LIGAS...")
