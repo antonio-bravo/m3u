@@ -6,6 +6,7 @@ import os
 import sys
 import html
 import urllib.request
+import time
 
 BASE_URL = "https://platinsport.com/"
 LOGOS_XML_URL = "https://raw.githubusercontent.com/tutw/platinsport-m3u-updater/refs/heads/main/LOGOS-CANALES-TV.xml"
