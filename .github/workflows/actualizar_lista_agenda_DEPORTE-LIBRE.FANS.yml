@@ -41,8 +41,7 @@ jobs:
             libcairo2 \
             fonts-liberation \
             libgtk-3-0 \
-            libxss1 \
-            libgconf-2-4
+            libxss1
 
       - name: Install Google Chrome
         run: |
