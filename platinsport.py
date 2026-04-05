@@ -610,6 +610,11 @@ def main():
             # Capturar el HTML final
             raw_html = page.content()
             
+            # DEBUG: Guardar HTML inmediatamente después de capturarlo
+            with open("debug/immediate_capture.html", "w", encoding="utf-8") as f:
+                f.write(raw_html)
+            print("     ✓ HTML inmediato guardado en debug/immediate_capture.html")
+            
             # Guardar el HTML completo para debugging
             with open("debug/full_page_content.html", "w", encoding="utf-8") as f:
                 f.write(raw_html)
@@ -619,6 +624,10 @@ def main():
             acestream_count = raw_html.count("acestream://")
             if acestream_count > 0:
                 print(f"     ✓ Contenido con {acestream_count} enlaces acestream encontrado")
+                # Mostrar las primeras ocurrencias para debugging
+                import re
+                urls = re.findall(r'acestream://[^\s"\'<>]+', raw_html)
+                print(f"     📋 Primeras URLs encontradas: {urls[:3]}")
                 daily_url = page.url
             else:
                 print("     ⚠ No se encontraron enlaces acestream en el HTML final")
@@ -642,6 +651,14 @@ def main():
     if not raw_html:
         print("\n❌ ERROR: No se pudo capturar el HTML")
         sys.exit(1)
+    
+    # Verificación final antes del parsing
+    final_count = raw_html.count("acestream://")
+    print(f"\n🔍 Verificación final: {final_count} enlaces acestream en HTML a parsear")
+    if final_count > 0:
+        import re
+        urls = re.findall(r'acestream://[^\s"\'<>]+', raw_html)
+        print(f"🔍 URLs encontradas: {urls[:5]}")
     
     print("\n" + "=" * 70)
     print("PARSEANDO STREAMS CON DETECCIÓN DE LIGAS...")
