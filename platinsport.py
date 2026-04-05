@@ -145,82 +145,157 @@ def clean_channel_name(raw_name: str) -> str:
 def parse_html_for_streams(html_content: str):
     """
     Parsea el HTML y extrae streams con información de liga.
-    IMPORTANTE: NO elimina duplicados de acestream
+    Versión mejorada: busca múltiples patrones y estructuras
     """
     soup = BeautifulSoup(html_content, "lxml")
     entries = []
     
-    # Buscar todas las etiquetas <p> y <div> en orden
-    all_elements = soup.find_all(["p", "div"])
+    print(f"\n✓ Procesando elementos del HTML...")
+    
+    # Estrategia 1: Buscar estructura original (match-title-bar + button-group)
+    print("  🔍 Buscando estructura original (match-title-bar)...")
+    match_divs = soup.find_all("div", class_="match-title-bar")
+    print(f"  📊 Encontrados {len(match_divs)} elementos match-title-bar")
     
     current_league = "Unknown League"
     
-    print(f"\n✓ Procesando elementos del HTML...")
-    
-    for elem in all_elements:
-        # Detectar encabezados de liga
-        if elem.name == "p":
-            text = elem.get_text().strip()
-            # Verificar si es un encabezado de liga
-            if text and any(keyword in text.lower() for keyword in [
-                'league', 'liga', 'serie', 'bundesliga', 'ligue', 
-                'eredivisie', 'championship', 'cup', 'portugal', 'primeira',
-                'super league', 'pro league', 'paulista', 'carioca', 'profesional'
-            ]):
-                current_league = text
-                print(f"\n📋 Liga detectada: {current_league}")
+    for elem in match_divs:
+        dt_utc_str, event_time = extract_time_from_datetime(elem)
+        match_title = extract_match_title(elem)
         
-        # Detectar partidos
-        elif elem.name == "div" and "match-title-bar" in elem.get("class", []):
-            dt_utc_str, event_time = extract_time_from_datetime(elem)
-            match_title = extract_match_title(elem)
-            
-            button_group = elem.find_next_sibling("div", class_="button-group")
-            if not button_group:
+        button_group = elem.find_next_sibling("div", class_="button-group")
+        if not button_group:
+            continue
+        
+        links = button_group.find_all("a", href=re.compile(r"^acestream://"))
+        
+        print(f"  ⚽ {match_title} ({current_league}) - {len(links)} streams")
+        
+        for a in links:
+            href = clean_text(a.get("href", ""))
+            if not href.startswith("acestream://"):
                 continue
             
-            links = button_group.find_all("a", href=re.compile(r"^acestream://"))
+            lang_code = extract_lang_from_flag(a)
+            country_name = COUNTRY_CODES.get(lang_code, lang_code)
             
-            print(f"  ⚽ {match_title} ({current_league}) - {len(links)} streams")
+            a_copy = BeautifulSoup(str(a), "lxml").find("a")
+            if not a_copy:
+                continue
             
-            for a in links:
-                href = clean_text(a.get("href", ""))
-                if not href.startswith("acestream://"):
-                    continue
-                
-                lang_code = extract_lang_from_flag(a)
-                country_name = COUNTRY_CODES.get(lang_code, lang_code)
-                
-                a_copy = BeautifulSoup(str(a), "lxml").find("a")
-                if not a_copy:
-                    continue
-                
-                # Eliminar banderas
-                for flag in a_copy.find_all("span", class_=re.compile(r"\bfi\b|\bfi-")):
-                    flag.decompose()
-                
-                channel_name_raw = clean_text(a_copy.get_text())
-                
-                if not channel_name_raw or channel_name_raw in ["", "STREAM HD", "HD", "STREAM"]:
-                    channel_name_raw = clean_text(a.get("title", ""))
-                    if not channel_name_raw or channel_name_raw in ["", "STREAM HD"]:
-                        channel_name_raw = f"Stream {lang_code}"
-                
-                channel_name = clean_channel_name(channel_name_raw)
-                
-                # Generar tvg-id único
-                tvg_id = generate_tvg_id(channel_name, lang_code)
-                
-                entries.append({
-                    "time": event_time,
-                    "match": match_title,
-                    "league": current_league,
-                    "lang_code": lang_code,
-                    "country": country_name,
-                    "channel": channel_name,
-                    "url": href,
-                    "tvg_id": tvg_id,
-                })
+            # Eliminar banderas
+            for flag in a_copy.find_all("span", class_=re.compile(r"\bfi\b|\bfi-")):
+                flag.decompose()
+            
+            channel_name_raw = clean_text(a_copy.get_text())
+            
+            if not channel_name_raw or channel_name_raw in ["", "STREAM HD", "HD", "STREAM"]:
+                channel_name_raw = clean_text(a.get("title", ""))
+                if not channel_name_raw or channel_name_raw in ["", "STREAM HD"]:
+                    channel_name_raw = f"Stream {lang_code}"
+            
+            channel_name = clean_channel_name(channel_name_raw)
+            
+            # Generar tvg-id único
+            tvg_id = generate_tvg_id(channel_name, lang_code)
+            
+            entries.append({
+                "time": event_time,
+                "match": match_title,
+                "league": current_league,
+                "lang_code": lang_code,
+                "country": country_name,
+                "channel": channel_name,
+                "url": href,
+                "tvg_id": tvg_id,
+            })
+    
+    # Estrategia 2: Buscar todos los enlaces acestream directamente
+    print("  🔍 Buscando todos los enlaces acestream...")
+    all_acestream_links = soup.find_all("a", href=re.compile(r"^acestream://"))
+    print(f"  📊 Encontrados {len(all_acestream_links)} enlaces acestream totales")
+    
+    for a in all_acestream_links:
+        href = clean_text(a.get("href", ""))
+        if not href.startswith("acestream://"):
+            continue
+        
+        # Solo procesar si no fue encontrado en la estrategia 1
+        if any(e["url"] == href for e in entries):
+            continue
+        
+        print(f"  ➕ Procesando enlace adicional: {href}")
+        
+        lang_code = extract_lang_from_flag(a)
+        country_name = COUNTRY_CODES.get(lang_code, lang_code)
+        
+        # Intentar extraer información del contexto
+        parent_div = a.find_parent("div")
+        match_title = "Evento Desconocido"
+        event_time = ""
+        
+        if parent_div:
+            # Buscar título del partido en el contexto
+            title_elem = parent_div.find_previous("div", class_=re.compile(r"match|title|event"))
+            if title_elem:
+                match_title = clean_text(title_elem.get_text())
+            
+            # Buscar tiempo
+            time_elem = parent_div.find("time") or parent_div.find_previous("time")
+            if time_elem and time_elem.get("datetime"):
+                try:
+                    dt_str = time_elem.get("datetime")
+                    event_time = convert_utc_to_spain(dt_str)
+                except:
+                    pass
+        
+        a_copy = BeautifulSoup(str(a), "lxml").find("a")
+        if a_copy:
+            # Eliminar banderas
+            for flag in a_copy.find_all("span", class_=re.compile(r"\bfi\b|\bfi-")):
+                flag.decompose()
+            
+            channel_name_raw = clean_text(a_copy.get_text())
+        else:
+            channel_name_raw = clean_text(a.get("title", "")) or f"Stream {lang_code}"
+        
+        channel_name = clean_channel_name(channel_name_raw)
+        tvg_id = generate_tvg_id(channel_name, lang_code)
+        
+        entries.append({
+            "time": event_time,
+            "match": match_title,
+            "league": current_league,
+            "lang_code": lang_code,
+            "country": country_name,
+            "channel": channel_name,
+            "url": href,
+            "tvg_id": tvg_id,
+        })
+    
+    # Estrategia 3: Buscar patrones de texto con acestream://
+    print("  🔍 Buscando patrones de texto con acestream...")
+    text_content = soup.get_text()
+    acestream_urls = re.findall(r'acestream://[^\s"\'<>]+', text_content)
+    print(f"  📊 Encontrados {len(acestream_urls)} URLs acestream en texto")
+    
+    for url in acestream_urls:
+        url = url.strip()
+        if any(e["url"] == url for e in entries):
+            continue
+        
+        print(f"  ➕ Procesando URL de texto: {url}")
+        
+        entries.append({
+            "time": "",
+            "match": "Evento Desconocido",
+            "league": "Unknown League",
+            "lang_code": "XX",
+            "country": "Internacional",
+            "channel": f"Stream {len(entries) + 1}",
+            "url": url,
+            "tvg_id": f"stream{len(entries) + 1}.XX",
+        })
     
     return entries
 
@@ -365,20 +440,35 @@ def main():
         def handle_route(route, request):
             nonlocal raw_html
             
-            if "source-list.php" in request.url:
-                print(f"[4] Interceptando: {request.url}")
+            url = request.url
+            
+            # Interceptar cualquier request que pueda contener streams
+            if any(keyword in url for keyword in [
+                "source-list.php", "streams", "acestream", "matches", "events", 
+                "schedule", "api", "data", "content"
+            ]) or "platinsport.com" in url and ("php" in url or "json" in url):
+                print(f"[4] Interceptando posible fuente: {url}")
                 
-                response = route.fetch()
-                body = response.text()
-                
-                raw_html = body
-                print(f"[5] HTML capturado: {len(body)} bytes")
-                
-                with open("debug/daily_page_intercepted.html", "w", encoding="utf-8") as f:
-                    f.write(body)
-                print("[6] Debug guardado: debug/daily_page_intercepted.html")
-                
-                route.fulfill(response=response)
+                try:
+                    response = route.fetch()
+                    body = response.text()
+                    
+                    # Verificar si contiene streams
+                    if "acestream://" in body:
+                        raw_html = body
+                        acestream_count = body.count("acestream://")
+                        print(f"[5] HTML con streams capturado: {acestream_count} streams, {len(body)} bytes")
+                        
+                        with open("debug/intercepted_content.html", "w", encoding="utf-8") as f:
+                            f.write(body)
+                        print("[6] Debug guardado: debug/intercepted_content.html")
+                        
+                        route.fulfill(response=response)
+                    else:
+                        route.continue_()
+                except Exception as e:
+                    print(f"[4] Error interceptando {url}: {e}")
+                    route.continue_()
             else:
                 route.continue_()
         
@@ -445,6 +535,11 @@ def main():
             # Intentar diferentes estrategias para obtener el HTML
             raw_html = page.content()
             
+            # Guardar el HTML completo para debugging
+            with open("debug/full_page_content.html", "w", encoding="utf-8") as f:
+                f.write(raw_html)
+            print("     ✓ HTML completo guardado en debug/full_page_content.html")
+            
             # Verificar si hay contenido de eventos
             acestream_count = raw_html.count("acestream://")
             if acestream_count > 0:
@@ -453,16 +548,35 @@ def main():
             else:
                 print("     ⚠ No se encontraron enlaces acestream, intentando esperar más...")
                 
-                # Esperar hasta 30 segundos más por contenido dinámico
-                for i in range(30):
-                    time.sleep(1)
+                # Intentar hacer click en elementos que puedan cargar contenido
+                try:
+                    # Buscar botones o enlaces que puedan cargar contenido
+                    load_buttons = page.query_selector_all("button, a, [onclick], .load-more, .show-more")
+                    for btn in load_buttons[:3]:  # Solo los primeros 3 para no hacer spam
+                        try:
+                            btn.click()
+                            time.sleep(2)
+                        except:
+                            pass
+                    
+                    # Hacer scroll más agresivo
+                    for i in range(3):
+                        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                        time.sleep(1)
+                        page.evaluate("window.scrollTo(0, 0)")
+                        time.sleep(1)
+                    
+                    # Recargar HTML después de interacciones
                     raw_html = page.content()
-                    if "acestream://" in raw_html:
-                        acestream_count = raw_html.count("acestream://")
+                    acestream_count = raw_html.count("acestream://")
+                    
+                    if acestream_count > 0:
                         print(f"     ✓ Contenido dinámico cargado: {acestream_count} enlaces acestream")
-                        break
-                else:
-                    print("     ⚠ No se pudo cargar contenido dinámico")
+                    else:
+                        print("     ⚠ Aún no se encontraron enlaces acestream")
+                        
+                except Exception as e:
+                    print(f"     ⚠ Error intentando cargar contenido dinámico: {e}")
                 
                 daily_url = page.url
             
