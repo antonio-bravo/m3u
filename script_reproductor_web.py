@@ -1,5 +1,6 @@
 import re
 import time
+import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
@@ -10,6 +11,14 @@ from webdriver_manager.chrome import ChromeDriverManager
 import xml.etree.ElementTree as ET
 
 URL = 'https://tarjetarojaenvivo.lat'
+
+# Verificar si el sitio está disponible antes de proceder
+def check_site_availability(url):
+    try:
+        response = requests.get(url, timeout=10)
+        return response.status_code == 200
+    except requests.RequestException:
+        return False
 
 # Mapeo de canales (correcto)
 channel_names = {
@@ -220,6 +229,16 @@ chrome_options = Options()
 chrome_options.add_argument("--headless=new")
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--no-sandbox")
+
+# Verificar disponibilidad del sitio
+print(f"Verificando disponibilidad del sitio: {URL}")
+if not check_site_availability(URL):
+    print(f"Error: El sitio {URL} no está disponible o no responde.")
+    print("Posibles causas:")
+    print("- El sitio web está caído")
+    print("- Problemas de conectividad")
+    print("- El dominio ha expirado")
+    exit(1)
 
 try:
     # Inicializar navegador

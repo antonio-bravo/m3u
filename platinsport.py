@@ -7,7 +7,7 @@ import sys
 import html
 import urllib.request
 
-BASE_URL = "https://www.platinsport.com/"
+BASE_URL = "https://platinsport.com/"
 LOGOS_XML_URL = "https://raw.githubusercontent.com/tutw/platinsport-m3u-updater/refs/heads/main/LOGOS-CANALES-TV.xml"
 
 # Mapeo extendido de códigos de país a nombres
@@ -318,14 +318,36 @@ def main():
 
         context = browser.new_context(
             user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/131.0.0.0 Safari/537.36"
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
             ),
             viewport={"width": 1920, "height": 1080},
             locale="en-US",
+            timezone_id="Europe/Madrid",
             java_script_enabled=True,
             ignore_https_errors=True,
+            # Configuraciones adicionales para evitar detección
+            extra_http_headers={
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                "Accept-Encoding": "gzip, deflate, br",
+                "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+                "Cache-Control": "max-age=0",
+                "Sec-Ch-Ua": '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+                "Sec-Ch-Ua-Mobile": "?0",
+                "Sec-Ch-Ua-Platform": '"macOS"',
+                "Sec-Fetch-Dest": "document",
+                "Sec-Fetch-Mode": "navigate",
+                "Sec-Fetch-Site": "none",
+                "Sec-Fetch-User": "?1",
+                "Upgrade-Insecure-Requests": "1"
+            },
+            # Deshabilitar algunas características que pueden delatar automatización
+            permissions=["geolocation"],
+            geolocation={"latitude": 40.4168, "longitude": -3.7038},  # Madrid
+            # Configurar WebGL y Canvas para que parezcan reales
+            device_scale_factor=1,
+            is_mobile=False,
+            has_touch=False,
         )
         
         expiry = int((datetime.now(timezone.utc) + timedelta(days=1)).timestamp())
@@ -364,44 +386,89 @@ def main():
 
         page = context.new_page()
 
+        # Configurar interceptor para detectar redirecciones no deseadas
+        def handle_response(response):
+            url = response.url
+            # Solo reportar redirecciones problemáticas
+            if any(domain in url for domain in ['unharcon.com', 'click.php', 'ads.', 'doubleclick', 'googlesyndication']):
+                print(f"     🚫 REDIRECCIÓN PROBLEMÁTICA: {url}")
+                browser.close()
+                sys.exit(1)
+            elif "platinsport.com" not in url and url != BASE_URL and not any(allowed in url for allowed in ['fonts.googleapis.com', 'fonts.gstatic.com', 'googleapis.com', 'gstatic.com']):
+                print(f"     ⚠ Redirección externa: {url}")
+
+        page.on("response", lambda response: handle_response(response))
+
         print(f"[7] Navegando a {BASE_URL}...")
         try:
+            # Simular comportamiento humano antes de navegar
+            page.goto("about:blank")
+            time.sleep(1)
+            
+            # Navegar al sitio
             page.goto(BASE_URL, timeout=120000, wait_until="domcontentloaded")
-            import time
-            time.sleep(2)
+            
+            # Verificar si estamos en la URL correcta después de la navegación
+            current_url = page.url
+            if "platinsport.com" not in current_url:
+                print(f"     🚫 Redirigido fuera del sitio: {current_url}")
+                browser.close()
+                sys.exit(1)
+                
+            # Simular comportamiento humano: esperar y hacer scroll pequeño
+            time.sleep(3)
+            page.evaluate("window.scrollTo(0, 100)")
+            time.sleep(1)
+            page.evaluate("window.scrollTo(0, 0)")
+            time.sleep(1)
+            
             print("     Pagina principal cargada")
         except Exception as e:
             print(f"     Error: {e}")
             browser.close()
             sys.exit(1)
 
-        print("[8] Buscando boton PLAY...")
+        print("[8] Intentando extraer contenido directamente de la página...")
         try:
-            play_button = page.locator("a[href=\"javascript:go('source-list.php')\"]").first
+            # Esperar a que la página cargue completamente
+            page.wait_for_load_state("networkidle", timeout=30000)
+            time.sleep(5)  # Esperar más tiempo por contenido dinámico
             
-            if play_button.is_visible(timeout=10000):
-                print("     Boton encontrado")
-                
-                print("[9] Haciendo click y esperando popup...")
-                with page.expect_popup(timeout=30000) as popup_info:
-                    play_button.click()
-                
-                daily_page = popup_info.value
-                daily_url = daily_page.url
-                
-                print(f"     SUCCESS! Popup abierto: {daily_url}")
-                
-                daily_page.wait_for_load_state("load")
-                time.sleep(2)
-                
-                daily_page.close()
+            # Hacer scroll para activar carga de contenido dinámico
+            print("     Haciendo scroll para cargar contenido dinámico...")
+            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            time.sleep(2)
+            page.evaluate("window.scrollTo(0, 0)")  # Volver arriba
+            time.sleep(2)
+            
+            # Intentar diferentes estrategias para obtener el HTML
+            raw_html = page.content()
+            
+            # Verificar si hay contenido de eventos
+            acestream_count = raw_html.count("acestream://")
+            if acestream_count > 0:
+                print(f"     ✓ Contenido con {acestream_count} enlaces acestream encontrado")
+                daily_url = page.url
             else:
-                print("     Boton no visible")
-                browser.close()
-                sys.exit(1)
+                print("     ⚠ No se encontraron enlaces acestream, intentando esperar más...")
                 
+                # Esperar hasta 30 segundos más por contenido dinámico
+                for i in range(30):
+                    time.sleep(1)
+                    raw_html = page.content()
+                    if "acestream://" in raw_html:
+                        acestream_count = raw_html.count("acestream://")
+                        print(f"     ✓ Contenido dinámico cargado: {acestream_count} enlaces acestream")
+                        break
+                else:
+                    print("     ⚠ No se pudo cargar contenido dinámico")
+                
+                daily_url = page.url
+            
+            print(f"     SUCCESS! Contenido capturado de: {daily_url}")
+            
         except Exception as e:
-            print(f"     Error: {e}")
+            print(f"     Error extrayendo contenido: {e}")
             import traceback
             traceback.print_exc()
             browser.close()
@@ -421,9 +488,18 @@ def main():
     
     print(f"\n✓ Total streams encontrados: {len(all_entries)}")
     
-    if len(all_entries) < 5:
-        print("❌ ERROR: Muy pocos streams encontrados")
+    if len(all_entries) == 0:
+        print("❌ ERROR: No se encontraron streams")
+        print("Es posible que el sitio haya cambiado su estructura")
+        print("Contenido HTML capturado (primeros 1000 caracteres):")
+        print("-" * 50)
+        print(raw_html[:1000])
+        print("-" * 50)
         sys.exit(1)
+    
+    if len(all_entries) < 5:
+        print(f"⚠ ADVERTENCIA: Solo {len(all_entries)} streams encontrados (esperados: 5+)")
+        print("Continuando de todas formas...")
 
     # NO eliminamos duplicados - el usuario lo pidió expresamente
     print(f"✓ Conservando TODOS los streams (sin eliminar duplicados)")

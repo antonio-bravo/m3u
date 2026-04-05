@@ -22,10 +22,36 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update -qq
+        sudo apt-get install -y -qq \
+          wget \
+          gnupg \
+          libnss3 \
+          libatk-bridge2.0-0 \
+          libdrm2 \
+          libxkbcommon0 \
+          libxcomposite1 \
+          libxdamage1 \
+          libxrandr2 \
+          libgbm1 \
+          libasound2 \
+          libpango-1.0-0 \
+          libcairo2 \
+          fonts-liberation
+
+    - name: Install Google Chrome
+      run: |
+        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+        echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+        sudo apt-get update -qq
+        sudo apt-get install -y google-chrome-stable
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install selenium webdriver-manager beautifulsoup4
+        pip install selenium webdriver-manager beautifulsoup4 requests
 
     - name: Set up Git
       run: |
