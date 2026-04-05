@@ -151,6 +151,16 @@ def parse_html_for_streams(html_content: str):
     entries = []
     
     print(f"\n✓ Procesando elementos del HTML...")
+    print(f"  📊 Longitud total del HTML: {len(html_content)} caracteres")
+    
+    # DEBUG: Guardar una versión simplificada del HTML para análisis
+    with open("debug/parsed_html_sample.txt", "w", encoding="utf-8") as f:
+        # Extraer solo el texto visible y algunas etiquetas importantes
+        for tag in soup.find_all(['div', 'p', 'a', 'span']):
+            if tag.get_text().strip():
+                f.write(f"{tag.name}: {tag.get_text().strip()[:100]}...\n")
+                if 'href' in tag.attrs and 'acestream://' in tag.get('href', ''):
+                    f.write(f"  -> ACSTREAM LINK: {tag.get('href')}\n")
     
     # Estrategia 1: Buscar estructura original (match-title-bar + button-group)
     print("  🔍 Buscando estructura original (match-title-bar)...")
@@ -214,6 +224,10 @@ def parse_html_for_streams(html_content: str):
     print("  🔍 Buscando todos los enlaces acestream...")
     all_acestream_links = soup.find_all("a", href=re.compile(r"^acestream://"))
     print(f"  📊 Encontrados {len(all_acestream_links)} enlaces acestream totales")
+    
+    # DEBUG: Mostrar algunos links encontrados
+    for i, link in enumerate(all_acestream_links[:5]):
+        print(f"    [{i+1}] {link.get('href')} - Text: '{link.get_text().strip()}'")
     
     for a in all_acestream_links:
         href = clean_text(a.get("href", ""))
@@ -279,6 +293,10 @@ def parse_html_for_streams(html_content: str):
     acestream_urls = re.findall(r'acestream://[^\s"\'<>]+', text_content)
     print(f"  📊 Encontrados {len(acestream_urls)} URLs acestream en texto")
     
+    # DEBUG: Mostrar URLs encontradas en texto
+    for i, url in enumerate(acestream_urls[:5]):
+        print(f"    [{i+1}] {url}")
+    
     for url in acestream_urls:
         url = url.strip()
         if any(e["url"] == url for e in entries):
@@ -297,6 +315,7 @@ def parse_html_for_streams(html_content: str):
             "tvg_id": f"stream{len(entries) + 1}.XX",
         })
     
+    print(f"  ✅ Total de streams únicos encontrados: {len(entries)}")
     return entries
 
 def write_m3u(all_entries, out_path="lista.m3u"):
@@ -442,30 +461,49 @@ def main():
             
             url = request.url
             
-            # Interceptar cualquier request que pueda contener streams
-            if any(keyword in url for keyword in [
-                "source-list.php", "streams", "acestream", "matches", "events", 
-                "schedule", "api", "data", "content"
-            ]) or "platinsport.com" in url and ("php" in url or "json" in url):
-                print(f"[4] Interceptando posible fuente: {url}")
+            # Solo interceptar requests que probablemente contengan texto/HTML
+            content_type_likely_text = any(ext in url.lower() for ext in [
+                '.html', '.htm', '.php', '.asp', '.jsp', '.xml', '.json', '.txt'
+            ]) or any(keyword in url.lower() for keyword in [
+                'source-list', 'streams', 'acestream', 'matches', 'events', 
+                'schedule', 'api', 'data', 'content'
+            ])
+            
+            # Excluir archivos binarios conocidos
+            is_binary_file = any(ext in url.lower() for ext in [
+                '.png', '.jpg', '.jpeg', '.gif', '.ico', '.svg', '.woff', '.woff2', 
+                '.ttf', '.eot', '.css', '.js'
+            ])
+            
+            if content_type_likely_text and not is_binary_file and "platinsport.com" in url:
+                print(f"[4] Interceptando posible fuente de texto: {url}")
                 
                 try:
                     response = route.fetch()
-                    body = response.text()
                     
-                    # Verificar si contiene streams
-                    if "acestream://" in body:
-                        raw_html = body
-                        acestream_count = body.count("acestream://")
-                        print(f"[5] HTML con streams capturado: {acestream_count} streams, {len(body)} bytes")
+                    # Verificar content-type
+                    content_type = response.headers.get('content-type', '').lower()
+                    if 'text' in content_type or 'json' in content_type or 'xml' in content_type:
+                        body = response.text()
                         
-                        with open("debug/intercepted_content.html", "w", encoding="utf-8") as f:
-                            f.write(body)
-                        print("[6] Debug guardado: debug/intercepted_content.html")
-                        
-                        route.fulfill(response=response)
+                        # Verificar si contiene streams
+                        if "acestream://" in body:
+                            raw_html = body
+                            acestream_count = body.count("acestream://")
+                            print(f"[5] HTML con streams capturado: {acestream_count} streams, {len(body)} bytes")
+                            
+                            with open("debug/intercepted_content.html", "w", encoding="utf-8") as f:
+                                f.write(body)
+                            print("[6] Debug guardado: debug/intercepted_content.html")
+                            
+                            route.fulfill(response=response)
+                        else:
+                            route.continue_()
                     else:
                         route.continue_()
+                except UnicodeDecodeError:
+                    print(f"[4] Archivo binario detectado, omitiendo: {url}")
+                    route.continue_()
                 except Exception as e:
                     print(f"[4] Error interceptando {url}: {e}")
                     route.continue_()
@@ -525,14 +563,51 @@ def main():
             page.wait_for_load_state("networkidle", timeout=30000)
             time.sleep(5)  # Esperar más tiempo por contenido dinámico
             
-            # Hacer scroll para activar carga de contenido dinámico
-            print("     Haciendo scroll para cargar contenido dinámico...")
-            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-            time.sleep(2)
-            page.evaluate("window.scrollTo(0, 0)")  # Volver arriba
-            time.sleep(2)
+            # Intentar múltiples estrategias para cargar contenido
+            print("     Cargando contenido dinámico...")
             
-            # Intentar diferentes estrategias para obtener el HTML
+            # Estrategia 1: Hacer scroll agresivo
+            for i in range(5):
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                time.sleep(2)
+                page.evaluate("window.scrollTo(0, 0)")
+                time.sleep(1)
+            
+            # Estrategia 2: Buscar y hacer click en elementos que puedan cargar contenido
+            try:
+                # Buscar botones o enlaces que digan "load more", "show more", etc.
+                load_selectors = [
+                    "button:has-text('Load More')", "a:has-text('Load More')",
+                    "button:has-text('Show More')", "a:has-text('Show More')",
+                    ".load-more", ".show-more", "[data-load-more]",
+                    "button[class*='load']", "a[class*='load']"
+                ]
+                
+                for selector in load_selectors:
+                    try:
+                        elements = page.query_selector_all(selector)
+                        for elem in elements[:2]:  # Solo los primeros 2 para no sobrecargar
+                            try:
+                                elem.click()
+                                time.sleep(3)
+                                print(f"     Clickeado elemento de carga: {selector}")
+                            except:
+                                pass
+                    except:
+                        pass
+                
+                # Estrategia 3: Esperar por cambios en el DOM
+                initial_height = page.evaluate("document.body.scrollHeight")
+                time.sleep(5)
+                final_height = page.evaluate("document.body.scrollHeight")
+                
+                if final_height > initial_height:
+                    print(f"     Contenido dinámico cargado: altura cambió de {initial_height} a {final_height}")
+                
+            except Exception as e:
+                print(f"     Error en estrategias de carga dinámica: {e}")
+            
+            # Capturar el HTML final
             raw_html = page.content()
             
             # Guardar el HTML completo para debugging
@@ -546,37 +621,10 @@ def main():
                 print(f"     ✓ Contenido con {acestream_count} enlaces acestream encontrado")
                 daily_url = page.url
             else:
-                print("     ⚠ No se encontraron enlaces acestream, intentando esperar más...")
-                
-                # Intentar hacer click en elementos que puedan cargar contenido
-                try:
-                    # Buscar botones o enlaces que puedan cargar contenido
-                    load_buttons = page.query_selector_all("button, a, [onclick], .load-more, .show-more")
-                    for btn in load_buttons[:3]:  # Solo los primeros 3 para no hacer spam
-                        try:
-                            btn.click()
-                            time.sleep(2)
-                        except:
-                            pass
-                    
-                    # Hacer scroll más agresivo
-                    for i in range(3):
-                        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                        time.sleep(1)
-                        page.evaluate("window.scrollTo(0, 0)")
-                        time.sleep(1)
-                    
-                    # Recargar HTML después de interacciones
-                    raw_html = page.content()
-                    acestream_count = raw_html.count("acestream://")
-                    
-                    if acestream_count > 0:
-                        print(f"     ✓ Contenido dinámico cargado: {acestream_count} enlaces acestream")
-                    else:
-                        print("     ⚠ Aún no se encontraron enlaces acestream")
-                        
-                except Exception as e:
-                    print(f"     ⚠ Error intentando cargar contenido dinámico: {e}")
+                print("     ⚠ No se encontraron enlaces acestream en el HTML final")
+                # Mostrar una muestra del HTML para debugging
+                sample = raw_html[:2000] + "..." if len(raw_html) > 2000 else raw_html
+                print(f"     Muestra del HTML: {sample}")
                 
                 daily_url = page.url
             
