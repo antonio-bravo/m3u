@@ -36,10 +36,13 @@ jobs:
             libxdamage1 \
             libxrandr2 \
             libgbm1 \
-            libasound2 \
+            libasound2t64 \
             libpango-1.0-0 \
             libcairo2 \
-            fonts-liberation
+            fonts-liberation \
+            libgtk-3-0 \
+            libxss1 \
+            libgconf-2-4
 
       - name: Install Google Chrome
         run: |

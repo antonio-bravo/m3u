@@ -36,49 +36,16 @@ jobs:
           libxdamage1 \
           libxrandr2 \
           libgbm1 \
-          libasound2 \
-          libpango-1.0-0 \
-          libcairo2 \
-          fonts-liberation
+            libasound2t64 \
+            libpango-1.0-0 \
+            libcairo2 \
+            fonts-liberation \
+            libgtk-3-0 \
+            libxss1 \
+            libgconf-2-4
 
-    - name: Install Google Chrome
-      run: |
-        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-        echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
-        sudo apt-get update -qq
-        sudo apt-get install -y google-chrome-stable
+      - name: Pull latest changes
+        run: git pull origin main
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install selenium webdriver-manager beautifulsoup4 requests
-
-    - name: Set up Git
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-
-    - name: Pull latest changes
-      run: git pull origin main
-
-    - name: Run your script to update the files
-      run: python script_reproductor_web.py
-
-    - name: Check for changes
-      id: changes
-      run: |
-        git add lista_reproductor_web.xml lista_reproductor_web.m3u
-        if git diff-index --quiet HEAD; then
-          echo "No changes to commit"
-          echo "::set-output name=changes::false"
-        else
-          echo "::set-output name=changes::true"
-        fi
-
-    - name: Commit and push changes if there are any
-      if: steps.changes.outputs.changes == 'true'
-      run: |
-        git commit -m "Update lista_reproductor_web.xml and lista_reproductor_web.m3u"
-        git push origin main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run your script to update the files
+        run: python script_reproductor_web.py
