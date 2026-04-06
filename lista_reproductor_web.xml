@@ -1,18 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-04-06 05:30</datetime>
-    <league>Serie A</league>
-    <teams>Udinese vs Como</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>33989-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-06 13:45</datetime>
     <league>Serie A</league>
     <teams>Napoli vs Milan</teams>
@@ -189,6 +177,23 @@
         <channel_name>ESPN 3 | OP3</channel_name>
         <channel_id>34019-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-06 05:30</datetime>
+    <league>Serie A</league>
+    <teams>Udinese vs Como</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>33989-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>33989-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
       </channel>
     </channels>
   </event>
