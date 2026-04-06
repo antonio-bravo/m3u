@@ -603,21 +603,46 @@ def main():
                 print(f"     ⚠ No se alcanzó networkidle en 15s: {e}")
                 print("     Continuando con la extracción...")
             
+            time.sleep(2)
+            
+            # Estrategia previa: Esperar específicamente a que aparezcan elementos con contenido de streams
+            print("     Esperando a que aparezcan elementos de streams...")
+            try:
+                # Esperar a que al menos uno de estos selectores aparezca
+                selectors_to_wait = [
+                    ".button-group",
+                    "div.button-group a[href*='acestream']",
+                    "a[href*='acestream://']"
+                ]
+                
+                for selector in selectors_to_wait:
+                    try:
+                        page.wait_for_selector(selector, timeout=10000)
+                        print(f"     ✓ Selector encontrado: {selector}")
+                        time.sleep(2)
+                        break
+                    except Exception as e:
+                        print(f"     ⚠ Selector no encontrado: {selector}")
+                        continue
+                        
+            except Exception as e:
+                print(f"     ⚠ Error esperando selectores: {e}")
+            
             time.sleep(3)  # Esperar un poco más por contenido dinámico
             
             # Intentar múltiples estrategias para cargar contenido
             print("     Cargando contenido dinámico...")
             
             # Estrategia 1: Hacer scroll agresivo con manejo de errores
-            for i in range(5):
+            for i in range(3):
                 try:
                     page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                    time.sleep(2)
+                    time.sleep(1)
                     page.evaluate("window.scrollTo(0, 0)")
                     time.sleep(1)
                 except Exception as e:
                     print(f"     ⚠ Error en scroll agresivo {i+1}: {e}")
-                    break  # Salir del bucle si hay error
+                    break
             
             # Estrategia 2: Buscar y hacer click en elementos que puedan cargar contenido
             try:
@@ -657,7 +682,8 @@ def main():
             except Exception as e:
                 print(f"     Error en estrategias de carga dinámica: {e}")
             
-            # Capturar el HTML final
+            # Capturar el HTML final DESPUÉS de todo lo anterior
+            time.sleep(2)
             raw_html = page.content()
             
             # DEBUG: Guardar HTML inmediatamente después de capturarlo
@@ -717,6 +743,21 @@ def main():
                 # Mostrar una muestra del HTML para debugging
                 sample = raw_html[:2000] + "..." if len(raw_html) > 2000 else raw_html
                 print(f"     Muestra del HTML: {sample}")
+                
+                # Intentar un debug más completo
+                try:
+                    button_groups = page.query_selector_all(".button-group")
+                    print(f"     📊 Elementos .button-group encontrados en DOM: {len(button_groups)}")
+                    
+                    if button_groups:
+                        for i, bg in enumerate(button_groups[:2]):
+                            try:
+                                inner_html = bg.inner_html()
+                                print(f"     🔍 Contenido HTML del button-group {i}: {inner_html[:200]}...")
+                            except Exception as e:
+                                print(f"     ⚠ Error leyendo HTML {i}: {e}")
+                except Exception as e:
+                    print(f"     ⚠ Error analizando button-groups: {e}")
                 
                 daily_url = page.url
             
