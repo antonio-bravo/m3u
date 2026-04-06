@@ -10,13 +10,17 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import xml.etree.ElementTree as ET
 
-URL = 'https://tarjetarojaenvivo.lat'
+URL = 'https://www.rojadirectatvenvivohd.com'
 
 # Verificar si el sitio está disponible antes de proceder
 def check_site_availability(url):
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    }
     try:
-        response = requests.get(url, timeout=10)
-        return response.status_code == 200
+        response = requests.get(url, timeout=10, headers=headers, allow_redirects=True)
+        # El sitio puede devolver 403 o redireccionar incluso cuando está accesible desde un navegador.
+        return response.status_code in (200, 301, 302, 403)
     except requests.RequestException:
         return False
 
@@ -240,6 +244,7 @@ if not check_site_availability(URL):
     print("- El dominio ha expirado")
     exit(1)
 
+driver = None
 try:
     # Inicializar navegador
     service = ChromeService(executable_path=ChromeDriverManager().install())
@@ -257,7 +262,8 @@ except Exception as e:
     print(f"Error crítico: {str(e)}")
     exit(1)
 finally:
-    driver.quit()
+    if driver:
+        driver.quit()
 
 # Procesar el contenido
 events = []
