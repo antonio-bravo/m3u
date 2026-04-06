@@ -151,6 +151,71 @@ def build_source_list_url(date: datetime | None = None) -> str:
     key = base64.b64encode(f"{date.strftime('%Y-%m-%d')}PLATINSPORT".encode()).decode()
     return f"https://www.platinsport.com/link/source-list.php?key={key}"
 
+
+def normalize_acestream_url(url: str) -> str:
+    """Normaliza y valida una URL de acestream."""
+    if not url:
+        return ""
+    url = url.strip().strip('"\'`.,;:()[]{}')
+    if not url.lower().startswith("acestream://"):
+        return ""
+
+    match = re.match(r'^(acestream://)([A-Fa-f0-9]{40})', url)
+    if match:
+        return f"{match.group(1)}{match.group(2)}"
+
+    match = re.search(r'(acestream://)([A-Fa-f0-9]{40})', url)
+    if match:
+        return f"{match.group(1)}{match.group(2)}"
+
+    return ""
+
+
+def find_nearest_context(a):
+    """Busca el partido, liga y hora más cercanos alrededor de un enlace de acestream."""
+    match_title = "Evento Desconocido"
+    league = "Unknown League"
+    event_time = ""
+
+    match_div = a.find_previous("div", class_=re.compile(r"match-title-bar|match-title|event", re.I))
+    if match_div:
+        extracted_title = extract_match_title(match_div)
+        if extracted_title:
+            match_title = extracted_title
+
+        league_tag = match_div.find_previous_sibling("p") or match_div.find_previous("p")
+        if league_tag and league_tag.get_text(strip=True):
+            league = clean_text(league_tag.get_text())
+
+        event_time = extract_time_from_datetime(match_div)[1] or ""
+        return match_title, league, event_time
+
+    league_tag = a.find_previous("p")
+    if league_tag and league_tag.get_text(strip=True):
+        league = clean_text(league_tag.get_text())
+
+    time_tag = a.find_previous("time")
+    if time_tag and time_tag.get("datetime"):
+        event_time = convert_utc_to_spain(time_tag.get("datetime"))
+
+    return match_title, league, event_time
+
+
+def extract_channel_name(a) -> str:
+    a_copy = BeautifulSoup(str(a), "lxml").find("a")
+    if a_copy:
+        for flag in a_copy.find_all("span", class_=re.compile(r"\bfi\b|\bfi-")):
+            flag.decompose()
+        channel_name_raw = clean_text(a_copy.get_text())
+    else:
+        channel_name_raw = clean_text(a.get("title", "")) or ""
+
+    if not channel_name_raw or channel_name_raw.upper() in ["STREAM HD", "HD", "STREAM"]:
+        channel_name_raw = clean_text(a.get("title", "")) or f"Stream {extract_lang_from_flag(a)}"
+
+    return clean_channel_name(channel_name_raw)
+
+
 def parse_html_for_streams(html_content: str):
     """
     Parsea el HTML y extrae streams con información de liga.
@@ -158,13 +223,13 @@ def parse_html_for_streams(html_content: str):
     """
     soup = BeautifulSoup(html_content, "lxml")
     entries = []
+    seen_urls = set()
     
     print(f"\n✓ Procesando elementos del HTML...")
     print(f"  📊 Longitud total del HTML: {len(html_content)} caracteres")
     
     # DEBUG: Guardar una versión simplificada del HTML para análisis
     with open("debug/parsed_html_sample.txt", "w", encoding="utf-8") as f:
-        # Extraer solo el texto visible y algunas etiquetas importantes
         for tag in soup.find_all(['div', 'p', 'a', 'span']):
             if tag.get_text().strip():
                 f.write(f"{tag.name}: {tag.get_text().strip()[:100]}...\n")
@@ -173,55 +238,47 @@ def parse_html_for_streams(html_content: str):
     
     # Estrategia 1: Buscar estructura original (match-title-bar + button-group)
     print("  🔍 Buscando estructura original (match-title-bar)...")
-    match_divs = soup.find_all("div", class_="match-title-bar")
+    match_divs = soup.find_all("div", class_=re.compile(r"match-title-bar", re.I))
     print(f"  📊 Encontrados {len(match_divs)} elementos match-title-bar")
-    
-    current_league = "Unknown League"
     
     for elem in match_divs:
         dt_utc_str, event_time = extract_time_from_datetime(elem)
-        match_title = extract_match_title(elem)
-        
-        button_group = elem.find_next_sibling("div", class_="button-group")
-        if not button_group:
-            continue
-        
-        links = button_group.find_all("a", href=re.compile(r"^acestream://"))
-        
-        print(f"  ⚽ {match_title} ({current_league}) - {len(links)} streams")
-        
+        match_title = extract_match_title(elem) or "Evento Desconocido"
+        league = "Unknown League"
+        league_tag = elem.find_previous_sibling("p") or elem.find_previous("p")
+        if league_tag and league_tag.get_text(strip=True):
+            league = clean_text(league_tag.get_text())
+
+        button_group = elem.find_next_sibling("div", class_=re.compile(r"button-group", re.I))
+        links = []
+        if button_group:
+            links = button_group.find_all("a", href=re.compile(r"acestream://", re.I))
+        else:
+            sibling = elem.next_sibling
+            while sibling:
+                if getattr(sibling, 'name', None) == 'div' and sibling.get('class') and any(re.search(r"match-title-bar", cls, re.I) for cls in sibling.get('class')):
+                    break
+                if hasattr(sibling, 'find_all'):
+                    links.extend(sibling.find_all("a", href=re.compile(r"acestream://", re.I)))
+                sibling = sibling.next_sibling
+
+        print(f"  ⚽ {match_title} ({league}) - {len(links)} streams")
+
         for a in links:
-            href = clean_text(a.get("href", ""))
-            if not href.startswith("acestream://"):
+            href = normalize_acestream_url(a.get("href", ""))
+            if not href or href in seen_urls:
                 continue
-            
+            seen_urls.add(href)
+
             lang_code = extract_lang_from_flag(a)
             country_name = COUNTRY_CODES.get(lang_code, lang_code)
-            
-            a_copy = BeautifulSoup(str(a), "lxml").find("a")
-            if not a_copy:
-                continue
-            
-            # Eliminar banderas
-            for flag in a_copy.find_all("span", class_=re.compile(r"\bfi\b|\bfi-")):
-                flag.decompose()
-            
-            channel_name_raw = clean_text(a_copy.get_text())
-            
-            if not channel_name_raw or channel_name_raw in ["", "STREAM HD", "HD", "STREAM"]:
-                channel_name_raw = clean_text(a.get("title", ""))
-                if not channel_name_raw or channel_name_raw in ["", "STREAM HD"]:
-                    channel_name_raw = f"Stream {lang_code}"
-            
-            channel_name = clean_channel_name(channel_name_raw)
-            
-            # Generar tvg-id único
+            channel_name = extract_channel_name(a)
             tvg_id = generate_tvg_id(channel_name, lang_code)
-            
+
             entries.append({
                 "time": event_time,
                 "match": match_title,
-                "league": current_league,
+                "league": league,
                 "lang_code": lang_code,
                 "country": country_name,
                 "channel": channel_name,
@@ -229,152 +286,46 @@ def parse_html_for_streams(html_content: str):
                 "tvg_id": tvg_id,
             })
     
-    # Estrategia 2: Buscar todos los enlaces acestream directamente
-    print("  🔍 Buscando todos los enlaces acestream...")
-    
-    # Buscar con múltiples patrones
-    patterns = [
-        r'acestream://[^\s"\'<>]+',  # Patrón original
-        r'acestream://[^<\s]+',      # Más permisivo
-        r'acestream://[^\s]+',       # Aún más permisivo
-    ]
-    
-    all_acestream_links = []
-    for pattern in patterns:
-        links = soup.find_all("a", href=re.compile(pattern))
-        all_acestream_links.extend(links)
-    
-    # También buscar en todo el texto del HTML
-    text_acestream = re.findall(r'acestream://[^\s"\'<>]+', html_content)
-    
-    print(f"  📊 Encontrados {len(all_acestream_links)} enlaces acestream en soup")
-    print(f"  📊 Encontrados {len(text_acestream)} enlaces acestream en texto")
-    
-    # DEBUG: Mostrar algunos links encontrados
-    for i, link in enumerate(all_acestream_links[:5]):
-        print(f"    [{i+1}] {link.get('href')} - Text: '{link.get_text().strip()}'")
-    
-    for i, url in enumerate(text_acestream[:5]):
-        print(f"    [T{i+1}] {url}")
-    
-    for a in all_acestream_links:
-        href = clean_text(a.get("href", ""))
-        
-        # Validar que sea una URL de acestream válida
-        if not re.match(r'^acestream://[a-fA-F0-9]{40}$', href):
-            print(f"  ⚠ Omitiendo enlace inválido: {href}")
+    # Estrategia 2: Buscar todos los enlaces acestream directamente en anchors
+    print("  🔍 Buscando todos los enlaces acestream en anchors...")
+    direct_links = soup.find_all("a", href=re.compile(r"acestream://", re.I))
+    print(f"  📊 Encontrados {len(direct_links)} enlaces directos en anchors")
+
+    for a in direct_links:
+        href = normalize_acestream_url(a.get("href", ""))
+        if not href or href in seen_urls:
             continue
-            
-        if not href.startswith("acestream://"):
-            continue
-        
-        # Solo procesar si no fue encontrado en la estrategia 1
-        if any(e["url"] == href for e in entries):
-            continue
-        
-        print(f"  ➕ Procesando enlace adicional válido: {href}")
-        
+
+        match_title, league, event_time = find_nearest_context(a)
         lang_code = extract_lang_from_flag(a)
         country_name = COUNTRY_CODES.get(lang_code, lang_code)
-        
-        # Intentar extraer información del contexto
-        parent_div = a.find_parent("div")
-        match_title = "Evento Desconocido"
-        event_time = ""
-        
-        if parent_div:
-            # Buscar título del partido en el contexto
-            title_elem = parent_div.find_previous("div", class_=re.compile(r"match|title|event"))
-            if title_elem:
-                match_title = clean_text(title_elem.get_text())
-            
-            # Buscar tiempo
-            time_elem = parent_div.find("time") or parent_div.find_previous("time")
-            if time_elem and time_elem.get("datetime"):
-                try:
-                    dt_str = time_elem.get("datetime")
-                    event_time = convert_utc_to_spain(dt_str)
-                except:
-                    pass
-        
-        a_copy = BeautifulSoup(str(a), "lxml").find("a")
-        if a_copy:
-            # Eliminar banderas
-            for flag in a_copy.find_all("span", class_=re.compile(r"\bfi\b|\bfi-")):
-                flag.decompose()
-            
-            channel_name_raw = clean_text(a_copy.get_text())
-        else:
-            channel_name_raw = clean_text(a.get("title", "")) or f"Stream {lang_code}"
-        
-        channel_name = clean_channel_name(channel_name_raw)
+        channel_name = extract_channel_name(a)
         tvg_id = generate_tvg_id(channel_name, lang_code)
-        
+
+        print(f"  ➕ Agregando enlace directo adicional: {href}")
         entries.append({
             "time": event_time,
             "match": match_title,
-            "league": current_league,
+            "league": league,
             "lang_code": lang_code,
             "country": country_name,
             "channel": channel_name,
             "url": href,
             "tvg_id": tvg_id,
         })
-    
+        seen_urls.add(href)
+
     # Estrategia 3: Buscar patrones de texto con acestream://
     print("  🔍 Buscando patrones de texto con acestream...")
-    text_content = soup.get_text()
-    
-    # Múltiples patrones para encontrar URLs
-    text_patterns = [
-        r'acestream://[^\s"\'<>]+',
-        r'acestream://[^\s]+',
-        r'acestream://[^<\s]+',
-    ]
-    
-    all_text_urls = []
-    for pattern in text_patterns:
-        urls = re.findall(pattern, text_content)
-        all_text_urls.extend(urls)
-    
-    # También buscar en el HTML crudo
-    raw_patterns = [
-        r'acestream://[^\s"\'<>]+',
-        r'acestream://[^\s]+',
-        r'acestream://[^<\s]+',
-    ]
-    
-    all_raw_urls = []
-    for pattern in raw_patterns:
-        urls = re.findall(pattern, html_content)
-        all_raw_urls.extend(urls)
-    
-    print(f"  📊 Encontrados {len(all_text_urls)} URLs acestream en texto parseado")
-    print(f"  📊 Encontrados {len(all_raw_urls)} URLs acestream en HTML crudo")
-    
-    # DEBUG: Mostrar URLs encontradas en texto
-    for i, url in enumerate(all_text_urls[:5]):
-        print(f"    [T{i+1}] {url}")
-    
-    for i, url in enumerate(all_raw_urls[:5]):
-        print(f"    [R{i+1}] {url}")
-    
-    # Usar la combinación de todas las URLs encontradas
-    acestream_urls = list(set(all_text_urls + all_raw_urls))
-    
-    for url in acestream_urls:
-        url = url.strip()
-        
-        # Validar que sea una URL de acestream válida
-        if not re.match(r'^acestream://[a-fA-F0-9]{40}$', url):
-            print(f"  ⚠ Omitiendo URL inválida: {url}")
+    raw_urls = re.findall(r'acestream://[A-Fa-f0-9]+', html_content)
+    print(f"  📊 Encontrados {len(raw_urls)} URLs acestream en texto crudo")
+
+    for url in raw_urls:
+        href = normalize_acestream_url(url)
+        if not href or href in seen_urls:
             continue
-            
-        if any(e["url"] == url for e in entries):
-            continue
-        
-        print(f"  ➕ Procesando URL de texto válida: {url}")
-        
+
+        print(f"  ➕ Procesando URL de texto válida: {href}")
         entries.append({
             "time": "",
             "match": "Evento Desconocido",
@@ -382,10 +333,11 @@ def parse_html_for_streams(html_content: str):
             "lang_code": "XX",
             "country": "Internacional",
             "channel": f"Stream {len(entries) + 1}",
-            "url": url,
+            "url": href,
             "tvg_id": f"stream{len(entries) + 1}.XX",
         })
-    
+        seen_urls.add(href)
+
     print(f"  ✅ Total de streams únicos encontrados: {len(entries)}")
     return entries
 
@@ -505,7 +457,9 @@ def main():
                 "Sec-Fetch-Mode": "navigate",
                 "Sec-Fetch-Site": "none",
                 "Sec-Fetch-User": "?1",
-                "Upgrade-Insecure-Requests": "1"
+                "Upgrade-Insecure-Requests": "1",
+                "Referer": BASE_URL,
+                "Origin": BASE_URL,
             },
             # Deshabilitar algunas características que pueden delatar automatización
             permissions=["geolocation"],
