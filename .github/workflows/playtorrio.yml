@@ -1,9 +1,9 @@
 name: Actualizar PlayTorrio Eventos Deportivos
 
 on:
-  schedule:
-    # Ejecutar cada hora
-    - cron: '0 * * * *'
+  # schedule:
+  #   # Ejecutar cada hora
+  #   - cron: '0 * * * *'
   workflow_dispatch:  # Permitir ejecución manual
 
 permissions:
