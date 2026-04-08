@@ -1,55 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-04-08 17:00</datetime>
-    <league>Copa Sudamericana</league>
-    <teams>Deportivo Riestra vs Palestino</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>34067-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>34067-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>34067-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-08 13:00</datetime>
-    <league>Pro League</league>
-    <teams>Al Hilal vs Al Kholood</teams>
-    <channels>
-      <channel>
-        <channel_name>FOX Deportes</channel_name>
-        <channel_id>34084-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Deportes | OP2</channel_name>
-        <channel_id>34084-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Deportes | OP3</channel_name>
-        <channel_id>34084-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWZveGRlcG9ydGVz</url>
-      </channel>
-      <channel>
-        <channel_name>Fox Sports 2 USA</channel_name>
-        <channel_id>34084-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hzcG9ydHMyX3VzYQ==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-08 20:30</datetime>
     <league>NBA</league>
     <teams>San Antonio Spurs vs Portland Trail Blazers</teams>
@@ -244,24 +195,24 @@
     <teams>Barcelona vs Atlético Madrid</teams>
     <channels>
       <channel>
-        <channel_name>ESPN +</channel_name>
+        <channel_name>TWO Live</channel_name>
         <channel_id>34061-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL21wZC9kcm0ucGhwP3VybD1hSFIwY0hNNkx5OWtNM0k0Y0dZeGRUWTBhbk52WXk1amJHOTFaR1p5YjI1MExtNWxkQzl2ZFhRdmRqRXZaV1psTWpNNU5tWXpaREprTkRrMU5UbGxaR0k1T1RKak1UUTVNRGxsTkRJdmFXNWtaWGd2YVc1a1pYZ3ViVE4xT0E9PSZrPU5tTTBaV1l4TlRSa1pqSm1NV013Tnpjd05HWTBabVpoWlRRd01EVmlaVFk2TWprMFpUQmhNamRsTnpaak5ETmhaV0l4Tm1NeVlqY3habU15TURGalptST0=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN +</channel_name>
+        <channel_id>34061-2</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjE=</url>
       </channel>
       <channel>
-        <channel_name>TWO Live</channel_name>
-        <channel_id>34061-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL21wZC9kcm0ucGhwP3VybD1hSFIwY0hNNkx5OWtNM0k0Y0dZeGRUWTBhbk52WXk1amJHOTFaR1p5YjI1MExtNWxkQzl2ZFhRdmRqRXZaV1psTWpNNU5tWXpaREprTkRrMU5UbGxaR0k1T1RKak1UUTVNRGxsTkRJdmFXNWtaWGd2YVc1a1pYZ3ViVE4xT0E9PSZrPU5tTTBaV1l4TlRSa1pqSm1NV013Tnpjd05HWTBabVpoWlRRd01EVmlaVFk2TWprMFpUQmhNamRsTnpaak5ETmhaV0l4Tm1NeVlqY3habU15TURGalptST0=</url>
+        <channel_name>ESPN</channel_name>
+        <channel_id>34061-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
       </channel>
       <channel>
         <channel_name>Eventos</channel_name>
-        <channel_id>34061-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL21wZC9kcm0ucGhwP3VybD1hSFIwY0hNNkx5OWtNM0k0Y0dZeGRUWTBhbk52WXk1amJHOTFaR1p5YjI1MExtNWxkQzl2ZFhRdmRqRXZaV1psTWpNNU5tWXpaREprTkRrMU5UbGxaR0k1T1RKak1UUTVNRGxsTkRJdmFXNWtaWGd2YVc1a1pYZ3ViVE4xT0E9PSZrPU5tTTBaV1l4TlRSa1pqSm1NV013Tnpjd05HWTBabVpoWlRRd01EVmlaVFk2TWprMFpUQmhNamRsTnpaak5ETmhaV0l4Tm1NeVlqY3habU15TURGalptST0=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN</channel_name>
         <channel_id>34061-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL21wZC9kcm0ucGhwP3VybD1hSFIwY0hNNkx5OWtNM0k0Y0dZeGRUWTBhbk52WXk1amJHOTFaR1p5YjI1MExtNWxkQzl2ZFhRdmRqRXZaV1psTWpNNU5tWXpaREprTkRrMU5UbGxaR0k1T1RKak1UUTVNRGxsTkRJdmFXNWtaWGd2YVc1a1pYZ3ViVE4xT0E9PSZrPU5tTTBaV1l4TlRSa1pqSm1NV013Tnpjd05HWTBabVpoWlRRd01EVmlaVFk2TWprMFpUQmhNamRsTnpaak5ETmhaV0l4Tm1NeVlqY3habU15TURGalptST0=</url>
       </channel>
       <channel>
         <channel_name>Disney+</channel_name>
@@ -287,6 +238,38 @@
         <channel_name>Univision USA</channel_name>
         <channel_id>34061-9</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT11bml2aXNpb24=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-08 17:00</datetime>
+    <league>Copa Sudamericana</league>
+    <teams>Deportivo Riestra vs Palestino</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 2</channel_name>
+        <channel_id>34067-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34067-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP2</channel_name>
+        <channel_id>34067-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP3</channel_name>
+        <channel_id>34067-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+      <channel>
+        <channel_name>beIN Sports XTRA Ñ</channel_name>
+        <channel_id>34067-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1iZWluc3BvcnRfeHRyYV9lc3Bhbm9s</url>
       </channel>
     </channels>
   </event>
@@ -611,18 +594,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-08 17:00</datetime>
-    <league>Copa Sudamericana</league>
-    <teams>Deportivo Recoleta vs San Lorenzo</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34068-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk1</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-08 19:00</datetime>
     <league>Copa Libertadores</league>
     <teams>Medellín vs Estudiantes</teams>
@@ -663,6 +634,28 @@
         <channel_name>Disney+</channel_name>
         <channel_id>34070-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk5</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-08 17:00</datetime>
+    <league>Copa Sudamericana</league>
+    <teams>Deportivo Recoleta vs San Lorenzo</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 5</channel_name>
+        <channel_id>34068-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNQ==</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34068-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk1</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 5 | OP2</channel_name>
+        <channel_id>34068-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNQ==</url>
       </channel>
     </channels>
   </event>
