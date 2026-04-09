@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-04-09 22:35:11" total="38">
+<eventos generado="2026-04-09 23:36:08" total="49">
   <evento id="1">
     <nombre>Universidad Central –  Libertad</nombre>
     <deporte>Fútbol</deporte>
@@ -253,7 +253,7 @@ player/live.php?id=253825&amp;w=700&amp;h=480</url>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. NBB</competicion>
     <fecha>9 de abril</fecha>
-    <hora>31:38</hora>
+    <hora>57:83</hora>
     <url>https://livetv.sx/es/eventinfo/361511826_botafogo_minas/</url>
     <datetime_iso>2026-04-09T00:00:00</datetime_iso>
     <streams total="3">
@@ -278,42 +278,31 @@ player/live.php?id=253825&amp;w=700&amp;h=480</url>
     </streams>
   </evento>
   <evento id="9">
-    <nombre>Bor Artnak –  Rodrigo Pacheco Mendez</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Ciudad de México</competicion>
-    <fecha>9 de abril</fecha>
-    <hora>00:05</hora>
-    <url>https://livetv.sx/es/eventinfo/365654472_bor_artnak_rodrigo_pacheco_mendez/</url>
-    <datetime_iso>2026-04-09T00:05:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://wikisport.club/fsl/fsl.php?id=bet12615659</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993543&amp;lang=es&amp;eid=365654472&amp;lid=2993543&amp;ci=5701&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="10">
     <nombre>Franca –  Pato</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. NBB</competicion>
     <fecha>9 de abril</fecha>
-    <hora>00:30</hora>
+    <hora>58:30</hora>
     <url>https://livetv.sx/es/eventinfo/361511827_franca_pato/</url>
-    <datetime_iso>2026-04-09T00:30:00</datetime_iso>
+    <datetime_iso>2026-04-09T00:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="11">
+  <evento id="10">
     <nombre>Unifacisa –  Caxias do Sul</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. NBB</competicion>
     <fecha>9 de abril</fecha>
-    <hora>00:30</hora>
+    <hora>32:35</hora>
     <url>https://livetv.sx/es/eventinfo/361511828_unifacisa_caxias_do_sul/</url>
-    <datetime_iso>2026-04-09T00:30:00</datetime_iso>
-    <streams total="1">
+    <datetime_iso>2026-04-09T00:00:00</datetime_iso>
+    <streams total="2">
       <stream id="1">
+        <url>https://www.youtube.com/embed/4WT2sutYsmg?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=youtube&amp;c=4WT2sutYsmg&amp;lang=es&amp;eid=361511828&amp;lid=2993987&amp;ci=2373&amp;si=3</enlace_original>
+      </stream>
+      <stream id="2">
         <url>https://viewembed.ru/channel/bet12435812</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
         <idioma_nombre>Bandera #0</idioma_nombre>
@@ -321,20 +310,37 @@ player/live.php?id=253825&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="12">
-    <nombre>Rodrigues / Couto Loureiro –  Alvarez Varona / Diez</nombre>
+  <evento id="11">
+    <nombre>Corinthians –  Paulistano</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Doubles</competicion>
+    <competicion>Brasil. NBB</competicion>
     <fecha>9 de abril</fecha>
-    <hora>00:30</hora>
-    <url>https://livetv.sx/es/eventinfo/365821462_rodrigues__couto_loureiro_alvarez_varona__diez/</url>
-    <datetime_iso>2026-04-09T00:30:00</datetime_iso>
+    <hora>29:28</hora>
+    <url>https://livetv.sx/es/eventinfo/361511829_corinthians_paulistano/</url>
+    <datetime_iso>2026-04-09T00:00:00</datetime_iso>
     <streams total="1">
       <stream id="1">
-        <url>https://wikisport.club/fsl/fsl.php?id=bet12626013</url>
+        <url>https://viewembed.ru/channel/bet12435831</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
         <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993958&amp;lang=es&amp;eid=365821462&amp;lid=2993958&amp;ci=4880&amp;si=4</enlace_original>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993989&amp;lang=es&amp;eid=361511829&amp;lid=2993989&amp;ci=2373&amp;si=3</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="12">
+    <nombre>Bor Artnak –  Rodrigo Pacheco Mendez</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Ciudad de México</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>00:10</hora>
+    <url>https://livetv.sx/es/eventinfo/365654472_bor_artnak_rodrigo_pacheco_mendez/</url>
+    <datetime_iso>2026-04-09T00:10:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://wikisport.club/fsl/fsl.php?id=bet12615659</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993543&amp;lang=es&amp;eid=365654472&amp;lid=2993543&amp;ci=5701&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
@@ -346,44 +352,647 @@ player/live.php?id=253825&amp;w=700&amp;h=480</url>
     <hora>00:45</hora>
     <url>https://livetv.sx/es/eventinfo/361510037_ny_islanders_toronto/</url>
     <datetime_iso>2026-04-09T00:45:00</datetime_iso>
-    <streams total="4">
+    <streams total="8">
       <stream id="1">
-        <url>https://flixxlive.pro/live/ch11_english.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2678320&amp;lang=es&amp;eid=361510037&amp;lid=2678320&amp;ci=2&amp;si=2</enlace_original>
-      </stream>
-      <stream id="2">
         <url>https://flixxlive.pro/live/nhl1_english.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
         <idioma_nombre>Francés (Francia)</idioma_nombre>
         <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2737308&amp;lang=es&amp;eid=361510037&amp;lid=2737308&amp;ci=2&amp;si=2</enlace_original>
       </stream>
+      <stream id="2">
+        <url>https://flixxlive.pro/live/ch11_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2678320&amp;lang=es&amp;eid=361510037&amp;lid=2678320&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
       <stream id="3">
+        <url>https://streams.center/embed/ch50.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2991064&amp;lang=es&amp;eid=361510037&amp;lid=2991064&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://viewembed.ru/channel/TSN4[Canada]</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993984&amp;lang=es&amp;eid=361510037&amp;lid=2993984&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://dabac.link/ch?id=7</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993417&amp;lang=es&amp;eid=361510037&amp;lid=2993417&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="6">
         <url>https://shd247.live/frame022.html</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
         <idioma_nombre>Francés (Francia)</idioma_nombre>
         <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993565&amp;lang=es&amp;eid=361510037&amp;lid=2993565&amp;ci=2&amp;si=2</enlace_original>
       </stream>
-      <stream id="4">
-        <url>https://upstor.link/ch.php?id=7</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2983686&amp;lang=es&amp;eid=361510037&amp;lid=2983686&amp;ci=2&amp;si=2</enlace_original>
+      <stream id="7">
+        <url>https://zenoz.link/ch?id=7</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993416&amp;lang=es&amp;eid=361510037&amp;lid=2993416&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://embedsports.top/embed/echo/new-york-islanders-vs-toronto-maple-leafs-hockey-416868/1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993985&amp;lang=es&amp;eid=361510037&amp;lid=2993985&amp;ci=2&amp;si=2</enlace_original>
       </stream>
     </streams>
   </evento>
   <evento id="14">
-    <nombre>WTA. Linz</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Linz</competicion>
+    <nombre>Buffalo –  Columbus</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
     <fecha>9 de abril</fecha>
-    <hora>14:10</hora>
-    <url>https://livetv.sx/es/eventinfo/364066368_wta_linz/</url>
-    <datetime_iso>2026-04-09T14:10:00</datetime_iso>
-    <streams total="0" />
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/361510038_buffalo_columbus/</url>
+    <datetime_iso>2026-04-09T01:00:00</datetime_iso>
+    <streams total="8">
+      <stream id="1">
+        <url>https://flixxlive.pro/live/nhl2_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2848064&amp;lang=es&amp;eid=361510038&amp;lid=2848064&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://flixxlive.pro/live/ch12_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2686656&amp;lang=es&amp;eid=361510038&amp;lid=2686656&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://viewembed.ru/channel/SportsnetOntario[Canada]</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993995&amp;lang=es&amp;eid=361510038&amp;lid=2993995&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://zenoz.link/ch?id=78</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2992763&amp;lang=es&amp;eid=361510038&amp;lid=2992763&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://viewembed.ru/channel/SportsnetPacific[Canada]</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993990&amp;lang=es&amp;eid=361510038&amp;lid=2993990&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://embedsports.me/nhl/buffalo-sabres-vs-columbus-blue-jackets-stream-2</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993992&amp;lang=es&amp;eid=361510038&amp;lid=2993992&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://dabac.link/ch?id=8</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993425&amp;lang=es&amp;eid=361510038&amp;lid=2993425&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://dlstreams.top/stream/stream-899.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993993&amp;lang=es&amp;eid=361510038&amp;lid=2993993&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="15">
+    <nombre>Ottawa –  Florida</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/361510039_ottawa_florida/</url>
+    <datetime_iso>2026-04-09T01:00:00</datetime_iso>
+    <streams total="8">
+      <stream id="1">
+        <url>https://flixxlive.pro/live/nhl3_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2848065&amp;lang=es&amp;eid=361510039&amp;lid=2848065&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://flixxlive.pro/live/ch13_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2710049&amp;lang=es&amp;eid=361510039&amp;lid=2710049&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://streams.center/embed/ch53.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994013&amp;lang=es&amp;eid=361510039&amp;lid=2994013&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://viewembed.ru/channel/TSN5[Canada]</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2990476&amp;lang=es&amp;eid=361510039&amp;lid=2990476&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://embedsports.me/nhl/ottawa-senators-vs-florida-panthers-stream-2</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994004&amp;lang=es&amp;eid=361510039&amp;lid=2994004&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://dlstreams.top/stream/stream-809.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994009&amp;lang=es&amp;eid=361510039&amp;lid=2994009&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://dlstreams.top/stream/stream-115.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994005&amp;lang=es&amp;eid=361510039&amp;lid=2994005&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://embedhd.org/source/fetch.php?hd=239</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994010&amp;lang=es&amp;eid=361510039&amp;lid=2994010&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="16">
+    <nombre>Montreal –  Tampa Bay</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/361510040_montreal_tampa_bay/</url>
+    <datetime_iso>2026-04-09T01:00:00</datetime_iso>
+    <streams total="8">
+      <stream id="1">
+        <url>https://emb.apl398.me/
+player/live.php?id=253615&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=alieztv&amp;c=253615&amp;lang=es&amp;eid=361510040&amp;lid=2991751&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl398.me/
+player/live.php?id=242315&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=alieztv&amp;c=242315&amp;lang=es&amp;eid=361510040&amp;lid=2956102&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl398.me/
+player/live.php?id=242325&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=alieztv&amp;c=242325&amp;lang=es&amp;eid=361510040&amp;lid=2812095&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://flixxlive.pro/live/nhl4_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2848066&amp;lang=es&amp;eid=361510040&amp;lid=2848066&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://flixxlive.pro/live/ch14_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2710047&amp;lang=es&amp;eid=361510040&amp;lid=2710047&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://wikisport.club/strm/3.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2992773&amp;lang=es&amp;eid=361510040&amp;lid=2992773&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://viewembed.ru/channel/PremierSports2[UK]</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2965964&amp;lang=es&amp;eid=361510040&amp;lid=2965964&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://zenoz.link/ch?id=9</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993996&amp;lang=es&amp;eid=361510040&amp;lid=2993996&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="17">
+    <nombre>Detroit –  Filadelfia</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/361510041_detroit_filadelfia/</url>
+    <datetime_iso>2026-04-09T01:00:00</datetime_iso>
+    <streams total="8">
+      <stream id="1">
+        <url>https://flixxlive.pro/live/ch15_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2710045&amp;lang=es&amp;eid=361510041&amp;lid=2710045&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://flixxlive.pro/live/nhl5_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2850947&amp;lang=es&amp;eid=361510041&amp;lid=2850947&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://dlstreams.top/stream/stream-891.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994015&amp;lang=es&amp;eid=361510041&amp;lid=2994015&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://embedsports.me/nhl/detroit-red-wings-vs-philadelphia-flyers-stream-1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994020&amp;lang=es&amp;eid=361510041&amp;lid=2994020&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://dabac.link/ch?id=31</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994014&amp;lang=es&amp;eid=361510041&amp;lid=2994014&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://embedsports.me/nhl/detroit-red-wings-vs-philadelphia-flyers-stream-2</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994019&amp;lang=es&amp;eid=361510041&amp;lid=2994019&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://zenoz.link/ch?id=76</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2991966&amp;lang=es&amp;eid=361510041&amp;lid=2991966&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://embedsports.me/nhl/detroit-red-wings-vs-philadelphia-flyers-stream-3</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994018&amp;lang=es&amp;eid=361510041&amp;lid=2994018&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="18">
+    <nombre>New Jersey –  Pittsburgh</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/361510042_new_jersey_pittsburgh/</url>
+    <datetime_iso>2026-04-09T01:00:00</datetime_iso>
+    <streams total="6">
+      <stream id="1">
+        <url>https://flixxlive.pro/live/ch16_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2710166&amp;lang=es&amp;eid=361510042&amp;lid=2710166&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://flixxlive.pro/live/nhl6_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2850946&amp;lang=es&amp;eid=361510042&amp;lid=2850946&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://streams.center/embed/ch55.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994026&amp;lang=es&amp;eid=361510042&amp;lid=2994026&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://zenoz.link/ch?id=32</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994025&amp;lang=es&amp;eid=361510042&amp;lid=2994025&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://dabac.link/ch?id=32</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994024&amp;lang=es&amp;eid=361510042&amp;lid=2994024&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://dlstreams.top/stream/stream-922.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994023&amp;lang=es&amp;eid=361510042&amp;lid=2994023&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="19">
+    <nombre>Bridgeport –  Wilkes-Barre/Scranton</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>EUA. AHL</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/361510060_bridgeport_wilkes_barrescranton/</url>
+    <datetime_iso>2026-04-09T01:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://olimp-video.com/api/broadcast/sportboomcom/14456318</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2994027&amp;lang=es&amp;eid=361510060&amp;lid=2994027&amp;ci=328&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="20">
+    <nombre>Minas –  Carlos Barbosa</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Brasil. LNF</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/365263570_minas_carlos_barbosa/</url>
+    <datetime_iso>2026-04-09T01:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/zDIcxmjAm1I?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=youtube&amp;c=zDIcxmjAm1I&amp;lang=es&amp;eid=365263570&amp;lid=2991837&amp;ci=625&amp;si=12</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="21">
+    <nombre>Barrie Colts –  Ottawa 67</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Canadá. OHL</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/366195753_barrie_colts_ottawa_67/</url>
+    <datetime_iso>2026-04-09T01:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/BTGsETS0mlA?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=youtube&amp;c=BTGsETS0mlA&amp;lang=es&amp;eid=366195753&amp;lid=2994028&amp;ci=1486&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="22">
+    <nombre>Chile U17 –  Paraguay U17</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato Sudamericano Sub-17</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/365222840_chile_u17_paraguay_u17/</url>
+    <datetime_iso>2026-04-09T01:00:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://elcanaldeportivo.com/directvsports.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2900408&amp;lang=es&amp;eid=365222840&amp;lid=2900408&amp;ci=1773&amp;si=1</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.youtube.com/embed/kB0jP9MP4Co?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=youtube&amp;c=kB0jP9MP4Co&amp;lang=es&amp;eid=365222840&amp;lid=2992475&amp;ci=1773&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="23">
+    <nombre>Greenville Swamp –  Bloomington Bison</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>EUA. ECHL</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:05</hora>
+    <url>https://livetv.sx/es/eventinfo/365715938_greenville_swamp_bloomington_bison/</url>
+    <datetime_iso>2026-04-09T01:05:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/QBlb_MhkOLo?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=youtube&amp;c=QBlb_MhkOLo&amp;lang=es&amp;eid=365715938&amp;lid=2993988&amp;ci=1488&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="24">
+    <nombre>NY Mets –  Arizona</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:10</hora>
+    <url>https://livetv.sx/es/eventinfo/361510313_ny_mets_arizona/</url>
+    <datetime_iso>2026-04-09T01:10:00</datetime_iso>
+    <streams total="6">
+      <stream id="1">
+        <url>https://emb.apl398.me/
+player/live.php?id=253609&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=alieztv&amp;c=253609&amp;lang=es&amp;eid=361510313&amp;lid=2991282&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://viewembed.ru/channel/scfw_newyorkmets</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993972&amp;lang=es&amp;eid=361510313&amp;lid=2993972&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://shd247.live/frame015.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/10.png</idioma>
+        <idioma_nombre>Ruso</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993556&amp;lang=es&amp;eid=361510313&amp;lid=2993556&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://wikisport.club/mlb/dbacks.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993376&amp;lang=es&amp;eid=361510313&amp;lid=2993376&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://wikisport.club/mlb/mets.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2992734&amp;lang=es&amp;eid=361510313&amp;lid=2992734&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://viewembed.ru/channel/bet12194154</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993970&amp;lang=es&amp;eid=361510313&amp;lid=2993970&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="25">
+    <nombre>Rodrigues / Couto Loureiro –  Alvarez Varona / Diez</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Doubles</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:10</hora>
+    <url>https://livetv.sx/es/eventinfo/365821462_rodrigues__couto_loureiro_alvarez_varona__diez/</url>
+    <datetime_iso>2026-04-09T01:10:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://wikisport.club/fsl/fsl.php?id=bet12626013</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993958&amp;lang=es&amp;eid=365821462&amp;lid=2993958&amp;ci=4880&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="26">
+    <nombre>Loof / Milavsky –  Magadan / Hernandez</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Doubles</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:10</hora>
+    <url>https://livetv.sx/es/eventinfo/365884022_loof__milavsky_magadan__hernandez/</url>
+    <datetime_iso>2026-04-09T01:10:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://wikisport.club/fsl/fsl.php?id=bet12628425</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993946&amp;lang=es&amp;eid=365884022&amp;lid=2993946&amp;ci=5705&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="27">
+    <nombre>CD Choloma –  Real España</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Honduras. Liga Nacional</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:15</hora>
+    <url>https://livetv.sx/es/eventinfo/361512133_cd_choloma_real_espa__a/</url>
+    <datetime_iso>2026-04-09T01:15:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="28">
+    <nombre>Nueva York –  Boston</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:30</hora>
+    <url>https://livetv.sx/es/eventinfo/361510134_nueva_york_boston/</url>
+    <datetime_iso>2026-04-09T01:30:00</datetime_iso>
+    <streams total="8">
+      <stream id="1">
+        <url>https://emb.apl398.me/
+player/live.php?id=242327&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=alieztv&amp;c=242327&amp;lang=es&amp;eid=361510134&amp;lid=2982594&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl398.me/
+player/live.php?id=242328&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=alieztv&amp;c=242328&amp;lang=es&amp;eid=361510134&amp;lid=2968715&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://flixxlive.pro/live/ch3_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2661173&amp;lang=es&amp;eid=361510134&amp;lid=2661173&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://flixxlive.pro/live/nba3_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2661172&amp;lang=es&amp;eid=361510134&amp;lid=2661172&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://wikisport.club/strm/nba4.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2992000&amp;lang=es&amp;eid=361510134&amp;lid=2992000&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://shd247.live/frame026.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993568&amp;lang=es&amp;eid=361510134&amp;lid=2993568&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://thepurples.site/channel.html?id=5</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2991892&amp;lang=es&amp;eid=361510134&amp;lid=2991892&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://viewembed.ru/channel/bet11874311</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993978&amp;lang=es&amp;eid=361510134&amp;lid=2993978&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="29">
+    <nombre>Brooklyn Nets –  Indiana</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>01:30</hora>
+    <url>https://livetv.sx/es/eventinfo/361510135_brooklyn_nets_indiana/</url>
+    <datetime_iso>2026-04-09T01:30:00</datetime_iso>
+    <streams total="8">
+      <stream id="1">
+        <url>https://flixxlive.pro/live/nba4_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2661174&amp;lang=es&amp;eid=361510135&amp;lid=2661174&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://flixxlive.pro/live/ch4_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2661175&amp;lang=es&amp;eid=361510135&amp;lid=2661175&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://wikisport.club/strm/nba3.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2991997&amp;lang=es&amp;eid=361510135&amp;lid=2991997&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://upstor.link/ch.php?id=3</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2983681&amp;lang=es&amp;eid=361510135&amp;lid=2983681&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://viewembed.ru/channel/bet11874251</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993977&amp;lang=es&amp;eid=361510135&amp;lid=2993977&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://shd247.live/frame024.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993567&amp;lang=es&amp;eid=361510135&amp;lid=2993567&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://wikisport.club/nba0/nba3.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993982&amp;lang=es&amp;eid=361510135&amp;lid=2993982&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://thepurples.site/channel.html?id=4</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2991890&amp;lang=es&amp;eid=361510135&amp;lid=2991890&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="30">
     <nombre>The Masters</nombre>
     <deporte>Fútbol</deporte>
     <competicion>PGA Tour</competicion>
@@ -449,7 +1058,54 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="16">
+  <evento id="31">
+    <nombre>Toronto –  Miami</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>16:18</hora>
+    <url>https://livetv.sx/es/eventinfo/361510133_toronto_miami/</url>
+    <datetime_iso>2026-04-09T16:18:00</datetime_iso>
+    <streams total="6">
+      <stream id="1">
+        <url>https://flixxlive.pro/live/nba2_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2661171&amp;lang=es&amp;eid=361510133&amp;lid=2661171&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://flixxlive.pro/live/ch2_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2661170&amp;lang=es&amp;eid=361510133&amp;lid=2661170&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://wikisport.club/nba0/nba1.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2990520&amp;lang=es&amp;eid=361510133&amp;lid=2990520&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://thepurples.site/channel.html?id=2</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2991888&amp;lang=es&amp;eid=361510133&amp;lid=2991888&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://viewembed.ru/channel/bet11874338</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993975&amp;lang=es&amp;eid=361510133&amp;lid=2993975&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://wikisport.club/strm/nba1.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2986403&amp;lang=es&amp;eid=361510133&amp;lid=2986403&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="32">
     <nombre>World Series of Poker Europa</nombre>
     <deporte>Fútbol</deporte>
     <competicion>WSOP</competicion>
@@ -466,7 +1122,7 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="17">
+  <evento id="33">
     <nombre>ATP Challenger. Campinas</nombre>
     <deporte>Fútbol</deporte>
     <competicion>ATP Challenger. Campinas</competicion>
@@ -474,12 +1130,12 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
     <hora>17:00</hora>
     <url>https://livetv.sx/es/eventinfo/364471249_atp_challenger_campinas/</url>
     <datetime_iso>2026-04-09T17:00:00</datetime_iso>
-    <streams total="4">
+    <streams total="3">
       <stream id="1">
-        <url>https://wikisport.club/fsl/fsl.php?id=bet12614057</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993537&amp;lang=es&amp;eid=364471249&amp;lid=2993537&amp;ci=3491&amp;si=4</enlace_original>
+        <url>https://wikisport.club/fsl/fsl.php?id=bet12626013</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993958&amp;lang=es&amp;eid=364471249&amp;lid=2993958&amp;ci=3491&amp;si=4</enlace_original>
       </stream>
       <stream id="2">
         <url>https://wikisport.club/fsl/fsl.php?id=bet12629242</url>
@@ -493,15 +1149,9 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
         <idioma_nombre>Polaco</idioma_nombre>
         <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993539&amp;lang=es&amp;eid=364471249&amp;lid=2993539&amp;ci=3491&amp;si=4</enlace_original>
       </stream>
-      <stream id="4">
-        <url>https://wikisport.club/fsl/fsl.php?id=bet12611927</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993538&amp;lang=es&amp;eid=364471249&amp;lid=2993538&amp;ci=3491&amp;si=4</enlace_original>
-      </stream>
     </streams>
   </evento>
-  <evento id="18">
+  <evento id="34">
     <nombre>ATP Challenger. Sarasota</nombre>
     <deporte>Fútbol</deporte>
     <competicion>ATP Challenger. Sarasota</competicion>
@@ -542,7 +1192,60 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="19">
+  <evento id="35">
+    <nombre>Washington –  Chicago</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>9 de abril</fecha>
+    <hora>18:26</hora>
+    <url>https://livetv.sx/es/eventinfo/361510132_washington_chicago/</url>
+    <datetime_iso>2026-04-09T18:26:00</datetime_iso>
+    <streams total="7">
+      <stream id="1">
+        <url>https://flixxlive.pro/live/ch1_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2661169&amp;lang=es&amp;eid=361510132&amp;lid=2661169&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://flixxlive.pro/live/nba1_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2661168&amp;lang=es&amp;eid=361510132&amp;lid=2661168&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://wikisport.club/strm/nba2.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2991994&amp;lang=es&amp;eid=361510132&amp;lid=2991994&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://thepurples.site/channel.html?id=3</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2991889&amp;lang=es&amp;eid=361510132&amp;lid=2991889&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://viewembed.ru/channel/bet11874384</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993976&amp;lang=es&amp;eid=361510132&amp;lid=2993976&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://wikisport.club/nba0/nba2.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993981&amp;lang=es&amp;eid=361510132&amp;lid=2993981&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://shd247.live/frame021.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993564&amp;lang=es&amp;eid=361510132&amp;lid=2993564&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="36">
     <nombre>ATP Challenger. Ciudad de México</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ciudad de México</competicion>
@@ -583,7 +1286,7 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="20">
+  <evento id="37">
     <nombre>ATP Challenger. Ciudad de México</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Ciudad de México</competicion>
@@ -624,76 +1327,7 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="21">
-    <nombre>Duje Ajdukovic –  Darwin Blanch</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP Challenger. Sarasota</competicion>
-    <fecha>9 de abril</fecha>
-    <hora>22:15</hora>
-    <url>https://livetv.sx/es/eventinfo/365768026_duje_ajdukovic_darwin_blanch/</url>
-    <datetime_iso>2026-04-09T22:15:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://wikisport.club/fsl/fsl.php?id=bet12623763</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993534&amp;lang=es&amp;eid=365768026&amp;lid=2993534&amp;ci=5731&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="22">
-    <nombre>Duje Ajdukovic – Darwin Blanch</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Sarasota</competicion>
-    <fecha>9 de abril</fecha>
-    <hora>22:15</hora>
-    <url>https://livetv.sx/es/eventinfo/365768026__/</url>
-    <datetime_iso>2026-04-09T22:15:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://wikisport.club/fsl/fsl.php?id=bet12623763</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993534&amp;lang=es&amp;eid=365768026&amp;lid=2993534&amp;ci=5731&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="23">
-    <nombre>North Dakota Fighting Hawks –  Wisconsin Badgers</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>NCAA</competicion>
-    <fecha>9 de abril</fecha>
-    <hora>22:59</hora>
-    <url>https://livetv.sx/es/eventinfo/365947939_north_dakota_fighting_hawks_wisconsin_badgers/</url>
-    <datetime_iso>2026-04-09T22:59:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://wikisport.club/embed/espn2.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993949&amp;lang=es&amp;eid=365947939&amp;lid=2993949&amp;ci=1030&amp;si=2</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://dlstreams.top/stream/stream-45.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993952&amp;lang=es&amp;eid=365947939&amp;lid=2993952&amp;ci=1030&amp;si=2</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://viewembed.ru/channel/ESPN2[USA]</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993951&amp;lang=es&amp;eid=365947939&amp;lid=2993951&amp;ci=1030&amp;si=2</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://wikisport.club/ch/122.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993950&amp;lang=es&amp;eid=365947939&amp;lid=2993950&amp;ci=1030&amp;si=2</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="24">
+  <evento id="38">
     <nombre>North Dakota Fighting Hawks – Wisconsin Badgers</nombre>
     <deporte>Hockey</deporte>
     <competicion>NCAA</competicion>
@@ -701,34 +1335,9 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
     <hora>22:59</hora>
     <url>https://livetv.sx/es/eventinfo/365947939__/</url>
     <datetime_iso>2026-04-09T22:59:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://wikisport.club/embed/espn2.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993949&amp;lang=es&amp;eid=365947939&amp;lid=2993949&amp;ci=1030&amp;si=2</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://dlstreams.top/stream/stream-45.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993952&amp;lang=es&amp;eid=365947939&amp;lid=2993952&amp;ci=1030&amp;si=2</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://viewembed.ru/channel/ESPN2[USA]</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993951&amp;lang=es&amp;eid=365947939&amp;lid=2993951&amp;ci=1030&amp;si=2</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://wikisport.club/ch/122.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993950&amp;lang=es&amp;eid=365947939&amp;lid=2993950&amp;ci=1030&amp;si=2</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="25">
+  <evento id="39">
     <nombre>Juticalpa –  Olancho</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Honduras. Liga Nacional</competicion>
@@ -738,7 +1347,7 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-04-09T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="26">
+  <evento id="40">
     <nombre>Unión Magdalena –  Envigado</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Colombia. Primera B</competicion>
@@ -746,16 +1355,9 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
     <hora>23:00</hora>
     <url>https://livetv.sx/es/eventinfo/336910512_uni__n_magdalena_envigado/</url>
     <datetime_iso>2026-04-09T23:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://elcanaldeportivo.com/winmas.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993936&amp;lang=es&amp;eid=336910512&amp;lid=2993936&amp;ci=896&amp;si=1</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="27">
+  <evento id="41">
     <nombre>Export Sebaco –  Real Madriz</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Nicaragua. Liga Primera</competicion>
@@ -763,60 +1365,9 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
     <hora>23:00</hora>
     <url>https://livetv.sx/es/eventinfo/365727940_export_sebaco_real_madriz/</url>
     <datetime_iso>2026-04-09T23:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/CKDWNnzoR8U?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=youtube&amp;c=CKDWNnzoR8U&amp;lang=es&amp;eid=365727940&amp;lid=2993935&amp;ci=2377&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="28">
-    <nombre>Unión Magdalena – Envigado</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Colombia. Primera B</competicion>
-    <fecha>9 de abril</fecha>
-    <hora>23:00</hora>
-    <url>https://livetv.sx/es/eventinfo/336910512__/</url>
-    <datetime_iso>2026-04-09T23:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://elcanaldeportivo.com/winmas.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer.php?t=ifr&amp;c=2993936&amp;lang=es&amp;eid=336910512&amp;lid=2993936&amp;ci=896&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="29">
-    <nombre>Juticalpa – Olancho</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Honduras. Liga Nacional</competicion>
-    <fecha>9 de abril</fecha>
-    <hora>23:00</hora>
-    <url>https://livetv.sx/es/eventinfo/361512132__/</url>
-    <datetime_iso>2026-04-09T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="30">
-    <nombre>Export Sebaco – Real Madriz</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Nicaragua. Liga Primera</competicion>
-    <fecha>9 de abril</fecha>
-    <hora>23:00</hora>
-    <url>https://livetv.sx/es/eventinfo/365727940__/</url>
-    <datetime_iso>2026-04-09T23:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/CKDWNnzoR8U?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=youtube&amp;c=CKDWNnzoR8U&amp;lang=es&amp;eid=365727940&amp;lid=2993935&amp;ci=2377&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="31">
+  <evento id="42">
     <nombre>Johan Nikles –  Gustavo Heide</nombre>
     <deporte>Fútbol</deporte>
     <competicion>ATP Challenger. Campinas</competicion>
@@ -833,7 +1384,7 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="32">
+  <evento id="43">
     <nombre>Johan Nikles – Gustavo Heide</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Campinas</competicion>
@@ -850,7 +1401,7 @@ player/live.php?id=253766&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="33">
+  <evento id="44">
     <nombre>Uberlandia Monte Carmelo –  Guarulhos</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Superliga</competicion>
@@ -868,7 +1419,7 @@ player/live.php?id=253707&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="34">
+  <evento id="45">
     <nombre>Lammons / Withrow –  Zeballos / Reyes Varela</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Doubles</competicion>
@@ -885,7 +1436,7 @@ player/live.php?id=253707&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="35">
+  <evento id="46">
     <nombre>Yibing Wu –  Kei Nishikori</nombre>
     <deporte>Fútbol</deporte>
     <competicion>ATP Challenger. Sarasota</competicion>
@@ -902,7 +1453,7 @@ player/live.php?id=253707&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="36">
+  <evento id="47">
     <nombre>Yibing Wu – Kei Nishikori</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Sarasota</competicion>
@@ -919,7 +1470,7 @@ player/live.php?id=253707&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="37">
+  <evento id="48">
     <nombre>Lammons / Withrow – Zeballos / Reyes Varela</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Ciudad de México. Doubles</competicion>
@@ -936,7 +1487,7 @@ player/live.php?id=253707&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="38">
+  <evento id="49">
     <nombre>Uberlandia Monte Carmelo – Guarulhos</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Brasil. Superliga</competicion>
@@ -944,14 +1495,6 @@ player/live.php?id=253707&amp;w=700&amp;h=480</url>
     <hora>23:30</hora>
     <url>https://livetv.sx/es/eventinfo/361768083__/</url>
     <datetime_iso>2026-04-09T23:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://emb.apl398.me/
-player/live.php?id=253707&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
-        <idioma_nombre>Inglés</idioma_nombre>
-        <enlace_original>https://cdn.livetv874.me/webplayer2.php?t=alieztv&amp;c=253707&amp;lang=es&amp;eid=361768083&amp;lid=2991572&amp;ci=1008&amp;si=5</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
 </eventos>
