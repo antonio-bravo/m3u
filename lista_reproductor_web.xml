@@ -1,24 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-04-10 19:00</datetime>
-    <league>Liga Profesional</league>
-    <teams>Belgrano vs Aldosivi</teams>
+    <datetime>2026-04-10 18:00</datetime>
+    <league>Sudamericano Sub-17</league>
+    <teams>Argentina vs Brasil</teams>
     <channels>
       <channel>
-        <channel_name>TNT Sports</channel_name>
-        <channel_id>34133-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHM=</url>
+        <channel_name>DSports +</channel_name>
+        <channel_id>34262-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzcGx1cw==</url>
       </channel>
       <channel>
-        <channel_name>TNT Sports | OP2</channel_name>
-        <channel_id>34133-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHM=</url>
-      </channel>
-      <channel>
-        <channel_name>TNT Sports | OP3</channel_name>
-        <channel_id>34133-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHM=</url>
+        <channel_name>DSports + I OP2</channel_name>
+        <channel_id>34262-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzcGx1cw==</url>
       </channel>
     </channels>
   </event>
@@ -58,30 +53,6 @@
         <channel_name>ECDF LigaPro</channel_name>
         <channel_id>34138-2</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lY2RmX2xpZ2Fwcm8=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-10 18:00</datetime>
-    <league>Primera División</league>
-    <teams>Cerro Largo vs Cerro</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34142-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-10 20:00</datetime>
-    <league>Campeonato W de CONCACAF</league>
-    <teams>México vs U.S. Virgin Islands</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34148-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
       </channel>
     </channels>
   </event>
@@ -352,6 +323,67 @@
     </channels>
   </event>
   <event>
+    <datetime>2026-04-10 18:00</datetime>
+    <league>Primera División</league>
+    <teams>Cerro Largo vs Cerro</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34142-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxMw==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-10 19:00</datetime>
+    <league>Liga Profesional</league>
+    <teams>Belgrano vs Aldosivi</teams>
+    <channels>
+      <channel>
+        <channel_name>TNT Sports</channel_name>
+        <channel_id>34133-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>TNT Sports | OP2</channel_name>
+        <channel_id>34133-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>TNT Sports | OP3</channel_name>
+        <channel_id>34133-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>TyC Sports Internacional</channel_name>
+        <channel_id>34133-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10eWNpbnRlcm5hY2lvbmFs</url>
+      </channel>
+      <channel>
+        <channel_name>TyC Sports Internacional | OP2</channel_name>
+        <channel_id>34133-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10eWNpbnRlcm5hY2lvbmFs</url>
+      </channel>
+      <channel>
+        <channel_name>TyC Sports International | OP3</channel_name>
+        <channel_id>34133-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXR5Y2ludGVybmFjaW9uYWw=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-10 20:00</datetime>
+    <league>Campeonato W de CONCACAF</league>
+    <teams>México vs U.S. Virgin Islands</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34148-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxNg==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
     <datetime>2026-04-10 16:15</datetime>
     <league>Primera División</league>
     <teams>2 de Mayo vs Sportivo Ameliano</teams>
@@ -372,18 +404,6 @@
         <channel_name>Disney+</channel_name>
         <channel_id>34145-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXky</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-10 19:00</datetime>
-    <league>Campeonato W de CONCACAF</league>
-    <teams>Jamaica vs Antigua y Barbuda</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34147-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
       </channel>
     </channels>
   </event>
@@ -435,18 +455,6 @@
         <channel_name>Fox Sports 2 USA</channel_name>
         <channel_id>34156-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hzcG9ydHMyX3VzYQ==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-10 16:00</datetime>
-    <league>Segunda División</league>
-    <teams>Paysandu vs Rentistas</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34160-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
       </channel>
     </channels>
   </event>
@@ -633,14 +641,26 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-10 14:05</datetime>
-    <league>Ligue 1</league>
-    <teams>Olympique Marseille vs Metz</teams>
+    <datetime>2026-04-10 16:00</datetime>
+    <league>Segunda División</league>
+    <teams>Paysandu vs Rentistas</teams>
     <channels>
       <channel>
-        <channel_name>BeIN Sports Ñ</channel_name>
-        <channel_id>34132-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1iZWluc3BvcnRlcw==</url>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34160-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxMg==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-10 19:00</datetime>
+    <league>Campeonato W de CONCACAF</league>
+    <teams>Jamaica vs Antigua y Barbuda</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34147-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxNQ==</url>
       </channel>
     </channels>
   </event>
@@ -697,18 +717,6 @@
         <channel_name>Tigo Sports Paraguay</channel_name>
         <channel_id>34141-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjQ=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-10 19:00</datetime>
-    <league>Campeonato W de CONCACAF</league>
-    <teams>Costa Rica vs Islas Caimán</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34146-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
       </channel>
     </channels>
   </event>
@@ -864,6 +872,52 @@
         <channel_name>Disney+</channel_name>
         <channel_id>34129-4</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk3</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-10 15:00</datetime>
+    <league>Sudamericano Sub-17</league>
+    <teams>Venezuela vs Perú</teams>
+    <channels>
+      <channel>
+        <channel_name>DSports +</channel_name>
+        <channel_id>34261-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzcGx1cw==</url>
+      </channel>
+      <channel>
+        <channel_name>DSports + I OP2</channel_name>
+        <channel_id>34261-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzcGx1cw==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-10 14:05</datetime>
+    <league>Ligue 1</league>
+    <teams>Olympique Marseille vs Metz</teams>
+    <channels>
+      <channel>
+        <channel_name>BeIN Sports Ñ</channel_name>
+        <channel_id>34132-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1iZWluc3BvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34132-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxMQ==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-10 19:00</datetime>
+    <league>Campeonato W de CONCACAF</league>
+    <teams>Costa Rica vs Islas Caimán</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34146-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxNA==</url>
       </channel>
     </channels>
   </event>
