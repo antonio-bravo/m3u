@@ -19,6 +19,28 @@
   </event>
   <event>
     <datetime>2026-04-10 19:00</datetime>
+    <league>Serie A</league>
+    <teams>Delfin vs LDU Quito</teams>
+    <channels>
+      <channel>
+        <channel_name>Zapping TV Ecuador</channel_name>
+        <channel_id>34138-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjI=</url>
+      </channel>
+      <channel>
+        <channel_name>Zapping TV</channel_name>
+        <channel_id>34138-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
+      </channel>
+      <channel>
+        <channel_name>ECDF LigaPro</channel_name>
+        <channel_id>34138-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lY2RmX2xpZ2Fwcm8=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-10 19:00</datetime>
     <league>Primera División</league>
     <teams>Guabirá vs Independiente Petrolero</teams>
     <channels>
@@ -36,23 +58,6 @@
         <channel_name>Futbol Canal | OP3</channel_name>
         <channel_id>34134-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjE=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-10 19:00</datetime>
-    <league>Serie A</league>
-    <teams>Delfin vs LDU Quito</teams>
-    <channels>
-      <channel>
-        <channel_name>Zapping TV</channel_name>
-        <channel_id>34138-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
-      </channel>
-      <channel>
-        <channel_name>ECDF LigaPro</channel_name>
-        <channel_id>34138-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lY2RmX2xpZ2Fwcm8=</url>
       </channel>
     </channels>
   </event>
@@ -132,18 +137,6 @@
         <channel_name>FOX Deportes | OP3</channel_name>
         <channel_id>34152-7</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWZveGRlcG9ydGVz</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-10 16:00</datetime>
-    <league>CONMEBOL Nations League Femenina</league>
-    <teams>Perú vs Uruguay</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34155-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
       </channel>
     </channels>
   </event>
@@ -301,14 +294,29 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-10 16:15</datetime>
-    <league>Primera División</league>
-    <teams>2 de Mayo vs Sportivo Ameliano</teams>
+    <datetime>2026-04-10 18:00</datetime>
+    <league>CONMEBOL Nations League Femenina</league>
+    <teams>Paraguay vs Ecuador</teams>
     <channels>
       <channel>
-        <channel_name>Tigo Sports Paraguay</channel_name>
-        <channel_id>34140-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjQ=</url>
+        <channel_name>Win Sports +</channel_name>
+        <channel_id>34156-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports + | OP2</channel_name>
+        <channel_id>34156-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports + | OP3</channel_name>
+        <channel_id>34156-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0c3BsdXM=</url>
+      </channel>
+      <channel>
+        <channel_name>Fox Sports 2 USA</channel_name>
+        <channel_id>34156-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hzcG9ydHMyX3VzYQ==</url>
       </channel>
     </channels>
   </event>
@@ -337,17 +345,27 @@
         <channel_id>34149-4</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5teA==</url>
       </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34149-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxNw==</url>
+      </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-04-10 18:00</datetime>
-    <league>CONMEBOL Nations League Femenina</league>
-    <teams>Paraguay vs Ecuador</teams>
+    <datetime>2026-04-10 19:00</datetime>
+    <league>Serie A</league>
+    <teams>Barcelona vs Leones del Norte</teams>
     <channels>
       <channel>
-        <channel_name>Fox Sports 2 USA</channel_name>
-        <channel_id>34156-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hzcG9ydHMyX3VzYQ==</url>
+        <channel_name>Zapping TV</channel_name>
+        <channel_id>34263-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
+      </channel>
+      <channel>
+        <channel_name>Chilevisión</channel_name>
+        <channel_id>34263-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
       </channel>
     </channels>
   </event>
@@ -436,18 +454,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-10 16:00</datetime>
-    <league>Segunda División</league>
-    <teams>Paysandu vs Rentistas</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34160-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxMg==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-10 19:00</datetime>
     <league>Campeonato W de CONCACAF</league>
     <teams>Jamaica vs Antigua y Barbuda</teams>
@@ -456,28 +462,6 @@
         <channel_name>Disney+</channel_name>
         <channel_id>34147-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxNQ==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-10 15:30</datetime>
-    <league>Categoría Primera A</league>
-    <teams>Deportivo Pereira vs Once Caldas</teams>
-    <channels>
-      <channel>
-        <channel_name>Win Sports +</channel_name>
-        <channel_id>34136-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
-      </channel>
-      <channel>
-        <channel_name>Win Sports + | OP2</channel_name>
-        <channel_id>34136-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
-      </channel>
-      <channel>
-        <channel_name>Win Sports + | OP3</channel_name>
-        <channel_id>34136-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0c3BsdXM=</url>
       </channel>
     </channels>
   </event>
@@ -516,18 +500,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-10 19:00</datetime>
-    <league>CONMEBOL Nations League Femenina</league>
-    <teams>Chile vs Argentina</teams>
-    <channels>
-      <channel>
-        <channel_name>Chilevisión</channel_name>
-        <channel_id>34157-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-10 20:00</datetime>
     <league>CONMEBOL Nations League Femenina</league>
     <teams>Colombia vs Venezuela</teams>
@@ -541,28 +513,6 @@
         <channel_name>Fox Sports 2 USA</channel_name>
         <channel_id>34158-2</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hzcG9ydHMyX3VzYQ==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-10 17:30</datetime>
-    <league>MLB</league>
-    <teams>Philadelphia Phillies vs Arizona Diamondbacks</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 5</channel_name>
-        <channel_id>34164-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNQ==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 5 | OP2</channel_name>
-        <channel_id>34164-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNQ==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 5 | OP3</channel_name>
-        <channel_id>34164-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG41</url>
       </channel>
     </channels>
   </event>
@@ -623,6 +573,28 @@
         <channel_name>Disney+</channel_name>
         <channel_id>34146-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxNA==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-10 19:00</datetime>
+    <league>CONMEBOL Nations League Femenina</league>
+    <teams>Chile vs Argentina</teams>
+    <channels>
+      <channel>
+        <channel_name>Win Sports</channel_name>
+        <channel_id>34157-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports | OP2</channel_name>
+        <channel_id>34157-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports ┃OP3</channel_name>
+        <channel_id>34157-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0cw==</url>
       </channel>
     </channels>
   </event>
