@@ -1,6 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
+    <datetime>2026-04-14 16:30</datetime>
+    <league>Campeonato W de CONCACAF</league>
+    <teams>Granada vs Islas Caimán</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34436-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxMA==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
     <datetime>2026-04-14 20:00</datetime>
     <league>Liga 1</league>
     <teams>Sport Boys vs Melgar</teams>
@@ -150,18 +162,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-14 16:30</datetime>
-    <league>Campeonato W de CONCACAF</league>
-    <teams>Granada vs Islas Caimán</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34436-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-14 18:00</datetime>
     <league>CONMEBOL Nations League Femenina</league>
     <teams>Venezuela vs Argentina</teams>
@@ -221,23 +221,45 @@
   </event>
   <event>
     <datetime>2026-04-14 14:00</datetime>
-    <league>UEFA Champions League</league>
-    <teams>Liverpool vs PSG</teams>
+    <league>Championship</league>
+    <teams>Portsmouth vs Ipswich Town</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34428-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk3</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-14 17:00</datetime>
+    <league>Copa Libertadores</league>
+    <teams>Nacional vs Deportes Tolima</teams>
     <channels>
       <channel>
         <channel_name>ESPN 2</channel_name>
-        <channel_id>34412-1</channel_id>
+        <channel_id>34421-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
       </channel>
       <channel>
         <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>34412-2</channel_id>
+        <channel_id>34421-2</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
       </channel>
       <channel>
         <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>34412-3</channel_id>
+        <channel_id>34421-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34421-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxMg==</url>
+      </channel>
+      <channel>
+        <channel_name>Fox Sports 2</channel_name>
+        <channel_id>34421-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hzcG9ydHMy</url>
       </channel>
     </channels>
   </event>
@@ -286,18 +308,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-14 14:00</datetime>
-    <league>Championship</league>
-    <teams>Portsmouth vs Ipswich Town</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34428-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-14 19:30</datetime>
     <league>Copa Sudamericana</league>
     <teams>Santos vs Deportivo Recoleta</teams>
@@ -306,33 +316,6 @@
         <channel_name>Disney+</channel_name>
         <channel_id>34419-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-14 17:00</datetime>
-    <league>Copa Libertadores</league>
-    <teams>Nacional vs Deportes Tolima</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>34421-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>34421-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>34421-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
-      </channel>
-      <channel>
-        <channel_name>Fox Sports 2</channel_name>
-        <channel_id>34421-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hzcG9ydHMy</url>
       </channel>
     </channels>
   </event>
@@ -422,6 +405,82 @@
     </channels>
   </event>
   <event>
+    <datetime>2026-04-14 14:00</datetime>
+    <league>UEFA Champions League</league>
+    <teams>Liverpool vs PSG</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 2</channel_name>
+        <channel_id>34412-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP2</channel_name>
+        <channel_id>34412-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP3</channel_name>
+        <channel_id>34412-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34412-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk2</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-14 16:00</datetime>
+    <league>Campeonato W de CONCACAF</league>
+    <teams>San Vicente / Granadinas vs U.S. Virgin Islands</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34435-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk5</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-14 17:00</datetime>
+    <league>Copa Libertadores</league>
+    <teams>Estudiantes vs Cusco</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 7</channel_name>
+        <channel_id>34422-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 7 | OP2</channel_name>
+        <channel_id>34422-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 7 | OP3</channel_name>
+        <channel_id>34422-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG43</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34422-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxMQ==</url>
+      </channel>
+      <channel>
+        <channel_name>Fox Sports</channel_name>
+        <channel_id>34422-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hzcG9ydHMK</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 MX</channel_name>
+        <channel_id>34422-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMm14</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
     <datetime>2026-04-14 13:00</datetime>
     <league>Liga 1</league>
     <teams>Deportivo Moquegua vs Juan Pablo II College</teams>
@@ -462,28 +521,6 @@
         <channel_name>Liga1Max | OP3</channel_name>
         <channel_id>34410-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-14 14:00</datetime>
-    <league>UEFA Champions League</league>
-    <teams>Atlético Madrid vs Barcelona</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN</channel_name>
-        <channel_id>34413-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN AR┃OP2</channel_name>
-        <channel_id>34413-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN AR┃OP3</channel_name>
-        <channel_id>34413-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
       </channel>
     </channels>
   </event>
@@ -549,38 +586,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-14 17:00</datetime>
-    <league>Copa Libertadores</league>
-    <teams>Estudiantes vs Cusco</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 7</channel_name>
-        <channel_id>34422-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNw==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 7 | OP2</channel_name>
-        <channel_id>34422-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNw==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 7 | OP3</channel_name>
-        <channel_id>34422-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG43</url>
-      </channel>
-      <channel>
-        <channel_name>Fox Sports</channel_name>
-        <channel_id>34422-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hzcG9ydHMK</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 MX</channel_name>
-        <channel_id>34422-5</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMm14</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-14 09:45</datetime>
     <league>AFC Champions League Elite</league>
     <teams>Tractor Sazi vs Shabab Al Ahli</teams>
@@ -599,30 +604,6 @@
         <channel_name>ESPN NL | OP3</channel_name>
         <channel_id>34429-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4xX25s</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-14 14:00</datetime>
-    <league>Campeonato W de CONCACAF</league>
-    <teams>Dominica vs Antigua y Barbuda</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34434-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-14 16:00</datetime>
-    <league>Campeonato W de CONCACAF</league>
-    <teams>San Vicente / Granadinas vs U.S. Virgin Islands</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34435-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
       </channel>
     </channels>
   </event>
@@ -718,6 +699,65 @@
         <channel_name>Disney+</channel_name>
         <channel_id>34430-5</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk0</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-14 14:00</datetime>
+    <league>Campeonato W de CONCACAF</league>
+    <teams>Dominica vs Antigua y Barbuda</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34434-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk4</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-14 14:00</datetime>
+    <league>UEFA Champions League</league>
+    <teams>Atlético Madrid vs Barcelona</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN</channel_name>
+        <channel_id>34413-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN AR┃OP2</channel_name>
+        <channel_id>34413-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN AR┃OP3</channel_name>
+        <channel_id>34413-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34413-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk1</url>
+      </channel>
+      <channel>
+        <channel_name>MAX</channel_name>
+        <channel_id>34413-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1tYXgx</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA</channel_name>
+        <channel_id>34413-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10dWRu</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA | OP2</channel_name>
+        <channel_id>34413-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10dWRu</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA | OP3</channel_name>
+        <channel_id>34413-8</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXR1ZG4=</url>
       </channel>
     </channels>
   </event>
