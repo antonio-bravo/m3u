@@ -28,7 +28,7 @@ jobs:
       - name: Configura Python
         uses: actions/setup-python@v6
         with:
-          python-version: "3.10"
+          python-version: "3.14"
 
       - name: Instala dependencias
         run: pip install -r requirements.txt
