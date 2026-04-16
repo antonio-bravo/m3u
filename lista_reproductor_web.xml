@@ -1,28 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-04-16 11:45</datetime>
-    <league>UEFA Europa League</league>
-    <teams>Celta de Vigo vs Freiburg</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN</channel_name>
-        <channel_id>34467-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN AR┃OP2</channel_name>
-        <channel_id>34467-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN AR┃OP3</channel_name>
-        <channel_id>34467-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-16 14:00</datetime>
     <league>UEFA Europa League</league>
     <teams>Nottingham Forest vs Porto</teams>
@@ -41,6 +19,11 @@
         <channel_name>ESPN 4 | OP3</channel_name>
         <channel_id>34470-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34470-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk2</url>
       </channel>
     </channels>
   </event>
@@ -157,6 +140,74 @@
     </channels>
   </event>
   <event>
+    <datetime>2026-04-16 11:45</datetime>
+    <league>UEFA Europa League</league>
+    <teams>Celta de Vigo vs Freiburg</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN</channel_name>
+        <channel_id>34467-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN AR┃OP2</channel_name>
+        <channel_id>34467-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN AR┃OP3</channel_name>
+        <channel_id>34467-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34467-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXky</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-16 11:45</datetime>
+    <league>UEFA Conference League</league>
+    <teams>AZ vs Shakhtar Donetsk</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 2 MX</channel_name>
+        <channel_id>34471-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMm14</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34471-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkz</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-16 14:00</datetime>
+    <league>UEFA Conference League</league>
+    <teams>AEK Athens vs Rayo Vallecano</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34472-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk3</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-16 14:00</datetime>
+    <league>UEFA Conference League</league>
+    <teams>Fiorentina vs Crystal Palace</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34474-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk5</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
     <datetime>2026-04-16 14:00</datetime>
     <league>UEFA Europa League</league>
     <teams>Aston Villa vs Bologna</teams>
@@ -176,29 +227,10 @@
         <channel_id>34468-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
       </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-16 11:45</datetime>
-    <league>UEFA Conference League</league>
-    <teams>AZ vs Shakhtar Donetsk</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2 MX</channel_name>
-        <channel_id>34471-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMm14</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-16 14:00</datetime>
-    <league>UEFA Conference League</league>
-    <teams>AEK Athens vs Rayo Vallecano</teams>
-    <channels>
       <channel>
         <channel_name>Disney+</channel_name>
-        <channel_id>34472-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+        <channel_id>34468-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk0</url>
       </channel>
     </channels>
   </event>
@@ -210,19 +242,7 @@
       <channel>
         <channel_name>Disney+</channel_name>
         <channel_id>34473-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-16 14:00</datetime>
-    <league>UEFA Conference League</league>
-    <teams>Fiorentina vs Crystal Palace</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34474-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk4</url>
       </channel>
     </channels>
   </event>
@@ -266,43 +286,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-16 11:15</datetime>
-    <league>AFC Champions League Elite</league>
-    <teams>Al Sadd vs Vissel Kobe</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN MX</channel_name>
-        <channel_id>34485-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BubXg=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN MX | OP2</channel_name>
-        <channel_id>34485-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BubXg=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN MX | OP3</channel_name>
-        <channel_id>34485-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5teA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN NL</channel_name>
-        <channel_id>34485-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMV9ubA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN NL | OP2</channel_name>
-        <channel_id>34485-5</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMV9ubA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN NL | OP3</channel_name>
-        <channel_id>34485-6</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4xX25s</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-16 13:00</datetime>
     <league>Golf</league>
     <teams>RBC Heritage – Primera Vuelta</teams>
@@ -325,6 +308,48 @@
     </channels>
   </event>
   <event>
+    <datetime>2026-04-16 11:15</datetime>
+    <league>AFC Champions League Elite</league>
+    <teams>Al Sadd vs Vissel Kobe</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN MX</channel_name>
+        <channel_id>34485-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BubXg=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN MX | OP2</channel_name>
+        <channel_id>34485-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BubXg=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN MX | OP3</channel_name>
+        <channel_id>34485-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5teA==</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34485-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN NL</channel_name>
+        <channel_id>34485-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMV9ubA==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN NL | OP2</channel_name>
+        <channel_id>34485-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMV9ubA==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN NL | OP3</channel_name>
+        <channel_id>34485-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4xX25s</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
     <datetime>2026-04-16 14:00</datetime>
     <league>UEFA Europa League</league>
     <teams>Real Betis vs Sporting Braga</teams>
@@ -343,6 +368,31 @@
         <channel_name>ESPN AR┃OP3</channel_name>
         <channel_id>34469-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34469-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk1</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 MX</channel_name>
+        <channel_id>34469-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMm14</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA</channel_name>
+        <channel_id>34469-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10dWRu</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA | OP2</channel_name>
+        <channel_id>34469-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10dWRu</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA | OP3</channel_name>
+        <channel_id>34469-8</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXR1ZG4=</url>
       </channel>
     </channels>
   </event>
