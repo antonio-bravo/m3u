@@ -1,28 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-04-22 18:00</datetime>
-    <league>Liga 1</league>
-    <teams>Cusco vs FC Cajamarca</teams>
-    <channels>
-      <channel>
-        <channel_name>Liga1MAX</channel_name>
-        <channel_id>34754-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
-      </channel>
-      <channel>
-        <channel_name>Liga1Max | OP2</channel_name>
-        <channel_id>34754-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
-      </channel>
-      <channel>
-        <channel_name>Liga1Max | OP3</channel_name>
-        <channel_id>34754-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-22 12:00</datetime>
     <league>LaLiga</league>
     <teams>Elche vs Atlético Madrid</teams>
@@ -42,6 +20,26 @@
         <channel_id>34758-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG41</url>
       </channel>
+      <channel>
+        <channel_name>ESPN Deportes</channel_name>
+        <channel_id>34758-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuZGVwb3J0ZXM=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Deportes  | OP2</channel_name>
+        <channel_id>34758-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuZGVwb3J0ZXM=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Deportes  | OP3</channel_name>
+        <channel_id>34758-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5kZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>Sky Sports LaLiga MX</channel_name>
+        <channel_id>34758-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNreV9zcG9ydHNfbGFsaWdh</url>
+      </channel>
     </channels>
   </event>
   <event>
@@ -50,19 +48,31 @@
     <teams>Real Sociedad vs Getafe</teams>
     <channels>
       <channel>
-        <channel_name>DSports</channel_name>
+        <channel_name>Dsports 2</channel_name>
         <channel_id>34759-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRz</url>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzMg==</url>
       </channel>
       <channel>
-        <channel_name>DSports | OP2</channel_name>
+        <channel_name>Dsports 2 | OP2</channel_name>
         <channel_id>34759-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1kc3BvcnRz</url>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzMg==</url>
       </channel>
       <channel>
-        <channel_name>DSports | OP3</channel_name>
+        <channel_name>Dsports 2 | OP3</channel_name>
         <channel_id>34759-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWRzcG9ydHM=</url>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzMg==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 13:45</datetime>
+    <league>Championship</league>
+    <teams>Charlton Athletic vs Ipswich Town</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34782-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxcGw=</url>
       </channel>
     </channels>
   </event>
@@ -90,6 +100,72 @@
         <channel_name>Win Sports ┃OP3</channel_name>
         <channel_id>34762-4</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0cw==</url>
+      </channel>
+      <channel>
+        <channel_name>BeIN Sports Ñ</channel_name>
+        <channel_id>34762-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1iZWluc3BvcnRlcw==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 20:00</datetime>
+    <league>Liga MX</league>
+    <teams>Mineros de Zacatecas vs Atlético Morelia</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 4 MX</channel_name>
+        <channel_id>34802-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNG14</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34802-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk2</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 11:50</datetime>
+    <league>Tenis</league>
+    <teams>Madrid Open – Primera Ronda: Tomas Machac vs Francisco Comesaña</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 4</channel_name>
+        <channel_id>34798-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNA==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 4 | OP2</channel_name>
+        <channel_id>34798-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNA==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 4 | OP3</channel_name>
+        <channel_id>34798-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 18:00</datetime>
+    <league>Liga 1</league>
+    <teams>Cusco vs FC Cajamarca</teams>
+    <channels>
+      <channel>
+        <channel_name>Liga1MAX</channel_name>
+        <channel_id>34754-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP2</channel_name>
+        <channel_id>34754-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP3</channel_name>
+        <channel_id>34754-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
       </channel>
     </channels>
   </event>
@@ -190,18 +266,6 @@
         <channel_name>DSports | OP3</channel_name>
         <channel_id>34780-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWRzcG9ydHM=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-22 13:45</datetime>
-    <league>Championship</league>
-    <teams>Charlton Athletic vs Ipswich Town</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34782-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
       </channel>
     </channels>
   </event>
@@ -319,28 +383,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-22 11:50</datetime>
-    <league>Tenis</league>
-    <teams>Madrid Open – Primera Ronda</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 4</channel_name>
-        <channel_id>34798-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 4 | OP2</channel_name>
-        <channel_id>34798-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 4 | OP3</channel_name>
-        <channel_id>34798-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-22 20:30</datetime>
     <league>NBA</league>
     <teams>Playoffs Juego #2 – Oklahoma City Thunder vs Phoenix Suns</teams>
@@ -359,6 +401,176 @@
         <channel_name>ESPN 2 | OP3</channel_name>
         <channel_id>34801-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 13:45</datetime>
+    <league>DFB Pokal</league>
+    <teams>Bayer Leverkusen vs Bayern München</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN</channel_name>
+        <channel_id>34763-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN AR┃OP2</channel_name>
+        <channel_id>34763-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN AR┃OP3</channel_name>
+        <channel_id>34763-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34763-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkz</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 MX</channel_name>
+        <channel_id>34763-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMm14</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 14:00</datetime>
+    <league>Premier League</league>
+    <teams>Burnley vs Manchester City</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 5</channel_name>
+        <channel_id>34756-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNQ==</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34756-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkzcGw=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 5 | OP2</channel_name>
+        <channel_id>34756-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNQ==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 5 | OP3</channel_name>
+        <channel_id>34756-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG41</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 14:00</datetime>
+    <league>Copa de Francia</league>
+    <teams>Strasbourg vs Nice</teams>
+    <channels>
+      <channel>
+        <channel_name>FOX Deportes</channel_name>
+        <channel_id>34783-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes | OP2</channel_name>
+        <channel_id>34783-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes | OP3</channel_name>
+        <channel_id>34783-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWZveGRlcG9ydGVz</url>
+      </channel>
+      <channel>
+        <channel_name>DSports +</channel_name>
+        <channel_id>34783-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzcGx1cw==</url>
+      </channel>
+      <channel>
+        <channel_name>DSports + I OP2</channel_name>
+        <channel_id>34783-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzcGx1cw==</url>
+      </channel>
+      <channel>
+        <channel_name>Fox Sports 2 USA</channel_name>
+        <channel_id>34783-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hzcG9ydHMyX3VzYQ==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 14:30</datetime>
+    <league>LaLiga</league>
+    <teams>Barcelona vs Celta de Vigo</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 2</channel_name>
+        <channel_id>34760-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP2</channel_name>
+        <channel_id>34760-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP3</channel_name>
+        <channel_id>34760-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34760-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkz</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Deportes</channel_name>
+        <channel_id>34760-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuZGVwb3J0ZXM=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Deportes  | OP2</channel_name>
+        <channel_id>34760-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuZGVwb3J0ZXM=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Deportes  | OP3</channel_name>
+        <channel_id>34760-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5kZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>Sky Sports LaLiga MX</channel_name>
+        <channel_id>34760-8</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNreV9zcG9ydHNfbGFsaWdh</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 19:30</datetime>
+    <league>Copa de Brasil</league>
+    <teams>Flamengo vs Vitória</teams>
+    <channels>
+      <channel>
+        <channel_name>Sportv BR</channel_name>
+        <channel_id>34779-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
+      </channel>
+      <channel>
+        <channel_name>DSports</channel_name>
+        <channel_id>34779-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRz</url>
+      </channel>
+      <channel>
+        <channel_name>DSports | OP2</channel_name>
+        <channel_id>34779-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1kc3BvcnRz</url>
+      </channel>
+      <channel>
+        <channel_name>DSports | OP3</channel_name>
+        <channel_id>34779-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWRzcG9ydHM=</url>
       </channel>
     </channels>
   </event>
@@ -385,6 +597,79 @@
     </channels>
   </event>
   <event>
+    <datetime>2026-04-22 19:30</datetime>
+    <league>Copa de Brasil</league>
+    <teams>RB Bragantino vs Mirassol</teams>
+    <channels>
+      <channel>
+        <channel_name>Amazon Prime C</channel_name>
+        <channel_id>34778-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1hbWF6b25fcHJpbWUx</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 20:00</datetime>
+    <league>Liga MX</league>
+    <teams>Atlético San Luis vs Santos Laguna</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN MX</channel_name>
+        <channel_id>34786-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BubXg=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN MX | OP2</channel_name>
+        <channel_id>34786-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BubXg=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN MX | OP3</channel_name>
+        <channel_id>34786-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5teA==</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34786-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk0</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 22:00</datetime>
+    <league>Liga de Expansión MX</league>
+    <teams>CDS Tampico Madero vs CA La Paz</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 3 MX</channel_name>
+        <channel_id>34803-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuM214</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34803-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk3</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 22:05</datetime>
+    <league>Liga MX</league>
+    <teams>Tijuana vs Pachuca</teams>
+    <channels>
+      <channel>
+        <channel_name>VIX TUDN</channel_name>
+        <channel_id>34789-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT12aXgx</url>
+      </channel>
+      <channel>
+        <channel_name>FOX ONE C</channel_name>
+        <channel_id>34789-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1ldmVudG9z</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
     <datetime>2026-04-22 20:30</datetime>
     <league>Liga 1</league>
     <teams>Universitario vs Deportivo Garcilaso</teams>
@@ -403,72 +688,6 @@
         <channel_name>Liga1Max | OP3</channel_name>
         <channel_id>34755-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-22 14:00</datetime>
-    <league>Premier League</league>
-    <teams>Burnley vs Manchester City</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 5</channel_name>
-        <channel_id>34756-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNQ==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 5 | OP2</channel_name>
-        <channel_id>34756-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNQ==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 5 | OP3</channel_name>
-        <channel_id>34756-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG41</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-22 14:30</datetime>
-    <league>LaLiga</league>
-    <teams>Barcelona vs Celta de Vigo</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>34760-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>34760-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>34760-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-22 13:45</datetime>
-    <league>DFB Pokal</league>
-    <teams>Bayer Leverkusen vs Bayern München</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN</channel_name>
-        <channel_id>34763-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN AR┃OP2</channel_name>
-        <channel_id>34763-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN AR┃OP3</channel_name>
-        <channel_id>34763-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
       </channel>
     </channels>
   </event>
@@ -495,23 +714,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-22 11:00</datetime>
-    <league>Serie A</league>
-    <teams>Leones del Norte vs Manta</teams>
-    <channels>
-      <channel>
-        <channel_name>ECDF LigaPro</channel_name>
-        <channel_id>34770-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lY2RmX2xpZ2Fwcm8=</url>
-      </channel>
-      <channel>
-        <channel_name>Zapping TV</channel_name>
-        <channel_id>34770-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-22 17:00</datetime>
     <league>Copa de Brasil</league>
     <teams>Goiás vs Cruzeiro</teams>
@@ -529,79 +731,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-22 19:30</datetime>
-    <league>Copa de Brasil</league>
-    <teams>Flamengo vs Vitória</teams>
-    <channels>
-      <channel>
-        <channel_name>Sportv BR</channel_name>
-        <channel_id>34779-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
-      </channel>
-      <channel>
-        <channel_name>Premiere BR</channel_name>
-        <channel_id>34779-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1wcmVtaWVyZTE=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-22 14:00</datetime>
-    <league>Copa de Francia</league>
-    <teams>Strasbourg vs Nice</teams>
-    <channels>
-      <channel>
-        <channel_name>DSports</channel_name>
-        <channel_id>34783-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRz</url>
-      </channel>
-      <channel>
-        <channel_name>DSports | OP2</channel_name>
-        <channel_id>34783-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1kc3BvcnRz</url>
-      </channel>
-      <channel>
-        <channel_name>DSports | OP3</channel_name>
-        <channel_id>34783-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWRzcG9ydHM=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-22 20:00</datetime>
-    <league>Liga MX</league>
-    <teams>Atlético San Luis vs Santos Laguna</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN MX</channel_name>
-        <channel_id>34786-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BubXg=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN MX | OP2</channel_name>
-        <channel_id>34786-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BubXg=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN MX | OP3</channel_name>
-        <channel_id>34786-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5teA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-22 22:05</datetime>
-    <league>Liga MX</league>
-    <teams>Tijuana vs Pachuca</teams>
-    <channels>
-      <channel>
-        <channel_name>FOX ONE C</channel_name>
-        <channel_id>34789-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1ldmVudG9z</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-22 21:30</datetime>
     <league>Primera División</league>
     <teams>Deportivo Saprissa vs Guadalupe</teams>
@@ -610,28 +739,6 @@
         <channel_name>FUTV</channel_name>
         <channel_id>34792-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjI=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-22 08:00</datetime>
-    <league>Tenis</league>
-    <teams>Madrid Open – Primera Ronda</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>34796-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>34796-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>34796-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
       </channel>
     </channels>
   </event>
@@ -658,36 +765,34 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-22 15:15</datetime>
-    <league>Liga 1</league>
-    <teams>Atlético Grau vs Sporting Cristal</teams>
+    <datetime>2026-04-22 11:00</datetime>
+    <league>AFC Champions League Two</league>
+    <teams>Al Nassr vs Al Ahli</teams>
     <channels>
       <channel>
-        <channel_name>Liga1MAX</channel_name>
-        <channel_id>34753-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+        <channel_name>ESPN MX</channel_name>
+        <channel_id>34784-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BubXg=</url>
       </channel>
       <channel>
-        <channel_name>Liga1Max | OP2</channel_name>
-        <channel_id>34753-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+        <channel_name>ESPN MX | OP2</channel_name>
+        <channel_id>34784-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BubXg=</url>
       </channel>
       <channel>
-        <channel_name>Liga1Max | OP3</channel_name>
-        <channel_id>34753-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
+        <channel_name>ESPN MX | OP3</channel_name>
+        <channel_id>34784-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5teA==</url>
       </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-22 14:00</datetime>
-    <league>Premier League</league>
-    <teams>AFC Bournemouth vs Leeds United</teams>
-    <channels>
+      <channel>
+        <channel_name>ESPN 3 NL</channel_name>
+        <channel_id>34784-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuM19ubA==</url>
+      </channel>
       <channel>
         <channel_name>Disney+</channel_name>
-        <channel_id>34757-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+        <channel_id>34784-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
       </channel>
     </channels>
   </event>
@@ -711,6 +816,28 @@
         <channel_id>34761-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
       </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34761-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXky</url>
+      </channel>
+      <channel>
+        <channel_name>BeIN Sports Ñ</channel_name>
+        <channel_id>34761-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1iZWluc3BvcnRlcw==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 14:00</datetime>
+    <league>Premier League</league>
+    <teams>AFC Bournemouth vs Leeds United</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>34757-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkycGw=</url>
+      </channel>
     </channels>
   </event>
   <event>
@@ -719,9 +846,100 @@
     <teams>Atalanta vs Lazio</teams>
     <channels>
       <channel>
-        <channel_name>Disney+</channel_name>
+        <channel_name>DSports</channel_name>
         <channel_id>34764-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRz</url>
+      </channel>
+      <channel>
+        <channel_name>DSports | OP2</channel_name>
+        <channel_id>34764-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1kc3BvcnRz</url>
+      </channel>
+      <channel>
+        <channel_name>DSports | OP3</channel_name>
+        <channel_id>34764-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWRzcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports +</channel_name>
+        <channel_id>34764-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports + | OP2</channel_name>
+        <channel_id>34764-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports + | OP3</channel_name>
+        <channel_id>34764-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0c3BsdXM=</url>
+      </channel>
+      <channel>
+        <channel_name>Fox Sports MX</channel_name>
+        <channel_id>34764-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hzcG9ydHNteAo=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 17:30</datetime>
+    <league>Copa de Brasil</league>
+    <teams>Santos vs Coritiba</teams>
+    <channels>
+      <channel>
+        <channel_name>Amazon Prime C</channel_name>
+        <channel_id>34775-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1hbWF6b25fcHJpbWUx</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 20:00</datetime>
+    <league>Liga MX</league>
+    <teams>Mazatlán vs Toluca</teams>
+    <channels>
+      <channel>
+        <channel_name>Azteca 7</channel_name>
+        <channel_id>34787-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1henRlY2E3</url>
+      </channel>
+      <channel>
+        <channel_name>VIX TUDN</channel_name>
+        <channel_id>34787-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT12aXgx</url>
+      </channel>
+      <channel>
+        <channel_name>Azteca 7 | OP2</channel_name>
+        <channel_id>34787-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1henRlY2E3</url>
+      </channel>
+      <channel>
+        <channel_name>Azteca 7 | OP3</channel_name>
+        <channel_id>34787-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWF6dGVjYTc=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-22 15:15</datetime>
+    <league>Liga 1</league>
+    <teams>Atlético Grau vs Sporting Cristal</teams>
+    <channels>
+      <channel>
+        <channel_name>Liga1MAX</channel_name>
+        <channel_id>34753-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP2</channel_name>
+        <channel_id>34753-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP3</channel_name>
+        <channel_id>34753-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
       </channel>
     </channels>
   </event>
@@ -844,55 +1062,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-04-22 11:00</datetime>
-    <league>AFC Champions League Two</league>
-    <teams>Al Nassr vs Al Ahli</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN MX</channel_name>
-        <channel_id>34784-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BubXg=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN MX | OP2</channel_name>
-        <channel_id>34784-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BubXg=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN MX | OP3</channel_name>
-        <channel_id>34784-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5teA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 3 NL</channel_name>
-        <channel_id>34784-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuM19ubA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-22 20:00</datetime>
-    <league>Liga MX</league>
-    <teams>Mazatlán vs Toluca</teams>
-    <channels>
-      <channel>
-        <channel_name>Azteca 7</channel_name>
-        <channel_id>34787-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1henRlY2E3</url>
-      </channel>
-      <channel>
-        <channel_name>Azteca 7 | OP2</channel_name>
-        <channel_id>34787-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1henRlY2E3</url>
-      </channel>
-      <channel>
-        <channel_name>Azteca 7 | OP3</channel_name>
-        <channel_id>34787-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWF6dGVjYTc=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-22 20:30</datetime>
     <league>Major League Soccer</league>
     <teams>Real Salt Lake vs Inter Miami</teams>
@@ -913,28 +1082,6 @@
         <channel_name>ESPN 2 NL</channel_name>
         <channel_id>34794-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMl9ubA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-22 09:45</datetime>
-    <league>Ciclismo</league>
-    <teams>Fleche Wallone Femenino</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 4</channel_name>
-        <channel_id>34797-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 4 | OP2</channel_name>
-        <channel_id>34797-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 4 | OP3</channel_name>
-        <channel_id>34797-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
       </channel>
     </channels>
   </event>
