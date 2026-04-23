@@ -1,33 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-04-23 12:00</datetime>
-    <league>LaLiga</league>
-    <teams>Levante vs Sevilla</teams>
-    <channels>
-      <channel>
-        <channel_name>Dsports 2</channel_name>
-        <channel_id>34805-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzMg==</url>
-      </channel>
-      <channel>
-        <channel_name>Dsports 2 | OP2</channel_name>
-        <channel_id>34805-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzMg==</url>
-      </channel>
-      <channel>
-        <channel_name>Dsports 2 | OP3</channel_name>
-        <channel_id>34805-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzMg==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 MX</channel_name>
-        <channel_id>34805-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1jYW5hbDU=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-23 19:00</datetime>
     <league>Primera División</league>
     <teams>Real Tomayapo vs The Strongest</teams>
@@ -215,6 +188,48 @@
         <channel_name>Disney+</channel_name>
         <channel_id>34823-2</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk1</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-23 12:00</datetime>
+    <league>LaLiga</league>
+    <teams>Levante vs Sevilla</teams>
+    <channels>
+      <channel>
+        <channel_name>Dsports 2</channel_name>
+        <channel_id>34805-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzMg==</url>
+      </channel>
+      <channel>
+        <channel_name>Dsports 2 | OP2</channel_name>
+        <channel_id>34805-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzMg==</url>
+      </channel>
+      <channel>
+        <channel_name>Dsports 2 | OP3</channel_name>
+        <channel_id>34805-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzMg==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 MX</channel_name>
+        <channel_id>34805-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1jYW5hbDU=</url>
+      </channel>
+      <channel>
+        <channel_name>Espn+</channel_name>
+        <channel_id>34805-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BucGx1czE=</url>
+      </channel>
+      <channel>
+        <channel_name>Espn+</channel_name>
+        <channel_id>34805-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BucGx1czI=</url>
+      </channel>
+      <channel>
+        <channel_name>Sky Sports LaLiga MX</channel_name>
+        <channel_id>34805-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNreV9zcG9ydHNfbGFsaWdh</url>
       </channel>
     </channels>
   </event>
