@@ -1,30 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-04-24 11:30</datetime>
-    <league>2. Bundesliga</league>
-    <teams>Fortuna Düsseldorf vs Dynamo Dresden</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34869-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-24 11:30</datetime>
-    <league>2. Bundesliga</league>
-    <teams>Kaiserslautern vs Eintracht Braunschweig</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>34850-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXky</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-04-24 13:45</datetime>
     <league>Ligue 1</league>
     <teams>Brest vs Lens</teams>
@@ -270,8 +246,18 @@
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5kZXBvcnRlcw==</url>
       </channel>
       <channel>
-        <channel_name>Sky Sports LaLiga MX</channel_name>
+        <channel_name>Espn+</channel_name>
         <channel_id>34834-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BucGx1czE=</url>
+      </channel>
+      <channel>
+        <channel_name>Espn+</channel_name>
+        <channel_id>34834-8</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BucGx1czI=</url>
+      </channel>
+      <channel>
+        <channel_name>Sky Sports LaLiga MX</channel_name>
+        <channel_id>34834-9</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNreV9zcG9ydHNfbGFsaWdh</url>
       </channel>
     </channels>
