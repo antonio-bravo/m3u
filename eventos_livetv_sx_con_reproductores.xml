@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-04-24 22:35:15" total="31">
+<eventos generado="2026-04-24 23:38:18" total="50">
   <evento id="1">
     <nombre>Unión La Calera –  Coquimbo Unido</nombre>
     <deporte>Fútbol</deporte>
@@ -31,14 +31,21 @@
     <hora>00:00</hora>
     <url>https://livetv.sx/es/eventinfo/371671640_maine_mariners_adirondack_thunder/</url>
     <datetime_iso>2026-04-24T00:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://olimp-video.com/api/broadcast/sportboomcom/14599566</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004795&amp;lang=es&amp;eid=371671640&amp;lid=3004795&amp;ci=1488&amp;si=2</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="3">
     <nombre>Unifacisa –  Corinthians</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. NBB</competicion>
     <fecha>24 de abril</fecha>
-    <hora>26:23</hora>
+    <hora>67:59</hora>
     <url>https://livetv.sx/es/eventinfo/371172398_unifacisa_corinthians/</url>
     <datetime_iso>2026-04-24T00:00:00</datetime_iso>
     <streams total="2">
@@ -61,7 +68,7 @@
     <deporte>Fútbol</deporte>
     <competicion>Colombia. LBP</competicion>
     <fecha>24 de abril</fecha>
-    <hora>34:30</hora>
+    <hora>78:77</hora>
     <url>https://livetv.sx/es/eventinfo/373035434_paisas_motilonas_del_norte/</url>
     <datetime_iso>2026-04-24T00:00:00</datetime_iso>
     <streams total="2">
@@ -69,13 +76,13 @@
         <url>https://www.youtube.com/embed/e1uVCj9kkMA?autoplay=1</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
         <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv-ru3.me/webplayer2.php?t=youtube&amp;c=e1uVCj9kkMA&amp;lang=es&amp;eid=373035434&amp;lid=3004630&amp;ci=4749&amp;si=3</enlace_original>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=youtube&amp;c=e1uVCj9kkMA&amp;lang=es&amp;eid=373035434&amp;lid=3004630&amp;ci=4749&amp;si=3</enlace_original>
       </stream>
       <stream id="2">
         <url>https://www.youtube.com/embed/rgjTFDraq80?autoplay=1</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
         <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv-ru3.me/webplayer2.php?t=youtube&amp;c=rgjTFDraq80&amp;lang=es&amp;eid=373035434&amp;lid=3004632&amp;ci=4749&amp;si=3</enlace_original>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=youtube&amp;c=rgjTFDraq80&amp;lang=es&amp;eid=373035434&amp;lid=3004632&amp;ci=4749&amp;si=3</enlace_original>
       </stream>
     </streams>
   </evento>
@@ -114,6 +121,56 @@
     </streams>
   </evento>
   <evento id="7">
+    <nombre>Bauru –  Paulistano</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Brasil. NBB</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>39:51</hora>
+    <url>https://livetv.sx/es/eventinfo/371172400_bauru_paulistano/</url>
+    <datetime_iso>2026-04-24T00:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/IRskzdP9k4w?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
+        <idioma_nombre>Holandés</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=youtube&amp;c=IRskzdP9k4w&amp;lang=es&amp;eid=371172400&amp;lid=3004490&amp;ci=2373&amp;si=3</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="8">
+    <nombre>Ferro Carril Oeste –  Peñarol</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Argentina. LNB</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>29:29</hora>
+    <url>https://livetv.sx/es/eventinfo/372893947_ferro_carril_oeste_pe__arol/</url>
+    <datetime_iso>2026-04-24T00:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="9">
+    <nombre>Cruzeiro –  Minas</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Brasil. NBB</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>31:28</hora>
+    <url>https://livetv.sx/es/eventinfo/371172402_cruzeiro_minas/</url>
+    <datetime_iso>2026-04-24T00:00:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/n-DQ1NB6H7I?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=youtube&amp;c=n-DQ1NB6H7I&amp;lang=es&amp;eid=371172402&amp;lid=3004489&amp;ci=2373&amp;si=3</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://viewembed.ru/channel/bet12785259</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004628&amp;lang=es&amp;eid=371172402&amp;lid=3004628&amp;ci=2373&amp;si=3</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="10">
     <nombre>Hands / Stewart –  Hemery / Coulibaly</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Dobles</competicion>
@@ -130,7 +187,7 @@
       </stream>
     </streams>
   </evento>
-  <evento id="8">
+  <evento id="11">
     <nombre>Lanús –  Central Córdoba</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Argentina. Liga Profesional</competicion>
@@ -146,16 +203,16 @@
         <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=2710316&amp;lang=es&amp;eid=366672502&amp;lid=2710316&amp;ci=16&amp;si=1</enlace_original>
       </stream>
       <stream id="2">
-        <url>https://daddylive5.top/livemy/stream-387.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003555&amp;lang=es&amp;eid=366672502&amp;lid=3003555&amp;ci=16&amp;si=1</enlace_original>
-      </stream>
-      <stream id="3">
         <url>https://nrdrse.link/ch.php?id=85</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
         <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3002942&amp;lang=es&amp;eid=366672502&amp;lid=3002942&amp;ci=16&amp;si=1</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://daddylive5.top/livemy/stream-387.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003555&amp;lang=es&amp;eid=366672502&amp;lid=3003555&amp;ci=16&amp;si=1</enlace_original>
       </stream>
       <stream id="4">
         <url>https://elcanaldeportivo.com/espnhd.php</url>
@@ -171,7 +228,7 @@
       </stream>
     </streams>
   </evento>
-  <evento id="9">
+  <evento id="12">
     <nombre>Rio Cuarto –  Rosario Central</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Argentina. Liga Profesional</competicion>
@@ -200,7 +257,7 @@
       </stream>
     </streams>
   </evento>
-  <evento id="10">
+  <evento id="13">
     <nombre>MC Torque –  Boston River</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Uruguay. Primera División</competicion>
@@ -210,24 +267,7 @@
     <datetime_iso>2026-04-24T00:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="11">
-    <nombre>Bauru –  Paulistano</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Brasil. NBB</competicion>
-    <fecha>24 de abril</fecha>
-    <hora>00:30</hora>
-    <url>https://livetv.sx/es/eventinfo/371172400_bauru_paulistano/</url>
-    <datetime_iso>2026-04-24T00:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/IRskzdP9k4w?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
-        <idioma_nombre>Holandés</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=youtube&amp;c=IRskzdP9k4w&amp;lang=es&amp;eid=371172400&amp;lid=3004490&amp;ci=2373&amp;si=3</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="12">
+  <evento id="14">
     <nombre>Centauros de La Guaira –  Lideres de Miranda</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Venezuela. LMBP</competicion>
@@ -244,7 +284,688 @@
       </stream>
     </streams>
   </evento>
-  <evento id="13">
+  <evento id="15">
+    <nombre>Cincinnati –  Detroit</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>00:40</hora>
+    <url>https://livetv.sx/es/eventinfo/366688691_cincinnati_detroit/</url>
+    <datetime_iso>2026-04-24T00:40:00</datetime_iso>
+    <streams total="5">
+      <stream id="1">
+        <url>https://wikisport.club/mlb/tigers.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3002946&amp;lang=es&amp;eid=366688691&amp;lid=3002946&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://wikisport.club/mlb/reds.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004746&amp;lang=es&amp;eid=366688691&amp;lid=3004746&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://viewembed.ru/channel/scfw_cincinnatireds</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004647&amp;lang=es&amp;eid=366688691&amp;lid=3004647&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://daddylive5.top/livemy/stream-8.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003496&amp;lang=es&amp;eid=366688691&amp;lid=3003496&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://viewembed.ru/channel/scfw_detroittigers</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3002951&amp;lang=es&amp;eid=366688691&amp;lid=3002951&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="16">
+    <nombre>Magnus –  São José RS</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Brasil. LNF</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>00:45</hora>
+    <url>https://livetv.sx/es/eventinfo/372959271_magnus_sand227_o_josand233__rs/</url>
+    <datetime_iso>2026-04-24T00:45:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/5yiymHdKqNY?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=youtube&amp;c=5yiymHdKqNY&amp;lang=es&amp;eid=372959271&amp;lid=3003207&amp;ci=625&amp;si=12</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="17">
+    <nombre>Montreal –  Tampa Bay</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/369022717_montreal_tampa_bay/</url>
+    <datetime_iso>2026-04-24T01:00:00</datetime_iso>
+    <streams total="8">
+      <stream id="1">
+        <url>https://emb.apl404.me/
+player/live.php?id=258426&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=alieztv&amp;c=258426&amp;lang=es&amp;eid=369022717&amp;lid=3003838&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl404.me/
+player/live.php?id=258563&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=alieztv&amp;c=258563&amp;lang=es&amp;eid=369022717&amp;lid=3003837&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl404.me/
+player/live.php?id=258017&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=alieztv&amp;c=258017&amp;lang=es&amp;eid=369022717&amp;lid=2999555&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://flixxlive.pro/live/ch11_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=2678320&amp;lang=es&amp;eid=369022717&amp;lid=2678320&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://flixxlive.pro/live/nhl1_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=2737308&amp;lang=es&amp;eid=369022717&amp;lid=2737308&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://abcsport.top/arena1premiumserbia.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004763&amp;lang=es&amp;eid=369022717&amp;lid=3004763&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://dlstreams.com/stream/stream-408.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004753&amp;lang=es&amp;eid=369022717&amp;lid=3004753&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://dlstreams.com/stream/stream-147.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004757&amp;lang=es&amp;eid=369022717&amp;lid=3004757&amp;ci=2&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="18">
+    <nombre>Ponte Preta –  América Mineiro</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Brasil. Serie B</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/366699195_ponte_preta_am__rica_mineiro/</url>
+    <datetime_iso>2026-04-24T01:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://viewembed.ru/channel/bet12034120</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004623&amp;lang=es&amp;eid=366699195&amp;lid=3004623&amp;ci=260&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="19">
+    <nombre>Cleveland Monsters –  Syracuse Crunch</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>EUA. AHL</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/371719355_cleveland_monsters_syracuse_crunch/</url>
+    <datetime_iso>2026-04-24T01:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://olimp-video.com/api/broadcast/sportboomcom/14599540</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004792&amp;lang=es&amp;eid=371719355&amp;lid=3004792&amp;ci=328&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="20">
+    <nombre>Charlotte Checkers –  Springfield Thunderbirds</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>EUA. AHL</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/371719357_charlotte_checkers_springfield_thunderbirds/</url>
+    <datetime_iso>2026-04-24T01:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://olimp-video.com/api/broadcast/sportboomcom/14599539</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004793&amp;lang=es&amp;eid=371719357&amp;lid=3004793&amp;ci=328&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="21">
+    <nombre>Cerro Porteño –  Ameliano</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Paraguay. Primera División</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/371137454_cerro_porte__o_ameliano/</url>
+    <datetime_iso>2026-04-24T01:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://viewembed.ru/channel/bet12720163</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004625&amp;lang=es&amp;eid=371137454&amp;lid=3004625&amp;ci=442&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="22">
+    <nombre>Kitchener Rangers –  Windsor Spitfires</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Canadá. OHL</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/373627940_kitchener_rangers_windsor_spitfires/</url>
+    <datetime_iso>2026-04-24T01:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/UeCZruJetpI?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=youtube&amp;c=UeCZruJetpI&amp;lang=es&amp;eid=373627940&amp;lid=3004791&amp;ci=1486&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="23">
+    <nombre>Hamilton Bulldogs –  Barrie Colts</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Canadá. OHL</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/373631814_hamilton_bulldogs_barrie_colts/</url>
+    <datetime_iso>2026-04-24T01:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://olimp-video.com/api/broadcast/sportboomcom/14599564</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004796&amp;lang=es&amp;eid=373631814&amp;lid=3004796&amp;ci=1486&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="24">
+    <nombre>León (M) –   Atlético de San Luis (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>México. Mujeres. Liga MX</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/366701434__le__n_m__atl__tico_de_san_luis_m/</url>
+    <datetime_iso>2026-04-24T01:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/f_tlIpXEvJ0?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=youtube&amp;c=f_tlIpXEvJ0&amp;lang=es&amp;eid=366701434&amp;lid=3004790&amp;ci=2334&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="25">
+    <nombre>Supra du Quebec –  HFX Wanderers</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Canadá. CPL</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/366700865_supra_du_quebec_hfx_wanderers/</url>
+    <datetime_iso>2026-04-24T01:00:00</datetime_iso>
+    <streams total="5">
+      <stream id="1">
+        <url>https://viewembed.ru/channel/FOXSports2%5BUSA%5D</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=2948477&amp;lang=es&amp;eid=366700865&amp;lid=2948477&amp;ci=2651&amp;si=1</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://wikisport.club/wik/efl1.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004644&amp;lang=es&amp;eid=366700865&amp;lid=3004644&amp;ci=2651&amp;si=1</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://wikisport.club/wik/one.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004464&amp;lang=es&amp;eid=366700865&amp;lid=3004464&amp;ci=2651&amp;si=1</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://daddylive5.top/livemy/stream-758.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003592&amp;lang=es&amp;eid=366700865&amp;lid=3003592&amp;ci=2651&amp;si=1</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://nrdrse.link/ch.php?id=82</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3001434&amp;lang=es&amp;eid=366700865&amp;lid=3001434&amp;ci=2651&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="26">
+    <nombre>Dogos –  Pampas</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Súper Liga Americana</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/372569929_dogos_pampas/</url>
+    <datetime_iso>2026-04-24T01:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://daddylive5.top/livemy/stream-798.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003595&amp;lang=es&amp;eid=372569929&amp;lid=3003595&amp;ci=3647&amp;si=33</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="27">
+    <nombre>Paraguay U17 (M) –  Argentina U17 (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato Sudamericano Sub-17</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/373483604_paraguay_u17_m_argentina_u17_m/</url>
+    <datetime_iso>2026-04-24T01:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/eqpa29JP8gk?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=youtube&amp;c=eqpa29JP8gk&amp;lang=es&amp;eid=373483604&amp;lid=3004432&amp;ci=5528&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="28">
+    <nombre>Toronto II –  Nueva York City II</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>EUA. MLS Next Pro</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/372964475_toronto_ii_nueva_york_city_ii/</url>
+    <datetime_iso>2026-04-24T01:00:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/aX71GikdM98?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=youtube&amp;c=aX71GikdM98&amp;lang=es&amp;eid=372964475&amp;lid=3004650&amp;ci=6785&amp;si=1</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://viewembed.ru/channel/bet12234869</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004624&amp;lang=es&amp;eid=372964475&amp;lid=3004624&amp;ci=6785&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="29">
+    <nombre>Baltimore –  Boston</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:05</hora>
+    <url>https://livetv.sx/es/eventinfo/366701899_baltimore_boston/</url>
+    <datetime_iso>2026-04-24T01:05:00</datetime_iso>
+    <streams total="5">
+      <stream id="1">
+        <url>https://viewembed.ru/channel/scfw_bostonredsox</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3002972&amp;lang=es&amp;eid=366701899&amp;lid=3002972&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://daddylive5.top/livemy/stream-9.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003497&amp;lang=es&amp;eid=366701899&amp;lid=3003497&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://wikisport.club/mlb/rsox.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3002277&amp;lang=es&amp;eid=366701899&amp;lid=3002277&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://wikisport.club/mlb/orioles.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004764&amp;lang=es&amp;eid=366701899&amp;lid=3004764&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://viewembed.ru/channel/scfw_baltimoreorioles</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004774&amp;lang=es&amp;eid=366701899&amp;lid=3004774&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="30">
+    <nombre>Rochester Americans –  Toronto Marlies</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>EUA. AHL</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:05</hora>
+    <url>https://livetv.sx/es/eventinfo/371719359_rochester_americans_toronto_marlies/</url>
+    <datetime_iso>2026-04-24T01:05:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://olimp-video.com/api/broadcast/sportboomcom/14599541</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004794&amp;lang=es&amp;eid=371719359&amp;lid=3004794&amp;ci=328&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="31">
+    <nombre>Toronto –  Cleveland</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:07</hora>
+    <url>https://livetv.sx/es/eventinfo/366701901_toronto_cleveland/</url>
+    <datetime_iso>2026-04-24T01:07:00</datetime_iso>
+    <streams total="5">
+      <stream id="1">
+        <url>https://daddylive5.top/livemy/stream-10.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/4.png</idioma>
+        <idioma_nombre>Italiano (Italia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003498&amp;lang=es&amp;eid=366701901&amp;lid=3003498&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://viewembed.ru/channel/scfw_torontobluejays</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004776&amp;lang=es&amp;eid=366701901&amp;lid=3004776&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://viewembed.ru/channel/scfw_clevelandguardians</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004775&amp;lang=es&amp;eid=366701901&amp;lid=3004775&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://embedsports.me/mlb/toronto-blue-jays-stream-2</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004766&amp;lang=es&amp;eid=366701901&amp;lid=3004766&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://wikisport.club/mlb/guardians.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004765&amp;lang=es&amp;eid=366701901&amp;lid=3004765&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="32">
+    <nombre>Tampa Bay –  Minnesota</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:10</hora>
+    <url>https://livetv.sx/es/eventinfo/366701903_tampa_bay_minnesota/</url>
+    <datetime_iso>2026-04-24T01:10:00</datetime_iso>
+    <streams total="6">
+      <stream id="1">
+        <url>https://wikisport.club/mlb/twins.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3002280&amp;lang=es&amp;eid=366701903&amp;lid=3002280&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://viewembed.ru/channel/scfw_tampabayrays</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004777&amp;lang=es&amp;eid=366701903&amp;lid=3004777&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://wikisport.club/mlb/rays.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004767&amp;lang=es&amp;eid=366701903&amp;lid=3004767&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://daddylive5.top/livemy/stream-12.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003500&amp;lang=es&amp;eid=366701903&amp;lid=3003500&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://shd247.live/frame0023.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003142&amp;lang=es&amp;eid=366701903&amp;lid=3003142&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://viewembed.ru/channel/scfw_minnesotatwins</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3002966&amp;lang=es&amp;eid=366701903&amp;lid=3002966&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="33">
+    <nombre>NY Mets –  Colorado</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:10</hora>
+    <url>https://livetv.sx/es/eventinfo/366701904_ny_mets_colorado/</url>
+    <datetime_iso>2026-04-24T01:10:00</datetime_iso>
+    <streams total="5">
+      <stream id="1">
+        <url>https://viewembed.ru/channel/scfw_newyorkmets</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3002967&amp;lang=es&amp;eid=366701904&amp;lid=3002967&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://daddylive5.top/livemy/stream-11.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003499&amp;lang=es&amp;eid=366701904&amp;lid=3003499&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://wikisport.club/mlb/rockies.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=2997987&amp;lang=es&amp;eid=366701904&amp;lid=2997987&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://wikisport.club/mlb/mets.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3002281&amp;lang=es&amp;eid=366701904&amp;lid=3002281&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://viewembed.ru/channel/scfw_coloradorockies</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004778&amp;lang=es&amp;eid=366701904&amp;lid=3004778&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="34">
+    <nombre>Tigres Bogotá –  Internacional Palmira</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Colombia. Primera B</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:10</hora>
+    <url>https://livetv.sx/es/eventinfo/372896156_tigres_bogot___internacional_palmira/</url>
+    <datetime_iso>2026-04-24T01:10:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="35">
+    <nombre>Wheeling Nailers –  Reading Royals</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>EUA. ECHL</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:10</hora>
+    <url>https://livetv.sx/es/eventinfo/371671641_wheeling_nailers_reading_royals/</url>
+    <datetime_iso>2026-04-24T01:10:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://viewembed.ru/channel/bet12800780</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004748&amp;lang=es&amp;eid=371671641&amp;lid=3004748&amp;ci=1488&amp;si=2</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://abcsport.top/embed.php?id=bet12800780</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004747&amp;lang=es&amp;eid=371671641&amp;lid=3004747&amp;ci=1488&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="36">
+    <nombre>Atlanta –  Filadelfia</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:15</hora>
+    <url>https://livetv.sx/es/eventinfo/366701907_atlanta_filadelfia/</url>
+    <datetime_iso>2026-04-24T01:15:00</datetime_iso>
+    <streams total="6">
+      <stream id="1">
+        <url>https://emb.apl404.me/
+player/live.php?id=258438&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=alieztv&amp;c=258438&amp;lang=es&amp;eid=366701907&amp;lid=3003762&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://wikisport.club/mlb/braves.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3001675&amp;lang=es&amp;eid=366701907&amp;lid=3001675&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://viewembed.ru/channel/scfw_atlantabraves</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004779&amp;lang=es&amp;eid=366701907&amp;lid=3004779&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://daddylive5.top/livemy/stream-13.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003501&amp;lang=es&amp;eid=366701907&amp;lid=3003501&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://viewembed.ru/channel/scfw_philadelphiaphillies</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3002964&amp;lang=es&amp;eid=366701907&amp;lid=3002964&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://wikisport.club/mlb/phillies.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3001678&amp;lang=es&amp;eid=366701907&amp;lid=3001678&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="37">
+    <nombre>Florida Everblades –  Savannah Ghost Pirates</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>EUA. ECHL</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>01:30</hora>
+    <url>https://livetv.sx/es/eventinfo/371671642_florida_everblades_savannah_ghost_pirates/</url>
+    <datetime_iso>2026-04-24T01:30:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/vJQQxkv6aeY?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer2.php?t=youtube&amp;c=vJQQxkv6aeY&amp;lang=es&amp;eid=371671642&amp;lid=3004749&amp;ci=1488&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="38">
+    <nombre>Filadelfia –  Boston</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>24 de abril</fecha>
+    <hora>16:18</hora>
+    <url>https://livetv.sx/es/eventinfo/369479662_filadelfia_boston/</url>
+    <datetime_iso>2026-04-24T16:18:00</datetime_iso>
+    <streams total="8">
+      <stream id="1">
+        <url>https://flixxlive.pro/live/nba1_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=2661168&amp;lang=es&amp;eid=369479662&amp;lid=2661168&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://flixxlive.pro/live/ch1_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=2661169&amp;lang=es&amp;eid=369479662&amp;lid=2661169&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://wikisport.club/strm/nba1.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=2986403&amp;lang=es&amp;eid=369479662&amp;lid=2986403&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://nrdrse.link/ch.php?id=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3001426&amp;lang=es&amp;eid=369479662&amp;lid=3001426&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://thepurples.site/channel.html?id=3</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3001375&amp;lang=es&amp;eid=369479662&amp;lid=3001375&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://thepurples.site/channel.html?id=5</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3001376&amp;lang=es&amp;eid=369479662&amp;lid=3001376&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://daddylive5.top/livemy/stream-2.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003490&amp;lang=es&amp;eid=369479662&amp;lid=3003490&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://viewembed.ru/channel/scfw_bostonceltics</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004651&amp;lang=es&amp;eid=369479662&amp;lid=3004651&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="39">
     <nombre>ATP Challenger. Savannah</nombre>
     <deporte>Fútbol</deporte>
     <competicion>ATP Challenger. Savannah</competicion>
@@ -252,20 +973,8 @@
     <hora>17:10</hora>
     <url>https://livetv.sx/es/eventinfo/371159311_atp_challenger_savannah/</url>
     <datetime_iso>2026-04-24T17:10:00</datetime_iso>
-    <streams total="3">
+    <streams total="1">
       <stream id="1">
-        <url>https://wikisport.club/fsl/fsl.php?id=bet12831705</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003687&amp;lang=es&amp;eid=371159311&amp;lid=3003687&amp;ci=5800&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://wikisport.club/fsl/fsl.php?id=bet12847134</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003694&amp;lang=es&amp;eid=371159311&amp;lid=3003694&amp;ci=5800&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
         <url>https://wikisport.club/fsl/fsl.php?id=bet12849818</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
         <idioma_nombre>Bandera #0</idioma_nombre>
@@ -273,7 +982,7 @@
       </stream>
     </streams>
   </evento>
-  <evento id="14">
+  <evento id="40">
     <nombre>ATP Challenger. Abidjan</nombre>
     <deporte>Fútbol</deporte>
     <competicion>ATP Challenger. Abiyán</competicion>
@@ -281,34 +990,16 @@
     <hora>18:40</hora>
     <url>https://livetv.sx/es/eventinfo/370812128_atp_challenger_abidjan/</url>
     <datetime_iso>2026-04-24T18:40:00</datetime_iso>
-    <streams total="4">
+    <streams total="1">
       <stream id="1">
-        <url>https://wikisport.club/fsl/fsl.php?id=bet12848518</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003689&amp;lang=es&amp;eid=370812128&amp;lid=3003689&amp;ci=8238&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
         <url>https://wikisport.club/fsl/fsl.php?id=bet12848486</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
         <idioma_nombre>Polaco</idioma_nombre>
         <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003695&amp;lang=es&amp;eid=370812128&amp;lid=3003695&amp;ci=8238&amp;si=4</enlace_original>
       </stream>
-      <stream id="3">
-        <url>https://wikisport.club/fsl/fsl.php?id=bet12847200</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003691&amp;lang=es&amp;eid=370812128&amp;lid=3003691&amp;ci=8238&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://wikisport.club/fsl/fsl.php?id=bet12847986</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003690&amp;lang=es&amp;eid=370812128&amp;lid=3003690&amp;ci=8238&amp;si=4</enlace_original>
-      </stream>
     </streams>
   </evento>
-  <evento id="15">
+  <evento id="41">
     <nombre>Herlev –  Herning Blue Fox</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Dinamarca. Metal Ligaen</competicion>
@@ -318,16 +1009,16 @@
     <datetime_iso>2026-04-24T19:30:00</datetime_iso>
     <streams total="3">
       <stream id="1">
-        <url>https://abcsport.top/embed.php?id=bet12705501</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/20.png</idioma>
-        <idioma_nombre>Húngaro</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004469&amp;lang=es&amp;eid=366876237&amp;lid=3004469&amp;ci=847&amp;si=2</enlace_original>
-      </stream>
-      <stream id="2">
         <url>https://embedsports.me/nhl/herlev-vs-herning-blue-fox-stream-1</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/20.png</idioma>
         <idioma_nombre>Húngaro</idioma_nombre>
         <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004471&amp;lang=es&amp;eid=366876237&amp;lid=3004471&amp;ci=847&amp;si=2</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://abcsport.top/embed.php?id=bet12705501</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/20.png</idioma>
+        <idioma_nombre>Húngaro</idioma_nombre>
+        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004469&amp;lang=es&amp;eid=366876237&amp;lid=3004469&amp;ci=847&amp;si=2</enlace_original>
       </stream>
       <stream id="3">
         <url>https://viewembed.ru/channel/bet12705501</url>
@@ -337,7 +1028,7 @@
       </stream>
     </streams>
   </evento>
-  <evento id="16">
+  <evento id="42">
     <nombre>Herlev – Herning Blue Fox</nombre>
     <deporte>Hockey</deporte>
     <competicion>Dinamarca. Metal Ligaen</competicion>
@@ -345,115 +1036,9 @@
     <hora>19:30</hora>
     <url>https://livetv.sx/es/eventinfo/366876237__/</url>
     <datetime_iso>2026-04-24T19:30:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://abcsport.top/embed.php?id=bet12705501</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/20.png</idioma>
-        <idioma_nombre>Húngaro</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004469&amp;lang=es&amp;eid=366876237&amp;lid=3004469&amp;ci=847&amp;si=2</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://embedsports.me/nhl/herlev-vs-herning-blue-fox-stream-1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/20.png</idioma>
-        <idioma_nombre>Húngaro</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004471&amp;lang=es&amp;eid=366876237&amp;lid=3004471&amp;ci=847&amp;si=2</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://viewembed.ru/channel/bet12705501</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/20.png</idioma>
-        <idioma_nombre>Húngaro</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004470&amp;lang=es&amp;eid=366876237&amp;lid=3004470&amp;ci=847&amp;si=2</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="17">
-    <nombre>Jessica Pegula (M) –  Katie Boulter (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Madrid</competicion>
-    <fecha>24 de abril</fecha>
-    <hora>21:45</hora>
-    <url>https://livetv.sx/es/eventinfo/372648570__/</url>
-    <datetime_iso>2026-04-24T21:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="18">
-    <nombre>Cumbaya –  El Nacional</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Ecuador. Serie B</competicion>
-    <fecha>24 de abril</fecha>
-    <hora>22:30</hora>
-    <url>https://livetv.sx/es/eventinfo/365825108_cumbaya_el_nacional/</url>
-    <datetime_iso>2026-04-24T22:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="19">
-    <nombre>Cumbaya – El Nacional</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Ecuador. Serie B</competicion>
-    <fecha>24 de abril</fecha>
-    <hora>22:30</hora>
-    <url>https://livetv.sx/es/eventinfo/365825108__/</url>
-    <datetime_iso>2026-04-24T22:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="20">
-    <nombre>Nacional As –  Recoleta</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Paraguay. Primera División</competicion>
-    <fecha>24 de abril</fecha>
-    <hora>22:45</hora>
-    <url>https://livetv.sx/es/eventinfo/371137452_nacional_as_recoleta/</url>
-    <datetime_iso>2026-04-24T22:45:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://viewembed.ru/channel/bet12720166</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004618&amp;lang=es&amp;eid=371137452&amp;lid=3004618&amp;ci=442&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="21">
-    <nombre>Nacional As – Recoleta</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Paraguay. Primera División</competicion>
-    <fecha>24 de abril</fecha>
-    <hora>22:45</hora>
-    <url>https://livetv.sx/es/eventinfo/371137452__/</url>
-    <datetime_iso>2026-04-24T22:45:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://viewembed.ru/channel/bet12720166</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004618&amp;lang=es&amp;eid=371137452&amp;lid=3004618&amp;ci=442&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="22">
-    <nombre>Cúcuta Deportivo –  Atlético Junior</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Colombia. Primera A</competicion>
-    <fecha>24 de abril</fecha>
-    <hora>23:00</hora>
-    <url>https://livetv.sx/es/eventinfo/366648672_c__cuta_deportivo_atl__tico_junior/</url>
-    <datetime_iso>2026-04-24T23:00:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://daddylive5.top/livemy/stream-392.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003557&amp;lang=es&amp;eid=366648672&amp;lid=3003557&amp;ci=19&amp;si=1</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://viewembed.ru/channel/bet12536322</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004619&amp;lang=es&amp;eid=366648672&amp;lid=3004619&amp;ci=19&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="23">
+  <evento id="43">
     <nombre>Marineros de Carabobo –  Samanes de Aragua</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Venezuela. LMBP</competicion>
@@ -470,30 +1055,7 @@
       </stream>
     </streams>
   </evento>
-  <evento id="24">
-    <nombre>Cúcuta Deportivo – Atlético Junior</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Colombia. Primera A</competicion>
-    <fecha>24 de abril</fecha>
-    <hora>23:00</hora>
-    <url>https://livetv.sx/es/eventinfo/366648672__/</url>
-    <datetime_iso>2026-04-24T23:00:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://daddylive5.top/livemy/stream-392.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3003557&amp;lang=es&amp;eid=366648672&amp;lid=3003557&amp;ci=19&amp;si=1</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://viewembed.ru/channel/bet12536322</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv878.me/webplayer.php?t=ifr&amp;c=3004619&amp;lang=es&amp;eid=366648672&amp;lid=3004619&amp;ci=19&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="25">
+  <evento id="44">
     <nombre>Ag-Pro 300</nombre>
     <deporte>Fútbol</deporte>
     <competicion>NASCAR</competicion>
@@ -503,7 +1065,7 @@
     <datetime_iso>2026-04-24T23:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="26">
+  <evento id="45">
     <nombre>Racing Louisville (M) –   Orlando Pride (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>EUA. Mujeres. NWSL</competicion>
@@ -513,7 +1075,7 @@
     <datetime_iso>2026-04-24T23:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="27">
+  <evento id="46">
     <nombre>Minas (M) –   Osasco (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Mujeres. Superliga</competicion>
@@ -531,7 +1093,7 @@ player/live.php?id=258365&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="28">
+  <evento id="47">
     <nombre>Racing Louisville (M) –  Orlando Pride (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>EUA. Mujeres. NWSL</competicion>
@@ -541,7 +1103,7 @@ player/live.php?id=258365&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-04-24T23:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="29">
+  <evento id="48">
     <nombre>Minas (M) –  Osasco (M)</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Brasil. Mujeres. Superliga</competicion>
@@ -559,7 +1121,7 @@ player/live.php?id=258365&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="30">
+  <evento id="49">
     <nombre>Mitchell Krueger –  Daniel Elahi Galan</nombre>
     <deporte>Fútbol</deporte>
     <competicion>ATP Challenger. Savannah</competicion>
@@ -576,7 +1138,7 @@ player/live.php?id=258365&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="31">
+  <evento id="50">
     <nombre>Mitchell Krueger – Daniel Elahi Galan</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Savannah</competicion>
