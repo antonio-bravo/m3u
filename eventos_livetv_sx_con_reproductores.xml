@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-04-26 09:42:07" total="756">
+<eventos generado="2026-04-26 10:29:52" total="756">
   <evento id="1">
     <nombre>GWS Giants –  North Melbourne</nombre>
     <deporte>Fútbol</deporte>
@@ -1068,7 +1068,14 @@
     <hora>10:30</hora>
     <url>https://livetv.sx/es/eventinfo/367575686__/</url>
     <datetime_iso>2026-04-26T10:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/rUz0Arwj2Jc?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://cdn.livetv-ru3.me/webplayer2.php?t=youtube&amp;c=rUz0Arwj2Jc&amp;lang=es&amp;eid=367575686&amp;lid=3004446&amp;ci=3179&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="108">
     <nombre>Admira – Sturm Graz II</nombre>
@@ -1288,7 +1295,14 @@
     <hora>11:00</hora>
     <url>https://livetv.sx/es/eventinfo/373441760__/</url>
     <datetime_iso>2026-04-26T11:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://wikisport.club/fsl/fsl.php?id=bet12859967</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://cdn.livetv-ru3.me/webplayer.php?t=ifr&amp;c=3005731&amp;lang=es&amp;eid=373441760&amp;lid=3005731&amp;ci=3741&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="130">
     <nombre>Katerina Siniakova (M) –  Caty McNally (M)</nombre>
