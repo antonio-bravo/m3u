@@ -1,168 +1,441 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-04-26 18:30</datetime>
+    <datetime>2026-04-27 15:00</datetime>
+    <league>Liga 1</league>
+    <teams>ADT vs Los Chankas</teams>
+    <channels>
+      <channel>
+        <channel_name>Liga1MAX</channel_name>
+        <channel_id>35039-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP2</channel_name>
+        <channel_id>35039-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP3</channel_name>
+        <channel_id>35039-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 14:00</datetime>
+    <league>LaLiga</league>
+    <teams>Espanyol vs Levante</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 3</channel_name>
+        <channel_id>35042-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP2</channel_name>
+        <channel_id>35042-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP3</channel_name>
+        <channel_id>35042-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Deportes</channel_name>
+        <channel_id>35042-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuZGVwb3J0ZXM=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Deportes  | OP2</channel_name>
+        <channel_id>35042-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuZGVwb3J0ZXM=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Deportes  | OP3</channel_name>
+        <channel_id>35042-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5kZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>Sky Sports LaLiga MX</channel_name>
+        <channel_id>35042-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNreV9zcG9ydHNfbGFsaWdh</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 11:30</datetime>
+    <league>Serie A</league>
+    <teams>Cagliari vs Atalanta</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 3</channel_name>
+        <channel_id>35043-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP2</channel_name>
+        <channel_id>35043-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP3</channel_name>
+        <channel_id>35043-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 13:45</datetime>
+    <league>Serie A</league>
+    <teams>Lazio vs Udinese</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 3 MX</channel_name>
+        <channel_id>35044-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuM214</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 19:00</datetime>
     <league>Primera División</league>
-    <teams>Oriente Petrolero vs Real Potosí</teams>
+    <teams>Aurora vs San Antonio Bulo Bulo</teams>
     <channels>
       <channel>
         <channel_name>Futbol Canal</channel_name>
-        <channel_id>34990-1</channel_id>
+        <channel_id>35047-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjE=</url>
       </channel>
       <channel>
         <channel_name>Futbol Canal | OP2</channel_name>
-        <channel_id>34990-2</channel_id>
+        <channel_id>35047-2</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjE=</url>
       </channel>
       <channel>
         <channel_name>Futbol Canal | OP3</channel_name>
-        <channel_id>34990-3</channel_id>
+        <channel_id>35047-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjE=</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-04-26 18:10</datetime>
-    <league>Categoría Primera A</league>
-    <teams>Llaneros vs Alianza</teams>
+    <datetime>2026-04-27 18:00</datetime>
+    <league>Sudamericano Sub-17 Femenino</league>
+    <teams>Uruguay vs Brasil</teams>
     <channels>
-      <channel>
-        <channel_name>Win Sports +</channel_name>
-        <channel_id>35001-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
-      </channel>
-      <channel>
-        <channel_name>Win Sports + | OP2</channel_name>
-        <channel_id>35001-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
-      </channel>
-      <channel>
-        <channel_name>Win Sports + | OP3</channel_name>
-        <channel_id>35001-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0c3BsdXM=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-26 20:20</datetime>
-    <league>Categoría Primera A</league>
-    <teams>Inter Bogotá vs Boyacá Chicó</teams>
-    <channels>
-      <channel>
-        <channel_name>Win Sports +</channel_name>
-        <channel_id>35002-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
-      </channel>
-      <channel>
-        <channel_name>Win Sports + | OP2</channel_name>
-        <channel_id>35002-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
-      </channel>
-      <channel>
-        <channel_name>Win Sports + | OP3</channel_name>
-        <channel_id>35002-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0c3BsdXM=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-26 20:00</datetime>
-    <league>Liga de Expansión MX</league>
-    <teams>Cancún vs Tapatío</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2 MX</channel_name>
-        <channel_id>35010-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMm14</url>
-      </channel>
       <channel>
         <channel_name>Disney+</channel_name>
-        <channel_id>35010-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxMA==</url>
+        <channel_id>35051-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-04-26 18:30</datetime>
-    <league>Brasileirão</league>
-    <teams>Atlético Mineiro vs Flamengo</teams>
+    <datetime>2026-04-27 17:00</datetime>
+    <league>Segunda División</league>
+    <teams>Atenas vs Fénix</teams>
     <channels>
       <channel>
-        <channel_name>Sportv BR</channel_name>
-        <channel_id>34995-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
-      </channel>
-      <channel>
-        <channel_name>Premiere BR</channel_name>
-        <channel_id>34995-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1wcmVtaWVyZTE=</url>
+        <channel_name>Disney+</channel_name>
+        <channel_id>35055-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-04-26 20:00</datetime>
-    <league>Liga MX</league>
-    <teams>Cruz Azul vs Necaxa</teams>
+    <datetime>2026-04-27 17:00</datetime>
+    <league>Primera B</league>
+    <teams>Bogotá vs Unión Magdalena</teams>
     <channels>
       <channel>
-        <channel_name>Canal 5 MX</channel_name>
-        <channel_id>35023-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1jYW5hbDU=</url>
+        <channel_name>Win Sports 2</channel_name>
+        <channel_id>35057-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT13aW5zcG9ydHMy</url>
       </channel>
       <channel>
-        <channel_name>VIX TUDN</channel_name>
-        <channel_id>35023-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT12aXgx</url>
+        <channel_name>Win Sports 2 | OP2</channel_name>
+        <channel_id>35057-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHMy</url>
       </channel>
       <channel>
-        <channel_name>TUDN USA</channel_name>
-        <channel_id>35023-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10dWRu</url>
-      </channel>
-      <channel>
-        <channel_name>TUDN USA | OP2</channel_name>
-        <channel_id>35023-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10dWRu</url>
-      </channel>
-      <channel>
-        <channel_name>TUDN USA | OP3</channel_name>
-        <channel_id>35023-5</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXR1ZG4=</url>
+        <channel_name>Win Sports 2 | OP3</channel_name>
+        <channel_id>35057-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0czI=</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-04-26 18:30</datetime>
-    <league>Brasileirão</league>
-    <teams>Fluminense vs Chapecoense</teams>
+    <datetime>2026-04-27 19:30</datetime>
+    <league>Primera B</league>
+    <teams>Barranquilla vs Real Cartagena</teams>
     <channels>
       <channel>
-        <channel_name>Premiere 3 BR</channel_name>
-        <channel_id>34996-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1wcmVtaWVyZTM=</url>
+        <channel_name>Win Sports</channel_name>
+        <channel_id>35058-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports | OP2</channel_name>
+        <channel_id>35058-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports ┃OP3</channel_name>
+        <channel_id>35058-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0cw==</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-04-26 18:15</datetime>
-    <league>Liga Nacional</league>
-    <teams>Motagua vs Choloma</teams>
+    <datetime>2026-04-27 09:00</datetime>
+    <league>Rugby</league>
+    <teams>U20 Rugby Championship – Argentina vs Sudáfrica</teams>
     <channels>
       <channel>
-        <channel_name>FOX Deportes</channel_name>
-        <channel_id>35021-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
+        <channel_name>ESPN 4</channel_name>
+        <channel_id>35060-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNA==</url>
       </channel>
       <channel>
-        <channel_name>FOX Deportes | OP2</channel_name>
-        <channel_id>35021-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
+        <channel_name>ESPN 4 | OP2</channel_name>
+        <channel_id>35060-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNA==</url>
       </channel>
       <channel>
-        <channel_name>FOX Deportes | OP3</channel_name>
-        <channel_id>35021-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWZveGRlcG9ydGVz</url>
+        <channel_name>ESPN 4 | OP3</channel_name>
+        <channel_id>35060-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 19:00</datetime>
+    <league>Liga 1</league>
+    <teams>Deportivo Garcilaso vs Melgar</teams>
+    <channels>
+      <channel>
+        <channel_name>Liga1MAX</channel_name>
+        <channel_id>35040-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP2</channel_name>
+        <channel_id>35040-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP3</channel_name>
+        <channel_id>35040-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 16:45</datetime>
+    <league>Liga Profesional</league>
+    <teams>Vélez Sarsfield vs Unión Santa Fe</teams>
+    <channels>
+      <channel>
+        <channel_name>TNT Sports</channel_name>
+        <channel_id>35045-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>TNT Sports | OP2</channel_name>
+        <channel_id>35045-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>TNT Sports | OP3</channel_name>
+        <channel_id>35045-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>TyC Sports Internacional</channel_name>
+        <channel_id>35045-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10eWNpbnRlcm5hY2lvbmFs</url>
+      </channel>
+      <channel>
+        <channel_name>TyC Sports Internacional | OP2</channel_name>
+        <channel_id>35045-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10eWNpbnRlcm5hY2lvbmFs</url>
+      </channel>
+      <channel>
+        <channel_name>TyC Sports International | OP3</channel_name>
+        <channel_id>35045-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXR5Y2ludGVybmFjaW9uYWw=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 17:30</datetime>
+    <league>Primera División</league>
+    <teams>Defensor Sporting vs Progreso</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>35048-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 11:00</datetime>
+    <league>Primera División de Chipre</league>
+    <teams>AEL vs Anorthosis</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>35049-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 13:30</datetime>
+    <league>LaLiga SmartBank</league>
+    <teams>Cádiz vs Las Palmas</teams>
+    <channels>
+      <channel>
+        <channel_name>LaLiga TV Hypermotion</channel_name>
+        <channel_id>35052-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1oeXBlcm1vdGlvbjE=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 19:00</datetime>
+    <league>NHL</league>
+    <teams>Pittsburgh Penguins vs Philadelphia Flyers</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 4</channel_name>
+        <channel_id>35061-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNA==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 4 | OP2</channel_name>
+        <channel_id>35061-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNA==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 4 | OP3</channel_name>
+        <channel_id>35061-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 14:00</datetime>
+    <league>Premier League</league>
+    <teams>Manchester United vs Brentford</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN</channel_name>
+        <channel_id>35041-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN AR┃OP2</channel_name>
+        <channel_id>35041-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN AR┃OP3</channel_name>
+        <channel_id>35041-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 19:00</datetime>
+    <league>Liga Profesional</league>
+    <teams>Huracán vs Argentinos Juniors</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN Premium</channel_name>
+        <channel_id>35046-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BucHJlbWl1bQ==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Premium┃OP2</channel_name>
+        <channel_id>35046-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BucHJlbWl1bQ==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Premium┃OP3</channel_name>
+        <channel_id>35046-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5wcmVtaXVt</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 15:00</datetime>
+    <league>Sudamericano Sub-17 Femenino</league>
+    <teams>Venezuela vs Ecuador</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>35050-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 12:00</datetime>
+    <league>Super Lig</league>
+    <teams>Konyaspor vs Trabzonspor</teams>
+    <channels>
+      <channel>
+        <channel_name>BeIN Sports EXTRA Español</channel_name>
+        <channel_id>35053-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1iZWluc3BvcnRfeHRyYV9lc3Bhbm9s</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 08:00</datetime>
+    <league>Tenis</league>
+    <teams>Madrid Open – Tercera Ronda</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 2</channel_name>
+        <channel_id>35059-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP2</channel_name>
+        <channel_id>35059-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP3</channel_name>
+        <channel_id>35059-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-04-27 19:00</datetime>
+    <league>MLB</league>
+    <teams>Texas Rangers vs New York Yankees</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 3</channel_name>
+        <channel_id>35062-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP2</channel_name>
+        <channel_id>35062-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP3</channel_name>
+        <channel_id>35062-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
       </channel>
     </channels>
   </event>
