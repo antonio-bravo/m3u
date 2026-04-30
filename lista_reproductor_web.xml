@@ -1,6 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
+    <datetime>2026-04-30 21:00</datetime>
+    <league>Copa Libertadores</league>
+    <teams>Medellín vs Cusco</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN</channel_name>
+        <channel_id>35152-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
     <datetime>2026-04-30 14:00</datetime>
     <league>UEFA Europa League</league>
     <teams>Sporting Braga vs Freiburg</teams>
@@ -515,28 +527,6 @@
         <channel_name>VIX TUN 2</channel_name>
         <channel_id>35143-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT12aXgy</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-04-30 06:00</datetime>
-    <league>Tenis – Madrid Open Cuartos de Final</league>
-    <teams>Casper Ruud vs Alexander Blockx</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>35144-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>35144-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>35144-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
       </channel>
     </channels>
   </event>
