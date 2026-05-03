@@ -527,8 +527,17 @@ def guardar_lista_m3u(eventos, archivo="lista.m3u"):
             extinf_line = (f"#EXTINF:-1 tvg-logo=\"{logo_url}\" tvg-id=\"{canal_id}\" tvg-name=\"{nombre_evento}\","
                            f"{hora_ajustada.strftime('%H:%M')} - {nombre_evento} - {item['canal']}\n")
             f.write(extinf_line)
-            acestream_id = item['url'].split('acestream://')[-1]
-            nuevo_enlace = f"http://127.0.0.1:6878/ace/getstream?id={acestream_id}"
+            url_or_id = item.get('url', '')
+            if url_or_id.startswith('http://127.0.0.1:6878/ace/getstream?id='):
+                nuevo_enlace = url_or_id
+            elif url_or_id.startswith('acestream://'):
+                acestream_id = url_or_id.split('acestream://', 1)[1]
+                nuevo_enlace = f"http://127.0.0.1:6878/ace/getstream?id={acestream_id}"
+            elif 'acestream://' in url_or_id:
+                acestream_id = url_or_id.split('acestream://', 1)[1]
+                nuevo_enlace = f"http://127.0.0.1:6878/ace/getstream?id={acestream_id}"
+            else:
+                nuevo_enlace = url_or_id
             f.write(f"{nuevo_enlace}\n")
 
 if __name__ == "__main__":
