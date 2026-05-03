@@ -13,7 +13,15 @@ ARENA_URLS = [
 ]
 
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Linux; Android 12; Pixel 5 Build/SP1A.210812.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.0.0 Mobile Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9,es;q=0.8',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Referer': 'http://www.arena4viewer.in/',
+    'Origin': 'http://www.arena4viewer.in',
+    'Connection': 'keep-alive',
+    'Upgrade-Insecure-Requests': '1',
+    'X-Requested-With': 'com.bone.android'
 }
 
 def extract_acestream_ids(text):
