@@ -70,7 +70,7 @@ def generar_m3u(data):
             # Crear entrada EXTINF
             contenido += f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}" group-title="{grupo}",{title}\n'
             # Usar acestream:// con el hash
-            contenido += f"acestream://{hash_acestream}\n"
+            contenido += f"http://127.0.0.1:6878/ace/getstream?id={hash_acestream}\n"
             contenido += "\n"
             contador += 1
     
