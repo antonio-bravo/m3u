@@ -1,14 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-05-05 12:08:23" total="161">
+<eventos generado="2026-05-05 13:28:17" total="157">
   <evento id="1">
-    <nombre>Road Warriors –  Titan Ultra</nombre>
+    <nombre>TNT Tropang Giga –  Magnolia Hotshots</nombre>
     <deporte>Fútbol</deporte>
     <competicion>PBA Commissioner's Cup</competicion>
     <fecha>5 de mayo</fecha>
-    <hora>07:10</hora>
-    <url>https://livetv.sx/es/eventinfo/372046818_road_warriors_titan_ultra/</url>
-    <datetime_iso>2026-05-05T07:10:00</datetime_iso>
-    <streams total="0" />
+    <hora>40:59</hora>
+    <url>https://livetv.sx/es/eventinfo/372084916_tnt_tropang_giga_magnolia_hotshots/</url>
+    <datetime_iso>2026-05-05T00:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/eYYJTHfnjkg?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=eYYJTHfnjkg&amp;lang=es&amp;eid=372084916&amp;lid=3009900&amp;ci=1269&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="2">
     <nombre>MODUS Super Series</nombre>
@@ -28,36 +35,6 @@
     </streams>
   </evento>
   <evento id="3">
-    <nombre>Brothers Union –  Bashundhara Kings</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Bangladés. Copa Federación</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>10:45</hora>
-    <url>https://livetv.sx/es/eventinfo/378324637_brothers_union_bashundhara_kings/</url>
-    <datetime_iso>2026-05-05T10:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="4">
-    <nombre>Rahmatganj –  Mohammedan</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Bangladés. Copa Federación</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>10:45</hora>
-    <url>https://livetv.sx/es/eventinfo/378324639_rahmatganj_mohammedan/</url>
-    <datetime_iso>2026-05-05T10:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="5">
-    <nombre>Rahmatganj – Mohammedan</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Bangladés. Copa Federación</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>10:45</hora>
-    <url>https://livetv.sx/es/eventinfo/378324639__/</url>
-    <datetime_iso>2026-05-05T10:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="6">
     <nombre>Campeonato Mundial</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Campeonato mundial</competicion>
@@ -92,54 +69,7 @@
       </stream>
     </streams>
   </evento>
-  <evento id="7">
-    <nombre>Eurocopa 2026</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Campeonato Europeo</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378163729_eurocopa_2026/</url>
-    <datetime_iso>2026-05-05T11:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/Q_Zt3r9DS6I?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=Q_Zt3r9DS6I&amp;lang=es&amp;eid=378163729&amp;lid=3009695&amp;ci=454&amp;si=48</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="8">
-    <nombre>Tanzania U20 –  Etiopía U20</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>IHF Trophy. África</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378163040_tanzania_u20_etiopand237_a_u20/</url>
-    <datetime_iso>2026-05-05T11:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="9">
-    <nombre>Yelimay Semey (W) –  Tobol (W)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Campeonato</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/376587545_yelimay_semey_w_tobol_w/</url>
-    <datetime_iso>2026-05-05T11:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="10">
-    <nombre>Tanzania U20 – Etiopía U20</nombre>
-    <deporte>Balonmano</deporte>
-    <competicion>IHF Trophy. África</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378163040_tanzania_u20_ethiopia_u20/</url>
-    <datetime_iso>2026-05-05T11:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="11">
+  <evento id="4">
     <nombre>WTA. Roma</nombre>
     <deporte>Fútbol</deporte>
     <competicion>WTA. Roma</competicion>
@@ -147,7 +77,7 @@
     <hora>11:05</hora>
     <url>https://livetv.sx/es/eventinfo/378382245_wta_roma/</url>
     <datetime_iso>2026-05-05T11:05:00</datetime_iso>
-    <streams total="10">
+    <streams total="8">
       <stream id="1">
         <url>https://emb.apl409.me/
 player/live.php?id=258960&amp;w=700&amp;h=480</url>
@@ -199,27 +129,14 @@ player/live.php?id=232742&amp;w=700&amp;h=480</url>
       </stream>
       <stream id="8">
         <url>https://emb.apl409.me/
-player/live.php?id=258906&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258906&amp;lang=es&amp;eid=378382245&amp;lid=3009879&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-      <stream id="9">
-        <url>https://emb.apl409.me/
 player/live.php?id=258962&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
         <idioma_nombre>Francés (Francia)</idioma_nombre>
         <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258962&amp;lang=es&amp;eid=378382245&amp;lid=3009828&amp;ci=3313&amp;si=4</enlace_original>
       </stream>
-      <stream id="10">
-        <url>https://wikisport.info/court/t3.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009863&amp;lang=es&amp;eid=378382245&amp;lid=3009863&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
     </streams>
   </evento>
-  <evento id="12">
+  <evento id="5">
     <nombre>WTA. Roma</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Roma</competicion>
@@ -279,303 +196,14 @@ player/live.php?id=232742&amp;w=700&amp;h=480</url>
       </stream>
       <stream id="8">
         <url>https://emb.apl409.me/
-player/live.php?id=258906&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258906&amp;lang=es&amp;eid=378382245&amp;lid=3009879&amp;ci=3313&amp;si=4</enlace_original>
+player/live.php?id=258962&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258962&amp;lang=es&amp;eid=378382245&amp;lid=3009828&amp;ci=3313&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="13">
-    <nombre>Barbora Krejcikova (M) –   Elsa Jacquemot (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Roma</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>11:10</hora>
-    <url>https://livetv.sx/es/eventinfo/378188069__barbora_krejcikova_m__elsa_jacquemot_m/</url>
-    <datetime_iso>2026-05-05T11:10:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="14">
-    <nombre>Barbora Krejcikova (M) –  Elsa Jacquemot (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Roma</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>11:10</hora>
-    <url>https://livetv.sx/es/eventinfo/378188069__/</url>
-    <datetime_iso>2026-05-05T11:10:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="15">
-    <nombre>Road Warriors – Titan Ultra</nombre>
-    <deporte>Baloncesto</deporte>
-    <competicion>Filipinas. PBA Commissioner's Cup</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>11:15</hora>
-    <url>https://livetv.sx/es/eventinfo/372046818__/</url>
-    <datetime_iso>2026-05-05T11:15:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="16">
-    <nombre>Tobol-2 –  AiRom</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Kazajistán. Vysheyshaya Liga</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/375481496_tobol_2_airom/</url>
-    <datetime_iso>2026-05-05T11:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="17">
-    <nombre>SC Wanderers (M) –   Brisbane City (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>NPL Queensland</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/378080862__sc_wanderers_m__brisbane_city_m/</url>
-    <datetime_iso>2026-05-05T11:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="18">
-    <nombre>SC Wanderers (M) –  Brisbane City (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Australia. Mujeres. NPL Queensland</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/378080862__/</url>
-    <datetime_iso>2026-05-05T11:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="19">
-    <nombre>Seúl –  Anyang</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Corea del Sur. K-League</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/372060738_se__l_anyang/</url>
-    <datetime_iso>2026-05-05T12:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="20">
-    <nombre>Ethiopia Nigd Bank –  Saint George</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Etiopía. Premier League</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378400195_ethiopia_nigd_bank_saint_george/</url>
-    <datetime_iso>2026-05-05T12:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/TOlamyKNyKI?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=TOlamyKNyKI&amp;lang=es&amp;eid=378400195&amp;lid=3009897&amp;ci=2619&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="21">
-    <nombre>Kenia U18 –  Tanzania U18</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>IHF Trophy. África</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378163039_kenia_u18_tanzania_u18/</url>
-    <datetime_iso>2026-05-05T12:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="22">
-    <nombre>Altai (W) –  Shakhter Karaganda (W)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Campeonato</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/376587546_altai_w_shakhter_karaganda_w/</url>
-    <datetime_iso>2026-05-05T12:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/zXBMtNF4fnI?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/37.png</idioma>
-        <idioma_nombre>Bandera #37</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=zXBMtNF4fnI&amp;lang=es&amp;eid=376587546&amp;lid=3009855&amp;ci=7848&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="23">
-    <nombre>Kyzylzhar (W) –  Irtysh (W)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Campeonato</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/376587547_kyzylzhar_w_irtysh_w/</url>
-    <datetime_iso>2026-05-05T12:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/pgChw95jpFQ?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/37.png</idioma>
-        <idioma_nombre>Bandera #37</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=pgChw95jpFQ&amp;lang=es&amp;eid=376587547&amp;lid=3009856&amp;ci=7848&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="24">
-    <nombre>Adís Abeba (M) –   Adama Ketema (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Liga Premier</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378400372__ad__s_abeba_m__adama_ketema_m/</url>
-    <datetime_iso>2026-05-05T12:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/KDoFP7vwQPc?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=KDoFP7vwQPc&amp;lang=es&amp;eid=378400372&amp;lid=3009899&amp;ci=8245&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="25">
-    <nombre>Seúl – Anyang</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Corea del Sur. K-League</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/372060738__/</url>
-    <datetime_iso>2026-05-05T12:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="26">
-    <nombre>Adís Abeba (M) –  Adama Ketema (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Etiopía. Mujeres. Liga Premier</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378400372__/</url>
-    <datetime_iso>2026-05-05T12:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/KDoFP7vwQPc?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=KDoFP7vwQPc&amp;lang=es&amp;eid=378400372&amp;lid=3009899&amp;ci=8245&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="27">
-    <nombre>Ethiopia Nigd Bank – Saint George</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Etiopía. Premier League</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378400195__/</url>
-    <datetime_iso>2026-05-05T12:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/TOlamyKNyKI?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=TOlamyKNyKI&amp;lang=es&amp;eid=378400195&amp;lid=3009897&amp;ci=2619&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="28">
-    <nombre>Kenia U18 – Tanzania U18</nombre>
-    <deporte>Balonmano</deporte>
-    <competicion>IHF Trophy. África</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378163039_kenya_u18_tanzania_u18/</url>
-    <datetime_iso>2026-05-05T12:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="29">
-    <nombre>Lituania –  Japón</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Grupo A</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:30</hora>
-    <url>https://livetv.sx/es/eventinfo/372069888_lituania_jap__n/</url>
-    <datetime_iso>2026-05-05T12:30:00</datetime_iso>
-    <streams total="7">
-      <stream id="1">
-        <url>https://shd247.live/frame0011.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3010016&amp;lang=es&amp;eid=372069888&amp;lid=3010016&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://gits74dwa4.45d4f5xxx.win/shopping2/?channel_id=polsat_sport1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009884&amp;lang=es&amp;eid=372069888&amp;lid=3009884&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://daddylive5.top/my/stream-47.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009942&amp;lang=es&amp;eid=372069888&amp;lid=3009942&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://abcsport.top/live/polsatsport1.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009906&amp;lang=es&amp;eid=372069888&amp;lid=3009906&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://dlstreams.com/stream/stream-991.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009887&amp;lang=es&amp;eid=372069888&amp;lid=3009887&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://dlstreams.com/stream/stream-47.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009886&amp;lang=es&amp;eid=372069888&amp;lid=3009886&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-      <stream id="7">
-        <url>https://gits74dwa4.45d4f5xxx.win/shopping2/?channel_id=polsat_sport_premium_1_x</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009885&amp;lang=es&amp;eid=372069888&amp;lid=3009885&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="30">
-    <nombre>Kazajstán U16 (M) –  Israel U16 (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Torneo amistoso. Selecciones</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:30</hora>
-    <url>https://livetv.sx/es/eventinfo/378147513_kazajstandaacute_n_u16_m_israel_u16_m/</url>
-    <datetime_iso>2026-05-05T12:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/_ogd_F6XoJM?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
-        <idioma_nombre>Inglés</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=_ogd_F6XoJM&amp;lang=es&amp;eid=378147513&amp;lid=3009624&amp;ci=6972&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="31">
-    <nombre>Kazajstán U16 (M) – Israel U16 (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Torneo amistoso. Selecciones</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:30</hora>
-    <url>https://livetv.sx/es/eventinfo/378147513_kazakhstan_u16_w_israel_u16_w/</url>
-    <datetime_iso>2026-05-05T12:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/_ogd_F6XoJM?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
-        <idioma_nombre>Inglés</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=_ogd_F6XoJM&amp;lang=es&amp;eid=378147513&amp;lid=3009624&amp;ci=6972&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="32">
+  <evento id="6">
     <nombre>Lituania – Japón</nombre>
     <deporte>Hockey</deporte>
     <competicion>Campeonato mundial. Div I. Grupo A</competicion>
@@ -583,83 +211,9 @@ player/live.php?id=258906&amp;w=700&amp;h=480</url>
     <hora>12:30</hora>
     <url>https://livetv.sx/es/eventinfo/372069888__/</url>
     <datetime_iso>2026-05-05T12:30:00</datetime_iso>
-    <streams total="7">
-      <stream id="1">
-        <url>https://shd247.live/frame0011.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3010016&amp;lang=es&amp;eid=372069888&amp;lid=3010016&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://gits74dwa4.45d4f5xxx.win/shopping2/?channel_id=polsat_sport_premium_1_x</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009885&amp;lang=es&amp;eid=372069888&amp;lid=3009885&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://dlstreams.com/stream/stream-47.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009886&amp;lang=es&amp;eid=372069888&amp;lid=3009886&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://dlstreams.com/stream/stream-991.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009887&amp;lang=es&amp;eid=372069888&amp;lid=3009887&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://abcsport.top/live/polsatsport1.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009906&amp;lang=es&amp;eid=372069888&amp;lid=3009906&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://daddylive5.top/my/stream-47.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009942&amp;lang=es&amp;eid=372069888&amp;lid=3009942&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-      <stream id="7">
-        <url>https://gits74dwa4.45d4f5xxx.win/shopping2/?channel_id=polsat_sport1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009884&amp;lang=es&amp;eid=372069888&amp;lid=3009884&amp;ci=1265&amp;si=2</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="33">
-    <nombre>Petra Marcinko (M) –   Oleksandra Oliynykova (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Roma</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>12:35</hora>
-    <url>https://livetv.sx/es/eventinfo/378188073__petra_marcinko_m__oleksandra_oliynykova_m/</url>
-    <datetime_iso>2026-05-05T12:35:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://emb.apl409.me/
-player/live.php?id=258958&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258958&amp;lang=es&amp;eid=378188073&amp;lid=3009184&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl409.me/
-player/live.php?id=232742&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
-        <idioma_nombre>Español</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=232742&amp;lang=es&amp;eid=378188073&amp;lid=2977581&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://wikisport.info/court/t3.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009863&amp;lang=es&amp;eid=378188073&amp;lid=3009863&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="34">
+  <evento id="7">
     <nombre>Petra Marcinko (M) –  Oleksandra Oliynykova (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Roma</competicion>
@@ -667,30 +221,9 @@ player/live.php?id=232742&amp;w=700&amp;h=480</url>
     <hora>12:35</hora>
     <url>https://livetv.sx/es/eventinfo/378188073__/</url>
     <datetime_iso>2026-05-05T12:35:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://emb.apl409.me/
-player/live.php?id=258958&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258958&amp;lang=es&amp;eid=378188073&amp;lid=3009184&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl409.me/
-player/live.php?id=232742&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
-        <idioma_nombre>Español</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=232742&amp;lang=es&amp;eid=378188073&amp;lid=2977581&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://wikisport.info/court/t3.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009863&amp;lang=es&amp;eid=378188073&amp;lid=3009863&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="35">
+  <evento id="8">
     <nombre>Anna Bondar (M) –   Qinwen Zheng (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>WTA. Roma</competicion>
@@ -721,7 +254,7 @@ player/live.php?id=258964&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="36">
+  <evento id="9">
     <nombre>Anna Bondar (M) –  Qinwen Zheng (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Roma</competicion>
@@ -729,30 +262,9 @@ player/live.php?id=258964&amp;w=700&amp;h=480</url>
     <hora>12:45</hora>
     <url>https://livetv.sx/es/eventinfo/378188071__/</url>
     <datetime_iso>2026-05-05T12:45:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://emb.apl409.me/
-player/live.php?id=258960&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258960&amp;lang=es&amp;eid=378188071&amp;lid=3009189&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl409.me/
-player/live.php?id=258964&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/12.png</idioma>
-        <idioma_nombre>Turco</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258964&amp;lang=es&amp;eid=378188071&amp;lid=3009395&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://wikisport.info/court/t2.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009859&amp;lang=es&amp;eid=378188071&amp;lid=3009859&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="37">
+  <evento id="10">
     <nombre>Qingdao West Coast –  Tianjin TEDA</nombre>
     <deporte>Fútbol</deporte>
     <competicion>China. Superliga</competicion>
@@ -760,16 +272,26 @@ player/live.php?id=258964&amp;w=700&amp;h=480</url>
     <hora>13:00</hora>
     <url>https://livetv.sx/es/eventinfo/372074783_qingdao_west_coast_tianjin_teda/</url>
     <datetime_iso>2026-05-05T13:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="11">
+    <nombre>Players Championship</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Championship     13:00 (PDC)</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>13:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378406648_players_championship/</url>
+    <datetime_iso>2026-05-05T13:00:00</datetime_iso>
     <streams total="1">
       <stream id="1">
-        <url>https://www.youtube.com/embed/FHIZkndrvQE?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=FHIZkndrvQE&amp;lang=es&amp;eid=372074783&amp;lid=3009901&amp;ci=69&amp;si=1</enlace_original>
+        <url>https://daddylive5.top/my/stream-43.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3010004&amp;lang=es&amp;eid=378406648&amp;lid=3010004&amp;ci=2493&amp;si=30</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="38">
+  <evento id="12">
     <nombre>Xac Broncos –  South China</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Clasificatoria</competicion>
@@ -777,16 +299,9 @@ player/live.php?id=258964&amp;w=700&amp;h=480</url>
     <hora>13:00</hora>
     <url>https://livetv.sx/es/eventinfo/378058829_xac_broncos_south_china/</url>
     <datetime_iso>2026-05-05T13:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/7Ag07xC7M28?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=7Ag07xC7M28&amp;lang=es&amp;eid=378058829&amp;lid=3009663&amp;ci=7498&amp;si=3</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="39">
+  <evento id="13">
     <nombre>Aktobe (W) –  Astana (W)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Campeonato</competicion>
@@ -794,16 +309,9 @@ player/live.php?id=258964&amp;w=700&amp;h=480</url>
     <hora>13:00</hora>
     <url>https://livetv.sx/es/eventinfo/376587548_aktobe_w_astana_w/</url>
     <datetime_iso>2026-05-05T13:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/p6IeAa9SkQU?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
-        <idioma_nombre>Inglés</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=p6IeAa9SkQU&amp;lang=es&amp;eid=376587548&amp;lid=3009854&amp;ci=7848&amp;si=1</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="40">
+  <evento id="14">
     <nombre>New Taipei Kings –  New Taipei CTBC DEA</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Taiwán. TPBL</competicion>
@@ -811,16 +319,9 @@ player/live.php?id=258964&amp;w=700&amp;h=480</url>
     <hora>13:00</hora>
     <url>https://livetv.sx/es/eventinfo/378146311_new_taipei_kings_new_taipei_ctbc_dea/</url>
     <datetime_iso>2026-05-05T13:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/eAP39c8Adp0?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=eAP39c8Adp0&amp;lang=es&amp;eid=378146311&amp;lid=3009864&amp;ci=8074&amp;si=3</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="41">
+  <evento id="15">
     <nombre>Qingdao West Coast – Tianjin TEDA</nombre>
     <deporte>Fútbol</deporte>
     <competicion>China. Superliga</competicion>
@@ -828,40 +329,16 @@ player/live.php?id=258964&amp;w=700&amp;h=480</url>
     <hora>13:00</hora>
     <url>https://livetv.sx/es/eventinfo/372074783__/</url>
     <datetime_iso>2026-05-05T13:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/FHIZkndrvQE?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=FHIZkndrvQE&amp;lang=es&amp;eid=372074783&amp;lid=3009901&amp;ci=69&amp;si=1</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="42">
-    <nombre>Yibuti U18 – Ruanda U18</nombre>
-    <deporte>Balonmano</deporte>
-    <competicion>IHF Trophy. África</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>13:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378163041_djibouti_u18_rwanda_u18/</url>
-    <datetime_iso>2026-05-05T13:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/R6Lvk6afX1U?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=R6Lvk6afX1U&amp;lang=es&amp;eid=378163041&amp;lid=3009675&amp;ci=6485&amp;si=13</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="43">
-    <nombre>Sofia Kenin (M) –  Bianca Andreescu (M)</nombre>
-    <deporte>Tenis</deporte>
+  <evento id="16">
+    <nombre>Sofia Kenin (M) –   Bianca Andreescu (M)</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>WTA. Roma</competicion>
     <fecha>5 de mayo</fecha>
-    <hora>13:10</hora>
-    <url>https://livetv.sx/es/eventinfo/378188075__/</url>
-    <datetime_iso>2026-05-05T13:10:00</datetime_iso>
+    <hora>13:20</hora>
+    <url>https://livetv.sx/es/eventinfo/378188075__sofia_kenin_m__bianca_andreescu_m/</url>
+    <datetime_iso>2026-05-05T13:20:00</datetime_iso>
     <streams total="6">
       <stream id="1">
         <url>https://emb.apl409.me/
@@ -906,24 +383,122 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="44">
-    <nombre>Yibuti U20 – Ruanda U20</nombre>
-    <deporte>Balonmano</deporte>
-    <competicion>IHF Trophy. África</competicion>
+  <evento id="17">
+    <nombre>Sofia Kenin (M) –  Bianca Andreescu (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Roma</competicion>
     <fecha>5 de mayo</fecha>
-    <hora>13:15</hora>
-    <url>https://livetv.sx/es/eventinfo/378163042_djibouti_u20_rwanda_u20/</url>
-    <datetime_iso>2026-05-05T13:15:00</datetime_iso>
-    <streams total="1">
+    <hora>13:20</hora>
+    <url>https://livetv.sx/es/eventinfo/378188075__/</url>
+    <datetime_iso>2026-05-05T13:20:00</datetime_iso>
+    <streams total="6">
       <stream id="1">
-        <url>https://www.youtube.com/embed/gB4Uxjz-wxI?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=gB4Uxjz-wxI&amp;lang=es&amp;eid=378163042&amp;lid=3009676&amp;ci=6485&amp;si=13</enlace_original>
+        <url>https://emb.apl409.me/
+player/live.php?id=258327&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258327&amp;lang=es&amp;eid=378188075&amp;lid=3003707&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl409.me/
+player/live.php?id=258452&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258452&amp;lang=es&amp;eid=378188075&amp;lid=3003898&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl409.me/
+player/live.php?id=258455&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258455&amp;lang=es&amp;eid=378188075&amp;lid=3006596&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://emb.apl409.me/
+player/live.php?id=258906&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258906&amp;lang=es&amp;eid=378188075&amp;lid=3009879&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://emb.apl409.me/
+player/live.php?id=258962&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=258962&amp;lang=es&amp;eid=378188075&amp;lid=3009828&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://wikisport.info/court/t1.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009861&amp;lang=es&amp;eid=378188075&amp;lid=3009861&amp;ci=3313&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="45">
+  <evento id="18">
+    <nombre>India U17 (M) –  Japón U17 (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Mujeres. Copa Asiática</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>13:30</hora>
+    <url>https://livetv.sx/es/eventinfo/375514597_india_u17_m_japandoacute_n_u17_m/</url>
+    <datetime_iso>2026-05-05T13:30:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fsignin_passive%26feature%3Dpassive&amp;hl=en</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://tinyurl.com/4zvcvjkn</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="19">
+    <nombre>Filipinas U17 (M) –  Corea del Norte U17 (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Mujeres. Copa Asiática</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>13:30</hora>
+    <url>https://livetv.sx/es/eventinfo/375514598_filipinas_u17_m_corea_del_norte_u17_m/</url>
+    <datetime_iso>2026-05-05T13:30:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fsignin_passive%26feature%3Dpassive&amp;hl=en</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>http://tinyurl.com/b9w9rmhk</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="20">
+    <nombre>Estonia –  China</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Grupo B</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>13:30</hora>
+    <url>https://livetv.sx/es/eventinfo/376976244_estonia_china/</url>
+    <datetime_iso>2026-05-05T13:30:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://nrdrse.link/ch.php?id=42</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/25.png</idioma>
+        <idioma_nombre>Danés</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009724&amp;lang=es&amp;eid=376976244&amp;lid=3009724&amp;ci=5796&amp;si=2</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://zenoz.link/ch?id=42</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/25.png</idioma>
+        <idioma_nombre>Danés</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009891&amp;lang=es&amp;eid=376976244&amp;lid=3009891&amp;ci=5796&amp;si=2</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://dlstreams.com/stream/stream-21.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/25.png</idioma>
+        <idioma_nombre>Danés</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009890&amp;lang=es&amp;eid=376976244&amp;lid=3009890&amp;ci=5796&amp;si=2</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="21">
     <nombre>India U17 (M) – Japón U17 (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Mujeres. Copa Asiática</competicion>
@@ -940,7 +515,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="46">
+  <evento id="22">
     <nombre>Filipinas U17 (M) – Corea del Norte U17 (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Mujeres. Copa Asiática</competicion>
@@ -957,24 +532,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="47">
-    <nombre>Tanjong Pagar United – Hougang United</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Singapur. S-League</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>13:30</hora>
-    <url>https://livetv.sx/es/eventinfo/372084203__/</url>
-    <datetime_iso>2026-05-05T13:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/aLLKUEifpNA?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=aLLKUEifpNA&amp;lang=es&amp;eid=372084203&amp;lid=3010005&amp;ci=172&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="48">
+  <evento id="23">
     <nombre>Estonia – China</nombre>
     <deporte>Hockey</deporte>
     <competicion>Campeonato mundial. Div I. Grupo B</competicion>
@@ -1003,7 +561,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="49">
+  <evento id="24">
     <nombre>TNT Tropang Giga – Magnolia Hotshots</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Filipinas. PBA Commissioner's Cup</competicion>
@@ -1020,7 +578,59 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="50">
+  <evento id="25">
+    <nombre>Shandong Taishan –  Shanghái Shenhua</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>China. Superliga</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>13:35</hora>
+    <url>https://livetv.sx/es/eventinfo/372082517_shandong_taishan_shangh__i_shenhua/</url>
+    <datetime_iso>2026-05-05T13:35:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/g3z2UgHni0c?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/6.png</idioma>
+        <idioma_nombre>Español (España)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=g3z2UgHni0c&amp;lang=es&amp;eid=372082517&amp;lid=3009868&amp;ci=69&amp;si=1</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.youtube.com/embed/lJRYqXgMUaI?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/6.png</idioma>
+        <idioma_nombre>Español (España)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=lJRYqXgMUaI&amp;lang=es&amp;eid=372082517&amp;lid=3009980&amp;ci=69&amp;si=1</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://www.youtube.com/embed/ttCFmM83zvA?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/6.png</idioma>
+        <idioma_nombre>Español (España)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=ttCFmM83zvA&amp;lang=es&amp;eid=372082517&amp;lid=3009655&amp;ci=69&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="26">
+    <nombre>Liaoning Tieren –  Chengdu Rongcheng</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>China. Superliga</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>13:35</hora>
+    <url>https://livetv.sx/es/eventinfo/372082519_liaoning_tieren_chengdu_rongcheng/</url>
+    <datetime_iso>2026-05-05T13:35:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/A4H_C2FNx7A?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/6.png</idioma>
+        <idioma_nombre>Español (España)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=A4H_C2FNx7A&amp;lang=es&amp;eid=372082519&amp;lid=3009867&amp;ci=69&amp;si=1</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.youtube.com/embed/vynQPM-TajA?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/6.png</idioma>
+        <idioma_nombre>Español (España)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=vynQPM-TajA&amp;lang=es&amp;eid=372082519&amp;lid=3009979&amp;ci=69&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="27">
     <nombre>Shandong Taishan – Shanghái Shenhua</nombre>
     <deporte>Fútbol</deporte>
     <competicion>China. Superliga</competicion>
@@ -1049,7 +659,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="51">
+  <evento id="28">
     <nombre>Liaoning Tieren – Chengdu Rongcheng</nombre>
     <deporte>Fútbol</deporte>
     <competicion>China. Superliga</competicion>
@@ -1057,96 +667,118 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <hora>13:35</hora>
     <url>https://livetv.sx/es/eventinfo/372082519__/</url>
     <datetime_iso>2026-05-05T13:35:00</datetime_iso>
-    <streams total="4">
+    <streams total="2">
       <stream id="1">
-        <url>https://www.youtube.com/embed/8-jvqyvpmQ8?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/6.png</idioma>
-        <idioma_nombre>Español (España)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=8-jvqyvpmQ8&amp;lang=es&amp;eid=372082519&amp;lid=3009656&amp;ci=69&amp;si=1</enlace_original>
-      </stream>
-      <stream id="2">
         <url>https://www.youtube.com/embed/A4H_C2FNx7A?autoplay=1</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/6.png</idioma>
         <idioma_nombre>Español (España)</idioma_nombre>
         <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=A4H_C2FNx7A&amp;lang=es&amp;eid=372082519&amp;lid=3009867&amp;ci=69&amp;si=1</enlace_original>
       </stream>
-      <stream id="3">
+      <stream id="2">
         <url>https://www.youtube.com/embed/vynQPM-TajA?autoplay=1</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/6.png</idioma>
         <idioma_nombre>Español (España)</idioma_nombre>
         <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=vynQPM-TajA&amp;lang=es&amp;eid=372082519&amp;lid=3009979&amp;ci=69&amp;si=1</enlace_original>
       </stream>
-      <stream id="4">
-        <url>https://daddylive5.top/my/stream-530.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/6.png</idioma>
-        <idioma_nombre>Español (España)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009986&amp;lang=es&amp;eid=372082519&amp;lid=3009986&amp;ci=69&amp;si=1</enlace_original>
-      </stream>
     </streams>
   </evento>
-  <evento id="52">
-    <nombre>Kessler McCartney (M) –  Lucia Bronzetti (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Roma</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>13:55</hora>
-    <url>https://livetv.sx/es/eventinfo/378188079__/</url>
-    <datetime_iso>2026-05-05T13:55:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://wikisport.info/court/t2.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009859&amp;lang=es&amp;eid=378188079&amp;lid=3009859&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="53">
-    <nombre>Zhenis (W) – Oqschetpes (W)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Kazajistán. Mujeres. Campeonato</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>14:00</hora>
-    <url>https://livetv.sx/es/eventinfo/376587549_zhenis_w_oqschetpes_w/</url>
-    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/s5hgeUb2pII?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=s5hgeUb2pII&amp;lang=es&amp;eid=376587549&amp;lid=3009853&amp;ci=7848&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="54">
-    <nombre>Chongqing Tonglianglong – Henan</nombre>
+  <evento id="29">
+    <nombre>Chongqing Tonglianglong –  Henan</nombre>
     <deporte>Fútbol</deporte>
     <competicion>China. Superliga</competicion>
     <fecha>5 de mayo</fecha>
     <hora>14:00</hora>
-    <url>https://livetv.sx/es/eventinfo/372090445__/</url>
+    <url>https://livetv.sx/es/eventinfo/372090445_chongqing_tonglianglong_henan/</url>
+    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/A1yPyffYFiQ?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/6.png</idioma>
+        <idioma_nombre>Español (España)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=A1yPyffYFiQ&amp;lang=es&amp;eid=372090445&amp;lid=3010094&amp;ci=69&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="30">
+    <nombre>Tanjong Pagar United –  Hougang United</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Singapur. S-League</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/372084203_tanjong_pagar_united_hougang_united/</url>
+    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/aLLKUEifpNA?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=aLLKUEifpNA&amp;lang=es&amp;eid=372084203&amp;lid=3010005&amp;ci=172&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="31">
+    <nombre>Karvan –  Neftchi</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Azerbaiyán. Premier League</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/370572486_karvan_neftchi/</url>
+    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/RQN7VCCbAVY?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/23.png</idioma>
+        <idioma_nombre>Noruego</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=RQN7VCCbAVY&amp;lang=es&amp;eid=370572486&amp;lid=3006884&amp;ci=184&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="32">
+    <nombre>Australia (M) –   Grecia (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Mujeres. Campeonato mundial</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378347173__australia_m__grecia_m/</url>
     <datetime_iso>2026-05-05T14:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="55">
-    <nombre>Sahdag – Energetik</nombre>
+  <evento id="33">
+    <nombre>Sahdag –  Energetik</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Azerbaiyan. 1 Liga</competicion>
     <fecha>5 de mayo</fecha>
     <hora>14:00</hora>
-    <url>https://livetv.sx/es/eventinfo/377051478__/</url>
+    <url>https://livetv.sx/es/eventinfo/377051478_sahdag_energetik/</url>
     <datetime_iso>2026-05-05T14:00:00</datetime_iso>
     <streams total="1">
       <stream id="1">
         <url>https://www.youtube.com/embed/krIwqzbvDWM?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/23.png</idioma>
-        <idioma_nombre>Noruego</idioma_nombre>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
         <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=krIwqzbvDWM&amp;lang=es&amp;eid=377051478&amp;lid=3009871&amp;ci=5027&amp;si=1</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="56">
-    <nombre>Qaradag Lokbatan – Dynamo</nombre>
+  <evento id="34">
+    <nombre>Serbia U16 –  Austria U16</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Partido amistoso. Selecciones</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378406320_serbia_u16_austria_u16/</url>
+    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/tk_DG-uO980?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=tk_DG-uO980&amp;lang=es&amp;eid=378406320&amp;lid=3009939&amp;ci=5679&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="35">
+    <nombre>Qaradag Lokbatan –  Dynamo</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Azerbaiyan. 2 Liga</competicion>
     <fecha>5 de mayo</fecha>
@@ -1162,8 +794,8 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="57">
-    <nombre>Cuba – Khankendi</nombre>
+  <evento id="36">
+    <nombre>Cuba –  Khankendi</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Azerbaiyan. 2 Liga</competicion>
     <fecha>5 de mayo</fecha>
@@ -1173,13 +805,115 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <streams total="1">
       <stream id="1">
         <url>https://www.youtube.com/embed/iNcjvcnGsx4?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
+        <idioma>https://cdn.livetv860.me/img/linkflag/23.png</idioma>
+        <idioma_nombre>Noruego</idioma_nombre>
         <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=iNcjvcnGsx4&amp;lang=es&amp;eid=376594363&amp;lid=3008145&amp;ci=7040&amp;si=1</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="58">
+  <evento id="37">
+    <nombre>Jayxun –  Metallurg Bekabad</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Uzbekistán. Pro Liga</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378047725_jayxun_metallurg_bekabad/</url>
+    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/Eipvl25e08A?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=Eipvl25e08A&amp;lang=es&amp;eid=378047725&amp;lid=3010088&amp;ci=7661&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="38">
+    <nombre>Respublika FA –  Lochin</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Uzbekistán. Pro Liga</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378047726_respublika_fa_lochin/</url>
+    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/Wy6C1gZd9gE?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=Wy6C1gZd9gE&amp;lang=es&amp;eid=378047726&amp;lid=3010032&amp;ci=7661&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="39">
+    <nombre>Shortan –  Pakhtakor II</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Uzbekistán. Pro Liga</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378047727_shortan_pakhtakor_ii/</url>
+    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/tJF6_9MMwQI?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=tJF6_9MMwQI&amp;lang=es&amp;eid=378047727&amp;lid=3010091&amp;ci=7661&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="40">
+    <nombre>Zhenis (W) –  Oqschetpes (W)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/376587549_zhenis_w_oqschetpes_w/</url>
+    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/s5hgeUb2pII?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=s5hgeUb2pII&amp;lang=es&amp;eid=376587549&amp;lid=3009853&amp;ci=7848&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="41">
+    <nombre>Chongqing Tonglianglong – Henan</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>China. Superliga</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/372090445__/</url>
+    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/A1yPyffYFiQ?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/6.png</idioma>
+        <idioma_nombre>Español (España)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=A1yPyffYFiQ&amp;lang=es&amp;eid=372090445&amp;lid=3010094&amp;ci=69&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="42">
+    <nombre>Sahdag – Energetik</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Azerbaiyan. 1 Liga</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/377051478__/</url>
+    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/krIwqzbvDWM?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=krIwqzbvDWM&amp;lang=es&amp;eid=377051478&amp;lid=3009871&amp;ci=5027&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="43">
     <nombre>Karvan – Neftchi</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Azerbaiyán. Premier League</competicion>
@@ -1196,73 +930,67 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="59">
-    <nombre>Jayxun – Metallurg Bekabad</nombre>
+  <evento id="44">
+    <nombre>Tanjong Pagar United – Hougang United</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Uzbekistán. Pro Liga</competicion>
+    <competicion>Singapur. S-League</competicion>
     <fecha>5 de mayo</fecha>
     <hora>14:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378047725_jayxun_metallurg_bekabad/</url>
+    <url>https://livetv.sx/es/eventinfo/372084203__/</url>
     <datetime_iso>2026-05-05T14:00:00</datetime_iso>
     <streams total="1">
       <stream id="1">
-        <url>https://www.youtube.com/embed/Eipvl25e08A?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=Eipvl25e08A&amp;lang=es&amp;eid=378047725&amp;lid=3010088&amp;ci=7661&amp;si=1</enlace_original>
+        <url>https://www.youtube.com/embed/aLLKUEifpNA?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=aLLKUEifpNA&amp;lang=es&amp;eid=372084203&amp;lid=3010005&amp;ci=172&amp;si=1</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="60">
-    <nombre>Respublika FA – Lochin</nombre>
+  <evento id="45">
+    <nombre>Yibuti U20 –  Ruanda U20</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Uzbekistán. Pro Liga</competicion>
+    <competicion>IHF Trophy. África</competicion>
     <fecha>5 de mayo</fecha>
-    <hora>14:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378047726_respublika_fa_lochin/</url>
-    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
+    <hora>14:15</hora>
+    <url>https://livetv.sx/es/eventinfo/378163042_yibuti_u20_ruanda_u20/</url>
+    <datetime_iso>2026-05-05T14:15:00</datetime_iso>
     <streams total="1">
       <stream id="1">
-        <url>https://www.youtube.com/embed/Wy6C1gZd9gE?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=Wy6C1gZd9gE&amp;lang=es&amp;eid=378047726&amp;lid=3010032&amp;ci=7661&amp;si=1</enlace_original>
+        <url>https://www.youtube.com/embed/gB4Uxjz-wxI?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=gB4Uxjz-wxI&amp;lang=es&amp;eid=378163042&amp;lid=3009676&amp;ci=6485&amp;si=13</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="61">
-    <nombre>Shortan – Pakhtakor II</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Uzbekistán. Pro Liga</competicion>
+  <evento id="46">
+    <nombre>Yibuti U20 – Ruanda U20</nombre>
+    <deporte>Balonmano</deporte>
+    <competicion>IHF Trophy. África</competicion>
     <fecha>5 de mayo</fecha>
-    <hora>14:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378047727_shortan_pakhtakor_ii/</url>
-    <datetime_iso>2026-05-05T14:00:00</datetime_iso>
+    <hora>14:15</hora>
+    <url>https://livetv.sx/es/eventinfo/378163042_djibouti_u20_rwanda_u20/</url>
+    <datetime_iso>2026-05-05T14:15:00</datetime_iso>
     <streams total="1">
       <stream id="1">
-        <url>https://www.youtube.com/embed/tJF6_9MMwQI?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=tJF6_9MMwQI&amp;lang=es&amp;eid=378047727&amp;lid=3010091&amp;ci=7661&amp;si=1</enlace_original>
+        <url>https://www.youtube.com/embed/gB4Uxjz-wxI?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=gB4Uxjz-wxI&amp;lang=es&amp;eid=378163042&amp;lid=3009676&amp;ci=6485&amp;si=13</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="62">
-    <nombre>Antonia Ruzic (M) –  Kamilla Rakhimova (M)</nombre>
-    <deporte>Tenis</deporte>
+  <evento id="47">
+    <nombre>Antonia Ruzic (M) –   Kamilla Rakhimova (M)</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>WTA. Roma</competicion>
     <fecha>5 de mayo</fecha>
-    <hora>14:10</hora>
-    <url>https://livetv.sx/es/eventinfo/378188077__/</url>
-    <datetime_iso>2026-05-05T14:10:00</datetime_iso>
-    <streams total="2">
+    <hora>14:30</hora>
+    <url>https://livetv.sx/es/eventinfo/378188077__antonia_ruzic_m__kamilla_rakhimova_m/</url>
+    <datetime_iso>2026-05-05T14:30:00</datetime_iso>
+    <streams total="1">
       <stream id="1">
-        <url>https://wikisport.info/court/wik3.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009862&amp;lang=es&amp;eid=378188077&amp;lid=3009862&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
         <url>https://wikisport.info/court/t3.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
         <idioma_nombre>Coreano</idioma_nombre>
@@ -1270,31 +998,8 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="63">
-    <nombre>Anastasia Zakharova (M) –  Dayana Yastremska (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Roma</competicion>
-    <fecha>5 de mayo</fecha>
-    <hora>14:10</hora>
-    <url>https://livetv.sx/es/eventinfo/378188081__/</url>
-    <datetime_iso>2026-05-05T14:10:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://wikisport.info/court/wik1.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009860&amp;lang=es&amp;eid=378188081&amp;lid=3009860&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://wikisport.info/court/t1.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009861&amp;lang=es&amp;eid=378188081&amp;lid=3009861&amp;ci=3313&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="64">
-    <nombre>Sirvan – Semkir</nombre>
+  <evento id="48">
+    <nombre>Sirvan –  Semkir</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Azerbaiyan. 2 Liga</competicion>
     <fecha>5 de mayo</fecha>
@@ -1310,37 +1015,122 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="65">
-    <nombre>Martina Trevisan (M) –  Talia Gibson (M)</nombre>
+  <evento id="49">
+    <nombre>Antonia Ruzic (M) –  Kamilla Rakhimova (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Roma</competicion>
     <fecha>5 de mayo</fecha>
-    <hora>15:25</hora>
-    <url>https://livetv.sx/es/eventinfo/378188083__/</url>
-    <datetime_iso>2026-05-05T15:25:00</datetime_iso>
-    <streams total="0" />
+    <hora>14:30</hora>
+    <url>https://livetv.sx/es/eventinfo/378188077__/</url>
+    <datetime_iso>2026-05-05T14:30:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://wikisport.info/court/t3.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009863&amp;lang=es&amp;eid=378188077&amp;lid=3009863&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="66">
-    <nombre>Ann Li (M) –  Shuai Zhang (M)</nombre>
+  <evento id="50">
+    <nombre>Yibuti U18 –  Ruanda U18</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>IHF Trophy. África</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>15:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378163041_yibuti_u18_ruanda_u18/</url>
+    <datetime_iso>2026-05-05T15:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/R6Lvk6afX1U?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=R6Lvk6afX1U&amp;lang=es&amp;eid=378163041&amp;lid=3009675&amp;ci=6485&amp;si=13</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="51">
+    <nombre>Sportivo Luqueno –  Guaviare</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Copa Libertadores</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>15:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378406427_sportivo_luqueno_guaviare/</url>
+    <datetime_iso>2026-05-05T15:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/Jn1t027zXJw?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
+        <idioma_nombre>Holandés</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=Jn1t027zXJw&amp;lang=es&amp;eid=378406427&amp;lid=3009973&amp;ci=6879&amp;si=23</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="52">
+    <nombre>Yibuti U18 – Ruanda U18</nombre>
+    <deporte>Balonmano</deporte>
+    <competicion>IHF Trophy. África</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>15:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378163041_djibouti_u18_rwanda_u18/</url>
+    <datetime_iso>2026-05-05T15:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/R6Lvk6afX1U?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=R6Lvk6afX1U&amp;lang=es&amp;eid=378163041&amp;lid=3009675&amp;ci=6485&amp;si=13</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="53">
+    <nombre>Kessler McCartney (M) –  Lucia Bronzetti (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Roma</competicion>
     <fecha>5 de mayo</fecha>
-    <hora>15:35</hora>
-    <url>https://livetv.sx/es/eventinfo/378188087__/</url>
-    <datetime_iso>2026-05-05T15:35:00</datetime_iso>
-    <streams total="0" />
+    <hora>15:20</hora>
+    <url>https://livetv.sx/es/eventinfo/378188079__/</url>
+    <datetime_iso>2026-05-05T15:20:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://wikisport.info/court/t2.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009859&amp;lang=es&amp;eid=378188079&amp;lid=3009859&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="67">
-    <nombre>Zeynep Sonmez (M) –  Jennifer Ruggeri (M)</nombre>
+  <evento id="54">
+    <nombre>Anastasia Zakharova (M) –  Dayana Yastremska (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Roma</competicion>
     <fecha>5 de mayo</fecha>
-    <hora>15:40</hora>
-    <url>https://livetv.sx/es/eventinfo/378188085__/</url>
-    <datetime_iso>2026-05-05T15:40:00</datetime_iso>
-    <streams total="0" />
+    <hora>15:20</hora>
+    <url>https://livetv.sx/es/eventinfo/378188081__/</url>
+    <datetime_iso>2026-05-05T15:20:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://emb.apl409.me/
+player/live.php?id=232742&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
+        <idioma_nombre>Español</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=232742&amp;lang=es&amp;eid=378188081&amp;lid=2977581&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://wikisport.info/court/t1.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009861&amp;lang=es&amp;eid=378188081&amp;lid=3009861&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://wikisport.info/court/wik1.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009860&amp;lang=es&amp;eid=378188081&amp;lid=3009860&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="68">
+  <evento id="55">
     <nombre>Mumbai City – East Bengal</nombre>
     <deporte>Fútbol</deporte>
     <competicion>India. Superliga</competicion>
@@ -1350,7 +1140,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T16:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="69">
+  <evento id="56">
     <nombre>Francia (M) Sub-17 –   Polonia (M) Sub-17</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-17</competicion>
@@ -1358,9 +1148,40 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <hora>16:00</hora>
     <url>https://livetv.sx/es/eventinfo/372113270__/</url>
     <datetime_iso>2026-05-05T16:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="5">
+      <stream id="1">
+        <url>https://kiratop.site/live2/stream165.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009769&amp;lang=es&amp;eid=372113270&amp;lid=3009769&amp;ci=1290&amp;si=1</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://streamsgate.click/tv/tv-26.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
+        <idioma_nombre>Alemán</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3010053&amp;lang=es&amp;eid=372113270&amp;lid=3010053&amp;ci=1290&amp;si=1</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://daddylive5.top/my/stream-571.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/10.png</idioma>
+        <idioma_nombre>Ruso</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009987&amp;lang=es&amp;eid=372113270&amp;lid=3009987&amp;ci=1290&amp;si=1</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://daddylive5.top/my/stream-128.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009956&amp;lang=es&amp;eid=372113270&amp;lid=3009956&amp;ci=1290&amp;si=1</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://daddylive5.top/my/stream-121.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009955&amp;lang=es&amp;eid=372113270&amp;lid=3009955&amp;ci=1290&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="70">
+  <evento id="57">
     <nombre>Francia – Ucrania</nombre>
     <deporte>Hockey</deporte>
     <competicion>Campeonato mundial. Div I. Grupo A</competicion>
@@ -1368,9 +1189,52 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <hora>16:00</hora>
     <url>https://livetv.sx/es/eventinfo/372117011__/</url>
     <datetime_iso>2026-05-05T16:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="7">
+      <stream id="1">
+        <url>https://dlstreams.com/stream/stream-991.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009887&amp;lang=es&amp;eid=372117011&amp;lid=3009887&amp;ci=1265&amp;si=2</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://dlstreams.com/stream/stream-47.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009886&amp;lang=es&amp;eid=372117011&amp;lid=3009886&amp;ci=1265&amp;si=2</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://gits74dwa4.45d4f5xxx.win/shopping2/?channel_id=polsat_sport1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009884&amp;lang=es&amp;eid=372117011&amp;lid=3009884&amp;ci=1265&amp;si=2</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://gits74dwa4.45d4f5xxx.win/shopping2/?channel_id=polsat_sport_premium_1_x</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009885&amp;lang=es&amp;eid=372117011&amp;lid=3009885&amp;ci=1265&amp;si=2</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://daddylive5.top/my/stream-47.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009942&amp;lang=es&amp;eid=372117011&amp;lid=3009942&amp;ci=1265&amp;si=2</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://shd247.live/frame0011.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3010016&amp;lang=es&amp;eid=372117011&amp;lid=3010016&amp;ci=1265&amp;si=2</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://abcsport.top/live/polsatsport1.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009906&amp;lang=es&amp;eid=372117011&amp;lid=3009906&amp;ci=1265&amp;si=2</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="71">
+  <evento id="58">
     <nombre>Oqschetpes (W) – Irtysh (W)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Kazajistán. Mujeres. Championship</competicion>
@@ -1378,9 +1242,16 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <hora>16:00</hora>
     <url>https://livetv.sx/es/eventinfo/375481499_oqschetpes_w_irtysh_w/</url>
     <datetime_iso>2026-05-05T16:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/4Lg-H88OP0k?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=4Lg-H88OP0k&amp;lang=es&amp;eid=375481499&amp;lid=3009659&amp;ci=2428&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="72">
+  <evento id="59">
     <nombre>Ajman – Al Jazira</nombre>
     <deporte>Fútbol</deporte>
     <competicion>EÁU. Pro League</competicion>
@@ -1388,9 +1259,85 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <hora>16:05</hora>
     <url>https://livetv.sx/es/eventinfo/372466147__/</url>
     <datetime_iso>2026-05-05T16:05:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://daddylive5.top/my/stream-600.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/5.png</idioma>
+        <idioma_nombre>Alemán (Alemania)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009990&amp;lang=es&amp;eid=372466147&amp;lid=3009990&amp;ci=379&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="73">
+  <evento id="60">
+    <nombre>Zeynep Sonmez (M) –  Jennifer Ruggeri (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Roma</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>16:05</hora>
+    <url>https://livetv.sx/es/eventinfo/378188085__/</url>
+    <datetime_iso>2026-05-05T16:05:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://wikisport.info/court/wik3.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009862&amp;lang=es&amp;eid=378188085&amp;lid=3009862&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://wikisport.info/court/t3.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009863&amp;lang=es&amp;eid=378188085&amp;lid=3009863&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="61">
+    <nombre>Martina Trevisan (M) –  Talia Gibson (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Roma</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>16:15</hora>
+    <url>https://livetv.sx/es/eventinfo/378188083__/</url>
+    <datetime_iso>2026-05-05T16:15:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://wikisport.info/court/wik2.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009858&amp;lang=es&amp;eid=378188083&amp;lid=3009858&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://wikisport.info/court/t2.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009859&amp;lang=es&amp;eid=378188083&amp;lid=3009859&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="62">
+    <nombre>Ann Li (M) –  Shuai Zhang (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Roma</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>16:20</hora>
+    <url>https://livetv.sx/es/eventinfo/378188087__/</url>
+    <datetime_iso>2026-05-05T16:20:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://wikisport.info/court/wik1.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009860&amp;lang=es&amp;eid=378188087&amp;lid=3009860&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://wikisport.info/court/t1.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009861&amp;lang=es&amp;eid=378188087&amp;lid=3009861&amp;ci=3313&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="63">
     <nombre>Beroe – Montana</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Bulgaria. Parva Liga</competicion>
@@ -1400,7 +1347,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T16:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="74">
+  <evento id="64">
     <nombre>Newroz – Al-Shorta</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irak. Liga Premier</competicion>
@@ -1410,7 +1357,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T16:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="75">
+  <evento id="65">
     <nombre>Duhok – Naft Maysan</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irak. Liga Premier</competicion>
@@ -1420,7 +1367,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T16:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="76">
+  <evento id="66">
     <nombre>Taborsko B – Jiskra Domazlice</nombre>
     <deporte>Fútbol</deporte>
     <competicion>República Checa. 3. Liga</competicion>
@@ -1430,7 +1377,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="77">
+  <evento id="67">
     <nombre>NH Ostrava – Nymburk</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>República Checa. NBL</competicion>
@@ -1440,7 +1387,17 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="78">
+  <evento id="68">
+    <nombre>Maccabi Ashdod – Elitzur Eito Ashkelon</nombre>
+    <deporte>Baloncesto</deporte>
+    <competicion>Israel. Liga Leumit</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>17:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378406709__/</url>
+    <datetime_iso>2026-05-05T17:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="69">
     <nombre>Fenerbahce 2 (W) – Тургутлу (Ж)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Turquía. Mujeres. TKBL</competicion>
@@ -1450,7 +1407,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="79">
+  <evento id="70">
     <nombre>Bukovynka (W) – Balta (W)</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Ucrania. Mujeres. Superliga</competicion>
@@ -1460,7 +1417,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="80">
+  <evento id="71">
     <nombre>Neftyanik – Yugra</nombre>
     <deporte>Hockey</deporte>
     <competicion>Rusia. VHL</competicion>
@@ -1470,7 +1427,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="81">
+  <evento id="72">
     <nombre>Chaika – Loko</nombre>
     <deporte>Hockey</deporte>
     <competicion>Rusia. MHL</competicion>
@@ -1480,7 +1437,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="82">
+  <evento id="73">
     <nombre>Tsmoki Minsk – Borisfen</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Bielorrusia. Liga Premier</competicion>
@@ -1490,7 +1447,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="83">
+  <evento id="74">
     <nombre>Kataja – Salon Vilpas</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Finlandia. Korisliiga</competicion>
@@ -1500,7 +1457,17 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="84">
+  <evento id="75">
+    <nombre>Anioly Torun – Mickiewicz Kluczbork</nombre>
+    <deporte>Voleibol</deporte>
+    <competicion>Polonia. I Liga</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>17:30</hora>
+    <url>https://livetv.sx/es/eventinfo/378412773__/</url>
+    <datetime_iso>2026-05-05T17:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="76">
     <nombre>Kauno Zalgiris – Dziugas</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Lituania. A Lyga</competicion>
@@ -1510,7 +1477,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T17:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="85">
+  <evento id="77">
     <nombre>Mega Bemax – FMP</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Serbia. KLS</competicion>
@@ -1520,7 +1487,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T17:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="86">
+  <evento id="78">
     <nombre>Ironi Modiin – Hapoel Hadera</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Leumit</competicion>
@@ -1530,7 +1497,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="87">
+  <evento id="79">
     <nombre>Hapoel Acre – Kafr Qasim</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Leumit</competicion>
@@ -1540,7 +1507,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="88">
+  <evento id="80">
     <nombre>Hapoel Ramat Gan – Maccabi Petaj Tikva</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Leumit</competicion>
@@ -1550,7 +1517,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="89">
+  <evento id="81">
     <nombre>Rishon LeZion – Kiryat Yam</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Leumit</competicion>
@@ -1560,7 +1527,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="90">
+  <evento id="82">
     <nombre>Maccabi Herzliya – Hapoel Kfar Shalem</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Leumit</competicion>
@@ -1570,7 +1537,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="91">
+  <evento id="83">
     <nombre>Maccabi Petaj Tikva – Hapoel Ramat Gan</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Leumit</competicion>
@@ -1580,7 +1547,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="92">
+  <evento id="84">
     <nombre>Hapoel Kfar Saba – Bnei Yehuda</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Leumit</competicion>
@@ -1590,7 +1557,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="93">
+  <evento id="85">
     <nombre>Kiryat Yam – Rishon LeZion</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Leumit</competicion>
@@ -1600,7 +1567,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="94">
+  <evento id="86">
     <nombre>Hapoel Kfar Shalem – Maccabi Herzliya</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Leumit</competicion>
@@ -1610,7 +1577,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="95">
+  <evento id="87">
     <nombre>Bnei Yehuda – Hapoel Kfar Saba</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Leumit</competicion>
@@ -1620,7 +1587,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="96">
+  <evento id="88">
     <nombre>Hapoel Hadera – Ironi Modiin</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Leumit</competicion>
@@ -1630,7 +1597,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="97">
+  <evento id="89">
     <nombre>Kafr Qasim – Hapoel Acre</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Leumit</competicion>
@@ -1640,7 +1607,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="98">
+  <evento id="90">
     <nombre>Sitra – Al-Ahli Manama</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Bahréin. Liga Premier</competicion>
@@ -1650,7 +1617,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="99">
+  <evento id="91">
     <nombre>Al Riffa – Al-Shabab Manama</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Bahréin. Liga Premier</competicion>
@@ -1660,7 +1627,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="100">
+  <evento id="92">
     <nombre>Chomutov – Ujezd Praha 4</nombre>
     <deporte>Fútbol</deporte>
     <competicion>República Checa. 4. Liga</competicion>
@@ -1670,7 +1637,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="101">
+  <evento id="93">
     <nombre>Japón U17 – Qatar U17</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Copa Asiática Sub-17</competicion>
@@ -1680,7 +1647,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="102">
+  <evento id="94">
     <nombre>Skalica – Kosice</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Eslovaquia. 1. liga</competicion>
@@ -1690,7 +1657,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="103">
+  <evento id="95">
     <nombre>Zilina – Zemplin Michalovce</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Eslovaquia. 1. liga</competicion>
@@ -1700,7 +1667,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="104">
+  <evento id="96">
     <nombre>Torpedo Kt – Rustavi</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Georgia. Erovnuli Liga</competicion>
@@ -1710,7 +1677,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="105">
+  <evento id="97">
     <nombre>Flora – Narva Trans</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Estonia. Copa</competicion>
@@ -1720,7 +1687,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="106">
+  <evento id="98">
     <nombre>Gnistan – Inter Turku</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Finlandia. Veikkausliiga</competicion>
@@ -1730,7 +1697,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="107">
+  <evento id="99">
     <nombre>Hapoel T-A – Real Madrid</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Euroliga</competicion>
@@ -1740,7 +1707,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="108">
+  <evento id="100">
     <nombre>Brno – Decin</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>República Checa. NBL</competicion>
@@ -1750,7 +1717,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="109">
+  <evento id="101">
     <nombre>Sokol Pisek – Pardubice</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>República Checa. NBL</competicion>
@@ -1760,7 +1727,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="110">
+  <evento id="102">
     <nombre>Slovan Bratislava – Nitra Blue Wings</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Eslovaquia. Extraliga</competicion>
@@ -1770,7 +1737,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="111">
+  <evento id="103">
     <nombre>Tresnjevka (W) – Brod na Savi (W)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Croacia. Mujeres. Premijer Liga</competicion>
@@ -1780,7 +1747,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="112">
+  <evento id="104">
     <nombre>Karlovarsko – Lvi Praha</nombre>
     <deporte>Voleibol</deporte>
     <competicion>República Checa. Extraliga</competicion>
@@ -1790,7 +1757,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="113">
+  <evento id="105">
     <nombre>Rostov-Don (M) – Astrahanochka (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Rusia. Mujeres. Superliga</competicion>
@@ -1800,7 +1767,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="114">
+  <evento id="106">
     <nombre>Raasiku/Mistra – Polva Serviti</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Estonia. Meistriliiga</competicion>
@@ -1810,7 +1777,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="115">
+  <evento id="107">
     <nombre>Alkaloid – Ohrid</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Macedonia del Norte. Superliga</competicion>
@@ -1820,7 +1787,17 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="116">
+  <evento id="108">
+    <nombre>Bergen – Kolstad</nombre>
+    <deporte>Balonmano</deporte>
+    <competicion>Noruega. Eliteserien</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>18:15</hora>
+    <url>https://livetv.sx/es/eventinfo/378406593__/</url>
+    <datetime_iso>2026-05-05T18:15:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="109">
     <nombre>Indonesia U17 – China U17</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Copa Asiática Sub-17</competicion>
@@ -1830,7 +1807,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="117">
+  <evento id="110">
     <nombre>Maccabi Tel Aviv – Hapoel Petah-Tikvah</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Israel. Liga Premier</competicion>
@@ -1840,7 +1817,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="118">
+  <evento id="111">
     <nombre>RKC Waalwijk – Willem II</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Países Bajos. Eredivisie</competicion>
@@ -1850,7 +1827,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="119">
+  <evento id="112">
     <nombre>Kalba – Khor Fakkan</nombre>
     <deporte>Fútbol</deporte>
     <competicion>EÁU. Pro League</competicion>
@@ -1860,7 +1837,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="120">
+  <evento id="113">
     <nombre>Dibba Al-Fujairah – Al Bataeh</nombre>
     <deporte>Fútbol</deporte>
     <competicion>EÁU. Pro League</competicion>
@@ -1870,7 +1847,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="121">
+  <evento id="114">
     <nombre>Bani Yas – Al Dhafra</nombre>
     <deporte>Fútbol</deporte>
     <competicion>EÁU. Pro League</competicion>
@@ -1880,7 +1857,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="122">
+  <evento id="115">
     <nombre>Buducnost – Cluj Napoca</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Liga del Adriático</competicion>
@@ -1890,7 +1867,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="123">
+  <evento id="116">
     <nombre>Hannover-Burgdorf – Flensburgo</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Liga Europea EHF</competicion>
@@ -1900,7 +1877,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T18:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="124">
+  <evento id="117">
     <nombre>Lokomotiv Sofia – Botev Vratsa</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Bulgaria. Parva Liga</competicion>
@@ -1910,7 +1887,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="125">
+  <evento id="118">
     <nombre>España (M) Sub-17 –   Finlandia (M) Sub-17</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-17</competicion>
@@ -1920,7 +1897,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="126">
+  <evento id="119">
     <nombre>Falkenberg – Norrkoeping</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Suecia. Superettan</competicion>
@@ -1930,7 +1907,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="127">
+  <evento id="120">
     <nombre>Riteriai – Banga</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Lituania. A Lyga</competicion>
@@ -1940,7 +1917,17 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="128">
+  <evento id="121">
+    <nombre>AGF (M) –  Kolding (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Dinamarca. Mujeres. Elitedivisionen</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>19:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378406764__/</url>
+    <datetime_iso>2026-05-05T19:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="122">
     <nombre>Arabia Saudita U17 – Birmania U17</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Copa Asiática Sub-17</competicion>
@@ -1950,7 +1937,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="129">
+  <evento id="123">
     <nombre>Al-Talaba – Al-Zawraa</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irak. Liga Premier</competicion>
@@ -1960,7 +1947,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="130">
+  <evento id="124">
     <nombre>Al-Naft – Al-Karma</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irak. Liga Premier</competicion>
@@ -1970,7 +1957,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="131">
+  <evento id="125">
     <nombre>Smouha – Zamalek</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Egipto. Premier League</competicion>
@@ -1980,7 +1967,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="132">
+  <evento id="126">
     <nombre>Cleopatra – Pyramids</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Egipto. Premier League</competicion>
@@ -1990,7 +1977,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="133">
+  <evento id="127">
     <nombre>Al-Ahly El Cairo – ENPPI</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Egipto. Premier League</competicion>
@@ -2000,7 +1987,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="134">
+  <evento id="128">
     <nombre>Norrkoeping – Boraas</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Suecia. Basketligan</competicion>
@@ -2010,7 +1997,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:04:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="135">
+  <evento id="129">
     <nombre>Hapoel Holon – Ness Tziona</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Israel. Ligat Ha'Al</competicion>
@@ -2020,7 +2007,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:10:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="136">
+  <evento id="130">
     <nombre>Tayikistán U17 – Tailandia U17</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Copa Asiática Sub-17</competicion>
@@ -2030,7 +2017,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="137">
+  <evento id="131">
     <nombre>Besiktas – Konyaspor</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Turquía. Copa</competicion>
@@ -2040,7 +2027,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="138">
+  <evento id="132">
     <nombre>Kazajstán – Polonia</nombre>
     <deporte>Hockey</deporte>
     <competicion>Campeonato mundial. Div I. Grupo A</competicion>
@@ -2050,7 +2037,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="139">
+  <evento id="133">
     <nombre>Friburgo Olympic – Pully Lausana Foxes</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Suiza. SB League</competicion>
@@ -2060,7 +2047,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="140">
+  <evento id="134">
     <nombre>AS Mónaco – Olympiacos</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Euroliga</competicion>
@@ -2070,7 +2057,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T19:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="141">
+  <evento id="135">
     <nombre>Vaduz – Eshen/Mauren</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Copa de Liechtenstein</competicion>
@@ -2080,7 +2067,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="142">
+  <evento id="136">
     <nombre>Vaduz – Eschen/Mauren</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Copa de Liechtenstein</competicion>
@@ -2090,7 +2077,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="143">
+  <evento id="137">
     <nombre>Al-Khaleej – Al-Hilal Riad</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Arabia Saudita. Liga Pro</competicion>
@@ -2100,7 +2087,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="144">
+  <evento id="138">
     <nombre>Orleans Loiret – Saint-Chamond</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Francia. LNB Pro B</competicion>
@@ -2110,7 +2097,27 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="145">
+  <evento id="139">
+    <nombre>Katowice – Bielsko-Biala</nombre>
+    <deporte>Voleibol</deporte>
+    <competicion>Polonia. I Liga</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>20:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378406703__/</url>
+    <datetime_iso>2026-05-05T20:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="140">
+    <nombre>Fivers Margareten – Alpla Hard</nombre>
+    <deporte>Balonmano</deporte>
+    <competicion>Austria. HLA</competicion>
+    <fecha>5 de mayo</fecha>
+    <hora>20:20</hora>
+    <url>https://livetv.sx/es/eventinfo/378413272__/</url>
+    <datetime_iso>2026-05-05T20:20:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="141">
     <nombre>Cento – Roseto</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Italia. Serie A2</competicion>
@@ -2120,7 +2127,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T20:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="146">
+  <evento id="142">
     <nombre>Dunfermline – Arbroath</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Escocia. Premiership</competicion>
@@ -2130,7 +2137,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T20:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="147">
+  <evento id="143">
     <nombre>Queen of the South – Stenhousemuir</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Escocia. Championship</competicion>
@@ -2140,7 +2147,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T20:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="148">
+  <evento id="144">
     <nombre>Alloa Athletic – Airdrieonians</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Escocia. Championship</competicion>
@@ -2150,7 +2157,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T20:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="149">
+  <evento id="145">
     <nombre>Porto – Melsungen</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Liga Europea EHF</competicion>
@@ -2160,7 +2167,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T20:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="150">
+  <evento id="146">
     <nombre>Kiel – Nexe</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Liga Europea EHF</competicion>
@@ -2170,7 +2177,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T20:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="151">
+  <evento id="147">
     <nombre>Vardar – Montpellier</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Liga Europea EHF</competicion>
@@ -2180,7 +2187,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T20:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="152">
+  <evento id="148">
     <nombre>Arsenal – Atlético de Madrid</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga de Campeones</competicion>
@@ -2190,7 +2197,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="153">
+  <evento id="149">
     <nombre>Ruvo Di Puglia – Pistoia</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Italia. Serie A2</competicion>
@@ -2200,7 +2207,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="154">
+  <evento id="150">
     <nombre>Fram (M) –  Throttur (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Islandia. Mujeres. Urvalsdeild</competicion>
@@ -2210,7 +2217,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T21:15:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="155">
+  <evento id="151">
     <nombre>Njardvik (M) –  Grindavik (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Islandia. Mujeres. Urvalsdeild</competicion>
@@ -2220,7 +2227,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T21:15:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="156">
+  <evento id="152">
     <nombre>Univ Católica Quito – El Nacional</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Copa</competicion>
@@ -2230,7 +2237,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T22:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="157">
+  <evento id="153">
     <nombre>Orense – Vinotinto</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Copa</competicion>
@@ -2240,7 +2247,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T22:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="158">
+  <evento id="154">
     <nombre>Mushuc Runa – Gualaceo</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Copa</competicion>
@@ -2250,7 +2257,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T22:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="159">
+  <evento id="155">
     <nombre>Aucas – San Antonio Cotacachi</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Copa</competicion>
@@ -2260,7 +2267,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T22:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="160">
+  <evento id="156">
     <nombre>Macará – Cuenca Juniors</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Copa</competicion>
@@ -2270,7 +2277,7 @@ player/live.php?id=258962&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-05T22:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="161">
+  <evento id="157">
     <nombre>Libertad – LDU Portoviejo</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Copa</competicion>
