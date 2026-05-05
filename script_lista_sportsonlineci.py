@@ -3,9 +3,15 @@ from xml.etree.ElementTree import Element, SubElement, tostring
 import xml.dom.minidom
 from datetime import datetime, timezone
 import re
+import time
+import os
 
-# URL del archivo de texto
-URL_PROG_TXT = "https://sportsonline.ci/prog.txt"
+# URLs posibles del archivo de texto (configurable via env var)
+URL_PROG_TXT = os.getenv("URL_PROG_TXT", "https://sportsonline.cv/prog.txt")
+URL_FALLBACKS = [
+    "https://sportsonline.cv/prog.txt",
+    "https://sportsonline.ci/prog.txt",  # Fallback al antiguo
+]
 # Nombre del archivo XML generado
 OUTPUT_FILE = "lista_sportsonlineci.xml"
 
@@ -24,11 +30,28 @@ LINEAS_IRRELEVANTES = [
 # Días de la semana en inglés
 DIAS_SEMANA = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
 
-def descargar_contenido(url):
-    """Descarga el contenido del archivo de texto desde la URL proporcionada."""
-    response = requests.get(url)
-    response.raise_for_status()  # Lanza una excepción si la solicitud falla
-    return response.content.decode('utf-8-sig').strip()
+def descargar_contenido(urls, max_retries=5, timeout=10):
+    """Descarga el contenido del archivo de texto desde las URLs proporcionadas con reintentos."""
+    if isinstance(urls, str):
+        urls = [urls]
+    
+    for url in urls:
+        for attempt in range(max_retries):
+            try:
+                print(f"Intentando descargar desde {url} (intento {attempt + 1}/{max_retries})...")
+                response = requests.get(url, timeout=timeout)
+                response.raise_for_status()  # Lanza una excepción si la solicitud falla
+                return response.content.decode('utf-8-sig').strip()
+            except requests.exceptions.RequestException as e:
+                print(f"Error en la descarga desde {url} (intento {attempt + 1}): {e}")
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt  # Exponential backoff
+                    print(f"Esperando {wait_time} segundos antes del siguiente intento...")
+                    time.sleep(wait_time)
+                else:
+                    print(f"Falló la descarga desde {url} después de {max_retries} intentos.")
+    
+    raise Exception(f"Falló la descarga desde todas las URLs después de {max_retries} intentos por URL.")
 
 def limpiar_linea(linea):
     """Limpia una línea eliminando espacios innecesarios."""
@@ -141,13 +164,27 @@ def guardar_archivo_xml(root):
 
 def main():
     """Función principal para ejecutar el script."""
-    print("Descargando contenido del archivo...")
-    contenido = descargar_contenido(URL_PROG_TXT)
-    print("Generando lista XML...")
-    lista_xml = generar_lista_xml(contenido)
-    print("Guardando archivo XML...")
-    guardar_archivo_xml(lista_xml)
-    print(f"Archivo {OUTPUT_FILE} generado con éxito.")
+    try:
+        print("Descargando contenido del archivo...")
+        urls_to_try = [URL_PROG_TXT] + URL_FALLBACKS if URL_PROG_TXT not in URL_FALLBACKS else URL_FALLBACKS
+        contenido = descargar_contenido(urls_to_try)
+        if not contenido:
+            raise Exception("El contenido descargado está vacío.")
+        print("Generando lista XML...")
+        lista_xml = generar_lista_xml(contenido)
+        print("Guardando archivo XML...")
+        guardar_archivo_xml(lista_xml)
+        print(f"Archivo {OUTPUT_FILE} generado con éxito.")
+    except Exception as e:
+        print(f"Error durante la ejecución del script: {e}")
+        # Generar un XML vacío o con mensaje de error para evitar fallos en el pipeline
+        root = Element("playlist")
+        root.set("version", "1")
+        track = SubElement(root, "track")
+        title = SubElement(track, "title")
+        title.text = f"Error: {str(e)}"
+        guardar_archivo_xml(root)
+        print(f"Archivo {OUTPUT_FILE} generado con mensaje de error.")
 
 if __name__ == "__main__":
     main()

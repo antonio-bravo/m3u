@@ -29,6 +29,8 @@ jobs:
 
       - name: Run update script
         run: python script_lista_sportsonlineci.py
+        env:
+          URL_PROG_TXT: https://sportsonline.cv/prog.txt
 
       - name: Commit and push changes
         run: |
