@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-05-07 03:26:08" total="209">
+<eventos generado="2026-05-07 05:36:35" total="209">
   <evento id="1">
     <nombre>ABC – Juazeirense</nombre>
     <deporte>Fútbol</deporte>
@@ -428,14 +428,7 @@
     <hora>03:20</hora>
     <url>https://livetv.sx/es/eventinfo/378568319__/</url>
     <datetime_iso>2026-05-07T03:20:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://embedhd.org/source/fetch.php?hd=608</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3009814&amp;lang=es&amp;eid=378568319&amp;lid=3009814&amp;ci=14&amp;si=19</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
   <evento id="44">
     <nombre>Toluca – Los Ángeles</nombre>
@@ -485,20 +478,7 @@
     <hora>03:40</hora>
     <url>https://livetv.sx/es/eventinfo/372800969__/</url>
     <datetime_iso>2026-05-07T03:40:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://shd247.live/frame0028.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
-        <idioma_nombre>Holandés</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3010029&amp;lang=es&amp;eid=372800969&amp;lid=3010029&amp;ci=14&amp;si=19</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://embedhd.org/source/fetch.php?hd=600</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3010336&amp;lang=es&amp;eid=372800969&amp;lid=3010336&amp;ci=14&amp;si=19</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
   <evento id="49">
     <nombre>Universidad Católica – Cruzeiro-MG</nombre>
@@ -558,7 +538,14 @@
     <hora>07:00</hora>
     <url>https://livetv.sx/es/eventinfo/376194118_bqo_arlans_pavlodar_region/</url>
     <datetime_iso>2026-05-07T07:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/hLhx2yPHiec?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=hLhx2yPHiec&amp;lang=es&amp;eid=376194118&amp;lid=3010719&amp;ci=1482&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="55">
     <nombre>Women's Series, Manila</nombre>
