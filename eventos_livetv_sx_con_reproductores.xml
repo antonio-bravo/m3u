@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-05-07 22:53:57" total="30">
+<eventos generado="2026-05-07 23:45:44" total="24">
   <evento id="1">
     <nombre>Atlético Platense –  Peñarol</nombre>
     <deporte>Fútbol</deporte>
@@ -163,16 +163,16 @@ player/live.php?id=259297&amp;w=700&amp;h=480</url>
         <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=259297&amp;lang=es&amp;eid=373161871&amp;lid=3010359&amp;ci=131&amp;si=1</enlace_original>
       </stream>
       <stream id="2">
-        <url>https://nrdrse.link/ch.php?id=27</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3010093&amp;lang=es&amp;eid=373161871&amp;lid=3010093&amp;ci=131&amp;si=1</enlace_original>
-      </stream>
-      <stream id="3">
         <url>https://elcanaldeportivo.com/espn5.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
         <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=2935637&amp;lang=es&amp;eid=373161871&amp;lid=2935637&amp;ci=131&amp;si=1</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://nrdrse.link/ch.php?id=27</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3010093&amp;lang=es&amp;eid=373161871&amp;lid=3010093&amp;ci=131&amp;si=1</enlace_original>
       </stream>
       <stream id="4">
         <url>https://emb.apl409.me/
@@ -196,16 +196,16 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
         <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=259232&amp;lang=es&amp;eid=373161871&amp;lid=3011289&amp;ci=131&amp;si=1</enlace_original>
       </stream>
       <stream id="7">
-        <url>https://daddylive1.link/my/stream-81.php</url>
+        <url>https://daddylive1.link/my/stream-432.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
         <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3011386&amp;lang=es&amp;eid=373161871&amp;lid=3011386&amp;ci=131&amp;si=1</enlace_original>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3011385&amp;lang=es&amp;eid=373161871&amp;lid=3011385&amp;ci=131&amp;si=1</enlace_original>
       </stream>
       <stream id="8">
-        <url>https://daddylive1.link/my/stream-150.php</url>
+        <url>https://daddylive1.link/my/stream-49.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
         <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3011387&amp;lang=es&amp;eid=373161871&amp;lid=3011387&amp;ci=131&amp;si=1</enlace_original>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3011364&amp;lang=es&amp;eid=373161871&amp;lid=3011364&amp;ci=131&amp;si=1</enlace_original>
       </stream>
     </streams>
   </evento>
@@ -231,7 +231,7 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. NBB</competicion>
     <fecha>7 de mayo</fecha>
-    <hora>00:00</hora>
+    <hora>27:26</hora>
     <url>https://livetv.sx/es/eventinfo/376532539_paulistano_pinheiros/</url>
     <datetime_iso>2026-05-07T00:00:00</datetime_iso>
     <streams total="1">
@@ -244,6 +244,23 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
     </streams>
   </evento>
   <evento id="7">
+    <nombre>SWB RailRiders –  Worcester Red Sox</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>MiLB. International League</competicion>
+    <fecha>7 de mayo</fecha>
+    <hora>00:00</hora>
+    <url>https://livetv.sx/es/eventinfo/379245534_swb_railriders_worcester_red_sox/</url>
+    <datetime_iso>2026-05-07T00:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.pk/stream/stream-762.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3011402&amp;lang=es&amp;eid=379245534&amp;lid=3011402&amp;ci=2702&amp;si=19</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="8">
     <nombre>Sabios de Manizales –  Caimanes Llano</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Colombia. LBP</competicion>
@@ -260,7 +277,7 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="8">
+  <evento id="9">
     <nombre>Delfines de La Guaira –  Marineros de Carabobo</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Venezuela. LMBP</competicion>
@@ -277,127 +294,144 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="9">
-    <nombre>Premier League</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Premier League     20:10 (PDC)</competicion>
-    <fecha>7 de mayo</fecha>
-    <hora>20:10</hora>
-    <url>https://livetv.sx/es/eventinfo/378069791_premier_league/</url>
-    <datetime_iso>2026-05-07T20:10:00</datetime_iso>
-    <streams total="0" />
-  </evento>
   <evento id="10">
-    <nombre>Truist Championship</nombre>
+    <nombre>Confianca EC –  Fortaleza</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>PGA Tour</competicion>
+    <competicion>Brasil. Copa do Nordeste</competicion>
     <fecha>7 de mayo</fecha>
-    <hora>20:30</hora>
-    <url>https://livetv.sx/es/eventinfo/378069806_truist_championship/</url>
-    <datetime_iso>2026-05-07T20:30:00</datetime_iso>
-    <streams total="0" />
+    <hora>00:30</hora>
+    <url>https://livetv.sx/es/eventinfo/378426950_confianca_ec_fortaleza/</url>
+    <datetime_iso>2026-05-07T00:30:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/A-g3MnvzTAw?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=A-g3MnvzTAw&amp;lang=es&amp;eid=378426950&amp;lid=3011403&amp;ci=1023&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="11">
-    <nombre>Colorado –  NY Mets</nombre>
+    <nombre>Rochester Red Wings –  Syracuse Mets</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>No especificado</competicion>
+    <competicion>MiLB. International League</competicion>
     <fecha>7 de mayo</fecha>
-    <hora>21:10</hora>
-    <url>https://livetv.sx/es/eventinfo/378475219_colorado_ny_mets/</url>
-    <datetime_iso>2026-05-07T21:10:00</datetime_iso>
+    <hora>00:30</hora>
+    <url>https://livetv.sx/es/eventinfo/379253635_rochester_red_wings_syracuse_mets/</url>
+    <datetime_iso>2026-05-07T00:30:00</datetime_iso>
     <streams total="0" />
   </evento>
   <evento id="12">
-    <nombre>Aryna Sabalenka (M) –  Barbora Krejcikova (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Roma</competicion>
+    <nombre>Memphis Redbirds –  Toledo Mud Hens</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>MiLB. International League</competicion>
     <fecha>7 de mayo</fecha>
-    <hora>21:10</hora>
-    <url>https://livetv.sx/es/eventinfo/378400877__/</url>
-    <datetime_iso>2026-05-07T21:10:00</datetime_iso>
+    <hora>00:30</hora>
+    <url>https://livetv.sx/es/eventinfo/379254201_memphis_redbirds_toledo_mud_hens/</url>
+    <datetime_iso>2026-05-07T00:30:00</datetime_iso>
     <streams total="0" />
   </evento>
   <evento id="13">
-    <nombre>Kessler McCartney (M) –  Iva Jovic (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Roma</competicion>
+    <nombre>Miami –  Baltimore</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
     <fecha>7 de mayo</fecha>
-    <hora>21:10</hora>
-    <url>https://livetv.sx/es/eventinfo/378464977__/</url>
-    <datetime_iso>2026-05-07T21:10:00</datetime_iso>
-    <streams total="0" />
+    <hora>00:40</hora>
+    <url>https://livetv.sx/es/eventinfo/373169294_miami_baltimore/</url>
+    <datetime_iso>2026-05-07T00:40:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://streamss.center/buffer1/22.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3011226&amp;lang=es&amp;eid=373169294&amp;lid=3011226&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="14">
-    <nombre>Colorado – NY Mets</nombre>
-    <deporte>Béisbol</deporte>
+    <nombre>Filadelfia –  Oakland</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>No especificado</competicion>
     <fecha>7 de mayo</fecha>
-    <hora>21:10</hora>
-    <url>https://livetv.sx/es/eventinfo/378475219__/</url>
-    <datetime_iso>2026-05-07T21:10:00</datetime_iso>
-    <streams total="0" />
+    <hora>00:40</hora>
+    <url>https://livetv.sx/es/eventinfo/373169296_filadelfia_oakland/</url>
+    <datetime_iso>2026-05-07T00:40:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://streamss.center/buffer1/21.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3011225&amp;lang=es&amp;eid=373169296&amp;lid=3011225&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://dlhd.pk/stream/stream-777.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3011431&amp;lang=es&amp;eid=373169296&amp;lid=3011431&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="15">
-    <nombre>Arizona –  Pittsburgh</nombre>
+    <nombre>Detroit –  Cleveland</nombre>
     <deporte>Fútbol</deporte>
     <competicion>No especificado</competicion>
     <fecha>7 de mayo</fecha>
-    <hora>21:40</hora>
-    <url>https://livetv.sx/es/eventinfo/373107124_arizona_pittsburgh/</url>
-    <datetime_iso>2026-05-07T21:40:00</datetime_iso>
-    <streams total="0" />
+    <hora>01:00</hora>
+    <url>https://livetv.sx/es/eventinfo/378007850_detroit_cleveland/</url>
+    <datetime_iso>2026-05-07T01:00:00</datetime_iso>
+    <streams total="8">
+      <stream id="1">
+        <url>https://emb.apl409.me/
+player/live.php?id=251029&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=alieztv&amp;c=251029&amp;lang=es&amp;eid=378007850&amp;lid=3005270&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://flixxlive.pro/live/nba2_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=2661171&amp;lang=es&amp;eid=378007850&amp;lid=2661171&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://flixxlive.pro/live/ch6_english.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=2661179&amp;lang=es&amp;eid=378007850&amp;lid=2661179&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://shd247.live/frame021.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3010920&amp;lang=es&amp;eid=378007850&amp;lid=3010920&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://thepinks.site/channel.html?id=5</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3010906&amp;lang=es&amp;eid=378007850&amp;lid=3010906&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://thepinks.site/channel.html?id=2</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3007529&amp;lang=es&amp;eid=378007850&amp;lid=3007529&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://daddylive1.link/my/stream-411.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3011370&amp;lang=es&amp;eid=378007850&amp;lid=3011370&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://daddylive1.link/my/stream-2.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3011369&amp;lang=es&amp;eid=378007850&amp;lid=3011369&amp;ci=3&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="16">
-    <nombre>Arizona – Pittsburgh</nombre>
-    <deporte>Béisbol</deporte>
-    <competicion>No especificado</competicion>
-    <fecha>7 de mayo</fecha>
-    <hora>21:40</hora>
-    <url>https://livetv.sx/es/eventinfo/373107124__/</url>
-    <datetime_iso>2026-05-07T21:40:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="17">
-    <nombre>Mizuho Americas Open</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>LPGA Tour</competicion>
-    <fecha>7 de mayo</fecha>
-    <hora>22:00</hora>
-    <url>https://livetv.sx/es/eventinfo/378080762_mizuho_americas_open/</url>
-    <datetime_iso>2026-05-07T22:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="18">
-    <nombre>ASFAR –  Olympic Safi</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Marruecos. Botola Pro</competicion>
-    <fecha>7 de mayo</fecha>
-    <hora>22:00</hora>
-    <url>https://livetv.sx/es/eventinfo/376270772_asfar_olympic_safi/</url>
-    <datetime_iso>2026-05-07T22:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="19">
-    <nombre>Manta – 9 de Octubre</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Ecuador. Copa</competicion>
-    <fecha>7 de mayo</fecha>
-    <hora>22:00</hora>
-    <url>https://livetv.sx/es/eventinfo/375418977__/</url>
-    <datetime_iso>2026-05-07T22:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="20">
-    <nombre>ASFAR – Olympic Safi</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Marruecos. Botola Pro</competicion>
-    <fecha>7 de mayo</fecha>
-    <hora>22:00</hora>
-    <url>https://livetv.sx/es/eventinfo/376270772__/</url>
-    <datetime_iso>2026-05-07T22:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="21">
     <nombre>Independiente Juniors –  Gualaceo</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Serie B</competicion>
@@ -407,7 +441,7 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-07T22:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="22">
+  <evento id="17">
     <nombre>Cuenca Juniors –  Cumbaya</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Serie B</competicion>
@@ -417,27 +451,7 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-07T22:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="23">
-    <nombre>Independiente Juniors – Gualaceo</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Ecuador. Serie B</competicion>
-    <fecha>7 de mayo</fecha>
-    <hora>22:30</hora>
-    <url>https://livetv.sx/es/eventinfo/372679030__/</url>
-    <datetime_iso>2026-05-07T22:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="24">
-    <nombre>Cuenca Juniors – Cumbaya</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Ecuador. Serie B</competicion>
-    <fecha>7 de mayo</fecha>
-    <hora>22:30</hora>
-    <url>https://livetv.sx/es/eventinfo/372679034__/</url>
-    <datetime_iso>2026-05-07T22:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="25">
+  <evento id="18">
     <nombre>Jaguares de Córdoba –  Real Cundinamarca</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Colombia. Copa</competicion>
@@ -445,16 +459,9 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
     <hora>23:00</hora>
     <url>https://livetv.sx/es/eventinfo/378847178_jaguares_de_c__rdoba_real_cundinamarca/</url>
     <datetime_iso>2026-05-07T23:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fsignin_passive%26feature%3Dpassive&amp;hl=en</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://tinyurl.com/yc5e8kbe</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="26">
+  <evento id="19">
     <nombre>San Antonio Cotacachi –  Atletico Vinotinto</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Serie B</competicion>
@@ -464,7 +471,7 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-07T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="27">
+  <evento id="20">
     <nombre>Flamengo-RJ Sub-20 –   Palmeiras Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Brasileiro Sub 20</competicion>
@@ -472,16 +479,9 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
     <hora>23:00</hora>
     <url>https://livetv.sx/es/eventinfo/378899014__flamengo_rj_sub_20__palmeiras_sub_20/</url>
     <datetime_iso>2026-05-07T23:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/quHQcLdSMR0?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=quHQcLdSMR0&amp;lang=es&amp;eid=378899014&amp;lid=3011358&amp;ci=2719&amp;si=1</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="28">
+  <evento id="21">
     <nombre>Flamengo-RJ Sub-20 –  Palmeiras Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Brasileiro Sub 20</competicion>
@@ -489,16 +489,9 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
     <hora>23:00</hora>
     <url>https://livetv.sx/es/eventinfo/378899014__/</url>
     <datetime_iso>2026-05-07T23:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/quHQcLdSMR0?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv882.me/webplayer2.php?t=youtube&amp;c=quHQcLdSMR0&amp;lang=es&amp;eid=378899014&amp;lid=3011358&amp;ci=2719&amp;si=1</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="29">
+  <evento id="22">
     <nombre>San Antonio Cotacachi – Atletico Vinotinto</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Serie B</competicion>
@@ -508,7 +501,7 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-05-07T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="30">
+  <evento id="23">
     <nombre>Jaguares de Córdoba – Real Cundinamarca</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Colombia. Copa</competicion>
@@ -516,12 +509,22 @@ player/live.php?id=259232&amp;w=700&amp;h=480</url>
     <hora>23:00</hora>
     <url>https://livetv.sx/es/eventinfo/378847178__/</url>
     <datetime_iso>2026-05-07T23:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="24">
+    <nombre>Sampaio (M) –   Cerrado (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Brasil. Mujeres. LBF</competicion>
+    <fecha>7 de mayo</fecha>
+    <hora>23:13</hora>
+    <url>https://livetv.sx/es/eventinfo/378566327__sampaio_m__cerrado_m/</url>
+    <datetime_iso>2026-05-07T23:13:00</datetime_iso>
     <streams total="1">
       <stream id="1">
-        <url>https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fsignin_passive%26feature%3Dpassive&amp;hl=en</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://tinyurl.com/yc5e8kbe</enlace_original>
+        <url>https://dlhd.pk/stream/stream-83.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://cdn.livetv882.me/webplayer.php?t=ifr&amp;c=3010850&amp;lang=es&amp;eid=378566327&amp;lid=3010850&amp;ci=2660&amp;si=3</enlace_original>
       </stream>
     </streams>
   </evento>
