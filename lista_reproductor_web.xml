@@ -1,28 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-05-07 12:00</datetime>
-    <league>ciclista Paris–Roubaix</league>
-    <teams>ciclista Paris–Roubaix</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 4</channel_name>
-        <channel_id>35453-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 4 | OP2</channel_name>
-        <channel_id>35453-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 4 | OP3</channel_name>
-        <channel_id>35453-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-05-07 21:00</datetime>
     <league>Copa Libertadores</league>
     <teams>Junior vs Cerro Porteño</teams>
@@ -51,6 +29,28 @@
         <channel_name>BeIN Sports Ñ</channel_name>
         <channel_id>35437-5</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1iZWluc3BvcnRlcw==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-07 13:40</datetime>
+    <league>Tenis – Internazionali BNL d’Italia – Primera Ronda</league>
+    <teams>Denis Shapovalov vs Mariano Navone</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 4</channel_name>
+        <channel_id>35443-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNA==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 4 | OP2</channel_name>
+        <channel_id>35443-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNA==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 4 | OP3</channel_name>
+        <channel_id>35443-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
       </channel>
     </channels>
   </event>
@@ -153,33 +153,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-05-07 13:40</datetime>
-    <league>Tenis – Internazionali BNL d’Italia – Primera Ronda</league>
-    <teams>Denis Shapovalov vs Mariano Navone</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>35443-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>35443-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>35443-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 4</channel_name>
-        <channel_id>35443-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-05-07 19:00</datetime>
     <league>Copa Libertadores</league>
     <teams>Coquimbo Unido vs Universitario</teams>
@@ -225,28 +198,6 @@
         <channel_name>TNT Sports | OP3</channel_name>
         <channel_id>35438-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHM=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-07 11:30</datetime>
-    <league>MLB</league>
-    <teams>New York Yankees vs Texas Rangers</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 7</channel_name>
-        <channel_id>35441-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNw==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 7 | OP2</channel_name>
-        <channel_id>35441-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNw==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 7 | OP3</channel_name>
-        <channel_id>35441-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG43</url>
       </channel>
     </channels>
   </event>
@@ -476,28 +427,6 @@
         <channel_name>Win Sports + | OP3</channel_name>
         <channel_id>35449-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0c3BsdXM=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-07 12:00</datetime>
-    <league>Tenis – Internazionali BNL d’Italia – Primera Ronda</league>
-    <teams>Thiago Agustin Tirante vs Gianluca Cadenasso</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>35439-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>35439-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>35439-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
       </channel>
     </channels>
   </event>
