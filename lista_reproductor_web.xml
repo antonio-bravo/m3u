@@ -204,6 +204,23 @@
   </event>
   <event>
     <datetime>2026-05-08 13:30</datetime>
+    <league>LaLiga SmartBank</league>
+    <teams>Cádiz vs Deportivo La Coruña</teams>
+    <channels>
+      <channel>
+        <channel_name>LaLiga TV Hypermotion</channel_name>
+        <channel_id>35467-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1oeXBlcm1vdGlvbjE=</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>35467-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXky</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-08 13:30</datetime>
     <league>Bundesliga</league>
     <teams>Borussia Dortmund vs Eintracht Frankfurt</teams>
     <channels>
@@ -223,8 +240,13 @@
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG41</url>
       </channel>
       <channel>
-        <channel_name>Sportv BR</channel_name>
+        <channel_name>Disney+</channel_name>
         <channel_id>35457-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
+      </channel>
+      <channel>
+        <channel_name>Sportv BR</channel_name>
+        <channel_id>35457-5</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
       </channel>
     </channels>
@@ -260,18 +282,6 @@
         <channel_name>ESPN 7 | OP3</channel_name>
         <channel_id>35462-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG43</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-08 13:30</datetime>
-    <league>LaLiga SmartBank</league>
-    <teams>Cádiz vs Deportivo La Coruña</teams>
-    <channels>
-      <channel>
-        <channel_name>LaLiga TV Hypermotion</channel_name>
-        <channel_id>35467-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1oeXBlcm1vdGlvbjE=</url>
       </channel>
     </channels>
   </event>
@@ -338,6 +348,28 @@
         <channel_name>ESPN 2 | OP3</channel_name>
         <channel_id>35478-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-08 13:00</datetime>
+    <league>Copa del Rey de Arabia Saudita</league>
+    <teams>Al Kholood vs Al Hilal</teams>
+    <channels>
+      <channel>
+        <channel_name>FOX Deportes</channel_name>
+        <channel_id>35472-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes | OP2</channel_name>
+        <channel_id>35472-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes | OP3</channel_name>
+        <channel_id>35472-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWZveGRlcG9ydGVz</url>
       </channel>
     </channels>
   </event>
@@ -480,28 +512,6 @@
         <channel_name>Win Sports ┃OP3</channel_name>
         <channel_id>35471-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0cw==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-08 13:00</datetime>
-    <league>Copa del Rey de Arabia Saudita</league>
-    <teams>Al Kholood vs Al Hilal</teams>
-    <channels>
-      <channel>
-        <channel_name>FOX Deportes</channel_name>
-        <channel_id>35472-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Deportes | OP2</channel_name>
-        <channel_id>35472-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Deportes | OP3</channel_name>
-        <channel_id>35472-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWZveGRlcG9ydGVz</url>
       </channel>
     </channels>
   </event>
