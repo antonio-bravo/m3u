@@ -1,10 +1,21 @@
+import sys
 import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
+from urllib.parse import urljoin
 
-# URL base del sitio
-base_url = "https://deporte-libre.click"
+# Dominios en orden de preferencia para DEPORTE-LIBRE
+BASE_URLS = [
+    "https://deporte-libre.click",
+    "https://www.deporte-libre.click",
+    "https://deportelibre.click",
+    "https://www.deportelibre.click",
+    "https://deporte-libre.com",
+    "https://www.deporte-libre.com",
+    "http://deportelibre.com",
+    "http://deporte-libre.com",
+]
 
 # Endpoints JSON
 endpoints = [
@@ -13,35 +24,61 @@ endpoints = [
     "/schedule/extra2-schedule-2.php"
 ]
 
-# Función para obtener datos desde un endpoint JSON
-def fetch_json_data(endpoint):
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'Accept': 'application/json, text/plain, */*',
+    'Accept-Language': 'en-US,en;q=0.9',
+}
+
+# Función interna para hacer requests seguros
+def safe_get(url):
     try:
-        response = requests.get(base_url + endpoint)
+        response = requests.get(url, timeout=12, headers=HEADERS)
         response.raise_for_status()
+        return response
+    except requests.exceptions.SSLError:
+        try:
+            response = requests.get(url, timeout=12, headers=HEADERS, verify=False)
+            response.raise_for_status()
+            return response
+        except Exception as err:
+            print(f"Warning: SSL error for {url}: {err}")
+            return None
+    except requests.RequestException as err:
+        print(f"Warning: no se pudo cargar {url}: {err}")
+        return None
+
+# Función para obtener datos desde un endpoint JSON
+def fetch_json_data(base_url, endpoint):
+    try:
+        response = safe_get(urljoin(base_url, endpoint))
+        if not response:
+            return None
         return response.json()
-    except requests.exceptions.HTTPError as err:
-        print(f"Error: {err} for endpoint: {endpoint}")
+    except ValueError as err:
+        print(f"Error: JSON inválido en {endpoint}: {err}")
         return None
 
 # Función para obtener la URL del reproductor principal desde una página HTML
 def fetch_player_url(channel_url):
     try:
-        response = requests.get(channel_url)
-        response.raise_for_status()
+        response = safe_get(channel_url)
+        if not response:
+            return None
         soup = BeautifulSoup(response.content, "html.parser")
         iframe = soup.find("iframe")
         if iframe and 'src' in iframe.attrs:
             return iframe['src']
-    except requests.exceptions.HTTPError as http_err:
-        print(f"HTTP error occurred: {http_err}")
     except Exception as err:
         print(f"An error occurred: {err}")
     return None
 
 # Función para obtener los datos de los canales y logos
 def fetch_channel_data():
-    response = requests.get("https://raw.githubusercontent.com/tutw/platinsport-m3u-updater/refs/heads/main/lista_canales_DEPORTE-LIBRE.FANS.xml")
-    response.raise_for_status()
+    response = safe_get("https://raw.githubusercontent.com/tutw/platinsport-m3u-updater/refs/heads/main/lista_canales_DEPORTE-LIBRE.FANS.xml")
+    if not response:
+        print("No se pudo cargar la lista de canales desde GitHub. Se usará una lista vacía.")
+        return {}
     channels_tree = ET.fromstring(response.content)
     channels_data = {}
     for channel in channels_tree.findall('channel'):
@@ -57,12 +94,37 @@ def fetch_channel_data():
 # Crear un nuevo árbol XML para la lista de agenda
 agenda_root = ET.Element('agenda')
 
+# Buscar el primer dominio DEPORTE-LIBRE que funcione
+
+def find_working_base_url():
+    for base_url in BASE_URLS:
+        for endpoint in endpoints:
+            response = safe_get(urljoin(base_url, endpoint))
+            if not response:
+                continue
+            text = response.text.strip()
+            if not text:
+                continue
+            if 'application/json' in response.headers.get('content-type', '').lower() or text[0] in '{[':
+                try:
+                    data = response.json()
+                    if isinstance(data, dict) and data:
+                        return base_url
+                except ValueError:
+                    continue
+    return None
+
+base_url = find_working_base_url()
+if not base_url:
+    print("No se encontró un host DEPORTE-LIBRE válido. Saltando actualización de agenda.")
+    sys.exit(0)
+
 # Obtener los datos de los canales y logos
 channels_data = fetch_channel_data()
 
 # Iterar sobre los endpoints y procesar los datos
 for endpoint in endpoints:
-    json_data = fetch_json_data(endpoint)
+    json_data = fetch_json_data(base_url, endpoint)
     
     # Continuar con el siguiente endpoint si hubo un error
     if json_data is None:
@@ -95,7 +157,7 @@ for endpoint in endpoints:
                     if isinstance(channel, dict):
                         channel_name = channel.get('channel_name', 'Desconocido')
                         channel_id = channel.get('channel_id', '0')
-                        channel_url = f"{base_url}/stream/stream-{channel_id}.php"
+                        channel_url = urljoin(base_url, f"/stream/stream-{channel_id}.php")
                         
                         # Obtener la URL del reproductor principal
                         player_url = fetch_player_url(channel_url)

@@ -12,8 +12,9 @@ from typing import List, Dict
 import pytz
 
 # APIs de PlayTorrio
-CDNLIVE_API = 'https://ntvstream-scraper.aymanisthedude1.workers.dev/cdnlive'
-ALL_SOURCES_API = 'https://ntvstream-scraper.aymanisthedude1.workers.dev/matches'
+PLAYTORRIO_WORKER = 'https://ntvstream-scraper.aymanisthedude1.workers.dev'
+CDNLIVE_API = f'{PLAYTORRIO_WORKER}/cdnlive'
+MATCHES_API = f'{PLAYTORRIO_WORKER}/matches'
 
 # Headers EXACTOS para que funcione la API de matches
 HEADERS = {
@@ -308,7 +309,7 @@ class PlayTorrioEventsExtractor:
     async def extract_all_sources_events(self) -> List[Dict]:
         """Extraer eventos de All Sources (matches API)"""
         print("\n📡 Extrayendo eventos de All Sources...")
-        data = await self.fetch_with_retry(ALL_SOURCES_API)
+        data = await self.fetch_with_retry(MATCHES_API)
         
         if not data.get('success') or not data.get('live'):
             print("❌ No se pudieron obtener eventos de All Sources")
@@ -392,11 +393,13 @@ class PlayTorrioEventsExtractor:
         await self.init_session()
         
         try:
-            # Extraer de CDN Live primero
-            cdn_events = await self.extract_cdnlive_events()
-            
-            # Luego All Sources con delay
+            # Extraer primero de All Sources (matches), que es la fuente principal que sigue funcionando.
             all_events = await self.extract_all_sources_events()
+
+            # Intentar CDN Live solo como fallback adicional si la API principal no devuelve eventos
+            cdn_events = []
+            if not all_events:
+                cdn_events = await self.extract_cdnlive_events()
             
             print(f"\n{'=' * 80}")
             print(f"📊 RESULTADOS PARCIALES:")

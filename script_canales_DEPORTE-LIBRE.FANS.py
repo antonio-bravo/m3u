@@ -1,24 +1,69 @@
+import sys
 import requests
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import difflib
+from urllib.parse import urljoin
 
-# URL principal para scrapear
-#main_url = 'https://deporte-libre.click/en-vivo-online/+canales/'
-main_url = 'https://deporte-libre.click/canales-24-7.php'
+BASE_URLS = [
+    'https://deporte-libre.click',
+    'https://www.deporte-libre.click',
+    'https://deportelibre.click',
+    'https://www.deportelibre.click',
+    'https://deporte-libre.com',
+    'https://www.deporte-libre.com',
+    'http://deportelibre.com',
+    'http://deporte-libre.com',
+]
+main_path = '/canales-24-7.php'
 logos_url = 'https://raw.githubusercontent.com/tutw/platinsport-m3u-updater/refs/heads/main/logos.xml'
+
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'Accept-Language': 'en-US,en;q=0.9',
+}
+
+# Función interna para hacer requests seguros
+def safe_get(url):
+    try:
+        response = requests.get(url, timeout=12, headers=HEADERS)
+        response.raise_for_status()
+        return response
+    except requests.exceptions.SSLError:
+        try:
+            response = requests.get(url, timeout=12, headers=HEADERS, verify=False)
+            response.raise_for_status()
+            return response
+        except Exception as err:
+            print(f"Warning: SSL error for {url}: {err}")
+            return None
+    except requests.RequestException as err:
+        print(f"Warning: no se pudo cargar {url}: {err}")
+        return None
 
 # Función para obtener el contenido HTML de una URL
 def get_html(url):
     print(f"Fetching URL: {url}")
-    response = requests.get(url, timeout=10)  # Agregar un tiempo límite
-    response.raise_for_status()  # Levantar una excepción para códigos de estado HTTP 4xx/5xx
+    response = safe_get(url)
+    if not response:
+        raise requests.RequestException(f"No se pudo obtener {url}")
     return response.text
 
+def find_working_base_url():
+    for base_url in BASE_URLS:
+        try:
+            test_url = urljoin(base_url, main_path)
+            html = get_html(test_url)
+            if '/stream/' in html:
+                return base_url
+        except Exception:
+            continue
+    return None
+
 # Función para scrapear la página principal y obtener los nombres de los canales y sus URLs
-def get_channel_list(main_url):
-    html = get_html(main_url)
+def get_channel_list(base_url):
+    html = get_html(urljoin(base_url, main_path))
     soup = BeautifulSoup(html, 'html.parser')
     
     channel_list = []
@@ -26,23 +71,23 @@ def get_channel_list(main_url):
         channel_name = a_tag.text.strip()
         channel_url = a_tag.get('href')
         if channel_name and channel_url and channel_url.startswith('/stream/'):
-            channel_list.append((channel_name, 'https://deporte-libre.click' + channel_url))
+            channel_list.append((channel_name, urljoin(base_url, channel_url)))
     
     print(f"Found {len(channel_list)} channels")
     return channel_list
 
 # Función para obtener los enlaces de streaming de cada canal
-def get_streaming_urls(channel_url):
-    base_url = 'https://deporte-libre.click'
+def get_streaming_urls(channel_url, base_url):
     html = get_html(channel_url)
     soup = BeautifulSoup(html, 'html.parser')
     
     streaming_urls = []
     for a_tag in soup.find_all('a', {'class': 'btn btn-md'}):
         streaming_url = a_tag.get('href')
-        if streaming_url.startswith('/'):
-            streaming_url = base_url + streaming_url
-        streaming_urls.append(streaming_url)
+        if streaming_url and streaming_url.startswith('/'):
+            streaming_url = urljoin(base_url, streaming_url)
+        if streaming_url:
+            streaming_urls.append(streaming_url)
     
     # También buscar URLs en los iframes
     for iframe in soup.find_all('iframe'):
@@ -92,7 +137,11 @@ def save_to_xml(channel_data, output_path):
 
 # Scrapeamos la lista de canales
 print("Starting to scrape the channel list")
-channel_list = get_channel_list(main_url)
+working_base_url = find_working_base_url()
+if not working_base_url:
+    print("No se encontró un host DEPORTE-LIBRE válido. Saltando actualización de canales.")
+    sys.exit(0)
+channel_list = get_channel_list(working_base_url)
 
 # Cargamos los logos
 logos = load_logos(logos_url)
@@ -101,7 +150,7 @@ logos = load_logos(logos_url)
 channel_data = {}
 for channel_name, channel_url in channel_list:
     try:
-        streaming_urls = get_streaming_urls(channel_url)
+        streaming_urls = get_streaming_urls(channel_url, working_base_url)
         logo_url = find_logo(channel_name, logos)
         channel_data[channel_name] = {'urls': streaming_urls, 'logo': logo_url}
     except requests.RequestException as e:
