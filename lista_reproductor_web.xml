@@ -1,43 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-05-14 13:00</datetime>
-    <league>LaLiga</league>
-    <teams>Girona vs Real Sociedad</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 4</channel_name>
-        <channel_id>35753-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 4 | OP2</channel_name>
-        <channel_id>35753-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 4 | OP3</channel_name>
-        <channel_id>35753-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
-      </channel>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>35753-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
-      </channel>
-      <channel>
-        <channel_name>Espn+</channel_name>
-        <channel_id>35753-5</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BucGx1czM=</url>
-      </channel>
-      <channel>
-        <channel_name>Espn+</channel_name>
-        <channel_id>35753-6</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BucGx1czQ=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-05-14 14:00</datetime>
     <league>League One</league>
     <teams>Bradford City vs Bolton Wanderers</teams>
@@ -102,13 +65,30 @@
     </channels>
   </event>
   <event>
+    <datetime>2026-05-14 22:10</datetime>
+    <league>Liga MX Femenil</league>
+    <teams>Monterrey vs América</teams>
+    <channels>
+      <channel>
+        <channel_name>VIX TUDN</channel_name>
+        <channel_id>35769-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT12aXgx</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
     <datetime>2026-05-14 16:00</datetime>
     <league>Copa de Brasil</league>
     <teams>Chapecoense vs Botafogo</teams>
     <channels>
       <channel>
-        <channel_name>Sportv BR</channel_name>
+        <channel_name>Premiere BR</channel_name>
         <channel_id>35757-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1wcmVtaWVyZTE=</url>
+      </channel>
+      <channel>
+        <channel_name>Sportv BR</channel_name>
+        <channel_id>35757-2</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
       </channel>
     </channels>
@@ -133,17 +113,10 @@
         <channel_id>35766-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0c3BsdXM=</url>
       </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-14 22:10</datetime>
-    <league>Liga MX Femenil</league>
-    <teams>Monterrey vs América</teams>
-    <channels>
       <channel>
-        <channel_name>VIX TUDN</channel_name>
-        <channel_id>35769-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT12aXgx</url>
+        <channel_name>fanatiz 02</channel_name>
+        <channel_id>35766-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mYW5hdGl6Mg==</url>
       </channel>
     </channels>
   </event>
@@ -170,18 +143,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-05-14 17:00</datetime>
-    <league>Copa de Brasil</league>
-    <teams>Atlético Goianiense vs Athletico-PR</teams>
-    <channels>
-      <channel>
-        <channel_name>Sportv BR</channel_name>
-        <channel_id>35759-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-05-14 19:45</datetime>
     <league>Primera B</league>
     <teams>Deportes Quindío vs Internacional Palmira</teams>
@@ -204,24 +165,14 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-05-14 13:30</datetime>
-    <league>Tenis – Internazionali BNL d’Italia – WTA Semifinal #2</league>
-    <teams>Tenis – Internazionali BNL d’Italia – WTA Semifinal #2</teams>
+    <datetime>2026-05-14 17:00</datetime>
+    <league>Copa de Brasil</league>
+    <teams>Atlético Goianiense vs Athletico-PR</teams>
     <channels>
       <channel>
-        <channel_name>ESPN 3</channel_name>
-        <channel_id>35775-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMw==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 3 | OP2</channel_name>
-        <channel_id>35775-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMw==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 3 | OP3</channel_name>
-        <channel_id>35775-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
+        <channel_name>Premiere 2 BR</channel_name>
+        <channel_id>35759-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1wcmVtaWVyZTI=</url>
       </channel>
     </channels>
   </event>
@@ -290,6 +241,18 @@
         <channel_name>fanatiz 01</channel_name>
         <channel_id>35806-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mYW5hdGl6MQ==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-14 17:00</datetime>
+    <league>Copa de Brasil</league>
+    <teams>Confiança vs Grêmio</teams>
+    <channels>
+      <channel>
+        <channel_name>Amazon Prime C</channel_name>
+        <channel_id>35758-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1hbWF6b25fcHJpbWUx</url>
       </channel>
     </channels>
   </event>
