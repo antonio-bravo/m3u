@@ -1,29 +1,33 @@
-=== Ejecución iniciada: 2026-04-30T13:46:28.185245 ===
-[2026-04-30 13:46:28] [INFO] Iniciando workflow de Arena4Viewer
-[2026-04-30 13:46:28] [INFO] ========================================
-[2026-04-30 13:46:28] [INFO] FASE 1: Obteniendo de servidores Arena4Viewer
-[2026-04-30 13:46:28] [INFO] ========================================
-[2026-04-30 13:46:28] [INFO] Intentando obtener canales de: Principal (http://www.arena4viewer.in/misguia2.php)
-[2026-04-30 13:46:29] [INFO] Intentando obtener canales de: Alternativo 1 (http://www.arena4viewer.pl/misguia2.php)
-[2026-04-30 13:46:32] [INFO] Intentando obtener canales de: Alternativo 2 (https://www.arena4viewer.co.in/misguia2.php)
-[2026-04-30 13:46:33] [INFO] Intentando obtener canales de: Alternativo 3 (https://www.arena4viewer.cool/misguia2.php)
-[2026-04-30 13:46:35] [INFO] Intentando obtener canales de: Alternativo 4 (https://www.arena4viewer.lv/misguia2.php)
-[2026-04-30 13:46:36] [INFO] Intentando obtener canales de: Alternativo 5 (https://www.arena4viewer.top/misguia2.php)
-[2026-04-30 13:46:38] [WARNING] ⚠ No se pudieron obtener canales de Arena4Viewer
-[2026-04-30 13:46:38] [INFO] ========================================
-[2026-04-30 13:46:38] [INFO] FASE 2: Obteniendo streams adicionales
-[2026-04-30 13:46:38] [INFO] ========================================
-[2026-04-30 13:46:38] [INFO] Obteniendo streams de: http://www.livefootballol.me/channels/
-[2026-04-30 13:46:39] [INFO] Obteniendo streams de: http://arenav.bget.ru/
-[2026-04-30 13:46:40] [WARNING] ⚠ Error obteniendo streams de http://arenav.bget.ru/: HTTPConnectionPool(host='arena
-[2026-04-30 13:46:40] [INFO] Obteniendo streams de: http://es.live3s.com/
-[2026-04-30 13:46:40] [WARNING] ⚠ Error obteniendo streams de http://es.live3s.com/: HTTPConnectionPool(host='es.li
-[2026-04-30 13:46:40] [INFO] ✓ Obtenidos 245 streams adicionales
-[2026-04-30 13:46:40] [INFO] Total de canales únicos: 145
-[2026-04-30 13:46:40] [INFO] ✓ Archivo arena4viewer.m3u generado con 145 canales
-[2026-04-30 13:46:40] [INFO] ========================================
-[2026-04-30 13:46:40] [INFO] RESUMEN FINAL
-[2026-04-30 13:46:40] [INFO] ========================================
-[2026-04-30 13:46:40] [INFO] Canales totales: 145
-[2026-04-30 13:46:40] [INFO] Archivo de salida: arena4viewer.m3u
-[2026-04-30 13:46:40] [INFO] Log: arena4viewer.log
+=== INICIO DE EXTRACCIÓN ARENA4VIEWER - 2026-05-15 17:50:28.127507 ===
+[2026-05-15 17:50:32] AVISO: No se detectó la tabla de la agenda. Cargando canales 1 al 30 por defecto.
+[2026-05-15 17:50:32] CANAL 01: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:33] CANAL 02: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:33] CANAL 03: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:34] CANAL 04: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:34] CANAL 05: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:34] CANAL 06: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:35] CANAL 07: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:35] CANAL 08: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:36] CANAL 09: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:36] CANAL 10: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:37] CANAL 11: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:37] CANAL 12: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:37] CANAL 13: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:38] CANAL 14: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:38] CANAL 15: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:38] CANAL 16: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:39] CANAL 17: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:39] CANAL 18: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:39] CANAL 19: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:39] CANAL 20: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:40] CANAL 21: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:40] CANAL 22: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:41] CANAL 23: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:41] CANAL 24: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:42] CANAL 25: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:42] CANAL 26: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:42] CANAL 27: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:43] CANAL 28: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:43] CANAL 29: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:43] CANAL 30: Web accesible en http://arena4viewer.in pero no se encontró la etiqueta 'TV:' o el hash.
+[2026-05-15 17:50:43] FIN CON ERRORES: El archivo M3U no se creó porque no se capturó ningún ID.
