@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-05-15 15:25:57
-# Total Channels: 53
-# Generated: 2026-05-15T15:00:01Z
+# IPFS Acestream Channels - 2026-05-15 17:48:04
+# Total Channels: 52
+# Generated: 2026-05-15T17:00:01Z
 
 # -------- BALONCESTO --------
 #EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="BALONCESTO",ACB EVENTO 01 720p *
@@ -15,9 +15,6 @@ http://127.0.0.1:6878/ace/getstream?id=53962d7fb865aff73b34a3afb2905cd492f60d75
 
 #EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="BALONCESTO",ACB EVENTO 01 **
 http://127.0.0.1:6878/ace/getstream?id=0995b9b77ac6198dd92141369707fb99da09bdb2
-
-#EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="BALONCESTO",ACB EVENTO 02 720p *
-http://127.0.0.1:6878/ace/getstream?id=d7e6b6bb1666740a21099fe6ceb0178a14f58e0c
 
 #EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="BALONCESTO",ACB EVENTO 02 **
 http://127.0.0.1:6878/ace/getstream?id=22b702984a0db43fd371c30e2df150b2336551cd
@@ -150,10 +147,10 @@ http://127.0.0.1:6878/ace/getstream?id=f51674b1dd1ab5a668fa97a0f13a490632f0d7ca
 http://127.0.0.1:6878/ace/getstream?id=5e310dbffed8c941d20ad819cb8ef43c34b07884
 
 #EXTINF:-1 tvg-id="M+ Vamos 3" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 3 1080p *
-http://127.0.0.1:6878/ace/getstream?id=b46a524780cf0ac5e533491fe79389d6198acf2c
+http://127.0.0.1:6878/ace/getstream?id=a9299052e9a16e5e2924e1fdd00b877c374f9e96
 
 #EXTINF:-1 tvg-id="M+ Vamos 3" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 3 1080p *
-http://127.0.0.1:6878/ace/getstream?id=a9299052e9a16e5e2924e1fdd00b877c374f9e96
+http://127.0.0.1:6878/ace/getstream?id=b46a524780cf0ac5e533491fe79389d6198acf2c
 
 # -------- NBA --------
 #EXTINF:-1 tvg-id="" tvg-logo="https://espnpressroom.com/us/files/2023/02/New-NBA-Logo-379x220.png" group-title="NBA",NBA ESPN 720p *
