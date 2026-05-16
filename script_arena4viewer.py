@@ -90,38 +90,92 @@ def fetch_channels(server_url):
         return None
 
 def parse_channels(html_content):
-    """Extrae los IDs buscando en el div oculto o en todo el texto"""
-    channels = {}
-    
-    # Limpieza básica de entidades HTML por si acaso
-    clean_html = html_content.replace('&nbsp;', ' ').replace('&#160;', ' ')
-    
-    # Buscar primero dentro del div "streams" mencionado en la descompilación
-    streams_div = re.search(r'class="streams"[^>]*>(.*?)</div>', clean_html, re.DOTALL | re.I)
-    search_area = streams_div.group(1) if streams_div else clean_html
-    
-    matches = CANAL_PATTERN.findall(search_area)
-    for num, ace_id in matches:
-        channels[int(num)] = ace_id.lower()
-        
-    return channels
+    """Extrae los IDs y busca información de eventos para la agenda"""
+    channels_ids = {}
+    events_map = {}
 
-def generar_m3u(channels, server_used):
+    # Limpieza básica de entidades HTML por si acaso
+    html_content = html_content.replace('&nbsp;', ' ').replace('&#160;', ' ')
+
+    # 1. Extraer IDs de Ace Stream (av1#acestream://...)
+    matches = CANAL_PATTERN.findall(html_content)
+    for num, ace_id in matches:
+        channels_ids[int(num)] = ace_id.lower()
+
+    # 2. Extraer información de la agenda (Eventos)
+    # Buscamos filas de tabla <tr>...</tr> en todo el documento
+    rows = re.findall(r'<tr[^>]*>(.*?)</tr>', html_content, re.DOTALL | re.I)
+
+    for row in rows:
+        # Extraer contenido de las celdas <td> o <th> (algunos servidores usan th para cabeceras)
+        cells = re.findall(r'<t[dh][^>]*>(.*?)</t[dh]>', row, re.DOTALL | re.I)
+
+        # Limpiar tags HTML de cada celda para obtener el texto puro
+        clean_cells = [re.sub(r'<[^>]+>', '', c).strip() for c in cells]
+
+        # Estructura según el HTML proporcionado: DAY | TIME | SPORT | COMPETITION | EVENT | LIVE
+        # Detectamos si la primera celda es una fecha para ajustar el offset de las columnas.
+        if len(clean_cells) >= 5:
+            offset = 1 if len(clean_cells) >= 6 and "/" in clean_cells[0] else 0
+
+            try:
+                time_str = clean_cells[offset]
+                sport = clean_cells[offset + 1].upper()
+                competition = clean_cells[offset + 2].upper()
+                event_name = clean_cells[offset + 3]
+                av_list = clean_cells[offset + 4] # Columna LIVE
+
+                # Validar que la celda de tiempo contenga una hora (HH:MM)
+                if re.search(r'\d{2}:\d{2}', time_str):
+                    # Buscar todos los números en la columna LIVE (vínculo con canal)
+                    av_nums = re.findall(r'(\d+)', av_list)
+                    for n in av_nums:
+                        n_int = int(n)
+                        if n_int not in events_map:
+                            events_map[n_int] = []
+
+                        new_event = {
+                            'time': time_str,
+                            'sport': sport if sport else "OTROS",
+                            'competition': competition if competition else "VARIOS",
+                            'event': event_name
+                        }
+                        # Evitar duplicar el mismo evento en el mismo canal
+                        if new_event not in events_map[n_int]:
+                            events_map[n_int].append(new_event)
+            except IndexError:
+                continue
+
+    return channels_ids, events_map
+
+def generar_m3u(channels, events_map, server_used):
     """Crea el archivo M3U compatible con Ace Stream"""
     if not channels:
         return False
-    
+
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             f.write(f"# Arena4Viewer - Actualizado: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
             f.write(f"# Fuente: {server_used}\n\n")
-            
+
             for num in sorted(channels.keys()):
                 ace_id = channels[num]
-                f.write(f'#EXTINF:-1 tvg-id="AV{num}" tvg-logo="" group-title="ArenaVision",ArenaVision {num}\n')
-                # URL para motor Ace Stream local (ajusta el puerto si es necesario)
-                f.write(f"acestream://{ace_id}\n\n")
+                events = events_map.get(num, [])
+
+                if not events:
+                    # Si por alguna razón el canal existe pero no tiene agenda hoy
+                    f.write(f'#EXTINF:-1 tvg-id="AV{num}" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision {num}\n')
+                    f.write(f"acestream://{ace_id}\n\n")
+                else:
+                    # Crear una entrada por cada evento detectado en la agenda
+                    for ev in events:
+                        # Formato: ArenaVision [NUM] - SPORT - COMPETITION - EVENT
+                        full_name = f"ArenaVision {num} - {ev['sport']} - {ev['competition']} - {ev['event']}"
+                        # Agrupación por SPORT
+                        f.write(f'#EXTINF:-1 tvg-id="AV{num}" tvg-logo="" group-title="{ev["sport"]}",{full_name}\n')
+                        f.write(f"acestream://{ace_id}\n\n")
+
         return True
     except Exception as e:
         logging.error(f"💥 Error al escribir M3U: {e}")
@@ -132,26 +186,28 @@ def generar_m3u(channels, server_used):
 def main():
     configurar_logging()
     logging.info("🚀 Iniciando extracción de Arena4Viewer...")
-    
+
     found_channels = {}
+    found_events = {}
     successful_server = ""
 
     for url in ARENA_URLS:
         logging.info(f"📡 Probando servidor: {url}")
         content = fetch_channels(url)
-        
+
         if content:
-            channels = parse_channels(content)
+            channels, events_map = parse_channels(content)
             if channels:
                 found_channels = channels
+                found_events = events_map
                 successful_server = url
                 logging.info(f"✅ ¡Éxito! Encontrados {len(channels)} canales en {url}")
                 break
             else:
                 logging.warning(f"❓ Conexión ok pero no se encontraron canales en {url}")
-    
+
     if found_channels:
-        if generar_m3u(found_channels, successful_server):
+        if generar_m3u(found_channels, found_events, successful_server):
             logging.info(f"✨ Archivo '{OUTPUT_FILE}' generado correctamente.")
             logging.info(f"📺 Rango de canales: {min(found_channels.keys())} al {max(found_channels.keys())}")
     else:
