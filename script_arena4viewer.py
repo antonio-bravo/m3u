@@ -116,7 +116,9 @@ def parse_channels(html_content):
         # Estructura según el HTML proporcionado: DAY | TIME | SPORT | COMPETITION | EVENT | LIVE
         # Detectamos si la primera celda es una fecha para ajustar el offset de las columnas.
         if len(clean_cells) >= 5:
-            offset = 1 if len(clean_cells) >= 6 and "/" in clean_cells[0] else 0
+            has_date = len(clean_cells) >= 6 and "/" in clean_cells[0]
+            offset = 1 if has_date else 0
+            date_str = clean_cells[0] if has_date else ""
 
             try:
                 time_str = clean_cells[offset]
@@ -135,6 +137,7 @@ def parse_channels(html_content):
                             events_map[n_int] = []
 
                         new_event = {
+                            'date': date_str,
                             'time': time_str,
                             'sport': sport if sport else "OTROS",
                             'competition': competition if competition else "VARIOS",
@@ -170,8 +173,10 @@ def generar_m3u(channels, events_map, server_used):
                 else:
                     # Crear una entrada por cada evento detectado en la agenda
                     for ev in events:
-                        # Formato: ArenaVision [NUM] - SPORT - COMPETITION - EVENT
-                        full_name = f"ArenaVision {num} - {ev['sport']} - {ev['competition']} - {ev['event']}"
+                        # Formato: ArenaVision [NUM] - SPORT - COMPETITION - EVENT [DIA - HORA]
+                        date_info = f"{ev['date']} - " if ev['date'] else ""
+                        full_name = f"ArenaVision {num} - {ev['sport']} - {ev['competition']} - {ev['event']} [{date_info}{ev['time']}]"
+                        
                         # Agrupación por SPORT
                         f.write(f'#EXTINF:-1 tvg-id="AV{num}" tvg-logo="" group-title="{ev["sport"]}",{full_name}\n')
                         f.write(f"acestream://{ace_id}\n\n")

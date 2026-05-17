@@ -1,5 +1,23 @@
+<<<<<<< Updated upstream
 2026-05-17 13:47:32,117 [INFO] 🚀 Iniciando extracción de Arena4Viewer...
 2026-05-17 13:47:32,118 [INFO] 📡 Probando servidor: https://www.arena4viewer.in
 2026-05-17 13:47:34,048 [INFO] ✅ ¡Éxito! Encontrados 139 canales en https://www.arena4viewer.in
 2026-05-17 13:47:34,049 [INFO] ✨ Archivo 'arena4viewer.m3u' generado correctamente.
 2026-05-17 13:47:34,049 [INFO] 📺 Rango de canales: 1 al 160
+||||||| Stash base
+2026-05-16 23:29:12,651 [INFO] 🚀 Iniciando extracción de Arena4Viewer...
+2026-05-16 23:29:12,652 [INFO] 📡 Probando servidor: https://www.arena4viewer.in
+2026-05-16 23:29:12,737 [ERROR] ❌ Error conectando a https://www.arena4viewer.in: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-05-16 23:29:12,737 [INFO] 📡 Probando servidor: https://www.arena4viewer.pl
+2026-05-16 23:29:14,199 [INFO] ✅ ¡Éxito! Encontrados 139 canales en https://www.arena4viewer.pl
+2026-05-16 23:29:14,200 [INFO] ✨ Archivo 'arena4viewer.m3u' generado correctamente.
+2026-05-16 23:29:14,200 [INFO] 📺 Rango de canales: 1 al 160
+=======
+2026-05-17 16:21:00,391 [INFO] 🚀 Iniciando extracción de Arena4Viewer...
+2026-05-17 16:21:00,391 [INFO] 📡 Probando servidor: https://www.arena4viewer.in
+2026-05-17 16:21:00,529 [WARNING] ⚠️ Servidor https://www.arena4viewer.in respondió con status 404
+2026-05-17 16:21:00,529 [INFO] 📡 Probando servidor: https://www.arena4viewer.pl
+2026-05-17 16:21:02,220 [INFO] ✅ ¡Éxito! Encontrados 139 canales en https://www.arena4viewer.pl
+2026-05-17 16:21:02,223 [INFO] ✨ Archivo 'arena4viewer.m3u' generado correctamente.
+2026-05-17 16:21:02,224 [INFO] 📺 Rango de canales: 1 al 160
+>>>>>>> Stashed changes
