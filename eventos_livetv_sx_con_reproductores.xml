@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-05-18 22:57:46" total="20">
+<eventos generado="2026-05-18 23:57:19" total="20">
   <evento id="1">
     <nombre>Ponte Preta –  Londrina</nombre>
     <deporte>Fútbol</deporte>
@@ -195,7 +195,14 @@ player/live.php?id=259935&amp;w=700&amp;h=480</url>
     <hora>01:00</hora>
     <url>https://livetv.sx/es/eventinfo/381502528_botafogo_pb_inter_de_limeira/</url>
     <datetime_iso>2026-05-18T01:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/pjSOvZ3kLrw?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv886.me/webplayer2.php?t=youtube&amp;c=pjSOvZ3kLrw&amp;lang=es&amp;eid=381502528&amp;lid=3015630&amp;ci=744&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="13">
     <nombre>Franca –  Brasilia</nombre>
@@ -205,7 +212,14 @@ player/live.php?id=259935&amp;w=700&amp;h=480</url>
     <hora>01:00</hora>
     <url>https://livetv.sx/es/eventinfo/382097256_franca_brasilia/</url>
     <datetime_iso>2026-05-18T01:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/evTYKSZCu1o?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://cdn.livetv886.me/webplayer2.php?t=youtube&amp;c=evTYKSZCu1o&amp;lang=es&amp;eid=382097256&amp;lid=3015629&amp;ci=2373&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="14">
     <nombre>Unión Española –  Deportes Iquique</nombre>
@@ -303,19 +317,6 @@ player/live.php?id=259935&amp;w=700&amp;h=480</url>
     <hora>23:30</hora>
     <url>https://livetv.sx/es/eventinfo/381477627_minas_atlantico/</url>
     <datetime_iso>2026-05-18T23:30:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/6QtrVIg922s?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv886.me/webplayer2.php?t=youtube&amp;c=6QtrVIg922s&amp;lang=es&amp;eid=381477627&amp;lid=3015494&amp;ci=625&amp;si=12</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.youtube.com/embed/cXPRfEMDb88?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://cdn.livetv886.me/webplayer2.php?t=youtube&amp;c=cXPRfEMDb88&amp;lang=es&amp;eid=381477627&amp;lid=3015493&amp;ci=625&amp;si=12</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
 </eventos>
