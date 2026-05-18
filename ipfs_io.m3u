@@ -1,13 +1,19 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-05-18 10:18:57
-# Total Channels: 14
-# Generated: 2026-05-18T10:00:02Z
+# IPFS Acestream Channels - 2026-05-18 17:33:17
+# Total Channels: 16
+# Generated: 2026-05-18T17:00:02Z
 
 # -------- DAZN --------
 #EXTINF:-1 tvg-id="DAZN 1 HD" tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" group-title="DAZN",DAZN 1 720p *
 http://127.0.0.1:6878/ace/getstream?id=a116ce3ff95c41c60e987e2b1aa247007f707884
 
+#EXTINF:-1 tvg-id="DAZN 1 HD" tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" group-title="DAZN",DAZN 1 1080p **
+http://127.0.0.1:6878/ace/getstream?id=78124d96a1a4601e7910f50e36a16e35efcfb398
+
 # -------- HYPERMOTION --------
+#EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD" tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" group-title="HYPERMOTION",LaLiga TV Hypermotion 1080p *
+http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
+
 #EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD" tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" group-title="HYPERMOTION",LaLiga TV Hypermotion 1080p **
 http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
 
