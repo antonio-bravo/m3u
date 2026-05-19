@@ -1,6 +1,40 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
+    <datetime>2026-05-19 15:00</datetime>
+    <league>Copa Colombia</league>
+    <teams>Medellín vs Cúcuta Deportivo</teams>
+    <channels>
+      <channel>
+        <channel_name>Win Sports +</channel_name>
+        <channel_id>35998-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports + | OP2</channel_name>
+        <channel_id>35998-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports + | OP3</channel_name>
+        <channel_id>35998-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0c3BsdXM=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-19 17:00</datetime>
+    <league>Copa Sudamericana</league>
+    <teams>Torque vs Deportivo Riestra</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>35985-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXky</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
     <datetime>2026-05-19 17:00</datetime>
     <league>Copa Sudamericana</league>
     <teams>Audax Italiano vs Barracas Central</teams>
@@ -20,17 +54,10 @@
         <channel_id>35984-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG41</url>
       </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-19 17:00</datetime>
-    <league>Copa Sudamericana</league>
-    <teams>Torque vs Deportivo Riestra</teams>
-    <channels>
       <channel>
         <channel_name>Disney+</channel_name>
-        <channel_id>35985-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+        <channel_id>35984-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
       </channel>
     </channels>
   </event>
@@ -53,6 +80,11 @@
         <channel_name>ESPN AR┃OP3</channel_name>
         <channel_id>35989-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>35989-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkz</url>
       </channel>
     </channels>
   </event>
@@ -77,13 +109,18 @@
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG43</url>
       </channel>
       <channel>
-        <channel_name>Fox Sports 3</channel_name>
+        <channel_name>Disney+</channel_name>
         <channel_id>35992-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk2</url>
+      </channel>
+      <channel>
+        <channel_name>Fox Sports 3</channel_name>
+        <channel_id>35992-5</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hzcG9ydHMz</url>
       </channel>
       <channel>
         <channel_name>BeIN Sports EXTRA Español</channel_name>
-        <channel_id>35992-5</channel_id>
+        <channel_id>35992-6</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1iZWluc3BvcnRfeHRyYV9lc3Bhbm9s</url>
       </channel>
     </channels>
@@ -109,75 +146,14 @@
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
       </channel>
       <channel>
-        <channel_name>Fox Sports 2</channel_name>
+        <channel_name>Disney+</channel_name>
         <channel_id>35995-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxMQ==</url>
+      </channel>
+      <channel>
+        <channel_name>Fox Sports 2</channel_name>
+        <channel_id>35995-5</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hzcG9ydHMy</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-19 15:00</datetime>
-    <league>Copa Colombia</league>
-    <teams>Medellín vs Cúcuta Deportivo</teams>
-    <channels>
-      <channel>
-        <channel_name>Win Sports +</channel_name>
-        <channel_id>35998-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
-      </channel>
-      <channel>
-        <channel_name>Win Sports + | OP2</channel_name>
-        <channel_id>35998-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
-      </channel>
-      <channel>
-        <channel_name>Win Sports + | OP3</channel_name>
-        <channel_id>35998-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0c3BsdXM=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-19 19:30</datetime>
-    <league>Copa Sudamericana</league>
-    <teams>São Paulo vs Millonarios</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN</channel_name>
-        <channel_id>35986-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN AR┃OP2</channel_name>
-        <channel_id>35986-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN AR┃OP3</channel_name>
-        <channel_id>35986-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-19 19:00</datetime>
-    <league>Copa Libertadores</league>
-    <teams>Santa Fe vs Platense</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>35993-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>35993-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>35993-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
       </channel>
     </channels>
   </event>
@@ -216,6 +192,60 @@
     </channels>
   </event>
   <event>
+    <datetime>2026-05-19 19:00</datetime>
+    <league>Copa Libertadores</league>
+    <teams>Santa Fe vs Platense</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 2</channel_name>
+        <channel_id>35993-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP2</channel_name>
+        <channel_id>35993-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP3</channel_name>
+        <channel_id>35993-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>35993-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk3</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-19 19:30</datetime>
+    <league>Copa Sudamericana</league>
+    <teams>São Paulo vs Millonarios</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN</channel_name>
+        <channel_id>35986-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN AR┃OP2</channel_name>
+        <channel_id>35986-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN AR┃OP3</channel_name>
+        <channel_id>35986-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>35986-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk4</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
     <datetime>2026-05-19 21:00</datetime>
     <league>Copa Sudamericana</league>
     <teams>Deportivo Cuenca vs Deportivo Recoleta</teams>
@@ -235,39 +265,10 @@
         <channel_id>35988-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
       </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-19 13:30</datetime>
-    <league>Premier League</league>
-    <teams>AFC Bournemouth vs Manchester City</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN</channel_name>
-        <channel_id>35982-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN AR┃OP2</channel_name>
-        <channel_id>35982-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN AR┃OP3</channel_name>
-        <channel_id>35982-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-19 14:15</datetime>
-    <league>Premier League</league>
-    <teams>Chelsea vs Tottenham Hotspur</teams>
-    <channels>
       <channel>
         <channel_name>Disney+</channel_name>
-        <channel_id>35983-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+        <channel_id>35988-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxMA==</url>
       </channel>
     </channels>
   </event>
@@ -280,6 +281,109 @@
         <channel_name>Disney+</channel_name>
         <channel_id>35987-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-19 13:00</datetime>
+    <league>Torneo de Reserva</league>
+    <teams>Quilmes 2 vs Lanús</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 2</channel_name>
+        <channel_id>35997-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP2</channel_name>
+        <channel_id>35997-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP3</channel_name>
+        <channel_id>35997-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-19 13:30</datetime>
+    <league>Premier League</league>
+    <teams>AFC Bournemouth vs Manchester City</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>35982-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxcGw=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN</channel_name>
+        <channel_id>35982-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN AR┃OP2</channel_name>
+        <channel_id>35982-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN AR┃OP3</channel_name>
+        <channel_id>35982-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-19 14:15</datetime>
+    <league>Premier League</league>
+    <teams>Chelsea vs Tottenham Hotspur</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>35983-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkycGw=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-19 17:00</datetime>
+    <league>Copa Libertadores</league>
+    <teams>Fluminense vs Bolívar</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 7</channel_name>
+        <channel_id>36000-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 7 | OP2</channel_name>
+        <channel_id>36000-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 7 | OP3</channel_name>
+        <channel_id>36000-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG43</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>36000-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk0</url>
+      </channel>
+      <channel>
+        <channel_name>Fox Sports 3</channel_name>
+        <channel_id>36000-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hzcG9ydHMz</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 MX</channel_name>
+        <channel_id>36000-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuM214</url>
+      </channel>
+      <channel>
+        <channel_name>BeIN Sports Ñ</channel_name>
+        <channel_id>36000-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1iZWluc3BvcnRlcw==</url>
       </channel>
     </channels>
   </event>
@@ -302,6 +406,11 @@
         <channel_name>ESPN 2 | OP3</channel_name>
         <channel_id>35991-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>35991-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk1</url>
       </channel>
     </channels>
   </event>
@@ -336,46 +445,29 @@
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNG14</url>
       </channel>
       <channel>
-        <channel_name>ESPN NL</channel_name>
+        <channel_name>Disney+</channel_name>
         <channel_id>35994-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk5</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN NL</channel_name>
+        <channel_id>35994-7</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMV9ubA==</url>
       </channel>
       <channel>
         <channel_name>ESPN NL | OP2</channel_name>
-        <channel_id>35994-7</channel_id>
+        <channel_id>35994-8</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMV9ubA==</url>
       </channel>
       <channel>
         <channel_name>ESPN NL | OP3</channel_name>
-        <channel_id>35994-8</channel_id>
+        <channel_id>35994-9</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4xX25s</url>
       </channel>
       <channel>
         <channel_name>BeIN Sports Ñ</channel_name>
-        <channel_id>35994-9</channel_id>
+        <channel_id>35994-10</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1iZWluc3BvcnRlcw==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-19 13:00</datetime>
-    <league>Torneo de Reserva</league>
-    <teams>Quilmes 2 vs Lanús</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>35997-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>35997-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>35997-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
       </channel>
     </channels>
   </event>
