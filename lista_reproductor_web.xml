@@ -81,18 +81,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-05-18 18:00</datetime>
-    <league>Primera B</league>
-    <teams>Unión Española vs Deportes Iquique</teams>
-    <channels>
-      <channel>
-        <channel_name>TNT Sports Premiun CL</channel_name>
-        <channel_id>35974-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-05-18 19:00</datetime>
     <league>Primera B</league>
     <teams>Internacional Palmira vs Tigres</teams>
@@ -138,6 +126,23 @@
   </event>
   <event>
     <datetime>2026-05-18 18:00</datetime>
+    <league>Primera B</league>
+    <teams>Unión Española vs Deportes Iquique</teams>
+    <channels>
+      <channel>
+        <channel_name>TNT Sports Premiun CL</channel_name>
+        <channel_id>35974-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
+      </channel>
+      <channel>
+        <channel_name>TNT Sports Premiun CL OP2</channel_name>
+        <channel_id>35974-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-18 18:00</datetime>
     <league>Primera División</league>
     <teams>Real Potosí vs San Antonio Bulo Bulo</teams>
     <channels>
@@ -155,28 +160,6 @@
         <channel_name>Futbol Canal | OP3</channel_name>
         <channel_id>35970-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjE=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-18 15:00</datetime>
-    <league>Primera B</league>
-    <teams>Envigado vs Deportes Quindío</teams>
-    <channels>
-      <channel>
-        <channel_name>Win Sports +</channel_name>
-        <channel_id>35975-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
-      </channel>
-      <channel>
-        <channel_name>Win Sports + | OP2</channel_name>
-        <channel_id>35975-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
-      </channel>
-      <channel>
-        <channel_name>Win Sports + | OP3</channel_name>
-        <channel_id>35975-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0c3BsdXM=</url>
       </channel>
     </channels>
   </event>
