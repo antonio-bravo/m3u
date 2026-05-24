@@ -1,19 +1,36 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-05-24 13:45</datetime>
-    <league>Serie A</league>
-    <teams>Milan vs Cagliari</teams>
+    <datetime>2026-05-24 20:00</datetime>
+    <league>MLS</league>
+    <teams>Los Angeles FC vs Seattle Sounders FC</teams>
+    <channels>
+      <channel>
+        <channel_name>FOX Deportes</channel_name>
+        <channel_id>36210-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes | OP2</channel_name>
+        <channel_id>36210-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes | OP3</channel_name>
+        <channel_id>36210-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWZveGRlcG9ydGVz</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-24 16:30</datetime>
+    <league>Primera División</league>
+    <teams>Defensor Sporting vs Peñarol</teams>
     <channels>
       <channel>
         <channel_name>Disney+</channel_name>
-        <channel_id>36161-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxNA==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 3 MX</channel_name>
-        <channel_id>36161-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuM214</url>
+        <channel_id>36178-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxOQ==</url>
       </channel>
     </channels>
   </event>
@@ -40,18 +57,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-05-24 13:45</datetime>
-    <league>Serie A</league>
-    <teams>Cremonese vs Como</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>36162-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxNQ==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-05-24 17:00</datetime>
     <league>Primera División</league>
     <teams>Universidad Católica vs Colo-Colo</teams>
@@ -65,18 +70,6 @@
         <channel_name>TNT Sports Premiun CL OP2</channel_name>
         <channel_id>36173-2</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-24 16:30</datetime>
-    <league>Primera División</league>
-    <teams>Defensor Sporting vs Peñarol</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>36178-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
       </channel>
     </channels>
   </event>
@@ -169,102 +162,46 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-05-24 13:45</datetime>
-    <league>Serie A</league>
-    <teams>Lecce vs Genoa</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>36159-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxNg==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-24 13:45</datetime>
-    <league>Serie A</league>
-    <teams>Verona vs Roma</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>36163-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxOA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-24 14:00</datetime>
-    <league>LaLiga</league>
-    <teams>Villarreal vs Atlético Madrid</teams>
-    <channels>
-      <channel>
-        <channel_name>DSports</channel_name>
-        <channel_id>36156-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRz</url>
-      </channel>
-      <channel>
-        <channel_name>DSports | OP2</channel_name>
-        <channel_id>36156-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1kc3BvcnRz</url>
-      </channel>
-      <channel>
-        <channel_name>DSports | OP3</channel_name>
-        <channel_id>36156-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWRzcG9ydHM=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN Deportes</channel_name>
-        <channel_id>36156-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuZGVwb3J0ZXM=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN Deportes  | OP2</channel_name>
-        <channel_id>36156-5</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuZGVwb3J0ZXM=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN Deportes  | OP3</channel_name>
-        <channel_id>36156-6</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5kZXBvcnRlcw==</url>
-      </channel>
-      <channel>
-        <channel_name>Sky Sports LaLiga MX</channel_name>
-        <channel_id>36156-7</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNreV9zcG9ydHNfbGFsaWdh</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-24 14:00</datetime>
+    <datetime>2026-05-24 16:30</datetime>
     <league>Brasileirão</league>
-    <teams>Cruzeiro vs Chapecoense</teams>
+    <teams>Corinthians vs Atlético Mineiro</teams>
     <channels>
       <channel>
         <channel_name>fanatiz 01</channel_name>
-        <channel_id>36167-1</channel_id>
+        <channel_id>36169-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mYW5hdGl6MQ==</url>
       </channel>
       <channel>
-        <channel_name>Amazon Prime C</channel_name>
-        <channel_id>36167-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1hbWF6b25fcHJpbWUx</url>
+        <channel_name>Premiere 2 BR</channel_name>
+        <channel_id>36169-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1wcmVtaWVyZTI=</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports</channel_name>
+        <channel_id>36169-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports | OP2</channel_name>
+        <channel_id>36169-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>Win Sports ┃OP3</channel_name>
+        <channel_id>36169-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0cw==</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-05-24 14:00</datetime>
-    <league>Primera División</league>
-    <teams>La Serena vs Deportes Limache</teams>
+    <datetime>2026-05-24 15:00</datetime>
+    <league>Copa de Primera</league>
+    <teams>Nacional Asunción vs Libertad</teams>
     <channels>
       <channel>
-        <channel_name>TNT Sports Premiun CL</channel_name>
-        <channel_id>36172-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
-      </channel>
-      <channel>
-        <channel_name>TNT Sports Premiun CL OP2</channel_name>
-        <channel_id>36172-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
+        <channel_name>fanatiz 05</channel_name>
+        <channel_id>36211-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mYW5hdGl6NQ==</url>
       </channel>
     </channels>
   </event>
@@ -346,50 +283,6 @@
         <channel_name>ESPN 4 | OP3</channel_name>
         <channel_id>36202-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-24 13:45</datetime>
-    <league>Serie A</league>
-    <teams>Torino vs Juventus</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 3</channel_name>
-        <channel_id>36160-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMw==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 3 | OP2</channel_name>
-        <channel_id>36160-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMw==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 3 | OP3</channel_name>
-        <channel_id>36160-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
-      </channel>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>36160-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkxNw==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-24 14:00</datetime>
-    <league>Brasileirão</league>
-    <teams>Remo vs Athletico-PR</teams>
-    <channels>
-      <channel>
-        <channel_name>Premiere 3 BR</channel_name>
-        <channel_id>36168-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1wcmVtaWVyZTM=</url>
-      </channel>
-      <channel>
-        <channel_name>fanatiz 02</channel_name>
-        <channel_id>36168-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mYW5hdGl6Mg==</url>
       </channel>
     </channels>
   </event>
