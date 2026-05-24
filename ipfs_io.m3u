@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-05-24 05:06:26
-# Total Channels: 107
-# Generated: 2026-05-24T05:00:02Z
+# IPFS Acestream Channels - 2026-05-24 08:39:43
+# Total Channels: 102
+# Generated: 2026-05-24T08:30:02Z
 
 # -------- BALONCESTO --------
 #EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2025/12/dazn-baloncesto-movistar-plus.png" group-title="BALONCESTO",DAZN Baloncesto 720p *
@@ -30,9 +30,6 @@ http://127.0.0.1:6878/ace/getstream?id=e3816fbc661fbc8b2b656aee9483d0a55a1608b6
 
 #EXTINF:-1 tvg-id="M+ Baloncesto" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg" group-title="BALONCESTO",M+ Baloncesto 1080p **
 http://127.0.0.1:6878/ace/getstream?id=34b91125bd752462f1eca2d8d52f5f40fa761aa0
-
-#EXTINF:-1 tvg-id="M+ Baloncesto 2" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2026/05/canales-baloncesto-cambios-movistar-plus.jpg" group-title="BALONCESTO",M+ Baloncesto 2 1080p *
-http://127.0.0.1:6878/ace/getstream?id=c8c33b2673efe7f386790c5966643820578f3535
 
 #EXTINF:-1 tvg-id="M+ Baloncesto 2" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg" group-title="BALONCESTO",M+ Baloncesto 2 1080p **
 http://127.0.0.1:6878/ace/getstream?id=88113ee23295b8930ae328a88a8c1b861b8f21f1
@@ -114,9 +111,6 @@ http://127.0.0.1:6878/ace/getstream?id=27d11bbeb3026231d52de16b1fac48da7a099247
 http://127.0.0.1:6878/ace/getstream?id=ed6188dcbb491efeb2092c1a6199226c27f61727
 
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p *
-http://127.0.0.1:6878/ace/getstream?id=895d08633bb22c2573281655cf3ca44de476cc73
-
-#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p *
 http://127.0.0.1:6878/ace/getstream?id=d719181097d256073844390b3e094fbcb1bceaa4
 
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
@@ -149,19 +143,16 @@ http://127.0.0.1:6878/ace/getstream?id=385abcf801b787eec6ed6624908758bb165c0a55
 http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
 
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" group-title="LA LIGA",DAZN LaLiga 1080p **
-http://127.0.0.1:6878/ace/getstream?id=9c588ac92554746c489bc553773d959f6d2dfd8e
+http://127.0.0.1:6878/ace/getstream?id=7f9857c45764ef2c7cdfb619b89db3056a57a51f
 
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" group-title="LA LIGA",DAZN LaLiga 1080p **
-http://127.0.0.1:6878/ace/getstream?id=7f9857c45764ef2c7cdfb619b89db3056a57a51f
+http://127.0.0.1:6878/ace/getstream?id=9c588ac92554746c489bc553773d959f6d2dfd8e
 
 #EXTINF:-1 tvg-id="DAZN LaLiga 2 HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-2-es.png" group-title="LA LIGA",DAZN LaLiga 2 1080p **
 http://127.0.0.1:6878/ace/getstream?id=465075c02b7284f564911bd63d1c6f0a8d464be7
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/Tc97zSb/liga4.png" group-title="LA LIGA",DAZN LaLiga 4 720p **
 http://127.0.0.1:6878/ace/getstream?id=fd89bfb7b1c6005dc874ef6c0771c09372461539
-
-#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/Tc97zSb/liga5.png" group-title="LA LIGA",DAZN LaLiga 5 1080p **
-http://127.0.0.1:6878/ace/getstream?id=c22b1093b5db093efe6a20a51ce8c577316c302e
 
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" group-title="LA LIGA",DAZN LaLiga **
 http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
@@ -173,10 +164,10 @@ http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
 http://127.0.0.1:6878/ace/getstream?id=0febfb5cac3384f487d55c559bbfc877db2d0357
 
 #EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p **
-http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+http://127.0.0.1:6878/ace/getstream?id=a64e02a6d914f098cbe1b724ff4f7aef83419a4a
 
 #EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p **
-http://127.0.0.1:6878/ace/getstream?id=a64e02a6d914f098cbe1b724ff4f7aef83419a4a
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
 
 #EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-logo="https://i.ibb.co/Tc97zSb/liga2.png" group-title="LA LIGA",M+ LaLiga 2 720p **
 http://127.0.0.1:6878/ace/getstream?id=d16a9b50042cb9d6e648cae3b1472f655c4def61
@@ -213,14 +204,11 @@ http://127.0.0.1:6878/ace/getstream?id=4416843c96b7f7a1bc55c476091a60fff0922bc7
 #EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 720p *
 http://127.0.0.1:6878/ace/getstream?id=ac33342ccf7d40d46174229085461d95000b9137
 
-#EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p *
-http://127.0.0.1:6878/ace/getstream?id=e18b79bce27f6ee8eef9a1fc811bb5f80e4b558c
+#EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p **
+http://127.0.0.1:6878/ace/getstream?id=c53bdb3be55d12c5188d25085f1bb16911c15cea
 
 #EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p **
 http://127.0.0.1:6878/ace/getstream?id=342ca6975a4884d81f9fec5c4085a47060bd2028
-
-#EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p **
-http://127.0.0.1:6878/ace/getstream?id=c53bdb3be55d12c5188d25085f1bb16911c15cea
 
 # -------- MOVISTAR --------
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.msemporium.de/disney-portal/fileadmin/bilder/teaser/streaming-tv/disney-junior.png" group-title="MOVISTAR",Disney Junior 1080p *
@@ -235,9 +223,6 @@ http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 
 #EXTINF:-1 tvg-id="M+ Deportes HD" tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" group-title="MOVISTAR DEPORTES",M+ Deportes 720p **
 http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
-
-#EXTINF:-1 tvg-id="M+ Deportes HD" tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" group-title="MOVISTAR DEPORTES",M+ Deportes 1080p *
-http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
 
 #EXTINF:-1 tvg-id="M+ Deportes HD" tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" group-title="MOVISTAR DEPORTES",M+ Deportes 1080p **
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
@@ -272,6 +257,9 @@ http://127.0.0.1:6878/ace/getstream?id=15ec214bb10925dadd16a1716bb2042af6008a93
 #EXTINF:-1 tvg-id="M+ Deportes 6" tvg-logo="https://www.movistarplus.es/recorte/n/caratula5/M2114916V1621463" group-title="MOVISTAR DEPORTES",M+ Deportes 6 1080p *
 http://127.0.0.1:6878/ace/getstream?id=e6cd9205e26b3b6680f607030c702e911272524a
 
+#EXTINF:-1 tvg-id="M+ Deportes 7" tvg-logo="https://www.movistarplus.es/recorte/n/caratula5/M2114916V1621463" group-title="MOVISTAR DEPORTES",M+ Deportes 7 1080p **
+http://127.0.0.1:6878/ace/getstream?id=2d549bbcd898b09c4b736e6e3e83e8e8c19fcbda
+
 #EXTINF:-1 tvg-id="M+ Deportes 8" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/deportes-8-por-movistar-plus-es.png" group-title="MOVISTAR DEPORTES",M+ Deportes 8 720p *
 http://127.0.0.1:6878/ace/getstream?id=f5c100695175ba52099664ddb4c5fc4ae0ebe99a
 
@@ -299,9 +287,6 @@ http://127.0.0.1:6878/ace/getstream?id=7e4f6eb38e0d5ef52b7f8b96eb80c1d8c87dad16
 #EXTINF:-1 tvg-id="M+ Vamos 2" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 2 720p *
 http://127.0.0.1:6878/ace/getstream?id=f51674b1dd1ab5a668fa97a0f13a490632f0d7ca
 
-#EXTINF:-1 tvg-id="M+ Vamos 2" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 2 1080p **
-http://127.0.0.1:6878/ace/getstream?id=763f307cd0af4007f11d24f56644c05bd64f7253
-
 #EXTINF:-1 tvg-id="M+ Vamos 3" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 3 720p **
 http://127.0.0.1:6878/ace/getstream?id=837883625d40e1eb5566eefaf74811046491f53a
 
@@ -317,10 +302,10 @@ http://127.0.0.1:6878/ace/getstream?id=812726de17b7fdc6c0b5139b012fe336a049903a
 http://127.0.0.1:6878/ace/getstream?id=177796041773be99b489dd3ce86144f243e7355f
 
 #EXTINF:-1 tvg-id="Primera Federación" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es" group-title="RFEF TV",RFEF TV 1080p **
-http://127.0.0.1:6878/ace/getstream?id=854ff9c607101791346111cd2366a392c3b8c351
+http://127.0.0.1:6878/ace/getstream?id=3fbc1b7dc316f19b77e7f7cfc775a0af67adcc7f
 
 #EXTINF:-1 tvg-id="Primera Federación" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es" group-title="RFEF TV",RFEF TV 1080p **
-http://127.0.0.1:6878/ace/getstream?id=3fbc1b7dc316f19b77e7f7cfc775a0af67adcc7f
+http://127.0.0.1:6878/ace/getstream?id=854ff9c607101791346111cd2366a392c3b8c351
 
 # -------- TDT --------
 #EXTINF:-1 tvg-id="24 Horas" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4c/24h_2026.svg" group-title="TDT",24H TV 720p **
