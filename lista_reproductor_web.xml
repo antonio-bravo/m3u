@@ -23,18 +23,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-05-25 18:00</datetime>
-    <league>Brasileirão</league>
-    <teams>Coritiba vs Bahia</teams>
-    <channels>
-      <channel>
-        <channel_name>Sportv BR</channel_name>
-        <channel_id>36214-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-05-25 13:30</datetime>
     <league>Primera C Metropolitana</league>
     <teams>Deportivo Muñiz vs Fénix</teams>
@@ -120,6 +108,23 @@
     </channels>
   </event>
   <event>
+    <datetime>2026-05-25 18:00</datetime>
+    <league>Brasileirão</league>
+    <teams>Coritiba vs Bahia</teams>
+    <channels>
+      <channel>
+        <channel_name>Sportv BR</channel_name>
+        <channel_id>36214-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
+      </channel>
+      <channel>
+        <channel_name>Premiere BR</channel_name>
+        <channel_id>36214-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1wcmVtaWVyZTE=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
     <datetime>2026-05-25 13:00</datetime>
     <league>Liga 2</league>
     <teams>Deportiva Agropecuaria vs César Vallejo</teams>
@@ -128,18 +133,6 @@
         <channel_name>Deportes TV. C</channel_name>
         <channel_id>36215-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1nb2x0dg==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-25 16:00</datetime>
-    <league>Segunda División</league>
-    <teams>Miramar Misiones vs Fénix</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>36218-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
       </channel>
     </channels>
   </event>
@@ -225,28 +218,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-05-25 17:30</datetime>
-    <league>MLB – San Diego Padres vs Philadelphia Phillies</league>
-    <teams>MLB – San Diego Padres vs Philadelphia Phillies</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 5</channel_name>
-        <channel_id>36226-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNQ==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 5 | OP2</channel_name>
-        <channel_id>36226-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNQ==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 5 | OP3</channel_name>
-        <channel_id>36226-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG41</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-05-25 18:45</datetime>
     <league>Copa Imposible 2026 – Fase de Grupos – Fecha #2 – River Plate vs DIM</league>
     <teams>Copa Imposible 2026 – Fase de Grupos – Fecha #2 – River Plate vs DIM</teams>
@@ -265,28 +236,6 @@
         <channel_name>ESPN 2 | OP3</channel_name>
         <channel_id>36227-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-05-25 19:00</datetime>
-    <league>NBA – Final de Conferencia Este – Juego #4 – Cleveland Cavaliers vs New York Knicks</league>
-    <teams>NBA – Final de Conferencia Este – Juego #4 – Cleveland Cavaliers vs New York Knicks</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 3</channel_name>
-        <channel_id>36228-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMw==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 3 | OP2</channel_name>
-        <channel_id>36228-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMw==</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 3 | OP3</channel_name>
-        <channel_id>36228-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
       </channel>
     </channels>
   </event>
@@ -341,6 +290,97 @@
         <channel_name>Sportv BR</channel_name>
         <channel_id>36213-5</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-25 16:00</datetime>
+    <league>Segunda División</league>
+    <teams>Miramar Misiones vs Fénix</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>36218-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXky</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-25 17:30</datetime>
+    <league>MLB – San Diego Padres vs Philadelphia Phillies</league>
+    <teams>MLB – San Diego Padres vs Philadelphia Phillies</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 5</channel_name>
+        <channel_id>36226-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNQ==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 5 | OP2</channel_name>
+        <channel_id>36226-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNQ==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 5 | OP3</channel_name>
+        <channel_id>36226-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG41</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>36226-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkz</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-25 19:00</datetime>
+    <league>NBA – Final de Conferencia Este – Juego #4 – Cleveland Cavaliers vs New York Knicks</league>
+    <teams>NBA – Final de Conferencia Este – Juego #4 – Cleveland Cavaliers vs New York Knicks</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 3</channel_name>
+        <channel_id>36228-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP2</channel_name>
+        <channel_id>36228-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP3</channel_name>
+        <channel_id>36228-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN MX</channel_name>
+        <channel_id>36228-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BubXg=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN MX | OP2</channel_name>
+        <channel_id>36228-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BubXg=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN MX | OP3</channel_name>
+        <channel_id>36228-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5teA==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Deportes</channel_name>
+        <channel_id>36228-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuZGVwb3J0ZXM=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Deportes  | OP2</channel_name>
+        <channel_id>36228-8</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuZGVwb3J0ZXM=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN Deportes  | OP3</channel_name>
+        <channel_id>36228-9</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG5kZXBvcnRlcw==</url>
       </channel>
     </channels>
   </event>
