@@ -1,5 +1,5 @@
 #EXTM3U
-# Arena4Viewer - Actualizado: 2026-05-26 04:13:48
+# Arena4Viewer - Actualizado: 2026-05-26 16:48:44
 # Fuente: https://www.arena4viewer.in
 
 #EXTINF:-1 tvg-id="AV1" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 1
@@ -14,64 +14,157 @@ acestream://1444a976d2cf6e7fdcee833ed36ee5e55632253f
 #EXTINF:-1 tvg-id="AV4" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 4
 acestream://27d11bbeb3026231d52de16b1fac48da7a099247
 
-#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="TENNIS",ArenaVision 5 - TENNIS - HAMBURG TOURNAMENT - FINAL [23/05/2026 - 14:30 CET]
+#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="PADDLE",ArenaVision 5 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 12:00 CET]
+acestream://8cd8fd69c6755ec452e9e74b33a0d1a653452191
+
+#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="PADDLE",ArenaVision 5 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 14:00 CET]
 acestream://8cd8fd69c6755ec452e9e74b33a0d1a653452191
 
 #EXTINF:-1 tvg-id="AV6" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 6
 acestream://2fd410c5d89e7a627cd3785685b7915b8e4bd534
 
-#EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="SOCCER",ArenaVision 7 - SOCCER - SPANISH LEAGUE - SIMULCAST [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 7
 acestream://3ce95bc9d6fc63676d828bb2cfc7a1f1854fd259
 
-#EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="SOCCER",ArenaVision 7 - SOCCER - SPANISH LEAGUE - VILLARREAL-ATLETICO DE MADRID [24/05/2026 - 21:00 CET]
-acestream://3ce95bc9d6fc63676d828bb2cfc7a1f1854fd259
-
-#EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="SOCCER",ArenaVision 8 - SOCCER - SPANISH LEAGUE - SIMULCAST [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 8
 acestream://a64e02a6d914f098cbe1b724ff4f7aef83419a4a
 
-#EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="SOCCER",ArenaVision 8 - SOCCER - SPANISH LEAGUE - VILLARREAL-ATLETICO DE MADRID [24/05/2026 - 21:00 CET]
-acestream://a64e02a6d914f098cbe1b724ff4f7aef83419a4a
-
-#EXTINF:-1 tvg-id="AV9" tvg-logo="" group-title="SOCCER",ArenaVision 9 - SOCCER - SPANISH LEAGUE - REAL MADRID-ATHLETIC CLUB [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV9" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 9
 acestream://d16a9b50042cb9d6e648cae3b1472f655c4def61
 
-#EXTINF:-1 tvg-id="AV10" tvg-logo="" group-title="SOCCER",ArenaVision 10 - SOCCER - SPANISH LEAGUE - REAL MADRID-ATHLETIC CLUB [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV10" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 10
 acestream://67966d205968de9cf95dcffe3b2ff6888b106634
 
-#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",ArenaVision 11 - SOCCER - PREMIER LEAGUE - MANCHESTER CITY-ASTON VILLA [24/05/2026 - 17:00 CET]
+#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",ArenaVision 11 - SOCCER - UEFA CONFERENCE LEAGUE - CRYSTAL PALACE-RAYO VALLECANO [27/05/2026 - 21:00 CET]
 acestream://97df5b7824948972d041d8ca2a4d29c90b641bc9
 
-#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",ArenaVision 12 - SOCCER - PREMIER LEAGUE - MANCHESTER CITY-ASTON VILLA [24/05/2026 - 17:00 CET]
+#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",ArenaVision 12 - SOCCER - UEFA CONFERENCE LEAGUE - CRYSTAL PALACE-RAYO VALLECANO [27/05/2026 - 21:00 CET]
 acestream://91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 
-#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="RUGBY",ArenaVision 13 - RUGBY - CHALLEGUE CUP - LEINSTER-BORDEAUX [23/05/2026 - 15:45 CET]
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",ArenaVision 13 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 10:00 CET]
 acestream://c6a824a81b36f6c3529826477caf2ad94b45776d
 
-#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="RUGBY",ArenaVision 14 - RUGBY - CHALLEGUE CUP - LEINSTER-BORDEAUX [23/05/2026 - 15:45 CET]
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",ArenaVision 13 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 12:00 CET]
+acestream://c6a824a81b36f6c3529826477caf2ad94b45776d
+
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",ArenaVision 13 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 14:00 CET]
+acestream://c6a824a81b36f6c3529826477caf2ad94b45776d
+
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",ArenaVision 13 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 20:00 CET]
+acestream://c6a824a81b36f6c3529826477caf2ad94b45776d
+
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",ArenaVision 13 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 12:00 CET]
+acestream://c6a824a81b36f6c3529826477caf2ad94b45776d
+
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",ArenaVision 13 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 15:00 CET]
+acestream://c6a824a81b36f6c3529826477caf2ad94b45776d
+
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",ArenaVision 13 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN SEMIFINAL [29/05/2026 - 17:00 CET]
+acestream://c6a824a81b36f6c3529826477caf2ad94b45776d
+
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",ArenaVision 13 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 19:00 CET]
+acestream://c6a824a81b36f6c3529826477caf2ad94b45776d
+
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",ArenaVision 14 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 10:00 CET]
 acestream://cf5327fe9c962a29dfff3868f4349ff2b0b4662f
 
-#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="MOTOR",ArenaVision 15 - MOTOR - INDYCAR - 500 MILES OF INDIANAPOLIS-RACE [24/05/2026 - 16:00 CET]
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",ArenaVision 14 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 12:00 CET]
+acestream://cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",ArenaVision 14 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 14:00 CET]
+acestream://cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",ArenaVision 14 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 20:00 CET]
+acestream://cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",ArenaVision 14 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 12:00 CET]
+acestream://cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",ArenaVision 14 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 15:00 CET]
+acestream://cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",ArenaVision 14 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN SEMIFINAL [29/05/2026 - 17:00 CET]
+acestream://cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",ArenaVision 14 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 19:00 CET]
+acestream://cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="BASKETBALL",ArenaVision 15 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-UNICAJA [26/05/2026 - 20:00 CET]
 acestream://ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
 
-#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="SOCCER",ArenaVision 15 - SOCCER - ARGENTINA LEAGUE - RIVER PLATE-BERGAMO [24/05/2026 - 20:30 CET]
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="SOCCER",ArenaVision 15 - SOCCER - SOUTH AMERICA CUP - MILLONARIOS-OHIGGINS [27/05/2026 - 00:00 CET]
 acestream://ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
 
-#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="MOTOR",ArenaVision 16 - MOTOR - INDYCAR - 500 MILES OF INDIANAPOLIS-RACE [24/05/2026 - 16:00 CET]
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="PADDLE",ArenaVision 15 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 16:00 CET]
+acestream://ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
+
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="PADDLE",ArenaVision 15 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 18:00 CET]
+acestream://ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
+
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="SOCCER",ArenaVision 15 - SOCCER - SOUTH AMERICA CUP - CERRO PORTEÑO-SPORTING CRISTAL [29/05/2026 - 00:00 CET]
+acestream://ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
+
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="PADDLE",ArenaVision 15 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 12:00 CET]
+acestream://ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
+
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="PADDLE",ArenaVision 15 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 15:00 CET]
+acestream://ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
+
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="PADDLE",ArenaVision 15 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN SEMIFINAL [29/05/2026 - 17:00 CET]
+acestream://ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
+
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="BASKETBALL",ArenaVision 16 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-UNICAJA [26/05/2026 - 20:00 CET]
 acestream://866a8af8faacf8fc9eb997ab5a68b4dfee4edc77
 
-#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="SOCCER",ArenaVision 16 - SOCCER - ARGENTINA LEAGUE - RIVER PLATE-BERGAMO [24/05/2026 - 20:30 CET]
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="SOCCER",ArenaVision 16 - SOCCER - SOUTH AMERICA CUP - MILLONARIOS-OHIGGINS [27/05/2026 - 00:00 CET]
 acestream://866a8af8faacf8fc9eb997ab5a68b4dfee4edc77
 
-#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SOCCER",ArenaVision 17 - SOCCER - PREMIER LEAGUE - MANCHESTER CITY-ASTON VILLA [24/05/2026 - 17:00 CET]
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="PADDLE",ArenaVision 16 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 16:00 CET]
+acestream://866a8af8faacf8fc9eb997ab5a68b4dfee4edc77
+
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="PADDLE",ArenaVision 16 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 18:00 CET]
+acestream://866a8af8faacf8fc9eb997ab5a68b4dfee4edc77
+
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="SOCCER",ArenaVision 16 - SOCCER - SOUTH AMERICA CUP - CERRO PORTEÑO-SPORTING CRISTAL [29/05/2026 - 00:00 CET]
+acestream://866a8af8faacf8fc9eb997ab5a68b4dfee4edc77
+
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="PADDLE",ArenaVision 16 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 12:00 CET]
+acestream://866a8af8faacf8fc9eb997ab5a68b4dfee4edc77
+
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="PADDLE",ArenaVision 16 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 15:00 CET]
+acestream://866a8af8faacf8fc9eb997ab5a68b4dfee4edc77
+
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="PADDLE",ArenaVision 16 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN SEMIFINAL [29/05/2026 - 17:00 CET]
+acestream://866a8af8faacf8fc9eb997ab5a68b4dfee4edc77
+
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SOCCER (W)",ArenaVision 17 - SOCCER (W) - SPANISH LEAGUE - BADALONA-REAL MADRID [26/05/2026 - 19:00 CET]
 acestream://78124d96a1a4601e7910f50e36a16e35efcfb398
 
-#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SOCCER",ArenaVision 18 - SOCCER - PREMIER LEAGUE - MANCHESTER CITY-ASTON VILLA [24/05/2026 - 17:00 CET]
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SOCCER (W)",ArenaVision 17 - SOCCER (W) - SPANISH LEAGUE - ATLETICO DE MADRID-TENERIFE [26/05/2026 - 21:00 CET]
+acestream://78124d96a1a4601e7910f50e36a16e35efcfb398
+
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SOCCER (W)",ArenaVision 17 - SOCCER (W) - SPANISH LEAGUE - BARCELONA-REAL SOCIEDAD [27/05/2026 - 19:00 CET]
+acestream://78124d96a1a4601e7910f50e36a16e35efcfb398
+
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SOCCER (W)",ArenaVision 18 - SOCCER (W) - SPANISH LEAGUE - BADALONA-REAL MADRID [26/05/2026 - 19:00 CET]
 acestream://f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb
 
-#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="SOCCER",ArenaVision 19 - SOCCER - PREMIER LEAGUE - CRYSTAL PALACE-ARSENAL [24/05/2026 - 17:00 CET]
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SOCCER (W)",ArenaVision 18 - SOCCER (W) - SPANISH LEAGUE - ATLETICO DE MADRID-TENERIFE [26/05/2026 - 21:00 CET]
+acestream://f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb
+
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SOCCER (W)",ArenaVision 18 - SOCCER (W) - SPANISH LEAGUE - BARCELONA-REAL SOCIEDAD [27/05/2026 - 19:00 CET]
+acestream://f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="SOCCER (W)",ArenaVision 19 - SOCCER (W) - SPANISH LEAGUE - LOGROÑO-ATHLETIC CLUB [26/05/2026 - 19:00 CET]
 acestream://01ce89b571b6c89bc19ccaafc913d483ac65c61d
 
-#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="SOCCER",ArenaVision 20 - SOCCER - PREMIER LEAGUE - CRYSTAL PALACE-ARSENAL [24/05/2026 - 17:00 CET]
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="SOCCER (W)",ArenaVision 19 - SOCCER (W) - SPANISH LEAGUE - DEPORTIVO ABANCA-ESPANYOL [27/05/2026 - 21:00 CET]
+acestream://01ce89b571b6c89bc19ccaafc913d483ac65c61d
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="SOCCER (W)",ArenaVision 20 - SOCCER (W) - SPANISH LEAGUE - LOGROÑO-ATHLETIC CLUB [26/05/2026 - 19:00 CET]
+acestream://350bb4d726e2dd4dc4b2b17b59da783fdb07c11b
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="SOCCER (W)",ArenaVision 20 - SOCCER (W) - SPANISH LEAGUE - DEPORTIVO ABANCA-ESPANYOL [27/05/2026 - 21:00 CET]
 acestream://350bb4d726e2dd4dc4b2b17b59da783fdb07c11b
 
 #EXTINF:-1 tvg-id="AV21" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 21
@@ -92,10 +185,10 @@ acestream://9db029dff6a9c637d1f670e78dbc1a479b9b406e
 #EXTINF:-1 tvg-id="AV26" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 26
 acestream://1fdb405a6942da0941266f24cdd1c71b11552f1f
 
-#EXTINF:-1 tvg-id="AV27" tvg-logo="" group-title="SOCCER",ArenaVision 27 - SOCCER - SPANISH LEAGUE - SIMULCAST [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV27" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 27
 acestream://ac91a7162abe8d716d180b02e58ab97848944c1e
 
-#EXTINF:-1 tvg-id="AV28" tvg-logo="" group-title="SOCCER",ArenaVision 28 - SOCCER - SPANISH LEAGUE - SIMULCAST [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV28" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 28
 acestream://ef22f5802c2fa4cce93d209727758c0eb04fc351
 
 #EXTINF:-1 tvg-id="AV29" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 29
@@ -107,43 +200,91 @@ acestream://f41f1096862767289620be5bd85727f946a434db
 #EXTINF:-1 tvg-id="AV31" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 31
 acestream://e258e75e0e802afa5fcc53d46b47d8801a254ad5
 
-#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="CYCLING",ArenaVision 32 - CYCLING - ITALIAN GIRO - STAGE 14 [23/05/2026 - 12:45 CET]
+#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="TENNIS",ArenaVision 32 - TENNIS - ROLAND GARROS - GAUFF-TOWNSEND [26/05/2026 - 15:30 CET]
 acestream://8522af51ae7189b12effabbb448dcb707195ce1a
 
-#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="TENNIS",ArenaVision 32 - TENNIS - ROLAND GARROS - ROUND 1 [24/05/2026 - 11:00 CET]
+#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="TENNIS",ArenaVision 32 - TENNIS - ROLAND GARROS - SINNER-TABUR [26/05/2026 - 20:15 CET]
 acestream://8522af51ae7189b12effabbb448dcb707195ce1a
 
-#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="CYCLING",ArenaVision 32 - CYCLING - ITALIAN GIRO - STAGE 15 [24/05/2026 - 14:00 CET]
+#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="TENNIS",ArenaVision 32 - TENNIS - ROLAND GARROS - MACHAC-ZVEREV [27/05/2026 - 11:00 CET]
 acestream://8522af51ae7189b12effabbb448dcb707195ce1a
 
-#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="TENNIS",ArenaVision 32 - TENNIS - ROLAND GARROS - ROUND 1 [25/05/2026 - 11:00 CET]
+#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="CYCLING",ArenaVision 32 - CYCLING - ITALIAN GIRO - STAGE 17 [27/05/2026 - 15:15 CET]
 acestream://8522af51ae7189b12effabbb448dcb707195ce1a
 
-#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="CYCLING",ArenaVision 33 - CYCLING - ITALIAN GIRO - STAGE 14 [23/05/2026 - 12:45 CET]
+#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="TENNIS",ArenaVision 32 - TENNIS - ROLAND GARROS - ROUND 2 [28/05/2026 - 11:00 CET]
+acestream://8522af51ae7189b12effabbb448dcb707195ce1a
+
+#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="CYCLING",ArenaVision 32 - CYCLING - ITALIAN GIRO - STAGE 18 [28/05/2026 - 14:00 CET]
+acestream://8522af51ae7189b12effabbb448dcb707195ce1a
+
+#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="CYCLING",ArenaVision 32 - CYCLING - ITALIAN GIRO - STAGE 18 [28/05/2026 - 15:15 CET]
+acestream://8522af51ae7189b12effabbb448dcb707195ce1a
+
+#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="TENNIS",ArenaVision 32 - TENNIS - ROLAND GARROS - ROUND 3 [29/05/2026 - 11:00 CET]
+acestream://8522af51ae7189b12effabbb448dcb707195ce1a
+
+#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="CYCLING",ArenaVision 32 - CYCLING - ITALIAN GIRO - STAGE 19 [29/05/2026 - 14:00 CET]
+acestream://8522af51ae7189b12effabbb448dcb707195ce1a
+
+#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="TENNIS",ArenaVision 33 - TENNIS - ROLAND GARROS - GAUFF-TOWNSEND [26/05/2026 - 15:30 CET]
 acestream://313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
 
-#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="TENNIS",ArenaVision 33 - TENNIS - ROLAND GARROS - ROUND 1 [24/05/2026 - 11:00 CET]
+#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="TENNIS",ArenaVision 33 - TENNIS - ROLAND GARROS - SINNER-TABUR [26/05/2026 - 20:15 CET]
 acestream://313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
 
-#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="CYCLING",ArenaVision 33 - CYCLING - ITALIAN GIRO - STAGE 15 [24/05/2026 - 14:00 CET]
+#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="TENNIS",ArenaVision 33 - TENNIS - ROLAND GARROS - MACHAC-ZVEREV [27/05/2026 - 11:00 CET]
 acestream://313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
 
-#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="TENNIS",ArenaVision 33 - TENNIS - ROLAND GARROS - ROUND 1 [25/05/2026 - 11:00 CET]
+#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="CYCLING",ArenaVision 33 - CYCLING - ITALIAN GIRO - STAGE 17 [27/05/2026 - 15:15 CET]
 acestream://313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
 
-#EXTINF:-1 tvg-id="AV34" tvg-logo="" group-title="TENNIS",ArenaVision 34 - TENNIS - ROLAND GARROS - ROUND 1 [24/05/2026 - 11:00 CET]
+#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="TENNIS",ArenaVision 33 - TENNIS - ROLAND GARROS - ROUND 2 [28/05/2026 - 11:00 CET]
+acestream://313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
+
+#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="CYCLING",ArenaVision 33 - CYCLING - ITALIAN GIRO - STAGE 18 [28/05/2026 - 14:00 CET]
+acestream://313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
+
+#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="CYCLING",ArenaVision 33 - CYCLING - ITALIAN GIRO - STAGE 18 [28/05/2026 - 15:15 CET]
+acestream://313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
+
+#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="TENNIS",ArenaVision 33 - TENNIS - ROLAND GARROS - ROUND 3 [29/05/2026 - 11:00 CET]
+acestream://313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
+
+#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="CYCLING",ArenaVision 33 - CYCLING - ITALIAN GIRO - STAGE 19 [29/05/2026 - 14:00 CET]
+acestream://313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
+
+#EXTINF:-1 tvg-id="AV34" tvg-logo="" group-title="TENNIS",ArenaVision 34 - TENNIS - ROLAND GARROS - AUGER-ALTMAIER [26/05/2026 - 16:00 CET]
 acestream://f5908690485ae2facecf3074446ba4315f07a193
 
-#EXTINF:-1 tvg-id="AV34" tvg-logo="" group-title="TENNIS",ArenaVision 34 - TENNIS - ROLAND GARROS - ROUND 1 [25/05/2026 - 11:00 CET]
+#EXTINF:-1 tvg-id="AV34" tvg-logo="" group-title="TENNIS",ArenaVision 34 - TENNIS - ROLAND GARROS - DAVIDOVICH-TIRANTE [27/05/2026 - 11:00 CET]
 acestream://f5908690485ae2facecf3074446ba4315f07a193
 
-#EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="TENNIS",ArenaVision 35 - TENNIS - ROLAND GARROS - ROUND 1 [24/05/2026 - 11:00 CET]
+#EXTINF:-1 tvg-id="AV34" tvg-logo="" group-title="TENNIS",ArenaVision 34 - TENNIS - ROLAND GARROS - DUCKWORTH-JODAR [27/05/2026 - 11:00 CET]
+acestream://f5908690485ae2facecf3074446ba4315f07a193
+
+#EXTINF:-1 tvg-id="AV34" tvg-logo="" group-title="TENNIS",ArenaVision 34 - TENNIS - ROLAND GARROS - ROUND 2 [28/05/2026 - 11:00 CET]
+acestream://f5908690485ae2facecf3074446ba4315f07a193
+
+#EXTINF:-1 tvg-id="AV34" tvg-logo="" group-title="TENNIS",ArenaVision 34 - TENNIS - ROLAND GARROS - ROUND 3 [29/05/2026 - 11:00 CET]
+acestream://f5908690485ae2facecf3074446ba4315f07a193
+
+#EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="TENNIS",ArenaVision 35 - TENNIS - ROLAND GARROS - AUGER-ALTMAIER [26/05/2026 - 16:00 CET]
 acestream://7152d5f5fdb2184c88c2bb433d8b8f619cdc16b2
 
-#EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="TENNIS",ArenaVision 35 - TENNIS - ROLAND GARROS - ROUND 1 [25/05/2026 - 11:00 CET]
+#EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="TENNIS",ArenaVision 35 - TENNIS - ROLAND GARROS - DAVIDOVICH-TIRANTE [27/05/2026 - 11:00 CET]
 acestream://7152d5f5fdb2184c88c2bb433d8b8f619cdc16b2
 
-#EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 36
+#EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="TENNIS",ArenaVision 35 - TENNIS - ROLAND GARROS - DUCKWORTH-JODAR [27/05/2026 - 11:00 CET]
+acestream://7152d5f5fdb2184c88c2bb433d8b8f619cdc16b2
+
+#EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="TENNIS",ArenaVision 35 - TENNIS - ROLAND GARROS - ROUND 2 [28/05/2026 - 11:00 CET]
+acestream://7152d5f5fdb2184c88c2bb433d8b8f619cdc16b2
+
+#EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="TENNIS",ArenaVision 35 - TENNIS - ROLAND GARROS - ROUND 3 [29/05/2026 - 11:00 CET]
+acestream://7152d5f5fdb2184c88c2bb433d8b8f619cdc16b2
+
+#EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="SOCCER",ArenaVision 36 - SOCCER - SOUTH AMERICA CUP - CARACAS-BOTAFOGO [28/05/2026 - 00:00 CET]
 acestream://8156912ae14f6174a19c8a4efcf36a06e847f632
 
 #EXTINF:-1 tvg-id="AV37" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 37
@@ -158,22 +299,25 @@ acestream://e41352c657506cfe6eecc4f17982f69275f1660b
 #EXTINF:-1 tvg-id="AV40" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 40
 acestream://f588f41735c0c8ec0c412ef25ca5e5ac3b3626b9
 
-#EXTINF:-1 tvg-id="AV41" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 41
+#EXTINF:-1 tvg-id="AV41" tvg-logo="" group-title="SOCCER",ArenaVision 41 - SOCCER - SOUTH AMERICA CUP - CARACAS-BOTAFOGO [28/05/2026 - 00:00 CET]
 acestream://74ab4e4ec7e2da001f473ca40893b7307b8029c5
 
 #EXTINF:-1 tvg-id="AV42" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 42
 acestream://320bee0fbdf2a168d47810236985a7c40b4f85c9
 
-#EXTINF:-1 tvg-id="AV43" tvg-logo="" group-title="SOCCER",ArenaVision 43 - SOCCER - PREMIER LEAGUE - BRIGHTON-MANCHESTER UNITED [24/05/2026 - 17:00 CET]
+#EXTINF:-1 tvg-id="AV43" tvg-logo="" group-title="SOCCER (W)",ArenaVision 43 - SOCCER (W) - SPANISH LEAGUE - GRANADA-MADRID CFF [26/05/2026 - 19:00 CET]
 acestream://908bc5e7ae52afc06e40793b6db749dba11a1780
 
-#EXTINF:-1 tvg-id="AV44" tvg-logo="" group-title="SOCCER",ArenaVision 44 - SOCCER - PREMIER LEAGUE - LIVERPOOL-BRENTFORD [24/05/2026 - 17:00 CET]
+#EXTINF:-1 tvg-id="AV44" tvg-logo="" group-title="SOCCER (W)",ArenaVision 44 - SOCCER (W) - SPANISH LEAGUE - ALHAMA-LEVANTE [26/05/2026 - 19:00 CET]
 acestream://9ced16b2055c99bf89c26e678e315e1b01d3734c
 
-#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="TENNIS",ArenaVision 45 - TENNIS - HAMBURG TOURNAMENT - FINAL [23/05/2026 - 14:30 CET]
+#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="PADDLE",ArenaVision 45 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 12:00 CET]
 acestream://3774d8feab016ca766b35ea8488e7514ca30e0ee
 
-#EXTINF:-1 tvg-id="AV46" tvg-logo="" group-title="TENNIS",ArenaVision 46 - TENNIS - GINEBRA TOURNAMENT - FINAL [23/05/2026 - 15:00 CET]
+#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="PADDLE",ArenaVision 45 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 14:00 CET]
+acestream://3774d8feab016ca766b35ea8488e7514ca30e0ee
+
+#EXTINF:-1 tvg-id="AV46" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 46
 acestream://f4d9011721fad5098febbe4d7c078a582e176a01
 
 #EXTINF:-1 tvg-id="AV47" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 47
@@ -188,106 +332,25 @@ acestream://e6cd9205e26b3b6680f607030c702e911272524a
 #EXTINF:-1 tvg-id="AV50" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 50
 acestream://fd53cfa7055fe458d4f5c0ff59a06cd43723be55
 
-#EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="F1",ArenaVision 51 - F1 - CANADA GP - F1 ACADEMY-RACE 1 [23/05/2026 - 15:45 CET]
+#EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 51
 acestream://b08e158ea3f5c72084f5ff8e3c30ca2e4d1ff6d1
 
-#EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="F1",ArenaVision 51 - F1 - CANADA GP - F1-SPRINT [23/05/2026 - 18:00 CET]
-acestream://b08e158ea3f5c72084f5ff8e3c30ca2e4d1ff6d1
-
-#EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="F1",ArenaVision 51 - F1 - CANADA GP - F2-RACE 1 [23/05/2026 - 20:10 CET]
-acestream://b08e158ea3f5c72084f5ff8e3c30ca2e4d1ff6d1
-
-#EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="F1",ArenaVision 51 - F1 - CANADA GP - F1-CLASSIFICATION [23/05/2026 - 22:00 CET]
-acestream://b08e158ea3f5c72084f5ff8e3c30ca2e4d1ff6d1
-
-#EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="F1",ArenaVision 51 - F1 - CANADA GP - F1 ACADEMY-RACE 2 [24/05/2026 - 00:05 CET]
-acestream://b08e158ea3f5c72084f5ff8e3c30ca2e4d1ff6d1
-
-#EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="F1",ArenaVision 51 - F1 - CANADA GP - F1 ACADEMY-RACE 3 [24/05/2026 - 16:45 CET]
-acestream://b08e158ea3f5c72084f5ff8e3c30ca2e4d1ff6d1
-
-#EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="F1",ArenaVision 51 - F1 - CANADA GP - F2-RACE 2 [24/05/2026 - 18:05 CET]
-acestream://b08e158ea3f5c72084f5ff8e3c30ca2e4d1ff6d1
-
-#EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="F1",ArenaVision 51 - F1 - CANADA GP - F1-RACE [24/05/2026 - 22:00 CET]
-acestream://b08e158ea3f5c72084f5ff8e3c30ca2e4d1ff6d1
-
-#EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",ArenaVision 52 - F1 - CANADA GP - F1 ACADEMY-RACE 1 [23/05/2026 - 15:45 CET]
+#EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 52
 acestream://bcf9dc38f92e90a71b87bd54b3bac91b76d09a69
 
-#EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",ArenaVision 52 - F1 - CANADA GP - F1-SPRINT [23/05/2026 - 18:00 CET]
-acestream://bcf9dc38f92e90a71b87bd54b3bac91b76d09a69
-
-#EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",ArenaVision 52 - F1 - CANADA GP - F2-RACE 1 [23/05/2026 - 20:10 CET]
-acestream://bcf9dc38f92e90a71b87bd54b3bac91b76d09a69
-
-#EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",ArenaVision 52 - F1 - CANADA GP - F1-CLASSIFICATION [23/05/2026 - 22:00 CET]
-acestream://bcf9dc38f92e90a71b87bd54b3bac91b76d09a69
-
-#EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",ArenaVision 52 - F1 - CANADA GP - F1 ACADEMY-RACE 2 [24/05/2026 - 00:05 CET]
-acestream://bcf9dc38f92e90a71b87bd54b3bac91b76d09a69
-
-#EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",ArenaVision 52 - F1 - CANADA GP - F1 ACADEMY-RACE 3 [24/05/2026 - 16:45 CET]
-acestream://bcf9dc38f92e90a71b87bd54b3bac91b76d09a69
-
-#EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",ArenaVision 52 - F1 - CANADA GP - F2-RACE 2 [24/05/2026 - 18:05 CET]
-acestream://bcf9dc38f92e90a71b87bd54b3bac91b76d09a69
-
-#EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",ArenaVision 52 - F1 - CANADA GP - F1-RACE [24/05/2026 - 22:00 CET]
-acestream://bcf9dc38f92e90a71b87bd54b3bac91b76d09a69
-
-#EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",ArenaVision 53 - F1 - CANADA GP - F1 ACADEMY-RACE 1 [23/05/2026 - 15:45 CET]
+#EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 53
 acestream://d719181097d256073844390b3e094fbcb1bceaa4
 
-#EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",ArenaVision 53 - F1 - CANADA GP - F1-SPRINT [23/05/2026 - 18:00 CET]
-acestream://d719181097d256073844390b3e094fbcb1bceaa4
-
-#EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",ArenaVision 53 - F1 - CANADA GP - F2-RACE 1 [23/05/2026 - 20:10 CET]
-acestream://d719181097d256073844390b3e094fbcb1bceaa4
-
-#EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",ArenaVision 53 - F1 - CANADA GP - F1-CLASSIFICATION [23/05/2026 - 22:00 CET]
-acestream://d719181097d256073844390b3e094fbcb1bceaa4
-
-#EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",ArenaVision 53 - F1 - CANADA GP - F1 ACADEMY-RACE 2 [24/05/2026 - 00:05 CET]
-acestream://d719181097d256073844390b3e094fbcb1bceaa4
-
-#EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",ArenaVision 53 - F1 - CANADA GP - F1 ACADEMY-RACE 3 [24/05/2026 - 16:45 CET]
-acestream://d719181097d256073844390b3e094fbcb1bceaa4
-
-#EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",ArenaVision 53 - F1 - CANADA GP - F2-RACE 2 [24/05/2026 - 18:05 CET]
-acestream://d719181097d256073844390b3e094fbcb1bceaa4
-
-#EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",ArenaVision 53 - F1 - CANADA GP - F1-RACE [24/05/2026 - 22:00 CET]
-acestream://d719181097d256073844390b3e094fbcb1bceaa4
-
-#EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",ArenaVision 54 - F1 - CANADA GP - F1 ACADEMY-RACE 1 [23/05/2026 - 15:45 CET]
+#EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 54
 acestream://27d11bbeb3026231d52de16b1fac48da7a099247
 
-#EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",ArenaVision 54 - F1 - CANADA GP - F1-SPRINT [23/05/2026 - 18:00 CET]
-acestream://27d11bbeb3026231d52de16b1fac48da7a099247
-
-#EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",ArenaVision 54 - F1 - CANADA GP - F2-RACE 1 [23/05/2026 - 20:10 CET]
-acestream://27d11bbeb3026231d52de16b1fac48da7a099247
-
-#EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",ArenaVision 54 - F1 - CANADA GP - F1-CLASSIFICATION [23/05/2026 - 22:00 CET]
-acestream://27d11bbeb3026231d52de16b1fac48da7a099247
-
-#EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",ArenaVision 54 - F1 - CANADA GP - F1 ACADEMY-RACE 2 [24/05/2026 - 00:05 CET]
-acestream://27d11bbeb3026231d52de16b1fac48da7a099247
-
-#EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",ArenaVision 54 - F1 - CANADA GP - F1 ACADEMY-RACE 3 [24/05/2026 - 16:45 CET]
-acestream://27d11bbeb3026231d52de16b1fac48da7a099247
-
-#EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",ArenaVision 54 - F1 - CANADA GP - F2-RACE 2 [24/05/2026 - 18:05 CET]
-acestream://27d11bbeb3026231d52de16b1fac48da7a099247
-
-#EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",ArenaVision 54 - F1 - CANADA GP - F1-RACE [24/05/2026 - 22:00 CET]
-acestream://27d11bbeb3026231d52de16b1fac48da7a099247
-
-#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="TENNIS",ArenaVision 55 - TENNIS - HAMBURG TOURNAMENT - FINAL [23/05/2026 - 14:30 CET]
+#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="PADDLE",ArenaVision 55 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 12:00 CET]
 acestream://fd2aea1aa8fcddebfda1644118c6806230a1d539
 
-#EXTINF:-1 tvg-id="AV56" tvg-logo="" group-title="TENNIS",ArenaVision 56 - TENNIS - GINEBRA TOURNAMENT - FINAL [23/05/2026 - 15:00 CET]
+#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="PADDLE",ArenaVision 55 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 14:00 CET]
+acestream://fd2aea1aa8fcddebfda1644118c6806230a1d539
+
+#EXTINF:-1 tvg-id="AV56" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 56
 acestream://84aed52c5deb78f58595d88250e7a2bd04dfd810
 
 #EXTINF:-1 tvg-id="AV57" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 57
@@ -320,31 +383,109 @@ acestream://14bedc2ff054ae16c0fae99cfeb9dcda21ac68a0
 #EXTINF:-1 tvg-id="AV66" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 66
 acestream://bb26037a253866d341778181eff5c8637240d615
 
-#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",ArenaVision 67 - SOCCER - 1ST REF - SIMULCAST [23/05/2026 - 18:30 CET]
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",ArenaVision 67 - SOCCER - 1ST REF - RM CASTILLA-SABADELL [29/05/2026 - 21:00 CET]
 acestream://177796041773be99b489dd3ce86144f243e7355f
 
-#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",ArenaVision 68 - SOCCER - 1ST REF - SIMULCAST [23/05/2026 - 18:30 CET]
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",ArenaVision 68 - SOCCER - 1ST REF - RM CASTILLA-SABADELL [29/05/2026 - 21:00 CET]
 acestream://854ff9c607101791346111cd2366a392c3b8c351
 
 #EXTINF:-1 tvg-id="AV69" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 69
 acestream://95ced66c1268717c19c1e3e020e3b23b0f02e504
 
-#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="RUGBY",ArenaVision 70 - RUGBY - CHALLEGUE CUP - LEINSTER-BORDEAUX [23/05/2026 - 15:45 CET]
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",ArenaVision 70 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 10:00 CET]
 acestream://6e031aed136bf97d8667fcd5fc49c73256928281
 
-#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="RUGBY",ArenaVision 71 - RUGBY - CHALLEGUE CUP - LEINSTER-BORDEAUX [23/05/2026 - 15:45 CET]
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",ArenaVision 70 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 12:00 CET]
+acestream://6e031aed136bf97d8667fcd5fc49c73256928281
+
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",ArenaVision 70 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 14:00 CET]
+acestream://6e031aed136bf97d8667fcd5fc49c73256928281
+
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",ArenaVision 70 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 20:00 CET]
+acestream://6e031aed136bf97d8667fcd5fc49c73256928281
+
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",ArenaVision 70 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 12:00 CET]
+acestream://6e031aed136bf97d8667fcd5fc49c73256928281
+
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",ArenaVision 70 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 15:00 CET]
+acestream://6e031aed136bf97d8667fcd5fc49c73256928281
+
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",ArenaVision 70 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN SEMIFINAL [29/05/2026 - 17:00 CET]
+acestream://6e031aed136bf97d8667fcd5fc49c73256928281
+
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",ArenaVision 70 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 19:00 CET]
+acestream://6e031aed136bf97d8667fcd5fc49c73256928281
+
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",ArenaVision 71 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 10:00 CET]
 acestream://7f8b4f57bf234510d3f607492508d68167d4b0ab
 
-#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="MOTOR",ArenaVision 72 - MOTOR - INDYCAR - 500 MILES OF INDIANAPOLIS-RACE [24/05/2026 - 16:00 CET]
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",ArenaVision 71 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 12:00 CET]
+acestream://7f8b4f57bf234510d3f607492508d68167d4b0ab
+
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",ArenaVision 71 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 14:00 CET]
+acestream://7f8b4f57bf234510d3f607492508d68167d4b0ab
+
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",ArenaVision 71 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 20:00 CET]
+acestream://7f8b4f57bf234510d3f607492508d68167d4b0ab
+
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",ArenaVision 71 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 12:00 CET]
+acestream://7f8b4f57bf234510d3f607492508d68167d4b0ab
+
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",ArenaVision 71 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 15:00 CET]
+acestream://7f8b4f57bf234510d3f607492508d68167d4b0ab
+
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",ArenaVision 71 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN SEMIFINAL [29/05/2026 - 17:00 CET]
+acestream://7f8b4f57bf234510d3f607492508d68167d4b0ab
+
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",ArenaVision 71 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 19:00 CET]
+acestream://7f8b4f57bf234510d3f607492508d68167d4b0ab
+
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="BASKETBALL",ArenaVision 72 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-UNICAJA [26/05/2026 - 20:00 CET]
 acestream://0e5d8c9724fa9163f49096b70484e315251eb785
 
-#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="SOCCER",ArenaVision 72 - SOCCER - ARGENTINA LEAGUE - RIVER PLATE-BERGAMO [24/05/2026 - 20:30 CET]
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="SOCCER",ArenaVision 72 - SOCCER - SOUTH AMERICA CUP - MILLONARIOS-OHIGGINS [27/05/2026 - 00:00 CET]
 acestream://0e5d8c9724fa9163f49096b70484e315251eb785
 
-#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="MOTOR",ArenaVision 73 - MOTOR - INDYCAR - 500 MILES OF INDIANAPOLIS-RACE [24/05/2026 - 16:00 CET]
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="PADDLE",ArenaVision 72 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 16:00 CET]
+acestream://0e5d8c9724fa9163f49096b70484e315251eb785
+
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="PADDLE",ArenaVision 72 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 18:00 CET]
+acestream://0e5d8c9724fa9163f49096b70484e315251eb785
+
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="SOCCER",ArenaVision 72 - SOCCER - SOUTH AMERICA CUP - CERRO PORTEÑO-SPORTING CRISTAL [29/05/2026 - 00:00 CET]
+acestream://0e5d8c9724fa9163f49096b70484e315251eb785
+
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="PADDLE",ArenaVision 72 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 12:00 CET]
+acestream://0e5d8c9724fa9163f49096b70484e315251eb785
+
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="PADDLE",ArenaVision 72 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 15:00 CET]
+acestream://0e5d8c9724fa9163f49096b70484e315251eb785
+
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="PADDLE",ArenaVision 72 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN SEMIFINAL [29/05/2026 - 17:00 CET]
+acestream://0e5d8c9724fa9163f49096b70484e315251eb785
+
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="BASKETBALL",ArenaVision 73 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-UNICAJA [26/05/2026 - 20:00 CET]
 acestream://476b6f6583517bd75c15c4663bf45fab7c8da9cf
 
-#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="SOCCER",ArenaVision 73 - SOCCER - ARGENTINA LEAGUE - RIVER PLATE-BERGAMO [24/05/2026 - 20:30 CET]
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="SOCCER",ArenaVision 73 - SOCCER - SOUTH AMERICA CUP - MILLONARIOS-OHIGGINS [27/05/2026 - 00:00 CET]
+acestream://476b6f6583517bd75c15c4663bf45fab7c8da9cf
+
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="PADDLE",ArenaVision 73 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN QUARTERS [28/05/2026 - 16:00 CET]
+acestream://476b6f6583517bd75c15c4663bf45fab7c8da9cf
+
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="PADDLE",ArenaVision 73 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN QUARTERS [28/05/2026 - 18:00 CET]
+acestream://476b6f6583517bd75c15c4663bf45fab7c8da9cf
+
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="SOCCER",ArenaVision 73 - SOCCER - SOUTH AMERICA CUP - CERRO PORTEÑO-SPORTING CRISTAL [29/05/2026 - 00:00 CET]
+acestream://476b6f6583517bd75c15c4663bf45fab7c8da9cf
+
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="PADDLE",ArenaVision 73 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 12:00 CET]
+acestream://476b6f6583517bd75c15c4663bf45fab7c8da9cf
+
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="PADDLE",ArenaVision 73 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-WOMEN SEMIFINAL [29/05/2026 - 15:00 CET]
+acestream://476b6f6583517bd75c15c4663bf45fab7c8da9cf
+
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="PADDLE",ArenaVision 73 - PADDLE - PREMIER PADDLE - ALBANIA OPEN-MEN SEMIFINAL [29/05/2026 - 17:00 CET]
 acestream://476b6f6583517bd75c15c4663bf45fab7c8da9cf
 
 #EXTINF:-1 tvg-id="AV74" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 74
@@ -365,76 +506,55 @@ acestream://00c9bc9c5d7d87680a5a6bed349edfa775a89947
 #EXTINF:-1 tvg-id="AV79" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 79
 acestream://4b528d10eaad747ddf52251206177573ee3e9f74
 
-#EXTINF:-1 tvg-id="AV80" tvg-logo="" group-title="SOCCER",ArenaVision 80 - SOCCER - SPANISH LEAGUE - VALENCIA-BARCELONA [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV80" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 80
 acestream://cc108ae39f92c48f6c946763047bd1c9b7b7d889
 
-#EXTINF:-1 tvg-id="AV81" tvg-logo="" group-title="SOCCER",ArenaVision 81 - SOCCER - SPANISH LEAGUE - VALENCIA-BARCELONA [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV81" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 81
 acestream://385abcf801b787eec6ed6624908758bb165c0a55
 
-#EXTINF:-1 tvg-id="AV82" tvg-logo="" group-title="SOCCER",ArenaVision 82 - SOCCER - SPANISH LEAGUE - ELCHE-GIRONA [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV82" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 82
 acestream://465075c02b7284f564911bd63d1c6f0a8d464be7
 
-#EXTINF:-1 tvg-id="AV83" tvg-logo="" group-title="SOCCER",ArenaVision 83 - SOCCER - SPANISH LEAGUE - ELCHE-GIRONA [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV83" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 83
 acestream://9c75f1d190c518cfe0f236415b8dccc1f676ef3b
 
 #EXTINF:-1 tvg-id="AV84" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 84
 acestream://1fdb405a6942da0941266f24cdd1c71b11552f1f
 
-#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",ArenaVision 85 - SOCCER - SPANISH LEAGUE 2 - ALBACETE-REAL SOCIEDAD B [24/05/2026 - 16:15 CET]
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 85
 acestream://e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
 
-#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",ArenaVision 85 - SOCCER - SPANISH LEAGUE 2 - SIMULCAST [24/05/2026 - 18:30 CET]
-acestream://e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
-
-#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",ArenaVision 86 - SOCCER - SPANISH LEAGUE 2 - ALBACETE-REAL SOCIEDAD B [24/05/2026 - 16:15 CET]
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 86
 acestream://1f75d92098580443857caa95a719103cb83781b0
 
-#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",ArenaVision 86 - SOCCER - SPANISH LEAGUE 2 - SIMULCAST [24/05/2026 - 18:30 CET]
-acestream://1f75d92098580443857caa95a719103cb83781b0
-
-#EXTINF:-1 tvg-id="AV87" tvg-logo="" group-title="SOCCER",ArenaVision 87 - SOCCER - SPANISH LEAGUE 2 - ANDORRA-CEUTA [24/05/2026 - 16:15 CET]
+#EXTINF:-1 tvg-id="AV87" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 87
 acestream://e63fbcafbfc9bcb7e1cffa1d2eea97cc77f7a198
 
-#EXTINF:-1 tvg-id="AV87" tvg-logo="" group-title="SOCCER",ArenaVision 87 - SOCCER - SPANISH LEAGUE 2 - REAL VALLADOLID-DEPORTIVO [24/05/2026 - 18:30 CET]
-acestream://e63fbcafbfc9bcb7e1cffa1d2eea97cc77f7a198
-
-#EXTINF:-1 tvg-id="AV88" tvg-logo="" group-title="SOCCER",ArenaVision 88 - SOCCER - SPANISH LEAGUE 2 - ANDORRA-CEUTA [24/05/2026 - 16:15 CET]
+#EXTINF:-1 tvg-id="AV88" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 88
 acestream://3a21e651c0bffe810cfc8537065cb81f5ed68a55
 
-#EXTINF:-1 tvg-id="AV88" tvg-logo="" group-title="SOCCER",ArenaVision 88 - SOCCER - SPANISH LEAGUE 2 - REAL VALLADOLID-DEPORTIVO [24/05/2026 - 18:30 CET]
-acestream://3a21e651c0bffe810cfc8537065cb81f5ed68a55
-
-#EXTINF:-1 tvg-id="AV89" tvg-logo="" group-title="SOCCER",ArenaVision 89 - SOCCER - SPANISH LEAGUE - VALENCIA-BARCELONA [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV89" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 89
 acestream://7f9857c45764ef2c7cdfb619b89db3056a57a51f
 
-#EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="SOCCER",ArenaVision 90 - SOCCER - SPANISH LEAGUE - SIMULCAST [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 90
 acestream://0febfb5cac3384f487d55c559bbfc877db2d0357
 
-#EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="SOCCER",ArenaVision 90 - SOCCER - SPANISH LEAGUE - VILLARREAL-ATLETICO DE MADRID [24/05/2026 - 21:00 CET]
-acestream://0febfb5cac3384f487d55c559bbfc877db2d0357
-
-#EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="SOCCER",ArenaVision 91 - SOCCER - SPANISH LEAGUE - SIMULCAST [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 91
 acestream://5ad75216a63a31fef23ddc3532edc66c2fc0936c
 
-#EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="SOCCER",ArenaVision 91 - SOCCER - SPANISH LEAGUE - VILLARREAL-ATLETICO DE MADRID [24/05/2026 - 21:00 CET]
-acestream://5ad75216a63a31fef23ddc3532edc66c2fc0936c
-
-#EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="SOCCER",ArenaVision 92 - SOCCER - SPANISH LEAGUE - VILLARREAL-ATLETICO DE MADRID [24/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 92
 acestream://c9321006921967d6258df6945f1d598a5c0cbf1e
 
-#EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="SOCCER",ArenaVision 93 - SOCCER - SPANISH LEAGUE - SIMULCAST [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 93
 acestream://d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
 
-#EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="SOCCER",ArenaVision 93 - SOCCER - SPANISH LEAGUE - VILLARREAL-ATLETICO DE MADRID [24/05/2026 - 21:00 CET]
-acestream://d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
-
-#EXTINF:-1 tvg-id="AV94" tvg-logo="" group-title="SOCCER",ArenaVision 94 - SOCCER - SPANISH LEAGUE - SIMULCAST [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV94" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 94
 acestream://56ef80b811b65df74edae1f2a23805c45600caad
 
-#EXTINF:-1 tvg-id="AV95" tvg-logo="" group-title="SOCCER",ArenaVision 95 - SOCCER - SPANISH LEAGUE - ELCHE-GIRONA [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV95" tvg-logo="" group-title="SOCCER (W)",ArenaVision 95 - SOCCER (W) - SPANISH LEAGUE - ATLETICO DE MADRID-TENERIFE [26/05/2026 - 21:00 CET]
 acestream://3b50a1dca0977e3761d016edd79314ab797f74f6
 
-#EXTINF:-1 tvg-id="AV96" tvg-logo="" group-title="SOCCER",ArenaVision 96 - SOCCER - SPANISH LEAGUE - ELCHE-GIRONA [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV96" tvg-logo="" group-title="SOCCER (W)",ArenaVision 96 - SOCCER (W) - SPANISH LEAGUE - ATLETICO DE MADRID-TENERIFE [26/05/2026 - 21:00 CET]
 acestream://b35b3eb8e22365bf3469efd6d1f3b82618a6e18a
 
 #EXTINF:-1 tvg-id="AV97" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 97
@@ -443,13 +563,10 @@ acestream://02622fa2fab63847d88dc14fd9fa5c2fc35de8a8
 #EXTINF:-1 tvg-id="AV98" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 98
 acestream://1fddc49dd11ae7bb16f2b94648a9b4f0efc80349
 
-#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="SOCCER",ArenaVision 99 - SOCCER - SPANISH LEAGUE - GETAFE-OSASUNA [23/05/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="SOCCER",ArenaVision 99 - SOCCER - UEFA CONFERENCE LEAGUE - CRYSTAL PALACE-RAYO VALLECANO [27/05/2026 - 21:00 CET]
 acestream://1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
 
-#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="SOCCER",ArenaVision 99 - SOCCER - PREMIER LEAGUE - MANCHESTER CITY-ASTON VILLA [24/05/2026 - 17:00 CET]
-acestream://1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-
-#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="BASKETBALL",ArenaVision 99 - BASKETBALL - EUROLEAGUE - OLYMPIACOS-REAL MADRID [24/05/2026 - 20:00 CET]
+#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="BASKETBALL",ArenaVision 99 - BASKETBALL - SPANISH LEAGUE - BASKONIA-UNICAJA [29/05/2026 - 20:30 CET]
 acestream://1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
 
 #EXTINF:-1 tvg-id="AV100" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 100
@@ -479,40 +596,16 @@ acestream://f51674b1dd1ab5a668fa97a0f13a490632f0d7ca
 #EXTINF:-1 tvg-id="AV109" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 109
 acestream://0cd11c1f51b84ebe9954496b3ef9b6aeccf7307c
 
-#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",ArenaVision 110 - BASKETBALL - SPANISH LEAGUE - UNICAJA-RIO BREOGAN [23/05/2026 - 18:00 CET]
+#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",ArenaVision 110 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-UNICAJA [26/05/2026 - 20:00 CET]
 acestream://6fbd92735502bdebbf1ea58f4298e49759c0cf07
 
-#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",ArenaVision 110 - BASKETBALL - SPANISH LEAGUE - BILBAO-GIRONA [24/05/2026 - 12:00 CET]
-acestream://6fbd92735502bdebbf1ea58f4298e49759c0cf07
-
-#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",ArenaVision 110 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-BURGOS [24/05/2026 - 18:00 CET]
-acestream://6fbd92735502bdebbf1ea58f4298e49759c0cf07
-
-#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",ArenaVision 110 - BASKETBALL - EUROLEAGUE - OLYMPIACOS-REAL MADRID [24/05/2026 - 20:00 CET]
-acestream://6fbd92735502bdebbf1ea58f4298e49759c0cf07
-
-#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",ArenaVision 111 - BASKETBALL - SPANISH LEAGUE - UNICAJA-RIO BREOGAN [23/05/2026 - 18:00 CET]
+#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",ArenaVision 111 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-UNICAJA [26/05/2026 - 20:00 CET]
 acestream://9dd9cd78f0b08097a0ad290606dbbee999709fa5
 
-#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",ArenaVision 111 - BASKETBALL - SPANISH LEAGUE - BILBAO-GIRONA [24/05/2026 - 12:00 CET]
-acestream://9dd9cd78f0b08097a0ad290606dbbee999709fa5
-
-#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",ArenaVision 111 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-BURGOS [24/05/2026 - 18:00 CET]
-acestream://9dd9cd78f0b08097a0ad290606dbbee999709fa5
-
-#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",ArenaVision 111 - BASKETBALL - EUROLEAGUE - OLYMPIACOS-REAL MADRID [24/05/2026 - 20:00 CET]
-acestream://9dd9cd78f0b08097a0ad290606dbbee999709fa5
-
-#EXTINF:-1 tvg-id="AV112" tvg-logo="" group-title="BASKETBALL",ArenaVision 112 - BASKETBALL - SPANISH LEAGUE - GRAN CANARIA-MANRESA [23/05/2026 - 20:00 CET]
+#EXTINF:-1 tvg-id="AV112" tvg-logo="" group-title="BASKETBALL",ArenaVision 112 - BASKETBALL - SPANISH LEAGUE - ZARAGOZA-VALENCIA [26/05/2026 - 21:15 CET]
 acestream://853129258a5cb51f27829eddb934e58b45978344
 
-#EXTINF:-1 tvg-id="AV112" tvg-logo="" group-title="BASKETBALL",ArenaVision 112 - BASKETBALL - SPANISH LEAGUE - ZARAGOZA-MURCIA [24/05/2026 - 12:30 CET]
-acestream://853129258a5cb51f27829eddb934e58b45978344
-
-#EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="BASKETBALL",ArenaVision 113 - BASKETBALL - SPANISH LEAGUE - GRANADA-TENERIFE [23/05/2026 - 21:00 CET]
-acestream://13d68ecb392251a81489ce75be90388498ecfb91
-
-#EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="BASKETBALL",ArenaVision 113 - BASKETBALL - SPANISH LEAGUE - LLEIDA-ANDORRA [24/05/2026 - 12:30 CET]
+#EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 113
 acestream://13d68ecb392251a81489ce75be90388498ecfb91
 
 #EXTINF:-1 tvg-id="AV114" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 114
@@ -524,7 +617,7 @@ acestream://e7ddca738693a902ce34fb80788b220676c15801
 #EXTINF:-1 tvg-id="AV116" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 116
 acestream://177796041773be99b489dd3ce86144f243e7355f
 
-#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",ArenaVision 117 - SOCCER - 1ST REF - SIMULCAST [23/05/2026 - 18:30 CET]
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",ArenaVision 117 - SOCCER - 1ST REF - RM CASTILLA-SABADELL [29/05/2026 - 21:00 CET]
 acestream://3fbc1b7dc316f19b77e7f7cfc775a0af67adcc7f
 
 #EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 118
@@ -539,16 +632,10 @@ acestream://e7ddca738693a902ce34fb80788b220676c15801
 #EXTINF:-1 tvg-id="AV121" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 121
 acestream://1e3451ef86d34c96aabece2ac7bcae70ba9ed767
 
-#EXTINF:-1 tvg-id="AV122" tvg-logo="" group-title="BASKETBALL",ArenaVision 122 - BASKETBALL - SPANISH LEAGUE - GRAN CANARIA-MANRESA [23/05/2026 - 20:00 CET]
+#EXTINF:-1 tvg-id="AV122" tvg-logo="" group-title="BASKETBALL",ArenaVision 122 - BASKETBALL - SPANISH LEAGUE - ZARAGOZA-VALENCIA [26/05/2026 - 21:15 CET]
 acestream://fc912a111ea5a88e02b858b5014d2358b11c84ac
 
-#EXTINF:-1 tvg-id="AV122" tvg-logo="" group-title="BASKETBALL",ArenaVision 122 - BASKETBALL - SPANISH LEAGUE - ZARAGOZA-MURCIA [24/05/2026 - 12:30 CET]
-acestream://fc912a111ea5a88e02b858b5014d2358b11c84ac
-
-#EXTINF:-1 tvg-id="AV123" tvg-logo="" group-title="BASKETBALL",ArenaVision 123 - BASKETBALL - SPANISH LEAGUE - GRANADA-TENERIFE [23/05/2026 - 21:00 CET]
-acestream://95125f755562c0ffcb44abd94e338bd65472afea
-
-#EXTINF:-1 tvg-id="AV123" tvg-logo="" group-title="BASKETBALL",ArenaVision 123 - BASKETBALL - SPANISH LEAGUE - LLEIDA-ANDORRA [24/05/2026 - 12:30 CET]
+#EXTINF:-1 tvg-id="AV123" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 123
 acestream://95125f755562c0ffcb44abd94e338bd65472afea
 
 #EXTINF:-1 tvg-id="AV124" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 124
@@ -581,22 +668,40 @@ acestream://61a38b6c3b6c3fdffcb2f61053f3437e569eb666
 #EXTINF:-1 tvg-id="AV141" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 141
 acestream://4a714c436cb67d53cf197f9038239fddab2d8b20
 
-#EXTINF:-1 tvg-id="AV150" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 150
+#EXTINF:-1 tvg-id="AV150" tvg-logo="" group-title="MOTOGP",ArenaVision 150 - MOTOGP - ITALIAN GP - FREE 1 [29/05/2026 - 10:00 CET]
 acestream://c53bdb3be55d12c5188d25085f1bb16911c15cea
 
-#EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 151
+#EXTINF:-1 tvg-id="AV150" tvg-logo="" group-title="MOTOGP",ArenaVision 150 - MOTOGP - ITALIAN GP - FREE 2 [29/05/2026 - 15:00 CET]
+acestream://c53bdb3be55d12c5188d25085f1bb16911c15cea
+
+#EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="MOTOGP",ArenaVision 151 - MOTOGP - ITALIAN GP - FREE 1 [29/05/2026 - 10:00 CET]
 acestream://342ca6975a4884d81f9fec5c4085a47060bd2028
 
-#EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 152
+#EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="MOTOGP",ArenaVision 151 - MOTOGP - ITALIAN GP - FREE 2 [29/05/2026 - 15:00 CET]
+acestream://342ca6975a4884d81f9fec5c4085a47060bd2028
+
+#EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="MOTOGP",ArenaVision 152 - MOTOGP - ITALIAN GP - FREE 1 [29/05/2026 - 10:00 CET]
 acestream://e18b79bce27f6ee8eef9a1fc811bb5f80e4b558c
 
-#EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 153
+#EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="MOTOGP",ArenaVision 152 - MOTOGP - ITALIAN GP - FREE 2 [29/05/2026 - 15:00 CET]
+acestream://e18b79bce27f6ee8eef9a1fc811bb5f80e4b558c
+
+#EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="MOTOGP",ArenaVision 153 - MOTOGP - ITALIAN GP - FREE 1 [29/05/2026 - 10:00 CET]
 acestream://20d4b3586bb822c3618cf8fb665a304869c5e1a5
 
-#EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 154
+#EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="MOTOGP",ArenaVision 153 - MOTOGP - ITALIAN GP - FREE 2 [29/05/2026 - 15:00 CET]
+acestream://20d4b3586bb822c3618cf8fb665a304869c5e1a5
+
+#EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="MOTOGP",ArenaVision 154 - MOTOGP - ITALIAN GP - FREE 1 [29/05/2026 - 10:00 CET]
 acestream://129c707eb4854171d178a566f36d90b7f2b5e624
 
-#EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 155
+#EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="MOTOGP",ArenaVision 154 - MOTOGP - ITALIAN GP - FREE 2 [29/05/2026 - 15:00 CET]
+acestream://129c707eb4854171d178a566f36d90b7f2b5e624
+
+#EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="MOTOGP",ArenaVision 155 - MOTOGP - ITALIAN GP - FREE 1 [29/05/2026 - 10:00 CET]
+acestream://ac33342ccf7d40d46174229085461d95000b9137
+
+#EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="MOTOGP",ArenaVision 155 - MOTOGP - ITALIAN GP - FREE 2 [29/05/2026 - 15:00 CET]
 acestream://ac33342ccf7d40d46174229085461d95000b9137
 
 #EXTINF:-1 tvg-id="AV160" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision 160
