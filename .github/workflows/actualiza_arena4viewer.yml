@@ -50,5 +50,10 @@ jobs:
             echo "No hay cambios en la lista de canales."
           else
             git commit -m "Update Arena4Viewer: $(date +'%Y-%m-%d %H:%M:%S') [skip ci]"
-            git push
+
+            # Trae los cambios remotos y aplica tus cambios locales encima
+            git pull origin "$GITHUB_REF_NAME" --rebase
+    
+            # Sube los cambios a la rama actual
+            git push origin "$GITHUB_REF_NAME"
           fi
