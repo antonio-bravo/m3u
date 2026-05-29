@@ -1,174 +1,427 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-05-28 19:30</datetime>
-    <league>Copa Libertadores</league>
-    <teams>Boca Juniors vs Universidad Católica</teams>
+    <datetime>2026-05-29 15:00</datetime>
+    <league>Liga 1</league>
+    <teams>Atlético Grau vs Deportivo Moquegua</teams>
     <channels>
       <channel>
+        <channel_name>Liga1MAX</channel_name>
+        <channel_id>36315-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP2</channel_name>
+        <channel_id>36315-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP3</channel_name>
+        <channel_id>36315-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 17:00</datetime>
+    <league>Primera División</league>
+    <teams>Cobresal vs Ñublense</teams>
+    <channels>
+      <channel>
+        <channel_name>TNT Sports Premiun CL</channel_name>
+        <channel_id>36317-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
+      </channel>
+      <channel>
+        <channel_name>TNT Sports Premiun CL OP2</channel_name>
+        <channel_id>36317-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 15:00</datetime>
+    <league>Liga 2</league>
+    <teams>Santos vs Minas</teams>
+    <channels>
+      <channel>
+        <channel_name>Deportes TV. C</channel_name>
+        <channel_id>36319-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1nb2x0dg==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 04:00</datetime>
+    <league>Tenis – Roland Garros – Día #6 – Tercera Ronda</league>
+    <teams>Tenis – Roland Garros – Día #6 – Tercera Ronda</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 3</channel_name>
+        <channel_id>36322-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP2</channel_name>
+        <channel_id>36322-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP3</channel_name>
+        <channel_id>36322-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
+      </channel>
+      <channel>
         <channel_name>ESPN 2</channel_name>
-        <channel_id>36300-1</channel_id>
+        <channel_id>36322-4</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
       </channel>
       <channel>
         <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>36300-2</channel_id>
+        <channel_id>36322-5</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
       </channel>
       <channel>
         <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>36300-3</channel_id>
+        <channel_id>36322-6</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
       </channel>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>36300-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk2</url>
-      </channel>
-      <channel>
-        <channel_name>Fox Sports</channel_name>
-        <channel_id>36300-5</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hzcG9ydHMK</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 NL</channel_name>
-        <channel_id>36300-6</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMl9ubA==</url>
-      </channel>
-      <channel>
-        <channel_name>BeIN Sports Ñ</channel_name>
-        <channel_id>36300-7</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1iZWluc3BvcnRlcw==</url>
-      </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-05-28 19:30</datetime>
-    <league>Copa Sudamericana</league>
-    <teams>América de Cali vs Macará</teams>
+    <datetime>2026-05-29 13:00</datetime>
+    <league>Tenis – Roland Garros – Día #6 – Tercera Ronda</league>
+    <teams>Tenis – Roland Garros – Día #6 – Tercera Ronda</teams>
     <channels>
       <channel>
-        <channel_name>ESPN</channel_name>
-        <channel_id>36296-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+        <channel_name>ESPN 2</channel_name>
+        <channel_id>36324-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
       </channel>
       <channel>
-        <channel_name>ESPN AR┃OP2</channel_name>
-        <channel_id>36296-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3Bu</url>
+        <channel_name>ESPN 2 | OP2</channel_name>
+        <channel_id>36324-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
       </channel>
       <channel>
-        <channel_name>ESPN AR┃OP3</channel_name>
-        <channel_id>36296-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4=</url>
-      </channel>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>36296-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk0</url>
+        <channel_name>ESPN 2 | OP3</channel_name>
+        <channel_id>36324-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-05-28 20:10</datetime>
-    <league>Copa Colombia</league>
-    <teams>Atletico Cali FC vs Millonarios</teams>
+    <datetime>2026-05-29 15:25</datetime>
+    <league>Copa Imposible 2026 – Semifinal – Copa Oro – A Confirmar</league>
+    <teams>Copa Imposible 2026 – Semifinal – Copa Oro – A Confirmar</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 3</channel_name>
+        <channel_id>36326-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP2</channel_name>
+        <channel_id>36326-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP3</channel_name>
+        <channel_id>36326-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 18:00</datetime>
+    <league>MLB – New York Mets vs Miami Marlins</league>
+    <teams>MLB – New York Mets vs Miami Marlins</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 7</channel_name>
+        <channel_id>36329-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 7 | OP2</channel_name>
+        <channel_id>36329-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 7 | OP3</channel_name>
+        <channel_id>36329-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG43</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 18:55</datetime>
+    <league>Rugby – SR Americas – Pampas vs Selknam</league>
+    <teams>Rugby – SR Americas – Pampas vs Selknam</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 5</channel_name>
+        <channel_id>36331-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNQ==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 5 | OP2</channel_name>
+        <channel_id>36331-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNQ==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 5 | OP3</channel_name>
+        <channel_id>36331-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG41</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 19:00</datetime>
+    <league>NHL Finales de Conferencia – Juego #5 – Carolina Hurricanes vs. Montreal Canadiens</league>
+    <teams>NHL Finales de Conferencia – Juego #5 – Carolina Hurricanes vs. Montreal Canadiens</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 4</channel_name>
+        <channel_id>36333-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNA==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 4 | OP2</channel_name>
+        <channel_id>36333-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNA==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 4 | OP3</channel_name>
+        <channel_id>36333-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 15:00</datetime>
+    <league>Ligue 1</league>
+    <teams>Nice vs Saint-Étienne</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 5</channel_name>
+        <channel_id>36316-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNQ==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 5 | OP2</channel_name>
+        <channel_id>36316-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNQ==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 5 | OP3</channel_name>
+        <channel_id>36316-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG41</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 19:30</datetime>
+    <league>Primera División</league>
+    <teams>Univ. Concepción vs Unión La Calera</teams>
+    <channels>
+      <channel>
+        <channel_name>TNT Sports Premiun CL</channel_name>
+        <channel_id>36318-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
+      </channel>
+      <channel>
+        <channel_name>TNT Sports Premiun CL OP2</channel_name>
+        <channel_id>36318-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 17:30</datetime>
+    <league>Primera División</league>
+    <teams>Cerro Largo vs Cerro</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>36320-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 15:00</datetime>
+    <league>Primera B</league>
+    <teams>Envigado vs Real Cartagena</teams>
     <channels>
       <channel>
         <channel_name>Win Sports +</channel_name>
-        <channel_id>36312-1</channel_id>
+        <channel_id>36321-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
       </channel>
       <channel>
         <channel_name>Win Sports + | OP2</channel_name>
-        <channel_id>36312-2</channel_id>
+        <channel_id>36321-2</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT13aW5zcG9ydHNwbHVz</url>
       </channel>
       <channel>
         <channel_name>Win Sports + | OP3</channel_name>
-        <channel_id>36312-3</channel_id>
+        <channel_id>36321-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXdpbnNwb3J0c3BsdXM=</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-05-28 19:30</datetime>
-    <league>Copa Libertadores</league>
-    <teams>Cruzeiro vs Barcelona</teams>
+    <datetime>2026-05-29 10:00</datetime>
+    <league>SC – Sorteo Conmebol Libertadores</league>
+    <teams>SC – Sorteo Conmebol Libertadores</teams>
     <channels>
       <channel>
-        <channel_name>ESPN 7</channel_name>
-        <channel_id>36301-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNw==</url>
+        <channel_name>ESPN 3</channel_name>
+        <channel_id>36323-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMw==</url>
       </channel>
       <channel>
-        <channel_name>ESPN 7 | OP2</channel_name>
-        <channel_id>36301-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNw==</url>
+        <channel_name>ESPN 3 | OP2</channel_name>
+        <channel_id>36323-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMw==</url>
       </channel>
       <channel>
-        <channel_name>ESPN 7 | OP3</channel_name>
-        <channel_id>36301-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG43</url>
-      </channel>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>36301-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk3</url>
-      </channel>
-      <channel>
-        <channel_name>Fox Sports 2</channel_name>
-        <channel_id>36301-5</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hzcG9ydHMy</url>
+        <channel_name>ESPN 3 | OP3</channel_name>
+        <channel_id>36323-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-05-28 19:30</datetime>
-    <league>Copa Sudamericana</league>
-    <teams>Tigre vs Alianza Atlético</teams>
+    <datetime>2026-05-29 14:00</datetime>
+    <league>Copa Imposible 2026 – Semifinal – Copa Oro – A Confirmar</league>
+    <teams>Copa Imposible 2026 – Semifinal – Copa Oro – A Confirmar</teams>
     <channels>
       <channel>
-        <channel_name>ESPN 5</channel_name>
-        <channel_id>36297-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNQ==</url>
+        <channel_name>ESPN 3</channel_name>
+        <channel_id>36325-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMw==</url>
       </channel>
       <channel>
-        <channel_name>ESPN 5 | OP2</channel_name>
-        <channel_id>36297-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNQ==</url>
+        <channel_name>ESPN 3 | OP2</channel_name>
+        <channel_id>36325-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMw==</url>
       </channel>
       <channel>
-        <channel_name>ESPN 5 | OP3</channel_name>
-        <channel_id>36297-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG41</url>
-      </channel>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>36297-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk1</url>
+        <channel_name>ESPN 3 | OP3</channel_name>
+        <channel_id>36325-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-05-28 19:00</datetime>
-    <league>NHL Finales de Conferencia – Juego #5 – Vegas Golden Knights vs Colorado Avalanche</league>
-    <teams>NHL Finales de Conferencia – Juego #5 – Vegas Golden Knights vs Colorado Avalanche</teams>
+    <datetime>2026-05-29 16:55</datetime>
+    <league>Rugby – SR Americas – Capibaras XV vs Dogos XV</league>
+    <teams>Rugby – SR Americas – Capibaras XV vs Dogos XV</teams>
     <channels>
       <channel>
         <channel_name>ESPN 4</channel_name>
-        <channel_id>36308-1</channel_id>
+        <channel_id>36327-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuNA==</url>
       </channel>
       <channel>
         <channel_name>ESPN 4 | OP2</channel_name>
-        <channel_id>36308-2</channel_id>
+        <channel_id>36327-2</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuNA==</url>
       </channel>
       <channel>
         <channel_name>ESPN 4 | OP3</channel_name>
-        <channel_id>36308-3</channel_id>
+        <channel_id>36327-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG40</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 17:05</datetime>
+    <league>Copa Imposible 2026 – Semifinal – Copa Oro – A Confirmar</league>
+    <teams>Copa Imposible 2026 – Semifinal – Copa Oro – A Confirmar</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 2</channel_name>
+        <channel_id>36328-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP2</channel_name>
+        <channel_id>36328-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP3</channel_name>
+        <channel_id>36328-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 18:45</datetime>
+    <league>Copa Imposible 2026 – Semifinal – Copa Oro – A Confirmar</league>
+    <teams>Copa Imposible 2026 – Semifinal – Copa Oro – A Confirmar</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 2</channel_name>
+        <channel_id>36330-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP2</channel_name>
+        <channel_id>36330-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP3</channel_name>
+        <channel_id>36330-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 20:25</datetime>
+    <league>BOXEO</league>
+    <teams>MMA – Lucas Fernando vs Leon Soares</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 2</channel_name>
+        <channel_id>36334-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP2</channel_name>
+        <channel_id>36334-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMg==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 2 | OP3</channel_name>
+        <channel_id>36334-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-05-29 19:00</datetime>
+    <league>BOXEO</league>
+    <teams>Ivan Ricardo Actis vs Victor Garcia</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 3</channel_name>
+        <channel_id>36332-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP2</channel_name>
+        <channel_id>36332-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1lc3BuMw==</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP3</channel_name>
+        <channel_id>36332-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4z</url>
       </channel>
     </channels>
   </event>
