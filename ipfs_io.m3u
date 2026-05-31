@@ -1,14 +1,11 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-05-31 00:06:46
-# Total Channels: 65
-# Generated: 2026-05-31T00:00:02Z
+# IPFS Acestream Channels - 2026-05-31 05:23:01
+# Total Channels: 60
+# Generated: 2026-05-31T05:14:29Z
 
 # -------- DAZN --------
 #EXTINF:-1 tvg-id="DAZN 1 HD" tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" group-title="DAZN",DAZN 1 720p *
 http://127.0.0.1:6878/ace/getstream?id=a116ce3ff95c41c60e987e2b1aa247007f707884
-
-#EXTINF:-1 tvg-id="DAZN 1 HD" tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" group-title="DAZN",DAZN 1 1080p **
-http://127.0.0.1:6878/ace/getstream?id=78124d96a1a4601e7910f50e36a16e35efcfb398
 
 #EXTINF:-1 tvg-id="DAZN 2 HD" tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" group-title="DAZN",DAZN 2 720p **
 http://127.0.0.1:6878/ace/getstream?id=350bb4d726e2dd4dc4b2b17b59da783fdb07c11b
@@ -37,9 +34,6 @@ http://127.0.0.1:6878/ace/getstream?id=8f59ce96e4c902ba2f5193af07546d7ff17fc3bc
 
 #EXTINF:-1 tvg-id="Gol" tvg-logo="https://statics.goltelevision.com/shared/assets/logos/og-image2.jpg" group-title="DEPORTES",Gol TV 1080p *
 http://127.0.0.1:6878/ace/getstream?id=9bc65384425e92f3a28f977508db3df62d037300
-
-#EXTINF:-1 tvg-id="Gol" tvg-logo="https://statics.goltelevision.com/shared/assets/logos/og-image2.jpg" group-title="DEPORTES",Gol TV 1080p **
-http://127.0.0.1:6878/ace/getstream?id=42d3724b275c8029cef0b4d9ce4c59add5cd3ec1
 
 #EXTINF:-1 tvg-id="Real Madrid TV" tvg-logo="https://cdn.sincroguia.tv/uploads/channels/xlogo-real-madrid-tv-158.jpg.pagespeed.ic.MN53oqBu9E.jpg" group-title="DEPORTES",Real Madrid TV 1080p **
 http://127.0.0.1:6878/ace/getstream?id=44ea3d00ee2abfd5d89792a32851d7af61f16f0a
@@ -73,9 +67,6 @@ http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
 #EXTINF:-1 tvg-id="LaLiga TV Hypermotion 2" tvg-logo="https://i.ibb.co/8K0VrQV/hypermotion2.png" group-title="HYPERMOTION",LaLiga TV Hypermotion 2 720p *
 http://127.0.0.1:6878/ace/getstream?id=3a21e651c0bffe810cfc8537065cb81f5ed68a55
 
-#EXTINF:-1 tvg-id="LaLiga TV Hypermotion 2" tvg-logo="https://i.ibb.co/8K0VrQV/hypermotion2.png" group-title="HYPERMOTION",LaLiga TV Hypermotion 2 1080p **
-http://127.0.0.1:6878/ace/getstream?id=e63fbcafbfc9bcb7e1cffa1d2eea97cc77f7a198
-
 #EXTINF:-1 tvg-id="LaLiga TV Hypermotion 3" tvg-logo="https://i.ibb.co/826y2Yv/Hypermotion3.png" group-title="HYPERMOTION",LaLiga TV Hypermotion 3 1080p **
 http://127.0.0.1:6878/ace/getstream?id=7efe62956b1f395161e217df1f438c8bf0d4416b
 
@@ -108,9 +99,6 @@ http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
 http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 1080p **
-http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
-
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 1080p **
 http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 2 1080p *
@@ -122,9 +110,6 @@ http://127.0.0.1:6878/ace/getstream?id=5620c0ce3dcbf14a6375cb2c2d681207f45eb97d
 # -------- MOTOGP --------
 #EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 720p *
 http://127.0.0.1:6878/ace/getstream?id=ac33342ccf7d40d46174229085461d95000b9137
-
-#EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 720p **
-http://127.0.0.1:6878/ace/getstream?id=129c707eb4854171d178a566f36d90b7f2b5e624
 
 #EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p *
 http://127.0.0.1:6878/ace/getstream?id=e18b79bce27f6ee8eef9a1fc811bb5f80e4b558c
