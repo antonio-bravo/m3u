@@ -1,23 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-06-04 18:30</datetime>
-    <league>Copa Ecuador</league>
-    <teams>Deportivo Cuenca Juniors vs Macará</teams>
-    <channels>
-      <channel>
-        <channel_name>Zapping TV</channel_name>
-        <channel_id>36496-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
-      </channel>
-      <channel>
-        <channel_name>ECDF LigaPro</channel_name>
-        <channel_id>36496-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lY2RmX2xpZ2Fwcm8=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-06-04 19:00</datetime>
     <league>Amistoso</league>
     <teams>República Checa vs Guatemala</teams>
@@ -26,6 +9,16 @@
         <channel_name>Sportv BR</channel_name>
         <channel_id>36494-1</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>36494-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
+      </channel>
+      <channel>
+        <channel_name>Fox Sports 2 USA</channel_name>
+        <channel_id>36494-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hzcG9ydHMyX3VzYQ==</url>
       </channel>
     </channels>
   </event>
