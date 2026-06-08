@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-06-08 19:26:19
-# Total Channels: 10
-# Generated: 2026-06-08T19:00:02Z
+# IPFS Acestream Channels - 2026-06-08 21:56:02
+# Total Channels: 9
+# Generated: 2026-06-08T21:30:01Z
 
 # -------- CAMPEONES --------
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="CAMPEONES",M LIGA DE CAMPEONES 720p *
@@ -27,9 +27,6 @@ http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
 # -------- MOVISTAR DEPORTES --------
 #EXTINF:-1 tvg-id="Fanzone" tvg-logo="https://pbs.twimg.com/profile_images/2031376357243105281/ZR_je84y_400x400.jpg" group-title="MOVISTAR DEPORTES",M+ FanZone 1080p **
 http://127.0.0.1:6878/ace/getstream?id=5b9f3a4154df90799e86dace350ea152727b1edd
-
-#EXTINF:-1 tvg-id="M+ Vamos HD" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ Vamos 720p **
-http://127.0.0.1:6878/ace/getstream?id=8686522bd5d0b123cbc94ad4a12f2d3a18492479
 
 #EXTINF:-1 tvg-id="M+ Vamos HD" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ Vamos 1080p **
 http://127.0.0.1:6878/ace/getstream?id=7e4f6eb38e0d5ef52b7f8b96eb80c1d8c87dad16
