@@ -1,42 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-06-09 10:00</datetime>
-    <league>Amistoso</league>
-    <teams>Armenia vs Moldavia</teams>
-    <channels>
-      <channel>
-        <channel_name>Sportv BR</channel_name>
-        <channel_id>36622-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-06-09 11:30</datetime>
-    <league>Amistoso</league>
-    <teams>Bielorrusia vs Burkina Faso</teams>
-    <channels>
-      <channel>
-        <channel_name>Disney+</channel_name>
-        <channel_id>36624-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lc3Bu</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-06-09 12:00</datetime>
-    <league>Amistoso</league>
-    <teams>Hungría vs Kazajstán</teams>
-    <channels>
-      <channel>
-        <channel_name>Sportv BR</channel_name>
-        <channel_id>36625-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-06-09 13:00</datetime>
     <league>Amistoso</league>
     <teams>Azerbaiyán vs San Marino</teams>
@@ -261,12 +225,58 @@
   <event>
     <datetime>2026-06-09 10:00</datetime>
     <league>Amistoso</league>
-    <teams>RD del Congo vs Chile</teams>
+    <teams>Armenia vs Moldavia</teams>
     <channels>
       <channel>
-        <channel_name>Chilevisión</channel_name>
-        <channel_id>36623-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
+        <channel_name>Sportv BR</channel_name>
+        <channel_id>36622-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>36622-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-06-09 11:00</datetime>
+    <league>Amistoso</league>
+    <teams>Lituania vs Estonia</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>36645-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkz</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-06-09 11:30</datetime>
+    <league>Amistoso</league>
+    <teams>Bielorrusia vs Burkina Faso</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>36624-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk1</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-06-09 12:00</datetime>
+    <league>Amistoso</league>
+    <teams>Hungría vs Kazajstán</teams>
+    <channels>
+      <channel>
+        <channel_name>Sportv BR</channel_name>
+        <channel_id>36625-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXNwb3J0dg==</url>
+      </channel>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>36625-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk2</url>
       </channel>
     </channels>
   </event>
@@ -396,6 +406,35 @@
         <channel_name>ESPN 2 | OP3</channel_name>
         <channel_id>36642-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWVzcG4y</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-06-09 10:00</datetime>
+    <league>Amistoso</league>
+    <teams>Letonia vs Islas Feroe</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>36644-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXky</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-06-09 10:00</datetime>
+    <league>Amistoso</league>
+    <teams>RD del Congo vs Chile</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>36623-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXk0</url>
+      </channel>
+      <channel>
+        <channel_name>Chilevisión</channel_name>
+        <channel_id>36623-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
       </channel>
     </channels>
   </event>
