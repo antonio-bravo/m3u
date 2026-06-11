@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-06-11 00:22:29
-# Total Channels: 21
-# Generated: 2026-06-10T17:30:01Z
+# IPFS Acestream Channels - 2026-06-11 05:57:02
+# Total Channels: 19
+# Generated: 2026-06-11T05:30:01Z
 
 # -------- BALONCESTO --------
 #EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2025/12/dazn-baloncesto-movistar-plus.png" group-title="BALONCESTO",DAZN Baloncesto 720p **
@@ -44,9 +44,6 @@ http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="HYPERMOTION",LALIGA TV HYPERMOTION 1080p *
 http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
 
-#EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD" tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" group-title="HYPERMOTION",LaLiga TV Hypermotion 1080p **
-http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
-
 # -------- LIGA DE CAMPEONES --------
 #EXTINF:-1 tvg-id="M+ Liga de Campeones HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 1080p **
 http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
@@ -61,17 +58,13 @@ http://127.0.0.1:6878/ace/getstream?id=7e4f6eb38e0d5ef52b7f8b96eb80c1d8c87dad16
 
 # -------- TDT --------
 #EXTINF:-1 tvg-id="La 1 HD" tvg-logo="https://i.ibb.co/Vf2GT70/la1.png" group-title="TDT",La 1 TVE **
-http://127.0.0.1:6878/ace/getstream?id=379192c3ee5a15570e2c685179bc53cb7133cc6c
+http://127.0.0.1:6878/ace/getstream?id=979d3b873871a5a9a56d3eb481ca77b707e01102
 
 #EXTINF:-1 tvg-id="La 1 HD" tvg-logo="https://i.ibb.co/Vf2GT70/la1.png" group-title="TDT",La 1 TVE **
-http://127.0.0.1:6878/ace/getstream?id=979d3b873871a5a9a56d3eb481ca77b707e01102
+http://127.0.0.1:6878/ace/getstream?id=379192c3ee5a15570e2c685179bc53cb7133cc6c
 
 #EXTINF:-1 tvg-id="La 2" tvg-logo="https://img2.rtve.es/n/2220921" group-title="TDT",La 2 TVE 1080p **
 http://127.0.0.1:6878/ace/getstream?id=b80cd193286a7df788c07649667c1e6f64fc9dc7
-
-# -------- TELEDEPORTE --------
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="TELEDEPORTE",TELEDEPORTE 1080p *
-http://127.0.0.1:6878/ace/getstream?id=b35b3eb8e22365bf3469efd6d1f3b82618a6e18a
 
 # -------- TENNIS --------
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.sportsvideo.org/wp-content/uploads/2016/01/tennis-channel-logo-e1518530950839.jpg" group-title="TENNIS",Tennis Channel 1080p **
