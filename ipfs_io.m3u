@@ -1,9 +1,12 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-06-15 12:32:45
-# Total Channels: 18
-# Generated: 2026-06-15T12:00:01Z
+# IPFS Acestream Channels - 2026-06-15 17:57:56
+# Total Channels: 19
+# Generated: 2026-06-15T17:18:11Z
 
 # -------- DEPORTES --------
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTExzu7xibD1sz89l8PlnxvB8oUMOOhDLKywQ&s" group-title="DEPORTES",RALLY TV 1080p *
+http://127.0.0.1:6878/ace/getstream?id=64eb19dccf5e60f121a4c1f7c69489af6b1c9ca9
+
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/refs/heads/master/icon/Real%20Madrid%20TV.png" group-title="DEPORTES",Real Madrid TV 1080p *
 http://127.0.0.1:6878/ace/getstream?id=ac353757b626cedc6461d8eb73bfffa15fbb7be7
 
