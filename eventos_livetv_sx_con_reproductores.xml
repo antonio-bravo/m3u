@@ -1,141 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-06-16 11:03:58" total="124">
+<eventos generado="2026-06-16 15:59:09" total="111">
   <evento id="1">
-    <nombre>Abierto de Macao</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>BWF World Tour</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>04:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387758996_abierto_de_macao/</url>
-    <datetime_iso>2026-06-16T04:00:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/9c3bgSqOvFc?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=9c3bgSqOvFc&amp;lang=es&amp;eid=387758996&amp;lid=3027719&amp;ci=2069&amp;si=31</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.youtube.com/embed/J572lhq0vdg?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=J572lhq0vdg&amp;lang=es&amp;eid=387758996&amp;lid=3027717&amp;ci=2069&amp;si=31</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://www.youtube.com/embed/oNm3_T-D7JI?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=oNm3_T-D7JI&amp;lang=es&amp;eid=387758996&amp;lid=3027718&amp;ci=2069&amp;si=31</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://www.youtube.com/embed/qs2RdXGuemQ?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=qs2RdXGuemQ&amp;lang=es&amp;eid=387758996&amp;lid=3027720&amp;ci=2069&amp;si=31</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="2">
-    <nombre>Liga de Naciones Juvenil</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Liga de Naciones Juvenil     7:00 (3x3)</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>07:00</hora>
-    <url>https://livetv.sx/es/eventinfo/386829189_liga_de_naciones_juvenil/</url>
-    <datetime_iso>2026-06-16T07:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="3">
-    <nombre>Liga de Naciones Juvenil</nombre>
-    <deporte>Baloncesto</deporte>
-    <competicion>Liga de Naciones Juvenil</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>07:00</hora>
-    <url>https://livetv.sx/es/eventinfo/386829189_youth_nations_league/</url>
-    <datetime_iso>2026-06-16T07:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="4">
-    <nombre>Tour of Switzerland</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>UCI World Tour</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>10:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387761244_tour_of_switzerland/</url>
-    <datetime_iso>2026-06-16T10:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="5">
-    <nombre>Daniel Elahi Galan –  Zsombor Piros</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP Challenger. Parma</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>10:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387461928_daniel_elahi_galan_zsombor_piros/</url>
-    <datetime_iso>2026-06-16T10:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="6">
-    <nombre>Alvaro-Guillen Meza –  Federico Bondioli</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP Challenger. Parma</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>10:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387461929_alvaro_guillen_meza_federico_bondioli/</url>
-    <datetime_iso>2026-06-16T10:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="7">
-    <nombre>Dart (M) /  Lumsden (M) –   Li (M) /  Valentova (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Nottingham. Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>10:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387630619__dart_m___lumsden_m__li_m___valentova_m/</url>
-    <datetime_iso>2026-06-16T10:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="8">
-    <nombre>Dart (M) /  Lumsden (M) –  Li (M) /  Valentova (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Nottingham. Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>10:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387630619__/</url>
-    <datetime_iso>2026-06-16T10:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="9">
-    <nombre>Daniel Elahi Galan – Zsombor Piros</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Parma</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>10:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387461928__/</url>
-    <datetime_iso>2026-06-16T10:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="10">
-    <nombre>Alvaro-Guillen Meza – Federico Bondioli</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Parma</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>10:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387461929__/</url>
-    <datetime_iso>2026-06-16T10:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="11">
-    <nombre>Serdarusic / Karol – Yevseyev / Shevchenko</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Poznan. Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>10:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387391973__/</url>
-    <datetime_iso>2026-06-16T10:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="12">
     <nombre>MODUS Super Series</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Modus League</competicion>
@@ -143,656 +8,306 @@
     <hora>10:40</hora>
     <url>https://livetv.sx/es/eventinfo/387759018_modus_super_series/</url>
     <datetime_iso>2026-06-16T10:40:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/LadkDCvVFnk?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=LadkDCvVFnk&amp;lang=es&amp;eid=387759018&amp;lid=3027722&amp;ci=3063&amp;si=30</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="13">
-    <nombre>Madison Keys (M) –   Xinyu Wang (M)</nombre>
+  <evento id="2">
+    <nombre>WTA. Berlín</nombre>
     <deporte>Fútbol</deporte>
     <competicion>WTA. Berlín</competicion>
     <fecha>16 de junio</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387392090__madison_keys_m__xinyu_wang_m/</url>
-    <datetime_iso>2026-06-16T11:00:00</datetime_iso>
-    <streams total="6">
-      <stream id="1">
-        <url>https://emb.apl414.me/
-player/live.php?id=261005&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261005&amp;lang=es&amp;eid=387392090&amp;lid=3025612&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl414.me/
-player/live.php?id=261737&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261737&amp;lang=es&amp;eid=387392090&amp;lid=3027539&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://emb.apl414.me/
-player/live.php?id=261755&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261755&amp;lang=es&amp;eid=387392090&amp;lid=3027590&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://emb.apl414.me/
-player/live.php?id=82279&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=82279&amp;lang=es&amp;eid=387392090&amp;lid=3027760&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://dlhd.pk/stream/stream-102.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3025385&amp;lang=es&amp;eid=387392090&amp;lid=3025385&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://dlhd.pk/stream/stream-1552.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027726&amp;lang=es&amp;eid=387392090&amp;lid=3027726&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="14">
-    <nombre>Magdalena Frech (M) –   Eva Lys (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Berlín</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387807950__magdalena_frech_m__eva_lys_m/</url>
-    <datetime_iso>2026-06-16T11:00:00</datetime_iso>
+    <hora>11:10</hora>
+    <url>https://livetv.sx/es/eventinfo/387882246_wta_berland237_n/</url>
+    <datetime_iso>2026-06-16T11:10:00</datetime_iso>
     <streams total="8">
       <stream id="1">
-        <url>https://emb.apl414.me/
-player/live.php?id=251374&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
-        <idioma_nombre>Español</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=251374&amp;lang=es&amp;eid=387807950&amp;lid=2978061&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl414.me/
-player/live.php?id=261135&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261135&amp;lang=es&amp;eid=387807950&amp;lid=3027749&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://emb.apl414.me/
-player/live.php?id=261136&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261136&amp;lang=es&amp;eid=387807950&amp;lid=3027750&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://emb.apl414.me/
-player/live.php?id=261156&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261156&amp;lang=es&amp;eid=387807950&amp;lid=3027751&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://emb.apl414.me/
+        <url>https://emb.apl415.me/
 player/live.php?id=261157&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
         <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261157&amp;lang=es&amp;eid=387807950&amp;lid=3027752&amp;ci=3826&amp;si=4</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261157&amp;lang=es&amp;eid=387882246&amp;lid=3027752&amp;ci=3826&amp;si=4</enlace_original>
       </stream>
-      <stream id="6">
-        <url>https://emb.apl414.me/
+      <stream id="2">
+        <url>https://emb.apl415.me/
 player/live.php?id=261815&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
         <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261815&amp;lang=es&amp;eid=387807950&amp;lid=3027747&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="7">
-        <url>https://emb.apl414.me/
-player/live.php?id=261816&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261816&amp;lang=es&amp;eid=387807950&amp;lid=3027748&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="8">
-        <url>https://dlhd.pk/stream/stream-104.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027308&amp;lang=es&amp;eid=387807950&amp;lid=3027308&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="15">
-    <nombre>Hynek Barton –  Kimmer Coppejans</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP Challenger. Poznan</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387450730_hynek_barton_kimmer_coppejans/</url>
-    <datetime_iso>2026-06-16T11:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="16">
-    <nombre>Michele Ribecai –  Henri Squire</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP Challenger. Poznan</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387450734_michele_ribecai_henri_squire/</url>
-    <datetime_iso>2026-06-16T11:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="17">
-    <nombre>Krunic (M) /  Danilina (M) –   Muhammad (M) /  Stollar (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Berlin. Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387450903__krunic_m___danilina_m__muhammad_m___stollar_m/</url>
-    <datetime_iso>2026-06-16T11:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1553.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027728&amp;lang=es&amp;eid=387450903&amp;lid=3027728&amp;ci=5993&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="18">
-    <nombre>Madison Keys (M) –  Xinyu Wang (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Berlín</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387392090__/</url>
-    <datetime_iso>2026-06-16T11:00:00</datetime_iso>
-    <streams total="6">
-      <stream id="1">
-        <url>https://emb.apl414.me/
-player/live.php?id=261005&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261005&amp;lang=es&amp;eid=387392090&amp;lid=3025612&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl414.me/
-player/live.php?id=261737&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261737&amp;lang=es&amp;eid=387392090&amp;lid=3027539&amp;ci=3826&amp;si=4</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261815&amp;lang=es&amp;eid=387882246&amp;lid=3027747&amp;ci=3826&amp;si=4</enlace_original>
       </stream>
       <stream id="3">
-        <url>https://emb.apl414.me/
-player/live.php?id=261755&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261755&amp;lang=es&amp;eid=387392090&amp;lid=3027590&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://emb.apl414.me/
-player/live.php?id=82279&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=82279&amp;lang=es&amp;eid=387392090&amp;lid=3027760&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://dlhd.pk/stream/stream-102.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3025385&amp;lang=es&amp;eid=387392090&amp;lid=3025385&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://dlhd.pk/stream/stream-1552.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027726&amp;lang=es&amp;eid=387392090&amp;lid=3027726&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="19">
-    <nombre>Magdalena Frech (M) –  Eva Lys (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Berlín</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387807950__/</url>
-    <datetime_iso>2026-06-16T11:00:00</datetime_iso>
-    <streams total="8">
-      <stream id="1">
-        <url>https://emb.apl414.me/
+        <url>https://emb.apl415.me/
 player/live.php?id=251374&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
         <idioma_nombre>Español</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=251374&amp;lang=es&amp;eid=387807950&amp;lid=2978061&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl414.me/
-player/live.php?id=261135&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261135&amp;lang=es&amp;eid=387807950&amp;lid=3027749&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://emb.apl414.me/
-player/live.php?id=261136&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261136&amp;lang=es&amp;eid=387807950&amp;lid=3027750&amp;ci=3826&amp;si=4</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=251374&amp;lang=es&amp;eid=387882246&amp;lid=2978061&amp;ci=3826&amp;si=4</enlace_original>
       </stream>
       <stream id="4">
-        <url>https://emb.apl414.me/
-player/live.php?id=261156&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261156&amp;lang=es&amp;eid=387807950&amp;lid=3027751&amp;ci=3826&amp;si=4</enlace_original>
+        <url>https://emb.apl415.me/
+player/live.php?id=261005&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261005&amp;lang=es&amp;eid=387882246&amp;lid=3025612&amp;ci=3826&amp;si=4</enlace_original>
       </stream>
       <stream id="5">
-        <url>https://emb.apl414.me/
-player/live.php?id=261157&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261157&amp;lang=es&amp;eid=387807950&amp;lid=3027752&amp;ci=3826&amp;si=4</enlace_original>
+        <url>https://emb.apl415.me/
+player/live.php?id=261036&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261036&amp;lang=es&amp;eid=387882246&amp;lid=3026176&amp;ci=3826&amp;si=4</enlace_original>
       </stream>
       <stream id="6">
-        <url>https://emb.apl414.me/
-player/live.php?id=261815&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261815&amp;lang=es&amp;eid=387807950&amp;lid=3027747&amp;ci=3826&amp;si=4</enlace_original>
+        <url>https://emb.apl415.me/
+player/live.php?id=261755&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261755&amp;lang=es&amp;eid=387882246&amp;lid=3027590&amp;ci=3826&amp;si=4</enlace_original>
       </stream>
       <stream id="7">
-        <url>https://emb.apl414.me/
+        <url>https://emb.apl415.me/
 player/live.php?id=261816&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
         <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261816&amp;lang=es&amp;eid=387807950&amp;lid=3027748&amp;ci=3826&amp;si=4</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261816&amp;lang=es&amp;eid=387882246&amp;lid=3027748&amp;ci=3826&amp;si=4</enlace_original>
       </stream>
       <stream id="8">
-        <url>https://dlhd.pk/stream/stream-104.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027308&amp;lang=es&amp;eid=387807950&amp;lid=3027308&amp;ci=3826&amp;si=4</enlace_original>
+        <url>https://emb.apl415.me/
+player/live.php?id=237328&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
+        <idioma_nombre>Español</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=237328&amp;lang=es&amp;eid=387882246&amp;lid=3025982&amp;ci=3826&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="20">
-    <nombre>Krunic (M) /  Danilina (M) –  Muhammad (M) /  Stollar (M)</nombre>
+  <evento id="3">
+    <nombre>WTA. Berlín</nombre>
     <deporte>Tenis</deporte>
-    <competicion>WTA. Berlin. Doubles</competicion>
+    <competicion>WTA. Berlín</competicion>
     <fecha>16 de junio</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387450903__/</url>
-    <datetime_iso>2026-06-16T11:00:00</datetime_iso>
-    <streams total="1">
+    <hora>11:10</hora>
+    <url>https://livetv.sx/es/eventinfo/387882246_wta_berlin/</url>
+    <datetime_iso>2026-06-16T11:10:00</datetime_iso>
+    <streams total="8">
       <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1553.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027728&amp;lang=es&amp;eid=387450903&amp;lid=3027728&amp;ci=5993&amp;si=4</enlace_original>
+        <url>https://emb.apl415.me/
+player/live.php?id=261136&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261136&amp;lang=es&amp;eid=387882246&amp;lid=3027750&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl415.me/
+player/live.php?id=261157&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261157&amp;lang=es&amp;eid=387882246&amp;lid=3027752&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl415.me/
+player/live.php?id=261737&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261737&amp;lang=es&amp;eid=387882246&amp;lid=3027539&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://emb.apl415.me/
+player/live.php?id=261815&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261815&amp;lang=es&amp;eid=387882246&amp;lid=3027747&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://emb.apl415.me/
+player/live.php?id=251374&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
+        <idioma_nombre>Español</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=251374&amp;lang=es&amp;eid=387882246&amp;lid=2978061&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://emb.apl415.me/
+player/live.php?id=261005&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261005&amp;lang=es&amp;eid=387882246&amp;lid=3025612&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://emb.apl415.me/
+player/live.php?id=261036&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261036&amp;lang=es&amp;eid=387882246&amp;lid=3026176&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://emb.apl415.me/
+player/live.php?id=261755&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261755&amp;lang=es&amp;eid=387882246&amp;lid=3027590&amp;ci=3826&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="21">
-    <nombre>Hynek Barton – Kimmer Coppejans</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Poznan</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387450730__/</url>
-    <datetime_iso>2026-06-16T11:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="22">
-    <nombre>Michele Ribecai – Henri Squire</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Poznan</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387450734__/</url>
-    <datetime_iso>2026-06-16T11:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="23">
-    <nombre>Alexander Shevchenko – Genaro Olivieri</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Poznan</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387450736__/</url>
-    <datetime_iso>2026-06-16T11:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="24">
-    <nombre>Emma Raducanu (M) –  Karolina Pliskova (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Nottingham</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387645576__/</url>
-    <datetime_iso>2026-06-16T11:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="25">
-    <nombre>Eastern Suburbs (M) –   Olympic Brisbane (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>NPL Queensland</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387748206__eastern_suburbs_m__olympic_brisbane_m/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="26">
-    <nombre>Redlands United –  Sunshine Coast</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Queensland Premier League</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/382096924_redlands_united_sunshine_coast/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/X_ktUdfXpog?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=X_ktUdfXpog&amp;lang=es&amp;eid=382096924&amp;lid=3027617&amp;ci=3354&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="27">
-    <nombre>Marco Cecchinato –  Carlo Caniato</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP Challenger. Parma</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387461930_marco_cecchinato_carlo_caniato/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="28">
+  <evento id="4">
     <nombre>Karen Jachánov –  Ethan Quinn</nombre>
     <deporte>Fútbol</deporte>
     <competicion>ATP. Halle</competicion>
     <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
+    <hora>11:40</hora>
     <url>https://livetv.sx/es/eventinfo/387403859_karen_jach__nov_ethan_quinn/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://emb.apl414.me/
-player/live.php?id=261824&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261824&amp;lang=es&amp;eid=387403859&amp;lid=3027757&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://dlhd.pk/stream/stream-1554.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027729&amp;lang=es&amp;eid=387403859&amp;lid=3027729&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <datetime_iso>2026-06-16T11:40:00</datetime_iso>
+    <streams total="0" />
   </evento>
-  <evento id="29">
+  <evento id="5">
     <nombre>Mattia Bellucci –  Alexandr Bublik</nombre>
     <deporte>Fútbol</deporte>
     <competicion>ATP. Halle</competicion>
     <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
+    <hora>11:40</hora>
     <url>https://livetv.sx/es/eventinfo/387635273_mattia_bellucci_alexandr_bublik/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://emb.apl414.me/
-player/live.php?id=261019&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
-        <idioma_nombre>Alemán</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261019&amp;lang=es&amp;eid=387635273&amp;lid=3027759&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl414.me/
-player/live.php?id=260997&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=260997&amp;lang=es&amp;eid=387635273&amp;lid=3025541&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://emb.apl414.me/
-player/live.php?id=261393&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261393&amp;lang=es&amp;eid=387635273&amp;lid=3027601&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://dlhd.pk/stream/stream-1556.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027579&amp;lang=es&amp;eid=387635273&amp;lid=3027579&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <datetime_iso>2026-06-16T11:40:00</datetime_iso>
+    <streams total="0" />
   </evento>
-  <evento id="30">
+  <evento id="6">
     <nombre>Alexei Popyrin –  Raphael Collignon</nombre>
     <deporte>Fútbol</deporte>
     <competicion>ATP. Halle</competicion>
     <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
+    <hora>11:40</hora>
     <url>https://livetv.sx/es/eventinfo/387635275_alexei_popyrin_raphael_collignon/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="2">
+    <datetime_iso>2026-06-16T11:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="7">
+    <nombre>ATP. Halle</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP. Halle</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>11:40</hora>
+    <url>https://livetv.sx/es/eventinfo/387882322_atp_halle/</url>
+    <datetime_iso>2026-06-16T11:40:00</datetime_iso>
+    <streams total="8">
       <stream id="1">
-        <url>https://emb.apl414.me/
+        <url>https://emb.apl415.me/
+player/live.php?id=260997&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=260997&amp;lang=es&amp;eid=387882322&amp;lid=3025541&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl415.me/
 player/live.php?id=261006&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
         <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261006&amp;lang=es&amp;eid=387635275&amp;lid=3026196&amp;ci=3827&amp;si=4</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261006&amp;lang=es&amp;eid=387882322&amp;lid=3026196&amp;ci=3827&amp;si=4</enlace_original>
       </stream>
-      <stream id="2">
-        <url>https://dlhd.pk/stream/stream-1555.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027580&amp;lang=es&amp;eid=387635275&amp;lid=3027580&amp;ci=3827&amp;si=4</enlace_original>
+      <stream id="3">
+        <url>https://emb.apl415.me/
+player/live.php?id=261019&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
+        <idioma_nombre>Alemán</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261019&amp;lang=es&amp;eid=387882322&amp;lid=3027759&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://emb.apl415.me/
+player/live.php?id=261156&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261156&amp;lang=es&amp;eid=387882322&amp;lid=3027751&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://emb.apl415.me/
+player/live.php?id=261157&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261157&amp;lang=es&amp;eid=387882322&amp;lid=3027752&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://emb.apl415.me/
+player/live.php?id=261692&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
+        <idioma_nombre>Holandés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261692&amp;lang=es&amp;eid=387882322&amp;lid=3027370&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://emb.apl415.me/
+player/live.php?id=261816&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261816&amp;lang=es&amp;eid=387882322&amp;lid=3027748&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://emb.apl415.me/
+player/live.php?id=261824&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261824&amp;lang=es&amp;eid=387882322&amp;lid=3027757&amp;ci=3827&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="31">
-    <nombre>Pedro Boscardin Dias –  Jan Choinski</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP Challenger. Poznan</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387450718_pedro_boscardin_dias_jan_choinski/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="32">
-    <nombre>Escobar / Kittay –  Romboli / Winegar</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387667218_escobar__kittay_romboli__winegar/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="33">
-    <nombre>Redlands United – Sunshine Coast</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Australia. Queensland Premier League</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/382096924__/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/X_ktUdfXpog?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=X_ktUdfXpog&amp;lang=es&amp;eid=382096924&amp;lid=3027617&amp;ci=3354&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="34">
-    <nombre>Eastern Suburbs (M) –  Olympic Brisbane (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Australia. Mujeres. NPL Queensland</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387748206__/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="35">
-    <nombre>Escobar / Kittay – Romboli / Winegar</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Nottingham. Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387667218__/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="36">
-    <nombre>Marco Cecchinato – Carlo Caniato</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Parma</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387461930__/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="37">
+  <evento id="8">
     <nombre>Mattia Bellucci – Alexandr Bublik</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Halle</competicion>
     <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
+    <hora>11:40</hora>
     <url>https://livetv.sx/es/eventinfo/387635273__/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://emb.apl414.me/
-player/live.php?id=260997&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=260997&amp;lang=es&amp;eid=387635273&amp;lid=3025541&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl414.me/
-player/live.php?id=261019&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
-        <idioma_nombre>Alemán</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261019&amp;lang=es&amp;eid=387635273&amp;lid=3027759&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://emb.apl414.me/
-player/live.php?id=261393&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261393&amp;lang=es&amp;eid=387635273&amp;lid=3027601&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://dlhd.pk/stream/stream-1556.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027579&amp;lang=es&amp;eid=387635273&amp;lid=3027579&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <datetime_iso>2026-06-16T11:40:00</datetime_iso>
+    <streams total="0" />
   </evento>
-  <evento id="38">
+  <evento id="9">
     <nombre>Alexei Popyrin – Raphael Collignon</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Halle</competicion>
     <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
+    <hora>11:40</hora>
     <url>https://livetv.sx/es/eventinfo/387635275__/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://emb.apl414.me/
-player/live.php?id=261006&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261006&amp;lang=es&amp;eid=387635275&amp;lid=3026196&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://dlhd.pk/stream/stream-1555.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027580&amp;lang=es&amp;eid=387635275&amp;lid=3027580&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <datetime_iso>2026-06-16T11:40:00</datetime_iso>
+    <streams total="0" />
   </evento>
-  <evento id="39">
+  <evento id="10">
     <nombre>Karen Jachánov – Ethan Quinn</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Halle</competicion>
     <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
+    <hora>11:40</hora>
     <url>https://livetv.sx/es/eventinfo/387403859__/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://emb.apl414.me/
-player/live.php?id=261824&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261824&amp;lang=es&amp;eid=387403859&amp;lid=3027757&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://dlhd.pk/stream/stream-1554.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027729&amp;lang=es&amp;eid=387403859&amp;lid=3027729&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="40">
-    <nombre>Pedro Boscardin Dias – Jan Choinski</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Poznan</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>11:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387450718__/</url>
-    <datetime_iso>2026-06-16T11:30:00</datetime_iso>
+    <datetime_iso>2026-06-16T11:40:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="41">
-    <nombre>Ann Li (M) –  Kimberly Birrell (M)</nombre>
-    <deporte>Tenis</deporte>
+  <evento id="11">
+    <nombre>Bernard Tomic –  Conor Gannon</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP Challenger</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>12:10</hora>
+    <url>https://livetv.sx/es/eventinfo/387892103_bernard_tomic_conor_gannon/</url>
+    <datetime_iso>2026-06-16T12:10:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="12">
+    <nombre>Ann Li (M) –   Kimberly Birrell (M)</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>WTA. Nottingham</competicion>
     <fecha>16 de junio</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387645564__/</url>
-    <datetime_iso>2026-06-16T12:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1557.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027730&amp;lang=es&amp;eid=387645564&amp;lid=3027730&amp;ci=3808&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <hora>12:10</hora>
+    <url>https://livetv.sx/es/eventinfo/387645564__ann_li_m__kimberly_birrell_m/</url>
+    <datetime_iso>2026-06-16T12:10:00</datetime_iso>
+    <streams total="0" />
   </evento>
-  <evento id="42">
+  <evento id="13">
     <nombre>WTA. Nottingham</nombre>
-    <deporte>Tenis</deporte>
+    <deporte>Fútbol</deporte>
     <competicion>WTA. Nottingham</competicion>
     <fecha>16 de junio</fecha>
     <hora>12:10</hora>
     <url>https://livetv.sx/es/eventinfo/387766230_wta_nottingham/</url>
     <datetime_iso>2026-06-16T12:10:00</datetime_iso>
-    <streams total="1">
+    <streams total="2">
       <stream id="1">
+        <url>https://emb.apl415.me/
+player/live.php?id=237328&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
+        <idioma_nombre>Español</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=237328&amp;lang=es&amp;eid=387766230&amp;lid=3025982&amp;ci=3808&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
         <url>https://dlhd.pk/stream/stream-1557.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
         <idioma_nombre>Polaco</idioma_nombre>
@@ -800,136 +315,152 @@ player/live.php?id=261824&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="43">
-    <nombre>Errani (M) /  Melichar (M) –  Jiang (M) /  Yifan (M)</nombre>
+  <evento id="14">
+    <nombre>Ann Li (M) –  Kimberly Birrell (M)</nombre>
     <deporte>Tenis</deporte>
-    <competicion>WTA. Berlin. Doubles</competicion>
+    <competicion>WTA. Nottingham</competicion>
     <fecha>16 de junio</fecha>
-    <hora>12:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387450914__/</url>
-    <datetime_iso>2026-06-16T12:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1563.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027735&amp;lang=es&amp;eid=387450914&amp;lid=3027735&amp;ci=5993&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <hora>12:10</hora>
+    <url>https://livetv.sx/es/eventinfo/387645564__/</url>
+    <datetime_iso>2026-06-16T12:10:00</datetime_iso>
+    <streams total="0" />
   </evento>
-  <evento id="44">
-    <nombre>Shuai Zhang (M) –  Karolina Muchova (M)</nombre>
+  <evento id="15">
+    <nombre>Bernard Tomic – Conor Gannon</nombre>
     <deporte>Tenis</deporte>
+    <competicion>ATP Challenger</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>12:10</hora>
+    <url>https://livetv.sx/es/eventinfo/387892103__/</url>
+    <datetime_iso>2026-06-16T12:10:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="16">
+    <nombre>Kessler McCartney (M) –   Katie Volynets (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>WTA. Nottingham</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>12:40</hora>
+    <url>https://livetv.sx/es/eventinfo/387645570__kessler_mccartney_m__katie_volynets_m/</url>
+    <datetime_iso>2026-06-16T12:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="17">
+    <nombre>Linda Noskova (M) –   Renata Zarazua (M)</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>WTA. Berlín</competicion>
     <fecha>16 de junio</fecha>
-    <hora>12:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387807951__/</url>
-    <datetime_iso>2026-06-16T12:30:00</datetime_iso>
-    <streams total="1">
+    <hora>12:40</hora>
+    <url>https://livetv.sx/es/eventinfo/387807952__linda_noskova_m__renata_zarazua_m/</url>
+    <datetime_iso>2026-06-16T12:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="18">
+    <nombre>Jakub Mensik –  Adrian Mannarino</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP. Londres</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>12:40</hora>
+    <url>https://livetv.sx/es/eventinfo/387392018_jakub_mensik_adrian_mannarino/</url>
+    <datetime_iso>2026-06-16T12:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="19">
+    <nombre>Brandon Nakashima –  Marton Fucsovics</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP. Londres</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>12:40</hora>
+    <url>https://livetv.sx/es/eventinfo/387392022_brandon_nakashima_marton_fucsovics/</url>
+    <datetime_iso>2026-06-16T12:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="20">
+    <nombre>ATP. Londres</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP. Londres</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>12:40</hora>
+    <url>https://livetv.sx/es/eventinfo/387766281_atp_londres/</url>
+    <datetime_iso>2026-06-16T12:40:00</datetime_iso>
+    <streams total="8">
       <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1561.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027732&amp;lang=es&amp;eid=387807951&amp;lid=3027732&amp;ci=3826&amp;si=4</enlace_original>
+        <url>https://emb.apl415.me/
+player/live.php?id=261102&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261102&amp;lang=es&amp;eid=387766281&amp;lid=3025646&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl415.me/
+player/live.php?id=261135&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261135&amp;lang=es&amp;eid=387766281&amp;lid=3027749&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl415.me/
+player/live.php?id=261136&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261136&amp;lang=es&amp;eid=387766281&amp;lid=3027750&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://emb.apl415.me/
+player/live.php?id=261815&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261815&amp;lang=es&amp;eid=387766281&amp;lid=3027747&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://emb.apl415.me/
+player/live.php?id=261816&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261816&amp;lang=es&amp;eid=387766281&amp;lid=3027748&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://emb.apl415.me/
+player/live.php?id=261094&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261094&amp;lang=es&amp;eid=387766281&amp;lid=3027541&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://dlhd.pk/stream/stream-472.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/16.png</idioma>
+        <idioma_nombre>Japonés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027564&amp;lang=es&amp;eid=387766281&amp;lid=3027564&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://dlhd.pk/stream/stream-576.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/12.png</idioma>
+        <idioma_nombre>Turco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027535&amp;lang=es&amp;eid=387766281&amp;lid=3027535&amp;ci=3828&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="45">
+  <evento id="21">
+    <nombre>Ignacio Buse –  Marcos Giron</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP. Londres</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>12:40</hora>
+    <url>https://livetv.sx/es/eventinfo/387786555_ignacio_buse_marcos_giron/</url>
+    <datetime_iso>2026-06-16T12:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="22">
     <nombre>Linda Noskova (M) –  Renata Zarazua (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Berlín</competicion>
     <fecha>16 de junio</fecha>
-    <hora>12:30</hora>
+    <hora>12:40</hora>
     <url>https://livetv.sx/es/eventinfo/387807952__/</url>
-    <datetime_iso>2026-06-16T12:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1562.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027731&amp;lang=es&amp;eid=387807952&amp;lid=3027731&amp;ci=3826&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="46">
-    <nombre>Jakub Mensik – Adrian Mannarino</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Londres</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>12:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387392018__/</url>
-    <datetime_iso>2026-06-16T12:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1558.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027737&amp;lang=es&amp;eid=387392018&amp;lid=3027737&amp;ci=3828&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="47">
-    <nombre>Ignacio Buse – Rafael Jodar</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Londres</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>12:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387392020__/</url>
-    <datetime_iso>2026-06-16T12:30:00</datetime_iso>
+    <datetime_iso>2026-06-16T12:40:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="48">
-    <nombre>Brandon Nakashima – Marton Fucsovics</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Londres</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>12:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387392022__/</url>
-    <datetime_iso>2026-06-16T12:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1560.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027736&amp;lang=es&amp;eid=387392022&amp;lid=3027736&amp;ci=3828&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="49">
-    <nombre>Ignacio Buse – Marcos Giron</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Londres</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>12:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387786555__/</url>
-    <datetime_iso>2026-06-16T12:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1559.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027733&amp;lang=es&amp;eid=387786555&amp;lid=3027733&amp;ci=3828&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="50">
-    <nombre>Kessler McCartney (M) –  Katie Volynets (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Nottingham</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>12:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387645570__/</url>
-    <datetime_iso>2026-06-16T12:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1564.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027734&amp;lang=es&amp;eid=387645570&amp;lid=3027734&amp;ci=3808&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="51">
+  <evento id="23">
     <nombre>ATP. Londres</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Londres</competicion>
@@ -937,225 +468,545 @@ player/live.php?id=261824&amp;w=700&amp;h=480</url>
     <hora>12:40</hora>
     <url>https://livetv.sx/es/eventinfo/387766281_atp_london/</url>
     <datetime_iso>2026-06-16T12:40:00</datetime_iso>
-    <streams total="3">
+    <streams total="8">
       <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1559.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027733&amp;lang=es&amp;eid=387766281&amp;lid=3027733&amp;ci=3828&amp;si=4</enlace_original>
+        <url>https://emb.apl415.me/
+player/live.php?id=261102&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261102&amp;lang=es&amp;eid=387766281&amp;lid=3025646&amp;ci=3828&amp;si=4</enlace_original>
       </stream>
       <stream id="2">
-        <url>https://dlhd.pk/stream/stream-1558.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027737&amp;lang=es&amp;eid=387766281&amp;lid=3027737&amp;ci=3828&amp;si=4</enlace_original>
+        <url>https://emb.apl415.me/
+player/live.php?id=261135&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261135&amp;lang=es&amp;eid=387766281&amp;lid=3027749&amp;ci=3828&amp;si=4</enlace_original>
       </stream>
       <stream id="3">
-        <url>https://dlhd.pk/stream/stream-1560.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027736&amp;lang=es&amp;eid=387766281&amp;lid=3027736&amp;ci=3828&amp;si=4</enlace_original>
+        <url>https://emb.apl415.me/
+player/live.php?id=261136&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261136&amp;lang=es&amp;eid=387766281&amp;lid=3027750&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://emb.apl415.me/
+player/live.php?id=261815&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261815&amp;lang=es&amp;eid=387766281&amp;lid=3027747&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://emb.apl415.me/
+player/live.php?id=261816&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261816&amp;lang=es&amp;eid=387766281&amp;lid=3027748&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://emb.apl415.me/
+player/live.php?id=261821&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261821&amp;lang=es&amp;eid=387766281&amp;lid=3027869&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://emb.apl415.me/
+player/live.php?id=261094&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261094&amp;lang=es&amp;eid=387766281&amp;lid=3027541&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://dlhd.pk/stream/stream-50.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027761&amp;lang=es&amp;eid=387766281&amp;lid=3027761&amp;ci=3828&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="52">
-    <nombre>Altai (W) – Yelimay Semey (W)</nombre>
+  <evento id="24">
+    <nombre>Jakub Mensik – Adrian Mannarino</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Londres</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>12:40</hora>
+    <url>https://livetv.sx/es/eventinfo/387392018__/</url>
+    <datetime_iso>2026-06-16T12:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="25">
+    <nombre>Brandon Nakashima – Marton Fucsovics</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Londres</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>12:40</hora>
+    <url>https://livetv.sx/es/eventinfo/387392022__/</url>
+    <datetime_iso>2026-06-16T12:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="26">
+    <nombre>Ignacio Buse – Marcos Giron</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Londres</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>12:40</hora>
+    <url>https://livetv.sx/es/eventinfo/387786555__/</url>
+    <datetime_iso>2026-06-16T12:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="27">
+    <nombre>Kessler McCartney (M) –  Katie Volynets (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Nottingham</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>12:40</hora>
+    <url>https://livetv.sx/es/eventinfo/387645570__/</url>
+    <datetime_iso>2026-06-16T12:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="28">
+    <nombre>Errani (M) /  Melichar (M) –   Jiang (M) /  Yifan (M)</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Kazajistán. Mujeres. Campeonato</competicion>
+    <competicion>WTA. Berlin. Doubles</competicion>
     <fecha>16 de junio</fecha>
     <hora>13:00</hora>
-    <url>https://livetv.sx/es/eventinfo/386920263_altai_w_yelimay_semey_w/</url>
+    <url>https://livetv.sx/es/eventinfo/387450914__errani_m___melichar_m__jiang_m___yifan_m/</url>
     <datetime_iso>2026-06-16T13:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/9nrz6F06Szc?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/37.png</idioma>
-        <idioma_nombre>Bandera #37</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=9nrz6F06Szc&amp;lang=es&amp;eid=386920263&amp;lid=3027743&amp;ci=7848&amp;si=1</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="53">
-    <nombre>Irtysh (W) – Astana (W)</nombre>
+  <evento id="29">
+    <nombre>Fubon Braves –  Taoyuan Pauian Pilots</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Kazajistán. Mujeres. Campeonato</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>13:00</hora>
-    <url>https://livetv.sx/es/eventinfo/386920264_irtysh_w_astana_w/</url>
-    <datetime_iso>2026-06-16T13:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/jRFoLqQV17k?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/37.png</idioma>
-        <idioma_nombre>Bandera #37</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=jRFoLqQV17k&amp;lang=es&amp;eid=386920264&amp;lid=3027742&amp;ci=7848&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="54">
-    <nombre>Fubon Braves – Taoyuan Pauian Pilots</nombre>
-    <deporte>Baloncesto</deporte>
     <competicion>Taiwán. P. League+</competicion>
     <fecha>16 de junio</fecha>
     <hora>13:00</hora>
     <url>https://livetv.sx/es/eventinfo/387199642_fubon_braves_taoyuan_pauian_pilots/</url>
     <datetime_iso>2026-06-16T13:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/Z1dXetp0UJI?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/6.png</idioma>
-        <idioma_nombre>Español (España)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=Z1dXetp0UJI&amp;lang=es&amp;eid=387199642&amp;lid=3027558&amp;ci=6541&amp;si=3</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="55">
-    <nombre>Pedro Martinez – Daniel Rincón</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Parma</competicion>
+  <evento id="30">
+    <nombre>Altai (W) –  Yelimay Semey (W)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato</competicion>
     <fecha>16 de junio</fecha>
     <hora>13:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387461933__/</url>
+    <url>https://livetv.sx/es/eventinfo/386920263_altai_w_yelimay_semey_w/</url>
     <datetime_iso>2026-06-16T13:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="56">
-    <nombre>Petr Bar Biryukov – Stefano Travaglia</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Parma</competicion>
+  <evento id="31">
+    <nombre>Irtysh (W) –  Astana (W)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato</competicion>
     <fecha>16 de junio</fecha>
     <hora>13:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387461934__/</url>
+    <url>https://livetv.sx/es/eventinfo/386920264_irtysh_w_astana_w/</url>
     <datetime_iso>2026-06-16T13:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="57">
-    <nombre>Miguel Damas – Roberto Carballés Baena</nombre>
+  <evento id="32">
+    <nombre>Errani (M) /  Melichar (M) –  Jiang (M) /  Yifan (M)</nombre>
     <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Parma</competicion>
+    <competicion>WTA. Berlin. Doubles</competicion>
     <fecha>16 de junio</fecha>
     <hora>13:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387461935__/</url>
+    <url>https://livetv.sx/es/eventinfo/387450914__/</url>
     <datetime_iso>2026-06-16T13:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="58">
-    <nombre>Andréi Rubliov – Hubert Hurkacz</nombre>
-    <deporte>Tenis</deporte>
+  <evento id="33">
+    <nombre>Tallon Griekspoor –  Sho Shimabukuro</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>ATP. Halle</competicion>
     <fecha>16 de junio</fecha>
-    <hora>13:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387403856__/</url>
-    <datetime_iso>2026-06-16T13:00:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://emb.apl414.me/
-player/live.php?id=261824&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261824&amp;lang=es&amp;eid=387403856&amp;lid=3027757&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://dlhd.pk/stream/stream-1567.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027741&amp;lang=es&amp;eid=387403856&amp;lid=3027741&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <hora>13:05</hora>
+    <url>https://livetv.sx/es/eventinfo/387403868_tallon_griekspoor_sho_shimabukuro/</url>
+    <datetime_iso>2026-06-16T13:05:00</datetime_iso>
+    <streams total="0" />
   </evento>
-  <evento id="59">
-    <nombre>Joao Fonseca – Yannick Hanfmann</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Halle</competicion>
+  <evento id="34">
+    <nombre>Luz / Matos –  Olivetti / Arribage</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP. Halle. Doubles</competicion>
     <fecha>16 de junio</fecha>
-    <hora>13:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387403861__/</url>
-    <datetime_iso>2026-06-16T13:00:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://emb.apl414.me/
-player/live.php?id=260997&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=260997&amp;lang=es&amp;eid=387403861&amp;lid=3025541&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://dlhd.pk/stream/stream-1566.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027740&amp;lang=es&amp;eid=387403861&amp;lid=3027740&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <hora>13:05</hora>
+    <url>https://livetv.sx/es/eventinfo/387439055_luz__matos_olivetti__arribage/</url>
+    <datetime_iso>2026-06-16T13:05:00</datetime_iso>
+    <streams total="0" />
   </evento>
-  <evento id="60">
+  <evento id="35">
     <nombre>Tallon Griekspoor – Sho Shimabukuro</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Halle</competicion>
     <fecha>16 de junio</fecha>
-    <hora>13:00</hora>
+    <hora>13:05</hora>
     <url>https://livetv.sx/es/eventinfo/387403868__/</url>
-    <datetime_iso>2026-06-16T13:00:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://emb.apl414.me/
-player/live.php?id=261006&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261006&amp;lang=es&amp;eid=387403868&amp;lid=3026196&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://dlhd.pk/stream/stream-1565.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027739&amp;lang=es&amp;eid=387403868&amp;lid=3027739&amp;ci=3827&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <datetime_iso>2026-06-16T13:05:00</datetime_iso>
+    <streams total="0" />
   </evento>
-  <evento id="61">
+  <evento id="36">
     <nombre>Luz / Matos – Olivetti / Arribage</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Halle. Doubles</competicion>
     <fecha>16 de junio</fecha>
-    <hora>13:00</hora>
+    <hora>13:05</hora>
     <url>https://livetv.sx/es/eventinfo/387439055__/</url>
-    <datetime_iso>2026-06-16T13:00:00</datetime_iso>
+    <datetime_iso>2026-06-16T13:05:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="37">
+    <nombre>Joao Fonseca –  Yannick Hanfmann</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP. Halle</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>13:10</hora>
+    <url>https://livetv.sx/es/eventinfo/387403861_joao_fonseca_yannick_hanfmann/</url>
+    <datetime_iso>2026-06-16T13:10:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="38">
+    <nombre>Joao Fonseca – Yannick Hanfmann</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Halle</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>13:10</hora>
+    <url>https://livetv.sx/es/eventinfo/387403861__/</url>
+    <datetime_iso>2026-06-16T13:10:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="39">
+    <nombre>Shuai Zhang (M) –   Karolina Muchova (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>WTA. Berlín</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>13:20</hora>
+    <url>https://livetv.sx/es/eventinfo/387807951__shuai_zhang_m__karolina_muchova_m/</url>
+    <datetime_iso>2026-06-16T13:20:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="40">
+    <nombre>Shuai Zhang (M) –  Karolina Muchova (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Berlín</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>13:20</hora>
+    <url>https://livetv.sx/es/eventinfo/387807951__/</url>
+    <datetime_iso>2026-06-16T13:20:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="41">
+    <nombre>Zilina U19 –  Hradec Kralove U19</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Eslovaquia. Liga Sub-19</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>13:30</hora>
+    <url>https://livetv.sx/es/eventinfo/387889478_zilina_u19_hradec_kralove_u19/</url>
+    <datetime_iso>2026-06-16T13:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="42">
+    <nombre>Lois Boisson (M) –   Dayana Yastremska (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>WTA. Nottingham</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387404006__lois_boisson_m__dayana_yastremska_m/</url>
+    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="43">
+    <nombre>Zeynep Sonmez (M) –   Leylah-Annie  Fernandez (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>WTA. Nottingham</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387645562__zeynep_sonmez_m__leylah_annie__fernandez_m/</url>
+    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="44">
+    <nombre>Andréi Rubliov –  Hubert Hurkacz</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP. Halle</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387403856_andr__i_rubliov_hubert_hurkacz/</url>
+    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="45">
+    <nombre>Arthur Fery –  Toby Samuel</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP. Londres</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387392016_arthur_fery_toby_samuel/</url>
+    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="46">
+    <nombre>Jenson Brooksby –  Martin Damm</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP. Londres</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387635329_jenson_brooksby_martin_damm/</url>
+    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
     <streams total="1">
       <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1568.php</url>
+        <url>https://dlhd.pk/stream/stream-1572.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
         <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027738&amp;lang=es&amp;eid=387439055&amp;lid=3027738&amp;ci=5990&amp;si=4</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027800&amp;lang=es&amp;eid=387635329&amp;lid=3027800&amp;ci=3828&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="62">
+  <evento id="47">
+    <nombre>Arthur Fery – Toby Samuel</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Londres</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387392016__/</url>
+    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="48">
+    <nombre>Andréi Rubliov – Hubert Hurkacz</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Halle</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387403856__/</url>
+    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="49">
+    <nombre>Zeynep Sonmez (M) –  Leylah-Annie  Fernandez (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Nottingham</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387645562__/</url>
+    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="50">
+    <nombre>Jenson Brooksby – Martin Damm</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Londres</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387635329__/</url>
+    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.pk/stream/stream-1572.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027800&amp;lang=es&amp;eid=387635329&amp;lid=3027800&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="51">
     <nombre>Lois Boisson (M) –  Dayana Yastremska (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Nottingham</competicion>
     <fecha>16 de junio</fecha>
-    <hora>13:30</hora>
+    <hora>14:00</hora>
     <url>https://livetv.sx/es/eventinfo/387404006__/</url>
-    <datetime_iso>2026-06-16T13:30:00</datetime_iso>
-    <streams total="1">
+    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="52">
+    <nombre>Pegula (M) /  Gauff (M) –  Potapova (M) /  Shnaider (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Berlin. Doubles</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:05</hora>
+    <url>https://livetv.sx/es/eventinfo/387450901__/</url>
+    <datetime_iso>2026-06-16T14:05:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="53">
+    <nombre>Katerina Siniakova (M) –  Rebeka Masarova (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Berlín</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:30</hora>
+    <url>https://livetv.sx/es/eventinfo/387807953__/</url>
+    <datetime_iso>2026-06-16T14:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="54">
+    <nombre>Alex De Minaur – Gabriel Diallo</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Londres</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:30</hora>
+    <url>https://livetv.sx/es/eventinfo/387392026__/</url>
+    <datetime_iso>2026-06-16T14:30:00</datetime_iso>
+    <streams total="6">
       <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1569.php</url>
+        <url>https://emb.apl415.me/
+player/live.php?id=261102&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261102&amp;lang=es&amp;eid=387392026&amp;lid=3025646&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl415.me/
+player/live.php?id=261135&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261135&amp;lang=es&amp;eid=387392026&amp;lid=3027749&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl415.me/
+player/live.php?id=261094&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261094&amp;lang=es&amp;eid=387392026&amp;lid=3027541&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://emb.apl415.me/
+player/live.php?id=261821&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261821&amp;lang=es&amp;eid=387392026&amp;lid=3027869&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://dlhd.pk/stream/stream-1579.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
         <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027567&amp;lang=es&amp;eid=387404006&amp;lid=3027567&amp;ci=3808&amp;si=4</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027801&amp;lang=es&amp;eid=387392026&amp;lid=3027801&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://dlhd.pk/stream/stream-472.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/16.png</idioma>
+        <idioma_nombre>Japonés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027564&amp;lang=es&amp;eid=387392026&amp;lid=3027564&amp;ci=3828&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="63">
+  <evento id="55">
+    <nombre>Jesper De Jong – Laslo Djere</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP Challenger. Parma</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:30</hora>
+    <url>https://livetv.sx/es/eventinfo/387461937__/</url>
+    <datetime_iso>2026-06-16T14:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="56">
+    <nombre>Fabian Marozsan – Miomir Kecmanovic</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Halle</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:30</hora>
+    <url>https://livetv.sx/es/eventinfo/387403858__/</url>
+    <datetime_iso>2026-06-16T14:30:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://emb.apl415.me/
+player/live.php?id=261006&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261006&amp;lang=es&amp;eid=387403858&amp;lid=3026196&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://dlhd.pk/stream/stream-1577.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027568&amp;lang=es&amp;eid=387403858&amp;lid=3027568&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="57">
+    <nombre>Veldheer / Ruehl – Pujol Navarro / Vega Hernández</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP Challenger. Parma. Doubles</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>14:30</hora>
+    <url>https://livetv.sx/es/eventinfo/387391964__/</url>
+    <datetime_iso>2026-06-16T14:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="58">
+    <nombre>Kyzylzhar (W) – Aktobe (W)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Kazajistán. Mujeres. Campeonato</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>15:00</hora>
+    <url>https://livetv.sx/es/eventinfo/386920265_kyzylzhar_w_aktobe_w/</url>
+    <datetime_iso>2026-06-16T15:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="59">
+    <nombre>Sara Bejlek (M) –  Karolina Pliskova (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Nottingham</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>15:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387771409__/</url>
+    <datetime_iso>2026-06-16T15:00:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://emb.apl415.me/
+player/live.php?id=261005&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261005&amp;lang=es&amp;eid=387771409&amp;lid=3025612&amp;ci=3808&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://dlhd.pk/stream/stream-1582.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027584&amp;lang=es&amp;eid=387771409&amp;lid=3027584&amp;ci=3808&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="60">
+    <nombre>Alexander Zverev – Vit Kopriva</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Halle</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>15:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387403862__/</url>
+    <datetime_iso>2026-06-16T15:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="61">
+    <nombre>Viktorija Golubic (M) –  Sofia Kenin (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Nottingham</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>15:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387645566__/</url>
+    <datetime_iso>2026-06-16T15:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.pk/stream/stream-1581.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027581&amp;lang=es&amp;eid=387645566&amp;lid=3027581&amp;ci=3808&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="62">
     <nombre>Caty McNally (M) –  Antonia Ruzic (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Nottingham</competicion>
     <fecha>16 de junio</fecha>
-    <hora>13:45</hora>
+    <hora>15:00</hora>
     <url>https://livetv.sx/es/eventinfo/387645574__/</url>
-    <datetime_iso>2026-06-16T13:45:00</datetime_iso>
+    <datetime_iso>2026-06-16T15:00:00</datetime_iso>
     <streams total="2">
       <stream id="1">
-        <url>https://emb.apl414.me/
+        <url>https://emb.apl415.me/
 player/live.php?id=261005&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
         <idioma_nombre>Croata</idioma_nombre>
@@ -1169,174 +1020,17 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="64">
-    <nombre>Katerina Siniakova (M) –  Rebeka Masarova (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Berlín</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>14:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387807953__/</url>
-    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="65">
-    <nombre>Arthur Fery – Toby Samuel</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Londres</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>14:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387392016__/</url>
-    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="66">
-    <nombre>Pegula (M) /  Gauff (M) –  Potapova (M) /  Shnaider (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Berlin. Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>14:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387450901__/</url>
-    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="67">
-    <nombre>Zeynep Sonmez (M) –  Leylah-Annie  Fernandez (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Nottingham</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>14:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387645562__/</url>
-    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlhd.pk/stream/stream-1576.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027746&amp;lang=es&amp;eid=387645562&amp;lid=3027746&amp;ci=3808&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="68">
-    <nombre>Jenson Brooksby – Martin Damm</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Londres</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>14:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387635329__/</url>
-    <datetime_iso>2026-06-16T14:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="69">
-    <nombre>Alex De Minaur – Gabriel Diallo</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Londres</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>14:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387392026__/</url>
-    <datetime_iso>2026-06-16T14:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="70">
-    <nombre>Jesper De Jong – Laslo Djere</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Parma</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>14:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387461937__/</url>
-    <datetime_iso>2026-06-16T14:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="71">
-    <nombre>Fabian Marozsan – Miomir Kecmanovic</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Halle</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>14:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387403858__/</url>
-    <datetime_iso>2026-06-16T14:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="72">
+  <evento id="63">
     <nombre>Kyrgios / Bellucci – Quinn / Tien</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Halle. Doubles</competicion>
     <fecha>16 de junio</fecha>
-    <hora>14:30</hora>
+    <hora>15:10</hora>
     <url>https://livetv.sx/es/eventinfo/387439049__/</url>
-    <datetime_iso>2026-06-16T14:30:00</datetime_iso>
+    <datetime_iso>2026-06-16T15:10:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="73">
-    <nombre>Veldheer / Ruehl – Pujol Navarro / Vega Hernández</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Parma. Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>14:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387391964__/</url>
-    <datetime_iso>2026-06-16T14:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="74">
-    <nombre>Kyzylzhar (W) – Aktobe (W)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Kazajistán. Mujeres. Campeonato</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>15:00</hora>
-    <url>https://livetv.sx/es/eventinfo/386920265_kyzylzhar_w_aktobe_w/</url>
-    <datetime_iso>2026-06-16T15:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="75">
-    <nombre>Sara Bejlek (M) –  Karolina Pliskova (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Nottingham</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>15:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387771409__/</url>
-    <datetime_iso>2026-06-16T15:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="76">
-    <nombre>Alexander Zverev – Vit Kopriva</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Halle</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>15:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387403862__/</url>
-    <datetime_iso>2026-06-16T15:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="77">
-    <nombre>Viktorija Golubic (M) –  Sofia Kenin (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Nottingham</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>15:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387645566__/</url>
-    <datetime_iso>2026-06-16T15:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="78">
-    <nombre>Elina Svitolina (M) –  Anna Kalinskaya (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Berlín</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>15:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387392088__/</url>
-    <datetime_iso>2026-06-16T15:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="79">
-    <nombre>Clara Tauson (M) –  Diane Parry (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Berlín</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>15:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387807955__/</url>
-    <datetime_iso>2026-06-16T15:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="80">
+  <evento id="64">
     <nombre>Arthur Rinderknech – Hamad Medjedovic</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Londres</competicion>
@@ -1344,19 +1038,16 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>15:30</hora>
     <url>https://livetv.sx/es/eventinfo/387392008__/</url>
     <datetime_iso>2026-06-16T15:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.pk/stream/stream-1583.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027810&amp;lang=es&amp;eid=387392008&amp;lid=3027810&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="81">
-    <nombre>Alexandrova (M) /  Noskova (M) –  Perez (M) /  Schuurs (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Berlin. Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>15:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387450908__/</url>
-    <datetime_iso>2026-06-16T15:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="82">
+  <evento id="65">
     <nombre>Aleksandar Kovacevic – Francisco Cerundolo</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Londres</competicion>
@@ -1364,9 +1055,23 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>15:30</hora>
     <url>https://livetv.sx/es/eventinfo/387635327__/</url>
     <datetime_iso>2026-06-16T15:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="2">
+      <stream id="1">
+        <url>https://emb.apl415.me/
+player/live.php?id=85304&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=85304&amp;lang=es&amp;eid=387635327&amp;lid=3027870&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://dlhd.pk/stream/stream-1584.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027806&amp;lang=es&amp;eid=387635327&amp;lid=3027806&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="83">
+  <evento id="66">
     <nombre>Harriet Dart (M) –  Katie Boulter (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Nottingham</competicion>
@@ -1376,7 +1081,86 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T15:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="84">
+  <evento id="67">
+    <nombre>Clara Tauson (M) –  Diane Parry (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Berlín</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>15:35</hora>
+    <url>https://livetv.sx/es/eventinfo/387807955__/</url>
+    <datetime_iso>2026-06-16T15:35:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.pk/stream/stream-1585.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027582&amp;lang=es&amp;eid=387807955&amp;lid=3027582&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="68">
+    <nombre>Alexandrova (M) /  Noskova (M) –  Perez (M) /  Schuurs (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Berlin. Doubles</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>16:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387450908__/</url>
+    <datetime_iso>2026-06-16T16:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.pk/stream/stream-1587.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027807&amp;lang=es&amp;eid=387450908&amp;lid=3027807&amp;ci=5993&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="69">
+    <nombre>Elina Svitolina (M) –  Anna Kalinskaya (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Berlín</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>16:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387392088__/</url>
+    <datetime_iso>2026-06-16T16:00:00</datetime_iso>
+    <streams total="5">
+      <stream id="1">
+        <url>https://emb.apl415.me/
+player/live.php?id=251374&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
+        <idioma_nombre>Español</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=251374&amp;lang=es&amp;eid=387392088&amp;lid=2978061&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl415.me/
+player/live.php?id=261036&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261036&amp;lang=es&amp;eid=387392088&amp;lid=3026176&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl415.me/
+player/live.php?id=261755&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261755&amp;lang=es&amp;eid=387392088&amp;lid=3027590&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://emb.apl415.me/
+player/live.php?id=237362&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
+        <idioma_nombre>Español</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=237362&amp;lang=es&amp;eid=387392088&amp;lid=3025285&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://dlhd.pk/stream/stream-1586.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027809&amp;lang=es&amp;eid=387392088&amp;lid=3027809&amp;ci=3826&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="70">
     <nombre>Cameron Norrie – Alejandro Davidovich Fokina</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Londres</competicion>
@@ -1384,9 +1168,23 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>16:00</hora>
     <url>https://livetv.sx/es/eventinfo/387392010__/</url>
     <datetime_iso>2026-06-16T16:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="2">
+      <stream id="1">
+        <url>https://emb.apl415.me/
+player/live.php?id=261005&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261005&amp;lang=es&amp;eid=387392010&amp;lid=3025612&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://dlhd.pk/stream/stream-1591.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027815&amp;lang=es&amp;eid=387392010&amp;lid=3027815&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="85">
+  <evento id="71">
     <nombre>Polmans / Doumbia – Miedler / Cabral</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Halle. Doubles</competicion>
@@ -1394,29 +1192,23 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>16:00</hora>
     <url>https://livetv.sx/es/eventinfo/387439048__/</url>
     <datetime_iso>2026-06-16T16:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="2">
+      <stream id="1">
+        <url>https://emb.apl415.me/
+player/live.php?id=261006&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261006&amp;lang=es&amp;eid=387439048&amp;lid=3026196&amp;ci=5990&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://dlhd.pk/stream/stream-1590.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027808&amp;lang=es&amp;eid=387439048&amp;lid=3027808&amp;ci=5990&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="86">
-    <nombre>Cobolli / Shelton – Pavlasek / Vavassori</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Halle. Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>16:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387439051__/</url>
-    <datetime_iso>2026-06-16T16:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="87">
-    <nombre>Mansouri / Neuchrist – Kadhe / Zormann</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP Challenger. Parma. Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>16:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387391960__/</url>
-    <datetime_iso>2026-06-16T16:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="88">
+  <evento id="72">
     <nombre>Kalyanpur / Taylor – Lammons / Withrow</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Parma. Doubles</competicion>
@@ -1426,17 +1218,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T16:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="89">
-    <nombre>Guarachi (M) /  Rosolska (M) –  Bouzkova (M) /  Panova (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Nottingham. Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>16:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387472914__/</url>
-    <datetime_iso>2026-06-16T16:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="90">
+  <evento id="73">
     <nombre>Shymanovich (M) /  Kozyreva (M) –  Qianhui (M) /  Pridankina  (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Nottingham. Doubles</competicion>
@@ -1444,9 +1226,33 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>16:30</hora>
     <url>https://livetv.sx/es/eventinfo/387472916__/</url>
     <datetime_iso>2026-06-16T16:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.pk/stream/stream-1593.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027812&amp;lang=es&amp;eid=387472916&amp;lid=3027812&amp;ci=5962&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="91">
+  <evento id="74">
+    <nombre>Guarachi (M) /  Rosolska (M) –  Bouzkova (M) /  Panova (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Nottingham. Doubles</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>16:30</hora>
+    <url>https://livetv.sx/es/eventinfo/387472914__/</url>
+    <datetime_iso>2026-06-16T16:30:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.pk/stream/stream-1594.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027813&amp;lang=es&amp;eid=387472914&amp;lid=3027813&amp;ci=5962&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="75">
     <nombre>Tomas Etcheverry – Daniil Medvedev</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Halle</competicion>
@@ -1454,9 +1260,85 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>16:30</hora>
     <url>https://livetv.sx/es/eventinfo/387403855__/</url>
     <datetime_iso>2026-06-16T16:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="5">
+      <stream id="1">
+        <url>https://emb.apl415.me/
+player/live.php?id=261692&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
+        <idioma_nombre>Holandés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261692&amp;lang=es&amp;eid=387403855&amp;lid=3027370&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl415.me/
+player/live.php?id=260997&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=260997&amp;lang=es&amp;eid=387403855&amp;lid=3025541&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl415.me/
+player/live.php?id=261824&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261824&amp;lang=es&amp;eid=387403855&amp;lid=3027757&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://emb.apl415.me/
+player/live.php?id=261093&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261093&amp;lang=es&amp;eid=387403855&amp;lid=3027540&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://dlhd.pk/stream/stream-1592.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027814&amp;lang=es&amp;eid=387403855&amp;lid=3027814&amp;ci=3827&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="92">
+  <evento id="76">
+    <nombre>Harriet Dart (M) –  Hannah Klugman (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Nottingham</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>16:30</hora>
+    <url>https://livetv.sx/es/eventinfo/387892418__/</url>
+    <datetime_iso>2026-06-16T16:30:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.pk/stream/stream-1588.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027811&amp;lang=es&amp;eid=387892418&amp;lid=3027811&amp;ci=3808&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="77">
+    <nombre>Cobolli / Shelton – Pavlasek / Vavassori</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Halle. Doubles</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>16:40</hora>
+    <url>https://livetv.sx/es/eventinfo/387439051__/</url>
+    <datetime_iso>2026-06-16T16:40:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://emb.apl415.me/
+player/live.php?id=261824&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261824&amp;lang=es&amp;eid=387439051&amp;lid=3027757&amp;ci=5990&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://dlhd.pk/stream/stream-1589.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027847&amp;lang=es&amp;eid=387439051&amp;lid=3027847&amp;ci=5990&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="78">
     <nombre>Daugavpils – Super Nova</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Letonia. Virsliga</competicion>
@@ -1464,9 +1346,16 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>17:00</hora>
     <url>https://livetv.sx/es/eventinfo/385631454__/</url>
     <datetime_iso>2026-06-16T17:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.pk/stream/stream-14.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/34.png</idioma>
+        <idioma_nombre>Bandera #34</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027682&amp;lang=es&amp;eid=385631454&amp;lid=3027682&amp;ci=107&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="93">
+  <evento id="79">
     <nombre>Transinvest – Riteriai</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Lituania. A Lyga</competicion>
@@ -1476,7 +1365,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="94">
+  <evento id="80">
     <nombre>Lituania U17 – Rumania U17</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Torneo amistoso. Selecciones</competicion>
@@ -1484,19 +1373,16 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>17:00</hora>
     <url>https://livetv.sx/es/eventinfo/387776035_lithuania_u17_romania_u17/</url>
     <datetime_iso>2026-06-16T17:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/5d9OnO3EOLk?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=5d9OnO3EOLk&amp;lang=es&amp;eid=387776035&amp;lid=3027561&amp;ci=6246&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="95">
-    <nombre>Suzan Lamens (M) –  Paula Badosa Gibert (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Berlín</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>17:00</hora>
-    <url>https://livetv.sx/es/eventinfo/387807956__/</url>
-    <datetime_iso>2026-06-16T17:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="96">
+  <evento id="81">
     <nombre>Ugo Humbert – Marin Cilic</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Londres</competicion>
@@ -1504,9 +1390,30 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>17:00</hora>
     <url>https://livetv.sx/es/eventinfo/387392006__/</url>
     <datetime_iso>2026-06-16T17:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="3">
+      <stream id="1">
+        <url>https://emb.apl415.me/
+player/live.php?id=261019&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
+        <idioma_nombre>Alemán</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261019&amp;lang=es&amp;eid=387392006&amp;lid=3027759&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl415.me/
+player/live.php?id=260997&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=260997&amp;lang=es&amp;eid=387392006&amp;lid=3025541&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://dlhd.pk/stream/stream-1595.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027848&amp;lang=es&amp;eid=387392006&amp;lid=3027848&amp;ci=3828&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="97">
+  <evento id="82">
     <nombre>Gustavo Heide – Daniel Michalski</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Poznan</competicion>
@@ -1516,7 +1423,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="98">
+  <evento id="83">
     <nombre>Rinky Hijikata – Alejandro Tabilo</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Londres</competicion>
@@ -1526,7 +1433,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="99">
+  <evento id="84">
     <nombre>Reis Da Silva / Boscardin Dias – Romios / Kielan</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Poznan. Doubles</competicion>
@@ -1536,7 +1443,17 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="100">
+  <evento id="85">
+    <nombre>Suzan Lamens (M) –  Paula Badosa Gibert (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Berlín</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>17:05</hora>
+    <url>https://livetv.sx/es/eventinfo/387807956__/</url>
+    <datetime_iso>2026-06-16T17:05:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="86">
     <nombre>Suduva – Siauliai</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Lituania. A Lyga</competicion>
@@ -1544,9 +1461,16 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>17:30</hora>
     <url>https://livetv.sx/es/eventinfo/387205216__/</url>
     <datetime_iso>2026-06-16T17:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/VQmeqn0bkdw?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/35.png</idioma>
+        <idioma_nombre>Bandera #35</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=VQmeqn0bkdw&amp;lang=es&amp;eid=387205216&amp;lid=3027824&amp;ci=166&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="101">
+  <evento id="87">
     <nombre>Kamil Majchrzak – Jiri Lehecka</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Londres</competicion>
@@ -1556,17 +1480,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="102">
-    <nombre>Williams (M) /  Muchova (M) –  Olmos (M) /  Routliffe (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Berlin. Doubles</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>17:30</hora>
-    <url>https://livetv.sx/es/eventinfo/387450912__/</url>
-    <datetime_iso>2026-06-16T17:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="103">
+  <evento id="88">
     <nombre>Santiago De La Fuente – Paulo Andre Saraiva Dos Santos</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Asunción</competicion>
@@ -1576,7 +1490,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="104">
+  <evento id="89">
     <nombre>Guido Ivan Justo – Alejandro Hernandez</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Asunción</competicion>
@@ -1586,7 +1500,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="105">
+  <evento id="90">
     <nombre>Grobina – Liepaja</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Letonia. Virsliga</competicion>
@@ -1594,9 +1508,33 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>18:00</hora>
     <url>https://livetv.sx/es/eventinfo/385636904__/</url>
     <datetime_iso>2026-06-16T18:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.pk/stream/stream-14.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/34.png</idioma>
+        <idioma_nombre>Bandera #34</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027682&amp;lang=es&amp;eid=385636904&amp;lid=3027682&amp;ci=107&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="106">
+  <evento id="91">
+    <nombre>Kuressaare – Narva Trans</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Estonia. Meistriliiga</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/385772941__/</url>
+    <datetime_iso>2026-06-16T18:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/ybVNpc6t4a8?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/43.png</idioma>
+        <idioma_nombre>Bandera #43</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=ybVNpc6t4a8&amp;lang=es&amp;eid=385772941&amp;lid=3027586&amp;ci=180&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="92">
     <nombre>Vaprus Parnu – Flora</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Estonia. Meistriliiga</competicion>
@@ -1606,17 +1544,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="107">
-    <nombre>Kuressaare – Narva Trans</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Estonia. Meistriliiga</competicion>
-    <fecha>16 de junio</fecha>
-    <hora>18:00</hora>
-    <url>https://livetv.sx/es/eventinfo/385772941__/</url>
-    <datetime_iso>2026-06-16T18:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="108">
+  <evento id="93">
     <nombre>Dila – Spaeri</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Georgia. Erovnuli Liga</competicion>
@@ -1624,9 +1552,93 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>18:00</hora>
     <url>https://livetv.sx/es/eventinfo/385636564__/</url>
     <datetime_iso>2026-06-16T18:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/TTADVAUXdpA?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/24.png</idioma>
+        <idioma_nombre>Portugués</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=TTADVAUXdpA&amp;lang=es&amp;eid=385636564&amp;lid=3027843&amp;ci=641&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="94">
+    <nombre>Williams (M) /  Muchova (M) –  Olmos (M) /  Routliffe (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Berlin. Doubles</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387450912__/</url>
+    <datetime_iso>2026-06-16T18:00:00</datetime_iso>
+    <streams total="8">
+      <stream id="1">
+        <url>https://emb.apl415.me/
+player/live.php?id=261167&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261167&amp;lang=es&amp;eid=387450912&amp;lid=3027868&amp;ci=5993&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl415.me/
+player/live.php?id=261136&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261136&amp;lang=es&amp;eid=387450912&amp;lid=3027750&amp;ci=5993&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl415.me/
+player/live.php?id=261157&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261157&amp;lang=es&amp;eid=387450912&amp;lid=3027752&amp;ci=5993&amp;si=4</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://emb.apl415.me/
+player/live.php?id=261737&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261737&amp;lang=es&amp;eid=387450912&amp;lid=3027539&amp;ci=5993&amp;si=4</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://emb.apl415.me/
+player/live.php?id=261815&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261815&amp;lang=es&amp;eid=387450912&amp;lid=3027747&amp;ci=5993&amp;si=4</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://emb.apl415.me/
+player/live.php?id=251374&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
+        <idioma_nombre>Español</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=251374&amp;lang=es&amp;eid=387450912&amp;lid=2978061&amp;ci=5993&amp;si=4</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://emb.apl415.me/
+player/live.php?id=261755&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261755&amp;lang=es&amp;eid=387450912&amp;lid=3027590&amp;ci=5993&amp;si=4</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://emb.apl415.me/
+player/live.php?id=261816&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261816&amp;lang=es&amp;eid=387450912&amp;lid=3027748&amp;ci=5993&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="95">
+    <nombre>Mansouri / Neuchrist – Kadhe / Zormann</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP Challenger. Parma. Doubles</competicion>
+    <fecha>16 de junio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/387391960__/</url>
+    <datetime_iso>2026-06-16T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="109">
+  <evento id="96">
     <nombre>Ostrava Golden Spike</nombre>
     <deporte>Deporte_9</deporte>
     <competicion>WACT Gold</competicion>
@@ -1634,9 +1646,44 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>18:00</hora>
     <url>https://livetv.sx/es/eventinfo/387737808_ostrava_golden_spike/</url>
     <datetime_iso>2026-06-16T18:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="5">
+      <stream id="1">
+        <url>https://emb.apl415.me/
+player/live.php?id=261002&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261002&amp;lang=es&amp;eid=387737808&amp;lid=3027756&amp;ci=3840&amp;si=9</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl415.me/
+player/live.php?id=261039&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261039&amp;lang=es&amp;eid=387737808&amp;lid=3026883&amp;ci=3840&amp;si=9</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl415.me/
+player/live.php?id=261239&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261239&amp;lang=es&amp;eid=387737808&amp;lid=3025688&amp;ci=3840&amp;si=9</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://emb.apl415.me/
+player/live.php?id=261811&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
+        <idioma_nombre>Español</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261811&amp;lang=es&amp;eid=387737808&amp;lid=3027725&amp;ci=3840&amp;si=9</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://shd247.live/frame011.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3027781&amp;lang=es&amp;eid=387737808&amp;lid=3027781&amp;ci=3840&amp;si=9</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="110">
+  <evento id="97">
     <nombre>Zalgiris – Panevezys</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Lituania. A Lyga</competicion>
@@ -1644,9 +1691,16 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <hora>18:30</hora>
     <url>https://livetv.sx/es/eventinfo/387205218__/</url>
     <datetime_iso>2026-06-16T18:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/xCqJmRQGlrs?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/35.png</idioma>
+        <idioma_nombre>Bandera #35</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=xCqJmRQGlrs&amp;lang=es&amp;eid=387205218&amp;lid=3027823&amp;ci=166&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="111">
+  <evento id="98">
     <nombre>Vaernamo – Helsingborg</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Suecia. Superettan</competicion>
@@ -1656,7 +1710,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="112">
+  <evento id="99">
     <nombre>Landskrona – United IK</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Suecia. Superettan</competicion>
@@ -1666,7 +1720,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="113">
+  <evento id="100">
     <nombre>Johan Alexander Rodriguez Rodriguez – Matias Soto</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Asunción</competicion>
@@ -1676,7 +1730,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="114">
+  <evento id="101">
     <nombre>Gonzalo Bueno – Tomasz Berkieta</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Poznan</competicion>
@@ -1686,7 +1740,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="115">
+  <evento id="102">
     <nombre>Turquía U17 – Serbia U17</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Torneo amistoso. Selecciones</competicion>
@@ -1696,7 +1750,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T19:15:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="116">
+  <evento id="103">
     <nombre>Maccabi T-A – Hapoel T-A</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Israel. Ligat Ha'Al</competicion>
@@ -1706,7 +1760,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T19:50:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="117">
+  <evento id="104">
     <nombre>Venecia – Milán</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Italia. Lega Basket</competicion>
@@ -1716,7 +1770,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="118">
+  <evento id="105">
     <nombre>Ilia Simakin – Jacopo Vasami</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Parma</competicion>
@@ -1726,7 +1780,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="119">
+  <evento id="106">
     <nombre>Roma – Catania</nombre>
     <deporte>Futsal</deporte>
     <competicion>Italia. Serie A</competicion>
@@ -1736,7 +1790,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T20:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="120">
+  <evento id="107">
     <nombre>Francia – Senegal</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Copa Mundial</competicion>
@@ -1746,7 +1800,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="121">
+  <evento id="108">
     <nombre>Nicolas Kicker – Federico Coria</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Asunción</competicion>
@@ -1756,7 +1810,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="122">
+  <evento id="109">
     <nombre>Napoli – L84</nombre>
     <deporte>Futsal</deporte>
     <competicion>Italia. Serie A</competicion>
@@ -1766,7 +1820,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="123">
+  <evento id="110">
     <nombre>Gonzalo Villanueva – Juan Bautista Torres</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Asunción</competicion>
@@ -1776,7 +1830,7 @@ player/live.php?id=261005&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-06-16T22:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="124">
+  <evento id="111">
     <nombre>Hernando Jose Escurra Isnardi – Hernan Casanova</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP Challenger. Asunción</competicion>
