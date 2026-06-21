@@ -1,6 +1,53 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
+    <datetime>2026-06-21 14:00</datetime>
+    <league>Copa del Mundo</league>
+    <teams>Bélgica vs Irán</teams>
+    <channels>
+      <channel>
+        <channel_name>Dsports 2</channel_name>
+        <channel_id>36793-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRzMg==</url>
+      </channel>
+      <channel>
+        <channel_name>Telemundo</channel_name>
+        <channel_id>36793-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10ZWxlbXVuZG8=</url>
+      </channel>
+      <channel>
+        <channel_name>Telemundo HD</channel_name>
+        <channel_id>36793-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dGVsZW11bmRv</url>
+      </channel>
+      <channel>
+        <channel_name>Tigo Sports</channel_name>
+        <channel_id>36793-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZXZlbjI=</url>
+      </channel>
+      <channel>
+        <channel_name>Tigo Sports HD</channel_name>
+        <channel_id>36793-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZXZlbjI=</url>
+      </channel>
+      <channel>
+        <channel_name>Caracol TV</channel_name>
+        <channel_id>36793-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1jYXJhY29s</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Sports 1 USA</channel_name>
+        <channel_id>36793-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09Zm94c3BvcnRzMV91c2E=</url>
+      </channel>
+      <channel>
+        <channel_name>Telefe</channel_name>
+        <channel_id>36793-8</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10ZWxlZmU=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
     <datetime>2026-06-21 17:00</datetime>
     <league>Copa del Mundo</league>
     <teams>Uruguay vs Islas de Cabo Verde</teams>
@@ -146,28 +193,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-06-21 11:30</datetime>
-    <league>Copa Chile</league>
-    <teams>Huachipato vs Puerto Montt</teams>
-    <channels>
-      <channel>
-        <channel_name>TNT Sports Premiun CL</channel_name>
-        <channel_id>36802-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
-      </channel>
-      <channel>
-        <channel_name>TNT Sports Premiun CL OP2</channel_name>
-        <channel_id>36802-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
-      </channel>
-      <channel>
-        <channel_name>TNT Sports Premiun CL HD</channel_name>
-        <channel_id>36802-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dG50c3BvcnRzY2hpbGU=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-06-21 19:00</datetime>
     <league>Copa Chile</league>
     <teams>O'Higgins vs Unión Española</teams>
@@ -186,48 +211,6 @@
         <channel_name>TNT Sports Premiun CL HD</channel_name>
         <channel_id>36805-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dG50c3BvcnRzY2hpbGU=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-06-21 14:00</datetime>
-    <league>Copa del Mundo</league>
-    <teams>Bélgica vs Irán</teams>
-    <channels>
-      <channel>
-        <channel_name>Telemundo</channel_name>
-        <channel_id>36793-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10ZWxlbXVuZG8=</url>
-      </channel>
-      <channel>
-        <channel_name>Telemundo HD</channel_name>
-        <channel_id>36793-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dGVsZW11bmRv</url>
-      </channel>
-      <channel>
-        <channel_name>Tigo Sports</channel_name>
-        <channel_id>36793-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZXZlbjI=</url>
-      </channel>
-      <channel>
-        <channel_name>Tigo Sports HD</channel_name>
-        <channel_id>36793-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZXZlbjI=</url>
-      </channel>
-      <channel>
-        <channel_name>Caracol TV</channel_name>
-        <channel_id>36793-5</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1jYXJhY29s</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Sports 1 USA</channel_name>
-        <channel_id>36793-6</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL3R2L2NhbmFsLnBocD9zdHJlYW09Zm94c3BvcnRzMV91c2E=</url>
-      </channel>
-      <channel>
-        <channel_name>Telefe</channel_name>
-        <channel_id>36793-7</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10ZWxlZmU=</url>
       </channel>
     </channels>
   </event>
