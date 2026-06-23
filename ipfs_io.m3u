@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-06-23 12:41:22
+# IPFS Acestream Channels - 2026-06-23 15:56:04
 # Total Channels: 21
-# Generated: 2026-06-23T12:28:36Z
+# Generated: 2026-06-23T15:00:03Z
 
 # -------- COMBATE --------
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="COMBATE",COMBATE 1080p *
@@ -48,9 +48,6 @@ http://127.0.0.1:6878/ace/getstream?id=aab0be9632ef2f53e99f2e596a8e6a30ed34a29c
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/World-Cup-Trophy---Football-Award-Winner-Event-General-Secondary.png" group-title="MUNDIAL",FIFA World Cup 1 **
 http://127.0.0.1:6878/ace/getstream?id=e8670925c3bfd0ceafa54192772a6b8a482bd94b
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.hoy.cr/wp-content/uploads/2026/02/FOX.jpeg" group-title="MUNDIAL",Fox Sport 1080p **
-http://127.0.0.1:6878/ace/getstream?id=ea17dcd0ff2234f634f8855118712bd394bb784a
-
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="MUNDIAL",FUSSBALL TV 4k 4K **
 http://127.0.0.1:6878/ace/getstream?id=3b73feccf6e835b6c4a5a10c3f0425643091cfca
 
@@ -60,6 +57,9 @@ http://127.0.0.1:6878/ace/getstream?id=7030f82a081ed0a32f75a2d16ba0c995cbf4e686
 # -------- TDT --------
 #EXTINF:-1 tvg-id="La 1 HD" tvg-logo="https://i.ibb.co/Vf2GT70/la1.png" group-title="TDT",La 1 TVE 720p *
 http://127.0.0.1:6878/ace/getstream?id=02622fa2fab63847d88dc14fd9fa5c2fc35de8a8
+
+#EXTINF:-1 tvg-id="La 1 HD" tvg-logo="https://i.ibb.co/Vf2GT70/la1.png" group-title="TDT",La 1 TVE **
+http://127.0.0.1:6878/ace/getstream?id=379192c3ee5a15570e2c685179bc53cb7133cc6c
 
 #EXTINF:-1 tvg-id="La 1 HD" tvg-logo="https://i.ibb.co/Vf2GT70/la1.png" group-title="TDT",La 1 TVE **
 http://127.0.0.1:6878/ace/getstream?id=979d3b873871a5a9a56d3eb481ca77b707e01102
