@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-06-23 21:03:04
-# Total Channels: 32
-# Generated: 2026-06-23T21:00:01Z
+# IPFS Acestream Channels - 2026-06-24 04:10:31
+# Total Channels: 34
+# Generated: 2026-06-24T04:00:02Z
 
 # -------- BALONCESTO --------
 #EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2025/12/dazn-baloncesto-movistar-plus.png" group-title="BALONCESTO",DAZN Baloncesto 720p **
@@ -78,7 +78,16 @@ http://127.0.0.1:6878/ace/getstream?id=584e20154750a15d14cb59953bb9cdd923c331bb
 http://127.0.0.1:6878/ace/getstream?id=aab0be9632ef2f53e99f2e596a8e6a30ed34a29c
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/World-Cup-Trophy---Football-Award-Winner-Event-General-Secondary.png" group-title="MUNDIAL",FIFA World Cup 1 **
+http://127.0.0.1:6878/ace/getstream?id=961cb142fb97d1307a4c5637d525bad6d534ec94
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/World-Cup-Trophy---Football-Award-Winner-Event-General-Secondary.png" group-title="MUNDIAL",FIFA World Cup 1 **
 http://127.0.0.1:6878/ace/getstream?id=e8670925c3bfd0ceafa54192772a6b8a482bd94b
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/World-Cup-Trophy---Football-Award-Winner-Event-General-Secondary.png" group-title="MUNDIAL",FIFA World Cup 2 **
+http://127.0.0.1:6878/ace/getstream?id=0e6ba5e9872838a8740f4b2679d522f896b3448c
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/World-Cup-Trophy---Football-Award-Winner-Event-General-Secondary.png" group-title="MUNDIAL",FIFA World Cup 3 **
+http://127.0.0.1:6878/ace/getstream?id=d07816dade862339446b6c2a16d131617a3a9389
 
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="MUNDIAL",FUSSBALL TV 4k 4K **
 http://127.0.0.1:6878/ace/getstream?id=3b73feccf6e835b6c4a5a10c3f0425643091cfca
@@ -101,9 +110,6 @@ http://127.0.0.1:6878/ace/getstream?id=02622fa2fab63847d88dc14fd9fa5c2fc35de8a8
 http://127.0.0.1:6878/ace/getstream?id=379192c3ee5a15570e2c685179bc53cb7133cc6c
 
 # -------- TENNIS --------
-#EXTINF:-1 tvg-id="" tvg-logo="https://www.sportsvideo.org/wp-content/uploads/2016/01/tennis-channel-logo-e1518530950839.jpg" group-title="TENNIS",Tennis Channel 1080p *
-http://127.0.0.1:6878/ace/getstream?id=a4cbadd19442b800727be713270fa9c917cc8582
-
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.sportsvideo.org/wp-content/uploads/2016/01/tennis-channel-logo-e1518530950839.jpg" group-title="TENNIS",Tennis Channel 1080p **
 http://127.0.0.1:6878/ace/getstream?id=43c549e5781f5a923b76f8f29cde122b5be164eb
 
