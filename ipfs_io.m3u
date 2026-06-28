@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-06-28 05:22:03
-# Total Channels: 47
-# Generated: 2026-06-28T05:00:02Z
+# IPFS Acestream Channels - 2026-06-28 09:21:57
+# Total Channels: 46
+# Generated: 2026-06-28T09:00:02Z
 
 # -------- DEPORTES --------
 #EXTINF:-1 tvg-id="Esport 3" tvg-logo="https://img.3cat.cat/multimedia/jpg/1/5/1697802708951.jpg" group-title="DEPORTES",Esport3 720p *
@@ -31,16 +31,16 @@ http://127.0.0.1:6878/ace/getstream?id=48a589dbeab3544662fafd79888aada7d834cfe9
 
 # -------- FORMULA 1 --------
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p **
-http://127.0.0.1:6878/ace/getstream?id=20086a76248efe8d5230c15d41c69bae8fa6381c
-
-#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p **
 http://127.0.0.1:6878/ace/getstream?id=f16d68fa5ff64f3894a45062ca28e4e66f142c6a
 
-#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
-http://127.0.0.1:6878/ace/getstream?id=f8b0eae8fda973cf426311541d1668aa592f0a8c
+#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p **
+http://127.0.0.1:6878/ace/getstream?id=20086a76248efe8d5230c15d41c69bae8fa6381c
 
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
 http://127.0.0.1:6878/ace/getstream?id=02be332ebead0484a5354fa25e97b6833b8b129e
+
+#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
+http://127.0.0.1:6878/ace/getstream?id=f8b0eae8fda973cf426311541d1668aa592f0a8c
 
 # -------- MOTOGP --------
 #EXTINF:-1 tvg-id="" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p *
@@ -126,9 +126,6 @@ http://127.0.0.1:6878/ace/getstream?id=79e6e01eb3db42e3da2428895181c0d32e4abd1f
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/World-Cup-Trophy---Football-Award-Winner-Event-General-Secondary.png" group-title="MUNDIAL",FIFA World Cup 3 **
 http://127.0.0.1:6878/ace/getstream?id=d07816dade862339446b6c2a16d131617a3a9389
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.hoy.cr/wp-content/uploads/2026/02/FOX.jpeg" group-title="MUNDIAL",FOX ONE 4K **
-http://127.0.0.1:6878/ace/getstream?id=f1e6e441e398910e77eb51ff452dba0a733dd27d
-
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="MUNDIAL",FUSSBALL TV 4k 4K **
 http://127.0.0.1:6878/ace/getstream?id=3b73feccf6e835b6c4a5a10c3f0425643091cfca
 
@@ -145,10 +142,10 @@ http://127.0.0.1:6878/ace/getstream?id=8374a313823bbaa3140ca510a172cbc1830f609c
 
 # -------- TDT --------
 #EXTINF:-1 tvg-id="La 1 HD" tvg-logo="https://i.ibb.co/Vf2GT70/la1.png" group-title="TDT",La 1 TVE **
-http://127.0.0.1:6878/ace/getstream?id=979d3b873871a5a9a56d3eb481ca77b707e01102
+http://127.0.0.1:6878/ace/getstream?id=379192c3ee5a15570e2c685179bc53cb7133cc6c
 
 #EXTINF:-1 tvg-id="La 1 HD" tvg-logo="https://i.ibb.co/Vf2GT70/la1.png" group-title="TDT",La 1 TVE **
-http://127.0.0.1:6878/ace/getstream?id=379192c3ee5a15570e2c685179bc53cb7133cc6c
+http://127.0.0.1:6878/ace/getstream?id=979d3b873871a5a9a56d3eb481ca77b707e01102
 
 # -------- TOROS --------
 #EXTINF:-1 tvg-id="" tvg-logo="https://github.com/davidmuma/picons_dobleM/blob/master/icon/Onetoro.png?raw=true" group-title="TOROS",Onetoro TV 1080p *
