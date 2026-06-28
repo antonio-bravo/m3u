@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-06-28 00:08:55
-# Total Channels: 49
-# Generated: 2026-06-28T00:00:03Z
+# IPFS Acestream Channels - 2026-06-28 05:22:03
+# Total Channels: 47
+# Generated: 2026-06-28T05:00:02Z
 
 # -------- DEPORTES --------
 #EXTINF:-1 tvg-id="Esport 3" tvg-logo="https://img.3cat.cat/multimedia/jpg/1/5/1697802708951.jpg" group-title="DEPORTES",Esport3 720p *
@@ -17,10 +17,10 @@ http://127.0.0.1:6878/ace/getstream?id=64eb19dccf5e60f121a4c1f7c69489af6b1c9ca9
 http://127.0.0.1:6878/ace/getstream?id=12404b00d2787995d639ccf71a80da5d39d153f9
 
 #EXTINF:-1 tvg-id="Teledeporte" tvg-logo="https://img2.rtve.es/n/15966755" group-title="DEPORTES",Teledeporte 1080p **
-http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
+http://127.0.0.1:6878/ace/getstream?id=77cf022557c56cdf8d8115f50e61f846ad72ee05
 
 #EXTINF:-1 tvg-id="Teledeporte" tvg-logo="https://img2.rtve.es/n/15966755" group-title="DEPORTES",Teledeporte 1080p **
-http://127.0.0.1:6878/ace/getstream?id=77cf022557c56cdf8d8115f50e61f846ad72ee05
+http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
 
 # -------- EUROSPORT --------
 #EXTINF:-1 tvg-id="Eurosport 1 HD" tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" group-title="EUROSPORT",Eurosport 1 720p **
@@ -31,10 +31,10 @@ http://127.0.0.1:6878/ace/getstream?id=48a589dbeab3544662fafd79888aada7d834cfe9
 
 # -------- FORMULA 1 --------
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p **
-http://127.0.0.1:6878/ace/getstream?id=f16d68fa5ff64f3894a45062ca28e4e66f142c6a
+http://127.0.0.1:6878/ace/getstream?id=20086a76248efe8d5230c15d41c69bae8fa6381c
 
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p **
-http://127.0.0.1:6878/ace/getstream?id=20086a76248efe8d5230c15d41c69bae8fa6381c
+http://127.0.0.1:6878/ace/getstream?id=f16d68fa5ff64f3894a45062ca28e4e66f142c6a
 
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
 http://127.0.0.1:6878/ace/getstream?id=f8b0eae8fda973cf426311541d1668aa592f0a8c
@@ -123,9 +123,6 @@ http://127.0.0.1:6878/ace/getstream?id=aab0be9632ef2f53e99f2e596a8e6a30ed34a29c
 #EXTINF:-1 tvg-id="" tvg-logo="https://dsports-widgets.tbxnet.com/assets/images/channels/1610.png" group-title="MUNDIAL",Direct Sport 1080p **
 http://127.0.0.1:6878/ace/getstream?id=79e6e01eb3db42e3da2428895181c0d32e4abd1f
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://dsports-widgets.tbxnet.com/assets/images/channels/1610.png" group-title="MUNDIAL",Direct Sport 2 1080p **
-http://127.0.0.1:6878/ace/getstream?id=0d780c1fb5fdf2121d9544f1a6892cb1053dd061
-
 #EXTINF:-1 tvg-id="" tvg-logo="https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/World-Cup-Trophy---Football-Award-Winner-Event-General-Secondary.png" group-title="MUNDIAL",FIFA World Cup 3 **
 http://127.0.0.1:6878/ace/getstream?id=d07816dade862339446b6c2a16d131617a3a9389
 
@@ -139,9 +136,6 @@ http://127.0.0.1:6878/ace/getstream?id=3b73feccf6e835b6c4a5a10c3f0425643091cfca
 http://127.0.0.1:6878/ace/getstream?id=7030f82a081ed0a32f75a2d16ba0c995cbf4e686
 
 # -------- NBA --------
-#EXTINF:-1 tvg-id="" tvg-logo="https://espnpressroom.com/us/files/2023/02/New-NBA-Logo.png" group-title="NBA",NBA ESPN 720p *
-http://127.0.0.1:6878/ace/getstream?id=bf3773e7f5e53c11347c70c18bd085322efbc90f
-
 #EXTINF:-1 tvg-id="" tvg-logo="https://espnpressroom.com/us/files/2023/02/New-NBA-Logo.png" group-title="NBA",NBA ESPN 1080p *
 http://127.0.0.1:6878/ace/getstream?id=812726de17b7fdc6c0b5139b012fe336a049903a
 
