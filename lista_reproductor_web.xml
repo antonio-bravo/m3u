@@ -1,18 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-07-02 04:30</datetime>
-    <league>Rugby – World Rugby Uruguay</league>
-    <teams>Rugby – World Rugby Uruguay</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 4</channel_name>
-        <channel_id>36946-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsLnBocD9zdHJlYW09ZXZlbjI=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-07-02 14:00</datetime>
     <league>Copa del Mundo</league>
     <teams>España vs Austria</teams>
@@ -181,52 +169,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-07-02 06:20</datetime>
-    <league>Rugby – World Rugby U20 Championship – Argentina vs Irlanda</league>
-    <teams>Rugby – World Rugby U20 Championship – Argentina vs Irlanda</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 4</channel_name>
-        <channel_id>36943-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsLnBocD9zdHJlYW09ZXZlbjI=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-07-02 05:00</datetime>
-    <league>Tenis – Wimbledon – Dia #4 – Segunda Ronda</league>
-    <teams>Tenis – Wimbledon – Dia #4 – Segunda Ronda</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 3</channel_name>
-        <channel_id>36942-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>36942-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsLnBocD9zdHJlYW09ZXZlbjE=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 HD</channel_name>
-        <channel_id>36942-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsLnBocD9zdHJlYW09ZXZlbjE=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-07-02 05:30</datetime>
-    <league>De Minaur Alex vs Mannarino Adrian</league>
-    <teams>De Minaur Alex vs Mannarino Adrian</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 3</channel_name>
-        <channel_id>36947-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-07-02 18:00</datetime>
     <league>Copa del Mundo</league>
     <teams>Portugal vs Croacia</teams>
@@ -285,6 +227,33 @@
         <channel_name>America TV | HD</channel_name>
         <channel_id>36937-11</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsZXMucGhwP3N0cmVhbT1hbWVyaWNhdHY=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-02 08:00</datetime>
+    <league>Tenis – Wimbledon – Dia #4 – Segunda Ronda</league>
+    <teams>Tenis – Wimbledon – Dia #4 – Segunda Ronda</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 3</channel_name>
+        <channel_id>36942-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsLnBocD9zdHJlYW09ZXZlbjM=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP2</channel_name>
+        <channel_id>36942-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vdml2by9jYW5hbC5waHA/c3RyZWFtPWVzcG4z</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP3</channel_name>
+        <channel_id>36942-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vdml2by9jYW5hbGVzLnBocD9zdHJlYW09ZXNwbjM=</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 HD</channel_name>
+        <channel_id>36942-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dnR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZXNwbjM=</url>
       </channel>
     </channels>
   </event>
