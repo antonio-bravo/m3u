@@ -1,26 +1,66 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-07-03 17:23:49" total="155">
+<eventos generado="2026-07-03 18:58:27" total="135">
   <evento id="1">
-    <nombre>Eurocopa</nombre>
+    <nombre>Finlandia –  Hungría</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Campeonato de Europa</competicion>
+    <competicion>Europa</competicion>
     <fecha>3 de julio</fecha>
-    <hora>09:00</hora>
-    <url>https://livetv.sx/es/eventinfo/390092659_eurocopa/</url>
-    <datetime_iso>2026-07-03T09:00:00</datetime_iso>
+    <hora>80:69</hora>
+    <url>https://livetv.sx/es/eventinfo/388321404_finlandia_hungr__a/</url>
+    <datetime_iso>2026-07-03T00:00:00</datetime_iso>
     <streams total="0" />
   </evento>
   <evento id="2">
-    <nombre>Pro Tour, Gstaad</nombre>
+    <nombre>Austria –  Polonia</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Pro Tour</competicion>
+    <competicion>Europa</competicion>
     <fecha>3 de julio</fecha>
-    <hora>09:00</hora>
-    <url>https://livetv.sx/es/eventinfo/390375466_pro_tour_gstaad/</url>
-    <datetime_iso>2026-07-03T09:00:00</datetime_iso>
+    <hora>28:60</hora>
+    <url>https://livetv.sx/es/eventinfo/388321406_austria_polonia/</url>
+    <datetime_iso>2026-07-03T00:00:00</datetime_iso>
     <streams total="0" />
   </evento>
   <evento id="3">
+    <nombre>Estonia –  Eslovenia</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Europa</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>55:34</hora>
+    <url>https://livetv.sx/es/eventinfo/388321414_estonia_eslovenia/</url>
+    <datetime_iso>2026-07-03T00:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="4">
+    <nombre>Israel –  Alemania</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Europa</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>04:12</hora>
+    <url>https://livetv.sx/es/eventinfo/388321418_israel_alemania/</url>
+    <datetime_iso>2026-07-03T04:12:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="5">
+    <nombre>Chipre –  Croacia</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Europa</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>09:18</hora>
+    <url>https://livetv.sx/es/eventinfo/388321410_chipre_croacia/</url>
+    <datetime_iso>2026-07-03T09:18:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="6">
+    <nombre>Real Regata de Henley</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Remo</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>10:00</hora>
+    <url>https://livetv.sx/es/eventinfo/389975971_real_regata_de_henley/</url>
+    <datetime_iso>2026-07-03T10:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="7">
     <nombre>Championship League</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Snooker</competicion>
@@ -44,7 +84,7 @@ player/live.php?id=262130&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="4">
+  <evento id="8">
     <nombre>Bordeaux Premier Padel</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Premier Padel</competicion>
@@ -68,7 +108,7 @@ player/live.php?id=261081&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="5">
+  <evento id="9">
     <nombre>Wimbledon</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Grand Slam. Wimbledon</competicion>
@@ -78,303 +118,63 @@ player/live.php?id=261081&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T12:10:00</datetime_iso>
     <streams total="8">
       <stream id="1">
-        <url>https://emb.apl421.me/
-player/live.php?id=261589&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261589&amp;lang=es&amp;eid=389754609&amp;lid=3032941&amp;ci=108&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
         <url>https://dlhd.st/stream/stream-82.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
         <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033214&amp;lang=es&amp;eid=389754609&amp;lid=3033214&amp;ci=108&amp;si=4</enlace_original>
       </stream>
-      <stream id="3">
-        <url>https://emb.apl421.me/
-player/live.php?id=238237&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
-        <idioma_nombre>Español</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=238237&amp;lang=es&amp;eid=389754609&amp;lid=2790291&amp;ci=108&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
+      <stream id="2">
         <url>https://emb.apl421.me/
 player/live.php?id=258100&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
         <idioma_nombre>Inglés</idioma_nombre>
         <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=258100&amp;lang=es&amp;eid=389754609&amp;lid=3002984&amp;ci=108&amp;si=4</enlace_original>
       </stream>
-      <stream id="5">
-        <url>https://emb.apl421.me/
-player/live.php?id=260990&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/12.png</idioma>
-        <idioma_nombre>Turco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=260990&amp;lang=es&amp;eid=389754609&amp;lid=3028916&amp;ci=108&amp;si=4</enlace_original>
-      </stream>
-      <stream id="6">
+      <stream id="3">
         <url>https://emb.apl421.me/
 player/live.php?id=260997&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
         <idioma_nombre>Coreano</idioma_nombre>
         <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=260997&amp;lang=es&amp;eid=389754609&amp;lid=3025541&amp;ci=108&amp;si=4</enlace_original>
       </stream>
-      <stream id="7">
+      <stream id="4">
         <url>https://emb.apl421.me/
 player/live.php?id=261094&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
         <idioma_nombre>Portugués (Portugal)</idioma_nombre>
         <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261094&amp;lang=es&amp;eid=389754609&amp;lid=3032268&amp;ci=108&amp;si=4</enlace_original>
       </stream>
-      <stream id="8">
+      <stream id="5">
         <url>https://emb.apl421.me/
 player/live.php?id=261307&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
         <idioma_nombre>Francés (Francia)</idioma_nombre>
         <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261307&amp;lang=es&amp;eid=389754609&amp;lid=3032269&amp;ci=108&amp;si=4</enlace_original>
       </stream>
+      <stream id="6">
+        <url>https://emb.apl421.me/
+player/live.php?id=261811&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
+        <idioma_nombre>Español</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261811&amp;lang=es&amp;eid=389754609&amp;lid=3027725&amp;ci=108&amp;si=4</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://emb.apl421.me/
+player/live.php?id=262005&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262005&amp;lang=es&amp;eid=389754609&amp;lid=3029678&amp;ci=108&amp;si=4</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://emb.apl421.me/
+player/live.php?id=262007&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262007&amp;lang=es&amp;eid=389754609&amp;lid=3029683&amp;ci=108&amp;si=4</enlace_original>
+      </stream>
     </streams>
   </evento>
-  <evento id="6">
-    <nombre>Daria Kasátkina (M) –  Naomi Osaka (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>14:10</hora>
-    <url>https://livetv.sx/es/eventinfo/390101219__/</url>
-    <datetime_iso>2026-07-03T14:10:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="7">
-    <nombre>Ekaterina Alexandrova (M) –  Iva Jovic (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>14:15</hora>
-    <url>https://livetv.sx/es/eventinfo/390129808__/</url>
-    <datetime_iso>2026-07-03T14:15:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="8">
-    <nombre>Dolehide (M) /  Parks (M) –  Qianhui (M) /  Pridankina  (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>14:30</hora>
-    <url>https://livetv.sx/es/eventinfo/389644194__/</url>
-    <datetime_iso>2026-07-03T14:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="9">
-    <nombre>Arthur Rinderknech –  Novak Djokovic</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>14:40</hora>
-    <url>https://livetv.sx/es/eventinfo/390140976_arthur_rinderknech_novak_djokovic/</url>
-    <datetime_iso>2026-07-03T14:40:00</datetime_iso>
-    <streams total="0" />
-  </evento>
   <evento id="10">
-    <nombre>Rafael Jodar –  Shintaro Mochizuki</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>14:40</hora>
-    <url>https://livetv.sx/es/eventinfo/390232649_rafael_jodar_shintaro_mochizuki/</url>
-    <datetime_iso>2026-07-03T14:40:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="11">
-    <nombre>Jessica Pegula (M) –   Jessica Bouzas Maneiro (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>14:40</hora>
-    <url>https://livetv.sx/es/eventinfo/390125274__jessica_pegula_m__jessica_bouzas_maneiro_m/</url>
-    <datetime_iso>2026-07-03T14:40:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="12">
-    <nombre>Arthur Rinderknech – Novak Djokovic</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>14:40</hora>
-    <url>https://livetv.sx/es/eventinfo/390140976__/</url>
-    <datetime_iso>2026-07-03T14:40:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="13">
-    <nombre>Rafael Jodar – Shintaro Mochizuki</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>14:40</hora>
-    <url>https://livetv.sx/es/eventinfo/390232649__/</url>
-    <datetime_iso>2026-07-03T14:40:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="14">
-    <nombre>Jessica Pegula (M) –  Jessica Bouzas Maneiro (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>14:40</hora>
-    <url>https://livetv.sx/es/eventinfo/390125274__/</url>
-    <datetime_iso>2026-07-03T14:40:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="15">
-    <nombre>Griekspoor / Van de Zandschulp –  Nouza / Oberleitner</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>14:45</hora>
-    <url>https://livetv.sx/es/eventinfo/390246760_griekspoor__van_de_zandschulp_nouza__oberleitner/</url>
-    <datetime_iso>2026-07-03T14:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="16">
-    <nombre>Naftan –  Dinamo Brest</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Bielorrusia. Vysheyshaya Liga</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:00</hora>
-    <url>https://livetv.sx/es/eventinfo/388495245_naftan_dinamo_brest/</url>
-    <datetime_iso>2026-07-03T15:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="17">
-    <nombre>Formula 3, Silverstone</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Fórmula 3</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389822541_formula_3_silverstone/</url>
-    <datetime_iso>2026-07-03T15:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="18">
-    <nombre>Ritm Grodno (W) –  Tekstilshchik Baranovichi (W)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Liga Premier</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:00</hora>
-    <url>https://livetv.sx/es/eventinfo/390153774_ritm_grodno_w_tekstilshchik_baranovichi_w/</url>
-    <datetime_iso>2026-07-03T15:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="19">
-    <nombre>Rakhimova (M) /  Kato (M) –   Perez (M) /  Schuurs (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389644187__rakhimova_m___kato_m__perez_m___schuurs_m/</url>
-    <datetime_iso>2026-07-03T15:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="20">
-    <nombre>Bulgaria U18 (M) –  Grecia U18 (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Campeonato de Europa Sub-18</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389828588_bulgaria_u18_m_grecia_u18_m/</url>
-    <datetime_iso>2026-07-03T15:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="21">
-    <nombre>Naftan – Dinamo Brest</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Bielorrusia. Vysheyshaya Liga</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:00</hora>
-    <url>https://livetv.sx/es/eventinfo/388495245__/</url>
-    <datetime_iso>2026-07-03T15:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="22">
-    <nombre>Rakhimova (M) /  Kato (M) –  Perez (M) /  Schuurs (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389644187__/</url>
-    <datetime_iso>2026-07-03T15:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="23">
-    <nombre>Bulgaria U18 (M) – Grecia U18 (M)</nombre>
-    <deporte>Voleibol</deporte>
-    <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389828588_bulgaria_u18_w_greece_u18_w/</url>
-    <datetime_iso>2026-07-03T15:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="24">
-    <nombre>Porsche Sixt Carrera Cup Alemania</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Porsche</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:10</hora>
-    <url>https://livetv.sx/es/eventinfo/390109034_porsche_sixt_carrera_cup_alemania/</url>
-    <datetime_iso>2026-07-03T15:10:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="25">
-    <nombre>Porsche Sixt Carrera Cup AlemaniaClasificación</nombre>
-    <deporte>Automovilismo</deporte>
-    <competicion>Porsche</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:10</hora>
-    <url>https://livetv.sx/es/eventinfo/390109034_porsche_sixt_carrera_cup_germany/</url>
-    <datetime_iso>2026-07-03T15:10:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="26">
-    <nombre>Andreozzi /  Sutjiadi (M) –  Guinard /  Mladenovic (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Wimbledon. Mixtos</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:15</hora>
-    <url>https://livetv.sx/es/eventinfo/390116159_andreozzi___sutjiadi_m_guinard___mladenovic_m/</url>
-    <datetime_iso>2026-07-03T15:15:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="27">
-    <nombre>Andreozzi /  Sutjiadi (M) – Guinard /  Mladenovic (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Wimbledon. Mixtos</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:15</hora>
-    <url>https://livetv.sx/es/eventinfo/390116159__/</url>
-    <datetime_iso>2026-07-03T15:15:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="28">
-    <nombre>Jan-lennard Struff –  Daniil Medvedev</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:20</hora>
-    <url>https://livetv.sx/es/eventinfo/390232651_jan_lennard_struff_daniil_medvedev/</url>
-    <datetime_iso>2026-07-03T15:20:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="29">
-    <nombre>Jan-lennard Struff – Daniil Medvedev</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:20</hora>
-    <url>https://livetv.sx/es/eventinfo/390232651__/</url>
-    <datetime_iso>2026-07-03T15:20:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="30">
     <nombre>Blaze (W) –  Surrey Stars (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Reino Unido. Vitality Blast</competicion>
@@ -382,17 +182,9 @@ player/live.php?id=261307&amp;w=700&amp;h=480</url>
     <hora>15:30</hora>
     <url>https://livetv.sx/es/eventinfo/389825686_blaze_w_surrey_stars_m/</url>
     <datetime_iso>2026-07-03T15:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://emb.apl421.me/
-player/live.php?id=262098&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262098&amp;lang=es&amp;eid=389825686&amp;lid=3032208&amp;ci=1650&amp;si=41</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="31">
+  <evento id="11">
     <nombre>Yorkshire Diamonds (M) –  Somerset (W)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Reino Unido. Vitality Blast</competicion>
@@ -400,96 +192,9 @@ player/live.php?id=262098&amp;w=700&amp;h=480</url>
     <hora>15:30</hora>
     <url>https://livetv.sx/es/eventinfo/389825687_yorkshire_diamonds_m_somerset_w/</url>
     <datetime_iso>2026-07-03T15:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/x6Skp3IG6NI?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=x6Skp3IG6NI&amp;lang=es&amp;eid=389825687&amp;lid=3033523&amp;ci=1650&amp;si=41</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="32">
-    <nombre>Feeder Istanbul</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>No especificado</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:30</hora>
-    <url>https://livetv.sx/es/eventinfo/390090615_feeder_istanbul/</url>
-    <datetime_iso>2026-07-03T15:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="33">
-    <nombre>Begu (M) /  Cristian (M) –   Mertens (M) /  Zhang (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:30</hora>
-    <url>https://livetv.sx/es/eventinfo/389644206__begu_m___cristian_m__mertens_m___zhang_m/</url>
-    <datetime_iso>2026-07-03T15:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="34">
-    <nombre>Korpatsch (M) /  Fossa Huergo (M) –   Shymanovich (M) /  Kozyreva (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:30</hora>
-    <url>https://livetv.sx/es/eventinfo/390398706__korpatsch_m___fossa_huergo_m__shymanovich_m___kozyreva_m/</url>
-    <datetime_iso>2026-07-03T15:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="35">
-    <nombre>Begu (M) /  Cristian (M) –  Mertens (M) /  Zhang (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:30</hora>
-    <url>https://livetv.sx/es/eventinfo/389644206__/</url>
-    <datetime_iso>2026-07-03T15:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="36">
-    <nombre>Korpatsch (M) /  Fossa Huergo (M) –  Shymanovich (M) /  Kozyreva (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:30</hora>
-    <url>https://livetv.sx/es/eventinfo/390398706__/</url>
-    <datetime_iso>2026-07-03T15:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="37">
-    <nombre>Jannik Sinner –  Jenson Brooksby</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:40</hora>
-    <url>https://livetv.sx/es/eventinfo/390114845_jannik_sinner_jenson_brooksby/</url>
-    <datetime_iso>2026-07-03T15:40:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="38">
-    <nombre>Jannik Sinner – Jenson Brooksby</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:40</hora>
-    <url>https://livetv.sx/es/eventinfo/390114845__/</url>
-    <datetime_iso>2026-07-03T15:40:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="39">
-    <nombre>Hubert Hurkacz –  Tommy Paul</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>15:55</hora>
-    <url>https://livetv.sx/es/eventinfo/390101156_hubert_hurkacz_tommy_paul/</url>
-    <datetime_iso>2026-07-03T15:55:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="40">
+  <evento id="12">
     <nombre>Hubert Hurkacz – Tommy Paul</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Wimbledon</competicion>
@@ -499,7 +204,7 @@ player/live.php?id=262098&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T15:55:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="41">
+  <evento id="13">
     <nombre>John Deere Classic</nombre>
     <deporte>Fútbol</deporte>
     <competicion>PGA Tour</competicion>
@@ -523,10 +228,10 @@ player/live.php?id=262373&amp;w=700&amp;h=480</url>
         <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262373&amp;lang=es&amp;eid=389831219&amp;lid=3030992&amp;ci=232&amp;si=37</enlace_original>
       </stream>
       <stream id="3">
-        <url>https://dlhd.st/stream/stream-710.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033395&amp;lang=es&amp;eid=389831219&amp;lid=3033395&amp;ci=232&amp;si=37</enlace_original>
+        <url>https://dlhd.st/stream/stream-70.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033145&amp;lang=es&amp;eid=389831219&amp;lid=3033145&amp;ci=232&amp;si=37</enlace_original>
       </stream>
       <stream id="4">
         <url>https://dlhd.st/stream/stream-937.php</url>
@@ -535,24 +240,14 @@ player/live.php?id=262373&amp;w=700&amp;h=480</url>
         <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033394&amp;lang=es&amp;eid=389831219&amp;lid=3033394&amp;ci=232&amp;si=37</enlace_original>
       </stream>
       <stream id="5">
-        <url>https://dlhd.st/stream/stream-70.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033145&amp;lang=es&amp;eid=389831219&amp;lid=3033145&amp;ci=232&amp;si=37</enlace_original>
+        <url>https://dlhd.st/stream/stream-710.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033395&amp;lang=es&amp;eid=389831219&amp;lid=3033395&amp;ci=232&amp;si=37</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="42">
-    <nombre>Astana –  Zhenys</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Kazajistán. Liga Premier</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:00</hora>
-    <url>https://livetv.sx/es/eventinfo/388495613_astana_zhenys/</url>
-    <datetime_iso>2026-07-03T16:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="43">
+  <evento id="14">
     <nombre>West Indies –  Sri Lanka</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Test</competicion>
@@ -582,27 +277,7 @@ player/live.php?id=261293&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="44">
-    <nombre>DTM, Norisring</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Alemania. DTM</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389822624_dtm_norisring/</url>
-    <datetime_iso>2026-07-03T16:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="45">
-    <nombre>Formula 2, Silverstone</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Fórmula 2</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389822571_formula_2_silverstone/</url>
-    <datetime_iso>2026-07-03T16:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="46">
+  <evento id="15">
     <nombre>Canada Open</nombre>
     <deporte>Fútbol</deporte>
     <competicion>BWF World Tour</competicion>
@@ -625,127 +300,7 @@ player/live.php?id=261293&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="47">
-    <nombre>Stella Del Mare –  Gladiators Viareggio</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Italia. Serie A</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:00</hora>
-    <url>https://livetv.sx/es/eventinfo/390096280_stella_del_mare_gladiators_viareggio/</url>
-    <datetime_iso>2026-07-03T16:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="48">
-    <nombre>Parry (M) /  Jacquemot (M) –   Sramkova (M) /  Noskova (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389644202__parry_m___jacquemot_m__sramkova_m___noskova_m/</url>
-    <datetime_iso>2026-07-03T16:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="49">
-    <nombre>Cirstea (M) /  Kalinskaya (M) –   Yastremska (M) /  Kalinina (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389644207__cirstea_m___kalinskaya_m__yastremska_m___kalinina_m/</url>
-    <datetime_iso>2026-07-03T16:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="50">
-    <nombre>Copa Mundial Sub-18</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Campeonato mundial Sub-18</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:00</hora>
-    <url>https://livetv.sx/es/eventinfo/388876245_copa_mundial_sub_18/</url>
-    <datetime_iso>2026-07-03T16:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="51">
-    <nombre>Astana – Zhenys</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Kazajistán. Liga Premier</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:00</hora>
-    <url>https://livetv.sx/es/eventinfo/388495613__/</url>
-    <datetime_iso>2026-07-03T16:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="52">
-    <nombre>Parry (M) /  Jacquemot (M) –  Sramkova (M) /  Noskova (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389644202__/</url>
-    <datetime_iso>2026-07-03T16:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="53">
-    <nombre>Cirstea (M) /  Kalinskaya (M) –  Yastremska (M) /  Kalinina (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389644207__/</url>
-    <datetime_iso>2026-07-03T16:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="54">
-    <nombre>Camerún Sub-17 –   Costa de Marfil Sub-17</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Copa Mundial Sub-17</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:30</hora>
-    <url>https://livetv.sx/es/eventinfo/390203384__camer__n_sub_17__costa_de_marfil_sub_17/</url>
-    <datetime_iso>2026-07-03T16:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="55">
-    <nombre>Abdish-Ata –  ALGA</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Kirguistán. Liga Premier</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:30</hora>
-    <url>https://livetv.sx/es/eventinfo/390099540_abdish_ata_alga/</url>
-    <datetime_iso>2026-07-03T16:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="56">
-    <nombre>Muras United –  Asiagoal Bishkek</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Kirguistán. Liga Premier</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:30</hora>
-    <url>https://livetv.sx/es/eventinfo/390099541_muras_united_asiagoal_bishkek/</url>
-    <datetime_iso>2026-07-03T16:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="57">
-    <nombre>Talant –  Neftchi Kochkor-Ata</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Kirguistán. Liga Premier</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:30</hora>
-    <url>https://livetv.sx/es/eventinfo/390099542_talant_neftchi_kochkor_ata/</url>
-    <datetime_iso>2026-07-03T16:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="58">
-    <nombre>Patten /  Nicholls (M) –  King /  Dabrowski (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Wimbledon. Mixtos</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:30</hora>
-    <url>https://livetv.sx/es/eventinfo/390116153_patten___nicholls_m_king___dabrowski_m/</url>
-    <datetime_iso>2026-07-03T16:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="59">
+  <evento id="16">
     <nombre>McNally (M) /  Hunter (M) –   Bondar (M) /  Frech (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>WTA. Wimbledon. Doubles</competicion>
@@ -753,37 +308,9 @@ player/live.php?id=261293&amp;w=700&amp;h=480</url>
     <hora>16:30</hora>
     <url>https://livetv.sx/es/eventinfo/389644198__mcnally_m___hunter_m__bondar_m___frech_m/</url>
     <datetime_iso>2026-07-03T16:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://emb.apl421.me/
-player/live.php?id=261094&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261094&amp;lang=es&amp;eid=389644198&amp;lid=3032268&amp;ci=6048&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="60">
-    <nombre>Jiang (M) /  Yifan (M) –   Golubic (M) /  Valentova (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:30</hora>
-    <url>https://livetv.sx/es/eventinfo/389644199__jiang_m___yifan_m__golubic_m___valentova_m/</url>
-    <datetime_iso>2026-07-03T16:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="61">
-    <nombre>Camerún Sub-17 –  Costa de Marfil Sub-17</nombre>
-    <deporte>Baloncesto</deporte>
-    <competicion>Copa Mundial Sub-17</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>16:30</hora>
-    <url>https://livetv.sx/es/eventinfo/390203384__/</url>
-    <datetime_iso>2026-07-03T16:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="62">
+  <evento id="17">
     <nombre>Patten /  Nicholls (M) – King /  Dabrowski (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>Wimbledon. Mixtos</competicion>
@@ -793,7 +320,7 @@ player/live.php?id=261094&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T16:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="63">
+  <evento id="18">
     <nombre>McNally (M) /  Hunter (M) –  Bondar (M) /  Frech (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Wimbledon. Doubles</competicion>
@@ -803,17 +330,17 @@ player/live.php?id=261094&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T16:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="64">
+  <evento id="19">
     <nombre>Jiang (M) /  Yifan (M) –  Golubic (M) /  Valentova (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Wimbledon. Doubles</competicion>
     <fecha>3 de julio</fecha>
-    <hora>16:30</hora>
+    <hora>16:35</hora>
     <url>https://livetv.sx/es/eventinfo/389644199__/</url>
-    <datetime_iso>2026-07-03T16:30:00</datetime_iso>
+    <datetime_iso>2026-07-03T16:35:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="65">
+  <evento id="20">
     <nombre>Glasspool /  Mihalikova (M) –  Krawietz /  Williams (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Wimbledon. Mixtos</competicion>
@@ -823,7 +350,7 @@ player/live.php?id=261094&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T16:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="66">
+  <evento id="21">
     <nombre>Glasspool /  Mihalikova (M) – Krawietz /  Williams (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>Wimbledon. Mixtos</competicion>
@@ -833,7 +360,7 @@ player/live.php?id=261094&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T16:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="67">
+  <evento id="22">
     <nombre>Dinamo de Kiev –  LASK</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Partido amistoso</competicion>
@@ -843,7 +370,7 @@ player/live.php?id=261094&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="68">
+  <evento id="23">
     <nombre>Alemania (M) Sub-19 –    Suecia (M) Sub-19</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Campeonato de Europa Sub-19</competicion>
@@ -853,7 +380,7 @@ player/live.php?id=261094&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="69">
+  <evento id="24">
     <nombre>Polonia (M) Sub-19 –    Bosnia y Herzegovina (M) Sub-19</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Campeonato de Europa Sub-19</competicion>
@@ -863,7 +390,7 @@ player/live.php?id=261094&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="70">
+  <evento id="25">
     <nombre>Lituania Sub-17 –   Serbia Sub-17</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Copa Mundial Sub-17</competicion>
@@ -873,7 +400,7 @@ player/live.php?id=261094&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="71">
+  <evento id="26">
     <nombre>Turan –  Zhayik</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Kazajistán. 1 División</competicion>
@@ -883,7 +410,7 @@ player/live.php?id=261094&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="72">
+  <evento id="27">
     <nombre>Nigeria –  Guinea</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Africa</competicion>
@@ -893,7 +420,7 @@ player/live.php?id=261094&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="73">
+  <evento id="28">
     <nombre>Israel U22 –  República Checa U22</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Campeonato Europeo Sub-22</competicion>
@@ -903,7 +430,7 @@ player/live.php?id=261094&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="74">
+  <evento id="29">
     <nombre>Waltert (M) /  Pigossi (M) –   Yastremska (M) /  Kalinina (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>WTA. Wimbledon. Doubles</competicion>
@@ -911,17 +438,9 @@ player/live.php?id=261094&amp;w=700&amp;h=480</url>
     <hora>17:00</hora>
     <url>https://livetv.sx/es/eventinfo/390402873__waltert_m___pigossi_m__yastremska_m___kalinina_m/</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://emb.apl421.me/
-player/live.php?id=261811&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
-        <idioma_nombre>Español</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261811&amp;lang=es&amp;eid=390402873&amp;lid=3027725&amp;ci=6048&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="75">
+  <evento id="30">
     <nombre>Dinamo de Kiev – LASK</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Partido amistoso</competicion>
@@ -931,7 +450,7 @@ player/live.php?id=261811&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="76">
+  <evento id="31">
     <nombre>Alemania (M) Sub-19 –   Suecia (M) Sub-19</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-19</competicion>
@@ -941,7 +460,7 @@ player/live.php?id=261811&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="77">
+  <evento id="32">
     <nombre>Polonia (M) Sub-19 –   Bosnia y Herzegovina (M) Sub-19</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-19</competicion>
@@ -951,7 +470,7 @@ player/live.php?id=261811&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="78">
+  <evento id="33">
     <nombre>Nigeria – Guinea</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Clasificación para la Copa Mundial. Africa</competicion>
@@ -961,7 +480,7 @@ player/live.php?id=261811&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="79">
+  <evento id="34">
     <nombre>Lituania Sub-17 –  Serbia Sub-17</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Copa Mundial Sub-17</competicion>
@@ -971,7 +490,7 @@ player/live.php?id=261811&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="80">
+  <evento id="35">
     <nombre>Waltert (M) /  Pigossi (M) –  Yastremska (M) /  Kalinina (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Wimbledon. Doubles</competicion>
@@ -979,17 +498,9 @@ player/live.php?id=261811&amp;w=700&amp;h=480</url>
     <hora>17:00</hora>
     <url>https://livetv.sx/es/eventinfo/390402873__/</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://emb.apl421.me/
-player/live.php?id=261811&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
-        <idioma_nombre>Español</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261811&amp;lang=es&amp;eid=390402873&amp;lid=3027725&amp;ci=6048&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="81">
+  <evento id="36">
     <nombre>Israel U22 – República Checa U22</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Campeonato Europeo Sub-22</competicion>
@@ -999,7 +510,17 @@ player/live.php?id=261811&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="82">
+  <evento id="37">
+    <nombre>Alejandro Davidovich Fokina –  Marton Fucsovics</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP. Wimbledon</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:05</hora>
+    <url>https://livetv.sx/es/eventinfo/390105557_alejandro_davidovich_fokina_marton_fucsovics/</url>
+    <datetime_iso>2026-07-03T17:05:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="38">
     <nombre>Alejandro Davidovich Fokina – Marton Fucsovics</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Wimbledon</competicion>
@@ -1007,22 +528,19 @@ player/live.php?id=261811&amp;w=700&amp;h=480</url>
     <hora>17:05</hora>
     <url>https://livetv.sx/es/eventinfo/390105557__/</url>
     <datetime_iso>2026-07-03T17:05:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://dlhd.st/stream/stream-498.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
-        <idioma_nombre>Alemán</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033427&amp;lang=es&amp;eid=390105557&amp;lid=3033427&amp;ci=3849&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://shd247.live/frame019.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033504&amp;lang=es&amp;eid=390105557&amp;lid=3033504&amp;ci=3849&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="83">
+  <evento id="39">
+    <nombre>Shuvey (M) / Zielinski –   Watson (M) / Willis</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Wimbledon. Mixtos</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:10</hora>
+    <url>https://livetv.sx/es/eventinfo/390116135__shuvey_m__zielinski__watson_m__willis/</url>
+    <datetime_iso>2026-07-03T17:10:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="40">
     <nombre>Shuvey (M) / Zielinski –  Watson (M) / Willis</nombre>
     <deporte>Tenis</deporte>
     <competicion>Wimbledon. Mixtos</competicion>
@@ -1032,14 +550,314 @@ player/live.php?id=261811&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T17:10:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="84">
-    <nombre>Aryna Sabalenka (M) –  Jelena Ostapenko (M)</nombre>
+  <evento id="41">
+    <nombre>Copa del Mundo, La Thuile</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Ciclismo de montaña</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:15</hora>
+    <url>https://livetv.sx/es/eventinfo/389830834_copa_del_mundo_la_thuile/</url>
+    <datetime_iso>2026-07-03T17:15:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="42">
+    <nombre>Terracina Calcio –  Faventia</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Italia. Serie A</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:15</hora>
+    <url>https://livetv.sx/es/eventinfo/390096281_terracina_calcio_faventia/</url>
+    <datetime_iso>2026-07-03T17:15:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="43">
+    <nombre>Gran Premio del Reino Unido</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Fórmula 1</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:30</hora>
+    <url>https://livetv.sx/es/eventinfo/389822688_gran_premio_del_reino_unido/</url>
+    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="44">
+    <nombre>Alemania U18 (W) –  Lituania U18 (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato de Europa Sub-18</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:30</hora>
+    <url>https://livetv.sx/es/eventinfo/389828589_alemania_u18_w_lituania_u18_m/</url>
+    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="45">
+    <nombre>Polonia U18 (M) –  Turquía U18 (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato de Europa Sub-18</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:30</hora>
+    <url>https://livetv.sx/es/eventinfo/389828591_polonia_u18_m_turquandiacute_a_u18_m/</url>
+    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="46">
+    <nombre>Finlandia – Hungría</nombre>
+    <deporte>Baloncesto</deporte>
+    <competicion>Clasificación para la Copa Mundial. Europa</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:30</hora>
+    <url>https://livetv.sx/es/eventinfo/388321404__/</url>
+    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="47">
+    <nombre>Alemania U18 (W) – Lituania U18 (M)</nombre>
+    <deporte>Voleibol</deporte>
+    <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:30</hora>
+    <url>https://livetv.sx/es/eventinfo/389828589_germany_u18_w_lithuania_u18_w/</url>
+    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="48">
+    <nombre>Polonia U18 (M) – Turquía U18 (M)</nombre>
+    <deporte>Voleibol</deporte>
+    <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:30</hora>
+    <url>https://livetv.sx/es/eventinfo/389828591_poland_u18_w_turkey_u18_w/</url>
+    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="49">
+    <nombre>Gran Premio del Reino UnidoClasificación</nombre>
+    <deporte>Automovilismo</deporte>
+    <competicion>Fórmula 1</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:30</hora>
+    <url>https://livetv.sx/es/eventinfo/389822688_british_grand_prix/</url>
+    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="50">
+    <nombre>Miedler /  Guo (M) –   Jurak (M) / Molteni</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Wimbledon. Mixtos</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:40</hora>
+    <url>https://livetv.sx/es/eventinfo/390116123_miedler___guo_m__jurak_m__molteni/</url>
+    <datetime_iso>2026-07-03T17:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="51">
+    <nombre>Miedler /  Guo (M) –  Jurak (M) / Molteni</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>Wimbledon. Mixtos</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>17:40</hora>
+    <url>https://livetv.sx/es/eventinfo/390116123__/</url>
+    <datetime_iso>2026-07-03T17:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="52">
+    <nombre>Trencin –  Inter Bratislava</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Partido amistoso</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/390210905_trencin_inter_bratislava/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="53">
+    <nombre>Riga –  Jelgava</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Letonia. Virsliga</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388320788_riga_jelgava/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="54">
+    <nombre>Polaco Speedway</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Speedway</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/390091120_polaco_speedway/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="55">
+    <nombre>Dziugas –  Kauno Zalgiris</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Lituania. A Lyga</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/390102148_dziugas_kauno_zalgiris/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="56">
+    <nombre>Raufoss –  Strommen</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Noruega. 1. Divisjon</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388321328_raufoss_strommen/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="57">
+    <nombre>Kongsvinger –  Sogndal</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Noruega. 1. Divisjon</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388321330_kongsvinger_sogndal/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="58">
+    <nombre>Nomme United –  Nomme Kalju</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Estonia. Meistriliiga</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388321903_nomme_united_nomme_kalju/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="59">
+    <nombre>Nikola Bartunkova (M) –   Barbora Krejcikova (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>WTA. Wimbledon</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/390129802__nikola_bartunkova_m__barbora_krejcikova_m/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="60">
+    <nombre>Perez (M) / Cabral –   Kichenok (M) / Pel</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Wimbledon. Mixtos</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/390116147__perez_m__cabral__kichenok_m__pel/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="61">
+    <nombre>Raufoss – Strommen</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Noruega. 1. Divisjon</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388321328__/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="62">
+    <nombre>Kongsvinger – Sogndal</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Noruega. 1. Divisjon</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388321330__/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="63">
+    <nombre>Riga – Jelgava</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Letonia. Virsliga</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388320788__/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="64">
+    <nombre>Nomme United – Nomme Kalju</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Estonia. Meistriliiga</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388321903__/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="65">
+    <nombre>Dziugas – Kauno Zalgiris</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Lituania. A Lyga</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/390102148__/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="66">
+    <nombre>Austria – Polonia</nombre>
+    <deporte>Baloncesto</deporte>
+    <competicion>Clasificación para la Copa Mundial. Europa</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388321406__/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="67">
+    <nombre>Estonia – Eslovenia</nombre>
+    <deporte>Baloncesto</deporte>
+    <competicion>Clasificación para la Copa Mundial. Europa</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388321414__/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="68">
+    <nombre>Nikola Bartunkova (M) –  Barbora Krejcikova (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Wimbledon</competicion>
     <fecha>3 de julio</fecha>
-    <hora>17:10</hora>
-    <url>https://livetv.sx/es/eventinfo/390105655__/</url>
-    <datetime_iso>2026-07-03T17:10:00</datetime_iso>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/390129802__/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="69">
+    <nombre>Perez (M) / Cabral –  Kichenok (M) / Pel</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>Wimbledon. Mixtos</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/390116147__/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="70">
+    <nombre>Polaco Speedway</nombre>
+    <deporte>Automovilismo</deporte>
+    <competicion>Speedway</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:00</hora>
+    <url>https://livetv.sx/es/eventinfo/390091120_polish_speedway/</url>
+    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="71">
+    <nombre>Aryna Sabalenka (M) –   Jelena Ostapenko (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>WTA. Wimbledon</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:20</hora>
+    <url>https://livetv.sx/es/eventinfo/390105655__aryna_sabalenka_m__jelena_ostapenko_m/</url>
+    <datetime_iso>2026-07-03T18:20:00</datetime_iso>
     <streams total="7">
       <stream id="1">
         <url>https://emb.apl421.me/
@@ -1088,203 +906,14 @@ player/live.php?id=262414&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="85">
-    <nombre>Karolina Muchova (M) –  Mananchaya Sawangkaew (M)</nombre>
-    <deporte>Tenis</deporte>
+  <evento id="72">
+    <nombre>Claire Liu (M) –   Cori Gauff (M)</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>WTA. Wimbledon</competicion>
     <fecha>3 de julio</fecha>
-    <hora>17:20</hora>
-    <url>https://livetv.sx/es/eventinfo/390105659__/</url>
-    <datetime_iso>2026-07-03T17:20:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://emb.apl421.me/
-player/live.php?id=261824&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
-        <idioma_nombre>Croata</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261824&amp;lang=es&amp;eid=390105659&amp;lid=3027757&amp;ci=3850&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://shd247.live/frame017.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033502&amp;lang=es&amp;eid=390105659&amp;lid=3033502&amp;ci=3850&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://dlhd.st/stream/stream-8.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032538&amp;lang=es&amp;eid=390105659&amp;lid=3032538&amp;ci=3850&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="86">
-    <nombre>Finlandia – Hungría</nombre>
-    <deporte>Baloncesto</deporte>
-    <competicion>Clasificación para la Copa Mundial. Europa</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>17:30</hora>
-    <url>https://livetv.sx/es/eventinfo/388321404__/</url>
-    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="87">
-    <nombre>Miedler /  Guo (M) –  Jurak (M) / Molteni</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Wimbledon. Mixtos</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>17:30</hora>
-    <url>https://livetv.sx/es/eventinfo/390116123__/</url>
-    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlhd.st/stream/stream-9.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
-        <idioma_nombre>Inglés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033535&amp;lang=es&amp;eid=390116123&amp;lid=3033535&amp;ci=3911&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="88">
-    <nombre>Nikola Bartunkova (M) –  Barbora Krejcikova (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>17:30</hora>
-    <url>https://livetv.sx/es/eventinfo/390129802__/</url>
-    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://dlhd.st/stream/stream-499.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
-        <idioma_nombre>Alemán</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033426&amp;lang=es&amp;eid=390129802&amp;lid=3033426&amp;ci=3850&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://shd247.live/frame026.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033508&amp;lang=es&amp;eid=390129802&amp;lid=3033508&amp;ci=3850&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="89">
-    <nombre>Alemania U18 (W) – Lituania U18 (M)</nombre>
-    <deporte>Voleibol</deporte>
-    <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>17:30</hora>
-    <url>https://livetv.sx/es/eventinfo/389828589_germany_u18_w_lithuania_u18_w/</url>
-    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/G6vbXL884kI?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=G6vbXL884kI&amp;lang=es&amp;eid=389828589&amp;lid=3032429&amp;ci=7471&amp;si=5</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="90">
-    <nombre>Italia U18 (M) – Bélgica U18 (M)</nombre>
-    <deporte>Voleibol</deporte>
-    <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>17:30</hora>
-    <url>https://livetv.sx/es/eventinfo/389828590_italy_u18_w_belgium_u18_w/</url>
-    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="91">
-    <nombre>Polonia U18 (M) – Turquía U18 (M)</nombre>
-    <deporte>Voleibol</deporte>
-    <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>17:30</hora>
-    <url>https://livetv.sx/es/eventinfo/389828591_poland_u18_w_turkey_u18_w/</url>
-    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/YdSzVSNeWuI?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=YdSzVSNeWuI&amp;lang=es&amp;eid=389828591&amp;lid=3033568&amp;ci=7471&amp;si=5</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="92">
-    <nombre>Gran Premio del Reino UnidoClasificación</nombre>
-    <deporte>Automovilismo</deporte>
-    <competicion>Fórmula 1</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>17:30</hora>
-    <url>https://livetv.sx/es/eventinfo/389822688_british_grand_prix/</url>
-    <datetime_iso>2026-07-03T17:30:00</datetime_iso>
-    <streams total="8">
-      <stream id="1">
-        <url>https://emb.apl421.me/
-player/live.php?id=262630&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262630&amp;lang=es&amp;eid=389822688&amp;lid=3033306&amp;ci=44&amp;si=7</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://247sports.pro/live/daznf1_spain.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3031083&amp;lang=es&amp;eid=389822688&amp;lid=3031083&amp;ci=44&amp;si=7</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://playfa.st/ch.php?id=30</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032775&amp;lang=es&amp;eid=389822688&amp;lid=3032775&amp;ci=44&amp;si=7</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://emb.apl421.me/
-player/live.php?id=251371&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/3.png</idioma>
-        <idioma_nombre>Español</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=251371&amp;lang=es&amp;eid=389822688&amp;lid=3008051&amp;ci=44&amp;si=7</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://emb.apl421.me/
-player/live.php?id=259449&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=259449&amp;lang=es&amp;eid=389822688&amp;lid=3033303&amp;ci=44&amp;si=7</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://emb.apl421.me/
-player/live.php?id=260262&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
-        <idioma_nombre>Inglés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=260262&amp;lang=es&amp;eid=389822688&amp;lid=3016640&amp;ci=44&amp;si=7</enlace_original>
-      </stream>
-      <stream id="7">
-        <url>https://emb.apl421.me/
-player/live.php?id=261134&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261134&amp;lang=es&amp;eid=389822688&amp;lid=3033292&amp;ci=44&amp;si=7</enlace_original>
-      </stream>
-      <stream id="8">
-        <url>https://emb.apl421.me/
-player/live.php?id=261508&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261508&amp;lang=es&amp;eid=389822688&amp;lid=3026449&amp;ci=44&amp;si=7</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="93">
-    <nombre>Claire Liu (M) –  Cori Gauff (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Wimbledon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>17:40</hora>
-    <url>https://livetv.sx/es/eventinfo/390120023__/</url>
-    <datetime_iso>2026-07-03T17:40:00</datetime_iso>
+    <hora>18:20</hora>
+    <url>https://livetv.sx/es/eventinfo/390120023__claire_liu_m__cori_gauff_m/</url>
+    <datetime_iso>2026-07-03T18:20:00</datetime_iso>
     <streams total="3">
       <stream id="1">
         <url>https://emb.apl421.me/
@@ -1307,233 +936,248 @@ player/live.php?id=261524&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="94">
-    <nombre>Raufoss – Strommen</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Noruega. 1. Divisjon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>18:00</hora>
-    <url>https://livetv.sx/es/eventinfo/388321328__/</url>
-    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="95">
-    <nombre>Kongsvinger – Sogndal</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Noruega. 1. Divisjon</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>18:00</hora>
-    <url>https://livetv.sx/es/eventinfo/388321330__/</url>
-    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="96">
-    <nombre>Trencin – Inter Bratislava</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Partido amistoso</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>18:00</hora>
-    <url>https://livetv.sx/es/eventinfo/390210905_trencin_inter_bratislava/</url>
-    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/aC1GrSv7euo?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=aC1GrSv7euo&amp;lang=es&amp;eid=390210905&amp;lid=3033227&amp;ci=5&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="97">
-    <nombre>Riga – Jelgava</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Letonia. Virsliga</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>18:00</hora>
-    <url>https://livetv.sx/es/eventinfo/388320788__/</url>
-    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlhd.st/stream/stream-2.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/34.png</idioma>
-        <idioma_nombre>Bandera #34</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032522&amp;lang=es&amp;eid=388320788&amp;lid=3032522&amp;ci=107&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="98">
-    <nombre>Nomme United – Nomme Kalju</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Estonia. Meistriliiga</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>18:00</hora>
-    <url>https://livetv.sx/es/eventinfo/388321903__/</url>
-    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/ONaHWBCSAEg?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/43.png</idioma>
-        <idioma_nombre>Bandera #43</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=ONaHWBCSAEg&amp;lang=es&amp;eid=388321903&amp;lid=3033238&amp;ci=180&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="99">
-    <nombre>Dziugas – Kauno Zalgiris</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Lituania. A Lyga</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>18:00</hora>
-    <url>https://livetv.sx/es/eventinfo/390102148__/</url>
-    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/ik8iska7xGU?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/35.png</idioma>
-        <idioma_nombre>Bandera #35</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=ik8iska7xGU&amp;lang=es&amp;eid=390102148&amp;lid=3032939&amp;ci=166&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="100">
-    <nombre>Austria – Polonia</nombre>
-    <deporte>Baloncesto</deporte>
-    <competicion>Clasificación para la Copa Mundial. Europa</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>18:00</hora>
-    <url>https://livetv.sx/es/eventinfo/388321406__/</url>
-    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlhd.st/stream/stream-5.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032580&amp;lang=es&amp;eid=388321406&amp;lid=3032580&amp;ci=2027&amp;si=3</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="101">
-    <nombre>Estonia – Eslovenia</nombre>
-    <deporte>Baloncesto</deporte>
-    <competicion>Clasificación para la Copa Mundial. Europa</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>18:00</hora>
-    <url>https://livetv.sx/es/eventinfo/388321414__/</url>
-    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://shd247.live/frame0011.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032691&amp;lang=es&amp;eid=388321414&amp;lid=3032691&amp;ci=2027&amp;si=3</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://dlhd.st/stream/stream-429.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033564&amp;lang=es&amp;eid=388321414&amp;lid=3033564&amp;ci=2027&amp;si=3</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="102">
-    <nombre>Struff / Hanfmann – Kopriva / Pieczonka</nombre>
+  <evento id="73">
+    <nombre>Aryna Sabalenka (M) –  Jelena Ostapenko (M)</nombre>
     <deporte>Tenis</deporte>
-    <competicion>ATP. Wimbledon. Doubles</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>18:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389596258__/</url>
-    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="103">
-    <nombre>Polaco Speedway</nombre>
-    <deporte>Automovilismo</deporte>
-    <competicion>Speedway</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>18:00</hora>
-    <url>https://livetv.sx/es/eventinfo/390091120_polish_speedway/</url>
-    <datetime_iso>2026-07-03T18:00:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://emb.apl421.me/
-player/live.php?id=262435&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262435&amp;lang=es&amp;eid=390091120&amp;lid=3033589&amp;ci=130&amp;si=7</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl421.me/
-player/live.php?id=262544&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262544&amp;lang=es&amp;eid=390091120&amp;lid=3032759&amp;ci=130&amp;si=7</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://emb.apl421.me/
-player/live.php?id=262654&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262654&amp;lang=es&amp;eid=390091120&amp;lid=3033583&amp;ci=130&amp;si=7</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://dlhd.st/stream/stream-75.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033563&amp;lang=es&amp;eid=390091120&amp;lid=3033563&amp;ci=130&amp;si=7</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="104">
-    <nombre>Perez (M) / Cabral –  Kichenok (M) / Pel</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Wimbledon. Mixtos</competicion>
+    <competicion>WTA. Wimbledon</competicion>
     <fecha>3 de julio</fecha>
     <hora>18:20</hora>
-    <url>https://livetv.sx/es/eventinfo/390116147__/</url>
+    <url>https://livetv.sx/es/eventinfo/390105655__/</url>
     <datetime_iso>2026-07-03T18:20:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="105">
-    <nombre>Silva (M) /  Christie (M) –  Birrell (M) /  Gibson (M)</nombre>
+  <evento id="74">
+    <nombre>Claire Liu (M) –  Cori Gauff (M)</nombre>
     <deporte>Tenis</deporte>
-    <competicion>WTA. Wimbledon. Doubles</competicion>
+    <competicion>WTA. Wimbledon</competicion>
     <fecha>3 de julio</fecha>
-    <hora>18:30</hora>
-    <url>https://livetv.sx/es/eventinfo/389644210__/</url>
-    <datetime_iso>2026-07-03T18:30:00</datetime_iso>
+    <hora>18:20</hora>
+    <url>https://livetv.sx/es/eventinfo/390120023__/</url>
+    <datetime_iso>2026-07-03T18:20:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="106">
-    <nombre>Felix Auger-Aliassime – Michael Zheng</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>ATP. Wimbledon</competicion>
+  <evento id="75">
+    <nombre>Worcestershire –  Kent</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Reino Unido. Vitality Blast</competicion>
     <fecha>3 de julio</fecha>
-    <hora>18:50</hora>
-    <url>https://livetv.sx/es/eventinfo/390136526__/</url>
-    <datetime_iso>2026-07-03T18:50:00</datetime_iso>
-    <streams total="3">
+    <hora>18:30</hora>
+    <url>https://livetv.sx/es/eventinfo/389825644_worcestershire_kent/</url>
+    <datetime_iso>2026-07-03T18:30:00</datetime_iso>
+    <streams total="1">
       <stream id="1">
-        <url>https://emb.apl421.me/
-player/live.php?id=260997&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=260997&amp;lang=es&amp;eid=390136526&amp;lid=3025541&amp;ci=3849&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://shd247.live/frame018.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033503&amp;lang=es&amp;eid=390136526&amp;lid=3033503&amp;ci=3849&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://dlhd.st/stream/stream-101.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
-        <idioma_nombre>Coreano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032604&amp;lang=es&amp;eid=390136526&amp;lid=3032604&amp;ci=3849&amp;si=4</enlace_original>
+        <url>https://www.youtube.com/embed/kgrcvKzNpMU?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=kgrcvKzNpMU&amp;lang=es&amp;eid=389825644&amp;lid=3033571&amp;ci=1650&amp;si=41</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="107">
+  <evento id="76">
+    <nombre>Vastese –  Sicilia</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Italia. Serie A</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:30</hora>
+    <url>https://livetv.sx/es/eventinfo/390096282_vastese_sicilia/</url>
+    <datetime_iso>2026-07-03T18:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="77">
+    <nombre>Karolina Muchova (M) –   Mananchaya Sawangkaew (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>WTA. Wimbledon</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:30</hora>
+    <url>https://livetv.sx/es/eventinfo/390105659__karolina_muchova_m__mananchaya_sawangkaew_m/</url>
+    <datetime_iso>2026-07-03T18:30:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://emb.apl421.me/
+player/live.php?id=261824&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261824&amp;lang=es&amp;eid=390105659&amp;lid=3027757&amp;ci=3850&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://shd247.live/frame017.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033502&amp;lang=es&amp;eid=390105659&amp;lid=3033502&amp;ci=3850&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://dlhd.st/stream/stream-8.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032538&amp;lang=es&amp;eid=390105659&amp;lid=3032538&amp;ci=3850&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="78">
+    <nombre>Karolina Muchova (M) –  Mananchaya Sawangkaew (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Wimbledon</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>18:30</hora>
+    <url>https://livetv.sx/es/eventinfo/390105659__/</url>
+    <datetime_iso>2026-07-03T18:30:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://emb.apl421.me/
+player/live.php?id=261824&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/29.png</idioma>
+        <idioma_nombre>Croata</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261824&amp;lang=es&amp;eid=390105659&amp;lid=3027757&amp;ci=3850&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://shd247.live/frame017.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033502&amp;lang=es&amp;eid=390105659&amp;lid=3033502&amp;ci=3850&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://dlhd.st/stream/stream-8.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032538&amp;lang=es&amp;eid=390105659&amp;lid=3032538&amp;ci=3850&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="79">
+    <nombre>Sirius –  Mjaellby</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Suecia. Allsvenskan</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>19:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388328619_sirius_mjaellby/</url>
+    <datetime_iso>2026-07-03T19:00:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://dlhd.st/stream/stream-3075.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/22.png</idioma>
+        <idioma_nombre>Sueco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033423&amp;lang=es&amp;eid=388328619&amp;lid=3033423&amp;ci=63&amp;si=1</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://playfa.st/ch?id=75</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/22.png</idioma>
+        <idioma_nombre>Sueco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033595&amp;lang=es&amp;eid=388328619&amp;lid=3033595&amp;ci=63&amp;si=1</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://playfa.st/ch.php?id=75</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/22.png</idioma>
+        <idioma_nombre>Sueco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032782&amp;lang=es&amp;eid=388328619&amp;lid=3032782&amp;ci=63&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="80">
+    <nombre>Ranheim –  Stabaek</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Noruega. 1. Divisjon</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>19:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388328093_ranheim_stabaek/</url>
+    <datetime_iso>2026-07-03T19:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="81">
+    <nombre>Heidenheim –  Paderborn</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Alemania. Bundesliga</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>19:00</hora>
+    <url>https://livetv.sx/es/eventinfo/389870021_heidenheim_paderborn/</url>
+    <datetime_iso>2026-07-03T19:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/hxPR-SLaUkI?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=hxPR-SLaUkI&amp;lang=es&amp;eid=389870021&amp;lid=3033572&amp;ci=1259&amp;si=19</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="82">
+    <nombre>Mainz –  Bonn</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Alemania. Bundesliga</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>19:00</hora>
+    <url>https://livetv.sx/es/eventinfo/389870022_mainz_bonn/</url>
+    <datetime_iso>2026-07-03T19:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/wR7Ud28m8mg?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=wR7Ud28m8mg&amp;lang=es&amp;eid=389870022&amp;lid=3032972&amp;ci=1259&amp;si=19</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="83">
+    <nombre>Ratisbona –  Hamburgo</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Alemania. Bundesliga</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>19:00</hora>
+    <url>https://livetv.sx/es/eventinfo/389870023_ratisbona_hamburgo/</url>
+    <datetime_iso>2026-07-03T19:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/tCrZr3zqRuw?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=tCrZr3zqRuw&amp;lang=es&amp;eid=389870023&amp;lid=3032486&amp;ci=1259&amp;si=19</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="84">
+    <nombre>Stuttgart –  Munchen-Haar</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Alemania. Bundesliga</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>19:00</hora>
+    <url>https://livetv.sx/es/eventinfo/389870027_stuttgart_munchen_haar/</url>
+    <datetime_iso>2026-07-03T19:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/yW8Om0vvBIw?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=yW8Om0vvBIw&amp;lang=es&amp;eid=389870027&amp;lid=3033263&amp;ci=1259&amp;si=19</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="85">
+    <nombre>Suecia –  República Checa</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Europa</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>19:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388321412_suecia_rep__blica_checa/</url>
+    <datetime_iso>2026-07-03T19:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://playfa.st/ch.php?id=40</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/25.png</idioma>
+        <idioma_nombre>Danés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033300&amp;lang=es&amp;eid=388321412&amp;lid=3033300&amp;ci=2027&amp;si=3</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="86">
+    <nombre>Copa Mundial Sub-18</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato mundial Sub-18</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>19:00</hora>
+    <url>https://livetv.sx/es/eventinfo/388876246_copa_mundial_sub_18/</url>
+    <datetime_iso>2026-07-03T19:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="87">
     <nombre>Ranheim – Stabaek</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Noruega. 1. Divisjon</competicion>
@@ -1543,7 +1187,7 @@ player/live.php?id=260997&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="108">
+  <evento id="88">
     <nombre>Sirius – Mjaellby</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Suecia. Allsvenskan</competicion>
@@ -1572,7 +1216,7 @@ player/live.php?id=260997&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="109">
+  <evento id="89">
     <nombre>Chipre – Croacia</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Clasificación para la Copa Mundial. Europa</competicion>
@@ -1582,7 +1226,7 @@ player/live.php?id=260997&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="110">
+  <evento id="90">
     <nombre>Suecia – República Checa</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Clasificación para la Copa Mundial. Europa</competicion>
@@ -1599,7 +1243,7 @@ player/live.php?id=260997&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="111">
+  <evento id="91">
     <nombre>Israel – Alemania</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Clasificación para la Copa Mundial. Europa</competicion>
@@ -1609,41 +1253,7 @@ player/live.php?id=260997&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="112">
-    <nombre>Heidenheim – Paderborn</nombre>
-    <deporte>Béisbol</deporte>
-    <competicion>Alemania. Bundesliga</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389870021_heidenheim_paderborn/</url>
-    <datetime_iso>2026-07-03T19:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/hxPR-SLaUkI?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=hxPR-SLaUkI&amp;lang=es&amp;eid=389870021&amp;lid=3033572&amp;ci=1259&amp;si=19</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="113">
-    <nombre>Mainz – Bonn</nombre>
-    <deporte>Béisbol</deporte>
-    <competicion>Alemania. Bundesliga</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389870022_mainz_bonn/</url>
-    <datetime_iso>2026-07-03T19:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/wR7Ud28m8mg?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=wR7Ud28m8mg&amp;lang=es&amp;eid=389870022&amp;lid=3032972&amp;ci=1259&amp;si=19</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="114">
+  <evento id="92">
     <nombre>Ratisbona – Hamburgo</nombre>
     <deporte>Béisbol</deporte>
     <competicion>Alemania. Bundesliga</competicion>
@@ -1651,33 +1261,9 @@ player/live.php?id=260997&amp;w=700&amp;h=480</url>
     <hora>19:00</hora>
     <url>https://livetv.sx/es/eventinfo/389870023_regensburg_hamburg/</url>
     <datetime_iso>2026-07-03T19:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/tCrZr3zqRuw?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=tCrZr3zqRuw&amp;lang=es&amp;eid=389870023&amp;lid=3032486&amp;ci=1259&amp;si=19</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="115">
-    <nombre>Stuttgart – Munchen-Haar</nombre>
-    <deporte>Béisbol</deporte>
-    <competicion>Alemania. Bundesliga</competicion>
-    <fecha>3 de julio</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/389870027_stuttgart_munchen_haar/</url>
-    <datetime_iso>2026-07-03T19:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/yW8Om0vvBIw?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=yW8Om0vvBIw&amp;lang=es&amp;eid=389870027&amp;lid=3033263&amp;ci=1259&amp;si=19</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="116">
+  <evento id="93">
     <nombre>Italia Sub-17 –  Eslovenia Sub-17</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Copa Mundial Sub-17</competicion>
@@ -1694,7 +1280,34 @@ player/live.php?id=260997&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="117">
+  <evento id="94">
+    <nombre>Silva (M) /  Christie (M) –  Birrell (M) /  Gibson (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Wimbledon. Doubles</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>19:20</hora>
+    <url>https://livetv.sx/es/eventinfo/389644210__/</url>
+    <datetime_iso>2026-07-03T19:20:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://shd247.live/frame019.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033504&amp;lang=es&amp;eid=389644210&amp;lid=3033504&amp;ci=6048&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="95">
+    <nombre>Struff / Hanfmann – Kopriva / Pieczonka</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Wimbledon. Doubles</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>19:25</hora>
+    <url>https://livetv.sx/es/eventinfo/389596258__/</url>
+    <datetime_iso>2026-07-03T19:25:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="96">
     <nombre>Tallinna Kalev – Maardu</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Estonia. Esiliiga</competicion>
@@ -1711,7 +1324,7 @@ player/live.php?id=260997&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="118">
+  <evento id="97">
     <nombre>Países Bajos – Letonia</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Clasificación para la Copa Mundial. Europa</competicion>
@@ -1719,9 +1332,17 @@ player/live.php?id=260997&amp;w=700&amp;h=480</url>
     <hora>19:30</hora>
     <url>https://livetv.sx/es/eventinfo/388321408__/</url>
     <datetime_iso>2026-07-03T19:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://emb.apl421.me/
+player/live.php?id=238377&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=238377&amp;lang=es&amp;eid=388321408&amp;lid=2767834&amp;ci=2027&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="119">
+  <evento id="98">
     <nombre>Francia U17 – Turquía U17</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Copa Mundial Sub-17</competicion>
@@ -1745,7 +1366,37 @@ player/live.php?id=261239&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="120">
+  <evento id="99">
+    <nombre>Felix Auger-Aliassime – Michael Zheng</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>ATP. Wimbledon</competicion>
+    <fecha>3 de julio</fecha>
+    <hora>19:45</hora>
+    <url>https://livetv.sx/es/eventinfo/390136526__/</url>
+    <datetime_iso>2026-07-03T19:45:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://emb.apl421.me/
+player/live.php?id=260997&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=260997&amp;lang=es&amp;eid=390136526&amp;lid=3025541&amp;ci=3849&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://shd247.live/frame018.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033503&amp;lang=es&amp;eid=390136526&amp;lid=3033503&amp;ci=3849&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://dlhd.st/stream/stream-101.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/17.png</idioma>
+        <idioma_nombre>Coreano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032604&amp;lang=es&amp;eid=390136526&amp;lid=3032604&amp;ci=3849&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="100">
     <nombre>Australia – Egipto</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Copa Mundial</competicion>
@@ -1763,56 +1414,53 @@ player/live.php?id=261174&amp;w=700&amp;h=480</url>
       </stream>
       <stream id="2">
         <url>https://emb.apl421.me/
-player/live.php?id=261204&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261204&amp;lang=es&amp;eid=389462717&amp;lid=3026180&amp;ci=2608&amp;si=1</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://emb.apl421.me/
 player/live.php?id=261599&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
         <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261599&amp;lang=es&amp;eid=389462717&amp;lid=3026861&amp;ci=2608&amp;si=1</enlace_original>
       </stream>
-      <stream id="4">
+      <stream id="3">
         <url>https://emb.apl421.me/
 player/live.php?id=261791&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
         <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261791&amp;lang=es&amp;eid=389462717&amp;lid=3027675&amp;ci=2608&amp;si=1</enlace_original>
       </stream>
-      <stream id="5">
+      <stream id="4">
         <url>https://emb.apl421.me/
 player/live.php?id=262256&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
         <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262256&amp;lang=es&amp;eid=389462717&amp;lid=3029667&amp;ci=2608&amp;si=1</enlace_original>
       </stream>
-      <stream id="6">
+      <stream id="5">
         <url>https://emb.apl421.me/
-player/live.php?id=262257&amp;w=700&amp;h=480</url>
+player/live.php?id=262630&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262257&amp;lang=es&amp;eid=389462717&amp;lid=3029668&amp;ci=2608&amp;si=1</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262630&amp;lang=es&amp;eid=389462717&amp;lid=3033306&amp;ci=2608&amp;si=1</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://dlhd.st/stream/stream-746.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033438&amp;lang=es&amp;eid=389462717&amp;lid=3033438&amp;ci=2608&amp;si=1</enlace_original>
       </stream>
       <stream id="7">
-        <url>https://emb.apl421.me/
-player/live.php?id=261199&amp;w=700&amp;h=480</url>
+        <url>https://playfa.st/ch?id=100</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261199&amp;lang=es&amp;eid=389462717&amp;lid=3027897&amp;ci=2608&amp;si=1</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033615&amp;lang=es&amp;eid=389462717&amp;lid=3033615&amp;ci=2608&amp;si=1</enlace_original>
       </stream>
       <stream id="8">
-        <url>https://emb.apl421.me/
-player/live.php?id=262195&amp;w=700&amp;h=480</url>
+        <url>https://stremeo.ru/livetvsx/ch100</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262195&amp;lang=es&amp;eid=389462717&amp;lid=3030316&amp;ci=2608&amp;si=1</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032735&amp;lang=es&amp;eid=389462717&amp;lid=3032735&amp;ci=2608&amp;si=1</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="121">
+  <evento id="101">
     <nombre>Desportivo Brasil Sub-20 –  Bandeirante Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1822,7 +1470,7 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="122">
+  <evento id="102">
     <nombre>Sao Bento Sub-20 –  America SP Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1832,7 +1480,7 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="123">
+  <evento id="103">
     <nombre>Jabaquara Sub-20 –  Itapirense Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1840,9 +1488,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:00</hora>
     <url>https://livetv.sx/es/eventinfo/390233091__/</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/TOh1BPK_Dk4?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
+        <idioma_nombre>Holandés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=TOh1BPK_Dk4&amp;lang=es&amp;eid=390233091&amp;lid=3033629&amp;ci=2768&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="124">
+  <evento id="104">
     <nombre>GO Audax Sub-20 –  Água Santa Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1852,7 +1507,7 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="125">
+  <evento id="105">
     <nombre>Ferroviaria Sub-20 –  Juventus SP Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1862,7 +1517,7 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="126">
+  <evento id="106">
     <nombre>Guarani Sub-20 –  Sfera SP Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1870,9 +1525,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:00</hora>
     <url>https://livetv.sx/es/eventinfo/390233096__/</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/voN28Evvczo?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
+        <idioma_nombre>Holandés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=voN28Evvczo&amp;lang=es&amp;eid=390233096&amp;lid=3033626&amp;ci=2768&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="127">
+  <evento id="107">
     <nombre>Maua Sub-20 –  Tanabi Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1880,9 +1542,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:00</hora>
     <url>https://livetv.sx/es/eventinfo/390233098__/</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/8F-0SaN5DUw?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
+        <idioma_nombre>Holandés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=8F-0SaN5DUw&amp;lang=es&amp;eid=390233098&amp;lid=3033625&amp;ci=2768&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="128">
+  <evento id="108">
     <nombre>Capivariano Sub-20 –  Ituano Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1890,9 +1559,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:00</hora>
     <url>https://livetv.sx/es/eventinfo/390233100__/</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/jNeMmA2kTLw?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
+        <idioma_nombre>Holandés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=jNeMmA2kTLw&amp;lang=es&amp;eid=390233100&amp;lid=3033619&amp;ci=2768&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="129">
+  <evento id="109">
     <nombre>Flamengo-SP Sub-20 –  XV de Novembro Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1902,7 +1578,7 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="130">
+  <evento id="110">
     <nombre>Santo André Sub-20 –  SC Paulinense Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1912,7 +1588,7 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="131">
+  <evento id="111">
     <nombre>Sao Caetano Sub-20 –  Uniao Sao Joao Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1920,9 +1596,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:00</hora>
     <url>https://livetv.sx/es/eventinfo/390233106__/</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/mu160Qq9uj0?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
+        <idioma_nombre>Holandés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=mu160Qq9uj0&amp;lang=es&amp;eid=390233106&amp;lid=3033613&amp;ci=2768&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="132">
+  <evento id="112">
     <nombre>Portuguesa Santista Sub-20 –  Portuguesa SP Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1930,9 +1613,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:00</hora>
     <url>https://livetv.sx/es/eventinfo/390233108__/</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/XO7bNbNmORE?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
+        <idioma_nombre>Holandés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=XO7bNbNmORE&amp;lang=es&amp;eid=390233108&amp;lid=3033618&amp;ci=2768&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="133">
+  <evento id="113">
     <nombre>NSI Runavik – KI Klaksvik</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Islas Feroe. Liga Premier</competicion>
@@ -1942,7 +1632,7 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="134">
+  <evento id="114">
     <nombre>Cuenca Juniors – San Antonio Cotacachi</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Serie B</competicion>
@@ -1950,9 +1640,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:00</hora>
     <url>https://livetv.sx/es/eventinfo/388074372__/</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/Vcssc0Zi7m4?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=Vcssc0Zi7m4&amp;lang=es&amp;eid=388074372&amp;lid=3033631&amp;ci=2550&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="135">
+  <evento id="115">
     <nombre>Ibrachina Sub-20 –  EC Sao Bernardo Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -1969,7 +1666,7 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="136">
+  <evento id="116">
     <nombre>Ruanda – Túnez</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Clasificación para la Copa Mundial. Africa</competicion>
@@ -1979,7 +1676,7 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="137">
+  <evento id="117">
     <nombre>Francia U22 – Polonia U22</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Campeonato Europeo Sub-22</competicion>
@@ -1996,7 +1693,7 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="138">
+  <evento id="118">
     <nombre>Hungría U18 (M) – Finlandia U18 (M)</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
@@ -2013,7 +1710,7 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="139">
+  <evento id="119">
     <nombre>Letonia U18 (M) – España U18 (M)</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
@@ -2023,14 +1720,14 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T20:00:00</datetime_iso>
     <streams total="1">
       <stream id="1">
-        <url>https://www.youtube.com/embed/2MEidS6QWSg?autoplay=1</url>
+        <url>https://www.youtube.com/embed/bQtcrIoQg_4?autoplay=1</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
         <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=2MEidS6QWSg&amp;lang=es&amp;eid=389828593&amp;lid=3032428&amp;ci=7471&amp;si=5</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=bQtcrIoQg_4&amp;lang=es&amp;eid=389828593&amp;lid=3033612&amp;ci=7471&amp;si=5</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="140">
+  <evento id="120">
     <nombre>River Plate – Flamengo</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Partido amistoso</competicion>
@@ -2038,9 +1735,22 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:30</hora>
     <url>https://livetv.sx/es/eventinfo/390019572_river_plate_flamengo/</url>
     <datetime_iso>2026-07-03T20:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="2">
+      <stream id="1">
+        <url>https://playfa.st/ch.php?id=22</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
+        <idioma_nombre>Holandés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032786&amp;lang=es&amp;eid=390019572&amp;lid=3032786&amp;ci=5&amp;si=1</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://dlhd.st/stream/stream-540.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/9.png</idioma>
+        <idioma_nombre>Holandés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033642&amp;lang=es&amp;eid=390019572&amp;lid=3033642&amp;ci=5&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="141">
+  <evento id="121">
     <nombre>Bélgica – Francia</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Clasificación para la Copa Mundial. Europa</competicion>
@@ -2048,9 +1758,37 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:30</hora>
     <url>https://livetv.sx/es/eventinfo/388321416__/</url>
     <datetime_iso>2026-07-03T20:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="4">
+      <stream id="1">
+        <url>https://emb.apl421.me/
+player/live.php?id=242357&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=242357&amp;lang=es&amp;eid=388321416&amp;lid=2812169&amp;ci=2027&amp;si=3</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl421.me/
+player/live.php?id=261515&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
+        <idioma_nombre>Alemán</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261515&amp;lang=es&amp;eid=388321416&amp;lid=3033301&amp;ci=2027&amp;si=3</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl421.me/
+player/live.php?id=261516&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
+        <idioma_nombre>Alemán</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261516&amp;lang=es&amp;eid=388321416&amp;lid=3033302&amp;ci=2027&amp;si=3</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://playfa.st/ch.php?id=53</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
+        <idioma_nombre>Alemán</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032779&amp;lang=es&amp;eid=388321416&amp;lid=3032779&amp;ci=2027&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="142">
+  <evento id="122">
     <nombre>Liga de Naciones, Norteamérica</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Liga de Naciones</competicion>
@@ -2058,9 +1796,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:30</hora>
     <url>https://livetv.sx/es/eventinfo/389866473_nations_league_americas_north/</url>
     <datetime_iso>2026-07-03T20:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/KzKMWpCbrFo?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=KzKMWpCbrFo&amp;lang=es&amp;eid=389866473&amp;lid=3032426&amp;ci=1395&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="143">
+  <evento id="123">
     <nombre>Polaco Speedway</nombre>
     <deporte>Automovilismo</deporte>
     <competicion>Speedway</competicion>
@@ -2068,9 +1813,17 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:30</hora>
     <url>https://livetv.sx/es/eventinfo/390091121_polish_speedway/</url>
     <datetime_iso>2026-07-03T20:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://emb.apl421.me/
+player/live.php?id=262654&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262654&amp;lang=es&amp;eid=390091121&amp;lid=3033583&amp;ci=130&amp;si=7</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="144">
+  <evento id="124">
     <nombre>Treaty United – Kerry</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irlanda. First Division</competicion>
@@ -2078,9 +1831,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:45</hora>
     <url>https://livetv.sx/es/eventinfo/388341383__/</url>
     <datetime_iso>2026-07-03T20:45:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.st/stream/stream-77.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033447&amp;lang=es&amp;eid=388341383&amp;lid=3033447&amp;ci=146&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="145">
+  <evento id="125">
     <nombre>Finn Harps – Wexford</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irlanda. First Division</competicion>
@@ -2088,9 +1848,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:45</hora>
     <url>https://livetv.sx/es/eventinfo/388341385__/</url>
     <datetime_iso>2026-07-03T20:45:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.st/stream/stream-76.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033445&amp;lang=es&amp;eid=388341385&amp;lid=3033445&amp;ci=146&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="146">
+  <evento id="126">
     <nombre>Cobh Ramblers – Cork City</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irlanda. First Division</competicion>
@@ -2098,9 +1865,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:45</hora>
     <url>https://livetv.sx/es/eventinfo/388341387__/</url>
     <datetime_iso>2026-07-03T20:45:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.st/stream/stream-69.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033444&amp;lang=es&amp;eid=388341387&amp;lid=3033444&amp;ci=146&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="147">
+  <evento id="127">
     <nombre>Bray Wanderers – Athlone Town</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irlanda. First Division</competicion>
@@ -2108,9 +1882,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:45</hora>
     <url>https://livetv.sx/es/eventinfo/388341389__/</url>
     <datetime_iso>2026-07-03T20:45:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.st/stream/stream-68.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033443&amp;lang=es&amp;eid=388341389&amp;lid=3033443&amp;ci=146&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="148">
+  <evento id="128">
     <nombre>Sligo Rovers – Shamrock Rovers</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irlanda. Primera División</competicion>
@@ -2118,9 +1899,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:45</hora>
     <url>https://livetv.sx/es/eventinfo/388341416__/</url>
     <datetime_iso>2026-07-03T20:45:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.st/stream/stream-107.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033178&amp;lang=es&amp;eid=388341416&amp;lid=3033178&amp;ci=45&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="149">
+  <evento id="129">
     <nombre>St Patrick`s Athletic – Galway United</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irlanda. Primera División</competicion>
@@ -2128,9 +1916,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:45</hora>
     <url>https://livetv.sx/es/eventinfo/388341418__/</url>
     <datetime_iso>2026-07-03T20:45:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.st/stream/stream-106.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033641&amp;lang=es&amp;eid=388341418&amp;lid=3033641&amp;ci=45&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="150">
+  <evento id="130">
     <nombre>Drogheda United – Bohemian</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irlanda. Primera División</competicion>
@@ -2138,9 +1933,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:45</hora>
     <url>https://livetv.sx/es/eventinfo/388341420__/</url>
     <datetime_iso>2026-07-03T20:45:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.st/stream/stream-105.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033449&amp;lang=es&amp;eid=388341420&amp;lid=3033449&amp;ci=45&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="151">
+  <evento id="131">
     <nombre>Derry City – Waterford</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irlanda. Primera División</competicion>
@@ -2148,9 +1950,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>20:45</hora>
     <url>https://livetv.sx/es/eventinfo/388341421__/</url>
     <datetime_iso>2026-07-03T20:45:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.st/stream/stream-86.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033448&amp;lang=es&amp;eid=388341421&amp;lid=3033448&amp;ci=45&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="152">
+  <evento id="132">
     <nombre>Shelbourne – Dundalk</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Irlanda. Primera División</competicion>
@@ -2158,9 +1967,16 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>21:00</hora>
     <url>https://livetv.sx/es/eventinfo/388341558__/</url>
     <datetime_iso>2026-07-03T21:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.st/stream/stream-108.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033452&amp;lang=es&amp;eid=388341558&amp;lid=3033452&amp;ci=45&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="153">
+  <evento id="133">
     <nombre>Honda Indy 200</nombre>
     <deporte>Automovilismo</deporte>
     <competicion>Indy Car</competicion>
@@ -2168,9 +1984,62 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <hora>21:00</hora>
     <url>https://livetv.sx/es/eventinfo/390019532_honda_indy_200/</url>
     <datetime_iso>2026-07-03T21:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="8">
+      <stream id="1">
+        <url>https://emb.apl421.me/
+player/live.php?id=261134&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261134&amp;lang=es&amp;eid=390019532&amp;lid=3033292&amp;ci=123&amp;si=7</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl421.me/
+player/live.php?id=261534&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261534&amp;lang=es&amp;eid=390019532&amp;lid=3033293&amp;ci=123&amp;si=7</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl421.me/
+player/live.php?id=261542&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261542&amp;lang=es&amp;eid=390019532&amp;lid=3032118&amp;ci=123&amp;si=7</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://emb.apl421.me/
+player/live.php?id=261609&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=261609&amp;lang=es&amp;eid=390019532&amp;lid=3028582&amp;ci=123&amp;si=7</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://playfa.st/ch.php?id=81</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032785&amp;lang=es&amp;eid=390019532&amp;lid=3032785&amp;ci=123&amp;si=7</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://shd247.live/frame0027.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3032700&amp;lang=es&amp;eid=390019532&amp;lid=3032700&amp;ci=123&amp;si=7</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://dlhd.st/stream/stream-60.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033402&amp;lang=es&amp;eid=390019532&amp;lid=3033402&amp;ci=123&amp;si=7</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://dlhd.st/stream/stream-449.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3033391&amp;lang=es&amp;eid=390019532&amp;lid=3033391&amp;ci=123&amp;si=7</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="154">
+  <evento id="134">
     <nombre>Chi Cubs – San Luis</nombre>
     <deporte>Béisbol</deporte>
     <competicion>No especificado</competicion>
@@ -2180,7 +2049,7 @@ player/live.php?id=262195&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-07-03T22:05:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="155">
+  <evento id="135">
     <nombre>Chicagoland SpeedwayClasificación</nombre>
     <deporte>Automovilismo</deporte>
     <competicion>NASCAR</competicion>
