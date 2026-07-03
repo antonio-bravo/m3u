@@ -1,33 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-07-03 03:45</datetime>
-    <league>F2 Silverstone – Prácticas</league>
-    <teams>F2 Silverstone – Prácticas</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>36953-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsLnBocD9zdHJlYW09ZXZlbjE=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>36953-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vdml2by9jYW5hbC5waHA/c3RyZWFtPWVzcG4y</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>36953-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vdml2by9jYW5hbGVzLnBocD9zdHJlYW09ZXNwbjI=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 HD</channel_name>
-        <channel_id>36953-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vdml2by9jYW5hbGVzLnBocD9zdHJlYW09ZXNwbjI=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-07-03 07:55</datetime>
     <league>F3 Silverstone – Clasificación</league>
     <teams>F3 Silverstone – Clasificación</teams>
@@ -226,28 +199,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-07-03 02:45</datetime>
-    <league>F3 Silverstone – Prácticas</league>
-    <teams>F3 Silverstone – Prácticas</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>36952-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsLnBocD9zdHJlYW09ZXZlbjE=</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP2</channel_name>
-        <channel_id>36952-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vdml2by9jYW5hbC5waHA/c3RyZWFtPWVzcG4y</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 2 | OP3</channel_name>
-        <channel_id>36952-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vdml2by9jYW5hbGVzLnBocD9zdHJlYW09ZXNwbjI=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-07-03 08:40</datetime>
     <league>F2 Silverstone – Clasificación</league>
     <teams>F2 Silverstone – Clasificación</teams>
@@ -293,18 +244,6 @@
         <channel_name>ESPN 4 | OP3</channel_name>
         <channel_id>36958-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vdml2by9jYW5hbGVzLnBocD9zdHJlYW09ZXNwbjQ=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-07-03 05:00</datetime>
-    <league>Tenis – Wimbledon – Dia #5 – Tercera Ronda</league>
-    <teams>Tenis – Wimbledon – Dia #5 – Tercera Ronda</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 2</channel_name>
-        <channel_id>36954-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsLnBocD9zdHJlYW09ZXZlbjE=</url>
       </channel>
     </channels>
   </event>
@@ -412,6 +351,18 @@
         <channel_name>Telemundo HD</channel_name>
         <channel_id>36950-20</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsZXMucGhwP3N0cmVhbT10ZWxlbXVuZG8=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-03 07:30</datetime>
+    <league>Tenis – Wimbledon – Dia #5 – Tercera Ronda</league>
+    <teams>Tenis – Wimbledon – Dia #5 – Tercera Ronda</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 2</channel_name>
+        <channel_id>36954-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vb25saW5lL2NhbmFsLnBocD9zdHJlYW09ZXZlbjE=</url>
       </channel>
     </channels>
   </event>
