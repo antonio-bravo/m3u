@@ -11,6 +11,10 @@ import time
 
 BASE_URL = "https://platinsport.com/"
 LOGOS_XML_URL = "https://raw.githubusercontent.com/tutw/platinsport-m3u-updater/refs/heads/main/LOGOS-CANALES-TV.xml"
+PLAYTORRIO_FALLBACK_CANDIDATES = [
+    "playtorrio.m3u",
+    "playtorrio_canales.m3u",
+]
 
 # Mapeo extendido de códigos de país a nombres
 COUNTRY_CODES = {
@@ -144,12 +148,131 @@ def clean_channel_name(raw_name: str) -> str:
     return name
 
 
-def build_source_list_url(date: datetime | None = None) -> str:
-    """Construye la URL de source-list.php con la clave de fecha requerida."""
+def build_source_list_urls(date: datetime | None = None) -> list[str]:
+    """Construye varias URLs de source-list.php con la clave de fecha requerida."""
     if date is None:
         date = datetime.now(timezone.utc)
     key = base64.b64encode(f"{date.strftime('%Y-%m-%d')}PLATINSPORT".encode()).decode()
-    return f"https://www.platinsport.com/link/source-list.php?key={key}"
+    hosts = ["https://platinsport.com", "https://www.platinsport.com"]
+    return [f"{host}/link/source-list.php?key={key}" for host in hosts]
+
+
+def build_source_list_url(date: datetime | None = None) -> str:
+    """Compatibilidad con el flujo anterior: devuelve la primera URL del fallback."""
+    return build_source_list_urls(date)[0]
+
+
+def load_fallback_playlist(path: str = "lista.m3u") -> str:
+    """Carga una lista local previa cuando el sitio remoto no está accesible."""
+    if not path:
+        return ""
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            content = f.read()
+    except FileNotFoundError:
+        return ""
+
+    if content and content.strip():
+        print(f"   ♻️  Usando fallback local: {path}")
+        return content
+
+    return ""
+
+
+def clean_playlist_name(name: str) -> str:
+    """Limpia y deja un nombre más legible para IPTV."""
+    if not name:
+        return "Canal"
+
+    name = re.sub(r'\s+', ' ', name).strip()
+    name = re.sub(r'\s*\|\s*', ' - ', name)
+    name = re.sub(r'\s*\[.*?\]\s*', ' ', name)
+    name = re.sub(r'\s*\(.*?\)\s*', ' ', name)
+    name = re.sub(r'\s*🔴\s*', ' ', name)
+    name = re.sub(r'\s*🇬🇧\s*|\s*🇺🇸\s*|\s*🇪🇸\s*|\s*🇮🇹\s*|\s*🇵🇹\s*|\s*🇳🇱\s*|\s*🇩🇪\s*|\s*🇫🇷\s*|\s*🇬🇷\s*|\s*🇵🇱\s*|\s*🇧🇬\s*|\s*🇷🇸\s*', ' ', name)
+    name = re.sub(r'\s+', ' ', name).strip()
+    return name
+
+
+def infer_group_from_entry(extinf_line: str, fallback: str = "PLAYTORRIO") -> str:
+    """Intenta deducir un grupo útil para IPTV a partir del contenido de la entrada."""
+    text = extinf_line.lower()
+    if any(word in text for word in ["futbol", "soccer", "premier", "la liga", "champions", "europa", "liga"]):
+        return "FUTBOL"
+    if any(word in text for word in ["motorsport", "moto", "grand prix", "formula", "racing", "nascar"]):
+        return "MOTOR"
+    if any(word in text for word in ["cycling", "bike", "tour", "cicl"]):
+        return "CICLISMO"
+    if any(word in text for word in ["basket", "nba", "baloncesto"]):
+        return "BALONCESTO"
+    if any(word in text for word in ["tennis", "wta", "atp"]):
+        return "TENIS"
+    if any(word in text for word in ["mma", "ufc", "box", "fight", "lucha"]):
+        return "COMBATES"
+    if any(word in text for word in ["hockey", "nhl"]):
+        return "HOCKEY"
+    if any(word in text for word in ["baseball", "mlb"]):
+        return "BEISBOL"
+    if any(word in text for word in ["rugby", "nfl"]):
+        return "RUGBY"
+    return fallback
+
+
+def load_playtorrio_fallback(output_path: str = "lista.m3u") -> bool:
+    """Intenta construir una lista útil a partir de varias listas de PlayTorrio."""
+    collected = []
+
+    for candidate in PLAYTORRIO_FALLBACK_CANDIDATES:
+        try:
+            with open(candidate, "r", encoding="utf-8") as f:
+                content = f.read()
+        except FileNotFoundError:
+            continue
+
+        if content and content.strip():
+            collected.append((candidate, content))
+
+    if not collected:
+        return False
+
+    merged_lines = ["#EXTM3U", "#EXTGRP:PLAYTORRIO FALLBACK"]
+    seen_entries = set()
+
+    for candidate, content in collected:
+        lines = [line.rstrip() for line in content.splitlines() if line.strip()]
+        pending_entry = []
+
+        for line in lines:
+            stripped = line.strip()
+            if stripped.startswith("#EXTINF"):
+                pending_entry = [stripped]
+                continue
+            if pending_entry:
+                if stripped.startswith("http") and stripped not in seen_entries:
+                    extinf_line = pending_entry[0]
+                    display_name = re.search(r',([^,]+)$', extinf_line)
+                    if display_name:
+                        raw_name = display_name.group(1).strip()
+                        clean_name = clean_playlist_name(raw_name)
+                        group_name = infer_group_from_entry(extinf_line)
+                        extinf_line = re.sub(r'group-title="[^"]*"', f'group-title="{group_name}"', extinf_line, count=1)
+                        extinf_line = re.sub(r',[^,]+$', f',{clean_name}', extinf_line, count=1)
+                    entry = "\n".join([extinf_line, stripped])
+                    merged_lines.append(entry)
+                    seen_entries.add(stripped)
+                pending_entry = []
+                continue
+            if stripped.startswith("http") and stripped not in seen_entries:
+                merged_lines.append(stripped)
+                seen_entries.add(stripped)
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(merged_lines) + "\n")
+
+    sources = ", ".join(candidate for candidate, _ in collected)
+    print(f"   ✅ Se ha restaurado la lista desde PlayTorrio: {sources}")
+    return True
 
 
 def normalize_acestream_url(url: str) -> str:
@@ -574,24 +697,44 @@ def main():
 
         page.on("response", lambda response: handle_response(response))
 
-        source_list_url = build_source_list_url()
-        print(f"[7] Navegando a la lista de streams: {source_list_url}")
-        try:
-            page.goto("about:blank")
-            time.sleep(1)
-            page.goto(source_list_url, timeout=120000, wait_until="domcontentloaded", referer=BASE_URL)
-            
-            current_url = page.url
-            if "platinsport.com" not in current_url:
-                print(f"     🚫 Redirigido fuera del sitio: {current_url}")
-                browser.close()
-                sys.exit(1)
+        source_list_urls = build_source_list_urls()
+        source_list_loaded = False
 
-            print("     Página source-list cargada")
-        except Exception as e:
-            print(f"     Error al cargar source-list: {e}")
+        for source_list_url in source_list_urls:
+            print(f"[7] Navegando a la lista de streams: {source_list_url}")
+            try:
+                page.goto("about:blank")
+                time.sleep(1)
+                page.goto(source_list_url, timeout=120000, wait_until="domcontentloaded", referer=BASE_URL)
+
+                current_url = page.url
+                if "platinsport.com" not in current_url:
+                    print(f"     🚫 Redirigido fuera del sitio: {current_url}")
+                    continue
+
+                print("     Página source-list cargada")
+                source_list_loaded = True
+                break
+            except Exception as e:
+                print(f"     ⚠ No se pudo cargar {source_list_url}: {e}")
+
+        if not source_list_loaded:
+            print("     ⚠ No fue posible cargar la source-list desde ninguno de los hosts probados")
+            if load_playtorrio_fallback("lista.m3u"):
+                browser.close()
+                sys.exit(0)
+
+            fallback_content = load_fallback_playlist("lista.m3u")
+            if fallback_content:
+                with open("lista.m3u", "w", encoding="utf-8") as f:
+                    f.write(fallback_content)
+                print("     ✅ Se conserva la lista local anterior porque el sitio remoto no está accesible")
+            else:
+                with open("lista.m3u", "w", encoding="utf-8") as f:
+                    f.write("#EXTM3U\n")
+                print("     ✅ Se genera un M3U vacío porque no hay backup local disponible")
             browser.close()
-            sys.exit(1)
+            sys.exit(0)
 
         print("[8] Capturando contenido de la lista de streams...")
         try:
@@ -772,7 +915,18 @@ def main():
 
         browser.close()
     
-    if not raw_html:
+    if not raw_html or raw_html.count("acestream://") == 0:
+        if load_playtorrio_fallback("lista.m3u"):
+            print("\n⚠ No se pudo capturar contenido nuevo; se ha restaurado la lista de PlayTorrio")
+            sys.exit(0)
+
+        fallback_content = load_fallback_playlist("lista.m3u")
+        if fallback_content:
+            with open("lista.m3u", "w", encoding="utf-8") as f:
+                f.write(fallback_content)
+            print("\n⚠ No se pudo capturar contenido nuevo; se conserva la lista local previa")
+            sys.exit(0)
+
         print("\n❌ ERROR: No se pudo capturar el HTML")
         sys.exit(1)
     
