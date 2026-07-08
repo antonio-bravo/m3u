@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-07-08 04:19:31
-# Total Channels: 37
-# Generated: 2026-07-08T04:00:02Z
+# IPFS Acestream Channels - 2026-07-08 07:34:23
+# Total Channels: 36
+# Generated: 2026-07-08T07:00:03Z
 
 # -------- DEPORTES --------
 #EXTINF:-1 tvg-id="" tvg-logo="https://dsports-widgets.tbxnet.com/assets/images/channels/1610.png" group-title="DEPORTES",Direct Sport+ 1080p *
@@ -39,9 +39,6 @@ http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
 # -------- MOVISTAR DEPORTES --------
 #EXTINF:-1 tvg-id="M+ Deportes HD" tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" group-title="MOVISTAR DEPORTES",M+ Deportes 720p *
 http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
-
-#EXTINF:-1 tvg-id="M+ Deportes HD" tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" group-title="MOVISTAR DEPORTES",M+ Deportes 720p **
-http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
 
 #EXTINF:-1 tvg-id="M+ Deportes HD" tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" group-title="MOVISTAR DEPORTES",M+ Deportes 1080p *
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
