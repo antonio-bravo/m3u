@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-07-10 15:35:30
-# Total Channels: 46
-# Generated: 2026-07-10T15:00:03Z
+# IPFS Acestream Channels - 2026-07-10 17:51:29
+# Total Channels: 47
+# Generated: 2026-07-10T17:00:02Z
 
 # -------- DEPORTES --------
 #EXTINF:-1 tvg-id="" tvg-logo="https://dsports-widgets.tbxnet.com/assets/images/channels/1610.png" group-title="DEPORTES",Direct Sport+ 1080p *
@@ -149,4 +149,8 @@ http://127.0.0.1:6878/ace/getstream?id=37c7e8bbc2fb95d29a063bef2e569ad3858f8edd
 # -------- TENNIS --------
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.sportsvideo.org/wp-content/uploads/2016/01/tennis-channel-logo-e1518530950839.jpg" group-title="TENNIS",Tennis Channel 1080p **
 http://127.0.0.1:6878/ace/getstream?id=43c549e5781f5a923b76f8f29cde122b5be164eb
+
+# -------- TOROS --------
+#EXTINF:-1 tvg-id="" tvg-logo="https://github.com/davidmuma/picons_dobleM/blob/master/icon/Onetoro.png?raw=true" group-title="TOROS",Onetoro TV 1080p *
+http://127.0.0.1:6878/ace/getstream?id=536c879d8a914e43141d778b3567fa017c9f5eeb
 
