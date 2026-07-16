@@ -13,52 +13,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-07-16 19:00</datetime>
-    <league>Serie A</league>
-    <teams>Orense vs Emelec</teams>
-    <channels>
-      <channel>
-        <channel_name>ECDF LigaPro</channel_name>
-        <channel_id>37144-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lY2RmX2xpZ2Fwcm8=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-07-16 20:00</datetime>
-    <league>Liga MX</league>
-    <teams>Necaxa vs Atlante</teams>
-    <channels>
-      <channel>
-        <channel_name>FOX Deportes</channel_name>
-        <channel_id>37147-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Deportes | OP2</channel_name>
-        <channel_id>37147-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Deportes | OP3</channel_name>
-        <channel_id>37147-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWZveGRlcG9ydGVz</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-07-16 17:30</datetime>
-    <league>Brasileirão</league>
-    <teams>Vitória vs Vasco da Gama</teams>
-    <channels>
-      <channel>
-        <channel_name>Premiere 2 BR</channel_name>
-        <channel_id>37142-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1wcmVtaWVyZTI=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-07-16 18:00</datetime>
     <league>NBA Summer League – New York Knicks vs Golden State Warriors</league>
     <teams>NBA Summer League – New York Knicks vs Golden State Warriors</teams>
@@ -77,6 +31,11 @@
         <channel_name>ESPN 4 | OP3</channel_name>
         <channel_id>37153-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW44</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 4 | HD</channel_name>
+        <channel_id>37153-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZXZlbjg=</url>
       </channel>
     </channels>
   </event>
@@ -100,6 +59,35 @@
         <channel_id>37151-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW44</url>
       </channel>
+      <channel>
+        <channel_name>ESPN 4 | HD</channel_name>
+        <channel_id>37151-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZXZlbjg=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-16 19:00</datetime>
+    <league>Serie A</league>
+    <teams>Orense vs Emelec</teams>
+    <channels>
+      <channel>
+        <channel_name>ECDF LigaPro</channel_name>
+        <channel_id>37144-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lY2RmX2xpZ2Fwcm8=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-16 17:30</datetime>
+    <league>Brasileirão</league>
+    <teams>Vitória vs Vasco da Gama</teams>
+    <channels>
+      <channel>
+        <channel_name>Premiere 2 BR</channel_name>
+        <channel_id>37142-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1wcmVtaWVyZTI=</url>
+      </channel>
     </channels>
   </event>
   <event>
@@ -121,6 +109,33 @@
         <channel_name>ESPN 3 | OP3</channel_name>
         <channel_id>37139-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW43</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-16 20:00</datetime>
+    <league>Liga MX</league>
+    <teams>Necaxa vs Atlante</teams>
+    <channels>
+      <channel>
+        <channel_name>FOX Deportes | HD</channel_name>
+        <channel_id>37147-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09Zm94ZGVwb3J0ZXM=</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes</channel_name>
+        <channel_id>37147-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes | OP2</channel_name>
+        <channel_id>37147-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes | OP3</channel_name>
+        <channel_id>37147-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWZveGRlcG9ydGVz</url>
       </channel>
     </channels>
   </event>
@@ -149,109 +164,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-07-16 16:45</datetime>
-    <league>Copa Argentina</league>
-    <teams>Racing Club vs Defensa y Justicia</teams>
-    <channels>
-      <channel>
-        <channel_name>TYC Sports</channel_name>
-        <channel_id>37145-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10eWNzcG9ydHM=</url>
-      </channel>
-      <channel>
-        <channel_name>TyC Sports | OP2</channel_name>
-        <channel_id>37145-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10eWNzcG9ydHM=</url>
-      </channel>
-      <channel>
-        <channel_name>TYC Sports | OP3</channel_name>
-        <channel_id>37145-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXR5Y3Nwb3J0cw==</url>
-      </channel>
-      <channel>
-        <channel_name>TYC Sports | HD</channel_name>
-        <channel_id>37145-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dHljc3BvcnRz</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-07-16 19:45</datetime>
-    <league>Copa Argentina</league>
-    <teams>Sarmiento vs Boca Juniors</teams>
-    <channels>
-      <channel>
-        <channel_name>TYC Sports</channel_name>
-        <channel_id>37146-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10eWNzcG9ydHM=</url>
-      </channel>
-      <channel>
-        <channel_name>TyC Sports | OP2</channel_name>
-        <channel_id>37146-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10eWNzcG9ydHM=</url>
-      </channel>
-      <channel>
-        <channel_name>TYC Sports | OP3</channel_name>
-        <channel_id>37146-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXR5Y3Nwb3J0cw==</url>
-      </channel>
-      <channel>
-        <channel_name>TYC Sports | HD</channel_name>
-        <channel_id>37146-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dHljc3BvcnRz</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-07-16 22:00</datetime>
-    <league>Liga MX</league>
-    <teams>Tijuana vs Tigres UANL</teams>
-    <channels>
-      <channel>
-        <channel_name>TUDN USA</channel_name>
-        <channel_id>37148-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10dWRu</url>
-      </channel>
-      <channel>
-        <channel_name>TUDN USA | OP2</channel_name>
-        <channel_id>37148-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10dWRu</url>
-      </channel>
-      <channel>
-        <channel_name>TUDN USA | OP3</channel_name>
-        <channel_id>37148-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vdml2by9jYW5hbGVzLnBocD9zdHJlYW09dHVkbg==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-07-16 18:00</datetime>
-    <league>MLB – Philadelphia Phillies vs New York Mets</league>
-    <teams>MLB – Philadelphia Phillies vs New York Mets</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN 3</channel_name>
-        <channel_id>37152-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW43</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 3 | OP2</channel_name>
-        <channel_id>37152-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW43</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 3 | OP3</channel_name>
-        <channel_id>37152-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW43</url>
-      </channel>
-      <channel>
-        <channel_name>ESPN 3 | HD</channel_name>
-        <channel_id>37152-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW43</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-07-16 20:00</datetime>
     <league>NBA Summer League – Miami Heat vs Toronto Raptors</league>
     <teams>NBA Summer League – Miami Heat vs Toronto Raptors</teams>
@@ -270,6 +182,114 @@
         <channel_name>ESPN 4 | OP3</channel_name>
         <channel_id>37154-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW44</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-16 16:45</datetime>
+    <league>Copa Argentina</league>
+    <teams>Racing Club vs Defensa y Justicia</teams>
+    <channels>
+      <channel>
+        <channel_name>TYC Sports | HD</channel_name>
+        <channel_id>37145-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dHljc3BvcnRz</url>
+      </channel>
+      <channel>
+        <channel_name>TYC Sports</channel_name>
+        <channel_id>37145-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10eWNzcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>TyC Sports | OP2</channel_name>
+        <channel_id>37145-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10eWNzcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>TYC Sports | OP3</channel_name>
+        <channel_id>37145-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXR5Y3Nwb3J0cw==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-16 19:45</datetime>
+    <league>Copa Argentina</league>
+    <teams>Sarmiento vs Boca Juniors</teams>
+    <channels>
+      <channel>
+        <channel_name>TYC Sports | HD</channel_name>
+        <channel_id>37146-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dHljc3BvcnRz</url>
+      </channel>
+      <channel>
+        <channel_name>TYC Sports</channel_name>
+        <channel_id>37146-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10eWNzcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>TyC Sports | OP2</channel_name>
+        <channel_id>37146-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10eWNzcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>TYC Sports | OP3</channel_name>
+        <channel_id>37146-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXR5Y3Nwb3J0cw==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-16 18:00</datetime>
+    <league>MLB – Philadelphia Phillies vs New York Mets</league>
+    <teams>MLB – Philadelphia Phillies vs New York Mets</teams>
+    <channels>
+      <channel>
+        <channel_name>ESPN 3 | HD</channel_name>
+        <channel_id>37152-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW43</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3</channel_name>
+        <channel_id>37152-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW43</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP2</channel_name>
+        <channel_id>37152-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW43</url>
+      </channel>
+      <channel>
+        <channel_name>ESPN 3 | OP3</channel_name>
+        <channel_id>37152-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW43</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-16 22:00</datetime>
+    <league>Liga MX</league>
+    <teams>Tijuana vs Tigres UANL</teams>
+    <channels>
+      <channel>
+        <channel_name>TUDN USA | HD</channel_name>
+        <channel_id>37148-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dHVkbg==</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA</channel_name>
+        <channel_id>37148-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10dWRu</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA | OP2</channel_name>
+        <channel_id>37148-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10dWRu</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA | OP3</channel_name>
+        <channel_id>37148-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vdml2by9jYW5hbGVzLnBocD9zdHJlYW09dHVkbg==</url>
       </channel>
     </channels>
   </event>
