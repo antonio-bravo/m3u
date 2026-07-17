@@ -28,23 +28,6 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-07-16 17:30</datetime>
-    <league>Brasileirão</league>
-    <teams>Vitória vs Vasco da Gama</teams>
-    <channels>
-      <channel>
-        <channel_name>Premiere 2 BR | HD</channel_name>
-        <channel_id>37142-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09cHJlbWllcmUy</url>
-      </channel>
-      <channel>
-        <channel_name>Premiere 2 BR</channel_name>
-        <channel_id>37142-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1wcmVtaWVyZTI=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-07-16 19:00</datetime>
     <league>Serie A</league>
     <teams>Orense vs Emelec</teams>
@@ -58,6 +41,38 @@
         <channel_name>ECDF LigaPro</channel_name>
         <channel_id>37144-2</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lY2RmX2xpZ2Fwcm8=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-16 20:00</datetime>
+    <league>Liga MX</league>
+    <teams>Necaxa vs Atlante</teams>
+    <channels>
+      <channel>
+        <channel_name>FOX HD</channel_name>
+        <channel_id>37147-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW41</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes | HD</channel_name>
+        <channel_id>37147-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09Zm94ZGVwb3J0ZXM=</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes</channel_name>
+        <channel_id>37147-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes | OP2</channel_name>
+        <channel_id>37147-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
+      </channel>
+      <channel>
+        <channel_name>FOX Deportes | OP3</channel_name>
+        <channel_id>37147-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWZveGRlcG9ydGVz</url>
       </channel>
     </channels>
   </event>
@@ -85,67 +100,6 @@
   </event>
   <event>
     <datetime>2026-07-16 20:00</datetime>
-    <league>Liga MX</league>
-    <teams>Necaxa vs Atlante</teams>
-    <channels>
-      <channel>
-        <channel_name>FOX Deportes | HD</channel_name>
-        <channel_id>37147-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09Zm94ZGVwb3J0ZXM=</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Deportes</channel_name>
-        <channel_id>37147-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Deportes | OP2</channel_name>
-        <channel_id>37147-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Deportes | OP3</channel_name>
-        <channel_id>37147-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWZveGRlcG9ydGVz</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-07-16 17:30</datetime>
-    <league>Brasileirão</league>
-    <teams>Botafogo vs Santos</teams>
-    <channels>
-      <channel>
-        <channel_name>Premiere BR | HD</channel_name>
-        <channel_id>37141-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09cHJlbWllcmUx</url>
-      </channel>
-      <channel>
-        <channel_name>Premiere BR</channel_name>
-        <channel_id>37141-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1wcmVtaWVyZTE=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-07-16 16:30</datetime>
-    <league>Serie A</league>
-    <teams>Aucas vs Independiente del Valle</teams>
-    <channels>
-      <channel>
-        <channel_name>ECDF LigaPRO | HD</channel_name>
-        <channel_id>37143-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZWNkZl9saWdhcHJv</url>
-      </channel>
-      <channel>
-        <channel_name>ECDF LigaPro</channel_name>
-        <channel_id>37143-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lY2RmX2xpZ2Fwcm8=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-07-16 20:00</datetime>
     <league>NBA Summer League – Miami Heat vs Toronto Raptors</league>
     <teams>NBA Summer League – Miami Heat vs Toronto Raptors</teams>
     <channels>
@@ -163,33 +117,6 @@
         <channel_name>ESPN 4 | OP3</channel_name>
         <channel_id>37154-3</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbC5waHA/c3RyZWFtPWV2ZW44</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-07-16 16:45</datetime>
-    <league>Copa Argentina</league>
-    <teams>Racing Club vs Defensa y Justicia</teams>
-    <channels>
-      <channel>
-        <channel_name>TYC Sports | HD</channel_name>
-        <channel_id>37145-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dHljc3BvcnRz</url>
-      </channel>
-      <channel>
-        <channel_name>TYC Sports</channel_name>
-        <channel_id>37145-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10eWNzcG9ydHM=</url>
-      </channel>
-      <channel>
-        <channel_name>TyC Sports | OP2</channel_name>
-        <channel_id>37145-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10eWNzcG9ydHM=</url>
-      </channel>
-      <channel>
-        <channel_name>TYC Sports | OP3</channel_name>
-        <channel_id>37145-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPXR5Y3Nwb3J0cw==</url>
       </channel>
     </channels>
   </event>
