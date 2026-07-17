@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-07-17 15:19:25
-# Total Channels: 36
-# Generated: 2026-07-17T15:00:03Z
+# IPFS Acestream Channels - 2026-07-17 17:17:47
+# Total Channels: 35
+# Generated: 2026-07-17T17:00:02Z
 
 # -------- DEPORTES --------
 #EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTExzu7xibD1sz89l8PlnxvB8oUMOOhDLKywQ&s" group-title="DEPORTES",RALLY TV 1080p *
@@ -100,10 +100,6 @@ http://127.0.0.1:6878/ace/getstream?id=584e20154750a15d14cb59953bb9cdd923c331bb
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://betbrothers.es/wp-content/uploads/2026/02/mundial-en-dazn.jpg" group-title="MUNDIAL",Dazn Mundial 4 **
 http://127.0.0.1:6878/ace/getstream?id=aab0be9632ef2f53e99f2e596a8e6a30ed34a29c
-
-# -------- OTROS --------
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="OTROS",TSN+ *
-http://127.0.0.1:6878/ace/getstream?id=8374a313823bbaa3140ca510a172cbc1830f609c
 
 # -------- TDT --------
 #EXTINF:-1 tvg-id="La 1 HD" tvg-logo="https://i.ibb.co/Vf2GT70/la1.png" group-title="TDT",La 1 TVE 4K *
