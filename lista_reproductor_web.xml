@@ -1,66 +1,454 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-07-17 21:25</datetime>
-    <league>Major League Soccer</league>
-    <teams>LA Galaxy vs Los Angeles FC</teams>
+    <datetime>2026-07-18 15:00</datetime>
+    <league>Amistoso Internacional</league>
+    <teams>Millonarios vs Colo-Colo</teams>
     <channels>
       <channel>
-        <channel_name>FOX Deportes | HD</channel_name>
-        <channel_id>37171-1</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09Zm94ZGVwb3J0ZXM=</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Deportes</channel_name>
-        <channel_id>37171-2</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Deportes | OP2</channel_name>
-        <channel_id>37171-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1mb3hkZXBvcnRlcw==</url>
-      </channel>
-      <channel>
-        <channel_name>FOX Deportes | OP3</channel_name>
-        <channel_id>37171-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWZveGRlcG9ydGVz</url>
+        <channel_name>Disney+</channel_name>
+        <channel_id>37194-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-07-17 22:00</datetime>
-    <league>Liga MX</league>
-    <teams>Juárez vs Puebla</teams>
+    <datetime>2026-07-18 12:00</datetime>
+    <league>Segunda División</league>
+    <teams>Rentistas vs Cerrito</teams>
     <channels>
       <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>37196-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 17:00</datetime>
+    <league>Copa de la Liga</league>
+    <teams>Copa de la Liga</teams>
+    <channels>
+      <channel>
+        <channel_name>TNT Sports Premiun CL HD</channel_name>
+        <channel_id>37198-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dG50c3BvcnRzY2hpbGU=</url>
+      </channel>
+      <channel>
+        <channel_name>TNT Sports Premiun CL</channel_name>
+        <channel_id>37198-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
+      </channel>
+      <channel>
+        <channel_name>TNT Sports Premiun CL OP2</channel_name>
+        <channel_id>37198-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10bnRzcG9ydHNjaGlsZQ==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 20:00</datetime>
+    <league>Liga MX</league>
+    <teams>Monterrey vs Santos Laguna</teams>
+    <channels>
+      <channel>
+        <channel_name>TUDN USA | HD</channel_name>
+        <channel_id>37200-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dHVkbg==</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA</channel_name>
+        <channel_id>37200-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10dWRu</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 MX</channel_name>
+        <channel_id>37200-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1jYW5hbDU=</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA | OP2</channel_name>
+        <channel_id>37200-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10dWRu</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA | OP3</channel_name>
+        <channel_id>37200-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vdml2by9jYW5hbGVzLnBocD9zdHJlYW09dHVkbg==</url>
+      </channel>
+      <channel>
+        <channel_name>Univision</channel_name>
+        <channel_id>37200-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT11bml2aXNpb24=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 22:10</datetime>
+    <league>Liga MX</league>
+    <teams>Querétaro vs América</teams>
+    <channels>
+      <channel>
+        <channel_name>TUDN USA | HD</channel_name>
+        <channel_id>37202-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dHVkbg==</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA</channel_name>
+        <channel_id>37202-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10dWRu</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA | OP2</channel_name>
+        <channel_id>37202-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10dWRu</url>
+      </channel>
+      <channel>
+        <channel_name>TUDN USA | OP3</channel_name>
+        <channel_id>37202-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMi5jb20vdml2by9jYW5hbGVzLnBocD9zdHJlYW09dHVkbg==</url>
+      </channel>
+      <channel>
+        <channel_name>Univision</channel_name>
+        <channel_id>37202-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT11bml2aXNpb24=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 11:00</datetime>
+    <league>Liga 1</league>
+    <teams>Deportivo Moquegua vs Comerciantes Unidos</teams>
+    <channels>
+      <channel>
+        <channel_name>Liga1MAX | HD</channel_name>
+        <channel_id>37182-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09bGlnYTFtYXg=</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1MAX</channel_name>
+        <channel_id>37182-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP2</channel_name>
+        <channel_id>37182-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP3</channel_name>
+        <channel_id>37182-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 15:30</datetime>
+    <league>Liga 1</league>
+    <teams>Atlético Grau vs UTC Cajamarca</teams>
+    <channels>
+      <channel>
+        <channel_name>Liga1MAX | HD</channel_name>
+        <channel_id>37184-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09bGlnYTFtYXg=</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1MAX</channel_name>
+        <channel_id>37184-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP2</channel_name>
+        <channel_id>37184-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP3</channel_name>
+        <channel_id>37184-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 16:00</datetime>
+    <league>Copa del Mundo</league>
+    <teams>Francia vs Inglaterra</teams>
+    <channels>
+      <channel>
+        <channel_name>Dsports HD1</channel_name>
+        <channel_id>37186-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly90dmhkMS5jb20vY2FuYWxlcy9kc3BvcnRzYXIucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>DSports | HD</channel_name>
+        <channel_id>37186-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZHNwb3J0cw==</url>
+      </channel>
+      <channel>
+        <channel_name>DSports</channel_name>
+        <channel_id>37186-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kc3BvcnRz</url>
+      </channel>
+      <channel>
+        <channel_name>DSports | OP2</channel_name>
+        <channel_id>37186-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1kc3BvcnRz</url>
+      </channel>
+      <channel>
+        <channel_name>DSports | OP3</channel_name>
+        <channel_id>37186-5</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWRzcG9ydHM=</url>
+      </channel>
+      <channel>
+        <channel_name>Caracol TV</channel_name>
+        <channel_id>37186-6</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1jYXJhY29s</url>
+      </channel>
+      <channel>
+        <channel_name>Caracol TV  | HD</channel_name>
+        <channel_id>37186-7</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09Y2FyYWNvbA==</url>
+      </channel>
+      <channel>
+        <channel_name>Telemundo | HD</channel_name>
+        <channel_id>37186-8</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dGVsZW11bmRv</url>
+      </channel>
+      <channel>
         <channel_name>Universo | HD</channel_name>
-        <channel_id>37169-1</channel_id>
+        <channel_id>37186-9</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dW5pdmVyc28=</url>
       </channel>
       <channel>
+        <channel_name>Telemundo</channel_name>
+        <channel_id>37186-10</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10ZWxlbXVuZG8=</url>
+      </channel>
+      <channel>
         <channel_name>Universo</channel_name>
-        <channel_id>37169-2</channel_id>
+        <channel_id>37186-11</channel_id>
         <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT11bml2ZXJzbw==</url>
       </channel>
       <channel>
-        <channel_name>Azteca 7</channel_name>
-        <channel_id>37169-3</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1henRlY2E3</url>
+        <channel_name>Deportes TV. C</channel_name>
+        <channel_id>37186-12</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1nb2x0dg==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 19:30</datetime>
+    <league>Primera División</league>
+    <teams>Aurora vs Oriente Petrolero</teams>
+    <channels>
+      <channel>
+        <channel_name>Entel TV PLUS+</channel_name>
+        <channel_id>37188-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZXZlbjE=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 16:30</datetime>
+    <league>Serie A</league>
+    <teams>LDU Quito vs Leones del Norte</teams>
+    <channels>
+      <channel>
+        <channel_name>ECDF LigaPRO | HD</channel_name>
+        <channel_id>37190-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZWNkZl9saWdhcHJv</url>
       </channel>
       <channel>
-        <channel_name>Azteca 7 | OP2</channel_name>
-        <channel_id>37169-4</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1henRlY2E3</url>
+        <channel_name>ECDF LigaPro</channel_name>
+        <channel_id>37190-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lY2RmX2xpZ2Fwcm8=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 19:00</datetime>
+    <league>Serie A</league>
+    <teams>Barcelona vs Libertad</teams>
+    <channels>
+      <channel>
+        <channel_name>ECDF LigaPRO | HD</channel_name>
+        <channel_id>37191-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZWNkZl9saWdhcHJv</url>
       </channel>
       <channel>
-        <channel_name>Azteca 7 | HD</channel_name>
-        <channel_id>37169-5</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09YXp0ZWNhNw==</url>
+        <channel_name>ECDF LigaPro</channel_name>
+        <channel_id>37191-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lY2RmX2xpZ2Fwcm8=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 10:30</datetime>
+    <league>Primera División</league>
+    <teams>Progreso vs Deportivo Maldonado</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>37192-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 14:00</datetime>
+    <league>Primera División</league>
+    <teams>Peñarol vs Boston River</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>37193-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 09:00</datetime>
+    <league>Segunda División</league>
+    <teams>Uruguay Montevideo vs River Plate</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>37195-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 17:30</datetime>
+    <league>Segunda División</league>
+    <teams>Oriental vs Huracán</teams>
+    <channels>
+      <channel>
+        <channel_name>Disney+</channel_name>
+        <channel_id>37197-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1kaXNuZXkx</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 18:00</datetime>
+    <league>Liga MX</league>
+    <teams>Pumas UNAM vs Pachuca</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 5 MX</channel_name>
+        <channel_id>37199-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1jYW5hbDU=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 20:07</datetime>
+    <league>Liga MX</league>
+    <teams>Guadalajara vs Toluca</teams>
+    <channels>
+      <channel>
+        <channel_name>Telemundo | HD</channel_name>
+        <channel_id>37201-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dGVsZW11bmRv</url>
       </channel>
       <channel>
-        <channel_name>Azteca 7 | OP3</channel_name>
-        <channel_id>37169-6</channel_id>
-        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWF6dGVjYTc=</url>
+        <channel_name>Universo | HD</channel_name>
+        <channel_id>37201-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09dW5pdmVyc28=</url>
+      </channel>
+      <channel>
+        <channel_name>Telemundo</channel_name>
+        <channel_id>37201-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT10ZWxlbXVuZG8=</url>
+      </channel>
+      <channel>
+        <channel_name>Universo</channel_name>
+        <channel_id>37201-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT11bml2ZXJzbw==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 13:15</datetime>
+    <league>Liga 1</league>
+    <teams>ADT vs Universitario</teams>
+    <channels>
+      <channel>
+        <channel_name>Liga1MAX | HD</channel_name>
+        <channel_id>37183-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09bGlnYTFtYXg=</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1MAX</channel_name>
+        <channel_id>37183-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP2</channel_name>
+        <channel_id>37183-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP3</channel_name>
+        <channel_id>37183-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 18:30</datetime>
+    <league>Liga 1</league>
+    <teams>Cusco vs Alianza Atlético</teams>
+    <channels>
+      <channel>
+        <channel_name>Liga1MAX | HD</channel_name>
+        <channel_id>37185-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09bGlnYTFtYXg=</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1MAX</channel_name>
+        <channel_id>37185-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP2</channel_name>
+        <channel_id>37185-3</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT1saWdhMW1heA==</url>
+      </channel>
+      <channel>
+        <channel_name>Liga1Max | OP3</channel_name>
+        <channel_id>37185-4</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL3Zpdm8vY2FuYWxlcy5waHA/c3RyZWFtPWxpZ2ExbWF4</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 14:00</datetime>
+    <league>Primera División</league>
+    <teams>Always Ready vs Universitario de Vinto</teams>
+    <channels>
+      <channel>
+        <channel_name>Entel TV PLUS+</channel_name>
+        <channel_id>37187-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZXZlbjE=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-07-18 14:00</datetime>
+    <league>Serie A</league>
+    <teams>Deportivo Cuenca vs Universidad Católica</teams>
+    <channels>
+      <channel>
+        <channel_name>ECDF LigaPRO | HD</channel_name>
+        <channel_id>37189-1</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL29ubGluZS9jYW5hbGVzLnBocD9zdHJlYW09ZWNkZl9saWdhcHJv</url>
+      </channel>
+      <channel>
+        <channel_name>ECDF LigaPro</channel_name>
+        <channel_id>37189-2</channel_id>
+        <url>https://rojadirectaenvivohd.com/embed/eventos.html?r=aHR0cHM6Ly9mbHR2aGQuY29tL2NhbmFsZXMucGhwP3N0cmVhbT1lY2RmX2xpZ2Fwcm8=</url>
       </channel>
     </channels>
   </event>
