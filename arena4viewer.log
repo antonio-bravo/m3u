@@ -1,14 +1,5 @@
-2026-07-19 19:15:21,598 [INFO] 🚀 Iniciando extracción de Arena4Viewer...
-2026-07-19 19:15:21,598 [INFO] 📡 Probando servidor: https://www.arena4viewer.in
-2026-07-19 19:15:36,689 [ERROR] ❌ Error conectando a https://www.arena4viewer.in: HTTPSConnectionPool(host='www.arena4viewer.in', port=443): Read timed out. (read timeout=15)
-2026-07-19 19:15:36,689 [INFO] 📡 Probando servidor: https://www.arena4viewer.pl
-2026-07-19 19:15:51,913 [ERROR] ❌ Error conectando a https://www.arena4viewer.pl: HTTPSConnectionPool(host='www.arena4viewer.pl', port=443): Read timed out. (read timeout=15)
-2026-07-19 19:15:51,913 [INFO] 📡 Probando servidor: https://www.arena4viewer.co.in
-2026-07-19 19:16:07,017 [ERROR] ❌ Error conectando a https://www.arena4viewer.co.in: HTTPSConnectionPool(host='www.arena4viewer.co.in', port=443): Read timed out. (read timeout=15)
-2026-07-19 19:16:07,017 [INFO] 📡 Probando servidor: https://www.arena4viewer.cool
-2026-07-19 19:16:22,262 [ERROR] ❌ Error conectando a https://www.arena4viewer.cool: HTTPSConnectionPool(host='www.arena4viewer.cool', port=443): Read timed out. (read timeout=15)
-2026-07-19 19:16:22,262 [INFO] 📡 Probando servidor: https://www.arena4viewer.top
-2026-07-19 19:16:37,565 [ERROR] ❌ Error conectando a https://www.arena4viewer.top: HTTPSConnectionPool(host='www.arena4viewer.top', port=443): Read timed out. (read timeout=15)
-2026-07-19 19:16:37,565 [INFO] 📡 Probando servidor: https://www.arena4viewer.lv
-2026-07-19 19:16:38,579 [WARNING] ⚠️ Servidor https://www.arena4viewer.lv respondió con status 429
-2026-07-19 19:16:38,580 [ERROR] ❌ No se pudo obtener la lista de canales de ninguna fuente.
+2026-07-19 20:59:19,544 [INFO] 🚀 Iniciando extracción de Arena4Viewer...
+2026-07-19 20:59:19,545 [INFO] 📡 Probando servidor: https://www.arena4viewer.in
+2026-07-19 20:59:20,946 [INFO] ✅ ¡Éxito! Encontrados 139 canales en https://www.arena4viewer.in
+2026-07-19 20:59:20,946 [INFO] ✨ Archivo 'arena4viewer.m3u' generado correctamente.
+2026-07-19 20:59:20,946 [INFO] 📺 Rango de canales: 1 al 160
