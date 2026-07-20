@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-07-20 22:48:31" total="24">
+<eventos generado="2026-07-20 23:49:35" total="22">
   <evento id="1">
     <nombre>Flamengo (W) –  3B da Amazonia (W)</nombre>
     <deporte>Fútbol</deporte>
@@ -18,6 +18,26 @@
     </streams>
   </evento>
   <evento id="2">
+    <nombre>Yosuke Watanuki –  Andre Ilagan</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP Challenger. Winnipeg</competicion>
+    <fecha>20 de julio</fecha>
+    <hora>00:10</hora>
+    <url>https://livetv.sx/es/eventinfo/392306691_yosuke_watanuki_andre_ilagan/</url>
+    <datetime_iso>2026-07-20T00:10:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="3">
+    <nombre>Rio Noguchi –  Braden Shick</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP Challenger. Winnipeg</competicion>
+    <fecha>20 de julio</fecha>
+    <hora>00:10</hora>
+    <url>https://livetv.sx/es/eventinfo/392306697_rio_noguchi_braden_shick/</url>
+    <datetime_iso>2026-07-20T00:10:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="4">
     <nombre>Cleveland –  Minnesota</nombre>
     <deporte>Fútbol</deporte>
     <competicion>No especificado</competicion>
@@ -46,7 +66,7 @@
       </stream>
     </streams>
   </evento>
-  <evento id="3">
+  <evento id="5">
     <nombre>Puerto Rico –  México</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Juegos Centroamericanos y del Caribe</competicion>
@@ -56,7 +76,17 @@
     <datetime_iso>2026-07-20T00:40:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="4">
+  <evento id="6">
+    <nombre>Yu Hsiou Hsu –  Jay Dylan Hara Friend</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>ATP Challenger. Winnipeg</competicion>
+    <fecha>20 de julio</fecha>
+    <hora>00:45</hora>
+    <url>https://livetv.sx/es/eventinfo/392306693_yu_hsiou_hsu_jay_dylan_hara_friend/</url>
+    <datetime_iso>2026-07-20T00:45:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="7">
     <nombre>Nacional Potosí –  Real Oruro</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Bolivia. Primera División</competicion>
@@ -73,27 +103,7 @@
       </stream>
     </streams>
   </evento>
-  <evento id="5">
-    <nombre>Tyler Zink –  Zhizhen Zhang</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP Challenger. Winnipeg</competicion>
-    <fecha>20 de julio</fecha>
-    <hora>01:00</hora>
-    <url>https://livetv.sx/es/eventinfo/392306694_tyler_zink_zhizhen_zhang/</url>
-    <datetime_iso>2026-07-20T01:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="6">
-    <nombre>Nicolas Arseneault –  Keegan Rice</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP Challenger. Winnipeg</competicion>
-    <fecha>20 de julio</fecha>
-    <hora>01:00</hora>
-    <url>https://livetv.sx/es/eventinfo/392306696_nicolas_arseneault_keegan_rice/</url>
-    <datetime_iso>2026-07-20T01:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="7">
+  <evento id="8">
     <nombre>Ferroviária (M) –   Corinthians (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Mujeres</competicion>
@@ -124,7 +134,7 @@ player/live.php?id=262383&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="8">
+  <evento id="9">
     <nombre>NY Yankees –  Pittsburgh</nombre>
     <deporte>Fútbol</deporte>
     <competicion>No especificado</competicion>
@@ -153,7 +163,7 @@ player/live.php?id=262383&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="9">
+  <evento id="10">
     <nombre>Toronto –  Tampa Bay</nombre>
     <deporte>Fútbol</deporte>
     <competicion>No especificado</competicion>
@@ -182,7 +192,7 @@ player/live.php?id=262383&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="10">
+  <evento id="11">
     <nombre>Filadelfia –  LA Dodgers</nombre>
     <deporte>Fútbol</deporte>
     <competicion>No especificado</competicion>
@@ -232,87 +242,143 @@ player/live.php?id=263215&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="11">
-    <nombre>WTA. Palermo</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>WTA. Palermo</competicion>
-    <fecha>20 de julio</fecha>
-    <hora>17:40</hora>
-    <url>https://livetv.sx/es/eventinfo/392510579_wta_palermo/</url>
-    <datetime_iso>2026-07-20T17:40:00</datetime_iso>
-    <streams total="0" />
-  </evento>
   <evento id="12">
-    <nombre>World Matchplay</nombre>
+    <nombre>Boston –  Baltimore</nombre>
     <deporte>Fútbol</deporte>
     <competicion>No especificado</competicion>
     <fecha>20 de julio</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/392349052_world_matchplay/</url>
-    <datetime_iso>2026-07-20T20:00:00</datetime_iso>
-    <streams total="0" />
+    <hora>01:10</hora>
+    <url>https://livetv.sx/es/eventinfo/390900727_boston_baltimore/</url>
+    <datetime_iso>2026-07-20T01:10:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://zero-streams.online/pro-027/19.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3038806&amp;lang=es&amp;eid=390900727&amp;lid=3038806&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.vdocity.com/1/_5PpPE9QjBKBbZPDhaCzHKDdqSuJyaAfL5</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3039034&amp;lang=es&amp;eid=390900727&amp;lid=3039034&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://www.vdocity.com/1/_5PpPE9QjBKBbZPDhaCzHKCu1vhkKwtzqe</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3039033&amp;lang=es&amp;eid=390900727&amp;lid=3039033&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="13">
-    <nombre>Fiona Ferro (M) –   Yufei Ren (M)</nombre>
+    <nombre>Atlanta –  San Diego</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>WTA. Palermo</competicion>
+    <competicion>No especificado</competicion>
     <fecha>20 de julio</fecha>
-    <hora>22:00</hora>
-    <url>https://livetv.sx/es/eventinfo/392475603__fiona_ferro_m__yufei_ren_m/</url>
-    <datetime_iso>2026-07-20T22:00:00</datetime_iso>
-    <streams total="0" />
+    <hora>01:15</hora>
+    <url>https://livetv.sx/es/eventinfo/390900729_atlanta_san_diego/</url>
+    <datetime_iso>2026-07-20T01:15:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://zero-streams.online/pro-027/20.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3038807&amp;lang=es&amp;eid=390900729&amp;lid=3038807&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.vdocity.com/1/_5PpPE9QjBKBbZPDhaCzHKGb7XhZa5Fekt</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3039038&amp;lang=es&amp;eid=390900729&amp;lid=3039038&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://www.vdocity.com/1/_5PpPE9QjBKBbZPDhaCzHKFrJ1VzvSyzGT</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3039037&amp;lang=es&amp;eid=390900729&amp;lid=3039037&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="14">
-    <nombre>Colombia –  Venezuela</nombre>
+    <nombre>Santo Andre/Intelli –  Carlos Barbosa</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Juegos Centroamericanos y del Caribe</competicion>
+    <competicion>Brasil. LNF</competicion>
     <fecha>20 de julio</fecha>
-    <hora>22:00</hora>
-    <url>https://livetv.sx/es/eventinfo/392479087_colombia_venezuela/</url>
-    <datetime_iso>2026-07-20T22:00:00</datetime_iso>
+    <hora>01:30</hora>
+    <url>https://livetv.sx/es/eventinfo/391816280_santo_andreintelli_carlos_barbosa/</url>
+    <datetime_iso>2026-07-20T01:30:00</datetime_iso>
     <streams total="0" />
   </evento>
   <evento id="15">
-    <nombre>MC Torque – Danubio</nombre>
+    <nombre>Tyler Zink –  Zhizhen Zhang</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Uruguay. Primera División</competicion>
+    <competicion>ATP Challenger. Winnipeg</competicion>
     <fecha>20 de julio</fecha>
-    <hora>22:00</hora>
-    <url>https://livetv.sx/es/eventinfo/392510452__/</url>
-    <datetime_iso>2026-07-20T22:00:00</datetime_iso>
+    <hora>01:30</hora>
+    <url>https://livetv.sx/es/eventinfo/392306694_tyler_zink_zhizhen_zhang/</url>
+    <datetime_iso>2026-07-20T01:30:00</datetime_iso>
     <streams total="0" />
   </evento>
   <evento id="16">
-    <nombre>Fiona Ferro (M) –  Yufei Ren (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Palermo</competicion>
+    <nombre>Milwaukee –  NY Mets</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
     <fecha>20 de julio</fecha>
-    <hora>22:00</hora>
-    <url>https://livetv.sx/es/eventinfo/392475603__/</url>
-    <datetime_iso>2026-07-20T22:00:00</datetime_iso>
-    <streams total="0" />
+    <hora>01:40</hora>
+    <url>https://livetv.sx/es/eventinfo/390904760_milwaukee_ny_mets/</url>
+    <datetime_iso>2026-07-20T01:40:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://zero-streams.online/pro-027/21.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3038808&amp;lang=es&amp;eid=390904760&amp;lid=3038808&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.vdocity.com/1/_5PpPE9QjBKBbZPDhaCzXi4AiCMp78kmQi</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3039040&amp;lang=es&amp;eid=390904760&amp;lid=3039040&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://www.vdocity.com/1/_5PpPE9QjBKBbZPDhaCzXi3RtgAFTWV6vH</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3039039&amp;lang=es&amp;eid=390904760&amp;lid=3039039&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="17">
-    <nombre>Yosuke Watanuki –  Andre Ilagan</nombre>
+    <nombre>Kansas City –  San Francisco</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>ATP Challenger. Winnipeg</competicion>
+    <competicion>No especificado</competicion>
     <fecha>20 de julio</fecha>
-    <hora>22:35</hora>
-    <url>https://livetv.sx/es/eventinfo/392306691_yosuke_watanuki_andre_ilagan/</url>
-    <datetime_iso>2026-07-20T22:35:00</datetime_iso>
-    <streams total="0" />
+    <hora>01:40</hora>
+    <url>https://livetv.sx/es/eventinfo/390904762_kansas_city_san_francisco/</url>
+    <datetime_iso>2026-07-20T01:40:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://www.vdocity.com/1/_5PpPE9QjBKBbZPDhaCzXi5eMEkwQPJ6Pa</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3039042&amp;lang=es&amp;eid=390904762&amp;lid=3039042&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://zero-streams.online/pro-027/22.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3038809&amp;lang=es&amp;eid=390904762&amp;lid=3038809&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://www.vdocity.com/1/_5PpPE9QjBKBbZPDhaCzXi4uXiZNkm2Ru9</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3039041&amp;lang=es&amp;eid=390904762&amp;lid=3039041&amp;ci=14&amp;si=19</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="18">
-    <nombre>Rio Noguchi –  Braden Shick</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP Challenger. Winnipeg</competicion>
-    <fecha>20 de julio</fecha>
-    <hora>22:35</hora>
-    <url>https://livetv.sx/es/eventinfo/392306697_rio_noguchi_braden_shick/</url>
-    <datetime_iso>2026-07-20T22:35:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="19">
     <nombre>Liga de Naciones, Sudamérica</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga de Naciones</competicion>
@@ -320,16 +386,9 @@ player/live.php?id=263215&amp;w=700&amp;h=480</url>
     <hora>22:40</hora>
     <url>https://livetv.sx/es/eventinfo/392502061_liga_de_naciones_sudam__rica/</url>
     <datetime_iso>2026-07-20T22:40:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/ZnLj2hvJJec?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=ZnLj2hvJJec&amp;lang=es&amp;eid=392502061&amp;lid=3038889&amp;ci=1395&amp;si=3</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="20">
+  <evento id="19">
     <nombre>Liga de Naciones, Sudamérica</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Liga de Naciones</competicion>
@@ -337,16 +396,9 @@ player/live.php?id=263215&amp;w=700&amp;h=480</url>
     <hora>22:40</hora>
     <url>https://livetv.sx/es/eventinfo/392502061_nations_league_americas_south/</url>
     <datetime_iso>2026-07-20T22:40:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/ZnLj2hvJJec?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=ZnLj2hvJJec&amp;lang=es&amp;eid=392502061&amp;lid=3038889&amp;ci=1395&amp;si=3</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="21">
+  <evento id="20">
     <nombre>Alessandra Mazzola (M) –   Dalila Spiteri (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>WTA. Palermo</competicion>
@@ -354,26 +406,9 @@ player/live.php?id=263215&amp;w=700&amp;h=480</url>
     <hora>22:45</hora>
     <url>https://livetv.sx/es/eventinfo/392266939__alessandra_mazzola_m__dalila_spiteri_m/</url>
     <datetime_iso>2026-07-20T22:45:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.vdocity.com/1/_5PpPE9QjBKBbZPDhaCmtBtYdoDsPAciAY</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3039016&amp;lang=es&amp;eid=392266939&amp;lid=3039016&amp;ci=4008&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="22">
-    <nombre>Yu Hsiou Hsu –  Jay Dylan Hara Friend</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>ATP Challenger. Winnipeg</competicion>
-    <fecha>20 de julio</fecha>
-    <hora>22:45</hora>
-    <url>https://livetv.sx/es/eventinfo/392306693_yu_hsiou_hsu_jay_dylan_hara_friend/</url>
-    <datetime_iso>2026-07-20T22:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="23">
+  <evento id="21">
     <nombre>Alessandra Mazzola (M) –  Dalila Spiteri (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Palermo</competicion>
@@ -381,16 +416,9 @@ player/live.php?id=263215&amp;w=700&amp;h=480</url>
     <hora>22:45</hora>
     <url>https://livetv.sx/es/eventinfo/392266939__/</url>
     <datetime_iso>2026-07-20T22:45:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.vdocity.com/1/_5PpPE9QjBKBbZPDhaCmtBtYdoDsPAciAY</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3039016&amp;lang=es&amp;eid=392266939&amp;lid=3039016&amp;ci=4008&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="24">
+  <evento id="22">
     <nombre>Costa Rica –  República Dominicana</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Juegos Centroamericanos y del Caribe</competicion>
