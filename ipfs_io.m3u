@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-07-21 07:36:07
-# Total Channels: 7
-# Generated: 2026-07-21T07:23:35Z
+# IPFS Acestream Channels - 2026-07-21 10:30:06
+# Total Channels: 9
+# Generated: 2026-07-21T10:00:01Z
 
 # -------- DEPORTES --------
 #EXTINF:-1 tvg-id="Esport 3" tvg-logo="https://img.3cat.cat/multimedia/jpg/1/5/1697802708951.jpg" group-title="DEPORTES",Esport3 720p *
@@ -10,19 +10,25 @@ http://127.0.0.1:6878/ace/getstream?id=739792a3225e5eb3056f4faa7b1137c7f161f23c
 #EXTINF:-1 tvg-id="Teledeporte" tvg-logo="https://img2.rtve.es/n/15966755" group-title="DEPORTES",Teledeporte 1080p *
 http://127.0.0.1:6878/ace/getstream?id=b35b3eb8e22365bf3469efd6d1f3b82618a6e18a
 
+#EXTINF:-1 tvg-id="Teledeporte" tvg-logo="https://img2.rtve.es/n/15966755" group-title="DEPORTES",Teledeporte 1080p **
+http://127.0.0.1:6878/ace/getstream?id=77cf022557c56cdf8d8115f50e61f846ad72ee05
+
 # -------- EUROSPORT --------
+#EXTINF:-1 tvg-id="Eurosport 1 HD" tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" group-title="EUROSPORT",Eurosport 1 720p **
+http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
+
 #EXTINF:-1 tvg-id="Eurosport 1 HD" tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" group-title="EUROSPORT",Eurosport 1 1080p *
 http://127.0.0.1:6878/ace/getstream?id=48a589dbeab3544662fafd79888aada7d834cfe9
 
 #EXTINF:-1 tvg-id="Eurosport 2" tvg-logo="https://i.ibb.co/M6h4Qyd/euro2.png" group-title="EUROSPORT",Eurosport 2 1080p *
 http://127.0.0.1:6878/ace/getstream?id=3ebcfc00921a4a9307dec97e078f8dc12eee27e7
 
-# -------- MOVISTAR DEPORTES --------
-#EXTINF:-1 tvg-id="M+ Deportes HD" tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" group-title="MOVISTAR DEPORTES",M+ Deportes 720p **
-http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 tvg-id="Eurosport 2" tvg-logo="https://i.ibb.co/M6h4Qyd/euro2.png" group-title="EUROSPORT",Eurosport 2 1080p **
+http://127.0.0.1:6878/ace/getstream?id=c6180a86440004748e2abe34d6f31eed8a218a3a
 
-#EXTINF:-1 tvg-id="M+ Vamos HD" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ Vamos 720p **
-http://127.0.0.1:6878/ace/getstream?id=8686522bd5d0b123cbc94ad4a12f2d3a18492479
+# -------- TDT --------
+#EXTINF:-1 tvg-id="Telecinco HD" tvg-logo="https://i.ibb.co/81wJ3GH/telecinco.png" group-title="TDT",Telecinco 1080p **
+http://127.0.0.1:6878/ace/getstream?id=3d376333ee90d6db3d413fc5764ef635882076f5
 
 # -------- TENNIS --------
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.sportsvideo.org/wp-content/uploads/2016/01/tennis-channel-logo-e1518530950839.jpg" group-title="TENNIS",Tennis Channel 1080p **
