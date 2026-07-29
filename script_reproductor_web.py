@@ -1,106 +1,109 @@
 import requests
+from bs4 import BeautifulSoup
 from urllib.parse import urljoin
+from datetime import datetime
 import xml.etree.ElementTree as ET
+import sys
 
-BASE_URL = 'https://rojadirectaenvivohd.com'
-DATA_URL = 'https://pltvhd.com/diaries.json'
+BASE_URLS = [
+    'https://pirlotv.la',
+    'https://www.pirlotv.la',
+    'https://pirlotv.fr',
+    'https://pirlotv.me',
+]
+
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-    'Accept': 'application/json, text/javascript, */*; q=0.01',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
 }
 
-# Verificar si el sitio está disponible antes de proceder
-
-def check_site_availability(url):
+def safe_get(url):
     try:
-        response = requests.get(url, headers=HEADERS, timeout=10)
-        return response.status_code == 200
+        response = requests.get(url, headers=HEADERS, timeout=12)
+        if response.status_code == 200 and 'SEIZED' not in response.text and 'Seized' not in response.text:
+            return response
     except requests.RequestException:
-        return False
+        pass
+    return None
 
-print(f"Verificando disponibilidad del sitio: {BASE_URL}")
-if not check_site_availability(BASE_URL):
-    print(f"Error: El sitio {BASE_URL} no está disponible o no responde.")
-    print("Posibles causas:")
-    print("- El sitio web está caído")
-    print("- Problemas de conectividad")
-    print("- El dominio ha cambiado")
-    exit(1)
+def fetch_events_from_pirlotv(base_url):
+    response = safe_get(base_url)
+    if not response:
+        return []
 
-try:
-    response = requests.get(DATA_URL, headers=HEADERS, timeout=20)
-    response.raise_for_status()
-    json_data = response.json()
-except Exception as e:
-    print(f"Error crítico: {e}")
-    exit(1)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    events = []
+    today_str = datetime.now().strftime('%Y-%m-%d')
 
-if not json_data or 'data' not in json_data:
-    print("Error: No se recibieron datos válidos desde la API.")
-    exit(1)
+    menu = soup.find('ul', class_='menu')
+    if not menu:
+        return []
 
-# Procesar el contenido
-
-events = []
-for entry in json_data['data']:
-    attributes = entry.get('attributes', {})
-    description = attributes.get('diary_description', '') or ''
-    description = description.strip()
-    if not description:
-        continue
-
-    if ':' in description:
-        league, teams = description.split(':', 1)
-    else:
-        league, teams = description, ''
-
-    league = league.strip()
-    teams = ' '.join(teams.strip().split())
-
-    if not teams:
-        teams = league
-
-    date = attributes.get('date_diary', '').strip()
-    time_str = attributes.get('diary_hour', '').strip()
-    if time_str and len(time_str) >= 5:
-        time_str = time_str[:5]
-
-    if not date or not time_str:
-        print(f"Evento ignorado por fecha/hora inválida: {description}")
-        continue
-
-    embeds = (attributes.get('embeds') or {}).get('data') or []
-    if not embeds:
-        print(f"Evento sin embeds: {description}")
-        continue
-
-    event = {
-        'datetime': f"{date} {time_str}",
-        'league': league,
-        'teams': teams,
-        'channels': []
-    }
-
-    for idx, embed in enumerate(embeds, start=1):
-        embed_attrs = embed.get('attributes', {})
-        embed_name = (embed_attrs.get('embed_name') or '').strip()
-        embed_iframe = (embed_attrs.get('embed_iframe') or '').strip()
-        if not embed_name or not embed_iframe:
+    items = menu.find_all('li', recursive=False)
+    for idx, li in enumerate(items, start=1):
+        event_link = li.find('a', recursive=False)
+        if not event_link:
             continue
 
-        event['channels'].append({
-            'channel_name': embed_name,
-            'channel_id': f"{entry.get('id')}-{idx}",
-            'url': urljoin(BASE_URL, embed_iframe)
-        })
+        time_span = event_link.find('span', class_='t')
+        time_str = time_span.get_text(strip=True) if time_span else ''
+        if time_span:
+            time_span.decompose()
 
-    if event['channels']:
-        events.append(event)
+        full_title = event_link.get_text(strip=True)
+        full_title = ' '.join(full_title.split())
+
+        if not full_title:
+            continue
+
+        if ':' in full_title:
+            league, teams = full_title.split(':', 1)
+        else:
+            league, teams = full_title, full_title
+
+        league = league.strip()
+        teams = teams.strip()
+
+        channels = []
+        sub_ul = li.find('ul')
+        if sub_ul:
+            for c_idx, sub_li in enumerate(sub_ul.find_all('li'), start=1):
+                ch_a = sub_li.find('a')
+                if ch_a and ch_a.get('href'):
+                    ch_name = ch_a.get_text(strip=True)
+                    ch_href = ch_a.get('href')
+                    channels.append({
+                        'channel_name': ch_name,
+                        'channel_id': f"{idx}-{c_idx}",
+                        'url': urljoin(base_url, ch_href)
+                    })
+
+        if channels:
+            events.append({
+                'datetime': f"{today_str} {time_str}".strip(),
+                'league': league,
+                'teams': teams,
+                'channels': channels
+            })
+
+    return events
+
+print("Verificando fuentes disponibles...")
+events = []
+working_base_url = None
+
+for base_url in BASE_URLS:
+    print(f"Probando: {base_url}")
+    events = fetch_events_from_pirlotv(base_url)
+    if events:
+        working_base_url = base_url
+        print(f"Éxito: {len(events)} eventos encontrados en {base_url}")
+        break
 
 if not events:
-    print("Error: No se encontraron eventos válidos en los datos recibidos.")
-    exit(1)
+    print("Error crítico: No se encontraron eventos válidos en ninguna de las fuentes probadas.")
+    sys.exit(1)
 
 # Generar XML
 
@@ -147,3 +150,5 @@ with open('lista_reproductor_web.m3u', 'w', encoding='utf-8') as f:
                 f'#EXTINF:-1,{event["datetime"]} - {event["league"]} - {event["teams"]} - {channel["channel_name"]}\n'
                 f'{channel["url"]}\n'
             )
+
+print("Archivos lista_reproductor_web.xml y lista_reproductor_web.m3u actualizados correctamente.")
