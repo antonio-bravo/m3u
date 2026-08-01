@@ -54,6 +54,7 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
+        git config --local pull.rebase true  
         
         git add lista_icastresana.m3u
         git commit -m "Actualizar lista_icastresana.m3u con nuevos logos"

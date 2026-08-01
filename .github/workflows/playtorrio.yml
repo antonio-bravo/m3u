@@ -39,6 +39,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git config --local pull.rebase true          
           git add playtorrio.m3u playtorrio_events.json
           git diff-index --quiet HEAD || git commit -m "🔄 Actualizar eventos deportivos - $(date +'%Y-%m-%d %H:%M:%S UTC')"
           git push
