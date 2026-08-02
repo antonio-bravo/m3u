@@ -51,8 +51,7 @@ jobs:
         if: steps.verify-changes.outputs.changes == 'true'
         run: |
           git config --local user.email "github-actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git config --local pull.rebase true          
+          git config --local user.name "GitHub Actions"        
 
           git pull origin main --rebase || git pull origin main
 

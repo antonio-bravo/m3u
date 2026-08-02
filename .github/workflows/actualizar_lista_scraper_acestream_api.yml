@@ -39,8 +39,10 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git config --local pull.rebase true          
+        git fetch
         git add lista_scraper_acestream_api.m3u
-        git commit -m "Actualizar lista M3U"
-        git push
+        git diff --staged --quiet || git commit -m "Actualizar lista M3U - $(date  -u +"%Y-%m-%d %H:%M:%S UTC")"
+        git pull --rebase
+        git push        
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

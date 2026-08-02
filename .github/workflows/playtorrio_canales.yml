@@ -79,18 +79,15 @@ jobs:
           
           # Añadir los archivos generados
           git add playtorrio_canales.m3u channels_final.json
+
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git config --local pull.rebase true
           
-          # Comprobar si hay cambios reales antes de intentar commitear
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
+          git fetch          
           
-          # Crear el commit
-          git commit -m "🔄 Update playtorrio_canales.m3u - $(date -u)"
+          git add lista.m3u
           
-          # --- FIX CRÍTICO: Sincronizar antes de subir ---
-          git pull --rebase origin main
-          
-          # Subir cambios
+          git diff --staged --quiet || git commit -m "🔄 Update playtorrio_canales.m3u - $(date -u)"
+          git pull --rebase
           git push

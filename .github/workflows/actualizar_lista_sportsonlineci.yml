@@ -36,12 +36,11 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git config --local pull.rebase true          
+          git config --local pull.rebase true
+          git fetch origin main          
           git add lista_sportsonlineci.xml
-          git commit -m 'Auto-update lista_sportsonlineci.xml' || echo "No changes to commit"
-          git stash || echo "No local changes to stash"
+          git diff --staged --quiet || git commit -m "Auto-update lista_sportsonlineci.xml - $(date +'%Y-%m-%d %H:%M:%S')"
           git pull --rebase
-          git stash pop || echo "No stash entries found"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

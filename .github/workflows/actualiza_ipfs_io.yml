@@ -44,16 +44,11 @@ jobs:
 
           # Configura pull para hacer rebase de forma automática
           git config --local pull.rebase true          
-
-          git pull
+          git fetch
           
           # Añadimos el m3u y el log generado
-            git add ipfs_io.m3u
-            
-          # Solo hace el commit si hay cambios reales para evitar errores
-          if git diff --staged --quiet; then
-            echo "No hay cambios en la lista de canales."
-          else
-            git commit -m "Update IPFS IO: $(date +'%Y-%m-%d %H:%M:%S') [skip ci]"
-            git push
-          fi
+          git add ipfs_io.m3u
+          
+          git diff --staged --quiet || git commit -m "Update IPFS IO: $(date +'%Y-%m-%d %H:%M:%S')"
+          git pull --rebase
+          git push

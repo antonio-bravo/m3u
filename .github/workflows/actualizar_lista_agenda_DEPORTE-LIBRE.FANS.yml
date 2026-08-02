@@ -35,11 +35,11 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git config --local pull.rebase true  
+          git fetch
           git add lista_agenda_DEPORTE-LIBRE.FANS.xml
-          git commit -m 'Auto-update agenda' || echo "No changes to commit"
-          git stash || echo "No local changes to stash"
+          git diff --staged --quiet || git commit -m "Auto-update agenda - $(date  -u +'%Y-%m-%d %H:%M:%S UTC')"
           git pull --rebase
-          git stash pop || echo "No stash entries found"
           git push
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
