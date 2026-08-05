@@ -66,11 +66,12 @@ jobs:
 
       - name: Sincronizar con repositorio remoto
         run: |
-          #git pull --rebase origin main || true
           git fetch origin main
           git stash || true
           git pull --rebase origin main
           git stash pop || true          
+
+#git pull --rebase origin main || true
 
       - name: Commit y push de cambios
         uses: stefanzweifel/git-auto-commit-action@v7
