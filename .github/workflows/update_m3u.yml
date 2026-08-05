@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  workflows: write
 
 jobs:
   update-list:
@@ -65,14 +66,18 @@ jobs:
 
       - name: Sincronizar con repositorio remoto
         run: |
-          git pull --rebase origin main || true
+          #git pull --rebase origin main || true
+          git fetch origin main
+          git stash || true
+          git pull --rebase origin main
+          git stash pop || true          
 
       - name: Commit y push de cambios
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Actualizar lista M3U
           file_pattern: lista.m3u
-          push_options: --force-with-lease
+          #push_options: --force-with-lease
       # - name: Commit y push de cambios
       #   run: |
       #     git add lista.m3u
