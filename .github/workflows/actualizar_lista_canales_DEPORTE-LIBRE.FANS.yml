@@ -9,6 +9,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -31,14 +35,7 @@ jobs:
       run: python script_canales_DEPORTE-LIBRE.FANS.py
 
     - name: Commit and push updated XML
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git config --local pull.rebase true          
-        git add lista_canales_DEPORTE-LIBRE.FANS.xml
-        git diff --staged --quiet || git commit -m "Update lista_canales_DEPORTE-LIBRE.FANS.xml - $(date  -u +'%Y-%m-%d %H:%M:%S UTC')"
-        git pull --rebase
-        git push
-
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: ./.github/actions/commit-and-push
+      with:
+        files: lista_canales_DEPORTE-LIBRE.FANS.xml
+        commit_message: Update lista_canales_DEPORTE-LIBRE.FANS.xml

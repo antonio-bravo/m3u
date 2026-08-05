@@ -9,6 +9,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
 jobs:
   update_script:
     runs-on: ubuntu-latest
@@ -51,17 +55,10 @@ jobs:
 
     - name: Commit y push si hay cambios
       if: env.CHANGES_FOUND == '1'
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git config --local pull.rebase true  
-        git add lista_icastresana.m3u        
-        git diff --staged --quiet || git commit -m "Actualizar lista_icastresana.m3u con nuevos logos - $(date  -u +'%Y-%m-%d %H:%M:%S UTC')"
-        git pull --rebase
-        git push
-
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: ./.github/actions/commit-and-push
+      with:
+        files: lista_icastresana.m3u
+        commit_message: Actualizar lista_icastresana.m3u con nuevos logos
 
     - name: Notificar si no hay cambios
       if: env.CHANGES_FOUND != '1'

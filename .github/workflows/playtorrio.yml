@@ -10,6 +10,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -36,10 +40,7 @@ jobs:
           echo "✅ Eventos deportivos extraídos"
       
       - name: Commit and push changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git config --local pull.rebase true          
-          git add playtorrio.m3u playtorrio_events.json
-          git diff-index --quiet HEAD || git commit -m "🔄 Actualizar eventos deportivos - $(date +'%Y-%m-%d %H:%M:%S UTC')"
-          git push
+        uses: ./.github/actions/commit-and-push
+        with:
+          files: playtorrio.m3u playtorrio_events.json
+          commit_message: Actualizar eventos deportivos PlayTorrio

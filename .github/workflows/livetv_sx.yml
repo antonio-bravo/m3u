@@ -9,6 +9,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -49,11 +53,7 @@ jobs:
 
       - name: Commit and push changes
         if: steps.verify-changes.outputs.changes == 'true'
-        run: |
-          git config --local user.email "github-actions@github.com"
-          git config --local user.name "GitHub Actions"        
-          git config --local pull.rebase true
-          git add eventos_livetv_sx.xml
-          git diff --staged --quiet || git commit -m "Update sport events data [$(date +'%Y-%m-%d %H:%M:%S')]"
-          git pull --rebase
-          git push
+        uses: ./.github/actions/commit-and-push
+        with:
+          files: eventos_livetv_sx.xml
+          commit_message: Update sport events data

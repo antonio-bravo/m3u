@@ -1,0 +1,77 @@
+name: Commit and push changes
+description: Stage files, create a commit if needed, rebase on the target branch, and push with retries.
+
+inputs:
+  files:
+    description: Space-separated list of files to stage.
+    required: true
+  commit_message:
+    description: Commit message to use when there are staged changes.
+    required: true
+  branch:
+    description: Branch to rebase against and push to.
+    required: false
+    default: main
+  user_name:
+    description: Git user name for the commit.
+    required: false
+    default: github-actions[bot]
+  user_email:
+    description: Git user email for the commit.
+    required: false
+    default: github-actions[bot]@users.noreply.github.com
+  retries:
+    description: Number of push retries after a rebase.
+    required: false
+    default: '5'
+  retry_delay_seconds:
+    description: Seconds to wait between retries.
+    required: false
+    default: '3'
+
+runs:
+  using: composite
+  steps:
+    - name: Commit and push
+      shell: bash
+      env:
+        INPUT_FILES: ${{ inputs.files }}
+        INPUT_COMMIT_MESSAGE: ${{ inputs.commit_message }}
+        INPUT_BRANCH: ${{ inputs.branch }}
+        INPUT_USER_NAME: ${{ inputs.user_name }}
+        INPUT_USER_EMAIL: ${{ inputs.user_email }}
+        INPUT_RETRIES: ${{ inputs.retries }}
+        INPUT_RETRY_DELAY_SECONDS: ${{ inputs.retry_delay_seconds }}
+      run: |
+        set -euo pipefail
+
+        git config --local user.name "$INPUT_USER_NAME"
+        git config --local user.email "$INPUT_USER_EMAIL"
+        git config --local pull.rebase true
+
+        git fetch --prune origin "$INPUT_BRANCH"
+        git fetch --unshallow || true
+
+        git add -- $INPUT_FILES
+
+        if git diff --staged --quiet; then
+          echo "No staged changes to commit."
+          exit 0
+        fi
+
+        git commit -m "$INPUT_COMMIT_MESSAGE"
+
+        for attempt in $(seq 1 "$INPUT_RETRIES"); do
+          if git pull --rebase origin "$INPUT_BRANCH" && git push origin HEAD:"$INPUT_BRANCH"; then
+            echo "Push completed on attempt $attempt."
+            exit 0
+          fi
+
+          if [ "$attempt" -eq "$INPUT_RETRIES" ]; then
+            echo "Push failed after $INPUT_RETRIES attempts."
+            exit 1
+          fi
+
+          echo "Push contention detected. Retrying in $INPUT_RETRY_DELAY_SECONDS seconds..."
+          sleep "$INPUT_RETRY_DELAY_SECONDS"
+        done

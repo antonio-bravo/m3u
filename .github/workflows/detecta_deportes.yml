@@ -12,6 +12,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
 jobs:
   detecta_deportes:
     runs-on: ubuntu-latest
@@ -37,7 +41,7 @@ jobs:
         run: python script_detector_deportes.py
 
       - name: Sube deportes-detectados.xml
-        uses: stefanzweifel/git-auto-commit-action@v7
+        uses: ./.github/actions/commit-and-push
         with:
+          files: deportes-detectados.xml
           commit_message: Añade archivo deportes-detectados.xml generado automáticamente
-          file_pattern: deportes-detectados.xml

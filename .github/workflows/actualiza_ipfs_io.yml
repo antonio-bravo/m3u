@@ -11,6 +11,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -38,16 +42,7 @@ jobs:
         run: python script_ipfs_io.py
 
       - name: Verificar y Subir cambios
-        run: |
-          git config --local user.email "github-actions[bot]@://github.com"
-          git config --local user.name "github-actions[bot]"
-
-          # Configura pull para hacer rebase de forma automática
-          git config --local pull.rebase true          
-          
-          # Añadimos el m3u y el log generado
-          git add ipfs_io.m3u
-          
-          git diff --staged --quiet || git commit -m "Update IPFS IO: $(date +'%Y-%m-%d %H:%M:%S')"
-          git pull --rebase
-          git push
+        uses: ./.github/actions/commit-and-push
+        with:
+          files: ipfs_io.m3u
+          commit_message: "Update IPFS IO: ${{ github.run_id }}-${{ github.run_attempt }}"

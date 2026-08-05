@@ -10,6 +10,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
 jobs:
   update-m3u:
     runs-on: ubuntu-latest
@@ -89,13 +93,7 @@ jobs:
           retention-days: 7
       
       - name: Commit and push changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git config --local pull.rebase true
-          git add lista.m3u          
-          git diff --staged --quiet || git commit -m "Actualizar lista.m3u - $(date  -u +"%Y-%m-%d %H:%M:%S UTC")"
-          git pull --rebase
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: ./.github/actions/commit-and-push
+        with:
+          files: lista.m3u
+          commit_message: Actualizar lista.m3u

@@ -9,9 +9,8 @@ permissions:
   contents: write
   pull-requests: write
 
-# Evita colisiones si una ejecución anterior se quedó colgada
 concurrency:
-  group: ${{ github.workflow }}
+  group: repo-main-writes
   cancel-in-progress: false
 
 jobs:
@@ -71,15 +70,7 @@ jobs:
             channels_final.json
 
       - name: Commit and push changes
-        run: |
-          # Configurar identidad del bot
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git config --local pull.rebase true          
-          
-          # Añadir los archivos generados
-          git add playtorrio_canales.m3u channels_final.json          
-          git add lista.m3u
-          git diff --staged --quiet || git commit -m "🔄 Update playtorrio_canales.m3u - $(date -u)"
-          git pull --rebase
-          git push
+        uses: ./.github/actions/commit-and-push
+        with:
+          files: playtorrio_canales.m3u channels_final.json lista.m3u
+          commit_message: Update playtorrio_canales.m3u

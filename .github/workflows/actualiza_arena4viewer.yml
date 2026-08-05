@@ -11,6 +11,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -38,17 +42,7 @@ jobs:
         run: python script_arena4viewer.py
 
       - name: Verificar y Subir cambios
-        run: |
-          git config --local user.email "github-actions[bot]@://github.com"
-          git config --local user.name "github-actions[bot]"
-          git config --local pull.rebase true          
-          
-          # Añadimos el m3u y el log generado
-          git add arena4viewer.m3u arena4viewer.log
-
-          git diff --staged --quiet || git commit -m "Update Arena4Viewer: $(date +'%Y-%m-%d %H:%M:%S')"
-          for i in {1..5}; do
-            git pull --rebase origin main && git push origin main && break
-            echo "Concurrencia detectada. Reintentando en 3 segundos..."
-            sleep 3
-          done
+        uses: ./.github/actions/commit-and-push
+        with:
+          files: arena4viewer.m3u arena4viewer.log
+          commit_message: "Update Arena4Viewer: ${{ github.run_id }}-${{ github.run_attempt }}"

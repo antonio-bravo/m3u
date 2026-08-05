@@ -12,6 +12,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
 jobs:
   update_logos:
     runs-on: ubuntu-latest
@@ -33,13 +37,7 @@ jobs:
       run: python script_logo_icastresana.py
 
     - name: Commit and push changes
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git config --local pull.rebase true        
-        git add logos_icastresana.xml
-        git diff --staged --quiet || git commit -m "Update logos_icastresana.xml - $(date  -u +"%Y-%m-%d %H:%M:%S UTC")"
-        git pull --rebase
-        git push        
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: ./.github/actions/commit-and-push
+      with:
+        files: logos_icastresana.xml
+        commit_message: Update logos_icastresana.xml
