@@ -93,11 +93,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git config --local pull.rebase true
-          
-          git fetch          
-          
-          git add lista.m3u
-          
+          git add lista.m3u          
           git diff --staged --quiet || git commit -m "Actualizar lista.m3u - $(date  -u +"%Y-%m-%d %H:%M:%S UTC")"
           git pull --rebase
           git push

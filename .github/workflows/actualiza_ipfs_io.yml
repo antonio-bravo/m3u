@@ -44,7 +44,6 @@ jobs:
 
           # Configura pull para hacer rebase de forma automática
           git config --local pull.rebase true          
-          git fetch
           
           # Añadimos el m3u y el log generado
           git add ipfs_io.m3u
