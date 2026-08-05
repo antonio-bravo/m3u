@@ -65,8 +65,8 @@ jobs:
 
       - name: Sincronizar con repositorio remoto
         run: |
-          git fetch origin main
-          git pull --rebase origin main || true
+          git checkout main
+          git pull --rebase origin main || true     
 
       - name: Commit y push de cambios
         uses: stefanzweifel/git-auto-commit-action@v7
@@ -81,3 +81,21 @@ jobs:
       #     git push
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # - name: Configurar Git y Sincronizar con remoto
+  #       run: |
+  #         # Configurar identidad
+  #         git config --global user.name "github-actions[bot]"
+  #         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+  #         # Sincronizar rama main antes de hacer commit
+  #         git checkout main
+  #         git pull --rebase origin main
+
+  #     - name: Commit y push de cambios
+  #       run: |
+  #         git add lista.m3u
+  #         # Commit solo si hay cambios, si no, muestra mensaje
+  #         git diff --quiet && git diff --staged --quiet || (git commit -m "Actualizar lista M3U" && git push)
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
