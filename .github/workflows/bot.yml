@@ -1,26 +1,72 @@
 name: Dependabot auto-merge
-on: 
+on:
   pull_request:
-  workflow_dispatch:
+    branches: [main]
+    types: [opened, reopened, synchronize, ready_for_review]
 
 permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
 jobs:
   dependabot:
-    runs-on: ubuntu-latest
     if: contains(github.event.pull_request.user.login, '[bot]')
-    # if: github.event.pull_request.user.login == 'dependabot[bot]' || github.event.pull_request.user.login == 'renovate[bot]'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+      PR_URL: ${{ github.event.pull_request.html_url }}
+      REPO: ${{ github.repository }}
     steps:
-      - name: Dependabot metadata
-        id: metadata
-        uses: dependabot/fetch-metadata@v3
-        with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-      - name: Enable auto-merge for Dependabot PRs
-        # if: contains(steps.metadata.outputs.dependency-names, 'my-dependency') && steps.metadata.outputs.update-type == 'version-update:semver-patch'
-        run: gh pr merge --auto --merge "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Get PR merge state
+        id: pr_state
+        run: |
+          set -euo pipefail
+          STATUS="$(gh pr view "$PR_NUMBER" --repo "$REPO" --json mergeStateStatus --jq .mergeStateStatus)"
+          echo "status=$STATUS" >> "$GITHUB_OUTPUT"
+          echo "mergeStateStatus=$STATUS"
+
+      - name: Update PR branch if behind base branch
+        if: steps.pr_state.outputs.status == 'BEHIND'
+        run: |
+          set -euo pipefail
+          echo "Updating PR branch..."
+          gh api --method PUT "repos/$REPO/pulls/$PR_NUMBER/update-branch"
+
+          echo "Waiting for PR to stop being BEHIND..."
+          for i in $(seq 1 12); do
+            STATUS="$(gh pr view "$PR_NUMBER" --repo "$REPO" --json mergeStateStatus --jq .mergeStateStatus)"
+            echo "Current mergeStateStatus: $STATUS"
+
+            if [ "$STATUS" != "BEHIND" ]; then
+              exit 0
+            fi
+
+            sleep 5
+          done
+
+          echo "The PR is still BEHIND after trying to update it." >&2
+          exit 1
+
+      - name: Refresh PR merge state
+        id: pr_state_after_update
+        run: |
+          set -euo pipefail
+          STATUS="$(gh pr view "$PR_NUMBER" --repo "$REPO" --json mergeStateStatus --jq .mergeStateStatus)"
+          echo "status=$STATUS" >> "$GITHUB_OUTPUT"
+          echo "mergeStateStatus=$STATUS"
+
+      - name: Fail if PR has conflicts
+        if: steps.pr_state_after_update.outputs.status == 'DIRTY'
+        run: |
+          echo "The PR has conflicts. They must be resolved manually or with Dependabot rebase."
+          exit 1
+
+      - name: Enable auto-merge
+        if: steps.pr_state_after_update.outputs.status != 'DIRTY'
+        run: |
+          gh pr merge --auto --merge "$PR_URL"
