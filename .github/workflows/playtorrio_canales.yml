@@ -2,7 +2,7 @@ name: PlayTorrio_Canales M3U Updater
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Se ejecuta exactamente cada 1 hora
+    - cron: '43 * * * *'  # Se ejecuta cada hora (minuto 43)
   workflow_dispatch:      # Botón para ejecutar manualmente
 
 permissions:

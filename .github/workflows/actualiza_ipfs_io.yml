@@ -3,7 +3,7 @@ name: ipfs_io Update
 on:
   schedule:
     # Se ejecuta cada hora
-    - cron: '0 * * * *'
+    - cron: '13 * * * *'
   workflow_dispatch: # Permite ejecutarlo manualmente
 
 # Permisos necesarios para que el bot pueda escribir en el repo

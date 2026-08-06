@@ -2,7 +2,7 @@ name: Actualizar Lista Agenda DEPORTE-LIBRE.FANS
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Ejecutar cada hora
+    - cron: '29 * * * *'  # Ejecutar cada hora (minuto 29)
   workflow_dispatch:  # Permitir ejecución manual
 
 permissions:

@@ -2,7 +2,7 @@ name: Actualizar Lista Icastresana
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Se ejecuta cada hora
+    - cron: '37 * * * *'  # Se ejecuta cada hora (minuto 37)
   workflow_dispatch:  # Permite ejecución manual
 
 permissions:

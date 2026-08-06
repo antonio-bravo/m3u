@@ -2,7 +2,7 @@ name: Scrape Logos
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Ejecutar una vez al día a la medianoche UTC
+    - cron: '17 2 * * *' # Ejecutar una vez al día, fuera de ventanas de pico
   workflow_dispatch: # Permitir ejecución manual
 
 permissions:

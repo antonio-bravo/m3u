@@ -2,7 +2,7 @@ name: Scrape LiveTV Events
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Ejecuta cada hora
+    - cron: '41 * * * *'  # Ejecuta cada hora (minuto 41)
   workflow_dispatch:  # Permite ejecución manual
 
 permissions:

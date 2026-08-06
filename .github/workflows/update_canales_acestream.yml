@@ -3,7 +3,7 @@ name: Actualizar Canales Acestream
 on:
   workflow_dispatch: # Permite ejecutar manualmente
   schedule:
-    - cron: '0 * * * *' # Ejecuta cada hora
+    - cron: '47 * * * *' # Ejecuta cada hora (minuto 47)
 
 permissions:
   contents: write

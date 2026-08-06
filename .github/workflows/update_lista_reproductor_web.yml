@@ -2,7 +2,7 @@ name: Update lista_reproductor_web
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Ejecutar cada hora
+    - cron: '53 * * * *'  # Ejecutar cada hora (minuto 53)
   workflow_dispatch:  # Permitir ejecución manual
 
 permissions:

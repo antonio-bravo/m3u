@@ -2,7 +2,7 @@ name: Actualizar Lista Scraper Acestream API
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Ejecutar cada 1 hora
+    - cron: '19 * * * *'  # Ejecutar cada 1 hora (minuto 19)
   workflow_dispatch:  # Permitir ejecución manual
 
 permissions:

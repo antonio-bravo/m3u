@@ -1,12 +1,9 @@
 name: Update logos_icastresana.xml
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:  # Permite ejecutar el flujo de trabajo manualmente desde GitHub
   schedule:
-    - cron: '0 * * * *'  # Ejecutar cada hora
+    - cron: '57 * * * *'  # Ejecutar cada hora (minuto 57)
 
 permissions:
   contents: write

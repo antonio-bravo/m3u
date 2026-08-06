@@ -2,7 +2,7 @@ name: Actualizar Lista SportsOnlineCi
 
 on:
   schedule:
-    - cron: "0 * * * *" # Ejecutar cada hora
+    - cron: "23 * * * *" # Ejecutar cada hora (minuto 23)
   workflow_dispatch: # Permitir ejecución manual
 
 permissions:

@@ -2,7 +2,7 @@ name: Extractor de Reproductores LiveTV.sx
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Cada 30 minutos
+    - cron: '5,35 * * * *'  # Cada 30 minutos, evitando picos en minuto 0
   workflow_dispatch:
 
 permissions:

@@ -2,7 +2,7 @@ name: Actualizar Lista M3U
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Ejecuta el workflow al inicio de cada hora
+    - cron: "7 * * * *"  # Ejecuta el workflow cada hora (minuto 7)
   workflow_dispatch:      # Permite ejecutar manualmente
 
 permissions:
