@@ -23,11 +23,11 @@ inputs:
   retries:
     description: Number of push retries after a rebase.
     required: false
-    default: '5'
+    default: '12'
   retry_delay_seconds:
     description: Seconds to wait between retries.
     required: false
-    default: '3'
+    default: '5'
 
 runs:
   using: composite
@@ -67,11 +67,19 @@ runs:
             exit 0
           fi
 
+          # If rebase failed mid-attempt, clean up and retry.
+          git rebase --abort || true
+
           if [ "$attempt" -eq "$INPUT_RETRIES" ]; then
             echo "Push failed after $INPUT_RETRIES attempts."
             exit 1
           fi
 
-          echo "Push contention detected. Retrying in $INPUT_RETRY_DELAY_SECONDS seconds..."
-          sleep "$INPUT_RETRY_DELAY_SECONDS"
+          # Progressive backoff with small jitter reduces synchronized push collisions.
+          backoff_seconds=$(( INPUT_RETRY_DELAY_SECONDS * attempt ))
+          jitter_seconds=$(( RANDOM % 4 ))
+          wait_seconds=$(( backoff_seconds + jitter_seconds ))
+
+          echo "Push contention detected. Retrying in ${wait_seconds}s (attempt $attempt/$INPUT_RETRIES)..."
+          sleep "$wait_seconds"
         done
