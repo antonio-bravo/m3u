@@ -1,6 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-08-06 10:42:22" total="251">
+<eventos generado="2026-08-06 12:48:40" total="267">
   <evento id="1">
+    <nombre>Western Bulldogs –  North Melbourne</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Australia. AFL</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>34:44</hora>
+    <url>https://livetv.sx/es/eventinfo/394345664_western_bulldogs_north_melbourne/</url>
+    <datetime_iso>2026-08-06T00:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="2">
     <nombre>Korea Masters</nombre>
     <deporte>Fútbol</deporte>
     <competicion>BWF World Tour</competicion>
@@ -8,74 +18,19 @@
     <hora>04:00</hora>
     <url>https://livetv.sx/es/eventinfo/394535698_korea_masters/</url>
     <datetime_iso>2026-08-06T04:00:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/E6dCCOWlhQo?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=E6dCCOWlhQo&amp;lang=es&amp;eid=394535698&amp;lid=3047629&amp;ci=2069&amp;si=31</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.youtube.com/embed/kzj2-Q3C83Q?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=kzj2-Q3C83Q&amp;lang=es&amp;eid=394535698&amp;lid=3047628&amp;ci=2069&amp;si=31</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://www.youtube.com/embed/VJghnEdKFvU?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=VJghnEdKFvU&amp;lang=es&amp;eid=394535698&amp;lid=3047627&amp;ci=2069&amp;si=31</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://www.youtube.com/embed/WVu3gL3tujA?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=WVu3gL3tujA&amp;lang=es&amp;eid=394535698&amp;lid=3047626&amp;ci=2069&amp;si=31</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="2">
-    <nombre>WTT Feeder Vientiane</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>No especificado</competicion>
-    <fecha>6 de agosto</fecha>
-    <hora>05:00</hora>
-    <url>https://livetv.sx/es/eventinfo/394659838_wtt_feeder_vientiane/</url>
-    <datetime_iso>2026-08-06T05:00:00</datetime_iso>
     <streams total="0" />
   </evento>
   <evento id="3">
-    <nombre>St Kilda –  Collingwood</nombre>
+    <nombre>Titans –  Cowboys</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Australia. AFL</competicion>
+    <competicion>Australia. NRL</competicion>
     <fecha>6 de agosto</fecha>
-    <hora>08:07</hora>
-    <url>https://livetv.sx/es/eventinfo/394894789_st_kilda_collingwood/</url>
-    <datetime_iso>2026-08-06T08:07:00</datetime_iso>
+    <hora>04:12</hora>
+    <url>https://livetv.sx/es/eventinfo/392877385_titans_cowboys/</url>
+    <datetime_iso>2026-08-06T04:12:00</datetime_iso>
     <streams total="0" />
   </evento>
   <evento id="4">
-    <nombre>Hawthorn –  Essendon</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Australia. AFL</competicion>
-    <fecha>6 de agosto</fecha>
-    <hora>08:07</hora>
-    <url>https://livetv.sx/es/eventinfo/394894790_hawthorn_essendon/</url>
-    <datetime_iso>2026-08-06T08:07:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="5">
-    <nombre>Port Adelaide –  West Coast Eagles</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Australia. AFL</competicion>
-    <fecha>6 de agosto</fecha>
-    <hora>08:07</hora>
-    <url>https://livetv.sx/es/eventinfo/394894791_port_adelaide_west_coast_eagles/</url>
-    <datetime_iso>2026-08-06T08:07:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="6">
     <nombre>Campeonato Mundial U16</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Campeonato mundial Sub-16</competicion>
@@ -98,7 +53,7 @@
       </stream>
     </streams>
   </evento>
-  <evento id="7">
+  <evento id="5">
     <nombre>Beach Pro Tour, Hamburg</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Pro Tour</competicion>
@@ -123,17 +78,7 @@ player/live.php?id=263873&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="8">
-    <nombre>North Harbour –  Counties Manukau</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Nueva Zelanda. NPC</competicion>
-    <fecha>6 de agosto</fecha>
-    <hora>09:10</hora>
-    <url>https://livetv.sx/es/eventinfo/392868418_north_harbour_counties_manukau/</url>
-    <datetime_iso>2026-08-06T09:10:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="9">
+  <evento id="6">
     <nombre>All-Russian Spartakiad</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Boxeo</competicion>
@@ -141,24 +86,9 @@ player/live.php?id=263873&amp;w=700&amp;h=480</url>
     <hora>10:00</hora>
     <url>https://livetv.sx/es/eventinfo/394584809_all_russian_spartakiad/</url>
     <datetime_iso>2026-08-06T10:00:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://emb.apl425.me/
-player/live.php?id=262161&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
-        <idioma_nombre>Inglés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262161&amp;lang=es&amp;eid=394584809&amp;lid=3029351&amp;ci=13&amp;si=6</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl425.me/
-player/live.php?id=263329&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
-        <idioma_nombre>Inglés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=263329&amp;lang=es&amp;eid=394584809&amp;lid=3039728&amp;ci=13&amp;si=6</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="10">
+  <evento id="7">
     <nombre>Avto –  Krasnaya Armiya</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Partido amistoso</competicion>
@@ -168,7 +98,7 @@ player/live.php?id=263329&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T10:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="11">
+  <evento id="8">
     <nombre>Belye Medvedi –  Sibirskie Snaypery</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Partido amistoso</competicion>
@@ -178,7 +108,7 @@ player/live.php?id=263329&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T10:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="12">
+  <evento id="9">
     <nombre>Ucrania U23 –  Bélgica U23</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Campeonato Europeo</competicion>
@@ -186,16 +116,9 @@ player/live.php?id=263329&amp;w=700&amp;h=480</url>
     <hora>10:00</hora>
     <url>https://livetv.sx/es/eventinfo/394559915_ucrania_u23_band233_lgica_u23/</url>
     <datetime_iso>2026-08-06T10:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/UywFGDGbDz0?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=UywFGDGbDz0&amp;lang=es&amp;eid=394559915&amp;lid=3046394&amp;ci=786&amp;si=19</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="13">
+  <evento id="10">
     <nombre>Ucrania U23 – Bélgica U23</nombre>
     <deporte>Béisbol</deporte>
     <competicion>Campeonato Europeo</competicion>
@@ -203,16 +126,9 @@ player/live.php?id=263329&amp;w=700&amp;h=480</url>
     <hora>10:00</hora>
     <url>https://livetv.sx/es/eventinfo/394559915_ukraine_u23_belgium_u23/</url>
     <datetime_iso>2026-08-06T10:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/UywFGDGbDz0?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=UywFGDGbDz0&amp;lang=es&amp;eid=394559915&amp;lid=3046394&amp;ci=786&amp;si=19</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="14">
+  <evento id="11">
     <nombre>Eurocopa</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Salto</competicion>
@@ -220,37 +136,9 @@ player/live.php?id=263329&amp;w=700&amp;h=480</url>
     <hora>10:30</hora>
     <url>https://livetv.sx/es/eventinfo/394590174_eurocopa/</url>
     <datetime_iso>2026-08-06T10:30:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://emb.apl425.me/
-player/live.php?id=247376&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
-        <idioma_nombre>Inglés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=247376&amp;lang=es&amp;eid=394590174&amp;lid=2941304&amp;ci=703&amp;si=46</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl425.me/
-player/live.php?id=263328&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
-        <idioma_nombre>Inglés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=263328&amp;lang=es&amp;eid=394590174&amp;lid=3039727&amp;ci=703&amp;si=46</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://emb.apl425.me/
-player/live.php?id=263344&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
-        <idioma_nombre>Inglés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=263344&amp;lang=es&amp;eid=394590174&amp;lid=3039399&amp;ci=703&amp;si=46</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://dlhd.st/stream/stream-461.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/12.png</idioma>
-        <idioma_nombre>Turco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047783&amp;lang=es&amp;eid=394590174&amp;lid=3047783&amp;ci=703&amp;si=46</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="15">
+  <evento id="12">
     <nombre>Alemania U18 (W) –  Eslovenia U18 (W)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -260,7 +148,7 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T10:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="16">
+  <evento id="13">
     <nombre>Corea del Sur U18 (M) –  Suecia U18 (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -270,24 +158,17 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T10:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="17">
+  <evento id="14">
     <nombre>WTT Champions Yokohama</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Champions Yokohama 10:30 (WTT)</competicion>
+    <competicion>Champions Yokohama     10:30 (WTT)</competicion>
     <fecha>6 de agosto</fecha>
     <hora>10:30</hora>
     <url>https://livetv.sx/es/eventinfo/394659756_wtt_champions_yokohama/</url>
     <datetime_iso>2026-08-06T10:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/fUljXHmUGns?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=fUljXHmUGns&amp;lang=es&amp;eid=394659756&amp;lid=3047632&amp;ci=4340&amp;si=39</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="18">
+  <evento id="15">
     <nombre>Alemania U18 (W) – Eslovenia U18 (W)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -297,7 +178,7 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T10:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="19">
+  <evento id="16">
     <nombre>Corea del Sur U18 (M) – Suecia U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -307,7 +188,7 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T10:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="20">
+  <evento id="17">
     <nombre>República Checa U18 (M) –  Kazajstán U18 (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -315,16 +196,9 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <hora>10:45</hora>
     <url>https://livetv.sx/es/eventinfo/394753399_repanduacute_blica_checa_u18_m_kazajstandaacute_n_u18_m/</url>
     <datetime_iso>2026-08-06T10:45:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/HtJtIUPHxoM?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=HtJtIUPHxoM&amp;lang=es&amp;eid=394753399&amp;lid=3047766&amp;ci=1625&amp;si=13</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="21">
+  <evento id="18">
     <nombre>Fiji U18 (W) –  Uruguay U18 (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -332,16 +206,9 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <hora>10:45</hora>
     <url>https://livetv.sx/es/eventinfo/394753400_fiji_u18_w_uruguay_u18_m/</url>
     <datetime_iso>2026-08-06T10:45:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/FiD-j6CdfnQ?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=FiD-j6CdfnQ&amp;lang=es&amp;eid=394753400&amp;lid=3047767&amp;ci=1625&amp;si=13</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="22">
+  <evento id="19">
     <nombre>República Checa U18 (M) – Kazajstán U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -351,7 +218,7 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T10:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="23">
+  <evento id="20">
     <nombre>Fiji U18 (W) – Uruguay U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -361,7 +228,7 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T10:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="24">
+  <evento id="21">
     <nombre>Irlanda U16 –  Países Bajos U16</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Campeonato Europeo Sub-16 B</competicion>
@@ -369,16 +236,9 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <hora>11:00</hora>
     <url>https://livetv.sx/es/eventinfo/394761389_irlanda_u16_paand237_ses_bajos_u16/</url>
     <datetime_iso>2026-08-06T11:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/pwccyCj6XH8?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=pwccyCj6XH8&amp;lang=es&amp;eid=394761389&amp;lid=3047170&amp;ci=1913&amp;si=3</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="25">
+  <evento id="22">
     <nombre>Luxemburgo U16 –  Suecia U16</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Campeonato Europeo Sub-16 B</competicion>
@@ -386,16 +246,68 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <hora>11:00</hora>
     <url>https://livetv.sx/es/eventinfo/394761390_luxemburgo_u16_suecia_u16/</url>
     <datetime_iso>2026-08-06T11:00:00</datetime_iso>
-    <streams total="1">
+    <streams total="0" />
+  </evento>
+  <evento id="23">
+    <nombre>WTT Feeder Vientiane</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>No especificado</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>11:00</hora>
+    <url>https://livetv.sx/es/eventinfo/394659763_wtt_feeder_vientiane/</url>
+    <datetime_iso>2026-08-06T11:00:00</datetime_iso>
+    <streams total="4">
       <stream id="1">
-        <url>https://www.youtube.com/embed/xMcB6WvN0Ao?autoplay=1</url>
+        <url>https://www.youtube.com/embed/0iAHvLgtwsA?autoplay=1</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
         <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=xMcB6WvN0Ao&amp;lang=es&amp;eid=394761390&amp;lid=3047171&amp;ci=1913&amp;si=3</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=0iAHvLgtwsA&amp;lang=es&amp;eid=394659763&amp;lid=3047634&amp;ci=4340&amp;si=39</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.youtube.com/embed/AlWnL0_-zMI?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=AlWnL0_-zMI&amp;lang=es&amp;eid=394659763&amp;lid=3047638&amp;ci=4340&amp;si=39</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://www.youtube.com/embed/b8O87ZMq_ow?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=b8O87ZMq_ow&amp;lang=es&amp;eid=394659763&amp;lid=3047639&amp;ci=4340&amp;si=39</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://www.youtube.com/embed/kN9oORX6mNM?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=kN9oORX6mNM&amp;lang=es&amp;eid=394659763&amp;lid=3047640&amp;ci=4340&amp;si=39</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="26">
+  <evento id="24">
+    <nombre>Premier Padel, London</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Premier Padel</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>11:00</hora>
+    <url>https://livetv.sx/es/eventinfo/394543569_premier_padel_london/</url>
+    <datetime_iso>2026-08-06T11:00:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://emb.apl425.me/
+player/live.php?id=263546&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=263546&amp;lang=es&amp;eid=394543569&amp;lid=3040354&amp;ci=6595&amp;si=71</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://abisnews.com/maxtnt4.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047536&amp;lang=es&amp;eid=394543569&amp;lid=3047536&amp;ci=6595&amp;si=71</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="25">
     <nombre>Irlanda U16 – Países Bajos U16</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Campeonato Europeo Sub-16 B</competicion>
@@ -403,16 +315,9 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <hora>11:00</hora>
     <url>https://livetv.sx/es/eventinfo/394761389_ireland_u16_netherlands_u16/</url>
     <datetime_iso>2026-08-06T11:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/pwccyCj6XH8?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=pwccyCj6XH8&amp;lang=es&amp;eid=394761389&amp;lid=3047170&amp;ci=1913&amp;si=3</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="27">
+  <evento id="26">
     <nombre>Luxemburgo U16 – Suecia U16</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Campeonato Europeo Sub-16 B</competicion>
@@ -420,35 +325,31 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <hora>11:00</hora>
     <url>https://livetv.sx/es/eventinfo/394761390_luxembourg_u16_sweden_u16/</url>
     <datetime_iso>2026-08-06T11:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/xMcB6WvN0Ao?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=xMcB6WvN0Ao&amp;lang=es&amp;eid=394761390&amp;lid=3047171&amp;ci=1913&amp;si=3</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
+  </evento>
+  <evento id="27">
+    <nombre>Justina Mikulskyte (M) –   Gabriela Andrea Knutson (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>WTA. Varsovia</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>11:05</hora>
+    <url>https://livetv.sx/es/eventinfo/394823108__justina_mikulskyte_m__gabriela_andrea_knutson_m/</url>
+    <datetime_iso>2026-08-06T11:05:00</datetime_iso>
+    <streams total="0" />
   </evento>
   <evento id="28">
     <nombre>Justina Mikulskyte (M) –  Gabriela Andrea Knutson (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Varsovia</competicion>
     <fecha>6 de agosto</fecha>
-    <hora>11:00</hora>
+    <hora>11:05</hora>
     <url>https://livetv.sx/es/eventinfo/394823108__/</url>
-    <datetime_iso>2026-08-06T11:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaYwCoo43wPPj6GQ</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047796&amp;lang=es&amp;eid=394823108&amp;lid=3047796&amp;ci=6146&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <datetime_iso>2026-08-06T11:05:00</datetime_iso>
+    <streams total="0" />
   </evento>
   <evento id="29">
-    <nombre>Doosan Bears – NC Dinos</nombre>
-    <deporte>Béisbol</deporte>
+    <nombre>Doosan Bears –  NC Dinos</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>Corea del Sur. KBO League</competicion>
     <fecha>6 de agosto</fecha>
     <hora>11:30</hora>
@@ -457,8 +358,8 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <streams total="0" />
   </evento>
   <evento id="30">
-    <nombre>Kia Tigers – KT Wiz</nombre>
-    <deporte>Béisbol</deporte>
+    <nombre>Kia Tigers –  KT Wiz</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>Corea del Sur. KBO League</competicion>
     <fecha>6 de agosto</fecha>
     <hora>11:30</hora>
@@ -467,8 +368,8 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <streams total="0" />
   </evento>
   <evento id="31">
-    <nombre>Lotte Giants – Kiwoom Heroes</nombre>
-    <deporte>Béisbol</deporte>
+    <nombre>Lotte Giants –  Kiwoom Heroes</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>Corea del Sur. KBO League</competicion>
     <fecha>6 de agosto</fecha>
     <hora>11:30</hora>
@@ -477,8 +378,8 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <streams total="0" />
   </evento>
   <evento id="32">
-    <nombre>Samsung Lions – Hanwa Eagles</nombre>
-    <deporte>Béisbol</deporte>
+    <nombre>Samsung Lions –  Hanwa Eagles</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>Corea del Sur. KBO League</competicion>
     <fecha>6 de agosto</fecha>
     <hora>11:30</hora>
@@ -487,8 +388,8 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
     <streams total="0" />
   </evento>
   <evento id="33">
-    <nombre>SSG Landers – LG Twins</nombre>
-    <deporte>Béisbol</deporte>
+    <nombre>SSG Landers –  LG Twins</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>Corea del Sur. KBO League</competicion>
     <fecha>6 de agosto</fecha>
     <hora>11:30</hora>
@@ -498,7 +399,7 @@ player/live.php?id=263344&amp;w=700&amp;h=480</url>
   </evento>
   <evento id="34">
     <nombre>Belarus Open Cup</nombre>
-    <deporte>Deporte_9</deporte>
+    <deporte>Fútbol</deporte>
     <competicion>National Event</competicion>
     <fecha>6 de agosto</fecha>
     <hora>11:45</hora>
@@ -515,6 +416,16 @@ player/live.php?id=263327&amp;w=700&amp;h=480</url>
     </streams>
   </evento>
   <evento id="35">
+    <nombre>Chipre U18 –  Gran Bretana U18</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato Europeo Sub-18 B</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>11:45</hora>
+    <url>https://livetv.sx/es/eventinfo/393804370_chipre_u18_gran_bretana_u18/</url>
+    <datetime_iso>2026-08-06T11:45:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="36">
     <nombre>Chipre U18 – Gran Bretana U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18 B</competicion>
@@ -524,7 +435,7 @@ player/live.php?id=263327&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T11:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="36">
+  <evento id="37">
     <nombre>Titans – Cowboys</nombre>
     <deporte>Rugby</deporte>
     <competicion>Australia. NRL</competicion>
@@ -532,61 +443,21 @@ player/live.php?id=263327&amp;w=700&amp;h=480</url>
     <hora>11:50</hora>
     <url>https://livetv.sx/es/eventinfo/392877385__/</url>
     <datetime_iso>2026-08-06T11:50:00</datetime_iso>
-    <streams total="8">
-      <stream id="1">
-        <url>https://emb.apl425.me/
-player/live.php?id=263893&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
-        <idioma_nombre>Alemán</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=263893&amp;lang=es&amp;eid=392877385&amp;lid=3043426&amp;ci=183&amp;si=17</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://playfa.st/ch.php?id=82</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047541&amp;lang=es&amp;eid=392877385&amp;lid=3047541&amp;ci=183&amp;si=17</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://dlhd.st/stream/stream-820.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047786&amp;lang=es&amp;eid=392877385&amp;lid=3047786&amp;ci=183&amp;si=17</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://www.vdocity.com/1/_VkS5FxyQndeYQc1y5UuqhMrTzxUf7gx6nFr1pj</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047798&amp;lang=es&amp;eid=392877385&amp;lid=3047798&amp;ci=183&amp;si=17</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://shd247.world/frame028.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047814&amp;lang=es&amp;eid=392877385&amp;lid=3047814&amp;ci=183&amp;si=17</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://abisnews.com/sky2nz.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3046834&amp;lang=es&amp;eid=392877385&amp;lid=3046834&amp;ci=183&amp;si=17</enlace_original>
-      </stream>
-      <stream id="7">
-        <url>https://dlhd.st/stream/stream-758.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3046751&amp;lang=es&amp;eid=392877385&amp;lid=3046751&amp;ci=183&amp;si=17</enlace_original>
-      </stream>
-      <stream id="8">
-        <url>https://dlhd.st/stream/stream-589.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047785&amp;lang=es&amp;eid=392877385&amp;lid=3047785&amp;ci=183&amp;si=17</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="37">
-    <nombre>Magnitka – Kaluga</nombre>
-    <deporte>Hockey</deporte>
+  <evento id="38">
+    <nombre>Taifun –  Stalnye Lisy</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Partido amistoso</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>12:00</hora>
+    <url>https://livetv.sx/es/eventinfo/394778085_taifun_stalnye_lisy/</url>
+    <datetime_iso>2026-08-06T12:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="39">
+    <nombre>Magnitka –  Kaluga</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>Partido amistoso</competicion>
     <fecha>6 de agosto</fecha>
     <hora>12:00</hora>
@@ -594,9 +465,9 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T12:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="38">
-    <nombre>Ryazan – Dizel</nombre>
-    <deporte>Hockey</deporte>
+  <evento id="40">
+    <nombre>Ryazan –  Dizel</nombre>
+    <deporte>Fútbol</deporte>
     <competicion>Partido amistoso</competicion>
     <fecha>6 de agosto</fecha>
     <hora>12:00</hora>
@@ -604,41 +475,57 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T12:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="39">
-    <nombre>Taifun – Stalnye Lisy</nombre>
-    <deporte>Hockey</deporte>
-    <competicion>Partido amistoso</competicion>
-    <fecha>6 de agosto</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/394778085_taifun_stalnye_lisy/</url>
-    <datetime_iso>2026-08-06T12:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/ssbTU6sIprc?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
-        <idioma_nombre>Inglés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=ssbTU6sIprc&amp;lang=es&amp;eid=394778085&amp;lid=3047234&amp;ci=276&amp;si=2</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="40">
-    <nombre>Mona Barthel (M) –  Elizara Yaneva (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>WTA. Varsovia</competicion>
-    <fecha>6 de agosto</fecha>
-    <hora>12:00</hora>
-    <url>https://livetv.sx/es/eventinfo/394858573__/</url>
-    <datetime_iso>2026-08-06T12:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaoKPgtFLjS4Y1to</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047799&amp;lang=es&amp;eid=394858573&amp;lid=3047799&amp;ci=6146&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
   <evento id="41">
+    <nombre>Juegos Centroamericanos y del Caribe</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Juegos Centroamericanos y del Caribe</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>12:00</hora>
+    <url>https://livetv.sx/es/eventinfo/393450179_juegos_centroamericanos_y_del_caribe/</url>
+    <datetime_iso>2026-08-06T12:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="42">
+    <nombre>Islas Feroe U18 –  North Macedonia U-18</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato Europeo Sub-18</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>12:00</hora>
+    <url>https://livetv.sx/es/eventinfo/394753543_islas_feroe_u18_north_macedonia_u_18/</url>
+    <datetime_iso>2026-08-06T12:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="43">
+    <nombre>Portugal U18 –  Suecia U18</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato Europeo Sub-18</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>12:00</hora>
+    <url>https://livetv.sx/es/eventinfo/394753544_portugal_u18_suecia_u18/</url>
+    <datetime_iso>2026-08-06T12:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="44">
+    <nombre>Suiza U18 –  Turquía U18</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato Europeo Sub-18</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>12:00</hora>
+    <url>https://livetv.sx/es/eventinfo/394753545_suiza_u18_turquand237_a_u18/</url>
+    <datetime_iso>2026-08-06T12:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="45">
+    <nombre>Ucrania U18 –  Rumania U18</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Campeonato Europeo Sub-18 B</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>12:00</hora>
+    <url>https://livetv.sx/es/eventinfo/393804371_ucrania_u18_rumania_u18/</url>
+    <datetime_iso>2026-08-06T12:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="46">
     <nombre>Juegos Centroamericanos y del Caribe</nombre>
     <deporte>Deporte_9</deporte>
     <competicion>Juegos Centroamericanos y del Caribe</competicion>
@@ -648,7 +535,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T12:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="42">
+  <evento id="47">
     <nombre>Islas Feroe U18 – North Macedonia U-18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18</competicion>
@@ -658,7 +545,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T12:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="43">
+  <evento id="48">
     <nombre>Portugal U18 – Suecia U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18</competicion>
@@ -668,7 +555,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T12:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="44">
+  <evento id="49">
     <nombre>Suiza U18 – Turquía U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18</competicion>
@@ -678,7 +565,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T12:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="45">
+  <evento id="50">
     <nombre>Ucrania U18 – Rumania U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18 B</competicion>
@@ -688,7 +575,97 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T12:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="46">
+  <evento id="51">
+    <nombre>Mona Barthel (M) –   Elizara Yaneva (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>WTA. Varsovia</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>12:05</hora>
+    <url>https://livetv.sx/es/eventinfo/394858573__mona_barthel_m__elizara_yaneva_m/</url>
+    <datetime_iso>2026-08-06T12:05:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaoKPgtFLjS4Y1to</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047799&amp;lang=es&amp;eid=394858573&amp;lid=3047799&amp;ci=6146&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="52">
+    <nombre>Mona Barthel (M) –  Elizara Yaneva (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>WTA. Varsovia</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>12:05</hora>
+    <url>https://livetv.sx/es/eventinfo/394858573__/</url>
+    <datetime_iso>2026-08-06T12:05:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="53">
+    <nombre>Vuelta a Polonia</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>UCI World Tour</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>12:15</hora>
+    <url>https://livetv.sx/es/eventinfo/394536971_vuelta_a_polonia/</url>
+    <datetime_iso>2026-08-06T12:15:00</datetime_iso>
+    <streams total="8">
+      <stream id="1">
+        <url>https://emb.apl425.me/
+player/live.php?id=263588&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=263588&amp;lang=es&amp;eid=394536971&amp;lid=3041073&amp;ci=1865&amp;si=40</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://emb.apl425.me/
+player/live.php?id=263278&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
+        <idioma_nombre>Italiano</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=263278&amp;lang=es&amp;eid=394536971&amp;lid=3039381&amp;ci=1865&amp;si=40</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl425.me/
+player/live.php?id=263441&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=263441&amp;lang=es&amp;eid=394536971&amp;lid=3039210&amp;ci=1865&amp;si=40</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://emb.apl425.me/
+player/live.php?id=263814&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=263814&amp;lang=es&amp;eid=394536971&amp;lid=3042611&amp;ci=1865&amp;si=40</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://dlhd.st/stream/stream-33.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047787&amp;lang=es&amp;eid=394536971&amp;lid=3047787&amp;ci=1865&amp;si=40</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://dlhd.st/stream/stream-879.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/12.png</idioma>
+        <idioma_nombre>Turco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047792&amp;lang=es&amp;eid=394536971&amp;lid=3047792&amp;ci=1865&amp;si=40</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://dlhd.st/stream/stream-128.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
+        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3044444&amp;lang=es&amp;eid=394536971&amp;lid=3044444&amp;ci=1865&amp;si=40</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://dlhd.st/stream/stream-42.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047791&amp;lang=es&amp;eid=394536971&amp;lid=3047791&amp;ci=1865&amp;si=40</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="54">
     <nombre>Carol Young Suh Lee (M) –  Weronika Falkowska (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Varsovia</competicion>
@@ -705,7 +682,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="47">
+  <evento id="55">
     <nombre>Francia U18 (W) – Rumania U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -713,16 +690,9 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>12:45</hora>
     <url>https://livetv.sx/es/eventinfo/394753401_france_u18_w_romania_u18_w/</url>
     <datetime_iso>2026-08-06T12:45:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/j29rOS1hGXI?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=j29rOS1hGXI&amp;lang=es&amp;eid=394753401&amp;lid=3047763&amp;ci=1625&amp;si=13</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="48">
+  <evento id="56">
     <nombre>Países Bajos U18 (W) – Japón U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -730,16 +700,9 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>12:45</hora>
     <url>https://livetv.sx/es/eventinfo/394753402_netherlands_u18_w_japan_u18_w/</url>
     <datetime_iso>2026-08-06T12:45:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/kUzUgOBglJU?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=kUzUgOBglJU&amp;lang=es&amp;eid=394753402&amp;lid=3047765&amp;ci=1625&amp;si=13</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="49">
+  <evento id="57">
     <nombre>Liga de Naciones, Europa-4</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Liga de Naciones</competicion>
@@ -756,7 +719,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="50">
+  <evento id="58">
     <nombre>Benín U18 (M) – Malí U18 (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato Africano Sub-18</competicion>
@@ -773,7 +736,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="51">
+  <evento id="59">
     <nombre>Italia U18 (M) – España U18 (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
@@ -790,7 +753,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="52">
+  <evento id="60">
     <nombre>Nueva Zelanda – Afganistán</nombre>
     <deporte>Futsal</deporte>
     <competicion>Campeonatos continentales</competicion>
@@ -800,7 +763,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T13:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="53">
+  <evento id="61">
     <nombre>Argentina U18 (M) – Serbia U18 (W)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -817,7 +780,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="54">
+  <evento id="62">
     <nombre>Uzbekistán U18 (M) – Algeria U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -825,16 +788,9 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>13:00</hora>
     <url>https://livetv.sx/es/eventinfo/394753404_uzbekistan_u18_w_algeria_u18_w/</url>
     <datetime_iso>2026-08-06T13:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.youtube.com/embed/wWJdmuINeyw?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=wWJdmuINeyw&amp;lang=es&amp;eid=394753404&amp;lid=3047764&amp;ci=1625&amp;si=13</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="55">
+  <evento id="63">
     <nombre>Hungría U18 (M) – Croacia U18 (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
@@ -851,7 +807,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="56">
+  <evento id="64">
     <nombre>Bosnia y Herzegovina U16 – Noruega U16</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Campeonato Europeo Sub-16 B</competicion>
@@ -868,7 +824,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="57">
+  <evento id="65">
     <nombre>Montenegro U16 – Portugal U16</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Campeonato Europeo Sub-16 B</competicion>
@@ -885,7 +841,24 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="58">
+  <evento id="66">
+    <nombre>Akademiya Ontustik – Khan-Tengri</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Kazajistán. 1 División</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>14:00</hora>
+    <url>https://livetv.sx/es/eventinfo/394927674__/</url>
+    <datetime_iso>2026-08-06T14:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/GkAYeIYhgyM?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=GkAYeIYhgyM&amp;lang=es&amp;eid=394927674&amp;lid=3047741&amp;ci=1576&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="67">
     <nombre>Akademiya Ontustik – Khan Tengri</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Kazajistán. 1 División</competicion>
@@ -895,7 +868,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T14:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="59">
+  <evento id="68">
     <nombre>Yelimay Semey 2 – Kairat-Zhastar</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Kazajistán. 1 División</competicion>
@@ -903,9 +876,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>14:00</hora>
     <url>https://livetv.sx/es/eventinfo/394760902_yelimay_semey_2_kairat_zhastar/</url>
     <datetime_iso>2026-08-06T14:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/MZlLwyX8vDE?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/37.png</idioma>
+        <idioma_nombre>Bandera #37</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=MZlLwyX8vDE&amp;lang=es&amp;eid=394760902&amp;lid=3047742&amp;ci=1576&amp;si=1</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="60">
+  <evento id="69">
     <nombre>Irbis – MHC Spartak</nombre>
     <deporte>Hockey</deporte>
     <competicion>Partido amistoso</competicion>
@@ -913,9 +893,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>14:00</hora>
     <url>https://livetv.sx/es/eventinfo/393945247_irbis_mhc_spartak/</url>
     <datetime_iso>2026-08-06T14:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/i-mUfR6Y2YU?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=i-mUfR6Y2YU&amp;lang=es&amp;eid=393945247&amp;lid=3044183&amp;ci=276&amp;si=2</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="61">
+  <evento id="70">
     <nombre>Omskiye Yastreby – Kuznezkie Medvedi</nombre>
     <deporte>Hockey</deporte>
     <competicion>Partido amistoso</competicion>
@@ -923,9 +910,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>14:00</hora>
     <url>https://livetv.sx/es/eventinfo/394778086_omskiye_yastreby_kuznezkie_medvedi/</url>
     <datetime_iso>2026-08-06T14:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/uvzV05MdHJ4?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=uvzV05MdHJ4&amp;lang=es&amp;eid=394778086&amp;lid=3047235&amp;ci=276&amp;si=2</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="62">
+  <evento id="71">
     <nombre>Vendula Valdmannova (M) –  Susan Bandecchi (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Varsovia</competicion>
@@ -933,9 +927,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>14:00</hora>
     <url>https://livetv.sx/es/eventinfo/394858575__/</url>
     <datetime_iso>2026-08-06T14:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaYwCoo43wPPj6FZ</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047802&amp;lang=es&amp;eid=394858575&amp;lid=3047802&amp;ci=6146&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="63">
+  <evento id="72">
     <nombre>All-Russian Spartakiad</nombre>
     <deporte>Boxeo</deporte>
     <competicion>Boxeo</competicion>
@@ -943,9 +944,17 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>14:00</hora>
     <url>https://livetv.sx/es/eventinfo/394584808_all_russian_spartakiad/</url>
     <datetime_iso>2026-08-06T14:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://emb.apl425.me/
+player/live.php?id=262161&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=262161&amp;lang=es&amp;eid=394584808&amp;lid=3029351&amp;ci=13&amp;si=6</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="64">
+  <evento id="73">
     <nombre>Bélgica U18 – Bulgaria U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18 B</competicion>
@@ -955,7 +964,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T14:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="65">
+  <evento id="74">
     <nombre>Suecia U23 – Dinamarca U23</nombre>
     <deporte>Béisbol</deporte>
     <competicion>Campeonato Europeo</competicion>
@@ -963,9 +972,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>14:00</hora>
     <url>https://livetv.sx/es/eventinfo/394559916_sweden_u23_denmark_u23/</url>
     <datetime_iso>2026-08-06T14:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/pmn4jpeVHZ4?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=pmn4jpeVHZ4&amp;lang=es&amp;eid=394559916&amp;lid=3046395&amp;ci=786&amp;si=19</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="66">
+  <evento id="75">
     <nombre>Letonia U18 – Lituania U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18 B</competicion>
@@ -975,7 +991,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T14:15:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="67">
+  <evento id="76">
     <nombre>Hochiminh City Wings – Saigon Heat</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Vietnam. VBA</competicion>
@@ -985,7 +1001,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T14:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="68">
+  <evento id="77">
     <nombre>Polonia U18 – Israel U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18</competicion>
@@ -995,7 +1011,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T14:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="69">
+  <evento id="78">
     <nombre>Serbia U18 – Austria U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18</competicion>
@@ -1003,9 +1019,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>14:30</hora>
     <url>https://livetv.sx/es/eventinfo/394753547_serbia_u18_austria_u18/</url>
     <datetime_iso>2026-08-06T14:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://dlhd.st/stream/stream-24.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/26.png</idioma>
+        <idioma_nombre>Finlandés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3047884&amp;lang=es&amp;eid=394753547&amp;lid=3047884&amp;ci=1658&amp;si=13</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="70">
+  <evento id="79">
     <nombre>Italia U18 – Eslovaquia U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18</competicion>
@@ -1015,7 +1038,41 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T14:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="71">
+  <evento id="80">
+    <nombre>Shakhter Karagandá – Caspiy II</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Kazajistán. 1 División</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>15:00</hora>
+    <url>https://livetv.sx/es/eventinfo/394927676__/</url>
+    <datetime_iso>2026-08-06T15:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/77HEA5Pskxo?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/37.png</idioma>
+        <idioma_nombre>Bandera #37</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=77HEA5Pskxo&amp;lang=es&amp;eid=394927676&amp;lid=3047740&amp;ci=1576&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="81">
+    <nombre>Aktobe Sub-21 – Ekibastuz</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Kazajistán. 1 División</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>15:00</hora>
+    <url>https://livetv.sx/es/eventinfo/394927678__/</url>
+    <datetime_iso>2026-08-06T15:00:00</datetime_iso>
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/thCvCCnRmAc?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/37.png</idioma>
+        <idioma_nombre>Bandera #37</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=thCvCCnRmAc&amp;lang=es&amp;eid=394927678&amp;lid=3047739&amp;ci=1576&amp;si=1</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="82">
     <nombre>Aktobe 2 – Batyr</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Kazajistán. 1 División</competicion>
@@ -1025,7 +1082,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T15:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="72">
+  <evento id="83">
     <nombre>Shakhter Karaganda – Kaspiy 2</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Kazajistán. 1 División</competicion>
@@ -1035,7 +1092,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T15:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="73">
+  <evento id="84">
     <nombre>Reaktor – Tolpar</nombre>
     <deporte>Hockey</deporte>
     <competicion>Partido amistoso</competicion>
@@ -1043,9 +1100,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>15:00</hora>
     <url>https://livetv.sx/es/eventinfo/394893411_reaktor_tolpar/</url>
     <datetime_iso>2026-08-06T15:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/NDXHE6bib5Y?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=NDXHE6bib5Y&amp;lang=es&amp;eid=394893411&amp;lid=3047776&amp;ci=276&amp;si=2</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="74">
+  <evento id="85">
     <nombre>Turquía (M) – Bélgica (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Partido amistoso</competicion>
@@ -1053,9 +1117,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>15:00</hora>
     <url>https://livetv.sx/es/eventinfo/394646654_turkey_w_belgium_w/</url>
     <datetime_iso>2026-08-06T15:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/qzMCJ7msUJs?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=qzMCJ7msUJs&amp;lang=es&amp;eid=394646654&amp;lid=3046659&amp;ci=275&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="75">
+  <evento id="86">
     <nombre>Egipto U18  (M) – China U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -1063,9 +1134,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>15:00</hora>
     <url>https://livetv.sx/es/eventinfo/394753405_egypt_u18_w_china_u18_w/</url>
     <datetime_iso>2026-08-06T15:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/I1N5882dVzw?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=I1N5882dVzw&amp;lang=es&amp;eid=394753405&amp;lid=3047760&amp;ci=1625&amp;si=13</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="76">
+  <evento id="87">
     <nombre>España U18 (M) – Suiza U18 (W)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -1073,9 +1151,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>15:00</hora>
     <url>https://livetv.sx/es/eventinfo/394753406_spain_u18_w_switzerland_u18_w/</url>
     <datetime_iso>2026-08-06T15:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/niBMarlHrAI?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=niBMarlHrAI&amp;lang=es&amp;eid=394753406&amp;lid=3047761&amp;ci=1625&amp;si=13</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="77">
+  <evento id="88">
     <nombre>Croacia U18 (M) – Túnez U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -1083,9 +1168,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>15:15</hora>
     <url>https://livetv.sx/es/eventinfo/394753407_croatia_u18_w_tunisia_u18_w/</url>
     <datetime_iso>2026-08-06T15:15:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/-oMPcxXUndo?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=-oMPcxXUndo&amp;lang=es&amp;eid=394753407&amp;lid=3047758&amp;ci=1625&amp;si=13</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="78">
+  <evento id="89">
     <nombre>México U18 (M) – Canadá U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -1093,9 +1185,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>15:15</hora>
     <url>https://livetv.sx/es/eventinfo/394753408_mexico_u18_w_canada_u18_w/</url>
     <datetime_iso>2026-08-06T15:15:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/n7Ys7zG8rhI?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=n7Ys7zG8rhI&amp;lang=es&amp;eid=394753408&amp;lid=3047759&amp;ci=1625&amp;si=13</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="79">
+  <evento id="90">
     <nombre>Toros – Izhstal</nombre>
     <deporte>Hockey</deporte>
     <competicion>Partido amistoso</competicion>
@@ -1105,7 +1204,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T15:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="80">
+  <evento id="91">
     <nombre>Marruecos U18 (M) – Egipto U18  (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato Africano Sub-18</competicion>
@@ -1113,9 +1212,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>15:30</hora>
     <url>https://livetv.sx/es/eventinfo/394760083_morocco_u18_w_egypt_u18_w/</url>
     <datetime_iso>2026-08-06T15:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/MnwEuzaKGEE?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=MnwEuzaKGEE&amp;lang=es&amp;eid=394760083&amp;lid=3047097&amp;ci=1673&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="81">
+  <evento id="92">
     <nombre>Finlandia U18 (M) – Polonia U18 (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
@@ -1123,9 +1229,16 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <hora>15:30</hora>
     <url>https://livetv.sx/es/eventinfo/394892982_finland_u18_w_poland_u18_w/</url>
     <datetime_iso>2026-08-06T15:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/SQztO_3OjFo?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=SQztO_3OjFo&amp;lang=es&amp;eid=394892982&amp;lid=3047710&amp;ci=5462&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="82">
+  <evento id="93">
     <nombre>Alemania U18 (W) – Montenegro U18 (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
@@ -1135,7 +1248,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T15:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="83">
+  <evento id="94">
     <nombre>Sogdiana – Andijon</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Uzbekistán. Superliga</competicion>
@@ -1145,7 +1258,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="84">
+  <evento id="95">
     <nombre>Dynamo-Olimpik – Loko</nombre>
     <deporte>Hockey</deporte>
     <competicion>Torneo amistoso</competicion>
@@ -1155,7 +1268,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="85">
+  <evento id="96">
     <nombre>Dneprovskiye Lvy – Rysi</nombre>
     <deporte>Hockey</deporte>
     <competicion>Torneo amistoso</competicion>
@@ -1165,7 +1278,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="86">
+  <evento id="97">
     <nombre>Bulgaria U16 – Finlandia U16</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Campeonato Europeo Sub-16 B</competicion>
@@ -1175,7 +1288,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="87">
+  <evento id="98">
     <nombre>Suiza U16 – Croacia U16</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Campeonato Europeo Sub-16 B</competicion>
@@ -1185,7 +1298,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="88">
+  <evento id="99">
     <nombre>Islandia U16 (M) – Noruega U16 (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-16 B</competicion>
@@ -1195,7 +1308,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="89">
+  <evento id="100">
     <nombre>Salden (M) /  Karamoko (M) –  Falkowska (M) /  Smith (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Varsovia. Doubles</competicion>
@@ -1205,7 +1318,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="90">
+  <evento id="101">
     <nombre>Italia (M) – Grecia (M)</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Mujeres. Partido amistoso</competicion>
@@ -1215,7 +1328,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="91">
+  <evento id="102">
     <nombre>Georgia U18 – Kosovo U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18 B</competicion>
@@ -1225,7 +1338,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:15:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="92">
+  <evento id="103">
     <nombre>BATE-2 – Bumprom</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Bielorrusia. 1 Liga</competicion>
@@ -1235,7 +1348,17 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="93">
+  <evento id="104">
+    <nombre>BATE Rés – Bumprom</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Bielorrusia. 1 Liga</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>16:30</hora>
+    <url>https://livetv.sx/es/eventinfo/394926974__/</url>
+    <datetime_iso>2026-08-06T16:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="105">
     <nombre>Bishkek City – Asiagoal Bishkek</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Kirguistán. Liga Premier</competicion>
@@ -1245,7 +1368,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="94">
+  <evento id="106">
     <nombre>Muras United – Asia Talas</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Kirguistán. Liga Premier</competicion>
@@ -1255,7 +1378,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="95">
+  <evento id="107">
     <nombre>Camerún U18 – Túnez U18</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Campeonato Africano Sub-18</competicion>
@@ -1265,7 +1388,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="96">
+  <evento id="108">
     <nombre>Shimizu (M) /  Kobori (M) –  Kubka (M) /  Rosolska (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Varsovia. Doubles</competicion>
@@ -1275,7 +1398,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="97">
+  <evento id="109">
     <nombre>Estonia U18 – Grecia U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18 B</competicion>
@@ -1285,7 +1408,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T16:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="98">
+  <evento id="110">
     <nombre>KuPS – U Craiova</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Europa League. Calificación</competicion>
@@ -1295,7 +1418,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="99">
+  <evento id="111">
     <nombre>Inter Turku – Vaduz</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1305,7 +1428,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="100">
+  <evento id="112">
     <nombre>Orsha – Gomel-2</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Bielorrusia. 1 Liga</competicion>
@@ -1315,7 +1438,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="101">
+  <evento id="113">
     <nombre>Molodechno – Volna Pinsk</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Bielorrusia. 1 Liga</competicion>
@@ -1325,7 +1448,27 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="102">
+  <evento id="114">
+    <nombre>Maladzyechna – Volna Pinsk</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Bielorrusia. 1 Liga</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>17:00</hora>
+    <url>https://livetv.sx/es/eventinfo/394926975__/</url>
+    <datetime_iso>2026-08-06T17:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="115">
+    <nombre>Orsha – Gómel 2</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Bielorrusia. 1 Liga</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>17:00</hora>
+    <url>https://livetv.sx/es/eventinfo/394926976__/</url>
+    <datetime_iso>2026-08-06T17:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="116">
     <nombre>Pakhtakor – Buxoro</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Uzbekistán. Superliga</competicion>
@@ -1335,7 +1478,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="103">
+  <evento id="117">
     <nombre>Neftyanik – Aq Bars</nombre>
     <deporte>Hockey</deporte>
     <competicion>Partido amistoso</competicion>
@@ -1345,7 +1488,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="104">
+  <evento id="118">
     <nombre>Belstal – Neftekhimik</nombre>
     <deporte>Hockey</deporte>
     <competicion>Torneo amistoso</competicion>
@@ -1355,7 +1498,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="105">
+  <evento id="119">
     <nombre>Zubry – Medvedi</nombre>
     <deporte>Hockey</deporte>
     <competicion>Torneo amistoso</competicion>
@@ -1365,7 +1508,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="106">
+  <evento id="120">
     <nombre>Belarus U18 – Caballeros</nombre>
     <deporte>Hockey</deporte>
     <competicion>Torneo amistoso</competicion>
@@ -1375,7 +1518,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="107">
+  <evento id="121">
     <nombre>Dynamo-Shinnik – Krylia Sovetov</nombre>
     <deporte>Hockey</deporte>
     <competicion>Partido amistoso</competicion>
@@ -1385,7 +1528,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="108">
+  <evento id="122">
     <nombre>Talia Gibson (M) –  Ekaterina Alexandrova (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto</competicion>
@@ -1395,7 +1538,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="109">
+  <evento id="123">
     <nombre>Islandia U18 – Alemania U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18</competicion>
@@ -1405,7 +1548,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="110">
+  <evento id="124">
     <nombre>España U18 – Francia U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18</competicion>
@@ -1415,7 +1558,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="111">
+  <evento id="125">
     <nombre>Cuba – Nicaragua</nombre>
     <deporte>Béisbol</deporte>
     <competicion>Juegos Centroamericanos y del Caribe</competicion>
@@ -1425,7 +1568,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="112">
+  <evento id="126">
     <nombre>WTA Tour, Toronto</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto</competicion>
@@ -1435,7 +1578,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:10:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="113">
+  <evento id="127">
     <nombre>ATP Tour, Montreal</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal</competicion>
@@ -1445,7 +1588,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:10:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="114">
+  <evento id="128">
     <nombre>Slonim – Minsk-2</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Bielorrusia. 1 Liga</competicion>
@@ -1455,7 +1598,17 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="115">
+  <evento id="129">
+    <nombre>Slonim – Minsk Rés</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Bielorrusia. 1 Liga</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>17:30</hora>
+    <url>https://livetv.sx/es/eventinfo/394926977__/</url>
+    <datetime_iso>2026-08-06T17:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="130">
     <nombre>Noruega U18 – Montenegro U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18</competicion>
@@ -1465,7 +1618,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="116">
+  <evento id="131">
     <nombre>Hungría U18 (M) – Dinamarca U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -1475,7 +1628,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="117">
+  <evento id="132">
     <nombre>Eslovaquia U18 (M) – Montenegro U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -1485,7 +1638,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="118">
+  <evento id="133">
     <nombre>Portugal U18 (M) – Brasil U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -1495,7 +1648,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="119">
+  <evento id="134">
     <nombre>Guinea U18 (M) – Angola U18 (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Copa Mundial Sub-18</competicion>
@@ -1505,7 +1658,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T17:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="120">
+  <evento id="135">
     <nombre>Maccabi Tel Aviv – CSKA Sofia</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Europa League. Calificación</competicion>
@@ -1515,7 +1668,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="121">
+  <evento id="136">
     <nombre>Jagiellonia – Rangers Delhi</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Europa League. Calificación</competicion>
@@ -1525,7 +1678,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="122">
+  <evento id="137">
     <nombre>Naestved – Hvidovre</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Dinamarca. Copa</competicion>
@@ -1535,7 +1688,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="123">
+  <evento id="138">
     <nombre>KRFK – Skanderborg</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Dinamarca. Copa</competicion>
@@ -1545,7 +1698,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="124">
+  <evento id="139">
     <nombre>HJK – Motherwell</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1555,7 +1708,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="125">
+  <evento id="140">
     <nombre>Kjellerup – Bronderslev</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Dinamarca. Copa</competicion>
@@ -1565,7 +1718,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="126">
+  <evento id="141">
     <nombre>Jablonec – RFS</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1575,7 +1728,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="127">
+  <evento id="142">
     <nombre>Noah – Sion</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1585,7 +1738,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="128">
+  <evento id="143">
     <nombre>Paide – Rapid de Viena</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1595,7 +1748,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="129">
+  <evento id="144">
     <nombre>SKA-1946 – SKA Academy</nombre>
     <deporte>Hockey</deporte>
     <competicion>Partido amistoso</competicion>
@@ -1605,7 +1758,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="130">
+  <evento id="145">
     <nombre>Yastreby – Progress</nombre>
     <deporte>Hockey</deporte>
     <competicion>Torneo amistoso</competicion>
@@ -1615,7 +1768,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="131">
+  <evento id="146">
     <nombre>Costa de Marfil U18 (M) – República Centroafricana U18 (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato Africano Sub-18</competicion>
@@ -1625,7 +1778,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="132">
+  <evento id="147">
     <nombre>Francia U18 (W) – Letonia U18 (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
@@ -1635,7 +1788,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="133">
+  <evento id="148">
     <nombre>Lituania U23 – Polonia U23</nombre>
     <deporte>Béisbol</deporte>
     <competicion>Campeonato Europeo</competicion>
@@ -1645,7 +1798,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="134">
+  <evento id="149">
     <nombre>Suecia U18 (M) – Eslovenia U18 (W)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
@@ -1655,7 +1808,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:15:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="135">
+  <evento id="150">
     <nombre>Aabenraa – SGI</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Dinamarca. Copa</competicion>
@@ -1665,7 +1818,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="136">
+  <evento id="151">
     <nombre>CFR Cluj – Tromsoe</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1675,7 +1828,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="137">
+  <evento id="152">
     <nombre>Zaragoza – FC Andorra</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Partido amistoso</competicion>
@@ -1685,7 +1838,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="138">
+  <evento id="153">
     <nombre>Austria U16 – Gran Bretana U16</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Campeonato Europeo Sub-16 B</competicion>
@@ -1695,7 +1848,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="139">
+  <evento id="154">
     <nombre>Chipre U16 – North Macedonia U16</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Campeonato Europeo Sub-16 B</competicion>
@@ -1705,7 +1858,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="140">
+  <evento id="155">
     <nombre>Dinamarca U16 (M) – Irlanda U16 (W)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-16 B</competicion>
@@ -1715,7 +1868,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="141">
+  <evento id="156">
     <nombre>Luciano Darderi – Juncheng Shang</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal</competicion>
@@ -1725,7 +1878,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="142">
+  <evento id="157">
     <nombre>Viktorija Golubic (M) –  Iga Swiatek (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto</competicion>
@@ -1735,7 +1888,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="143">
+  <evento id="158">
     <nombre>Mariano Navone – Arthur Fils</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal</competicion>
@@ -1745,7 +1898,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="144">
+  <evento id="159">
     <nombre>Anna Kalinskaya (M) –  Diana Shnaider (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto</competicion>
@@ -1755,7 +1908,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="145">
+  <evento id="160">
     <nombre>Polmans / Miedler – Ruud / Goransson</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal. Doubles</competicion>
@@ -1765,7 +1918,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="146">
+  <evento id="161">
     <nombre>Heliovaara / Patten – Cobolli / Buse</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal. Doubles</competicion>
@@ -1775,7 +1928,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="147">
+  <evento id="162">
     <nombre>Perez (M) /  Schuurs (M) –  Lumsden (M) /  Kichenok (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto. Doubles</competicion>
@@ -1785,7 +1938,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="148">
+  <evento id="163">
     <nombre>Baltimore – LA Angels</nombre>
     <deporte>Béisbol</deporte>
     <competicion>No especificado</competicion>
@@ -1795,7 +1948,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:35:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="149">
+  <evento id="164">
     <nombre>Cincinnati – Oakland</nombre>
     <deporte>Béisbol</deporte>
     <competicion>No especificado</competicion>
@@ -1805,7 +1958,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:40:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="150">
+  <evento id="165">
     <nombre>Países Bajos U18 – Luxemburgo U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18 B</competicion>
@@ -1815,7 +1968,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T18:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="151">
+  <evento id="166">
     <nombre>Lincoln Red Imps – Omonia</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Europa League. Calificación</competicion>
@@ -1825,7 +1978,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="152">
+  <evento id="167">
     <nombre>Lech Poznan – KI Klaksvik</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Europa League. Calificación</competicion>
@@ -1835,7 +1988,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="153">
+  <evento id="168">
     <nombre>Hradec Kralove – Besiktas</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Europa League. Calificación</competicion>
@@ -1845,7 +1998,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="154">
+  <evento id="169">
     <nombre>RB Salzburgo – Pafos</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Europa League. Calificación</competicion>
@@ -1855,7 +2008,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="155">
+  <evento id="170">
     <nombre>Dinamo de Kiev – Qarabag</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1865,7 +2018,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="156">
+  <evento id="171">
     <nombre>Sheriff – San Galo</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1875,7 +2028,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="157">
+  <evento id="172">
     <nombre>Rakow – Hammarby</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1885,7 +2038,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="158">
+  <evento id="173">
     <nombre>Inter Club Escaldes – Flora</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1895,7 +2048,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="159">
+  <evento id="174">
     <nombre>Goeteborg – Gante</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1905,7 +2058,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="160">
+  <evento id="175">
     <nombre>Zalgiris – Hajduk</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1915,7 +2068,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="161">
+  <evento id="176">
     <nombre>Riga – Gyori ETO</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1925,7 +2078,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="162">
+  <evento id="177">
     <nombre>Debrecen – Copenhague</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -1935,7 +2088,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="163">
+  <evento id="178">
     <nombre>Liga de Naciones, Europa-4</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Liga de Naciones</competicion>
@@ -1945,7 +2098,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="164">
+  <evento id="179">
     <nombre>Brasil (M) – Venezuela (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato Sudamericano</competicion>
@@ -1955,7 +2108,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="165">
+  <evento id="180">
     <nombre>Ruanda U18 – Senegal U18</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Campeonato Africano Sub-18</competicion>
@@ -1965,7 +2118,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="166">
+  <evento id="181">
     <nombre>Colombia – Paraguay</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Copa América</competicion>
@@ -1975,7 +2128,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="167">
+  <evento id="182">
     <nombre>Costa Rica (M) – Nicaragua (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Juegos Centroamericanos y del Caribe</competicion>
@@ -1985,7 +2138,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="168">
+  <evento id="183">
     <nombre>Cleveland – NY Mets</nombre>
     <deporte>Béisbol</deporte>
     <competicion>No especificado</competicion>
@@ -1995,7 +2148,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:10:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="169">
+  <evento id="184">
     <nombre>Beitar Jerusalén – Austria de Viena</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2005,7 +2158,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="170">
+  <evento id="185">
     <nombre>República Checa U18 – Finlandia U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18</competicion>
@@ -2015,7 +2168,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="171">
+  <evento id="186">
     <nombre>Dinamarca U18 – Croacia U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18</competicion>
@@ -2025,7 +2178,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="172">
+  <evento id="187">
     <nombre>Eslovenia U18 – Hungría U18</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Campeonato Europeo Sub-18</competicion>
@@ -2035,7 +2188,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="173">
+  <evento id="188">
     <nombre>PAOK – Anderlecht</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Europa League. Calificación</competicion>
@@ -2045,7 +2198,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T19:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="174">
+  <evento id="189">
     <nombre>Thun – Vikingur Reykjavik</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Europa League. Calificación</competicion>
@@ -2055,7 +2208,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="175">
+  <evento id="190">
     <nombre>Fiorentina – Deportivo</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Partido amistoso</competicion>
@@ -2065,7 +2218,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="176">
+  <evento id="191">
     <nombre>Atlético de Rafaela II – Central Cordoba II</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Argentina. Liga Reserva</competicion>
@@ -2075,7 +2228,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="177">
+  <evento id="192">
     <nombre>Hapoel Tel Aviv – GKS Katowice</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2085,7 +2238,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="178">
+  <evento id="193">
     <nombre>Twente – DAC 1904</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2095,7 +2248,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="179">
+  <evento id="194">
     <nombre>Sao Caetano Sub-20 –  Novorizontino Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -2105,7 +2258,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="180">
+  <evento id="195">
     <nombre>Portuguesa SP Sub-20 –  Juventus SP Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -2115,7 +2268,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="181">
+  <evento id="196">
     <nombre>Gremio Prudente Sub-20 –  Capivariano Sub-20</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Campeonato Paulista Sub-20</competicion>
@@ -2125,7 +2278,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="182">
+  <evento id="197">
     <nombre>AS Mónaco – Getafe</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Partido amistoso</competicion>
@@ -2135,7 +2288,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="183">
+  <evento id="198">
     <nombre>Ajax – Shelbourne</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2145,7 +2298,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="184">
+  <evento id="199">
     <nombre>Santos U20 (W) – Corinthians U20 (W)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Brasil. Mujeres. Campeonato Paulista Sub-20</competicion>
@@ -2155,7 +2308,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="185">
+  <evento id="200">
     <nombre>Marta Kostyuk (M) –  Madison Keys (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto</competicion>
@@ -2165,7 +2318,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="186">
+  <evento id="201">
     <nombre>Alexandrova (M) /  Dabrowski (M) –  McNally (M) /  Gauff (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto. Doubles</competicion>
@@ -2175,7 +2328,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="187">
+  <evento id="202">
     <nombre>Yannick Hanfmann – Nuno Borges</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal</competicion>
@@ -2185,7 +2338,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="188">
+  <evento id="203">
     <nombre>Cameron Norrie – Alex De Minaur</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal</competicion>
@@ -2195,7 +2348,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="189">
+  <evento id="204">
     <nombre>Jessica Pegula (M) –  Kamilla Rakhimova (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto</competicion>
@@ -2205,7 +2358,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="190">
+  <evento id="205">
     <nombre>Cerundolo / Etcheverry – Glasspool / Cash</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal. Doubles</competicion>
@@ -2215,7 +2368,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="191">
+  <evento id="206">
     <nombre>Zverev / Melo – Galarneau / Chan</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal. Doubles</competicion>
@@ -2225,7 +2378,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="192">
+  <evento id="207">
     <nombre>Li (M) /  Tauson (M) –  Kempen (M) /  Panova (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto. Doubles</competicion>
@@ -2235,7 +2388,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="193">
+  <evento id="208">
     <nombre>Argentina U17 (M) – Polonia U17 (M)</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Mujeres. Copa Mundial Sub-17</competicion>
@@ -2245,7 +2398,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="194">
+  <evento id="209">
     <nombre>Egipto U17 (M) – Estados Unidos U17 (M)</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Mujeres. Copa Mundial Sub-17</competicion>
@@ -2255,7 +2408,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="195">
+  <evento id="210">
     <nombre>México U17 (M) – Venezuela U17 (M)</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Mujeres. Copa Mundial Sub-17</competicion>
@@ -2265,7 +2418,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="196">
+  <evento id="211">
     <nombre>Puerto Rico U17 (W) – Corea del Sur U17 (W)</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Mujeres. Copa Mundial Sub-17</competicion>
@@ -2275,7 +2428,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="197">
+  <evento id="212">
     <nombre>Juegos Centroamericanos y del Caribe</nombre>
     <deporte>Boxeo</deporte>
     <competicion>Juegos Centroamericanos y del Caribe</competicion>
@@ -2285,7 +2438,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="198">
+  <evento id="213">
     <nombre>Milwaukee – Pittsburgh</nombre>
     <deporte>Béisbol</deporte>
     <competicion>No especificado</competicion>
@@ -2295,7 +2448,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:10:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="199">
+  <evento id="214">
     <nombre>Valur – Nordsjaelland</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2305,7 +2458,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="200">
+  <evento id="215">
     <nombre>Braga – Dinamo Minsk</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2315,7 +2468,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="201">
+  <evento id="216">
     <nombre>Borac Bania Luka – Maxline</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2325,7 +2478,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="202">
+  <evento id="217">
     <nombre>Lugano – NSI Runavik</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2335,7 +2488,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="203">
+  <evento id="218">
     <nombre>Uganda U18 (M) – Kenia U18 (W)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato Africano Sub-18</competicion>
@@ -2345,7 +2498,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="204">
+  <evento id="219">
     <nombre>Bélgica U18 (M) – Serbia U18 (W)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
@@ -2355,7 +2508,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="205">
+  <evento id="220">
     <nombre>Bélgica (M) Sub-18 –   Serbia (M) Sub-18</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
@@ -2365,7 +2518,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="206">
+  <evento id="221">
     <nombre>Bristol City – Walsall</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Inglaterra. Copa de la Liga</competicion>
@@ -2375,7 +2528,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="207">
+  <evento id="222">
     <nombre>Bohemian – Midtjylland</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2385,7 +2538,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="208">
+  <evento id="223">
     <nombre>Rijeka – Ilves</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2395,7 +2548,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="209">
+  <evento id="224">
     <nombre>República Checa U18 (M) – Turquía U18 (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato de Europa Sub-18</competicion>
@@ -2405,7 +2558,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T20:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="210">
+  <evento id="225">
     <nombre>Benfica – Heart</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Europa League. Calificación</competicion>
@@ -2415,7 +2568,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="211">
+  <evento id="226">
     <nombre>Real Cundinamarca – Boca Juniors de Cali</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Colombia. Primera B</competicion>
@@ -2425,7 +2578,17 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="212">
+  <evento id="227">
+    <nombre>Venezuela (M) –  Salvador (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Mujeres. Juegos Centroamericanos y del Caribe</competicion>
+    <fecha>6 de agosto</fecha>
+    <hora>21:00</hora>
+    <url>https://livetv.sx/es/eventinfo/394927432__/</url>
+    <datetime_iso>2026-08-06T21:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="228">
     <nombre>Venezuela (M) – El Salvador (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Juegos Centroamericanos y del Caribe</competicion>
@@ -2435,7 +2598,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="213">
+  <evento id="229">
     <nombre>Hibernian – Shkendija</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2445,7 +2608,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="214">
+  <evento id="230">
     <nombre>Universitario de Vinto – Real Potosi</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Bolivia. Primera División</competicion>
@@ -2455,7 +2618,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="215">
+  <evento id="231">
     <nombre>Tre Fiori – Drita</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2465,7 +2628,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="216">
+  <evento id="232">
     <nombre>Partizan – Tobol</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Liga Europa Conferencia. Calificación</competicion>
@@ -2475,7 +2638,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="217">
+  <evento id="233">
     <nombre>Estonia U16 – Hungría U16</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Campeonato Europeo Sub-16 B</competicion>
@@ -2485,7 +2648,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="218">
+  <evento id="234">
     <nombre>Islandia U16 – Ucrania U16</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Campeonato Europeo Sub-16 B</competicion>
@@ -2495,7 +2658,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="219">
+  <evento id="235">
     <nombre>Guatemala (M) – Venezuela (M)</nombre>
     <deporte>Balonmano</deporte>
     <competicion>Mujeres. Juegos Centroamericanos y del Caribe</competicion>
@@ -2505,7 +2668,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="220">
+  <evento id="236">
     <nombre>St Helens – Hall</nombre>
     <deporte>Rugby</deporte>
     <competicion>Inglaterra. Super League</competicion>
@@ -2515,7 +2678,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="221">
+  <evento id="237">
     <nombre>Panamá – Puerto Rico</nombre>
     <deporte>Béisbol</deporte>
     <competicion>Juegos Centroamericanos y del Caribe</competicion>
@@ -2525,7 +2688,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="222">
+  <evento id="238">
     <nombre>Rayo Zuliano – Anzoátegui</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Venezuela. Primera División</competicion>
@@ -2535,7 +2698,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="223">
+  <evento id="239">
     <nombre>Draxl / Harper – Medvedev / Marozsan</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal. Doubles</competicion>
@@ -2545,7 +2708,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="224">
+  <evento id="240">
     <nombre>Shuvey (M) /  Ostapenko (M) –  Vekic (M) /  Sakkari (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto. Doubles</competicion>
@@ -2555,7 +2718,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="225">
+  <evento id="241">
     <nombre>Fernandez (M) /  Fernandez (M) –  Mertens (M) /  Shnaider (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto. Doubles</competicion>
@@ -2565,7 +2728,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="226">
+  <evento id="242">
     <nombre>Brasil – Venezuela</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Copa América</competicion>
@@ -2575,7 +2738,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T21:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="227">
+  <evento id="243">
     <nombre>Estudiantes de Mérida – Zamora</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Venezuela. Primera División</competicion>
@@ -2585,7 +2748,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T22:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="228">
+  <evento id="244">
     <nombre>Cabo Verde (M) –  Camerún (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Mujeres. Copa Africana de Naciones</competicion>
@@ -2595,7 +2758,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T22:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="229">
+  <evento id="245">
     <nombre>Malí (M) –  Ghana (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Mujeres. Copa Africana de Naciones</competicion>
@@ -2605,7 +2768,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T22:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="230">
+  <evento id="246">
     <nombre>Alianza Atlético – Cienciano</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Perú. Liga 1</competicion>
@@ -2615,7 +2778,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T22:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="231">
+  <evento id="247">
     <nombre>Michelsen / Tien – Arevalo Gonzalez / Pavic</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal. Doubles</competicion>
@@ -2625,7 +2788,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T22:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="232">
+  <evento id="248">
     <nombre>Seattle – Detroit</nombre>
     <deporte>Béisbol</deporte>
     <competicion>No especificado</competicion>
@@ -2635,7 +2798,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T22:10:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="233">
+  <evento id="249">
     <nombre>Envigado – Unión Magdalena</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Colombia. Primera B</competicion>
@@ -2645,7 +2808,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T22:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="234">
+  <evento id="250">
     <nombre>San Antonio Cotacachi – Gualaceo</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Serie B</competicion>
@@ -2655,7 +2818,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T22:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="235">
+  <evento id="251">
     <nombre>Independiente Juniors – 22 de Julio</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Serie B</competicion>
@@ -2665,7 +2828,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T22:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="236">
+  <evento id="252">
     <nombre>Atlético Rojiblanco – Vargas Torres</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Serie B</competicion>
@@ -2675,7 +2838,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T22:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="237">
+  <evento id="253">
     <nombre>Colombia (M) – Paraguay (M)</nombre>
     <deporte>Baloncesto</deporte>
     <competicion>Mujeres. Campeonato Sudamericano</competicion>
@@ -2685,7 +2848,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T22:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="238">
+  <evento id="254">
     <nombre>Pato U20 – Magnus U20</nombre>
     <deporte>Futsal</deporte>
     <competicion>Brasil. Brasileiro Sub 20</competicion>
@@ -2695,7 +2858,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T22:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="239">
+  <evento id="255">
     <nombre>Atlético Cali – Real San Andrés</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Colombia. Primera B</competicion>
@@ -2705,7 +2868,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="240">
+  <evento id="256">
     <nombre>Boyacá Chicó – Alianza Valledupar</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Colombia. Primera A</competicion>
@@ -2715,7 +2878,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="241">
+  <evento id="257">
     <nombre>Nikola Bartunkova (M) –  Amanda Anisimova (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto</competicion>
@@ -2725,7 +2888,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="242">
+  <evento id="258">
     <nombre>Jiang (M) /  Wu (M) –  Bouzkova (M) /  Noskova (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto. Doubles</competicion>
@@ -2735,7 +2898,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="243">
+  <evento id="259">
     <nombre>Hao-ching (M) /  Joint (M) –  En-shuo (M) /  Aoyama (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>WTA. Toronto. Doubles</competicion>
@@ -2745,7 +2908,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="244">
+  <evento id="260">
     <nombre>Cabral / Tracy – Ram / Salisbury</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal. Doubles</competicion>
@@ -2755,7 +2918,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="245">
+  <evento id="261">
     <nombre>Brasil U17 (M) – Croacia U17 (M)</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Mujeres. Copa Mundial Sub-17</competicion>
@@ -2765,7 +2928,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="246">
+  <evento id="262">
     <nombre>Chinese Taipei U17 (W) – República Dominicana U17 (M)</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Mujeres. Copa Mundial Sub-17</competicion>
@@ -2775,7 +2938,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="247">
+  <evento id="263">
     <nombre>Perú U17 (M) – Túnez U17 (M)</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Mujeres. Copa Mundial Sub-17</competicion>
@@ -2785,7 +2948,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="248">
+  <evento id="264">
     <nombre>Turquía U17 (M) – Tailandia U17</nombre>
     <deporte>Voleibol</deporte>
     <competicion>Mujeres. Copa Mundial Sub-17</competicion>
@@ -2795,7 +2958,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T23:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="249">
+  <evento id="265">
     <nombre>Bogotá – Leones</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Colombia. Primera B</competicion>
@@ -2805,7 +2968,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T23:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="250">
+  <evento id="266">
     <nombre>El Nacional – 9 de Octubre</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Serie B</competicion>
@@ -2815,7 +2978,7 @@ player/live.php?id=263893&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-08-06T23:30:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="251">
+  <evento id="267">
     <nombre>Krajicek / Mektic – Andreozzi / Guinard</nombre>
     <deporte>Tenis</deporte>
     <competicion>ATP. Montreal. Doubles</competicion>
