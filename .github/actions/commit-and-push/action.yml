@@ -62,7 +62,7 @@ runs:
         git commit -m "$INPUT_COMMIT_MESSAGE"
 
         for attempt in $(seq 1 "$INPUT_RETRIES"); do
-          if git pull --rebase -X origin "$INPUT_BRANCH" && git push origin HEAD:"$INPUT_BRANCH"; then
+          if git pull --rebase -X theirs origin "$INPUT_BRANCH" && git push origin HEAD:"$INPUT_BRANCH"; then
             echo "Push completed on attempt $attempt."
             exit 0
           fi
