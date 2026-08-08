@@ -1,7 +1,14 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-08-08 07:12:06
-# Total Channels: 26
-# Generated: 2026-08-08T07:00:02Z
+# IPFS Acestream Channels - 2026-08-08 08:00:06
+# Total Channels: 29
+# Generated: 2026-08-08T07:28:18Z
+
+# -------- DEPORTES --------
+#EXTINF:-1 tvg-id="Teledeporte" tvg-logo="https://img2.rtve.es/n/15966755" group-title="DEPORTES",Teledeporte 1080p *
+http://127.0.0.1:6878/ace/getstream?id=b35b3eb8e22365bf3469efd6d1f3b82618a6e18a
+
+#EXTINF:-1 tvg-id="Teledeporte" tvg-logo="https://img2.rtve.es/n/15966755" group-title="DEPORTES",Teledeporte 1080p **
+http://127.0.0.1:6878/ace/getstream?id=77cf022557c56cdf8d8115f50e61f846ad72ee05
 
 # -------- EUROSPORT --------
 #EXTINF:-1 tvg-id="Eurosport 1 HD" tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" group-title="EUROSPORT",Eurosport 1 1080p **
@@ -83,4 +90,8 @@ http://127.0.0.1:6878/ace/getstream?id=ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
 
 #EXTINF:-1 tvg-id="M+ Vamos HD" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ Vamos 1080p **
 http://127.0.0.1:6878/ace/getstream?id=7e4f6eb38e0d5ef52b7f8b96eb80c1d8c87dad16
+
+# -------- TDT --------
+#EXTINF:-1 tvg-id="Telecinco HD" tvg-logo="https://i.ibb.co/81wJ3GH/telecinco.png" group-title="TDT",Telecinco 1080p **
+http://127.0.0.1:6878/ace/getstream?id=3d376333ee90d6db3d413fc5764ef635882076f5
 
