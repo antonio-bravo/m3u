@@ -1,9 +1,12 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-08-12 05:00:06
-# Total Channels: 30
-# Generated: 2026-08-12T04:00:02Z
+# IPFS Acestream Channels - 2026-08-12 06:40:45
+# Total Channels: 31
+# Generated: 2026-08-12T06:05:07Z
 
 # -------- DEPORTES --------
+#EXTINF:-1 tvg-id="Teledeporte" tvg-logo="https://img2.rtve.es/n/15966755" group-title="DEPORTES",Teledeporte 1080p *
+http://127.0.0.1:6878/ace/getstream?id=b35b3eb8e22365bf3469efd6d1f3b82618a6e18a
+
 #EXTINF:-1 tvg-id="Teledeporte" tvg-logo="https://img2.rtve.es/n/15966755" group-title="DEPORTES",Teledeporte 1080p **
 http://127.0.0.1:6878/ace/getstream?id=77cf022557c56cdf8d8115f50e61f846ad72ee05
 
