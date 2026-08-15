@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-08-15 06:07:20" total="576">
+<eventos generado="2026-08-15 06:33:41" total="576">
   <evento id="1">
     <nombre>Oakland – Texas</nombre>
     <deporte>Béisbol</deporte>
@@ -791,7 +791,14 @@ player/live.php?id=264291&amp;w=700&amp;h=480</url>
     <hora>09:00</hora>
     <url>https://livetv.sx/es/eventinfo/395912878_sputnik_avto/</url>
     <datetime_iso>2026-08-15T09:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/xlqjnxMei8E?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=xlqjnxMei8E&amp;lang=es&amp;eid=395912878&amp;lid=3051380&amp;ci=276&amp;si=2</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="52">
     <nombre>Micronesia (W) – Guam (M)</nombre>
@@ -801,7 +808,14 @@ player/live.php?id=264291&amp;w=700&amp;h=480</url>
     <hora>09:00</hora>
     <url>https://livetv.sx/es/eventinfo/396192107_micronesia_w_guam_w/</url>
     <datetime_iso>2026-08-15T09:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/HEjgn8S5LsA?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=HEjgn8S5LsA&amp;lang=es&amp;eid=396192107&amp;lid=3052594&amp;ci=5979&amp;si=3</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="53">
     <nombre>Brisbane Broncos (W) – Sydney Roosters (W)</nombre>
@@ -811,7 +825,21 @@ player/live.php?id=264291&amp;w=700&amp;h=480</url>
     <hora>09:15</hora>
     <url>https://livetv.sx/es/eventinfo/395887171_brisbane_broncos_w_sydney_roosters_w/</url>
     <datetime_iso>2026-08-15T09:15:00</datetime_iso>
-    <streams total="0" />
+    <streams total="2">
+      <stream id="1">
+        <url>https://emb.apl425.me/
+player/live.php?id=263824&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=263824&amp;lang=es&amp;eid=395887171&amp;lid=3053023&amp;ci=6231&amp;si=17</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://dlhd.st/stream/stream-593.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3052066&amp;lang=es&amp;eid=395887171&amp;lid=3052066&amp;ci=6231&amp;si=17</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="54">
     <nombre>South Adelaide – Adelaide Atletico</nombre>
@@ -881,7 +909,57 @@ player/live.php?id=264291&amp;w=700&amp;h=480</url>
     <hora>09:30</hora>
     <url>https://livetv.sx/es/eventinfo/394171596__/</url>
     <datetime_iso>2026-08-15T09:30:00</datetime_iso>
-    <streams total="0" />
+    <streams total="8">
+      <stream id="1">
+        <url>https://emb.apl425.me/
+player/live.php?id=253201&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=253201&amp;lang=es&amp;eid=394171596&amp;lid=3051739&amp;ci=183&amp;si=17</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://shd247.world/frame0012.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3052732&amp;lang=es&amp;eid=394171596&amp;lid=3052732&amp;ci=183&amp;si=17</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://dlhd.st/stream/stream-37.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3053186&amp;lang=es&amp;eid=394171596&amp;lid=3053186&amp;ci=183&amp;si=17</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://dlhd.st/stream/stream-589.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3048467&amp;lang=es&amp;eid=394171596&amp;lid=3048467&amp;ci=183&amp;si=17</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://dlhd.st/stream/stream-820.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3053131&amp;lang=es&amp;eid=394171596&amp;lid=3053131&amp;ci=183&amp;si=17</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://dlhd.st/stream/stream-36.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3051488&amp;lang=es&amp;eid=394171596&amp;lid=3051488&amp;ci=183&amp;si=17</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://abisnews.com/sky2nz.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3051411&amp;lang=es&amp;eid=394171596&amp;lid=3051411&amp;ci=183&amp;si=17</enlace_original>
+      </stream>
+      <stream id="8">
+        <url>https://www.vdocity.com/1/_VkS5FxyQndeYQc1y5Uuqhn1f4m7zcfxAzPLEXA</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
+        <idioma_nombre>Bandera #0</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3053139&amp;lang=es&amp;eid=394171596&amp;lid=3053139&amp;ci=183&amp;si=17</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="61">
     <nombre>Monaro Panthers – Canberra</nombre>
