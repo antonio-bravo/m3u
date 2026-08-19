@@ -3,7 +3,9 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from datetime import datetime
 import xml.etree.ElementTree as ET
+import os
 import sys
+import time
 
 BASE_URLS = [
     'https://pirlotv.la',
@@ -12,6 +14,10 @@ BASE_URLS = [
     'https://pirlotv.me',
 ]
 
+REQUEST_ATTEMPTS = 3
+RETRY_DELAY_SECONDS = 2
+OUTPUT_FILES = ('lista_reproductor_web.xml', 'lista_reproductor_web.m3u')
+
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -19,12 +25,17 @@ HEADERS = {
 }
 
 def safe_get(url):
-    try:
-        response = requests.get(url, headers=HEADERS, timeout=12)
-        if response.status_code == 200 and 'SEIZED' not in response.text and 'Seized' not in response.text:
-            return response
-    except requests.RequestException:
-        pass
+    for attempt in range(REQUEST_ATTEMPTS):
+        try:
+            response = requests.get(url, headers=HEADERS, timeout=12)
+            if response.status_code == 200 and 'SEIZED' not in response.text and 'Seized' not in response.text:
+                return response
+        except requests.RequestException:
+            pass
+
+        if attempt < REQUEST_ATTEMPTS - 1:
+            time.sleep(RETRY_DELAY_SECONDS)
+
     return None
 
 def fetch_events_from_pirlotv(base_url):
@@ -102,7 +113,11 @@ for base_url in BASE_URLS:
         break
 
 if not events:
-    print("Error crítico: No se encontraron eventos válidos en ninguna de las fuentes probadas.")
+    if all(os.path.isfile(path) and os.path.getsize(path) > 0 for path in OUTPUT_FILES):
+        print("Advertencia: No se encontraron eventos válidos; se conservan las listas existentes.")
+        sys.exit(0)
+
+    print("Error crítico: No se encontraron eventos válidos y no existen listas anteriores.")
     sys.exit(1)
 
 # Generar XML
