@@ -8,6 +8,7 @@ import aiohttp
 import json
 import re
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import List, Dict
 import pytz
 
@@ -383,6 +384,27 @@ class PlayTorrioEventsExtractor:
                         merged[key]['live'] = True
         
         return list(merged.values())
+
+    def load_cached_events(self, snapshot_path: str = 'playtorrio_events.json') -> bool:
+        """Cargar un snapshot anterior cuando la API queda bloqueada."""
+        try:
+            path = Path(snapshot_path)
+            if not path.exists():
+                return False
+
+            with path.open('r', encoding='utf-8') as f:
+                payload = json.load(f)
+
+            events = payload.get('events', [])
+            if not isinstance(events, list) or not events:
+                return False
+
+            self.events = events
+            print(f"📦 Cargando caché disponible: {snapshot_path} ({len(self.events)} eventos)")
+            return True
+        except Exception as e:
+            print(f"⚠️ No se pudo cargar el caché: {e}")
+            return False
     
     async def extract_all_events(self):
         """Extraer todos los eventos deportivos"""
@@ -409,6 +431,9 @@ class PlayTorrioEventsExtractor:
             
             # Combinar y eliminar duplicados
             self.events = self.merge_events([cdn_events, all_events])
+
+            if not self.events and self.load_cached_events('playtorrio_events.json'):
+                print("⚠️ La API quedó bloqueada; se reutiliza el último snapshot válido.")
             
             # Filtrar eventos en vivo
             live_events = [e for e in self.events if e.get('live', False)]
@@ -491,17 +516,17 @@ class PlayTorrioEventsExtractor:
 async def main():
     extractor = PlayTorrioEventsExtractor()
     await extractor.extract_all_events()
-    
-    if extractor.events:
-        extractor.generate_m3u('playtorrio.m3u')
-        extractor.generate_json('playtorrio_events.json')
-        
-        print(f"\n{'=' * 80}")
-        print("✅ EXTRACCIÓN COMPLETADA CON ÉXITO")
-        print(f"{'=' * 80}\n")
-    else:
-        print("\n❌ No se extrajeron eventos")
-        exit(1)
+
+    if not extractor.events and not extractor.load_cached_events('playtorrio_events.json'):
+        print("\n⚠️ No se extrajeron eventos ni hay caché disponible")
+        return
+
+    extractor.generate_m3u('playtorrio.m3u')
+    extractor.generate_json('playtorrio_events.json')
+
+    print(f"\n{'=' * 80}")
+    print("✅ EXTRACCIÓN COMPLETADA CON ÉXITO")
+    print(f"{'=' * 80}\n")
 
 if __name__ == '__main__':
     asyncio.run(main())
