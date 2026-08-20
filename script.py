@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 import xml.etree.ElementTree as ET
 from difflib import get_close_matches
 import asyncio
+from functools import lru_cache
 from playwright.async_api import async_playwright
 import time
 try:
@@ -473,20 +474,30 @@ def buscar_logo_en_archive(nombre_canal):
         return nombres_logos[closest_matches[0]]
     return None
 
-def buscar_logo_en_url(nombre_canal):
-    response = requests.get("https://raw.githubusercontent.com/Icastresana/lista1/refs/heads/main/peticiones")
-    if response.status_code != 200:
-        print("Error al acceder a la URL de logos")
-        return None
-    logos_data = response.text.split('\n')
-    nombre_canal_normalizado = normalizar_nombre(nombre_canal)
+@lru_cache(maxsize=1)
+def cargar_logos_desde_url():
+    try:
+        response = requests.get(
+            "https://raw.githubusercontent.com/Icastresana/lista1/refs/heads/main/peticiones",
+            timeout=15,
+        )
+        response.raise_for_status()
+    except requests.RequestException as error:
+        print(f"No se pudo acceder a la URL de logos: {error}")
+        return {}
+
     nombres_logos = {}
-    for line in logos_data:
+    for line in response.text.split('\n'):
         match = re.search(r'tvg-logo="([^"]+)" .*?tvg-id="[^"]+", ([^,]+)', line)
         if match:
             logo_url = match.group(1)
             canal_name = match.group(2).strip().lower()
             nombres_logos[canal_name] = logo_url
+    return nombres_logos
+
+def buscar_logo_en_url(nombre_canal):
+    nombres_logos = cargar_logos_desde_url()
+    nombre_canal_normalizado = normalizar_nombre(nombre_canal)
     closest_matches = get_close_matches(nombre_canal_normalizado, nombres_logos.keys(), n=3, cutoff=0.6)
     if closest_matches:
         for match in closest_matches:
