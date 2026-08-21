@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-08-21 13:57:12
-# Total Channels: 46
-# Generated: 2026-08-21T13:00:03Z
+# IPFS Acestream Channels - 2026-08-21 14:52:23
+# Total Channels: 45
+# Generated: 2026-08-21T14:00:02Z
 
 # -------- DAZN --------
 #EXTINF:-1 tvg-id="DAZN 1 HD" tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" group-title="DAZN",DAZN 1 720p **
@@ -50,13 +50,10 @@ http://127.0.0.1:6878/ace/getstream?id=3ebcfc00921a4a9307dec97e078f8dc12eee27e7
 
 # -------- FORMULA 1 --------
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p **
-http://127.0.0.1:6878/ace/getstream?id=f16d68fa5ff64f3894a45062ca28e4e66f142c6a
-
-#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p **
 http://127.0.0.1:6878/ace/getstream?id=20086a76248efe8d5230c15d41c69bae8fa6381c
 
-#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
-http://127.0.0.1:6878/ace/getstream?id=0a81ba020d498aca1248e0591d8ffab99eb80bd4
+#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p **
+http://127.0.0.1:6878/ace/getstream?id=f16d68fa5ff64f3894a45062ca28e4e66f142c6a
 
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
 http://127.0.0.1:6878/ace/getstream?id=02be332ebead0484a5354fa25e97b6833b8b129e
@@ -76,10 +73,10 @@ http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
 
 # -------- LA LIGA --------
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" group-title="LA LIGA",DAZN LaLiga 1080p **
-http://127.0.0.1:6878/ace/getstream?id=7f9857c45764ef2c7cdfb619b89db3056a57a51f
+http://127.0.0.1:6878/ace/getstream?id=9c588ac92554746c489bc553773d959f6d2dfd8e
 
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" group-title="LA LIGA",DAZN LaLiga 1080p **
-http://127.0.0.1:6878/ace/getstream?id=9c588ac92554746c489bc553773d959f6d2dfd8e
+http://127.0.0.1:6878/ace/getstream?id=7f9857c45764ef2c7cdfb619b89db3056a57a51f
 
 #EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 720p **
 http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
