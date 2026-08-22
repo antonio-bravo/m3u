@@ -1,5 +1,7 @@
-2026-08-22 01:47:00,556 [INFO] 🚀 Iniciando extracción de Arena4Viewer...
-2026-08-22 01:47:00,556 [INFO] 📡 Probando servidor: https://www.arena4viewer.in
-2026-08-22 01:47:02,602 [INFO] ✅ ¡Éxito! Encontrados 139 canales en https://www.arena4viewer.in
-2026-08-22 01:47:02,602 [INFO] ✨ Archivo 'arena4viewer.m3u' generado correctamente.
-2026-08-22 01:47:02,602 [INFO] 📺 Rango de canales: 1 al 160
+2026-08-22 03:04:39,451 [INFO] 🚀 Iniciando extracción de Arena4Viewer...
+2026-08-22 03:04:39,451 [INFO] 📡 Probando servidor: https://www.arena4viewer.in
+2026-08-22 03:04:54,537 [ERROR] ❌ Error conectando a https://www.arena4viewer.in: HTTPSConnectionPool(host='www.arena4viewer.in', port=443): Read timed out. (read timeout=15)
+2026-08-22 03:04:54,537 [INFO] 📡 Probando servidor: https://www.arena4viewer.pl
+2026-08-22 03:04:56,126 [INFO] ✅ ¡Éxito! Encontrados 139 canales en https://www.arena4viewer.pl
+2026-08-22 03:04:56,126 [INFO] ✨ Archivo 'arena4viewer.m3u' generado correctamente.
+2026-08-22 03:04:56,127 [INFO] 📺 Rango de canales: 1 al 160
