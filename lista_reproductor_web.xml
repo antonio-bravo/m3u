@@ -1,479 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-08-22 13:00</datetime>
-    <league>Saudí Pro League</league>
-    <teams>Al Ahli vs Abha</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>1-1</channel_id>
-        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RlcG9ydGVzcGx1czExLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>1-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NhdWRpMS5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>1-3</channel_id>
-        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NhdWRpMi5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>1-4</channel_id>
-        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NhdWRpMy5waHA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 13:00</datetime>
-    <league>Liga de Uruguay</league>
-    <teams>Cerro Largo vs Defensor Sporting</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>2-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VydWd1YXk0LnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>2-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VydWd1YXkyLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3</channel_name>
-        <channel_id>2-3</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VydWd1YXk1LnBocA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 13:15</datetime>
-    <league>Liga de Peru</league>
-    <teams>UTC Cajamarca vs Comerciantes Unidos</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>3-1</channel_id>
-        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2ExbWF4LnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>3-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUxLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>3-3</channel_id>
-        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUyLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>3-4</channel_id>
-        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnU0LnBocA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 13:30</datetime>
-    <league>Supercopa de Alemania</league>
-    <teams>Borussia Dortmund vs Bayern Munich</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>4-1</channel_id>
-        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RlcG9ydGVzcGx1czIucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>4-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2ExLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>4-3</channel_id>
-        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2EyLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>4-4</channel_id>
-        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2EzLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>4-5</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2E0LnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 6 (HD)</channel_name>
-        <channel_id>4-6</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2E1LnBocA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 13:30</datetime>
-    <league>Super Lig</league>
-    <teams>Fenerbahce vs Konyaspor</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>5-1</channel_id>
-        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RlcG9ydGVzcGx1czEzLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>5-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3N1cGVybGlnMS5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>5-3</channel_id>
-        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3N1cGVybGlnMi5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>5-4</channel_id>
-        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3N1cGVybGlnMy5waHA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 13:45</datetime>
-    <league>Serie A</league>
-    <teams>Genoa vs Napoli</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>6-1</channel_id>
-        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RlcG9ydGVzcGx1czMucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>6-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTgucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>6-3</channel_id>
-        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTkucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>6-4</channel_id>
-        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTEwLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>6-5</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTExLnBocA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 13:45</datetime>
-    <league>Serie A</league>
-    <teams>Parma vs Cagliari</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>7-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTEyLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>7-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTEzLnBocA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 13:45</datetime>
-    <league>Ligue 1</league>
-    <teams>Toulouse vs Olympique Lyon</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>8-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ3VlMTMucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>8-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ3VlMTQucGhw</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 13:45</datetime>
-    <league>Ligue 1</league>
-    <teams>Nice vs Lorient</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>9-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ3VlMTUucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>9-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ3VlMTYucGhw</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 13:45</datetime>
-    <league>Ligue 1</league>
-    <teams>Le Mans vs Brest</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>10-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ3VlMTcucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>10-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ3VlMTgucGhw</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 13:45</datetime>
-    <league>Ligue 1</league>
-    <teams>Troyes vs Paris FC</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>11-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ3VlMTkucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>11-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ3VlMTEwLnBocA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 14:00</datetime>
-    <league>Liga de Argentina</league>
-    <teams>Atlético Tucumán vs Instituto (Córdoba)</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>12-1</channel_id>
-        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3RudGFyZ2VudGluYS5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>12-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTEucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>12-3</channel_id>
-        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTIucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>12-4</channel_id>
-        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTMucGhw</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 14:00</datetime>
-    <league>Liga de Argentina</league>
-    <teams>Gimnasia La Plata vs Gimnasia (Mendoza)</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>13-1</channel_id>
-        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VzcG5wcmVtaXVtLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>13-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTQucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>13-3</channel_id>
-        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTUucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>13-4</channel_id>
-        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTYucGhw</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 14:00</datetime>
-    <league>Liga de Ecuador</league>
-    <teams>Universidad Católica vs Manta FC</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>14-1</channel_id>
-        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FkZWNhbXBlb25lczcucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>14-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VjdWFkb3IxLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3</channel_name>
-        <channel_id>14-3</channel_id>
-        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VjdWFkb3IyLnBocA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 14:00</datetime>
-    <league>Brasileirao</league>
-    <teams>Fluminense vs Remo</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>15-1</channel_id>
-        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3dpbnNwb3J0cy5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>15-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDEucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>15-3</channel_id>
-        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDIucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>15-4</channel_id>
-        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDMucGhw</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 14:30</datetime>
-    <league>LaLiga</league>
-    <teams>Espanyol vs Real Madrid</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>16-1</channel_id>
-        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RlcG9ydGVzcGx1cy5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>16-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTkucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>16-3</channel_id>
-        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTEwLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>16-4</channel_id>
-        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTExLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>16-5</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTEyLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 6 (HD)</channel_name>
-        <channel_id>16-6</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTQucGhw</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 14:30</datetime>
-    <league>LaLiga 2</league>
-    <teams>Eldense vs Cádiz</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>17-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2h5cGVybW90aW9uMS5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>17-2</channel_id>
-        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTIxLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>17-3</channel_id>
-        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTIyLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>17-4</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTIzLnBocA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-08-22 14:30</datetime>
-    <league>Primeira Liga</league>
-    <teams>Sporting CP vs Alverca</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>18-1</channel_id>
-        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RzcG9ydHMyLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>18-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByaW1laXJhMS5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>18-3</channel_id>
-        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByaW1laXJhMi5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>18-4</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByaW1laXJhMy5waHA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-08-22 15:30</datetime>
     <league>Liga de Colombia</league>
     <teams>Águilas Doradas vs Millonarios</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>19-1</channel_id>
+        <channel_id>1-1</channel_id>
         <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3dpbnNwb3J0c3BsdXMucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>19-2</channel_id>
+        <channel_id>1-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMS5waHA</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>19-3</channel_id>
+        <channel_id>1-3</channel_id>
         <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMi5waHA</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>19-4</channel_id>
+        <channel_id>1-4</channel_id>
         <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMy5waHA</url>
       </channel>
     </channels>
@@ -485,22 +34,22 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>20-1</channel_id>
+        <channel_id>2-1</channel_id>
         <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2ExbWF4LnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>20-2</channel_id>
+        <channel_id>2-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUxLnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>20-3</channel_id>
+        <channel_id>2-3</channel_id>
         <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUyLnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>20-4</channel_id>
+        <channel_id>2-4</channel_id>
         <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnU1LnBocA</url>
       </channel>
     </channels>
@@ -512,22 +61,22 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>21-1</channel_id>
+        <channel_id>3-1</channel_id>
         <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3dpbnNwb3J0cy5waHA</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>21-2</channel_id>
+        <channel_id>3-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDEucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>21-3</channel_id>
+        <channel_id>3-3</channel_id>
         <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDIucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>21-4</channel_id>
+        <channel_id>3-4</channel_id>
         <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhNC5waHA</url>
       </channel>
     </channels>
@@ -539,22 +88,22 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>22-1</channel_id>
+        <channel_id>4-1</channel_id>
         <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3RudGFyZ2VudGluYS5waHA</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>22-2</channel_id>
+        <channel_id>4-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTEucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>22-3</channel_id>
+        <channel_id>4-3</channel_id>
         <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTIucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>22-4</channel_id>
+        <channel_id>4-4</channel_id>
         <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTcucGhw</url>
       </channel>
     </channels>
@@ -566,17 +115,17 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>23-1</channel_id>
+        <channel_id>5-1</channel_id>
         <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VydWd1YXk2LnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>23-2</channel_id>
+        <channel_id>5-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VydWd1YXkyLnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 3</channel_name>
-        <channel_id>23-3</channel_id>
+        <channel_id>5-3</channel_id>
         <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VydWd1YXk3LnBocA</url>
       </channel>
     </channels>
@@ -588,22 +137,22 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>24-1</channel_id>
+        <channel_id>6-1</channel_id>
         <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3RudGNoaWxlLnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>24-2</channel_id>
+        <channel_id>6-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NoaWxlMS5waHA</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>24-3</channel_id>
+        <channel_id>6-3</channel_id>
         <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NoaWxlMi5waHA</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>24-4</channel_id>
+        <channel_id>6-4</channel_id>
         <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NoaWxlMy5waHA</url>
       </channel>
     </channels>
@@ -615,17 +164,17 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>25-1</channel_id>
+        <channel_id>7-1</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FkZWNhbXBlb25lczcucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>25-2</channel_id>
+        <channel_id>7-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VjdWFkb3IxLnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 3</channel_name>
-        <channel_id>25-3</channel_id>
+        <channel_id>7-3</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VjdWFkb3IyLnBocA</url>
       </channel>
     </channels>
@@ -637,13 +186,481 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>26-1</channel_id>
+        <channel_id>8-1</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDQucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>26-2</channel_id>
+        <channel_id>8-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDUucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 18:07</datetime>
+    <league>Liga MX</league>
+    <teams>Guadalajara Chivas vs Tijuana Xolos</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>9-1</channel_id>
+        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RlcG9ydGVzcGx1cy5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>9-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDEucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>9-3</channel_id>
+        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDIucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>9-4</channel_id>
+        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDMucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>9-5</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDQucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 18:10</datetime>
+    <league>Liga de Colombia</league>
+    <teams>Independiente Santa Fe vs América de Cali</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>10-1</channel_id>
+        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3dpbnNwb3J0c3BsdXMucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>10-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMS5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>10-3</channel_id>
+        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMi5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>10-4</channel_id>
+        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhNS5waHA</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 18:30</datetime>
+    <league>Brasileirao</league>
+    <teams>Cruzeiro vs Flamengo</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>11-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3dpbnNwb3J0cy5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>11-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDEucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>11-3</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDIucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>11-4</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDYucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 18:30</datetime>
+    <league>MLS</league>
+    <teams>Inter Miami vs Toronto FC</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>12-1</channel_id>
+        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RlcG9ydGVzcGx1czIucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>12-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczEucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>12-3</channel_id>
+        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczIucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>12-4</channel_id>
+        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczMucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 18:30</datetime>
+    <league>MLS</league>
+    <teams>Montreal Impact vs LA Galaxy</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>13-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczQucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>13-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczUucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 18:30</datetime>
+    <league>MLS</league>
+    <teams>Cincinnati vs Seattle Sounders</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>14-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczYucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>14-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczcucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 19:00</datetime>
+    <league>UFC Fight Night</league>
+    <teams>Anthony Hernandez vs Gregory Rodrigues</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>15-1</channel_id>
+        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RlcG9ydGVzcGx1czEyLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>15-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VmYzEucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>15-3</channel_id>
+        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VmYzIucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>15-4</channel_id>
+        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VmYzMucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>15-5</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VmYzQucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 19:00</datetime>
+    <league>Liga de Argentina</league>
+    <teams>Huracán vs Deportivo Riestra</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>16-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VzcG5wcmVtaXVtLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>16-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTQucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>16-3</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTUucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>16-4</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTgucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 19:00</datetime>
+    <league>Liga de Argentina</league>
+    <teams>Newell's Old Boys vs Banfield</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>17-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3RudGFyZ2VudGluYS5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>17-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTEucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>17-3</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTIucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>17-4</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTkucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 19:00</datetime>
+    <league>Liga de Chile</league>
+    <teams>Universidad Católica vs Ñublense</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>18-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3RudGNoaWxlLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>18-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NoaWxlMS5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>18-3</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NoaWxlMi5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>18-4</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NoaWxlMy5waHA</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 19:00</datetime>
+    <league>Liga de Ecuador</league>
+    <teams>Barcelona SC vs Orense</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>19-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FkZWNhbXBlb25lczcucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>19-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VjdWFkb3IxLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3</channel_name>
+        <channel_id>19-3</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VjdWFkb3IyLnBocA</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 19:00</datetime>
+    <league>Liga de Peru</league>
+    <teams>Deportivo Garcilaso vs Cusco</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>20-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2ExbWF4LnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>20-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUxLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>20-3</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUyLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>20-4</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnU2LnBocA</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 19:30</datetime>
+    <league>MLS</league>
+    <teams>Nashville SC vs Columbus Crew</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>21-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczgucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>21-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczkucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 19:30</datetime>
+    <league>MLS</league>
+    <teams>St. Louis City vs Houston Dynamo</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>22-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczEwLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>22-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczExLnBocA</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 20:00</datetime>
+    <league>Liga MX</league>
+    <teams>Puebla vs Santos Laguna</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>23-1</channel_id>
+        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RlcG9ydGVzcGx1cy5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>23-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDUucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>23-3</channel_id>
+        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDYucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>23-4</channel_id>
+        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDcucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>23-5</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDgucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 20:15</datetime>
+    <league>Liga de Colombia</league>
+    <teams>Independiente Medellín vs Cúcuta Deportivo</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>24-1</channel_id>
+        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3dpbnNwb3J0c3BsdXMucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>24-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMS5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>24-3</channel_id>
+        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMi5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>24-4</channel_id>
+        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhNi5waHA</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 21:30</datetime>
+    <league>MLS</league>
+    <teams>Los Ángeles FC vs Portland Timbers</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>25-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczEyLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>25-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczEzLnBocA</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 21:30</datetime>
+    <league>MLS</league>
+    <teams>San Diego FC vs Colorado Rapid</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>26-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczE0LnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>26-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczE1LnBocA</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-08-22 22:00</datetime>
+    <league>Liga MX</league>
+    <teams>Cruz Azul vs Atlas</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>27-1</channel_id>
+        <url>https://rojadirectaenvivo.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RlcG9ydGVzcGx1cy5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>27-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDkucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>27-3</channel_id>
+        <url>https://tarjetarojatv.ad/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDEwLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>27-4</channel_id>
+        <url>https://elitegoltv.co/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDExLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>27-5</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDEyLnBocA</url>
       </channel>
     </channels>
   </event>
