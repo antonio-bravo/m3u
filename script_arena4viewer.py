@@ -168,14 +168,14 @@ def generar_m3u(channels, events_map, server_used):
 
                 if not events:
                     # Si por alguna razón el canal existe pero no tiene agenda hoy
-                    f.write(f'#EXTINF:-1 tvg-id="AV{num}" tvg-logo="" group-title="CANALES SIN AGENDA",ArenaVision {num}\n')
+                    f.write(f'#EXTINF:-1 tvg-id="AV{num}" tvg-logo="" group-title="AV{num}",AV{num} \n')
                     f.write(f"acestream://{ace_id}\n\n")
                 else:
                     # Crear una entrada por cada evento detectado en la agenda
                     for ev in events:
                         # Formato: ArenaVision [NUM] - SPORT - COMPETITION - EVENT [DIA - HORA]
                         date_info = f"{ev['date']} - " if ev['date'] else ""
-                        full_name = f"ArenaVision {num} - {ev['sport']} - {ev['competition']} - {ev['event']} [{date_info}{ev['time']}]"
+                        full_name = f"AV {num} - {ev['sport']} - {ev['competition']} - {ev['event']} [{date_info}{ev['time']}]"
                         
                         # Agrupación por SPORT
                         f.write(f'#EXTINF:-1 tvg-id="AV{num}" tvg-logo="" group-title="{ev["sport"]}",{full_name}\n')
