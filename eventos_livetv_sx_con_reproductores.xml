@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-08-26 06:19:41" total="289">
+<eventos generado="2026-08-26 07:20:33" total="289">
   <evento id="1">
     <nombre>Nikola Bartunkova (M) –   Liang En-shuo (M)</nombre>
     <deporte>Fútbol</deporte>
@@ -8,14 +8,7 @@
     <hora>05:50</hora>
     <url>https://livetv.sx/es/eventinfo/398692785__nikola_bartunkova_m__liang_en_shuo_m/</url>
     <datetime_iso>2026-08-26T05:50:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlstreams.st/stream/stream-1501.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3059615&amp;lang=es&amp;eid=398692785&amp;lid=3059615&amp;ci=3641&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
   <evento id="2">
     <nombre>Nikola Bartunkova (M) –  Liang En-shuo (M)</nombre>
@@ -25,14 +18,7 @@
     <hora>05:50</hora>
     <url>https://livetv.sx/es/eventinfo/398692785__/</url>
     <datetime_iso>2026-08-26T05:50:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://dlstreams.st/stream/stream-1501.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/8.png</idioma>
-        <idioma_nombre>Portugués (Portugal)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3059615&amp;lang=es&amp;eid=398692785&amp;lid=3059615&amp;ci=3641&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
   <evento id="3">
     <nombre>Sri Lanka –  India</nombre>
@@ -270,7 +256,14 @@
     <hora>10:00</hora>
     <url>https://livetv.sx/es/eventinfo/398551517_belye_medvedi_avto/</url>
     <datetime_iso>2026-08-26T10:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/4B4M8j2rCSM?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=4B4M8j2rCSM&amp;lang=es&amp;eid=398551517&amp;lid=3059181&amp;ci=276&amp;si=2</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="16">
     <nombre>Feeder Olomouc</nombre>
@@ -280,7 +273,32 @@
     <hora>10:00</hora>
     <url>https://livetv.sx/es/eventinfo/398378219_feeder_olomouc/</url>
     <datetime_iso>2026-08-26T10:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="4">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/f3cf1UZFGvQ?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=f3cf1UZFGvQ&amp;lang=es&amp;eid=398378219&amp;lid=3059609&amp;ci=4340&amp;si=39</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.youtube.com/embed/j2HGEz2gmwg?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=j2HGEz2gmwg&amp;lang=es&amp;eid=398378219&amp;lid=3059610&amp;ci=4340&amp;si=39</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://www.youtube.com/embed/NtxOt0nJZyE?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=NtxOt0nJZyE&amp;lang=es&amp;eid=398378219&amp;lid=3059607&amp;ci=4340&amp;si=39</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://www.youtube.com/embed/_KwAGb4aG-E?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
+        <idioma_nombre>Polaco</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=_KwAGb4aG-E&amp;lang=es&amp;eid=398378219&amp;lid=3059608&amp;ci=4340&amp;si=39</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="17">
     <nombre>Belye Medvedi – Avto</nombre>
@@ -290,7 +308,14 @@
     <hora>10:00</hora>
     <url>https://livetv.sx/es/eventinfo/398551517__/</url>
     <datetime_iso>2026-08-26T10:00:00</datetime_iso>
-    <streams total="0" />
+    <streams total="1">
+      <stream id="1">
+        <url>https://www.youtube.com/embed/4B4M8j2rCSM?autoplay=1</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/1.png</idioma>
+        <idioma_nombre>Inglés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=4B4M8j2rCSM&amp;lang=es&amp;eid=398551517&amp;lid=3059181&amp;ci=276&amp;si=2</enlace_original>
+      </stream>
+    </streams>
   </evento>
   <evento id="18">
     <nombre>MODUS Super Series</nombre>
