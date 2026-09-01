@@ -1,26 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<eventos generado="2026-09-01 21:34:07" total="207">
+<eventos generado="2026-09-01 23:38:04" total="53">
   <evento id="1">
-    <nombre>Radom (M) –   Perla Lublin (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Polonia. Mujeres. Ekstraklasa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>07:16</hora>
-    <url>https://livetv.sx/es/eventinfo/399791602__radom_m__perla_lublin_m/</url>
-    <datetime_iso>2026-09-01T07:16:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="2">
-    <nombre>Inglaterra (M) –  Irlanda (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Mujeres. ODI</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>14:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399615514_inglaterra_m_irlanda_m/</url>
-    <datetime_iso>2026-09-01T14:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="3">
     <nombre>US Open</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Abierto de EU</competicion>
@@ -72,10 +52,10 @@ player/live.php?id=265910&amp;w=700&amp;h=480</url>
         <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265910&amp;lang=es&amp;eid=399535706&amp;lid=3063402&amp;ci=6326&amp;si=4</enlace_original>
       </stream>
       <stream id="7">
-        <url>https://wikisport.info/court/wik5.php</url>
+        <url>https://wikisport.info/court/wik11.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063630&amp;lang=es&amp;eid=399535706&amp;lid=3063630&amp;ci=6326&amp;si=4</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063420&amp;lang=es&amp;eid=399535706&amp;lid=3063420&amp;ci=6326&amp;si=4</enlace_original>
       </stream>
       <stream id="8">
         <url>https://wikisport.info/court/wik7.php</url>
@@ -85,1388 +65,7 @@ player/live.php?id=265910&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="4">
-    <nombre>Premier Padel. Madrid</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Premier Padel</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399716906_premier_padel_madrid/</url>
-    <datetime_iso>2026-09-01T17:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="5">
-    <nombre>Dane Sweeny –  Corentin Moutet</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399041950_dane_sweeny_corentin_moutet/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://wikisport.info/court/wik7.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063167&amp;lang=es&amp;eid=399041950&amp;lid=3063167&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl429.me/
-player/live.php?id=265612&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
-        <idioma_nombre>Alemán</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265612&amp;lang=es&amp;eid=399041950&amp;lid=3062386&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dB7jPxnFDfne6ogj</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063687&amp;lang=es&amp;eid=399041950&amp;lid=3063687&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://abisnews.com/tennis7.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063072&amp;lang=es&amp;eid=399041950&amp;lid=3063072&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="6">
-    <nombre>Filip Misolic –  Francisco Cerundolo</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399041970_filip_misolic_francisco_cerundolo/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://emb.apl429.me/
-player/live.php?id=265771&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265771&amp;lang=es&amp;eid=399041970&amp;lid=3063403&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://wikisport.info/court/wik5.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063630&amp;lang=es&amp;eid=399041970&amp;lid=3063630&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://abisnews.com/tennis5.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063070&amp;lang=es&amp;eid=399041970&amp;lid=3063070&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dAcy2Cbre5hJUxSy</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063686&amp;lang=es&amp;eid=399041970&amp;lid=3063686&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="7">
-    <nombre>Nishesh Basavareddy –  Tristan Schoolkate</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399241233_nishesh_basavareddy_tristan_schoolkate/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://abisnews.com/tennis11.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063074&amp;lang=es&amp;eid=399241233&amp;lid=3063074&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaYwComCMPxyJWZA</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063695&amp;lang=es&amp;eid=399241233&amp;lid=3063695&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://wikisport.info/court/t11.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063166&amp;lang=es&amp;eid=399241233&amp;lid=3063166&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="8">
-    <nombre>Mattia Bellucci –  Zsombor Piros</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399241242_mattia_bellucci_zsombor_piros/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://emb.apl429.me/
-player/live.php?id=265922&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/5.png</idioma>
-        <idioma_nombre>Alemán (Alemania)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265922&amp;lang=es&amp;eid=399241242&amp;lid=3063848&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://abisnews.com/tennis10.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063073&amp;lang=es&amp;eid=399241242&amp;lid=3063073&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaJZ1vg14bvJVavo</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063693&amp;lang=es&amp;eid=399241242&amp;lid=3063693&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://wikisport.info/court/wik10.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063632&amp;lang=es&amp;eid=399241242&amp;lid=3063632&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="9">
-    <nombre>Thea Frodin (M) –   Elena Rybakina (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399041877__thea_frodin_m__elena_rybakina_m/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="10">
-    <nombre>Yulia Starodubtseva (M) –   Ella Seidel (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399041881__yulia_starodubtseva_m__ella_seidel_m/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://wikisport.info/court/t13.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063175&amp;lang=es&amp;eid=399041881&amp;lid=3063175&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTb3haZwavz4JvhH2</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063698&amp;lang=es&amp;eid=399041881&amp;lid=3063698&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="11">
-    <nombre>Yulia Putintseva (M) –   Belinda Bencic (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399041890__yulia_putintseva_m__belinda_bencic_m/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="6">
-      <stream id="1">
-        <url>https://emb.apl429.me/
-player/live.php?id=265064&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/12.png</idioma>
-        <idioma_nombre>Turco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265064&amp;lang=es&amp;eid=399041890&amp;lid=3063636&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl429.me/
-player/live.php?id=265071&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265071&amp;lang=es&amp;eid=399041890&amp;lid=3063641&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://abisnews.com/tennis17.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063069&amp;lang=es&amp;eid=399041890&amp;lid=3063069&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPmExtMAzA8mNJ98</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063684&amp;lang=es&amp;eid=399041890&amp;lid=3063684&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://shd247.world/frame020.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063559&amp;lang=es&amp;eid=399041890&amp;lid=3063559&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://wikisport.info/court/wik17.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063422&amp;lang=es&amp;eid=399041890&amp;lid=3063422&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="12">
-    <nombre>Maria Sakkari (M) –   Robin Montgomery (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399296637__maria_sakkari_m__robin_montgomery_m/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://abisnews.com/tennis12.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063075&amp;lang=es&amp;eid=399296637&amp;lid=3063075&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaoKPgrPeC1e7mef</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063697&amp;lang=es&amp;eid=399296637&amp;lid=3063697&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="13">
-    <nombre>Gabriela Andrea Knutson (M) –   Eva Lys (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399296655__gabriela_andrea_knutson_m__eva_lys_m/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="14">
-    <nombre>Dane Sweeny – Corentin Moutet</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399041950__/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://wikisport.info/court/wik7.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063167&amp;lang=es&amp;eid=399041950&amp;lid=3063167&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl429.me/
-player/live.php?id=265612&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
-        <idioma_nombre>Alemán</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265612&amp;lang=es&amp;eid=399041950&amp;lid=3062386&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dB7jPxnFDfne6ogj</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063687&amp;lang=es&amp;eid=399041950&amp;lid=3063687&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://abisnews.com/tennis7.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063072&amp;lang=es&amp;eid=399041950&amp;lid=3063072&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="15">
-    <nombre>Nishesh Basavareddy – Tristan Schoolkate</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399241233__/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://abisnews.com/tennis11.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063074&amp;lang=es&amp;eid=399241233&amp;lid=3063074&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaYwComCMPxyJWZA</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063695&amp;lang=es&amp;eid=399241233&amp;lid=3063695&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://wikisport.info/court/t11.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063166&amp;lang=es&amp;eid=399241233&amp;lid=3063166&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="16">
-    <nombre>Mattia Bellucci – Zsombor Piros</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399241242__/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://emb.apl429.me/
-player/live.php?id=265922&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/5.png</idioma>
-        <idioma_nombre>Alemán (Alemania)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265922&amp;lang=es&amp;eid=399241242&amp;lid=3063848&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://abisnews.com/tennis10.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063073&amp;lang=es&amp;eid=399241242&amp;lid=3063073&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaJZ1vg14bvJVavo</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063693&amp;lang=es&amp;eid=399241242&amp;lid=3063693&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://wikisport.info/court/wik10.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063632&amp;lang=es&amp;eid=399241242&amp;lid=3063632&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="17">
-    <nombre>Thea Frodin (M) –  Elena Rybakina (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399041877__/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="18">
-    <nombre>Yulia Starodubtseva (M) –  Ella Seidel (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399041881__/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://wikisport.info/court/t13.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063175&amp;lang=es&amp;eid=399041881&amp;lid=3063175&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTb3haZwavz4JvhH2</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063698&amp;lang=es&amp;eid=399041881&amp;lid=3063698&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="19">
-    <nombre>Yulia Putintseva (M) –  Belinda Bencic (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399041890__/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="6">
-      <stream id="1">
-        <url>https://emb.apl429.me/
-player/live.php?id=265064&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/12.png</idioma>
-        <idioma_nombre>Turco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265064&amp;lang=es&amp;eid=399041890&amp;lid=3063636&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl429.me/
-player/live.php?id=265071&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265071&amp;lang=es&amp;eid=399041890&amp;lid=3063641&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://abisnews.com/tennis17.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063069&amp;lang=es&amp;eid=399041890&amp;lid=3063069&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPmExtMAzA8mNJ98</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063684&amp;lang=es&amp;eid=399041890&amp;lid=3063684&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://shd247.world/frame020.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063559&amp;lang=es&amp;eid=399041890&amp;lid=3063559&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://wikisport.info/court/wik17.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063422&amp;lang=es&amp;eid=399041890&amp;lid=3063422&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="20">
-    <nombre>Maria Sakkari (M) –  Robin Montgomery (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399296637__/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://abisnews.com/tennis12.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063075&amp;lang=es&amp;eid=399296637&amp;lid=3063075&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaoKPgrPeC1e7mef</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063697&amp;lang=es&amp;eid=399296637&amp;lid=3063697&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="21">
-    <nombre>Gabriela Andrea Knutson (M) –  Eva Lys (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399296655__/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="22">
-    <nombre>Filip Misolic – Francisco Cerundolo</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:05</hora>
-    <url>https://livetv.sx/es/eventinfo/399041970__/</url>
-    <datetime_iso>2026-09-01T17:05:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://emb.apl429.me/
-player/live.php?id=265771&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265771&amp;lang=es&amp;eid=399041970&amp;lid=3063403&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://wikisport.info/court/wik5.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063630&amp;lang=es&amp;eid=399041970&amp;lid=3063630&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://abisnews.com/tennis5.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063070&amp;lang=es&amp;eid=399041970&amp;lid=3063070&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dAcy2Cbre5hJUxSy</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063686&amp;lang=es&amp;eid=399041970&amp;lid=3063686&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="23">
-    <nombre>Francisco Comesana –  Flavio Cobolli</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:10</hora>
-    <url>https://livetv.sx/es/eventinfo/399041968_francisco_comesana_flavio_cobolli/</url>
-    <datetime_iso>2026-09-01T17:10:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="24">
-    <nombre>Francisco Comesana – Flavio Cobolli</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>17:10</hora>
-    <url>https://livetv.sx/es/eventinfo/399041968__/</url>
-    <datetime_iso>2026-09-01T17:10:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="25">
-    <nombre>Arthur Fery –  Lorenzo Musetti</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>18:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041948_arthur_fery_lorenzo_musetti/</url>
-    <datetime_iso>2026-09-01T18:30:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://abisnews.com/tennis3.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3062612&amp;lang=es&amp;eid=399041948&amp;lid=3062612&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPGUb8AnQa3RkSsZ</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063786&amp;lang=es&amp;eid=399041948&amp;lid=3063786&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://shd247.world/frame019.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/5.png</idioma>
-        <idioma_nombre>Alemán (Alemania)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063558&amp;lang=es&amp;eid=399041948&amp;lid=3063558&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://wikisport.info/court/wik3.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063172&amp;lang=es&amp;eid=399041948&amp;lid=3063172&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="26">
-    <nombre>Sloga Doboj –  Celik Zenica</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Premijer liga</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>18:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397293147_sloga_doboj_celik_zenica/</url>
-    <datetime_iso>2026-09-01T18:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="27">
-    <nombre>German Championship</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Alemania. Bundesliga</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>18:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399679546_german_championship/</url>
-    <datetime_iso>2026-09-01T18:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="28">
-    <nombre>Al-Shamal –  Al-Rayyan</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Qatar. Copa de las Estrellas</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>18:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399731965_al_shamal_al_rayyan/</url>
-    <datetime_iso>2026-09-01T18:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="29">
-    <nombre>Deac –  Ujpest</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Hungría. NB I</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>18:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399773019_deac_ujpest/</url>
-    <datetime_iso>2026-09-01T18:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="30">
-    <nombre>Daria Kasátkina (M) –   Paula Badosa Gibert (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>18:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041902__daria_kas__tkina_m__paula_badosa_gibert_m/</url>
-    <datetime_iso>2026-09-01T18:30:00</datetime_iso>
-    <streams total="8">
-      <stream id="1">
-        <url>https://emb.apl429.me/
-player/live.php?id=265215&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265215&amp;lang=es&amp;eid=399041902&amp;lid=3063154&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl429.me/
-player/live.php?id=265216&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265216&amp;lang=es&amp;eid=399041902&amp;lid=3061962&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://emb.apl429.me/
-player/live.php?id=265399&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265399&amp;lang=es&amp;eid=399041902&amp;lid=3062615&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://emb.apl429.me/
-player/live.php?id=265910&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265910&amp;lang=es&amp;eid=399041902&amp;lid=3063402&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://abisnews.com/movistar2.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3017047&amp;lang=es&amp;eid=399041902&amp;lid=3017047&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://abisnews.com/tennis17.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063069&amp;lang=es&amp;eid=399041902&amp;lid=3063069&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="7">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPmExtMAzA8mNdcK</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063787&amp;lang=es&amp;eid=399041902&amp;lid=3063787&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="8">
-        <url>https://shd247.world/frame020.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063559&amp;lang=es&amp;eid=399041902&amp;lid=3063559&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="31">
-    <nombre>Lucie Havlickova (M) –   Anna Bondar (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>18:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399296643__lucie_havlickova_m__anna_bondar_m/</url>
-    <datetime_iso>2026-09-01T18:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://wikisport.info/court/wik15.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063843&amp;lang=es&amp;eid=399296643&amp;lid=3063843&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="32">
-    <nombre>Arthur Fery – Lorenzo Musetti</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>18:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041948__/</url>
-    <datetime_iso>2026-09-01T18:30:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://abisnews.com/tennis3.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3062612&amp;lang=es&amp;eid=399041948&amp;lid=3062612&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPGUb8AnQa3RkSsZ</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063786&amp;lang=es&amp;eid=399041948&amp;lid=3063786&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://shd247.world/frame019.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/5.png</idioma>
-        <idioma_nombre>Alemán (Alemania)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063558&amp;lang=es&amp;eid=399041948&amp;lid=3063558&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://wikisport.info/court/wik3.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063172&amp;lang=es&amp;eid=399041948&amp;lid=3063172&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="33">
-    <nombre>Daria Kasátkina (M) –  Paula Badosa Gibert (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>18:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041902__/</url>
-    <datetime_iso>2026-09-01T18:30:00</datetime_iso>
-    <streams total="8">
-      <stream id="1">
-        <url>https://emb.apl429.me/
-player/live.php?id=265215&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265215&amp;lang=es&amp;eid=399041902&amp;lid=3063154&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl429.me/
-player/live.php?id=265216&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265216&amp;lang=es&amp;eid=399041902&amp;lid=3061962&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://emb.apl429.me/
-player/live.php?id=265399&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265399&amp;lang=es&amp;eid=399041902&amp;lid=3062615&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://emb.apl429.me/
-player/live.php?id=265910&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265910&amp;lang=es&amp;eid=399041902&amp;lid=3063402&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://abisnews.com/movistar2.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3017047&amp;lang=es&amp;eid=399041902&amp;lid=3017047&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://abisnews.com/tennis17.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063069&amp;lang=es&amp;eid=399041902&amp;lid=3063069&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="7">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPmExtMAzA8mNdcK</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063787&amp;lang=es&amp;eid=399041902&amp;lid=3063787&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="8">
-        <url>https://shd247.world/frame020.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063559&amp;lang=es&amp;eid=399041902&amp;lid=3063559&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="34">
-    <nombre>Lucie Havlickova (M) –  Anna Bondar (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>18:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399296643__/</url>
-    <datetime_iso>2026-09-01T18:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="35">
-    <nombre>Jesper De Jong –  Francesco Passaro</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399241256_jesper_de_jong_francesco_passaro/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://abisnews.com/tennis10.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063073&amp;lang=es&amp;eid=399241256&amp;lid=3063073&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaJZ1vg14bvJWFtc</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063797&amp;lang=es&amp;eid=399241256&amp;lid=3063797&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="36">
-    <nombre>Chindia –  Voluntari</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Rumania. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/398740664_chindia_voluntari/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="37">
-    <nombre>MKS Kluczbork –  Lechia Gdansk</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Polonia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397135098_mks_kluczbork_lechia_gdansk/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="38">
-    <nombre>Stal Rzeszow –  Podbeskidzie</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Polonia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397294656_stal_rzeszow_podbeskidzie/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="39">
-    <nombre>Polonia Sroda –  Sandecja</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Polonia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397294657_polonia_sroda_sandecja/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="40">
-    <nombre>Helsingborg –  Oerebro</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Suecia. Superettan</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397136604_helsingborg_oerebro/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="41">
-    <nombre>Boluspor –  Keciorengucu</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Turquía. 1 Lig</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397135877_boluspor_keciorengucu/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="42">
-    <nombre>Sariyer –  Pendikspor</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Turquía. 1 Lig</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397135879_sariyer_pendikspor/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="43">
-    <nombre>Wadi Degla –  El Qanah</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Egipto. Premier League</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397132830_wadi_degla_el_qanah/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="44">
-    <nombre>Augsburgo –  Berna</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Partido amistoso</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399803315_augsburgo_berna/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="45">
-    <nombre>Hebar –  Fratria</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Bulgaria. Vtora PFL</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399825436_hebar_fratria/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="46">
-    <nombre>Teleoptik –  Vozdovac</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Serbia. Prva Liga</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399810244_teleoptik_vozdovac/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="47">
-    <nombre>Daria Vidmanova (M) –   Jessica Bouzas Maneiro (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399041879__daria_vidmanova_m__jessica_bouzas_maneiro_m/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://abisnews.com/movistar1.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3052748&amp;lang=es&amp;eid=399041879&amp;lid=3052748&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://wikisport.info/court/wik7.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063167&amp;lang=es&amp;eid=399041879&amp;lid=3063167&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dB7jPxnFDfne7UfV</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063798&amp;lang=es&amp;eid=399041879&amp;lid=3063798&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://abisnews.com/tennis7.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063072&amp;lang=es&amp;eid=399041879&amp;lid=3063072&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="48">
-    <nombre>Tatjana Maria (M) –   Jelena Ostapenko (M)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399041913__tatjana_maria_m__jelena_ostapenko_m/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://abisnews.com/tennis11.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063074&amp;lang=es&amp;eid=399041913&amp;lid=3063074&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaYwComCMPxyKBWy</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063799&amp;lang=es&amp;eid=399041913&amp;lid=3063799&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://wikisport.info/court/t11.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063166&amp;lang=es&amp;eid=399041913&amp;lid=3063166&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="49">
-    <nombre>España –  Canadá</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Copa del Mundo de Socca</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399142258_espaandntilde_a_canadandaacute_/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="50">
-    <nombre>Boluspor – Keciorengucu</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Turquía. 1 Lig</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397135877__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="51">
-    <nombre>Sariyer – Pendikspor</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Turquía. 1 Lig</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397135879__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="52">
-    <nombre>Hebar – Fratria</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Bulgaria. Vtora PFL</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399825436__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="53">
-    <nombre>Wadi Degla – El Qanah</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Egipto. Premier League</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397132830__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="54">
-    <nombre>Stal Rzeszow – Podbeskidzie</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Polonia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397294656__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="55">
-    <nombre>Polonia Sroda – Sandecja</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Polonia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397294657__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="56">
-    <nombre>Chindia – Voluntari</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Rumania. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/398740664__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="57">
-    <nombre>Teleoptik – Vozdovac</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Serbia. Prva Liga</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399810244__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="58">
-    <nombre>Helsingborg – Oerebro</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Suecia. Superettan</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397136604__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="59">
-    <nombre>MKS Kluczbork – Lechia Gdansk</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Polonia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397135098__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="60">
-    <nombre>Augsburgo – Berna</nombre>
-    <deporte>Hockey</deporte>
-    <competicion>Partido amistoso</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399803315__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="61">
-    <nombre>Jesper De Jong – Francesco Passaro</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399241256__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaJZ1vg14bvJWFtc</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063797&amp;lang=es&amp;eid=399241256&amp;lid=3063797&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://abisnews.com/tennis10.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063073&amp;lang=es&amp;eid=399241256&amp;lid=3063073&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="62">
-    <nombre>Daria Vidmanova (M) –  Jessica Bouzas Maneiro (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399041879__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://abisnews.com/movistar1.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3052748&amp;lang=es&amp;eid=399041879&amp;lid=3052748&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://wikisport.info/court/wik7.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063167&amp;lang=es&amp;eid=399041879&amp;lid=3063167&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dB7jPxnFDfne7UfV</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063798&amp;lang=es&amp;eid=399041879&amp;lid=3063798&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://abisnews.com/tennis7.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063072&amp;lang=es&amp;eid=399041879&amp;lid=3063072&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="63">
-    <nombre>Tatjana Maria (M) –  Jelena Ostapenko (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399041913__/</url>
-    <datetime_iso>2026-09-01T19:00:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://abisnews.com/tennis11.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063074&amp;lang=es&amp;eid=399041913&amp;lid=3063074&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaYwComCMPxyKBWy</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063799&amp;lang=es&amp;eid=399041913&amp;lid=3063799&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://wikisport.info/court/t11.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063166&amp;lang=es&amp;eid=399041913&amp;lid=3063166&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="64">
-    <nombre>Durban City –  Stellenbosch</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Sudáfrica. PSL</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397136790_durban_city_stellenbosch/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="65">
-    <nombre>Kruger United –  Orlando Pirates</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Sudáfrica. PSL</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/398034948_kruger_united_orlando_pirates/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="66">
-    <nombre>WAC –  LASK</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Austria. Bundesliga</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/395404090_wac_lask/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="67">
-    <nombre>KR Reikiavik –  Vikingur Reykjavik</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Islandia. Besta deild</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/396819845_kr_reikiavik_vikingur_reykjavik/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="68">
-    <nombre>Rapperswil-Jona –  Kriens</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Suiza. Challenge League</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397136448_rapperswil_jona_kriens/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="69">
-    <nombre>Stade Ls Ouchy –  Étoile Carouge</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Suiza. Challenge League</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397136450_stade_ls_ouchy___toile_carouge/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="70">
-    <nombre>Xamax –  Yverdon</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Suiza. Challenge League</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397136452_xamax_yverdon/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="71">
-    <nombre>Stade Nyonnais –  Winterthur</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Suiza. Challenge League</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397136454_stade_nyonnais_winterthur/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="72">
-    <nombre>Frederikshavn –  Rodovre</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Dinamarca. Metal Ligaen</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397132754_frederikshavn_rodovre/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="73">
-    <nombre>Kruger United – Orlando Pirates</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Sudáfrica. PSL</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/398034948__/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="74">
-    <nombre>WAC – LASK</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Austria. Bundesliga</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/395404090__/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="75">
-    <nombre>Rapperswil-Jona – Kriens</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Suiza. Challenge League</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397136448__/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="76">
-    <nombre>Stade Ls Ouchy – Étoile Carouge</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Suiza. Challenge League</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397136450__/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="77">
-    <nombre>Xamax – Yverdon</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Suiza. Challenge League</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397136452__/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="78">
-    <nombre>Stade Nyonnais – Winterthur</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Suiza. Challenge League</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397136454__/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="79">
-    <nombre>KR Reikiavik – Vikingur Reykjavik</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Islandia. Besta deild</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/396819845__/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="80">
-    <nombre>Durban City – Stellenbosch</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Sudáfrica. PSL</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397136790__/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="81">
-    <nombre>Frederikshavn – Rodovre</nombre>
-    <deporte>Hockey</deporte>
-    <competicion>Dinamarca. Metal Ligaen</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397132754__/</url>
-    <datetime_iso>2026-09-01T19:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="82">
+  <evento id="2">
     <nombre>Taylor Fritz –  Darwin Blanch</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Abierto de EU. Masculinos</competicion>
@@ -1474,85 +73,9 @@ player/live.php?id=265910&amp;w=700&amp;h=480</url>
     <hora>19:45</hora>
     <url>https://livetv.sx/es/eventinfo/399041972_taylor_fritz_darwin_blanch/</url>
     <datetime_iso>2026-09-01T19:45:00</datetime_iso>
-    <streams total="8">
-      <stream id="1">
-        <url>https://emb.apl429.me/
-player/live.php?id=265055&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265055&amp;lang=es&amp;eid=399041972&amp;lid=3063384&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl429.me/
-player/live.php?id=265061&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265061&amp;lang=es&amp;eid=399041972&amp;lid=3063387&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://emb.apl429.me/
-player/live.php?id=265062&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265062&amp;lang=es&amp;eid=399041972&amp;lid=3063388&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://emb.apl429.me/
-player/live.php?id=265546&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265546&amp;lang=es&amp;eid=399041972&amp;lid=3063404&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://emb.apl429.me/
-player/live.php?id=265547&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265547&amp;lang=es&amp;eid=399041972&amp;lid=3063397&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://emb.apl429.me/
-player/live.php?id=265586&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265586&amp;lang=es&amp;eid=399041972&amp;lid=3061397&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="7">
-        <url>https://emb.apl429.me/
-player/live.php?id=265671&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
-        <idioma_nombre>Alemán</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265671&amp;lang=es&amp;eid=399041972&amp;lid=3063459&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="8">
-        <url>https://restream.website/tennis1/espn.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063579&amp;lang=es&amp;eid=399041972&amp;lid=3063579&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="83">
-    <nombre>Rostov –  CSKA</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Rusia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397135302_rostov_cska/</url>
-    <datetime_iso>2026-09-01T19:45:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="84">
-    <nombre>Rostov – CSKA</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Rusia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397135302__/</url>
-    <datetime_iso>2026-09-01T19:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="85">
+  <evento id="3">
     <nombre>Taylor Fritz – Darwin Blanch</nombre>
     <deporte>Tenis</deporte>
     <competicion>Abierto de EU. Masculinos</competicion>
@@ -1560,105 +83,9 @@ player/live.php?id=265671&amp;w=700&amp;h=480</url>
     <hora>19:45</hora>
     <url>https://livetv.sx/es/eventinfo/399041972__/</url>
     <datetime_iso>2026-09-01T19:45:00</datetime_iso>
-    <streams total="8">
-      <stream id="1">
-        <url>https://emb.apl429.me/
-player/live.php?id=265055&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265055&amp;lang=es&amp;eid=399041972&amp;lid=3063384&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://emb.apl429.me/
-player/live.php?id=265061&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265061&amp;lang=es&amp;eid=399041972&amp;lid=3063387&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://emb.apl429.me/
-player/live.php?id=265062&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265062&amp;lang=es&amp;eid=399041972&amp;lid=3063388&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://emb.apl429.me/
-player/live.php?id=265546&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265546&amp;lang=es&amp;eid=399041972&amp;lid=3063404&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://emb.apl429.me/
-player/live.php?id=265547&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/13.png</idioma>
-        <idioma_nombre>Italiano</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265547&amp;lang=es&amp;eid=399041972&amp;lid=3063397&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://emb.apl429.me/
-player/live.php?id=265586&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265586&amp;lang=es&amp;eid=399041972&amp;lid=3061397&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="7">
-        <url>https://emb.apl429.me/
-player/live.php?id=265671&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/11.png</idioma>
-        <idioma_nombre>Alemán</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265671&amp;lang=es&amp;eid=399041972&amp;lid=3063459&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="8">
-        <url>https://restream.website/tennis1/espn.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063579&amp;lang=es&amp;eid=399041972&amp;lid=3063579&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="86">
-    <nombre>Wigry Suwalki –  Nieciecza</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Polonia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:47</hora>
-    <url>https://livetv.sx/es/eventinfo/397294655_wigry_suwalki_nieciecza/</url>
-    <datetime_iso>2026-09-01T19:47:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="87">
-    <nombre>Wigry Suwalki – Nieciecza</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Polonia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>19:47</hora>
-    <url>https://livetv.sx/es/eventinfo/397294655__/</url>
-    <datetime_iso>2026-09-01T19:47:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="88">
-    <nombre>Al-Hilal Riad –  Al Ahli Yeda</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Arabia Saudita. Liga Pro</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397135466_al_hilal_riad_al_ahli_yeda/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="89">
-    <nombre>U Cluj –  Petrolul</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Rumania. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/398740659_u_cluj_petrolul/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="90">
+  <evento id="4">
     <nombre>British Open</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Snooker</competicion>
@@ -1666,1083 +93,249 @@ player/live.php?id=265671&amp;w=700&amp;h=480</url>
     <hora>20:00</hora>
     <url>https://livetv.sx/es/eventinfo/399826140_british_open/</url>
     <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://www.vdocity.com/1/_VkS5FxyQndeYQc1y5Uuqhn1SRFZ53tygs1TATm</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063803&amp;lang=es&amp;eid=399826140&amp;lid=3063803&amp;ci=234&amp;si=29</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_VkS5FxyQndeYQc1y5UwTtEkUn5nUnkFghCyhQq</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063806&amp;lang=es&amp;eid=399826140&amp;lid=3063806&amp;ci=234&amp;si=29</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://www.vdocity.com/1/_VkS5FxyQndeYQc1y5Uuqhn1Sv1vqEHZGxMJSxt</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063805&amp;lang=es&amp;eid=399826140&amp;lid=3063805&amp;ci=234&amp;si=29</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://www.vdocity.com/1/_VkS5FxyQndeYQc1y5Uuqhn1Sfdjx96GUugVXLX</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063804&amp;lang=es&amp;eid=399826140&amp;lid=3063804&amp;ci=234&amp;si=29</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="91">
-    <nombre>Rafael Jodar –  Bu Yunchaokete</nombre>
+  <evento id="5">
+    <nombre>Dane Sweeny –  Corentin Moutet</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Abierto de EU. Masculinos</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399826235_rafael_jodar_bu_yunchaokete/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://abisnews.com/tennis17.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063069&amp;lang=es&amp;eid=399826235&amp;lid=3063069&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPmExtMAzA8mNdcB</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063800&amp;lang=es&amp;eid=399826235&amp;lid=3063800&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://wikisport.info/court/wik17.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063422&amp;lang=es&amp;eid=399826235&amp;lid=3063422&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <hora>20:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399041950_dane_sweeny_corentin_moutet/</url>
+    <datetime_iso>2026-09-01T20:50:00</datetime_iso>
+    <streams total="0" />
   </evento>
-  <evento id="92">
-    <nombre>Odense –  Rungsted</nombre>
+  <evento id="6">
+    <nombre>Filip Misolic –  Francisco Cerundolo</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Dinamarca. Metal Ligaen</competicion>
+    <competicion>Abierto de EU. Masculinos</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397132751_odense_rungsted/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
+    <hora>20:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399041970_filip_misolic_francisco_cerundolo/</url>
+    <datetime_iso>2026-09-01T20:50:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="93">
-    <nombre>Gimnasia y Esgrima LP II –  River Plate II</nombre>
+  <evento id="7">
+    <nombre>Nishesh Basavareddy –  Tristan Schoolkate</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Argentina. Liga Reserva</competicion>
+    <competicion>Abierto de EU. Masculinos</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399826148_gimnasia_y_esgrima_lp_ii_river_plate_ii/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
+    <hora>20:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399241233_nishesh_basavareddy_tristan_schoolkate/</url>
+    <datetime_iso>2026-09-01T20:50:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="94">
-    <nombre>Campobasso –  Scafatese</nombre>
+  <evento id="8">
+    <nombre>Yulia Starodubtseva (M) –   Ella Seidel (M)</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Italia. Copa. Serie C</competicion>
+    <competicion>Abierto de EU. Mujeres</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399826150_campobasso_scafatese/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
+    <hora>20:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399041881__yulia_starodubtseva_m__ella_seidel_m/</url>
+    <datetime_iso>2026-09-01T20:50:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="95">
-    <nombre>Colón –  Fénix M</nombre>
+  <evento id="9">
+    <nombre>Maria Sakkari (M) –   Robin Montgomery (M)</nombre>
     <deporte>Fútbol</deporte>
-    <competicion>Uruguay. Copa</competicion>
+    <competicion>Abierto de EU. Mujeres</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399713585_col__n_f__nix_m/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
+    <hora>20:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399296637__maria_sakkari_m__robin_montgomery_m/</url>
+    <datetime_iso>2026-09-01T20:50:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="96">
-    <nombre>Realidade Jovem (W) –  Sao Bento (W)</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Copa Paulista Petrobras</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/398763266_realidade_jovem_w_sao_bento_w/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="97">
-    <nombre>Turquía –  Iraq</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Copa del Mundo de Socca</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399142259_turquandiacute_a_iraq/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="98">
-    <nombre>Colón – Fénix M</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Uruguay. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399713585__/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="99">
-    <nombre>Al-Hilal Riad – Al Ahli Yeda</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Arabia Saudita. Liga Pro</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397135466__/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="100">
-    <nombre>Turquía – Iraq</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Copa del Mundo de Socca</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399142259_turkey_iraq/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="101">
-    <nombre>U Cluj – Petrolul</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Rumania. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/398740659__/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="102">
-    <nombre>Gimnasia y Esgrima LP II – River Plate II</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Argentina. Liga Reserva</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399826148__/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="103">
-    <nombre>Campobasso – Scafatese</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Italia. Copa. Serie C</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399826150__/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="104">
-    <nombre>Odense – Rungsted</nombre>
-    <deporte>Hockey</deporte>
-    <competicion>Dinamarca. Metal Ligaen</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397132751__/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="105">
-    <nombre>Rafael Jodar – Bu Yunchaokete</nombre>
+  <evento id="10">
+    <nombre>Dane Sweeny – Corentin Moutet</nombre>
     <deporte>Tenis</deporte>
     <competicion>Abierto de EU. Masculinos</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>20:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399826235__/</url>
-    <datetime_iso>2026-09-01T20:00:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://abisnews.com/tennis17.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063069&amp;lang=es&amp;eid=399826235&amp;lid=3063069&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPmExtMAzA8mNdcB</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063800&amp;lang=es&amp;eid=399826235&amp;lid=3063800&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://wikisport.info/court/wik17.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063422&amp;lang=es&amp;eid=399826235&amp;lid=3063422&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="106">
-    <nombre>Radom (M) –  Perla Lublin (M)</nombre>
-    <deporte>Balonmano</deporte>
-    <competicion>Polonia. Mujeres. Ekstraklasa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:15</hora>
-    <url>https://livetv.sx/es/eventinfo/399791602__/</url>
-    <datetime_iso>2026-09-01T20:15:00</datetime_iso>
+    <hora>20:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399041950__/</url>
+    <datetime_iso>2026-09-01T20:50:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="107">
-    <nombre>Alex Molcan –  Benjamin Bonzi</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041930_alex_molcan_benjamin_bonzi/</url>
-    <datetime_iso>2026-09-01T20:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="108">
-    <nombre>Fabian Marozsan –  Michael Zheng</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041944_fabian_marozsan_michael_zheng/</url>
-    <datetime_iso>2026-09-01T20:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="109">
-    <nombre>Motor –  Legia de Varsovia</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Polonia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397135100_motor_legia_de_varsovia/</url>
-    <datetime_iso>2026-09-01T20:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="110">
-    <nombre>Zúrich –  Young Boys</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Suiza. Superliga</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397136424_z__rich_young_boys/</url>
-    <datetime_iso>2026-09-01T20:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="111">
-    <nombre>Cruzeiro U17 –  Flamengo U17</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Brasil. Brasileiro Sub 17</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399718585_cruzeiro_u17_flamengo_u17/</url>
-    <datetime_iso>2026-09-01T20:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="112">
-    <nombre>Zúrich – Young Boys</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Suiza. Superliga</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397136424__/</url>
-    <datetime_iso>2026-09-01T20:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="113">
-    <nombre>Motor – Legia de Varsovia</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Polonia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397135100__/</url>
-    <datetime_iso>2026-09-01T20:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="114">
-    <nombre>Alex Molcan – Benjamin Bonzi</nombre>
+  <evento id="11">
+    <nombre>Nishesh Basavareddy – Tristan Schoolkate</nombre>
     <deporte>Tenis</deporte>
     <competicion>Abierto de EU. Masculinos</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>20:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041930__/</url>
-    <datetime_iso>2026-09-01T20:30:00</datetime_iso>
+    <hora>20:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399241233__/</url>
+    <datetime_iso>2026-09-01T20:50:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="115">
-    <nombre>Fabian Marozsan – Michael Zheng</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041944__/</url>
-    <datetime_iso>2026-09-01T20:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="116">
-    <nombre>Swindon –  Port Vale</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131553_swindon_port_vale/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="117">
-    <nombre>Salford City –  Newport County</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131555_salford_city_newport_county/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="118">
-    <nombre>Rochdale –  Shrewsbury Town</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131557_rochdale_shrewsbury_town/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="119">
-    <nombre>Northampton Town –  Crawley Town</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131559_northampton_town_crawley_town/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="120">
-    <nombre>Fleetwood Town –  Oldham Athletic</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131561_fleetwood_town_oldham_athletic/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="121">
-    <nombre>Exeter City –  Barnet</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131563_exeter_city_barnet/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="122">
-    <nombre>Crewe Alexandra –  Walsall</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131565_crewe_alexandra_walsall/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="123">
-    <nombre>Chesterfield –  Gillingham</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131567_chesterfield_gillingham/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="124">
-    <nombre>Cheltenham Town –  York City</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131569_cheltenham_town_york_city/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="125">
-    <nombre>Bristol Rovers –  Colchester Utd</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131571_bristol_rovers_colchester_utd/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="126">
-    <nombre>Accrington Stanley –  Grimsby Town</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131573_accrington_stanley_grimsby_town/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="127">
-    <nombre>Tranmere Rovers –  Rotherham Utd</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131575_tranmere_rovers_rotherham_utd/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="128">
-    <nombre>West Ham United –  Wolverhampton</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131736_west_ham_united_wolverhampton/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="129">
-    <nombre>Swansea City –  Watford</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131737_swansea_city_watford/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="130">
-    <nombre>Sheffield Utd –  Bolton Wanderers</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131738_sheffield_utd_bolton_wanderers/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="131">
-    <nombre>Preston –  Bristol City</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131739_preston_bristol_city/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="132">
-    <nombre>Portsmouth –  Derby County</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131740_portsmouth_derby_county/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="133">
-    <nombre>Lincoln City –  Blackburn</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131741_lincoln_city_blackburn/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="134">
-    <nombre>Wycombe –  Sheffield Wednesday</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131511_wycombe_sheffield_wednesday/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="135">
-    <nombre>Peterborough United –  Stevenage</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131512_peterborough_united_stevenage/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="136">
-    <nombre>Leicester City –  Plymouth Argyle</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131513_leicester_city_plymouth_argyle/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="137">
-    <nombre>Huddersfield –  Oxford Utd</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131514_huddersfield_oxford_utd/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="138">
-    <nombre>Doncaster Rovers –  Notts County</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131515_doncaster_rovers_notts_county/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="139">
-    <nombre>Bromley –  Leyton Orient</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131516_bromley_leyton_orient/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="140">
-    <nombre>Bradford City –  Cambridge Utd</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131517_bradford_city_cambridge_utd/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="141">
-    <nombre>Simulcast</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/399792801_simulcast/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="142">
-    <nombre>HEBC –  Dortmund</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Alemania. DFB Pokal</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397132602_hebc_dortmund/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="143">
-    <nombre>Zrinjski –  BSK Bania Luka</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Premijer liga</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397293145_zrinjski_bsk_bania_luka/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="144">
-    <nombre>HEBC – Dortmund</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Alemania. DFB Pokal</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397132602__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="145">
-    <nombre>Preston – Bristol City</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131739__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="146">
-    <nombre>Portsmouth – Derby County</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131740__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="147">
-    <nombre>Lincoln City – Blackburn</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131741__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="148">
-    <nombre>Swindon – Port Vale</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131553__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="149">
-    <nombre>Salford City – Newport County</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131555__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="150">
-    <nombre>Rochdale – Shrewsbury Town</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131557__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="151">
-    <nombre>Northampton Town – Crawley Town</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131559__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="152">
-    <nombre>Fleetwood Town – Oldham Athletic</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131561__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="153">
-    <nombre>Exeter City – Barnet</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131563__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="154">
-    <nombre>Crewe Alexandra – Walsall</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131565__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="155">
-    <nombre>Chesterfield – Gillingham</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131567__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="156">
-    <nombre>Cheltenham Town – York City</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131569__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="157">
-    <nombre>Bristol Rovers – Colchester Utd</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131571__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="158">
-    <nombre>Accrington Stanley – Grimsby Town</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131573__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="159">
-    <nombre>Tranmere Rovers – Rotherham Utd</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League Two</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131575__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="160">
-    <nombre>Zrinjski – BSK Bania Luka</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Bosnia y Herzegovina. Premijer liga</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397293145__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="161">
-    <nombre>West Ham United – Wolverhampton</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131736__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="162">
-    <nombre>Swansea City – Watford</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131737__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="163">
-    <nombre>Sheffield Utd – Bolton Wanderers</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131738__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="164">
-    <nombre>Wycombe – Sheffield Wednesday</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131511__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="165">
-    <nombre>Peterborough United – Stevenage</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131512__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="166">
-    <nombre>Leicester City – Plymouth Argyle</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131513__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="167">
-    <nombre>Huddersfield – Oxford Utd</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131514__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="168">
-    <nombre>Doncaster Rovers – Notts County</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131515__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="169">
-    <nombre>Bromley – Leyton Orient</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131516__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="170">
-    <nombre>Bradford City – Cambridge Utd</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. League One</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>20:45</hora>
-    <url>https://livetv.sx/es/eventinfo/397131517__/</url>
-    <datetime_iso>2026-09-01T20:45:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="171">
-    <nombre>Turín –  Monza</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Italia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397293717_tur__n_monza/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="172">
-    <nombre>Rafael Jodar –  Thanasi Kokkinakis</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399041946_rafael_jodar_thanasi_kokkinakis/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="173">
-    <nombre>Turín – Monza</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Italia. Copa</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397293717__/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="174">
-    <nombre>Stoke City – Norwich City</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397131743__/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="175">
-    <nombre>Penafiel Sub-23 –  Leixoes Sub-23</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Portugal. Liga U23</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399713083__/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="176">
-    <nombre>Ucrania – Georgia</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Copa del Mundo de Socca</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399142260_ukraine_georgia/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="177">
-    <nombre>Rubio Ñu – San Lorenzo</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Paraguay. Primera División</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/398382807__/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="178">
-    <nombre>Birmingham City – Southampton</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397131742__/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="179">
-    <nombre>Potenza – Monopoli</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Italia. Copa. Serie C</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399826151__/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="180">
-    <nombre>Rávena – Forli</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Italia. Copa. Serie C</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399826152__/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="181">
-    <nombre>Bari – Picerno</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Italia. Copa. Serie C</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399826153__/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="182">
-    <nombre>Rafael Jodar – Thanasi Kokkinakis</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399041946__/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="183">
-    <nombre>Anastasia Potapova (M) –  Tereza Valentova (M)</nombre>
+  <evento id="12">
+    <nombre>Yulia Starodubtseva (M) –  Ella Seidel (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>Abierto de EU. Mujeres</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399041912__/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
+    <hora>20:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399041881__/</url>
+    <datetime_iso>2026-09-01T20:50:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="184">
-    <nombre>Nikola Bartunkova (M) –  Mayar Sherif (M)</nombre>
+  <evento id="13">
+    <nombre>Maria Sakkari (M) –  Robin Montgomery (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>Abierto de EU. Mujeres</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399041914__/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://abisnews.com/tennis10.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063073&amp;lang=es&amp;eid=399041914&amp;lid=3063073&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://wikisport.info/court/wik10.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063632&amp;lang=es&amp;eid=399041914&amp;lid=3063632&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <hora>20:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399296637__/</url>
+    <datetime_iso>2026-09-01T20:50:00</datetime_iso>
+    <streams total="0" />
   </evento>
-  <evento id="185">
+  <evento id="14">
+    <nombre>Lucie Havlickova (M) –  Anna Bondar (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>Abierto de EU. Mujeres</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>20:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399296643__/</url>
+    <datetime_iso>2026-09-01T20:50:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="15">
+    <nombre>Filip Misolic – Francisco Cerundolo</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>Abierto de EU. Masculinos</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>20:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399041970__/</url>
+    <datetime_iso>2026-09-01T20:50:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="16">
+    <nombre>Mattia Bellucci –  Zsombor Piros</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Abierto de EU. Masculinos</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>20:55</hora>
+    <url>https://livetv.sx/es/eventinfo/399241242_mattia_bellucci_zsombor_piros/</url>
+    <datetime_iso>2026-09-01T20:55:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="17">
+    <nombre>Yulia Putintseva (M) –   Belinda Bencic (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Abierto de EU. Mujeres</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>20:55</hora>
+    <url>https://livetv.sx/es/eventinfo/399041890__yulia_putintseva_m__belinda_bencic_m/</url>
+    <datetime_iso>2026-09-01T20:55:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="18">
+    <nombre>Mattia Bellucci – Zsombor Piros</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>Abierto de EU. Masculinos</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>20:55</hora>
+    <url>https://livetv.sx/es/eventinfo/399241242__/</url>
+    <datetime_iso>2026-09-01T20:55:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="19">
+    <nombre>Yulia Putintseva (M) –  Belinda Bencic (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>Abierto de EU. Mujeres</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>20:55</hora>
+    <url>https://livetv.sx/es/eventinfo/399041890__/</url>
+    <datetime_iso>2026-09-01T20:55:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="20">
+    <nombre>Camilo Ugo Carabelli –  Jan-lennard Struff</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Abierto de EU. Masculinos</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>21:40</hora>
+    <url>https://livetv.sx/es/eventinfo/399041971_camilo_ugo_carabelli_jan_lennard_struff/</url>
+    <datetime_iso>2026-09-01T21:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="21">
+    <nombre>Camilo Ugo Carabelli – Jan-lennard Struff</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>Abierto de EU. Masculinos</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>21:40</hora>
+    <url>https://livetv.sx/es/eventinfo/399041971__/</url>
+    <datetime_iso>2026-09-01T21:40:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="22">
+    <nombre>Mirra Andreeva (M) –   Janice Tjen (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Abierto de EU. Mujeres</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>21:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399041915__mirra_andreeva_m__janice_tjen_m/</url>
+    <datetime_iso>2026-09-01T21:50:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="23">
     <nombre>Mirra Andreeva (M) –  Janice Tjen (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>Abierto de EU. Mujeres</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
+    <hora>21:50</hora>
     <url>https://livetv.sx/es/eventinfo/399041915__/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
-    <streams total="6">
-      <stream id="1">
-        <url>https://emb.apl429.me/
-player/live.php?id=265100&amp;w=700&amp;h=480</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/12.png</idioma>
-        <idioma_nombre>Turco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265100&amp;lang=es&amp;eid=399041915&amp;lid=3063407&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://abisnews.com/tennis2.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3062611&amp;lang=es&amp;eid=399041915&amp;lid=3062611&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPWrn1FyhN66Zhzk</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063795&amp;lang=es&amp;eid=399041915&amp;lid=3063795&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://restream.website/tennis1/espn.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063579&amp;lang=es&amp;eid=399041915&amp;lid=3063579&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://shd247.world/frame017.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/5.png</idioma>
-        <idioma_nombre>Alemán (Alemania)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063556&amp;lang=es&amp;eid=399041915&amp;lid=3063556&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="6">
-        <url>https://wikisport.info/court/wik2.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063164&amp;lang=es&amp;eid=399041915&amp;lid=3063164&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="186">
-    <nombre>Birmingham City –  Southampton</nombre>
-    <deporte>Deporte_15</deporte>
-    <competicion>Inglaterra. Championship</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>21:00</hora>
-    <url>https://livetv.sx/es/eventinfo/397131742_birmingham_city_southampton/</url>
-    <datetime_iso>2026-09-01T21:00:00</datetime_iso>
+    <datetime_iso>2026-09-01T21:50:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="187">
+  <evento id="24">
+    <nombre>Atlético Grau –  Melgar</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Perú. Liga 1</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>22:00</hora>
+    <url>https://livetv.sx/es/eventinfo/396974853_atl__tico_grau_melgar/</url>
+    <datetime_iso>2026-09-01T22:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="25">
+    <nombre>Envigado –  Unión Magdalena</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Colombia. Primera B</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>22:00</hora>
+    <url>https://livetv.sx/es/eventinfo/392656715_envigado_uni__n_magdalena/</url>
+    <datetime_iso>2026-09-01T22:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="26">
+    <nombre>Orsomarso (M) –   Deportivo Cali (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Colombia. Mujeres. Liga Aguila</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>22:00</hora>
+    <url>https://livetv.sx/es/eventinfo/399732024__orsomarso_m__deportivo_cali_m/</url>
+    <datetime_iso>2026-09-01T22:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="27">
+    <nombre>Saskatoon Blades –  Prince Albert Raiders</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Canada. WHL. Pretemporada</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>22:00</hora>
+    <url>https://livetv.sx/es/eventinfo/397133466_saskatoon_blades_prince_albert_raiders/</url>
+    <datetime_iso>2026-09-01T22:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="28">
+    <nombre>Brasil –  EUA</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Copa del Mundo de Socca</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>22:00</hora>
+    <url>https://livetv.sx/es/eventinfo/399142261_brasil_eua/</url>
+    <datetime_iso>2026-09-01T22:00:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="29">
     <nombre>Atlético Grau – Melgar</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Perú. Liga 1</competicion>
@@ -2750,22 +343,9 @@ player/live.php?id=265100&amp;w=700&amp;h=480</url>
     <hora>22:00</hora>
     <url>https://livetv.sx/es/eventinfo/396974853__/</url>
     <datetime_iso>2026-09-01T22:00:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://la18hd.su/vivo/canales.php?stream=liga1max</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063827&amp;lang=es&amp;eid=396974853&amp;lid=3063827&amp;ci=110&amp;si=1</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_VkS5FxyQndeYQc1y5UuqmcEbd73djRebaq3wfL</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063773&amp;lang=es&amp;eid=396974853&amp;lid=3063773&amp;ci=110&amp;si=1</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="188">
+  <evento id="30">
     <nombre>Orsomarso (M) –  Deportivo Cali (M)</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Colombia. Mujeres. Liga Aguila</competicion>
@@ -2773,16 +353,9 @@ player/live.php?id=265100&amp;w=700&amp;h=480</url>
     <hora>22:00</hora>
     <url>https://livetv.sx/es/eventinfo/399732024__/</url>
     <datetime_iso>2026-09-01T22:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fsignin_passive%26feature%3Dpassive&amp;hl=en</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>http://tinyurl.com/majpcecb</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="189">
+  <evento id="31">
     <nombre>Envigado – Unión Magdalena</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Colombia. Primera B</competicion>
@@ -2790,26 +363,9 @@ player/live.php?id=265100&amp;w=700&amp;h=480</url>
     <hora>22:00</hora>
     <url>https://livetv.sx/es/eventinfo/392656715__/</url>
     <datetime_iso>2026-09-01T22:00:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.vdocity.com/1/_VkS5FxyQndeYQc1y5UuqmcEbNirkeEMoYAF22y</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063772&amp;lang=es&amp;eid=392656715&amp;lid=3063772&amp;ci=896&amp;si=1</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="190">
-    <nombre>Brasil – EUA</nombre>
-    <deporte>Fútbol</deporte>
-    <competicion>Copa del Mundo de Socca</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>22:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399142261_brazil_usa/</url>
-    <datetime_iso>2026-09-01T22:00:00</datetime_iso>
     <streams total="0" />
   </evento>
-  <evento id="191">
+  <evento id="32">
     <nombre>Saskatoon Blades – Prince Albert Raiders</nombre>
     <deporte>Hockey</deporte>
     <competicion>Canada. WHL. Pretemporada</competicion>
@@ -2817,148 +373,73 @@ player/live.php?id=265100&amp;w=700&amp;h=480</url>
     <hora>22:00</hora>
     <url>https://livetv.sx/es/eventinfo/397133466__/</url>
     <datetime_iso>2026-09-01T22:00:00</datetime_iso>
-    <streams total="1">
+    <streams total="0" />
+  </evento>
+  <evento id="33">
+    <nombre>Arthur Fery –  Lorenzo Musetti</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Abierto de EU. Masculinos</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>22:30</hora>
+    <url>https://livetv.sx/es/eventinfo/399041948_arthur_fery_lorenzo_musetti/</url>
+    <datetime_iso>2026-09-01T22:30:00</datetime_iso>
+    <streams total="4">
       <stream id="1">
-        <url>https://www.youtube.com/embed/_D5Bocg2hj4?autoplay=1</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/18.png</idioma>
-        <idioma_nombre>Polaco</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer2.php?t=youtube&amp;c=_D5Bocg2hj4&amp;lang=es&amp;eid=397133466&amp;lid=3063853&amp;ci=4822&amp;si=2</enlace_original>
+        <url>https://abisnews.com/tennis3.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3062612&amp;lang=es&amp;eid=399041948&amp;lid=3062612&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPGUb8AnQa3RkSsZ</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063786&amp;lang=es&amp;eid=399041948&amp;lid=3063786&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://shd247.world/frame019.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/5.png</idioma>
+        <idioma_nombre>Alemán (Alemania)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063558&amp;lang=es&amp;eid=399041948&amp;lid=3063558&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://wikisport.info/court/wik3.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063172&amp;lang=es&amp;eid=399041948&amp;lid=3063172&amp;ci=278&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="192">
-    <nombre>Jan Choinski – Botic Van de Zandschulp</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
+  <evento id="34">
+    <nombre>Kaitlin Quevedo (M) –   Elise Mertens (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Abierto de EU. Mujeres</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>22:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399041936__/</url>
-    <datetime_iso>2026-09-01T22:00:00</datetime_iso>
+    <hora>22:30</hora>
+    <url>https://livetv.sx/es/eventinfo/399041883__kaitlin_quevedo_m__elise_mertens_m/</url>
+    <datetime_iso>2026-09-01T22:30:00</datetime_iso>
     <streams total="3">
       <stream id="1">
         <url>https://wikisport.info/court/wik5.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063630&amp;lang=es&amp;eid=399041936&amp;lid=3063630&amp;ci=278&amp;si=4</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063630&amp;lang=es&amp;eid=399041883&amp;lid=3063630&amp;ci=4202&amp;si=4</enlace_original>
       </stream>
       <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dAcy2Cbre5hJVxtk</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063814&amp;lang=es&amp;eid=399041936&amp;lid=3063814&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
         <url>https://abisnews.com/tennis5.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
         <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063070&amp;lang=es&amp;eid=399041936&amp;lid=3063070&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="193">
-    <nombre>Magda Linette (M) –  Francesca Jones (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>22:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399296651__/</url>
-    <datetime_iso>2026-09-01T22:00:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dAsMD5h3vsjyJtX7</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063815&amp;lang=es&amp;eid=399296651&amp;lid=3063815&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://abisnews.com/tennis6.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063071&amp;lang=es&amp;eid=399296651&amp;lid=3063071&amp;ci=4202&amp;si=4</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063070&amp;lang=es&amp;eid=399041883&amp;lid=3063070&amp;ci=4202&amp;si=4</enlace_original>
       </stream>
       <stream id="3">
-        <url>https://wikisport.info/court/wik6.php</url>
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dAcy2Cbre5hJVxtg</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
         <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063631&amp;lang=es&amp;eid=399296651&amp;lid=3063631&amp;ci=4202&amp;si=4</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063809&amp;lang=es&amp;eid=399041883&amp;lid=3063809&amp;ci=4202&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="194">
-    <nombre>Marcos Giron – Ignacio Buse</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>22:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041928__/</url>
-    <datetime_iso>2026-09-01T22:30:00</datetime_iso>
-    <streams total="0" />
-  </evento>
-  <evento id="195">
-    <nombre>Zizou Bergs – Carlos Taberner</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>22:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041938__/</url>
-    <datetime_iso>2026-09-01T22:30:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://abisnews.com/tennis12.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063075&amp;lang=es&amp;eid=399041938&amp;lid=3063075&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaoKPgrPeC1e7mfS</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063789&amp;lang=es&amp;eid=399041938&amp;lid=3063789&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://wikisport.info/court/wik12.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063418&amp;lang=es&amp;eid=399041938&amp;lid=3063418&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="196">
-    <nombre>Zachary Svajda – Daniel Altmaier</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>22:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041942__/</url>
-    <datetime_iso>2026-09-01T22:30:00</datetime_iso>
-    <streams total="4">
-      <stream id="1">
-        <url>https://abisnews.com/movistar3.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063551&amp;lang=es&amp;eid=399041942&amp;lid=3063551&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://wikisport.info/court/t12.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063169&amp;lang=es&amp;eid=399041942&amp;lid=3063169&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://abisnews.com/tennis12.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063075&amp;lang=es&amp;eid=399041942&amp;lid=3063075&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaoKPgrPeC1e8ScX</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063812&amp;lang=es&amp;eid=399041942&amp;lid=3063812&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="197">
+  <evento id="35">
     <nombre>Kaitlin Quevedo (M) –  Elise Mertens (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>Abierto de EU. Mujeres</competicion>
@@ -2987,14 +468,49 @@ player/live.php?id=265100&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="198">
-    <nombre>Oleksandra Oliynykova (M) –  Reese Brantmeier (M)</nombre>
+  <evento id="36">
+    <nombre>Arthur Fery – Lorenzo Musetti</nombre>
     <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
+    <competicion>Abierto de EU. Masculinos</competicion>
     <fecha>1 de septiembre</fecha>
     <hora>22:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041906__/</url>
+    <url>https://livetv.sx/es/eventinfo/399041948__/</url>
     <datetime_iso>2026-09-01T22:30:00</datetime_iso>
+    <streams total="4">
+      <stream id="1">
+        <url>https://abisnews.com/tennis3.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3062612&amp;lang=es&amp;eid=399041948&amp;lid=3062612&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPGUb8AnQa3RkSsZ</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063786&amp;lang=es&amp;eid=399041948&amp;lid=3063786&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://shd247.world/frame019.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/5.png</idioma>
+        <idioma_nombre>Alemán (Alemania)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063558&amp;lang=es&amp;eid=399041948&amp;lid=3063558&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://wikisport.info/court/wik3.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063172&amp;lang=es&amp;eid=399041948&amp;lid=3063172&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="37">
+    <nombre>Oleksandra Oliynykova (M) –   Reese Brantmeier (M)</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Abierto de EU. Mujeres</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>22:45</hora>
+    <url>https://livetv.sx/es/eventinfo/399041906__oleksandra_oliynykova_m__reese_brantmeier_m/</url>
+    <datetime_iso>2026-09-01T22:45:00</datetime_iso>
     <streams total="1">
       <stream id="1">
         <url>https://wikisport.info/court/wik15.php</url>
@@ -3004,129 +520,34 @@ player/live.php?id=265100&amp;w=700&amp;h=480</url>
       </stream>
     </streams>
   </evento>
-  <evento id="199">
-    <nombre>Iva Jovic (M) –  Magdalena Frech (M)</nombre>
+  <evento id="38">
+    <nombre>Oleksandra Oliynykova (M) –  Reese Brantmeier (M)</nombre>
     <deporte>Tenis</deporte>
     <competicion>Abierto de EU. Mujeres</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>22:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041908__/</url>
-    <datetime_iso>2026-09-01T22:30:00</datetime_iso>
-    <streams total="5">
+    <hora>22:45</hora>
+    <url>https://livetv.sx/es/eventinfo/399041906__/</url>
+    <datetime_iso>2026-09-01T22:45:00</datetime_iso>
+    <streams total="1">
       <stream id="1">
-        <url>https://abisnews.com/tennis3.php</url>
+        <url>https://wikisport.info/court/wik15.php</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
         <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3062612&amp;lang=es&amp;eid=399041908&amp;lid=3062612&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPGUb8AnQa3Rm7rJ</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063808&amp;lang=es&amp;eid=399041908&amp;lid=3063808&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://restream.website/tennis1/espn.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063579&amp;lang=es&amp;eid=399041908&amp;lid=3063579&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="4">
-        <url>https://shd247.world/frame019.html</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/5.png</idioma>
-        <idioma_nombre>Alemán (Alemania)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063558&amp;lang=es&amp;eid=399041908&amp;lid=3063558&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="5">
-        <url>https://wikisport.info/court/wik3.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063172&amp;lang=es&amp;eid=399041908&amp;lid=3063172&amp;ci=4202&amp;si=4</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063843&amp;lang=es&amp;eid=399041906&amp;lid=3063843&amp;ci=4202&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="200">
-    <nombre>Arantxa Rus (M) –  Leolia Jeanjean (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
+  <evento id="39">
+    <nombre>Montevideo Wanderers –  Cerro</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Uruguay. Copa</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>22:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399296653__/</url>
-    <datetime_iso>2026-09-01T22:30:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://wikisport.info/court/wik7.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063167&amp;lang=es&amp;eid=399296653&amp;lid=3063167&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dB7jPxnFDfne7p9P</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/0.png</idioma>
-        <idioma_nombre>Bandera #0</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063810&amp;lang=es&amp;eid=399296653&amp;lid=3063810&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://abisnews.com/tennis7.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063072&amp;lang=es&amp;eid=399296653&amp;lid=3063072&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
+    <hora>23:00</hora>
+    <url>https://livetv.sx/es/eventinfo/399713586_montevideo_wanderers_cerro/</url>
+    <datetime_iso>2026-09-01T23:00:00</datetime_iso>
+    <streams total="0" />
   </evento>
-  <evento id="201">
-    <nombre>Camilo Ugo Carabelli – Jan-lennard Struff</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Masculinos</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>22:30</hora>
-    <url>https://livetv.sx/es/eventinfo/399041971__/</url>
-    <datetime_iso>2026-09-01T22:30:00</datetime_iso>
-    <streams total="2">
-      <stream id="1">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTb3haZwavz4JvhHo</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063790&amp;lang=es&amp;eid=399041971&amp;lid=3063790&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://wikisport.info/court/t13.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063175&amp;lang=es&amp;eid=399041971&amp;lid=3063175&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="202">
-    <nombre>Anastasia Potapova (M) –  Darja Semenistaja (M)</nombre>
-    <deporte>Tenis</deporte>
-    <competicion>Abierto de EU. Mujeres</competicion>
-    <fecha>1 de septiembre</fecha>
-    <hora>22:50</hora>
-    <url>https://livetv.sx/es/eventinfo/399763235__/</url>
-    <datetime_iso>2026-09-01T22:50:00</datetime_iso>
-    <streams total="3">
-      <stream id="1">
-        <url>https://wikisport.info/court/wik5.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063630&amp;lang=es&amp;eid=399763235&amp;lid=3063630&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
-        <url>https://abisnews.com/tennis5.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063070&amp;lang=es&amp;eid=399763235&amp;lid=3063070&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-      <stream id="3">
-        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dAcy2Cbre5hJVdQn</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063796&amp;lang=es&amp;eid=399763235&amp;lid=3063796&amp;ci=4202&amp;si=4</enlace_original>
-      </stream>
-    </streams>
-  </evento>
-  <evento id="203">
+  <evento id="40">
     <nombre>Montevideo Wanderers – Cerro</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Uruguay. Copa</competicion>
@@ -3134,43 +555,133 @@ player/live.php?id=265100&amp;w=700&amp;h=480</url>
     <hora>23:00</hora>
     <url>https://livetv.sx/es/eventinfo/399713586__/</url>
     <datetime_iso>2026-09-01T23:00:00</datetime_iso>
-    <streams total="1">
+    <streams total="0" />
+  </evento>
+  <evento id="41">
+    <nombre>Jesper De Jong –  Francesco Passaro</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Abierto de EU. Masculinos</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>23:10</hora>
+    <url>https://livetv.sx/es/eventinfo/399241256_jesper_de_jong_francesco_passaro/</url>
+    <datetime_iso>2026-09-01T23:10:00</datetime_iso>
+    <streams total="2">
       <stream id="1">
-        <url>https://www.vdocity.com/1/_VkS5FxyQndeYQc1y5UuqmcEbsVEWpcwPdVrsHh</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063709&amp;lang=es&amp;eid=399713586&amp;lid=3063709&amp;ci=6196&amp;si=1</enlace_original>
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaJZ1vg14bvJWFtc</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063797&amp;lang=es&amp;eid=399241256&amp;lid=3063797&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://abisnews.com/tennis10.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063073&amp;lang=es&amp;eid=399241256&amp;lid=3063073&amp;ci=278&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="204">
-    <nombre>Andrea Guerrieri – Alex De Minaur</nombre>
+  <evento id="42">
+    <nombre>Jesper De Jong – Francesco Passaro</nombre>
     <deporte>Tenis</deporte>
     <competicion>Abierto de EU. Masculinos</competicion>
     <fecha>1 de septiembre</fecha>
-    <hora>23:00</hora>
-    <url>https://livetv.sx/es/eventinfo/399241253__/</url>
-    <datetime_iso>2026-09-01T23:00:00</datetime_iso>
-    <streams total="0" />
+    <hora>23:10</hora>
+    <url>https://livetv.sx/es/eventinfo/399241256__/</url>
+    <datetime_iso>2026-09-01T23:10:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaJZ1vg14bvJWFtc</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063797&amp;lang=es&amp;eid=399241256&amp;lid=3063797&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://abisnews.com/tennis10.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063073&amp;lang=es&amp;eid=399241256&amp;lid=3063073&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+    </streams>
   </evento>
-  <evento id="205">
-    <nombre>Delfín – Técnico Univ</nombre>
+  <evento id="43">
+    <nombre>Zizou Bergs –  Carlos Taberner</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Abierto de EU. Masculinos</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>23:15</hora>
+    <url>https://livetv.sx/es/eventinfo/399041938_zizou_bergs_carlos_taberner/</url>
+    <datetime_iso>2026-09-01T23:15:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://abisnews.com/tennis12.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063075&amp;lang=es&amp;eid=399041938&amp;lid=3063075&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaoKPgrPeC1e7mfS</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063789&amp;lang=es&amp;eid=399041938&amp;lid=3063789&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://wikisport.info/court/wik12.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063418&amp;lang=es&amp;eid=399041938&amp;lid=3063418&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="44">
+    <nombre>Zizou Bergs – Carlos Taberner</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>Abierto de EU. Masculinos</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>23:15</hora>
+    <url>https://livetv.sx/es/eventinfo/399041938__/</url>
+    <datetime_iso>2026-09-01T23:15:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://abisnews.com/tennis12.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063075&amp;lang=es&amp;eid=399041938&amp;lid=3063075&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaoKPgrPeC1e7mfS</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063789&amp;lang=es&amp;eid=399041938&amp;lid=3063789&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://wikisport.info/court/wik12.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063418&amp;lang=es&amp;eid=399041938&amp;lid=3063418&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="45">
+    <nombre>Delfín –  Técnico Univ</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Ecuador. Serie A</competicion>
     <fecha>1 de septiembre</fecha>
     <hora>23:30</hora>
-    <url>https://livetv.sx/es/eventinfo/397310324__/</url>
+    <url>https://livetv.sx/es/eventinfo/397310324_delf__n_t__cnico_univ/</url>
     <datetime_iso>2026-09-01T23:30:00</datetime_iso>
-    <streams total="1">
-      <stream id="1">
-        <url>https://www.vdocity.com/1/_VkS5FxyQndeYQc1y5UuqmcEc7sRPupEBgAfnv4</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
-        <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063781&amp;lang=es&amp;eid=397310324&amp;lid=3063781&amp;ci=307&amp;si=1</enlace_original>
-      </stream>
-    </streams>
+    <streams total="0" />
   </evento>
-  <evento id="206">
+  <evento id="46">
+    <nombre>2 de Mayo –  Sportivo Luqueño</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Paraguay. Primera División</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>23:30</hora>
+    <url>https://livetv.sx/es/eventinfo/398382815_2_de_mayo_sportivo_luque__o/</url>
+    <datetime_iso>2026-09-01T23:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="47">
     <nombre>2 de Mayo – Sportivo Luqueño</nombre>
     <deporte>Fútbol</deporte>
     <competicion>Paraguay. Primera División</competicion>
@@ -3178,22 +689,156 @@ player/live.php?id=265100&amp;w=700&amp;h=480</url>
     <hora>23:30</hora>
     <url>https://livetv.sx/es/eventinfo/398382815__/</url>
     <datetime_iso>2026-09-01T23:30:00</datetime_iso>
-    <streams total="2">
+    <streams total="0" />
+  </evento>
+  <evento id="48">
+    <nombre>Delfín – Técnico Univ</nombre>
+    <deporte>Fútbol</deporte>
+    <competicion>Ecuador. Serie A</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>23:30</hora>
+    <url>https://livetv.sx/es/eventinfo/397310324__/</url>
+    <datetime_iso>2026-09-01T23:30:00</datetime_iso>
+    <streams total="0" />
+  </evento>
+  <evento id="49">
+    <nombre>Daria Kasátkina (M) –  Paula Badosa Gibert (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>Abierto de EU. Mujeres</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>23:35</hora>
+    <url>https://livetv.sx/es/eventinfo/399041902__/</url>
+    <datetime_iso>2026-09-01T23:35:00</datetime_iso>
+    <streams total="7">
       <stream id="1">
-        <url>https://streamxhd.com/live2.php?stream=dsports</url>
+        <url>https://emb.apl429.me/
+player/live.php?id=265215&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3061888&amp;lang=es&amp;eid=398382815&amp;lid=3061888&amp;ci=442&amp;si=1</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265215&amp;lang=es&amp;eid=399041902&amp;lid=3063154&amp;ci=4202&amp;si=4</enlace_original>
       </stream>
       <stream id="2">
-        <url>https://www.vdocity.com/1/_VkS5FxyQndeYQc1y5UuqmcEcNFcH11WyiqUiZ6</url>
+        <url>https://emb.apl429.me/
+player/live.php?id=265216&amp;w=700&amp;h=480</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
         <idioma_nombre>Francés</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063780&amp;lang=es&amp;eid=398382815&amp;lid=3063780&amp;ci=442&amp;si=1</enlace_original>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265216&amp;lang=es&amp;eid=399041902&amp;lid=3061962&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://emb.apl429.me/
+player/live.php?id=265399&amp;w=700&amp;h=480</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer2.php?t=alieztv&amp;c=265399&amp;lang=es&amp;eid=399041902&amp;lid=3062615&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+      <stream id="4">
+        <url>https://abisnews.com/movistar2.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3017047&amp;lang=es&amp;eid=399041902&amp;lid=3017047&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+      <stream id="5">
+        <url>https://shd247.world/frame020.html</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063559&amp;lang=es&amp;eid=399041902&amp;lid=3063559&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+      <stream id="6">
+        <url>https://abisnews.com/tennis17.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063069&amp;lang=es&amp;eid=399041902&amp;lid=3063069&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+      <stream id="7">
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dPmExtMAzA8mNdcK</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063787&amp;lang=es&amp;eid=399041902&amp;lid=3063787&amp;ci=4202&amp;si=4</enlace_original>
       </stream>
     </streams>
   </evento>
-  <evento id="207">
+  <evento id="50">
+    <nombre>Anastasia Potapova (M) –  Darja Semenistaja (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>Abierto de EU. Mujeres</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>23:40</hora>
+    <url>https://livetv.sx/es/eventinfo/399763235__/</url>
+    <datetime_iso>2026-09-01T23:40:00</datetime_iso>
+    <streams total="2">
+      <stream id="1">
+        <url>https://abisnews.com/tennis5.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063070&amp;lang=es&amp;eid=399763235&amp;lid=3063070&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dAcy2Cbre5hJVdQn</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063796&amp;lang=es&amp;eid=399763235&amp;lid=3063796&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="51">
+    <nombre>Tatjana Maria (M) –  Jelena Ostapenko (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>Abierto de EU. Mujeres</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>23:45</hora>
+    <url>https://livetv.sx/es/eventinfo/399041913__/</url>
+    <datetime_iso>2026-09-01T23:45:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://wikisport.info/court/wik11.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063420&amp;lang=es&amp;eid=399041913&amp;lid=3063420&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://abisnews.com/tennis11.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063074&amp;lang=es&amp;eid=399041913&amp;lid=3063074&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb6BTaYwComCMPxyKBWy</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063799&amp;lang=es&amp;eid=399041913&amp;lid=3063799&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="52">
+    <nombre>Daria Vidmanova (M) –  Jessica Bouzas Maneiro (M)</nombre>
+    <deporte>Tenis</deporte>
+    <competicion>Abierto de EU. Mujeres</competicion>
+    <fecha>1 de septiembre</fecha>
+    <hora>23:50</hora>
+    <url>https://livetv.sx/es/eventinfo/399041879__/</url>
+    <datetime_iso>2026-09-01T23:50:00</datetime_iso>
+    <streams total="3">
+      <stream id="1">
+        <url>https://wikisport.info/court/wik7.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/7.png</idioma>
+        <idioma_nombre>Francés</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063167&amp;lang=es&amp;eid=399041879&amp;lid=3063167&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://abisnews.com/tennis7.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063072&amp;lang=es&amp;eid=399041879&amp;lid=3063072&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+      <stream id="3">
+        <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dB7jPxnFDfne7UfV</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063798&amp;lang=es&amp;eid=399041879&amp;lid=3063798&amp;ci=4202&amp;si=4</enlace_original>
+      </stream>
+    </streams>
+  </evento>
+  <evento id="53">
     <nombre>Juan Manuel Cerundolo – Arthur Gea</nombre>
     <deporte>Tenis</deporte>
     <competicion>Abierto de EU. Masculinos</competicion>
@@ -3203,16 +848,16 @@ player/live.php?id=265100&amp;w=700&amp;h=480</url>
     <datetime_iso>2026-09-01T23:50:00</datetime_iso>
     <streams total="3">
       <stream id="1">
-        <url>https://abisnews.com/tennis6.php</url>
-        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
-        <idioma_nombre>Francés (Francia)</idioma_nombre>
-        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063071&amp;lang=es&amp;eid=399651181&amp;lid=3063071&amp;ci=278&amp;si=4</enlace_original>
-      </stream>
-      <stream id="2">
         <url>https://www.vdocity.com/1/_2UbEamZvh72YBZXetb66dAsMD5h3vsjyJZ3B</url>
         <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
         <idioma_nombre>Francés (Francia)</idioma_nombre>
         <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063801&amp;lang=es&amp;eid=399651181&amp;lid=3063801&amp;ci=278&amp;si=4</enlace_original>
+      </stream>
+      <stream id="2">
+        <url>https://abisnews.com/tennis6.php</url>
+        <idioma>https://cdn.livetv860.me/img/linkflag/2.png</idioma>
+        <idioma_nombre>Francés (Francia)</idioma_nombre>
+        <enlace_original>https://livetv.sx/webplayer.php?t=ifr&amp;c=3063071&amp;lang=es&amp;eid=399651181&amp;lid=3063071&amp;ci=278&amp;si=4</enlace_original>
       </stream>
       <stream id="3">
         <url>https://wikisport.info/court/wik6.php</url>
