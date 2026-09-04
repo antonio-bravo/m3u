@@ -18,6 +18,16 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    services:
+      kubo:
+        image: ipfs/kubo:latest
+        ports:
+          - 8080:8080
+        options: >-
+          --health-cmd "ipfs id"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 12
 
     steps:
       - name: Checkout repositorio
@@ -39,6 +49,8 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: Run update script
+        env:
+          IPFS_GATEWAY_URL: http://127.0.0.1:8080
         run: python script_ipfs_io.py
 
       - name: Verificar y Subir cambios

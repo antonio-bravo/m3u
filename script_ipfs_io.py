@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Script para descargar canales de IPFS y generar un archivo .m3u
-Descarga el JSON desde: https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json
+Descarga el JSON desde una gateway IPFS propia configurada con IPFS_GATEWAY_URL.
+Por defecto usa Kubo local: http://127.0.0.1:8080
 Genera: ipfs_io.m3u
 """
 
@@ -10,27 +11,40 @@ import json
 from datetime import datetime
 import os
 
+IPNS_PATH = "/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json"
+DEFAULT_GATEWAY_URL = "http://127.0.0.1:8080"
+
+
+def construir_url_gateway(gateway_url):
+    """Construir una URL path-style compatible con gateways IPFS."""
+    return f"{gateway_url.rstrip('/')}{IPNS_PATH}"
+
 def descargar_json_ipfs():
     """Descargar el JSON con los hashes de canales desde IPFS"""
-    url = "https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json"
-    
-    try:
-        print(f"Descargando JSON desde IPFS...")
-        response = requests.get(url, timeout=30)
-        response.raise_for_status()
-        
-        data = response.json()
-        print(f"✓ JSON descargado correctamente")
-        print(f"  - Total de canales: {data.get('count', len(data.get('hashes', [])))}")
-        print(f"  - Fecha de generación: {data.get('generated', 'N/A')}")
-        
-        return data
-    except requests.exceptions.RequestException as e:
-        print(f"✗ Error al descargar el JSON: {e}")
-        return None
-    except json.JSONDecodeError as e:
-        print(f"✗ Error al parsear el JSON: {e}")
-        return None
+    gateway_url = os.environ.get("IPFS_GATEWAY_URL", DEFAULT_GATEWAY_URL)
+    fallback_url = os.environ.get("IPFS_FALLBACK_GATEWAY_URL")
+    gateway_urls = [gateway_url]
+    if fallback_url and fallback_url.rstrip("/") != gateway_url.rstrip("/"):
+        gateway_urls.append(fallback_url)
+
+    for current_gateway_url in gateway_urls:
+        url = construir_url_gateway(current_gateway_url)
+        try:
+            print(f"Descargando JSON desde la gateway IPFS: {current_gateway_url}")
+            response = requests.get(url, timeout=30)
+            response.raise_for_status()
+
+            data = response.json()
+            print(f"✓ JSON descargado correctamente")
+            print(f"  - Total de canales: {data.get('count', len(data.get('hashes', [])))}")
+            print(f"  - Fecha de generación: {data.get('generated', 'N/A')}")
+            return data
+        except requests.exceptions.RequestException as e:
+            print(f"✗ Error al descargar el JSON desde {current_gateway_url}: {e}")
+        except json.JSONDecodeError as e:
+            print(f"✗ Error al parsear el JSON desde {current_gateway_url}: {e}")
+
+    return None
 
 def generar_m3u(data):
     """Generar archivo .m3u con los canales del JSON"""
