@@ -1,332 +1,392 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-09-05 08:00</datetime>
-    <league>Serie A</league>
-    <teams>Fiorentina vs Torino</teams>
+    <datetime>2026-09-05 09:30</datetime>
+    <league>Eredivisie</league>
+    <teams>NEC Nijmegen vs Feyenoord Rotterdam</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
         <channel_id>1-1</channel_id>
-        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTEwLnBocA</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VyZWRpdmlzaWUyLnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
         <channel_id>1-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTExLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>1-3</channel_id>
-        <url>https://tarjetarojablog.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTEyLnBocA</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VyZWRpdmlzaWUzLnBocA</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-05 08:30</datetime>
-    <league>Bundesliga</league>
-    <teams>Hoffenheim vs Borussia Dortmund</teams>
+    <datetime>2026-09-05 10:15</datetime>
+    <league>Ligue 1</league>
+    <teams>Lens vs Lorient</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
         <channel_id>2-1</channel_id>
-        <url>https://rojadirectamas.com/en-vivo/hoffenheim-vs-borussia-dortmund-bundesliga-j2.php</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ3VlMTIucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
         <channel_id>2-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ3VlMTMucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-09-05 11:00</datetime>
+    <league>Serie A</league>
+    <teams>Inter Milan vs Napoli</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>3-1</channel_id>
+        <url>https://rojadirectamas.com/en-vivo/inter-milan-vs-napoli-serie-a-j3.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>3-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTEucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>3-3</channel_id>
+        <url>https://tarjetarojablog.pl/en-vivo/inter-milan-vs-napoli-serie-a-j3.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>3-4</channel_id>
+        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTMucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>3-5</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTQucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-09-05 11:30</datetime>
+    <league>LaLiga</league>
+    <teams>Rayo Vallecano vs Racing Santander</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>4-1</channel_id>
+        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RzcG9ydHMucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>4-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTUucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>4-3</channel_id>
+        <url>https://tarjetarojablog.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTYucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>4-4</channel_id>
+        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTcucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>4-5</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTgucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-09-05 11:30</datetime>
+    <league>LaLiga 2</league>
+    <teams>Real Valladolid vs Andorra</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>5-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2h5cGVybW90aW9uMS5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>5-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTIxLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>5-3</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTIyLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>5-4</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTIzLnBocA</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-09-05 11:30</datetime>
+    <league>LaLiga 2</league>
+    <teams>Ceuta vs RC Celta Fortuna</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>6-1</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2h5cGVybW90aW9uMi5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>6-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTI0LnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>6-3</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTI1LnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>6-4</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTI2LnBocA</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-09-05 11:30</datetime>
+    <league>Premier League</league>
+    <teams>Hull City vs Aston Villa</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1 (HD)</channel_name>
+        <channel_id>7-1</channel_id>
+        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXIyLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2 (HD)</channel_name>
+        <channel_id>7-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXIzLnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>7-3</channel_id>
+        <url>https://tarjetarojablog.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI0LnBocA</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-09-05 11:30</datetime>
+    <league>Bundesliga</league>
+    <teams>Schalke 04 vs Bayern Munich</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>8-1</channel_id>
+        <url>https://rojadirectamas.com/en-vivo/schalke-04-vs-bayern-munich-bundesliga-j2.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>8-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2ExLnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>2-3</channel_id>
-        <url>https://tarjetarojablog.pl/en-vivo/hoffenheim-vs-borussia-dortmund-bundesliga-j2.php</url>
+        <channel_id>8-3</channel_id>
+        <url>https://tarjetarojablog.pl/en-vivo/schalke-04-vs-bayern-munich-bundesliga-j2.php</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>2-4</channel_id>
+        <channel_id>8-4</channel_id>
         <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2EzLnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>2-5</channel_id>
+        <channel_id>8-5</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2E0LnBocA</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-05 08:30</datetime>
-    <league>Bundesliga</league>
-    <teams>Bayer Leverkusen vs Unión Berlin</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>3-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2E1LnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>3-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2E2LnBocA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-05 08:30</datetime>
-    <league>Bundesliga</league>
-    <teams>Werder Bremen vs RB Leipzig</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>4-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2E3LnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>4-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2E4LnBocA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-05 08:30</datetime>
-    <league>Bundesliga</league>
-    <teams>Borussia Monchengladbach vs SV Elversberg</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>5-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2E5LnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>5-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2ExMC5waHA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-05 08:30</datetime>
-    <league>Bundesliga</league>
-    <teams>SC Paderborn 07 vs SC Freiburg</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>6-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2ExMS5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>6-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2J1bmRlc2xpZ2ExMi5waHA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-05 09:00</datetime>
-    <league>Formula 1</league>
-    <teams>Gran Premio de Italia, Clasificación</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>7-1</channel_id>
-        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2Zvcm11bGExLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>7-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2YxMS5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>7-3</channel_id>
-        <url>https://tarjetarojablog.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2YxMi5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>7-4</channel_id>
-        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2YxMy5waHA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>7-5</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2YxNC5waHA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-05 09:00</datetime>
-    <league>Premier League</league>
-    <teams>Manchester City vs Coventry City</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>8-1</channel_id>
-        <url>https://rojadirectamas.com/en-vivo/manchester-city-vs-coventry-city-premier-league-j3.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>8-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI1LnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>8-3</channel_id>
-        <url>https://tarjetarojablog.pl/en-vivo/manchester-city-vs-coventry-city-premier-league-j3.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>8-4</channel_id>
-        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI3LnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>8-5</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI4LnBocA</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-05 09:00</datetime>
-    <league>Premier League</league>
-    <teams>Fulham vs Crystal Palace</teams>
+    <datetime>2026-09-05 11:30</datetime>
+    <league>Liga de Argentina</league>
+    <teams>Aldosivi vs Banfield</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
         <channel_id>9-1</channel_id>
-        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXIxMC5waHA</url>
+        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VzcG5wcmVtaXVtLnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
         <channel_id>9-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXIxMS5waHA</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTQucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>9-3</channel_id>
+        <url>https://tarjetarojablog.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTUucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>9-4</channel_id>
+        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTYucGhw</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-05 09:00</datetime>
-    <league>Premier League</league>
-    <teams>Nottingham Forest vs Tottenham Hotspur</teams>
+    <datetime>2026-09-05 12:00</datetime>
+    <league>Primeira Liga</league>
+    <teams>Maritimo vs Benfica</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
         <channel_id>10-1</channel_id>
-        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXIxMy5waHA</url>
+        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RzcG9ydHMyLnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
         <channel_id>10-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXIxNC5waHA</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByaW1laXJhMS5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>10-3</channel_id>
+        <url>https://tarjetarojablog.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByaW1laXJhMi5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>10-4</channel_id>
+        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByaW1laXJhMy5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>10-5</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByaW1laXJhNC5waHA</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-05 09:00</datetime>
-    <league>Premier League</league>
-    <teams>Brighton &amp; Hove Albion vs Leeds United</teams>
+    <datetime>2026-09-05 12:00</datetime>
+    <league>Super Lig Turquía</league>
+    <teams>Fenerbahce vs Besiktas</teams>
     <channels>
       <channel>
-        <channel_name>Canal 1</channel_name>
+        <channel_name>Canal 1 (HD)</channel_name>
         <channel_id>11-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3N1ZGFtZXJpY2FuYTEucGhw</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3N1cGVybGlnMS5waHA</url>
       </channel>
       <channel>
-        <channel_name>Canal 2</channel_name>
+        <channel_name>Canal 2 (HD)</channel_name>
         <channel_id>11-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3N1ZGFtZXJpY2FuYTIucGhw</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3N1cGVybGlnMi5waHA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>11-3</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3N1cGVybGlnMy5waHA</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-05 09:00</datetime>
-    <league>Premier League</league>
-    <teams>Brentford vs Sunderland</teams>
+    <datetime>2026-09-05 12:30</datetime>
+    <league>Liga de Argentina</league>
+    <teams>Gimnasia La Plata vs Tigre</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
         <channel_id>12-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3N1ZGFtZXJpY2FuYTMucGhw</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3RudGFyZ2VudGluYS5waHA</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
         <channel_id>12-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3N1ZGFtZXJpY2FuYTQucGhw</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTEucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>12-3</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTIucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>12-4</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTMucGhw</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-05 09:00</datetime>
-    <league>Championship</league>
-    <teams>Burnley vs Bristol City</teams>
+    <datetime>2026-09-05 13:00</datetime>
+    <league>Eredivisie</league>
+    <teams>Ajax Amsterdam vs PSV Eindhoven</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
         <channel_id>13-1</channel_id>
-        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3N1ZGFtZXJpY2FuYTYucGhw</url>
+        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VzcG4zLnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
         <channel_id>13-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3N1ZGFtZXJpY2FuYTcucGhw</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VyZWRpdmlzaWU0LnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>13-3</channel_id>
+        <url>https://tarjetarojablog.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VyZWRpdmlzaWU1LnBocA</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>13-4</channel_id>
+        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VyZWRpdmlzaWU2LnBocA</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-05 09:15</datetime>
-    <league>LaLiga</league>
-    <teams>Athletic Club vs Atlético Madrid</teams>
+    <datetime>2026-09-05 13:00</datetime>
+    <league>Saudí Pro League</league>
+    <teams>Al Ittihad vs Al Nassr</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
         <channel_id>14-1</channel_id>
-        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RlcG9ydGVzcGx1cy5waHA</url>
+        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2RlcG9ydGVzcGx1czIucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
         <channel_id>14-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTEucGhw</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NhdWRpMS5waHA</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
         <channel_id>14-3</channel_id>
-        <url>https://tarjetarojablog.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTIucGhw</url>
+        <url>https://tarjetarojablog.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NhdWRpMi5waHA</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
         <channel_id>14-4</channel_id>
-        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTMucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>14-5</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTQucGhw</url>
+        <url>https://rojadirectamas.com/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NhdWRpMy5waHA</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-05 09:15</datetime>
-    <league>LaLiga 2</league>
-    <teams>Sporting Gijón vs Girona</teams>
+    <datetime>2026-09-05 13:00</datetime>
+    <league>Liga de Uruguay</league>
+    <teams>Danubio vs Peñarol</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
         <channel_id>15-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2h5cGVybW90aW9uMS5waHA</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VydWd1YXkxLnBocA</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
         <channel_id>15-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTIxLnBocA</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VydWd1YXkyLnBocA</url>
       </channel>
       <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_name>Canal 3</channel_name>
         <channel_id>15-3</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTIyLnBocA</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>15-4</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTIzLnBocA</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VydWd1YXkzLnBocA</url>
       </channel>
     </channels>
   </event>
