@@ -150,6 +150,7 @@ def parsear_partido(item):
 
     extra = item.get("150", {}) or {}
     match_slug = _texto(extra.get("20"))
+    league_slug = _texto(extra.get("21"))
 
     kickoff = None
     if isinstance(fecha_ms, int):
@@ -157,6 +158,13 @@ def parsear_partido(item):
 
     if not (match_id and home and away):
         return None
+
+    if league_slug and match_slug:
+        url = f"{SITE_BASE}/football/{league_slug}-{match_id}/{match_slug}.html?icg=RVM&ilang=en"
+    elif match_slug:
+        url = f"{SITE_BASE}/football/{match_slug}-{match_id}.html?icg=RVM&ilang=en"
+    else:
+        url = f"{FOOTBALL_PAGE}?matchId={match_id}"
 
     return {
         "match_id": match_id,
@@ -166,6 +174,8 @@ def parsear_partido(item):
         "logo": logo,
         "kickoff": kickoff,
         "slug": match_slug,
+        "league_slug": league_slug,
+        "url": url,
     }
 
 
@@ -178,8 +188,7 @@ def generar_m3u(partidos):
         hora = p["kickoff"].strftime("%H:%M") if p["kickoff"] else "--:--"
         titulo = f"[{hora}] {p['liga']} - {p['home']} vs {p['away']}"
         logo = p["logo"] or ""
-        # Enlace real por partido no verificable (SPA tras Cloudflare); se enlaza a la pagina de futbol.
-        url = f"{FOOTBALL_PAGE}?matchId={p['match_id']}"
+        url = p.get("url") or f"{FOOTBALL_PAGE}?matchId={p['match_id']}"
         lineas.append(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{p["liga"]}",{titulo}')
         lineas.append(url)
 
