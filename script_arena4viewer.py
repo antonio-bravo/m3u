@@ -169,7 +169,7 @@ def generar_m3u(channels, events_map, server_used):
                 if not events:
                     # Si por alguna razón el canal existe pero no tiene agenda hoy
                     f.write(f'#EXTINF:-1 tvg-id="AV{num}" tvg-logo="" group-title="VACIO",AV{num} \n')
-                    f.write(f"acestream://{ace_id}\n\n")
+                    f.write(f"http://127.0.0.1:6878/ace/getstream?id={ace_id}\n\n")
                 else:
                     # Crear una entrada por cada evento detectado en la agenda
                     for ev in events:
@@ -179,7 +179,7 @@ def generar_m3u(channels, events_map, server_used):
                         
                         # Agrupación por SPORT
                         f.write(f'#EXTINF:-1 tvg-id="AV{num}" tvg-logo="" group-title="{ev["sport"]}",{full_name}\n')
-                        f.write(f"acestream://{ace_id}\n\n")
+                        f.write(f"http://127.0.0.1:6878/ace/getstream?id={ace_id}\n\n")
 
         return True
     except Exception as e:
