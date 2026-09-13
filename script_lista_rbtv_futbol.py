@@ -28,7 +28,8 @@ import blackboxprotobuf
 OUTPUT_FILE = "lista_rbtv_futbol.m3u"
 LOG_FILE = "lista_rbtv_futbol.log"
 
-SITE_BASE = os.getenv("RBTV_SITE_BASE", "https://ganzogyz.78vxlpoorkx2kjecut.cfd")
+#SITE_BASE = os.getenv("RBTV_SITE_BASE", "https://ganzogyz.78vxlpoorkx2kjecut.cfd")
+SITE_BASE = os.getenv("RBTV_SITE_BASE", "https://jack27eo.mpgreatestclgczbmiddle.my")
 FOOTBALL_PAGE = f"{SITE_BASE}/football.html"
 
 # Hosts de la API de datos (sin sesion/cuenta). Se prueban en orden.
