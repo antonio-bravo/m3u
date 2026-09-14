@@ -1,122 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-09-14 17:35</datetime>
-    <league>MLB</league>
-    <teams>Kansas City Royals vs. Boston Red Sox</teams>
-    <channels>
-      <channel>
-        <channel_name>AWAY FEED</channel_name>
-        <channel_id>2-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oWURWaXB1QkpjMU5UZ0RoOWpXUFU2</url>
-      </channel>
-      <channel>
-        <channel_name>HOME FEED</channel_name>
-        <channel_id>2-2</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oWURWaXVqTmI0ZDQ0NkFYNUg0bmNq</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-14 19:00</datetime>
-    <league>NASCAR</league>
-    <teams>NASCAR Cup Series Race: Enjoy Illinois 300</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>3-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oV3BOMVdvRmpVdlFKalBGSnpDdGtM</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-14 20:10</datetime>
-    <league>MLB</league>
-    <teams>Texas Rangers vs. Arizona Diamondbacks</teams>
-    <channels>
-      <channel>
-        <channel_name>AWAY FEED</channel_name>
-        <channel_id>4-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrTHROTDJaVGtnSGZ2R21aWmRu</url>
-      </channel>
-      <channel>
-        <channel_name>HOME FEED</channel_name>
-        <channel_id>4-2</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrTHlDWEsyNVNHaGNrQ0s3eG5S</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-14 20:25</datetime>
-    <league>NFL</league>
-    <teams>NFL RedZone</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>5-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0VycWhqZUhXNnRaUHpOM2lMYnF2</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-14 20:25</datetime>
-    <league>NFL</league>
-    <teams>Arizona Cardinals vs. Los Angeles Chargers</teams>
-    <channels>
-      <channel>
-        <channel_name>INGLÉS</channel_name>
-        <channel_id>6-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrR1pBREdoVUZwcFd4R1VXb3Va</url>
-      </channel>
-      <channel>
-        <channel_name>ESPAÑOL</channel_name>
-        <channel_id>6-2</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrR2R6UVpBNXdSRVRuQzI1RDRD</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-14 20:25</datetime>
-    <league>NFL</league>
-    <teams>Green Bay Packers vs. Minnesota Vikings</teams>
-    <channels>
-      <channel>
-        <channel_name>INGLÉS</channel_name>
-        <channel_id>7-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrR2lwYnFjaGQxZVFjN1pkY0RX</url>
-      </channel>
-      <channel>
-        <channel_name>ESPAÑOL</channel_name>
-        <channel_id>7-2</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrR29lbzg1S0pjNE1TMzdDMU45</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-14 20:25</datetime>
-    <league>NFL</league>
-    <teams>Miami Dolphins vs. Las Vegas Raiders</teams>
-    <channels>
-      <channel>
-        <channel_name>INGLÉS</channel_name>
-        <channel_id>8-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrR3RVelFYdnpDVUpGeGVrUVdu</url>
-      </channel>
-      <channel>
-        <channel_name>ESPAÑOL</channel_name>
-        <channel_id>8-2</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrR3lLQmd6WWZudEY1dENKb2ZS</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-09-14 21:05</datetime>
     <league>Colombia Primera A</league>
     <teams>Atletico Nacional - Aguilas Doradas</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>9-1</channel_id>
+        <channel_id>2-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzl6VnUyQk1zd1BpR0ZZY2VyeTlT</url>
       </channel>
     </channels>
@@ -128,7 +19,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>10-1</channel_id>
+        <channel_id>3-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzl6VnlyTmVMWjVKZ0NOWUNSTko1</url>
       </channel>
     </channels>
@@ -140,12 +31,12 @@
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>11-1</channel_id>
+        <channel_id>4-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0JjZ211ekVlRXc3cU1aclQ4MXlv</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>11-2</channel_id>
+        <channel_id>4-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0JjZ3JrQlg2cmNpRkpQbXpnUjhT</url>
       </channel>
     </channels>
@@ -157,7 +48,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>12-1</channel_id>
+        <channel_id>5-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0JjZ3dhTm9aVUpKZkZEaFlFcEg1</url>
       </channel>
     </channels>
@@ -169,7 +60,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>13-1</channel_id>
+        <channel_id>6-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0JjY1Noc1VuRlNHTkNickE1R0Zh</url>
       </channel>
     </channels>
@@ -181,7 +72,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>14-1</channel_id>
+        <channel_id>7-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0JjY1hZNG1FczdybjlSbWhkZlF0</url>
       </channel>
     </channels>
@@ -193,7 +84,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>15-1</channel_id>
+        <channel_id>8-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0JjY2NORzNoVW9UQzZGaEZDNFpY</url>
       </channel>
     </channels>
@@ -205,7 +96,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>16-1</channel_id>
+        <channel_id>9-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0JjY24yZWNjaUFlMXl1WUxKcnJv</url>
       </channel>
     </channels>
@@ -217,7 +108,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>17-1</channel_id>
+        <channel_id>10-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0JjY3JycXU1S3JFUnZqVHNzRzFT</url>
       </channel>
     </channels>
@@ -229,12 +120,12 @@
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>18-1</channel_id>
+        <channel_id>11-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0RFb0tiZ01ZWXlmd0pkNXhMSzZj</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>18-2</channel_id>
+        <channel_id>11-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0RFb1FSc2UxQWZHTUZUMVZ0aUZG</url>
       </channel>
     </channels>
@@ -246,7 +137,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>19-1</channel_id>
+        <channel_id>12-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0RFb1ZHNHZUbkxybUNHdzNUN1B0</url>
       </channel>
     </channels>
@@ -258,7 +149,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>20-1</channel_id>
+        <channel_id>13-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0RFakV0OVQ0UVhiaHo4ckh4a3B5</url>
       </channel>
     </channels>
@@ -270,7 +161,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>21-1</channel_id>
+        <channel_id>14-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0RFaktpTGpYMkRDN3Z4bXFYOXlj</url>
       </channel>
     </channels>
@@ -282,7 +173,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>22-1</channel_id>
+        <channel_id>15-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0RFalFZWTF5ZHRuWHNuaFA1WjhG</url>
       </channel>
     </channels>
@@ -294,7 +185,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>23-1</channel_id>
+        <channel_id>16-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0VydXg3Wmt1VWhwVENXRjE3MU40</url>
       </channel>
     </channels>
@@ -306,7 +197,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>24-1</channel_id>
+        <channel_id>17-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0VydjJ3bTNONlBRczlMQVlmUVdo</url>
       </channel>
     </channels>
@@ -318,7 +209,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>25-1</channel_id>
+        <channel_id>18-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0VydjdteEtwaTUxSDZBNjZEb2ZM</url>
       </channel>
     </channels>
@@ -330,7 +221,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>26-1</channel_id>
+        <channel_id>19-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0VydkNjOWNIS2tiaDJ6MWRuQ295</url>
       </channel>
     </channels>
@@ -342,7 +233,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>27-1</channel_id>
+        <channel_id>20-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vXzJVYzNTYlVjdUNvNUN0QlBNRUFyeERodFpUamhkSHRoeHhTOA==</url>
       </channel>
     </channels>
@@ -354,7 +245,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>28-1</channel_id>
+        <channel_id>21-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vXzJVYzNTYlVjdUNvNUN0QlBNRUIyY2NHb25wdlhXd2pvNWtpVQ==</url>
       </channel>
     </channels>
@@ -366,7 +257,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>29-1</channel_id>
+        <channel_id>22-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vXzJVYzNTYlVjdUNvNUN0QlBNRTZoUVZXd29MNTRNeWpXMnp6Qg==</url>
       </channel>
     </channels>
@@ -378,12 +269,12 @@
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>30-1</channel_id>
+        <channel_id>23-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vXzJVYzNTYlVjdUNvNUN0QlBNRTZuRWdvUVIxZlVKb2YzcHFRdA==</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>30-2</channel_id>
+        <channel_id>23-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vXzJVYzNTYlVjdUNvNUN0QlBNRTZzNHQ1czJoRnRGZGFiUEVaWA==</url>
       </channel>
     </channels>
@@ -395,7 +286,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>31-1</channel_id>
+        <channel_id>24-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vXzJVYzNTYlVjdUNvNUN0QlBNRTZ3dTVOS2VOckpDVFc4d2RpQQ==</url>
       </channel>
     </channels>
@@ -407,7 +298,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>32-1</channel_id>
+        <channel_id>25-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oWUJzZ0NHZFhHY1FueWhZdzZlMWpX</url>
       </channel>
     </channels>
@@ -419,12 +310,12 @@
     <channels>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>33-1</channel_id>
+        <channel_id>26-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oWUJzYnM0V21RY3V3V1lhdm9iRzF4</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL ALT</channel_name>
-        <channel_id>33-2</channel_id>
+        <channel_id>26-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oWUJzYnd0aTNzRWJYdlZRck05ZkFi</url>
       </channel>
     </channels>
@@ -436,12 +327,12 @@
     <channels>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>34-1</channel_id>
+        <channel_id>27-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oWUJzY0NQSHVGNWVLQUt0Y3lxQzVi</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL ALT</channel_name>
-        <channel_id>34-2</channel_id>
+        <channel_id>27-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oWUJzY0hEVkJoaEt1YUdpWVhQYkVF</url>
       </channel>
     </channels>
@@ -453,7 +344,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>35-1</channel_id>
+        <channel_id>28-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oWUJzY04zZ1VBSzFWekRZVTR3ek5z</url>
       </channel>
     </channels>
@@ -465,7 +356,7 @@
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>36-1</channel_id>
+        <channel_id>29-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oWURWbnBuV3ZkWTh3VmJTNjlRaHp4</url>
       </channel>
     </channels>
