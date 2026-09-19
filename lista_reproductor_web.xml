@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-09-19 14:45</datetime>
+    <datetime>2026-09-19 17:00</datetime>
     <league>Liga de Argentina</league>
-    <teams>Unión (Santa Fe) vs Independiente</teams>
+    <teams>River Plate vs Huracán</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
@@ -28,209 +28,33 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 15:00</datetime>
-    <league>Brasileirao</league>
-    <teams>Mirassol vs Botafogo</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>2-1</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDMucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>2-2</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDQucGhw</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 15:30</datetime>
-    <league>Liga de Peru</league>
-    <teams>Sporting Cristal vs Atlético Grau</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>3-1</channel_id>
-        <url>https://rojadirectauno.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2ExbWF4LnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>3-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUxLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>3-3</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUyLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>3-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUzLnBocA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 16:05</datetime>
-    <league>Liga de Colombia</league>
-    <teams>Alianza FC vs Independiente Santa Fe</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>4-1</channel_id>
-        <url>https://rojadirectauno.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3dpbnNwb3J0c3BsdXMucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>4-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMS5waHA=</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>4-3</channel_id>
-        <url>https://tarjetarojatv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMi5waHA=</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>4-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMy5waHA=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 16:30</datetime>
-    <league>Liga de Uruguay</league>
-    <teams>Deportivo Maldonado vs Cerro Largo</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>5-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VydWd1YXk2LnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>5-2</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VydWd1YXkyLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>5-3</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VydWd1YXk3LnBocA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 16:30</datetime>
-    <league>Liga de Ecuador</league>
-    <teams>Guayaquil City FC vs Leones</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>6-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VjdWFkb3IxLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>6-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VjdWFkb3IyLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>6-3</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VjdWFkb3IzLnBocA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 16:30</datetime>
-    <league>Liga de Paraguay</league>
-    <teams>Cerro Porteño vs Rubio Ñú</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>7-1</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BhcmFndWF5My5waHA=</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>7-2</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BhcmFndWF5NC5waHA=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 16:30</datetime>
-    <league>Brasileirao</league>
-    <teams>Remo vs Santos FC</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>8-1</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDUucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>8-2</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDYucGhw</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 17:00</datetime>
-    <league>Liga de Argentina</league>
-    <teams>River Plate vs Huracán</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>9-1</channel_id>
-        <url>https://rojadirectauno.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VzcG5wcmVtaXVtLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>9-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTQucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>9-3</channel_id>
-        <url>https://tarjetarojatv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTUucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>9-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTYucGhw</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-09-19 18:00</datetime>
     <league>Liga MX</league>
     <teams>Atlas vs Pumas UNAM</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>10-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/capo-deportes.php</url>
+        <channel_id>2-1</channel_id>
+        <url>https://rojadirectauno.pl/en-vivo/capo-deportes.php</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>10-2</channel_id>
+        <channel_id>2-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDEucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>10-3</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDIucGhw</url>
+        <channel_id>2-3</channel_id>
+        <url>https://tarjetarojatv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDIucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>10-4</channel_id>
+        <channel_id>2-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDMucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>10-5</channel_id>
+        <channel_id>2-5</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDQucGhw</url>
       </channel>
     </channels>
@@ -242,27 +66,27 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>11-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/capo-deportes-2.php</url>
+        <channel_id>3-1</channel_id>
+        <url>https://rojadirectauno.pl/en-vivo/capo-deportes-2.php</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>11-2</channel_id>
+        <channel_id>3-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDUucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>11-3</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDYucGhw</url>
+        <channel_id>3-3</channel_id>
+        <url>https://tarjetarojatv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDYucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>11-4</channel_id>
+        <channel_id>3-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDcucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>11-5</channel_id>
+        <channel_id>3-5</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDgucGhw</url>
       </channel>
     </channels>
@@ -274,22 +98,22 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>12-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2ExbWF4LnBocA==</url>
+        <channel_id>4-1</channel_id>
+        <url>https://rojadirectauno.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2ExbWF4LnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>12-2</channel_id>
+        <channel_id>4-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUxLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>12-3</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUyLnBocA==</url>
+        <channel_id>4-3</channel_id>
+        <url>https://tarjetarojatv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUyLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>12-4</channel_id>
+        <channel_id>4-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUzLnBocA==</url>
       </channel>
     </channels>
@@ -301,22 +125,22 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>13-1</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3dpbnNwb3J0c3BsdXMucGhw</url>
+        <channel_id>5-1</channel_id>
+        <url>https://rojadirectauno.pl/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3dpbnNwb3J0c3BsdXMucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>13-2</channel_id>
+        <channel_id>5-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMS5waHA=</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>13-3</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMi5waHA=</url>
+        <channel_id>5-3</channel_id>
+        <url>https://tarjetarojatv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMi5waHA=</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>13-4</channel_id>
+        <channel_id>5-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMy5waHA=</url>
       </channel>
     </channels>
@@ -328,12 +152,12 @@
     <channels>
       <channel>
         <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>14-1</channel_id>
+        <channel_id>6-1</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDcucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>14-2</channel_id>
+        <channel_id>6-2</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDgucGhw</url>
       </channel>
     </channels>
@@ -345,12 +169,12 @@
     <channels>
       <channel>
         <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>15-1</channel_id>
+        <channel_id>7-1</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczEucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>15-2</channel_id>
+        <channel_id>7-2</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczIucGhw</url>
       </channel>
     </channels>
@@ -362,12 +186,12 @@
     <channels>
       <channel>
         <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>16-1</channel_id>
+        <channel_id>8-1</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczMucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>16-2</channel_id>
+        <channel_id>8-2</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczQucGhw</url>
       </channel>
     </channels>
@@ -379,12 +203,12 @@
     <channels>
       <channel>
         <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>17-1</channel_id>
+        <channel_id>9-1</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczUucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>17-2</channel_id>
+        <channel_id>9-2</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczYucGhw</url>
       </channel>
     </channels>
@@ -396,17 +220,17 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>18-1</channel_id>
+        <channel_id>10-1</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VjdWFkb3IxLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>18-2</channel_id>
+        <channel_id>10-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VjdWFkb3IyLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>18-3</channel_id>
+        <channel_id>10-3</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2VjdWFkb3IzLnBocA==</url>
       </channel>
     </channels>
@@ -418,22 +242,22 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>19-1</channel_id>
+        <channel_id>11-1</channel_id>
         <url>https://pirlotv.la/en-vivo/capo-deportes-11.php</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>19-2</channel_id>
+        <channel_id>11-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDkucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>19-3</channel_id>
+        <channel_id>11-3</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDEwLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>19-4</channel_id>
+        <channel_id>11-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDExLnBocA==</url>
       </channel>
     </channels>
@@ -445,22 +269,22 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>20-1</channel_id>
+        <channel_id>12-1</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3RudGFyZ2VudGluYS5waHA=</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>20-2</channel_id>
+        <channel_id>12-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTEucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>20-3</channel_id>
+        <channel_id>12-3</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTIucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>20-4</channel_id>
+        <channel_id>12-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2FyZ2VudGluYTMucGhw</url>
       </channel>
     </channels>
@@ -472,12 +296,12 @@
     <channels>
       <channel>
         <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>21-1</channel_id>
+        <channel_id>13-1</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczcucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>21-2</channel_id>
+        <channel_id>13-2</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczgucGhw</url>
       </channel>
     </channels>
@@ -489,12 +313,12 @@
     <channels>
       <channel>
         <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>22-1</channel_id>
+        <channel_id>14-1</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczkucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>22-2</channel_id>
+        <channel_id>14-2</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczEwLnBocA==</url>
       </channel>
     </channels>
@@ -506,27 +330,27 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>23-1</channel_id>
+        <channel_id>15-1</channel_id>
         <url>https://pirlotv.la/en-vivo/capo-deportes-2.php</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>23-2</channel_id>
+        <channel_id>15-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VmYzEucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>23-3</channel_id>
+        <channel_id>15-3</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VmYzIucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>23-4</channel_id>
+        <channel_id>15-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VmYzMucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>23-5</channel_id>
+        <channel_id>15-5</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3VmYzQucGhw</url>
       </channel>
     </channels>
@@ -538,27 +362,27 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>24-1</channel_id>
+        <channel_id>16-1</channel_id>
         <url>https://pirlotv.la/en-vivo/capo-deportes.php</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>24-2</channel_id>
+        <channel_id>16-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDkucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>24-3</channel_id>
+        <channel_id>16-3</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDEwLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>24-4</channel_id>
+        <channel_id>16-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDExLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>24-5</channel_id>
+        <channel_id>16-5</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDEyLnBocA==</url>
       </channel>
     </channels>
@@ -570,22 +394,22 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>25-1</channel_id>
+        <channel_id>17-1</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3dpbnNwb3J0c3BsdXMucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>25-2</channel_id>
+        <channel_id>17-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMS5waHA=</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>25-3</channel_id>
+        <channel_id>17-3</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMi5waHA=</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>25-4</channel_id>
+        <channel_id>17-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhMy5waHA=</url>
       </channel>
     </channels>
@@ -597,22 +421,22 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>26-1</channel_id>
+        <channel_id>18-1</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2ExbWF4LnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>26-2</channel_id>
+        <channel_id>18-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUxLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>26-3</channel_id>
+        <channel_id>18-3</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUyLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>26-4</channel_id>
+        <channel_id>18-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BlcnUzLnBocA==</url>
       </channel>
     </channels>
@@ -624,12 +448,12 @@
     <channels>
       <channel>
         <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>27-1</channel_id>
+        <channel_id>19-1</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczExLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>27-2</channel_id>
+        <channel_id>19-2</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczEyLnBocA==</url>
       </channel>
     </channels>
@@ -641,12 +465,12 @@
     <channels>
       <channel>
         <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>28-1</channel_id>
+        <channel_id>20-1</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczEzLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>28-2</channel_id>
+        <channel_id>20-2</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczE0LnBocA==</url>
       </channel>
     </channels>
@@ -658,27 +482,27 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>29-1</channel_id>
+        <channel_id>21-1</channel_id>
         <url>https://pirlotv.la/en-vivo/capo-deportes.php</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>29-2</channel_id>
+        <channel_id>21-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDEucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>29-3</channel_id>
+        <channel_id>21-3</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDIucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>29-4</channel_id>
+        <channel_id>21-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDMucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>29-5</channel_id>
+        <channel_id>21-5</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDQucGhw</url>
       </channel>
     </channels>
