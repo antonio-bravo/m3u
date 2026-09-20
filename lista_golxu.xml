@@ -1,1116 +1,765 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-09-19 18:10</datetime>
-    <league>MLB</league>
-    <teams>Detroit Tigers vs. Chicago White Sox</teams>
-    <channels>
-      <channel>
-        <channel_name>AWAY FEED</channel_name>
-        <channel_id>2-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oWUY3cWQ1VEd0QVRvNENuekdiZVcx</url>
-      </channel>
-      <channel>
-        <channel_name>HOME FEED</channel_name>
-        <channel_id>2-2</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oV2pWalRVWWFXU2RBRFBCMml6elJq</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 19:00</datetime>
-    <league>CFL</league>
-    <teams>Edmonton Elks vs. Toronto Argonauts</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>3-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX1ZraHA5VXZpWGJCb2tESG9oV25qdGRublVrOWRQMXJURGh5NnlM</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 19:00</datetime>
-    <league>Supercopa ACB</league>
-    <teams>Valencia Basket - Barcelona</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>4-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwaFo4SFlMRGdzMXJrQ0E1ZGh5cWRF</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 19:30</datetime>
-    <league>Brasileiro</league>
-    <teams>Sao Paulo W - Flamengo W</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>5-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwaGFrS3ZVQmNwWm1kZXFwaTFWY2I1</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 19:30</datetime>
-    <league>Liga Portugal</league>
-    <teams>Sporting CP - Arouca</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>6-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwaGFrTEF4bVVDUXBRdGdKVWVCOVc1</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 19:30</datetime>
-    <league>Venezuela</league>
-    <teams>Rayo Zuliano - Monagas</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>7-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwaGFrTEZueGtmMlcxSmQ4UUJqWWVp</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 19:45</datetime>
-    <league>Argentina Liga Profesional</league>
-    <teams>Union de Santa Fe - Independiente</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>8-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwaGFrTExkQTM3ZUJiaVp4S2pId29N</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 20:00</datetime>
-    <league>Brazil Serie A</league>
-    <teams>Mirassol - Botafogo RJ</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>9-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzU4QUZ5NzFCMUc1VUtWeWNTWGtq</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 20:00</datetime>
-    <league>Venezuela</league>
-    <teams>Universidad Central - Carabobo</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>10-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrTHROTDJaVGtob2IzU24yM2dt</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 20:05</datetime>
-    <league>MLB</league>
-    <teams>Milwaukee Brewers vs. Baltimore Orioles</teams>
-    <channels>
-      <channel>
-        <channel_name>AWAY FEED</channel_name>
-        <channel_id>11-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrR1pBREdoVUZyTFM1U1V5SHhY</url>
-      </channel>
-      <channel>
-        <channel_name>HOME FEED</channel_name>
-        <channel_id>11-2</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrR2R6UVpBNXdTa051TjJYaDdB</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 20:10</datetime>
-    <league>MLB</league>
-    <teams>Boston Red Sox vs. Tampa Bay Rays</teams>
-    <channels>
-      <channel>
-        <channel_name>AWAY FEED</channel_name>
-        <channel_id>12-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrR2lwYnFjaGQzQUtqSGE2Uml0</url>
-      </channel>
-      <channel>
-        <channel_name>HOME FEED</channel_name>
-        <channel_id>12-2</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzZrR29lbzg1S0pkYUdaRDdlcHNY</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 20:30</datetime>
-    <league>Peru</league>
-    <teams>Sporting Cristal - Grau</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>13-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzhOUEJnNmc0UHl6ckt4YlhqekR5</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 21:00</datetime>
-    <league>MMA</league>
-    <teams>UFC 331: Van vs. Pantoja 2</teams>
-    <channels>
-      <channel>
-        <channel_name>EARLY PRELIMS</channel_name>
-        <channel_id>14-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzhOUEdXSHhYMWZiR0duWDVKUE5j</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 21:00</datetime>
-    <league>Brazil Copa Paulista</league>
-    <teams>Noroeste - Primavera</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>15-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzhOUFNBZ1hTRjJuNkFTTkFSWDh4</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 21:00</datetime>
-    <league>Canada</league>
-    <teams>Cavalry - Forge</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>16-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzhOUFd6c290cmlOVzdHSGh5dkhi</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 21:00</datetime>
-    <league>El Salvador</league>
-    <teams>Cacahuatique - FAS</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>17-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzhOUGJxNTZNVVB4djQ2REZZS1NF</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 21:00</datetime>
-    <league>Guatemala</league>
-    <teams>Aurora F.C. - Marquense</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>18-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzl6YTRadVlwaFhRUlJ5cUwxMzRL</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 21:00</datetime>
-    <league>NSL</league>
-    <teams>Vancouver Rise W - Montreal Roses W</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>19-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzl6YTlRNnFIS0N6cU5va3NaU0N4</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 21:05</datetime>
-    <league>Colombia Primera A</league>
-    <teams>Alianza - Independiente Santa Fe</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>20-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzl6YUVFSjdqdnRiRktkZ1I3cU5H</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 21:30</datetime>
-    <league>Brazil Serie A</league>
-    <teams>Remo - Santos</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>21-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzl6YUs0VlFDWWFCZkdUYnhnRVd1</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 21:30</datetime>
-    <league>Copa Bolivia</league>
-    <teams>Aurora - Universitario de Vinto</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>22-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzl6VnUyQk1zd1BqbkFmZzg1NWUz</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 21:30</datetime>
-    <league>Honduras</league>
-    <teams>Genesis - Olancho</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>23-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzl6VzRnWnZvQWt2YzRLWERDRFFR</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 21:30</datetime>
-    <league>Liga AUF Uruguaya</league>
-    <teams>Maldonado - Cerro Largo</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>24-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzl6VzlXbURGblNYMjE5U2trY1oz</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 21:30</datetime>
-    <league>Paraguay</league>
-    <teams>Cerro Porteno - Rubio Nu</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>25-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzl6V0VMeFZpUTg3Und5TkpLMWhn</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 22:00</datetime>
-    <league>Argentina Liga Profesional</league>
-    <teams>River Plate - Huracan</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>26-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0RFb1ZHNHZUbkx0SDdRNzN1YlNw</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 22:00</datetime>
-    <league>Brazil Copa Paulista</league>
-    <teams>Sao Jose EC - Comercial</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>27-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0RFb2E2R0N2UTJVaDRFMmJUemJU</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 22:00</datetime>
-    <league>Venezuela</league>
-    <teams>Puerto Cabello - Portuguesa</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>28-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0RFakEzeEFibnIyb3hTNmtycWli</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 22:40</datetime>
+    <datetime>2026-09-20 22:40</datetime>
     <league>MLB</league>
     <teams>Chicago Cubs vs. Cincinnati Reds</teams>
     <channels>
       <channel>
         <channel_name>AWAY FEED</channel_name>
-        <channel_id>29-1</channel_id>
+        <channel_id>2-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0VydXg3Wmt1VWhxeTdkUjFaVlFL</url>
       </channel>
       <channel>
         <channel_name>HOME FEED</channel_name>
-        <channel_id>29-2</channel_id>
+        <channel_id>2-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0VydjJ3bTNONlBTUDRUTFo3dFl4</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 22:40</datetime>
+    <datetime>2026-09-20 22:40</datetime>
     <league>MLB</league>
     <teams>Kansas City Royals vs. Pittsburgh Pirates</teams>
     <channels>
       <channel>
         <channel_name>AWAY FEED</channel_name>
-        <channel_id>30-1</channel_id>
+        <channel_id>3-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0VydjdteEtwaTUybzFIRzZnSGlH</url>
       </channel>
       <channel>
         <channel_name>HOME FEED</channel_name>
-        <channel_id>30-2</channel_id>
+        <channel_id>3-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0VydkNjOWNIS2tkQ3g3QmVFZ3J1</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:00</datetime>
+    <datetime>2026-09-20 23:00</datetime>
     <league>MMA</league>
     <teams>UFC 331: Van vs. Pantoja 2</teams>
     <channels>
       <channel>
         <channel_name>PRELIMS ENGLISH</channel_name>
-        <channel_id>31-1</channel_id>
+        <channel_id>4-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzhOUEdXSHhYMWZiR0duZGNhNnF5</url>
       </channel>
       <channel>
         <channel_name>PRELIMS SPANISH</channel_name>
-        <channel_id>31-2</channel_id>
+        <channel_id>4-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzhOUE1MVkV5ZE1CZ0RjWkE4Vnpj</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:00</datetime>
+    <datetime>2026-09-20 23:00</datetime>
     <league>CFL</league>
     <teams>Ottawa Redblacks vs. Calgary Stampeders</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>32-1</channel_id>
+        <channel_id>5-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZ0VycjM0UlJMWmN4WmdvMlNKalJ0</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:00</datetime>
+    <datetime>2026-09-20 23:00</datetime>
     <league>Costa Rica Primera Division</league>
     <teams>Puntarenas FC - Escorpiones</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>33-1</channel_id>
+        <channel_id>6-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSzVSTkFrSDJ1RGRXZ3lCdXk1TjZw</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:00</datetime>
+    <datetime>2026-09-20 23:00</datetime>
     <league>El Salvador</league>
     <teams>Inter Santa Tecla - AD Isidro Metapan</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>34-1</channel_id>
+        <channel_id>7-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSzVSSGZzbWk3em1VUHZhNGF2OVlR</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:00</datetime>
+    <datetime>2026-09-20 23:00</datetime>
     <league>Mexico</league>
     <teams>Atlas - UNAM Pumas</teams>
     <channels>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>35-1</channel_id>
+        <channel_id>8-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSzVSSGtoeHphY1Q0b3NQejhVWWgz</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL ALT</channel_name>
-        <channel_id>35-2</channel_id>
+        <channel_id>8-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSzVSSHFZQUgzRThmRHBEdWcyd3Fn</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:00</datetime>
+    <datetime>2026-09-20 23:00</datetime>
     <league>Mexico</league>
     <teams>Atletico San Luis - Necaxa</teams>
     <channels>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>36-1</channel_id>
+        <channel_id>9-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSzVSSHZOTVpWcXBGZG0zcURiTHpL</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL ALT</channel_name>
-        <channel_id>36-2</channel_id>
+        <channel_id>9-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSzVSSjFDWXF4VFZyM2hza205azh4</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:00</datetime>
+    <datetime>2026-09-20 23:00</datetime>
     <league>Peru</league>
     <teams>Deportivo Garcilaso - Universitario de Deportes</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>37-1</channel_id>
+        <channel_id>10-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSFpvQnZScVMzTUxvY3E1aW03OWt1</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:05</datetime>
+    <datetime>2026-09-20 23:05</datetime>
     <league>MLB</league>
     <teams>Toronto Blue Jays vs. Texas Rangers</teams>
     <channels>
       <channel>
         <channel_name>AWAY FEED</channel_name>
-        <channel_id>38-1</channel_id>
+        <channel_id>11-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGJSSll3aXFRSDR4OGl4c29zcjJN</url>
       </channel>
       <channel>
         <channel_name>HOME FEED</channel_name>
-        <channel_id>38-2</channel_id>
+        <channel_id>11-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGJSSmRtdjdydGtZWWZub01TRkF6</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:06</datetime>
+    <datetime>2026-09-20 23:06</datetime>
     <league>Mexico</league>
     <teams>Club Tijuana W - Guadalajara Chivas W</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>39-1</channel_id>
+        <channel_id>12-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGJSSmljN1FLV1M4eGNjaXR6ZUtk</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:10</datetime>
+    <datetime>2026-09-20 23:10</datetime>
     <league>MLB</league>
     <teams>Atlanta Braves vs. Houston Astros</teams>
     <channels>
       <channel>
         <channel_name>AWAY FEED</channel_name>
-        <channel_id>40-1</channel_id>
+        <channel_id>13-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGJSSm9TSmduODdqTlpTZVNaM1VH</url>
       </channel>
       <channel>
         <channel_name>HOME FEED</channel_name>
-        <channel_id>40-2</channel_id>
+        <channel_id>13-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGJSRUpab016dUZoNVdwbzRQcHVy</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:10</datetime>
+    <datetime>2026-09-20 23:10</datetime>
     <league>Colombia Primera A</league>
     <teams>Deportivo Cali - Cucuta</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>41-1</channel_id>
+        <channel_id>14-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGJSRVBQemVUV3dIVlRlaWJ4RTRW</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:15</datetime>
+    <datetime>2026-09-20 23:15</datetime>
     <league>MLB</league>
     <teams>Washington Nationals vs. St.Louis Cardinals</teams>
     <channels>
       <channel>
         <channel_name>AWAY FEED</channel_name>
-        <channel_id>42-1</channel_id>
+        <channel_id>15-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGJSRVVFQnZ2OGNzdVFVZTlXZEQ4</url>
       </channel>
       <channel>
         <channel_name>HOME FEED</channel_name>
-        <channel_id>42-2</channel_id>
+        <channel_id>15-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGJSRVo0UEROa0pVS01KWmg1Mk1t</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:30</datetime>
+    <datetime>2026-09-20 23:30</datetime>
     <league>NASCAR</league>
     <teams>NASCAR Cup Series: Bass Pro Shops Night Race</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>43-1</channel_id>
+        <channel_id>16-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGQzTUJhR2NqZzJjcUZCaWpxUEEx</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:30</datetime>
+    <datetime>2026-09-20 23:30</datetime>
     <league>Brazil Serie A</league>
     <teams>Vasco - Coritiba</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>44-1</channel_id>
+        <channel_id>17-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGQzTUdRVHVDSGlERkMxZUhRN21y</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:30</datetime>
+    <datetime>2026-09-20 23:30</datetime>
     <league>MLS</league>
     <teams>CF Montreal - Columbus Crew</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>45-1</channel_id>
+        <channel_id>18-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGQzTU1FZkJldVBvZjhxWnB4V3dB</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>45-2</channel_id>
+        <channel_id>18-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGVmWG95VmU4OFhGQVdqQnVSRVpG</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:30</datetime>
+    <datetime>2026-09-20 23:30</datetime>
     <league>MLS</league>
     <teams>DC United - Charlotte</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>46-1</channel_id>
+        <channel_id>19-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGVmWHRvZ3Zha0NxYVRaN1N5ZGh0</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>46-2</channel_id>
+        <channel_id>19-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGVmWHlkdEQzTXRSelFQMnpZMnJY</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:30</datetime>
+    <datetime>2026-09-20 23:30</datetime>
     <league>MLS</league>
     <teams>New England Revolution - Orlando City</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>47-1</channel_id>
+        <channel_id>20-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGVmWTRVNVZWeWEyUU1DeFk2UzFB</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>47-2</channel_id>
+        <channel_id>20-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGVmVFpiYUFpa2h6N0piNzl3RFNr</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 23:30</datetime>
+    <datetime>2026-09-20 23:30</datetime>
     <league>MLS</league>
     <teams>San Jose Earthquakes - Los Angeles FC</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>48-1</channel_id>
+        <channel_id>21-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGVmVGVSbVRCTlBhWEZSMmhWY2JQ</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>48-2</channel_id>
+        <channel_id>21-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGVmVGpGeGpkejVBd0NFeEY0MWsy</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:00</datetime>
+    <datetime>2026-09-20 00:00</datetime>
     <league>Boxing</league>
     <teams>Isaac Cruz vs Nestor Bravo</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>49-1</channel_id>
+        <channel_id>22-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGdIZWd5eHRydUpBdkY2N2FzOEdj</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:00</datetime>
+    <datetime>2026-09-20 00:00</datetime>
     <league>Brazil Serie A</league>
     <teams>Sao Paulo - Internacional</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>50-1</channel_id>
+        <channel_id>23-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGh1Z3pIallNcVhVMUJhS3BiM1B0</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:00</datetime>
+    <datetime>2026-09-20 00:00</datetime>
     <league>Canada</league>
     <teams>Pacific FC - Vancouver FC</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>51-1</channel_id>
+        <channel_id>24-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGh1aDU3dnBwVEQ0UjhRRk45U1lY</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:00</datetime>
+    <datetime>2026-09-20 00:00</datetime>
     <league>Copa Bolivia</league>
     <teams>Real Potosi - Nacional Potosi</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>52-1</channel_id>
+        <channel_id>25-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGh1aDl4ODdINHRlcTVFQXVocWhB</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:00</datetime>
+    <datetime>2026-09-20 00:00</datetime>
     <league>Ecuador</league>
     <teams>Emelec - Libertad</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>53-1</channel_id>
+        <channel_id>26-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGh1aEVuS1BqZ2FGRjI0NlRHRXJV</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:00</datetime>
-    <league>Nicaragua</league>
-    <teams>CD Walter Ferretti - Jalapa</teams>
-    <channels>
-      <channel>
-        <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>54-1</channel_id>
-        <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGpYc2hYOXJDdWhna1B3aVhpeFVa</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-09-19 00:00</datetime>
+    <datetime>2026-09-20 00:00</datetime>
     <league>Venezuela</league>
     <teams>Deportivo La Guaira - Deportivo Tachira</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>55-1</channel_id>
+        <channel_id>27-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGpYc3NCWVI4OTRzYUhiWmNxa21x</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:10</datetime>
+    <datetime>2026-09-20 00:10</datetime>
     <league>MLB</league>
     <teams>New York Yankees vs. Arizona Diamondbacks</teams>
     <channels>
       <channel>
         <channel_name>AWAY FEED</channel_name>
-        <channel_id>56-1</channel_id>
+        <channel_id>28-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGpYc3gxamhha2tUekVSVkFROXZV</url>
       </channel>
       <channel>
         <channel_name>HOME FEED</channel_name>
-        <channel_id>56-2</channel_id>
+        <channel_id>28-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGpYb1Q5RU5vWHRSaEJvZG5Fd040</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:10</datetime>
+    <datetime>2026-09-20 00:10</datetime>
     <league>MLB</league>
     <teams>Seattle Mariners vs. Colorado Rockies</teams>
     <channels>
       <channel>
         <channel_name>AWAY FEED</channel_name>
-        <channel_id>57-1</channel_id>
+        <channel_id>29-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGpYb1h5UmZHOWEyNzhkWktvTFdo</url>
       </channel>
       <channel>
         <channel_name>HOME FEED</channel_name>
-        <channel_id>57-2</channel_id>
+        <channel_id>29-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGpYb2NvY3dpbUZjWDVUVXNNamZM</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:15</datetime>
+    <datetime>2026-09-20 00:15</datetime>
     <league>Argentina Liga Profesional</league>
     <teams>Instituto - Talleres Cordoba</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>58-1</channel_id>
+        <channel_id>30-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGpYb2hkcEVCTndDdzJIUVF2OG95</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:30</datetime>
+    <datetime>2026-09-20 00:30</datetime>
     <league>MLS</league>
     <teams>FC Dallas - Austin FC</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>59-1</channel_id>
+        <channel_id>31-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGpYb25VMVdkemNvTHk3S3hVWHlK</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>59-2</channel_id>
+        <channel_id>31-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSGpYb3NKQ282Y0pQa3V3Rlcydzd3</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:30</datetime>
+    <datetime>2026-09-20 00:30</datetime>
     <league>MLS</league>
     <teams>Houston Dynamo - FC Cincinnati</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>60-1</channel_id>
+        <channel_id>32-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSG05ekwzM0ZacVJxR0hwc2FWZWsy</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>60-2</channel_id>
+        <channel_id>32-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSG05elFzRVkyVDdSZ0Vlbzg0M3Rm</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:30</datetime>
+    <datetime>2026-09-20 00:30</datetime>
     <league>MLS</league>
     <teams>Minnesota United - Los Angeles Galaxy</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>61-1</channel_id>
+        <channel_id>33-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSG05elZoUnBWNG8yNkJVaWZjVDNK</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>61-2</channel_id>
+        <channel_id>33-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSG05emFYZDZ3Z1VjVzhKZURCQmYy</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:30</datetime>
+    <datetime>2026-09-20 00:30</datetime>
     <league>MLS</league>
     <teams>St. Louis City - Toronto FC</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>62-1</channel_id>
+        <channel_id>34-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSG05dkZLV001Z3ltMnlMZHY4UnZv</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>62-2</channel_id>
+        <channel_id>34-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSG05dkw5aGRZSmZNU3ZBWlRncTVT</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:30</datetime>
+    <datetime>2026-09-20 00:30</datetime>
     <league>FIM EWC</league>
     <teams>FIM Endurance World Championship: Bol d'Or</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>63-1</channel_id>
+        <channel_id>35-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSG05dlF5dHV6dkx3cnJ6VjFFdGs4</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 00:40</datetime>
+    <datetime>2026-09-20 00:40</datetime>
     <league>MLB</league>
     <teams>Miami Marlins vs. San Diego Padres</teams>
     <channels>
       <channel>
         <channel_name>AWAY FEED</channel_name>
-        <channel_id>64-1</channel_id>
+        <channel_id>36-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmFOSG05dlZwNkNUWTJZR29wUVlvZFBO</url>
       </channel>
       <channel>
         <channel_name>HOME FEED</channel_name>
-        <channel_id>64-2</channel_id>
+        <channel_id>36-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dllVRDM5UHNUc3JSaVg5SG9acWZm</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:00</datetime>
+    <datetime>2026-09-20 01:00</datetime>
     <league>MMA</league>
     <teams>UFC 331: Van vs. Pantoja 2</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>65-1</channel_id>
+        <channel_id>37-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzhOUEdXSHhYMWZiSlVNaDZyc1hS</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>65-2</channel_id>
+        <channel_id>37-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZlpwZzhOUE1MVkV5ZE1CaVJCY2VSR2c0</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:00</datetime>
+    <datetime>2026-09-20 01:00</datetime>
     <league>Mexico Liga de Expansion</league>
     <teams>Atletico Morelia - Leones Negros</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>66-1</channel_id>
+        <channel_id>38-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dllVOG5tVVE0VzNBZksxRDRKdkxX</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:00</datetime>
+    <datetime>2026-09-20 01:00</datetime>
     <league>Mexico Liga de Expansion</league>
     <teams>Cancun - Alebrijes Oaxaca</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>67-1</channel_id>
+        <channel_id>39-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dllVOHNiZmdYN2ltNUZxOGJzS1Y5</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:00</datetime>
+    <datetime>2026-09-20 01:00</datetime>
     <league>Mexico Liga de Expansion</league>
     <teams>Jaiba Brava - Dorados de Sinaloa</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>68-1</channel_id>
+        <channel_id>40-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dllVOHhScnh5alFNVkNmNDlSaWRu</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:10</datetime>
+    <datetime>2026-09-20 01:10</datetime>
     <league>MLB</league>
     <teams>San Francisco Giants vs. Los Angeles Dodgers</teams>
     <channels>
       <channel>
         <channel_name>AWAY FEED</channel_name>
-        <channel_id>69-1</channel_id>
+        <channel_id>41-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dllVOTg2Rlh0eG1ZSzZKdUVZV3dq</url>
       </channel>
       <channel>
         <channel_name>HOME FEED</channel_name>
-        <channel_id>69-2</channel_id>
+        <channel_id>41-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dllVOUN2U3BNYVQ4ajM4cG42djZO</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:10</datetime>
+    <datetime>2026-09-20 01:10</datetime>
     <league>Mexico</league>
     <teams>Monterrey - Cruz Azul</teams>
     <channels>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>70-1</channel_id>
+        <channel_id>42-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dmE2S2ZmSEdwb2FhRVIyU3JaZGlU</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL ALT</channel_name>
-        <channel_id>70-2</channel_id>
+        <channel_id>42-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dmE2S2tWVVpIUkdBZU1yTlE4MnM2</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:15</datetime>
+    <datetime>2026-09-20 01:15</datetime>
     <league>Colombia Primera A</league>
     <teams>Deportivo Pasto - Once Caldas</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>71-1</channel_id>
+        <channel_id>43-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dmE2S3FLZnFrMndtNEpnSHdnbVVw</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:15</datetime>
+    <datetime>2026-09-20 01:15</datetime>
     <league>Peru</league>
     <teams>FBC Melgar - Sport Boys</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>72-1</channel_id>
+        <channel_id>44-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dmE2S3Y5czhDZWRNVUZXRFZGQWRU</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:30</datetime>
+    <datetime>2026-09-20 01:30</datetime>
     <league>Honduras</league>
     <teams>Real Espana - Motagua</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>73-1</channel_id>
+        <channel_id>45-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dmE2RlJITW9SUm1LQkN0Tjc1Y2J4</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:30</datetime>
+    <datetime>2026-09-20 01:30</datetime>
     <league>MLS</league>
     <teams>Colorado Rapids - Seattle Sounders</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>74-1</channel_id>
+        <channel_id>46-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dmE2Rlc3WjV0M1N1YjlpSGVlMWti</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>74-2</channel_id>
+        <channel_id>46-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dmE2RmF3a05MZjhXMTZZRENDUXVF</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:30</datetime>
+    <datetime>2026-09-20 01:30</datetime>
     <league>MLS</league>
     <teams>Nashville SC - Chicago Fire</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>75-1</channel_id>
+        <channel_id>47-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dmE2RmZtd2VvR3A2UjNOOGprcDRZ</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>75-2</channel_id>
+        <channel_id>47-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dmE2RmtjOHdGdFZncHpDNEhLRERC</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:30</datetime>
+    <datetime>2026-09-20 01:30</datetime>
     <league>MLS</league>
     <teams>Real Salt Lake - Vancouver Whitecaps</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>76-1</channel_id>
+        <channel_id>48-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dmE2RnFTTERpV0JIRXcxeXBzY01w</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>76-2</channel_id>
+        <channel_id>48-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dTRVOWZxUlhMbkxlUTdRMkhHY3BU</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 01:38</datetime>
+    <datetime>2026-09-20 01:38</datetime>
     <league>MLB</league>
     <teams>Minnesota Twins vs. Los Angeles Angels</teams>
     <channels>
       <channel>
         <channel_name>AWAY FEED</channel_name>
-        <channel_id>77-1</channel_id>
+        <channel_id>49-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dTRVOWtmY29vUTJFcDREd3BxMXk2</url>
       </channel>
       <channel>
         <channel_name>HOME FEED</channel_name>
-        <channel_id>77-2</channel_id>
+        <channel_id>49-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dTRVOXFWcDZHMWhxRTEzc05Qa2Fw</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 02:00</datetime>
+    <datetime>2026-09-20 02:00</datetime>
     <league>Costa Rica Primera Division</league>
     <teams>Deportivo Saprissa - Herediano</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>78-1</channel_id>
+        <channel_id>50-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dTRVNWI3dGNyZHRhQW51bmN1UTFF</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 02:30</datetime>
+    <datetime>2026-09-20 02:30</datetime>
     <league>MLS</league>
     <teams>Portland Timbers - Atlanta United</teams>
     <channels>
       <channel>
         <channel_name>INGLÉS</channel_name>
-        <channel_id>79-1</channel_id>
+        <channel_id>51-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dTY2R1UxaFZjd1J5anR3MlJBU3JH</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>79-2</channel_id>
+        <channel_id>51-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dTY2R1lxdG41WjdhOXFrd3hpcXp1</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 03:15</datetime>
+    <datetime>2026-09-20 03:15</datetime>
     <league>Mexico</league>
     <teams>Club America - Chivas Guadalajara</teams>
     <channels>
       <channel>
         <channel_name>ESPAÑOL</channel_name>
-        <channel_id>80-1</channel_id>
+        <channel_id>52-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dTdpTnZzQ0w0ZG53UnVBTE5wMU1N</url>
       </channel>
       <channel>
         <channel_name>ESPAÑOL ALT</channel_name>
-        <channel_id>80-2</channel_id>
+        <channel_id>52-2</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dTdpUDFoUGNYRlVYcXF6RnZOUVZ6</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-09-19 04:00</datetime>
+    <datetime>2026-09-20 04:00</datetime>
     <league>J3-League</league>
     <teams>Kanazawa - Renofa Yamaguchi</teams>
     <channels>
       <channel>
         <channel_name>OPCIÓN 1</channel_name>
-        <channel_id>81-1</channel_id>
+        <channel_id>53-1</channel_id>
         <url>https://golxu.st/eventos.html?r=aHR0cHM6Ly93d3cudmRvY2l0eS5jb20vX0FmQVY4aXpWY042d0F5ZlRaZmF1dTdpUDZYYXR5c0E4Rm5wQlR3OTdp</url>
       </channel>
     </channels>
