@@ -1,6 +1,6 @@
-2026-09-21 09:49:48,634 [INFO] Semillas descubiertas dinamicamente (4): ['https://www.fctv33hd.pro', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
-2026-09-21 09:49:50,409 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.pro': https://www.fctv33hd.pw
-2026-09-21 09:49:50,855 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
-2026-09-21 09:49:51,133 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcllu137fien.ru', 'https://apis-data-defra10.tcllu137fien.ru']
-2026-09-21 09:54:17,082 [INFO] OK https://apis-data10.tcllu137fien.ru: 59 partidos recibidos
-2026-09-21 09:54:17,084 [INFO] Generado lista_rbtv_futbol.m3u con 59 partidos de futbol (SITE_BASE: https://www.fctv33hd.pw)
+2026-09-21 11:09:11,442 [INFO] Semillas descubiertas dinamicamente (4): ['https://www.fctv33hd.pw', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
+2026-09-21 11:09:11,852 [INFO] SITE_BASE resuelto dinamicamente (score 1) desde semilla 'https://www.fctv33hd.pw': https://www.fctv33hd.pw
+2026-09-21 11:09:12,226 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
+2026-09-21 11:09:12,391 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcllu137fien.ru', 'https://apis-data-defra10.tcllu137fien.ru']
+2026-09-21 11:13:50,626 [INFO] OK https://apis-data10.tcllu137fien.ru: 57 partidos recibidos
+2026-09-21 11:13:50,628 [INFO] Generado lista_rbtv_futbol.m3u con 57 partidos de futbol (SITE_BASE: https://www.fctv33hd.pw)
