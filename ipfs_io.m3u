@@ -1,16 +1,13 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-09-22 04:50:49
-# Total Channels: 9
-# Generated: 2026-09-22T04:00:03Z
+# IPFS Acestream Channels - 2026-09-22 09:55:29
+# Total Channels: 8
+# Generated: 2026-09-22T09:10:04Z
 
 # -------- DAZN --------
 #EXTINF:-1 tvg-id="DAZN 2 HD" tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" group-title="DAZN",DAZN 2 1080p **
 http://127.0.0.1:6878/ace/getstream?id=d60b8c154828cb990b7bb1570764b215bd979e74
 
 # -------- DEPORTES --------
-#EXTINF:-1 tvg-id="Esport 3" tvg-logo="https://img.3cat.cat/multimedia/jpg/1/5/1697802708951.jpg" group-title="DEPORTES",Esport3 720p *
-http://127.0.0.1:6878/ace/getstream?id=ff03650163b9456d59ed5f262aa3ab2e19831e6d
-
 #EXTINF:-1 tvg-id="Teledeporte" tvg-logo="https://img2.rtve.es/n/15966755" group-title="DEPORTES",Teledeporte 720p **
 http://127.0.0.1:6878/ace/getstream?id=b0d1489c9f3239349665ad5ab423363f2b02e5ae
 
