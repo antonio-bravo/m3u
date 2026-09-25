@@ -1,0 +1,41 @@
+name: Actualizar Lista AK47Sports
+
+on:
+  schedule:
+    - cron: '47 * * * *'  # Ejecutar cada hora (minuto 47, sin colisiones)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.x'
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pycryptodome
+
+      - name: Run AK47Sports update script
+        run: python script_ak47sports.py
+
+      - name: Verificar y Subir cambios
+        uses: ./.github/actions/commit-and-push
+        with:
+          files: lista_ak47sports.m3u lista_ak47sports.log
+          commit_message: "Update AK47Sports Playlist: ${{ github.run_id }}-${{ github.run_attempt }}"
