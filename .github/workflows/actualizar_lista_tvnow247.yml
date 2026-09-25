@@ -1,0 +1,41 @@
+name: Actualizar Lista tvnow247
+
+on:
+  schedule:
+    - cron: '21 * * * *'  # Se ejecuta cada hora (minuto 21, libre de colisiones)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.x'
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run update script
+        run: python script_tvnow247.py
+
+      - name: Verificar y Subir cambios
+        uses: ./.github/actions/commit-and-push
+        with:
+          files: lista_tvnow247.m3u
+          commit_message: "Update tvnow247: ${{ github.run_id }}-${{ github.run_attempt }}"
