@@ -1,6 +1,8 @@
-2026-09-25 08:12:26,225 [INFO] Semillas descubiertas dinamicamente (4): ['https://www.fctv33hd.co', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
-2026-09-25 08:12:26,614 [INFO] SITE_BASE resuelto dinamicamente (score 1) desde semilla 'https://www.fctv33hd.co': https://www.fctv33hd.co
-2026-09-25 08:12:27,246 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
-2026-09-25 08:12:27,681 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcllu137fien.ru', 'https://apis-data-defra10.tcllu137fien.ru']
-2026-09-25 08:12:28,796 [INFO] OK https://apis-data10.tcllu137fien.ru: 80 partidos recibidos
-2026-09-25 08:12:28,798 [INFO] Generado lista_rbtv_futbol.m3u con 79 partidos de futbol (SITE_BASE: https://www.fctv33hd.co)
+2026-09-25 14:12:13,105 [INFO] Semillas descubiertas dinamicamente (4): ['https://www.fctv33hd.co', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
+2026-09-25 14:12:23,116 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPConnection(host='rbtv77.com', port=80): Failed to resolve 'rbtv77.com' ([Errno -3] Temporary failure in name resolution)")': /
+2026-09-25 14:12:33,729 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPConnection(host='rbtv77.com', port=80): Failed to resolve 'rbtv77.com' ([Errno -3] Temporary failure in name resolution)")': /
+2026-09-25 14:12:40,223 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.co': https://www.fctv33hd.reisen
+2026-09-25 14:12:40,794 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
+2026-09-25 14:12:41,112 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcllu137fien.ru', 'https://apis-data-defra10.tcllu137fien.ru']
+2026-09-25 14:12:42,207 [INFO] OK https://apis-data10.tcllu137fien.ru: 110 partidos recibidos
+2026-09-25 14:12:42,210 [INFO] Generado lista_rbtv_futbol.m3u con 110 partidos de futbol (SITE_BASE: https://www.fctv33hd.reisen)
