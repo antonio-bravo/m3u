@@ -18,7 +18,8 @@ from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
 
 # Firebase Remote Config credentials extracted from AK47Sports APK
-FIREBASE_CONFIG_URL = "https://firebaseremoteconfig.googleapis.com/v1/projects/ak47-sports/namespaces/firebase:fetch?key=AIzaSyCOhPo6X5o8517oC_tFtH_L8ka3ElacTu0"
+FIREBASE_KEY = os.getenv("AK47SPORTS_FIREBASE_CONFIG_URL_KEY", "AIzaSyCOhPo6X5o8517oC_tFtH_L8ka3ElacTu0")
+FIREBASE_CONFIG_URL = f"https://firebaseremoteconfig.googleapis.com/v1/projects/ak47-sports/namespaces/firebase:fetch?key={FIREBASE_KEY}"
 FIREBASE_PAYLOAD = {
     "appId": "1:987682933046:android:b0d2f52255416b34cb0b97",
     "appInstanceId": "12345678901234567890123456789012"

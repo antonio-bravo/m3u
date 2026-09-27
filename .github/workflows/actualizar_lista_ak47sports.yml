@@ -32,6 +32,8 @@ jobs:
           pip install requests pycryptodome
 
       - name: Run AK47Sports update script
+        env:
+          AK47SPORTS_FIREBASE_CONFIG_URL_KEY: ${{ secrets.AK47SPORTS_FIREBASE_CONFIG_URL_KEY }}
         run: python script_ak47sports.py
 
       - name: Verificar y Subir cambios
