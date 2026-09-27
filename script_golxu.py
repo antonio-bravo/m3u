@@ -1,11 +1,16 @@
-import requests
-import json
-import re
 import base64
+import json
+import os
+import re
 import sys
 import xml.etree.ElementTree as ET
 from datetime import datetime
-from urllib.parse import unquote, quote
+import requests
+from requests.adapters import HTTPAdapter
+import urllib3
+from urllib3.util import Retry
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 BASE_URL = 'https://golxu.st/'
 API_URL = 'https://golxu.st/craftcurlid.php'
@@ -28,27 +33,39 @@ LANGUAGE_MAP = {
     'GERMAN': 'ALEMÁN',
 }
 
+# Configuración de sesión HTTP con reintentos automáticos
+session = requests.Session()
+retries = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
+adapter = HTTPAdapter(max_retries=retries, pool_connections=10, pool_maxsize=10)
+session.mount('http://', adapter)
+session.mount('https://', adapter)
+
+
 def to_base64(s: str) -> str:
     """Encoder de Base64 compatible con JS btoa(unescape(encodeURIComponent(str)))"""
     return base64.b64encode(s.encode('utf-8')).decode('utf-8')
+
 
 def fetch_json_data():
     """Obtiene los datos directamente desde craftcurlid.php"""
     try:
         url = f"{API_URL}?cb={int(datetime.now().timestamp() * 1000)}"
-        response = requests.get(url, headers=HEADERS, timeout=12)
+        response = session.get(url, headers=HEADERS, timeout=12, verify=False)
         if response.status_code == 200:
             data = response.json()
             if isinstance(data, list) and data:
                 return data
+            elif isinstance(data, dict) and 'error' in data:
+                print(f"Respuesta de API Golxu: {data.get('error')}")
     except Exception as err:
         print(f"Advertencia: No se pudo obtener JSON desde API directa ({err}). Intentando fallback...")
     return None
 
+
 def fetch_fallback_data():
     """Deobfuscador de respaldo para agendapiid.php"""
     try:
-        response = requests.get(FALLBACK_URL, headers=HEADERS, timeout=15)
+        response = session.get(FALLBACK_URL, headers=HEADERS, timeout=15, verify=False)
         if response.status_code != 200:
             return None
         text = response.text
@@ -56,11 +73,12 @@ def fetch_fallback_data():
         array_match = re.search(r'var\s+[a-zA-Z0-9_$]+\s*=\s*\[(.*?)\];', text, re.DOTALL)
         decoder_match = re.search(r'-\s*(\d+)\s*\)\s*;\s*\}\s*\)\s*;\s*document\.write', text)
 
-        if not array_match or not decoder_match:
+        if not array_match or not decoder_match or not decoder_match.groups():
             return None
 
         offset = int(decoder_match.group(1))
-        raw_elements = re.findall(r'\"([^\"]+)\"', array_match.group(2))
+        group_idx = 2 if len(array_match.groups()) >= 2 else 1
+        raw_elements = re.findall(r'\"([^\"]+)\"', array_match.group(group_idx))
 
         char_codes = []
         for item in raw_elements:
@@ -77,12 +95,15 @@ def fetch_fallback_data():
         match_fetch = re.search(r'fetch\(`(https?://[^`]+)`\)', html_str)
         if match_fetch:
             fetch_url = match_fetch.group(1).replace('${Date.now()}', str(int(datetime.now().timestamp() * 1000)))
-            r = requests.get(fetch_url, headers=HEADERS, timeout=10)
+            r = session.get(fetch_url, headers=HEADERS, timeout=10, verify=False)
             if r.status_code == 200:
-                return r.json()
+                res_json = r.json()
+                if isinstance(res_json, list):
+                    return res_json
     except Exception as err:
         print(f"Error en fallback: {err}")
     return None
+
 
 def process_events(raw_data):
     """Procesa y agrupa los eventos recibidos"""
@@ -149,6 +170,7 @@ def process_events(raw_data):
 
     return list(grouped.values())
 
+
 def generate_xml(events, output_path='lista_golxu.xml'):
     """Genera la lista XML con formato idéntico a lista_reproductor_web.xml"""
     root = ET.Element('events')
@@ -165,35 +187,24 @@ def generate_xml(events, output_path='lista_golxu.xml'):
             ET.SubElement(channel_elem, 'channel_id').text = str(channel['channel_id'])
             ET.SubElement(channel_elem, 'url').text = channel['url']
 
-    def indent(elem, level=0):
-        i = "\n" + "  " * level
-        if len(elem):
-            if not elem.text or not elem.text.strip():
-                elem.text = i + "  "
-            if not elem.tail or not elem.tail.strip():
-                elem.tail = i
-            for subelem in elem:
-                indent(subelem, level + 1)
-            if not subelem.tail or not elem.tail.strip():
-                subelem.tail = i
-        else:
-            if level and (not elem.tail or not elem.tail.strip()):
-                elem.tail = i
-
-    indent(root)
     tree = ET.ElementTree(root)
+    ET.indent(tree, space="  ")
     tree.write(output_path, encoding='utf-8', xml_declaration=True)
 
+
 def generate_m3u(events, output_path='lista_golxu.m3u'):
-    """Genera el archivo de lista de reproducción M3U"""
+    """Genera el archivo de lista de reproducción M3U con atributos IPTV"""
     with open(output_path, 'w', encoding='utf-8') as f:
-        f.write('#EXTM3U\n')
+        f.write('#EXTM3U x-tvg-url=""\n\n')
         for event in events:
+            group = f"Golxu - {event['league']}"
             for channel in event['channels']:
+                title = f"{event['datetime']} - {event['teams']} [{channel['channel_name']}]"
                 f.write(
-                    f'#EXTINF:-1,{event["datetime"]} - {event["league"]} - {event["teams"]} - {channel["channel_name"]}\n'
-                    f'{channel["url"]}\n'
+                    f'#EXTINF:-1 tvg-name="{title}" group-title="{group}",{title}\n'
+                    f'{channel["url"]}\n\n'
                 )
+
 
 def main():
     print("Obteniendo agenda deportiva desde Golxu...")
@@ -202,19 +213,21 @@ def main():
         raw_data = fetch_fallback_data()
 
     if not raw_data:
-        print("Error crítico: No se pudieron obtener eventos de Golxu.")
-        sys.exit(1)
+        print("Advertencia: No se pudieron obtener eventos de Golxu (servidor no disponible o respuesta sin datos).")
+        print("Finalizando ejecución sin modificar los archivos existentes.")
+        sys.exit(0)
 
     events = process_events(raw_data)
     if not events:
-        print("Error: No se procesaron eventos válidos.")
-        sys.exit(1)
+        print("Advertencia: No se procesaron eventos válidos.")
+        sys.exit(0)
 
     print(f"Se procesaron {len(events)} eventos exitosamente.")
 
     generate_xml(events, 'lista_golxu.xml')
     generate_m3u(events, 'lista_golxu.m3u')
     print("Archivos lista_golxu.xml y lista_golxu.m3u generados correctamente.")
+
 
 if __name__ == '__main__':
     main()
