@@ -1,10 +1,8 @@
 requests==2.34.2
-transformers
-torch
-transformers>=4.36.0
-protobuf
-sentencepiece
-tiktoken
+transformers==4.45.2
+torch==2.5.1
+protobuf==4.25.5
+sentencepiece==0.2.0
 beautifulsoup4
 selenium
 webdriver-manager
