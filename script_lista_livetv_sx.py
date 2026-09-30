@@ -21,6 +21,12 @@ from urllib3.util.retry import Retry
 # Deshabilitar advertencias de SSL
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+try:
+    import cloudscraper
+    HAS_CLOUDSCRAPER = True
+except ImportError:
+    HAS_CLOUDSCRAPER = False
+
 # Configurar logging
 LOG_LEVEL = os.environ.get('LOG_LEVEL', 'INFO').upper()
 logging.basicConfig(
@@ -85,6 +91,15 @@ def get_random_headers():
     }
 
 class EventScraper:
+    DEFAULT_MIRRORS = [
+        "https://livetv.sx",
+        "https://livetvsx.ru",
+        "https://livetv808.me",
+        "https://livetv846.me",
+        "https://cdn.livetv808.me",
+        "https://livetv.net"
+    ]
+
     def __init__(self, base_url="https://livetv.sx", max_pages=200, max_workers=5):
         self.base_url = base_url
         self.max_pages = max_pages
@@ -98,14 +113,24 @@ class EventScraper:
         self.last_request_time = 0
 
     def _create_session(self):
-        """Crea una sesión con reintentos y configuración robusta"""
-        session = requests.Session()
+        """Crea una sesión con reintentos y soporte de cloudscraper si está disponible"""
+        if HAS_CLOUDSCRAPER:
+            logging.info("🛡️ Utilizando cloudscraper para evasión de protección Cloudflare")
+            session = cloudscraper.create_scraper(
+                browser={
+                    'browser': 'chrome',
+                    'platform': 'windows',
+                    'desktop': True
+                }
+            )
+        else:
+            session = requests.Session()
 
-        # Configurar reintentos automáticos
+        # Configurar reintentos automáticos (sin 503 en status_forcelist para poder gestionarlo manualmente)
         retry_strategy = Retry(
-            total=5,
+            total=3,
             backoff_factor=2,
-            status_forcelist=[429, 500, 502, 503, 504],
+            status_forcelist=[429, 500, 502, 504],
             allowed_methods=["HEAD", "GET", "OPTIONS"]
         )
 
@@ -120,12 +145,32 @@ class EventScraper:
 
         return session
 
+    def find_working_base_url(self):
+        """Comprueba y selecciona un dominio espejo activo si la base principal falla"""
+        candidates = [self.base_url] + [m for m in self.DEFAULT_MIRRORS if m != self.base_url]
+        logging.info("🔎 Comprobando disponibilidad de dominios y espejos de LiveTV...")
+        for candidate in candidates:
+            test_url = f"{candidate}/es/"
+            try:
+                resp = self.session.get(test_url, verify=False, timeout=10)
+                if resp and resp.status_code == 200 and len(resp.text) > 500:
+                    logging.info(f"✅ Espejo activo seleccionado: {candidate}")
+                    self.base_url = candidate
+                    return True
+                else:
+                    status = resp.status_code if resp else 'No response'
+                    logging.warning(f"Respuesta no válida de {candidate}: status {status}")
+            except Exception as e:
+                logging.warning(f"No se pudo conectar con {candidate}: {e}")
+        return False
+
     def _make_request(self, url, max_retries=3):
         """Realiza una petición con headers rotativos y manejo de errores"""
         for attempt in range(max_retries):
             try:
                 # Rotar headers en cada petición
-                self.session.headers.update(get_random_headers())
+                if not HAS_CLOUDSCRAPER:
+                    self.session.headers.update(get_random_headers())
 
                 # Añadir delay progresivo entre peticiones
                 current_time = time.time()
@@ -164,7 +209,7 @@ class EventScraper:
                         time.sleep(random.uniform(3, 6))
                         continue
 
-            except requests.exceptions.RequestException as e:
+            except Exception as e:
                 logging.warning(f"Error en petición (intento {attempt + 1}/{max_retries}): {e}")
                 if attempt < max_retries - 1:
                     time.sleep(random.uniform(5, 10))
@@ -549,6 +594,9 @@ class EventScraper:
         logging.info(f"Iniciando scraping de eventos deportivos en {start_time}")
 
         try:
+            # Comprobar conectividad y seleccionar el mejor dominio/espejo
+            self.find_working_base_url()
+
             # PASO 1: Extraer mapeo dinámico de deportes
             logging.info("🔍 Paso 1: Extrayendo mapeo dinámico de deportes...")
             if not self.extract_sports_mapping():

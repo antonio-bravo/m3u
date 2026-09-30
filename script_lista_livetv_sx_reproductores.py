@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import json
 import time
 import re
+import os
 from urllib.parse import urljoin, urlparse
 import warnings
 import ssl
@@ -12,11 +13,27 @@ from bs4 import BeautifulSoup
 warnings.filterwarnings('ignore')
 ssl._create_default_https_context = ssl._create_unverified_context
 
+try:
+    import cloudscraper
+    HAS_CLOUDSCRAPER = True
+    session_requester = cloudscraper.create_scraper()
+except ImportError:
+    HAS_CLOUDSCRAPER = False
+    session_requester = requests
+
 def obtener_eventos_xml():
-    """Descarga y parsea el XML fuente"""
+    """Descarga y parsea el XML fuente (probando primero el archivo local)"""
+    if os.path.exists("eventos_livetv_sx.xml"):
+        try:
+            print("📄 Leyendo archivo local eventos_livetv_sx.xml...")
+            tree = ET.parse("eventos_livetv_sx.xml")
+            return tree.getroot()
+        except Exception as e:
+            print(f"Error al leer XML local: {e}")
+
     url = "https://raw.githubusercontent.com/tutw/platinsport-m3u-updater/refs/heads/main/eventos_livetv_sx.xml"
     try:
-        response = requests.get(url, timeout=30)
+        response = session_requester.get(url, timeout=30)
         response.raise_for_status()
         root = ET.fromstring(response.content)
         return root
@@ -95,7 +112,7 @@ def extraer_streams_evento(url):
             'Upgrade-Insecure-Requests': '1',
         }
 
-        response = requests.get(url, headers=headers, timeout=15, verify=False)
+        response = session_requester.get(url, headers=headers, timeout=15, verify=False)
         response.raise_for_status()
 
         soup = BeautifulSoup(response.content, 'html.parser')
