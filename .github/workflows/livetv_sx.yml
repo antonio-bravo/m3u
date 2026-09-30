@@ -37,8 +37,9 @@ jobs:
       - name: Run scraper
         run: |
           echo "Iniciando proceso de scraping..."
-          python script_lista_livetv_sx.py
+          python script_lista_livetv_sx.py --pages 10 --workers 1 || echo "⚠️ El scraping finalizó con advertencias"
           echo "Proceso de scraping completado."
+        continue-on-error: true
 
       - name: Check for changes
         id: verify-changes

@@ -15,6 +15,8 @@ import logging
 import urllib3
 import os
 import sys
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 # Deshabilitar advertencias de SSL
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -55,22 +57,32 @@ MESES_ES = {
     'septiembre': '09', 'octubre': '10', 'noviembre': '11', 'diciembre': '12'
 }
 
-# Headers mejorados para simular un navegador real
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
-    'Accept-Encoding': 'gzip, deflate, br',
-    'Referer': 'https://livetv.sx/es/',
-    'DNT': '1',
-    'Connection': 'keep-alive',
-    'Upgrade-Insecure-Requests': '1',
-    'Sec-Fetch-Dest': 'document',
-    'Sec-Fetch-Mode': 'navigate',
-    'Sec-Fetch-Site': 'same-origin',
-    'Sec-Fetch-User': '?1',
-    'Cache-Control': 'max-age=0',
-}
+# Lista de User-Agents rotativos para evitar detección
+USER_AGENTS = [
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15',
+]
+
+def get_random_headers():
+    """Genera headers aleatorios para evitar detección"""
+    return {
+        'User-Agent': random.choice(USER_AGENTS),
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+        'Accept-Language': 'es-ES,es;q=0.9,en-US;q=0.8,en;q=0.7',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'DNT': '1',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+        'Sec-Fetch-Dest': 'document',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Site': 'none',
+        'Sec-Fetch-User': '?1',
+        'Cache-Control': 'max-age=0',
+    }
 
 class EventScraper:
     def __init__(self, base_url="https://livetv.sx", max_pages=200, max_workers=5):
@@ -78,11 +90,90 @@ class EventScraper:
         self.max_pages = max_pages
         self.max_workers = max_workers
         self.all_events = []
-        self.session = requests.Session()
-        self.session.headers.update(headers)
+        self.session = self._create_session()
         self.current_date_context = None
         self.sports_mapping = {}  # Mapeo dinámico de deportes
         self.sports_urls = {}     # URLs de deportes extraídas
+        self.request_count = 0
+        self.last_request_time = 0
+
+    def _create_session(self):
+        """Crea una sesión con reintentos y configuración robusta"""
+        session = requests.Session()
+
+        # Configurar reintentos automáticos
+        retry_strategy = Retry(
+            total=5,
+            backoff_factor=2,
+            status_forcelist=[429, 500, 502, 503, 504],
+            allowed_methods=["HEAD", "GET", "OPTIONS"]
+        )
+
+        adapter = HTTPAdapter(
+            max_retries=retry_strategy,
+            pool_connections=10,
+            pool_maxsize=20
+        )
+
+        session.mount("http://", adapter)
+        session.mount("https://", adapter)
+
+        return session
+
+    def _make_request(self, url, max_retries=3):
+        """Realiza una petición con headers rotativos y manejo de errores"""
+        for attempt in range(max_retries):
+            try:
+                # Rotar headers en cada petición
+                self.session.headers.update(get_random_headers())
+
+                # Añadir delay progresivo entre peticiones
+                current_time = time.time()
+                time_since_last = current_time - self.last_request_time
+                if time_since_last < 2:
+                    sleep_time = random.uniform(2, 4)
+                    time.sleep(sleep_time)
+
+                self.last_request_time = time.time()
+                self.request_count += 1
+
+                # Realizar la petición
+                response = self.session.get(
+                    url,
+                    verify=False,
+                    timeout=30,
+                    allow_redirects=True
+                )
+
+                # Si es 503, esperar más tiempo y reintentar
+                if response.status_code == 503:
+                    if attempt < max_retries - 1:
+                        wait_time = (attempt + 1) * 10
+                        logging.warning(f"Error 503 en {url}, esperando {wait_time}s antes de reintentar...")
+                        time.sleep(wait_time)
+                        continue
+                    else:
+                        logging.error(f"Error 503 persistente en {url} después de {max_retries} intentos")
+                        return None
+
+                if response.status_code == 200:
+                    return response
+                else:
+                    logging.warning(f"Status code {response.status_code} para {url}")
+                    if attempt < max_retries - 1:
+                        time.sleep(random.uniform(3, 6))
+                        continue
+
+            except requests.exceptions.RequestException as e:
+                logging.warning(f"Error en petición (intento {attempt + 1}/{max_retries}): {e}")
+                if attempt < max_retries - 1:
+                    time.sleep(random.uniform(5, 10))
+                    continue
+                else:
+                    logging.error(f"Fallo definitivo al acceder a {url}")
+                    return None
+
+        return None
 
     def extract_sports_mapping(self):
         """
@@ -91,12 +182,14 @@ class EventScraper:
         """
         url = f"{self.base_url}/es/"
         logging.info(f"Extrayendo mapeo de deportes desde: {url}")
-        
+
         try:
-            response = self.session.get(url, verify=False, timeout=30)
-            if response.status_code != 200:
-                logging.error(f"Error {response.status_code} al acceder a la página principal")
-                return False
+            response = self._make_request(url)
+            if not response:
+                logging.error(f"No se pudo acceder a la página principal")
+                logging.info("Intentando con estrategia de fallback...")
+                self.fallback_sports_detection()
+                return len(self.sports_mapping) > 0
 
             soup = BeautifulSoup(response.text, 'html.parser')
             
@@ -171,16 +264,16 @@ class EventScraper:
         Estrategia de fallback: intentar extraer deportes probando URLs secuenciales
         """
         logging.info("Ejecutando estrategia de fallback para detectar deportes...")
-        
+
         # Probar las primeras 20 páginas para detectar deportes válidos
         for page_num in range(1, 21):
             try:
                 url = f"{self.base_url}/es/allupcomingsports/{page_num}/"
-                response = self.session.get(url, verify=False, timeout=10)
-                
-                if response.status_code == 200:
+                response = self._make_request(url)
+
+                if response and response.status_code == 200:
                     soup = BeautifulSoup(response.text, 'html.parser')
-                    
+
                     # Buscar indicadores del nombre del deporte en la página
                     title_elements = soup.find_all(['title', 'h1', 'h2', 'h3'])
                     for element in title_elements:
@@ -193,15 +286,15 @@ class EventScraper:
                             self.sports_urls[page_num] = url
                             logging.debug(f"Deporte detectado por fallback: {page_num} -> {sport_name}")
                             break
-                    
+
                     # Si no se encontró en títulos, usar nombre genérico
                     if page_num not in self.sports_mapping:
                         self.sports_mapping[page_num] = f"Deporte_{page_num}"
                         self.sports_urls[page_num] = url
-                
+
                 # Pequeña pausa para evitar bloqueos
-                time.sleep(0.5)
-                
+                time.sleep(random.uniform(1, 3))
+
             except Exception as e:
                 logging.debug(f"Error en fallback para página {page_num}: {e}")
                 continue
@@ -335,16 +428,16 @@ class EventScraper:
             url = self.sports_urls[page_num]
         else:
             url = f"{self.base_url}/es/allupcomingsports/{page_num}/"
-        
+
         sport_name = self.sports_mapping.get(page_num, f"Deporte_{page_num}")
         logging.info(f"Procesando página {page_num} ({sport_name}): {url}")
 
         try:
-            time.sleep(random.uniform(1, 3))
+            time.sleep(random.uniform(2, 4))
 
-            response = self.session.get(url, verify=False, timeout=30)
-            if response.status_code != 200:
-                logging.warning(f"Error {response.status_code} al acceder a la página {page_num}")
+            response = self._make_request(url)
+            if not response:
+                logging.warning(f"No se pudo acceder a la página {page_num}")
                 return []
 
             soup = BeautifulSoup(response.text, 'html.parser')
@@ -353,7 +446,7 @@ class EventScraper:
             self.current_date_context = self.extract_date_from_context(soup)
 
             event_links = soup.find_all('a', href=re.compile(EVENT_PATH_REGEX))
-            
+
             if not event_links:
                 event_rows = soup.find_all('tr', class_=['evdesc', 'evdesc_LIVE'])
                 for row in event_rows:
@@ -372,12 +465,12 @@ class EventScraper:
                     sport, competition = self.extract_sport_and_competition(event_container, soup, page_num)
 
                     date_time_text = ""
-                    
+
                     if event_container:
                         parent_row = event_container
                         all_text = parent_row.get_text()
                         date_time_text = all_text
-                    
+
                     fecha, hora = self.parse_date_time(date_time_text, soup)
 
                     full_url = urljoin(self.base_url, href)
@@ -400,10 +493,7 @@ class EventScraper:
 
             logging.info(f"Extraídos {len(events)} eventos de la página {page_num} ({sport_name})")
             return events
-            
-        except requests.RequestException as e:
-            logging.error(f"Error de conexión en página {page_num}: {e}")
-            return []
+
         except Exception as e:
             logging.error(f"Error general en página {page_num}: {e}")
             return []
@@ -462,16 +552,22 @@ class EventScraper:
             # PASO 1: Extraer mapeo dinámico de deportes
             logging.info("🔍 Paso 1: Extrayendo mapeo dinámico de deportes...")
             if not self.extract_sports_mapping():
-                logging.error("❌ Error crítico: No se pudo extraer el mapeo de deportes")
+                logging.warning("⚠️ No se pudo extraer el mapeo completo de deportes, usando fallback")
+
+            # Si después del fallback no hay deportes, salir
+            if not self.sports_mapping:
+                logging.error("❌ Error crítico: No se pudo extraer ningún deporte")
                 return False
+
+            logging.info(f"✅ Se detectaron {len(self.sports_mapping)} categorías de deportes")
 
             # PASO 2: Procesar páginas de deportes encontrados
             pages_to_process = list(self.sports_mapping.keys())
             if self.max_pages < len(pages_to_process):
                 pages_to_process = pages_to_process[:self.max_pages]
-            
+
             logging.info(f"🔍 Paso 2: Procesando {len(pages_to_process)} páginas de deportes...")
-            
+
             # Procesar primera página para verificar conectividad
             if pages_to_process:
                 test_events = self.extract_events_from_page(pages_to_process[0])
@@ -481,19 +577,18 @@ class EventScraper:
                 else:
                     logging.warning("⚠️ No se pudieron extraer eventos de la primera página. Continuando...")
 
-                # Procesar el resto de páginas con ThreadPoolExecutor
+                # Procesar el resto de páginas de forma secuencial para evitar bloqueos
+                # En GitHub Actions, usar menos workers reduce la probabilidad de ser bloqueado
                 if len(pages_to_process) > 1:
-                    with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
-                        future_to_page = {executor.submit(self.extract_events_from_page, page_num): page_num 
-                                        for page_num in pages_to_process[1:]}
-
-                        for future in future_to_page:
-                            try:
-                                page_events = future.result()
-                                self.all_events.extend(page_events)
-                            except Exception as exc:
-                                page_num = future_to_page[future]
-                                logging.error(f"Página {page_num} generó una excepción: {exc}")
+                    # Modo secuencial más seguro
+                    for page_num in pages_to_process[1:]:
+                        try:
+                            page_events = self.extract_events_from_page(page_num)
+                            self.all_events.extend(page_events)
+                            # Delay mayor entre páginas en GitHub Actions
+                            time.sleep(random.uniform(3, 5))
+                        except Exception as exc:
+                            logging.error(f"Página {page_num} generó una excepción: {exc}")
 
             logging.info(f"Total de eventos extraídos antes de eliminar duplicados: {len(self.all_events)}")
 
@@ -510,7 +605,7 @@ class EventScraper:
             for event in self.all_events:
                 sport = event["deporte"]
                 sport_summary[sport] = sport_summary.get(sport, 0) + 1
-            
+
             logging.info("📊 Resumen por deporte:")
             for sport, count in sorted(sport_summary.items()):
                 logging.info(f"   {sport}: {count} eventos")
@@ -518,6 +613,7 @@ class EventScraper:
             end_time = datetime.now()
             duration = end_time - start_time
             logging.info(f"🎯 Proceso completado en {duration.total_seconds():.2f} segundos")
+            logging.info(f"📈 Total de peticiones realizadas: {self.request_count}")
             return True
 
         except Exception as e:

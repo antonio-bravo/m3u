@@ -1,0 +1,83 @@
+name: Test LiveTV URL
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-url:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test URL with curl
+        run: |
+          echo "🔍 Probando conexión a livetv.sx desde GitHub Actions..."
+          echo ""
+          echo "=== Test 1: Curl básico ==="
+          curl -I -L https://livetv.sx/es/ --max-time 30 -v 2>&1 || echo "❌ Curl falló"
+          echo ""
+          echo "=== Test 2: Curl con User-Agent ==="
+          curl -I -L https://livetv.sx/es/ \
+            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
+            --max-time 30 2>&1 || echo "❌ Curl con UA falló"
+          echo ""
+          echo "=== Test 3: Wget ==="
+          wget --spider --server-response https://livetv.sx/es/ 2>&1 || echo "❌ Wget falló"
+          echo ""
+          echo "=== Test 4: Ping DNS ==="
+          ping -c 3 livetv.sx || echo "❌ Ping falló"
+          echo ""
+          echo "=== Test 5: NSLookup ==="
+          nslookup livetv.sx || echo "❌ NSLookup falló"
+          echo ""
+          echo "=== Test 6: Dig ==="
+          dig livetv.sx || echo "❌ Dig falló"
+          echo ""
+          echo "=== Test 7: Probar dominio alternativo (www) ==="
+          curl -I -L https://www.livetv.sx/es/ --max-time 30 2>&1 || echo "❌ www.livetv.sx falló"
+          echo ""
+          echo "=== Test 8: Probar sin /es/ ==="
+          curl -I -L https://livetv.sx/ --max-time 30 2>&1 || echo "❌ livetv.sx (raíz) falló"
+          echo ""
+          echo "=== Test 9: Probar HTTP (sin SSL) ==="
+          curl -I -L http://livetv.sx/es/ --max-time 30 2>&1 || echo "❌ HTTP falló"
+
+      - name: Test with Python requests
+        run: |
+          echo ""
+          echo "=== Test 10: Python requests ==="
+          pip install requests -q
+          python3 << 'EOF'
+          import requests
+          from requests.adapters import HTTPAdapter
+          from urllib3.util.retry import Retry
+
+          urls = [
+              "https://livetv.sx/es/",
+              "https://www.livetv.sx/es/",
+              "https://livetv.sx/",
+              "http://livetv.sx/es/"
+          ]
+
+          headers = {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+              'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
+              'Referer': 'https://www.google.com/'
+          }
+
+          session = requests.Session()
+          retry = Retry(total=3, backoff_factor=1)
+          adapter = HTTPAdapter(max_retries=retry)
+          session.mount("http://", adapter)
+          session.mount("https://", adapter)
+
+          for url in urls:
+              print(f"\n🔍 Probando: {url}")
+              try:
+                  response = session.get(url, headers=headers, timeout=30, verify=True)
+                  print(f"   ✅ Status: {response.status_code}")
+                  print(f"   📊 Tamaño: {len(response.text)} bytes")
+                  print(f"   🔒 Headers: {dict(list(response.headers.items())[:3])}")
+              except Exception as e:
+                  print(f"   ❌ Error: {type(e).__name__}: {str(e)[:100]}")
+          EOF
