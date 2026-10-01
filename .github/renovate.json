@@ -5,9 +5,14 @@
   "addLabels": ["dependencies"],
   "packageRules": [
     {
+      "matchPackageNames": ["protobuf"],
+      "enabled": false
+    },
+    {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
+      "automerge": false
     }
   ],
   "extends": ["config:base"]
 }
+
