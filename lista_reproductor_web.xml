@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-10-01 05:10</datetime>
-    <league>Amistoso Internacional</league>
-    <teams>Japón vs Ecuador</teams>
+    <datetime>2026-10-01 13:45</datetime>
+    <league>UEFA Nations League</league>
+    <teams>Dinamarca vs Portugal</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
@@ -29,6 +29,170 @@
         <channel_name>Canal 5 (HD)</channel_name>
         <channel_id>1-5</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI0LnBocA==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-01 13:45</datetime>
+    <league>UEFA Nations League</league>
+    <teams>Alemania vs Serbia</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>2-1</channel_id>
+        <url>https://rojadirectauno.pl/en-vivo/capo-deportes-2.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>2-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI1LnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>2-3</channel_id>
+        <url>https://tarjetarojatv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI2LnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>2-4</channel_id>
+        <url>https://rojadirectauno.pl/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI3LnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>2-5</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI4LnBocA==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-01 13:45</datetime>
+    <league>UEFA Nations League</league>
+    <teams>Grecia vs Países Bajos</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>3-1</channel_id>
+        <url>https://rojadirectauno.pl/en-vivo/capo-deportes-3.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>3-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI5LnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>3-3</channel_id>
+        <url>https://tarjetarojatv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXIxMC5waHA=</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>3-4</channel_id>
+        <url>https://rojadirectauno.pl/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXIxMS5waHA=</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>3-5</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXIxMi5waHA=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-01 13:45</datetime>
+    <league>UEFA Nations League</league>
+    <teams>Gales vs Noruega</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 2 (HD)</channel_name>
+        <channel_id>4-1</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTEucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>4-2</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTIucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-01 13:45</datetime>
+    <league>UEFA Nations League</league>
+    <teams>Israel vs Kosovo</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 2 (HD)</channel_name>
+        <channel_id>5-1</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTMucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>5-2</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTQucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-01 13:45</datetime>
+    <league>UEFA Nations League</league>
+    <teams>Malta vs Gibraltar</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 2 (HD)</channel_name>
+        <channel_id>6-1</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTUucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>6-2</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTYucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-01 13:45</datetime>
+    <league>UEFA Nations League</league>
+    <teams>Irlanda vs Austria</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 2 (HD)</channel_name>
+        <channel_id>7-1</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTcucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>7-2</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xhbGlnYTgucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-01 14:00</datetime>
+    <league>UEFA Womens Champions League</league>
+    <teams>Manchester City vs Real Madrid</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>8-1</channel_id>
+        <url>https://pirlotv.la/en-vivo/capo-deportes-4.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>8-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTUucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>8-3</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTYucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>8-4</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTcucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>8-5</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3NlcmllYTgucGhw</url>
       </channel>
     </channels>
   </event>
