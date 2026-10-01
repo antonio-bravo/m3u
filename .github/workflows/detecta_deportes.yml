@@ -32,7 +32,7 @@ jobs:
       - name: Configura Python
         uses: actions/setup-python@v7
         with:
-          python-version: "3.11"
+          python-version: "3.14"
 
       - name: Instala dependencias
         run: pip install -r requirements.txt
