@@ -40,7 +40,7 @@ def probar_proxy_domain(domain, test_channel_id='51'):
 def cargar_modulos_clave_js(base_site, html_text):
     """Descarga dinámicamente los módulos JS clave de la aplicación web."""
     js_texts = []
-    matches = re.findall(r'assets/[a-zA-Z0-9_-]+\.js', html_text)
+    matches = re.findall(r'assets/(?:channels|main|streamService|client|vendor|PlayerPage|TVChannelsPage)-[a-zA-Z0-9_-]+\.js', html_text)
     
     main_match = re.search(r'assets/main-[a-zA-Z0-9_-]+\.js', html_text)
     if main_match:
@@ -48,7 +48,7 @@ def cargar_modulos_clave_js(base_site, html_text):
             r_main = requests.get(f"{base_site}/{main_match.group(0)}", headers=HEADERS, timeout=5)
             if r_main.status_code == 200:
                 js_texts.append(r_main.text)
-                sub_assets = re.findall(r'assets/[a-zA-Z0-9_-]+\.js', r_main.text)
+                sub_assets = re.findall(r'assets/(?:channels|main|streamService|client|vendor|PlayerPage|TVChannelsPage)-[a-zA-Z0-9_-]+\.js', r_main.text)
                 matches.extend(sub_assets)
         except Exception:
             pass
@@ -169,8 +169,8 @@ def obtener_canales_y_proxy():
     # Descubrir el dominio proxy de forma 100% dinámica
     proxy_domain = descubrir_proxy_domain_100_dinamico(res.text, js_texts, active_host, base_site_usado)
     
-    # Extraer objetos de canales con regex
-    raw_channels = re.findall(r'\{[^{}]*?channel_name:[^{}]*?channel_id:[^{}]*?\}', channels_js_text)
+    # Extraer objetos de canales con regex (soporta cualquier orden de atributos)
+    raw_channels = re.findall(r'\{[^{}]*?channel_id:[^{}]*?\}', channels_js_text)
     print(f"Se encontraron {len(raw_channels)} canales en el código fuente.")
     
     canales = []
