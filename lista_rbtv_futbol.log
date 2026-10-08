@@ -1,6 +1,7 @@
-2026-10-08 09:32:46,680 [INFO] Semillas descubiertas dinamicamente (4): ['https://www.fctv33hd.blog', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
-2026-10-08 09:32:47,264 [INFO] SITE_BASE resuelto dinamicamente (score 1) desde semilla 'https://www.fctv33hd.blog': https://www.fctv33hd.blog
-2026-10-08 09:32:47,623 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
-2026-10-08 09:32:47,806 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
-2026-10-08 09:33:47,670 [INFO] OK https://apis-data10.tcpwe138stya.ru: 73 partidos recibidos
-2026-10-08 09:33:47,673 [INFO] Generado lista_rbtv_futbol.m3u con 73 partidos de futbol (SITE_BASE: https://www.fctv33hd.blog)
+2026-10-08 16:59:27,283 [INFO] Semillas descubiertas dinamicamente (4): ['https://www.fctv33hd.blog', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
+2026-10-08 16:59:37,301 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPConnection(host='rbtv77.com', port=80): Failed to resolve 'rbtv77.com' ([Errno -3] Temporary failure in name resolution)")': /
+2026-10-08 16:59:39,559 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.blog': https://www.fctv33hd.vip
+2026-10-08 16:59:41,180 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
+2026-10-08 16:59:42,451 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
+2026-10-08 16:59:58,452 [INFO] OK https://apis-data10.tcpwe138stya.ru: 95 partidos recibidos
+2026-10-08 16:59:58,455 [INFO] Generado lista_rbtv_futbol.m3u con 95 partidos de futbol (SITE_BASE: https://www.fctv33hd.vip)
