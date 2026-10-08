@@ -1,218 +1,158 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-10-07 15:00</datetime>
-    <league>Liga de Paraguay</league>
-    <teams>Sportivo Ameliano vs Rubio Ñú</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>1-1</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BhcmFndWF5MS5waHA=</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>1-2</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BhcmFndWF5Mi5waHA=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-07 17:15</datetime>
-    <league>Liga de Paraguay</league>
-    <teams>Club Olimpia vs Nacional Asunción</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1 (HD)</channel_name>
-        <channel_id>2-1</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BhcmFndWF5MS5waHA=</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>2-2</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3BhcmFndWF5Mi5waHA=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-07 18:00</datetime>
-    <league>Amistoso Internacional</league>
-    <teams>Argentina vs Benin</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>3-1</channel_id>
-        <url>https://rojadirectauno.pl/en-vivo/capo-deportes.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>3-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXIxLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>3-3</channel_id>
-        <url>https://tarjetarojatv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXIyLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>3-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXIzLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>3-5</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI0LnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 6 (HD)</channel_name>
-        <channel_id>3-6</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI5LnBocA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-07 18:00</datetime>
-    <league>Amistoso Internacional</league>
-    <teams>Colombia vs Perú</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>4-1</channel_id>
-        <url>https://rojadirectauno.pl/en-vivo/capo-deportes-2.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>4-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI1LnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>4-3</channel_id>
-        <url>https://tarjetarojatv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI2LnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>4-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI3LnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>4-5</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3ByZW1pZXI4LnBocA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-07 18:30</datetime>
+    <datetime>2026-10-08 17:00</datetime>
     <league>Copa Chile</league>
-    <teams>Colo Colo vs Puerto Montt</teams>
+    <teams>Coquimbo Unido vs Cobreloa</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>5-1</channel_id>
+        <channel_id>1-1</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3RudGNoaWxlLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>5-2</channel_id>
+        <channel_id>1-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NoaWxlMS5waHA=</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>5-3</channel_id>
+        <channel_id>1-3</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NoaWxlMi5waHA=</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>5-4</channel_id>
+        <channel_id>1-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NoaWxlMy5waHA=</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-10-07 19:00</datetime>
-    <league>Amistoso Internacional</league>
-    <teams>Estados Unidos (USA) vs Canadá</teams>
+    <datetime>2026-10-08 17:00</datetime>
+    <league>Liga de Chile</league>
+    <teams>Antofagasta vs Universidad Chile</teams>
     <channels>
       <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>6-1</channel_id>
-        <url>https://rojadirectauno.pl/en-vivo/capo-deportes-3.php</url>
+        <channel_name>Canal 1 (HD)</channel_name>
+        <channel_id>2-1</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NoaWxlNC5waHA=</url>
       </channel>
       <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>6-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDUucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>6-3</channel_id>
-        <url>https://tarjetarojatv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDYucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>6-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDcucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>6-5</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDgucGhw</url>
+        <channel_name>Canal 2 (HD)</channel_name>
+        <channel_id>2-2</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NoaWxlNS5waHA=</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-10-07 19:30</datetime>
-    <league>MLS</league>
-    <teams>Chicago Fire vs Vancouver Whitecaps</teams>
+    <datetime>2026-10-08 17:30</datetime>
+    <league>Brasileirao</league>
+    <teams>Internacional vs Corinthians</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1 (HD)</channel_name>
+        <channel_id>3-1</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDEucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2 (HD)</channel_name>
+        <channel_id>3-2</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDIucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-08 17:30</datetime>
+    <league>Brasileirao</league>
+    <teams>Remo vs Gremio</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1 (HD)</channel_name>
+        <channel_id>4-1</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDMucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2 (HD)</channel_name>
+        <channel_id>4-2</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDQucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-08 17:30</datetime>
+    <league>Brasileirao</league>
+    <teams>Red Bull Bragantino vs Mirassol</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1 (HD)</channel_name>
+        <channel_id>5-1</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDUucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2 (HD)</channel_name>
+        <channel_id>5-2</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDYucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-08 18:00</datetime>
+    <league>Brasileirao</league>
+    <teams>Vitoria vs Chapecoense</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1 (HD)</channel_name>
+        <channel_id>6-1</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDcucGhw</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2 (HD)</channel_name>
+        <channel_id>6-2</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDgucGhw</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-08 18:30</datetime>
+    <league>Brasileirao</league>
+    <teams>Botafogo vs Vasco da Gama</teams>
     <channels>
       <channel>
         <channel_name>Canal 1 (HD)</channel_name>
         <channel_id>7-1</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczEucGhw</url>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDkucGhw</url>
       </channel>
       <channel>
         <channel_name>Canal 2 (HD)</channel_name>
         <channel_id>7-2</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL21sczIucGhw</url>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDEwLnBocA==</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-10-07 21:30</datetime>
-    <league>Amistoso Internacional</league>
-    <teams>México vs Chile</teams>
+    <datetime>2026-10-08 19:30</datetime>
+    <league>Brasileirao</league>
+    <teams>Cruzeiro vs Sao Paulo</teams>
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
         <channel_id>8-1</channel_id>
-        <url>https://rojadirectauno.pl/en-vivo/capo-deportes.php</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL3dpbnNwb3J0cy5waHA=</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
         <channel_id>8-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDEucGhw</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhNC5waHA=</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
         <channel_id>8-3</channel_id>
-        <url>https://tarjetarojatv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDIucGhw</url>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2NvbG9tYmlhNS5waHA=</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
         <channel_id>8-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDMucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>8-5</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDQucGhw</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 6 (HD)</channel_name>
-        <channel_id>8-6</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2xpZ2FteDkucGhw</url>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9wbGF5dmkub3JnL2JyYXNpbDExLnBocA==</url>
       </channel>
     </channels>
   </event>
