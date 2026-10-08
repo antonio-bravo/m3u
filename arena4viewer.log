@@ -1,5 +1,14 @@
-2026-10-08 01:52:31,944 [INFO] 🚀 Iniciando extracción de Arena4Viewer...
-2026-10-08 01:52:31,944 [INFO] 📡 Probando servidor: https://www.arena4viewer.in
-2026-10-08 01:52:33,935 [INFO] ✅ ¡Éxito! Encontrados 139 canales en https://www.arena4viewer.in
-2026-10-08 01:52:33,936 [INFO] ✨ Archivo 'arena4viewer.m3u' generado correctamente.
-2026-10-08 01:52:33,936 [INFO] 📺 Rango de canales: 1 al 160
+2026-10-08 08:52:22,195 [INFO] 🚀 Iniciando extracción de Arena4Viewer...
+2026-10-08 08:52:22,195 [INFO] 📡 Probando servidor: https://www.arena4viewer.in
+2026-10-08 08:52:37,256 [ERROR] ❌ Error conectando a https://www.arena4viewer.in: HTTPSConnectionPool(host='www.arena4viewer.in', port=443): Read timed out. (read timeout=15)
+2026-10-08 08:52:37,257 [INFO] 📡 Probando servidor: https://www.arena4viewer.pl
+2026-10-08 08:52:37,292 [ERROR] ❌ Error conectando a https://www.arena4viewer.pl: HTTPSConnectionPool(host='www.arena4viewer.pl', port=443): Max retries exceeded with url: /misguia2.php (Caused by NameResolutionError("HTTPSConnection(host='www.arena4viewer.pl', port=443): Failed to resolve 'www.arena4viewer.pl' ([Errno -2] Name or service not known)"))
+2026-10-08 08:52:37,292 [INFO] 📡 Probando servidor: https://www.arena4viewer.co.in
+2026-10-08 08:52:52,361 [ERROR] ❌ Error conectando a https://www.arena4viewer.co.in: HTTPSConnectionPool(host='www.arena4viewer.co.in', port=443): Read timed out. (read timeout=15)
+2026-10-08 08:52:52,361 [INFO] 📡 Probando servidor: https://www.arena4viewer.cool
+2026-10-08 08:53:07,427 [ERROR] ❌ Error conectando a https://www.arena4viewer.cool: HTTPSConnectionPool(host='www.arena4viewer.cool', port=443): Read timed out. (read timeout=15)
+2026-10-08 08:53:07,427 [INFO] 📡 Probando servidor: https://www.arena4viewer.top
+2026-10-08 08:53:22,545 [ERROR] ❌ Error conectando a https://www.arena4viewer.top: HTTPSConnectionPool(host='www.arena4viewer.top', port=443): Read timed out. (read timeout=15)
+2026-10-08 08:53:22,546 [INFO] 📡 Probando servidor: https://www.arena4viewer.lv
+2026-10-08 08:53:37,777 [ERROR] ❌ Error conectando a https://www.arena4viewer.lv: HTTPSConnectionPool(host='www.arena4viewer.lv', port=443): Read timed out. (read timeout=15)
+2026-10-08 08:53:37,777 [ERROR] ❌ No se pudo obtener la lista de canales de ninguna fuente.
