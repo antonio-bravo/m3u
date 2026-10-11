@@ -5,7 +5,7 @@
   "addLabels": ["dependencies"],
   "packageRules": [
     {
-      "matchPackageNames": ["protobuf"],
+      "matchPackageNames": ["protobuf", "python"],
       "enabled": false
     },
     {

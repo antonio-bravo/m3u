@@ -6,6 +6,7 @@ on:
     paths:
       - script_detector_deportes.py
       - requirements.txt
+      - requirements-detector.txt
       - .github/workflows/detecta_deportes.yml
 
 permissions:
@@ -32,12 +33,13 @@ jobs:
       - name: Configura Python
         uses: actions/setup-python@v7
         with:
-          python-version: "3.15"
+          python-version: "3.11"
 
       - name: Instala dependencias
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install -r requirements-detector.txt
           pip install --no-deps "protobuf>=4.25.0"
 
       - name: Ejecuta el detector de deportes
