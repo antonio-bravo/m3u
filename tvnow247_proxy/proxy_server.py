@@ -290,37 +290,43 @@ async def get_live_playlist(channel_id: str, request: Request):
 
     base_url = str(request.base_url).rstrip("/")
     token = encode_token(channel_id)
-    upstream_url = f"https://{state.active_domain}/api/proxy/playlist?token={token}"
+    
+    # Probar dominios proxy candidatos en orden de prioridad
+    candidate_domains = [state.active_domain, "chunk.tvnow247.today", "tvnow247.top", "tvnow247.today"]
+    seen_domains = set()
+    candidate_domains = [d for d in candidate_domains if d and not (d in seen_domains or seen_domains.add(d))]
 
-    try:
-        r = await http_client.get(upstream_url, headers={**HEADERS, "Referer": f"https://{state.active_domain}/"})
-        
-        # Si falla el dominio actual, intentar descubrir uno nuevo al vuelo
-        if r.status_code != 200 or "#EXTM3U" not in r.text:
-            logger.warning(f"Error {r.status_code} en {state.active_domain}, intentando redescubrir dominio...")
-            new_domain = await discover_proxy_domain()
-            if new_domain != state.active_domain:
-                state.active_domain = new_domain
-                upstream_url = f"https://{state.active_domain}/api/proxy/playlist?token={token}"
-                r = await http_client.get(upstream_url, headers={**HEADERS, "Referer": f"https://{state.active_domain}/"})
+    r = None
+    for d in candidate_domains:
+        upstream_url = f"https://{d}/api/proxy/playlist?token={token}"
+        try:
+            res = await http_client.get(upstream_url, headers={**HEADERS, "Referer": f"https://{d}/"})
+            if res.status_code == 200 and "#EXTM3U" in res.text:
+                r = res
+                if d != state.active_domain:
+                    logger.info(f"Cambiando dominio activo a {d}")
+                    state.active_domain = d
+                break
+        except Exception as ex:
+            logger.warning(f"Error consultando upstream {d}: {ex}")
 
-        if r.status_code != 200 or "#EXTM3U" not in r.text:
-            # Fallback al endpoint de resolución cfbu247 si el proxy falla
+    # Si ninguno de los dominios directos funcionó, intentar fallback a resolver API
+    if not r or r.status_code != 200 or "#EXTM3U" not in r.text:
+        try:
             fallback_res = await http_client.get(f"https://chat.cfbu247.sbs/api/resolve-dlstream/{channel_id}")
             if fallback_res.status_code == 200:
                 data = fallback_res.json()
                 alt_url = data.get("proxyPlaylistUrl") or data.get("m3u8")
                 if alt_url:
                     r = await http_client.get(alt_url)
+        except Exception:
+            pass
 
-        if r.status_code != 200 or "#EXTM3U" not in r.text:
-            raise HTTPException(status_code=502, detail=f"Upstream devolvió estado {r.status_code}")
+    if not r or r.status_code != 200 or "#EXTM3U" not in r.text:
+        status_code = r.status_code if r else 502
+        raise HTTPException(status_code=502, detail=f"Upstream no devolvió una lista válida (estado {status_code})")
 
-    except Exception as e:
-        logger.error(f"Error al obtener playlist de canal {channel_id}: {e}")
-        raise HTTPException(status_code=502, detail=f"No se pudo conectar al upstream: {e}")
-
-    # Reescribir las URLs de los segmentos para que pasen por /segment
+    # Reescribir las URLs de los segmentos para que pasen por /segment de forma segura con base64
     rewritten_lines = []
     for line in r.text.splitlines():
         line = line.strip()
@@ -332,9 +338,9 @@ async def get_live_playlist(channel_id: str, request: Request):
         if line.startswith("#"):
             rewritten_lines.append(line)
         else:
-            # Línea de segmento
-            encoded_seg_url = quote(line, safe="")
-            local_seg_url = f"{base_url}/segment?url={encoded_seg_url}"
+            # Codificar la URL del segmento en base64 url-safe para evitar problemas de escape de caracteres (%2F, +, =)
+            b64_seg = base64.urlsafe_b64encode(line.encode("utf-8")).decode("utf-8")
+            local_seg_url = f"{base_url}/segment?b64={b64_seg}"
             rewritten_lines.append(local_seg_url)
 
     m3u8_content = "\n".join(rewritten_lines) + "\n"
@@ -381,8 +387,8 @@ async def proxy_direct_url(url: str = Query(..., description="URL de playlist up
         if line.startswith("#"):
             rewritten_lines.append(line)
         else:
-            encoded_seg = quote(line, safe="")
-            rewritten_lines.append(f"{base_url}/segment?url={encoded_seg}")
+            b64_seg = base64.urlsafe_b64encode(line.encode("utf-8")).decode("utf-8")
+            rewritten_lines.append(f"{base_url}/segment?b64={b64_seg}")
 
     return Response(
         content="\n".join(rewritten_lines) + "\n",
@@ -392,13 +398,24 @@ async def proxy_direct_url(url: str = Query(..., description="URL de playlist up
 
 
 @app.get("/segment")
-async def get_segment(url: str = Query(..., description="URL codificada del fragmento de video")):
+async def get_segment(
+    b64: Optional[str] = Query(None, description="URL en Base64 seguro para URL"),
+    url: Optional[str] = Query(None, description="URL directa sin doble unquote")
+):
     """Descarga el fragmento, desofusca el formato PNG/TIKTIKPX y devuelve video MPEG-TS."""
     global http_client, SEGMENT_CACHE
     if not http_client:
         raise HTTPException(status_code=500, detail="HTTP client no inicializado")
 
-    raw_url = unquote(url)
+    if b64:
+        try:
+            raw_url = base64.urlsafe_b64decode(b64.encode("utf-8")).decode("utf-8")
+        except Exception as e:
+            raise HTTPException(status_code=400, detail=f"Parámetro b64 inválido: {e}")
+    elif url:
+        raw_url = url
+    else:
+        raise HTTPException(status_code=400, detail="Falta el parámetro de segmento (b64 o url)")
 
     # Revisar si ya está en caché
     if raw_url in SEGMENT_CACHE:
@@ -408,19 +425,33 @@ async def get_segment(url: str = Query(..., description="URL codificada del frag
             headers={"Access-Control-Allow-Origin": "*", "Cache-Control": "public, max-age=3600"}
         )
 
+    # Intentar descargar con reintentos para mitigar fallos transitorios de CDN
+    raw_bytes = None
+    last_err = None
+    for attempt in range(3):
+        try:
+            r = await http_client.get(raw_url, headers=HEADERS, timeout=8.0)
+            if r.status_code == 200:
+                raw_bytes = r.content
+                break
+            last_err = f"HTTP {r.status_code}"
+            logger.warning(f"Intento {attempt+1}/3: Falló descarga de fragmento ({last_err})")
+        except Exception as e:
+            last_err = str(e)
+            logger.warning(f"Intento {attempt+1}/3: Error descargando fragmento: {e}")
+        if attempt < 2:
+            await asyncio.sleep(0.3)
+
+    if raw_bytes is None:
+        logger.error(f"Error definitivo procesando segmento ({last_err}): {raw_url}")
+        raise HTTPException(status_code=502, detail=f"Error al descargar fragmento de CDN: {last_err}")
+
     try:
-        r = await http_client.get(raw_url, headers=HEADERS)
-        if r.status_code != 200:
-            raise HTTPException(status_code=r.status_code, detail="Error al descargar fragmento de CDN")
-
-        raw_bytes = r.content
-
         # Desofuscar si es un PNG
         ts_bytes = deobfuscate_segment(raw_bytes)
 
         # Almacenar en caché LRU básica
         if len(SEGMENT_CACHE) >= MAX_SEGMENT_CACHE_ITEMS:
-            # Eliminar el primer elemento insertado
             first_key = next(iter(SEGMENT_CACHE))
             del SEGMENT_CACHE[first_key]
 
@@ -436,8 +467,8 @@ async def get_segment(url: str = Query(..., description="URL codificada del frag
         )
 
     except Exception as e:
-        logger.error(f"Error procesando segmento: {e}")
-        raise HTTPException(status_code=500, detail=f"Error al procesar segmento: {e}")
+        logger.error(f"Error desofuscando segmento: {e}")
+        raise HTTPException(status_code=500, detail=f"Error al desofuscar segmento: {e}")
 
 
 if __name__ == "__main__":
