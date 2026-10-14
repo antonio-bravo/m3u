@@ -39,5 +39,5 @@ jobs:
       - name: Verificar y Subir cambios
         uses: ./.github/actions/commit-and-push
         with:
-          files: lista_ak47sports.m3u lista_ak47sports.log
+          files: lista_ak47sports.m3u lista_ak47sports_ES.m3u lista_ak47sports.log
           commit_message: "Update AK47Sports Playlist: ${{ github.run_id }}-${{ github.run_attempt }}"
