@@ -188,7 +188,7 @@ def generar_url_proxy(channel_id, domain):
     payload = {'channelId': str(channel_id), 'ts': ts}
     json_str = json.dumps(payload, separators=(',', ':'))
     token = base64.b64encode(json_str.encode('utf-8')).decode('utf-8').rstrip('=')
-    return f"https://{domain}/api/proxy/playlist?token={token}"
+    return f"http://l125.125.125.125:8888/proxy?url=https://{domain}/api/proxy/playlist?token={token}"
 
 def generar_lista_m3u(canales, proxy_domain, filename=OUTPUT_M3U):
     print(f"Generando archivo M3U: {filename}...")
