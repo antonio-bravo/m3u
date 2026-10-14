@@ -1,0 +1,36 @@
+name: Actualizar Lista Formatura Maxi
+
+on:
+  schedule:
+    - cron: '33 * * * *'  # Ejecutar cada hora (minuto 33, sin colisiones)
+  workflow_dispatch:      # Permitir ejecución manual
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: repo-main-writes
+  cancel-in-progress: false
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v7
+
+      - name: Configurar Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.x'
+
+      - name: Ejecutar script de actualización
+        run: python script_formaturamaxi.py
+
+      - name: Verificar y Subir cambios
+        uses: ./.github/actions/commit-and-push
+        with:
+          files: lista_formaturamaxi.m3u lista_formaturamaxi.log
+          commit_message: "Update Formatura Maxi Playlist: ${{ github.run_id }}-${{ github.run_attempt }}"
