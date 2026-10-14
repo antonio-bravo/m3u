@@ -1,0 +1,16 @@
+services:
+  tvnow-proxy:
+    image: ghcr.io/antonio-bravo/m3u/tvnow247-proxy:latest
+    container_name: tvnow247-proxy
+    restart: unless-stopped
+    ports:
+      - "8888:8080"
+    environment:
+      - PORT=8080
+      - PYTHONUNBUFFERED=1
+      - MAX_CACHE_ITEMS=20
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
