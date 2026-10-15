@@ -1,5 +1,5 @@
 #EXTM3U
-# Arena4Viewer - Actualizado: 2026-10-15 09:49:22
+# Arena4Viewer - Actualizado: 2026-10-15 14:56:27
 # Fuente: https://www.arena4viewer.in
 
 #EXTINF:-1 tvg-id="AV1" tvg-logo="" group-title="VACIO",AV1 
@@ -41,29 +41,11 @@ http://127.0.0.1:6878/ace/getstream?id=448551642d9c7d0de53aa35d1ee41788909b6c0c
 #EXTINF:-1 tvg-id="AV10" tvg-logo="" group-title="VACIO",AV10 
 http://127.0.0.1:6878/ace/getstream?id=67966d205968de9cf95dcffe3b2ff6888b106634
 
-#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - UEFA YOUTH LEAGUE - REAL BETIS-PORTO [14/10/2026 - 16:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
-
-#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - UEFA CHAMPIONS LEAGUE - ROMA-REAL MADRID [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
-
-#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - LIBERTADORES CUP - FLUMINENSE-PALMEIRAS [15/10/2026 - 02:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
-
 #EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - UEFA EUROPE LEAGUE - SAINT GILLOISE-REAL SOCIEDAD [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 
 #EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - UEFA EUROPE LEAGUE - CELTA-JUVENTUS [15/10/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
-
-#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",AV 12 - SOCCER - UEFA YOUTH LEAGUE - REAL BETIS-PORTO [14/10/2026 - 16:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
-
-#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",AV 12 - SOCCER - UEFA CHAMPIONS LEAGUE - ROMA-REAL MADRID [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
-
-#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",AV 12 - SOCCER - LIBERTADORES CUP - FLUMINENSE-PALMEIRAS [15/10/2026 - 02:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
 
 #EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",AV 12 - SOCCER - UEFA EUROPE LEAGUE - SAINT GILLOISE-REAL SOCIEDAD [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
@@ -93,34 +75,25 @@ http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
 
 #EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",AV 14 - PADDLE - PREMIER PADDLE - MILAN OPEN-WOMEN QUARTERS [16/10/2026 - 09:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 
 #EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",AV 14 - PADDLE - PREMIER PADDLE - MILAN OPEN-WOMEN QUARTERS [16/10/2026 - 11:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 
 #EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",AV 14 - PADDLE - PREMIER PADDLE - MILAN OPEN-MEN QUARTERS [16/10/2026 - 13:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 
 #EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",AV 14 - PADDLE - PREMIER PADDLE - MILAN OPEN-WOMEN QUARTERS [16/10/2026 - 18:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 
 #EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",AV 14 - PADDLE - PREMIER PADDLE - MILAN OPEN-MEN QUARTERS [16/10/2026 - 20:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 
 #EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",AV 14 - PADDLE - PREMIER PADDLE - MILAN OPEN-MEN QUARTERS [16/10/2026 - 22:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 
 #EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="RUGBY",AV 14 - RUGBY - FRIENDLY MATCH - AUSTRALIA-NEW ZEALAND [17/10/2026 - 07:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-
-#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="BASKETBALL",AV 15 - BASKETBALL - WOMEN EUROLEAGUE - FENERBAHCE-VALENCIA [14/10/2026 - 20:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=26159ba451167e962f4f9236ab4c7626f7eb4e49
-
-#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="SOCCER",AV 15 - SOCCER - SOUTH AMERICA CUP - ATLETICO MINEIRO-MONTEVIDEO [15/10/2026 - 00:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=26159ba451167e962f4f9236ab4c7626f7eb4e49
-
-#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="SOCCER",AV 15 - SOCCER - LIBERTADORES CUP - FLUMINENSE-PALMEIRAS [15/10/2026 - 02:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=26159ba451167e962f4f9236ab4c7626f7eb4e49
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 
 #EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="BASKETBALL",AV 15 - BASKETBALL - EUROLEAGUE - REAL MADRID-ASVEL [15/10/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=26159ba451167e962f4f9236ab4c7626f7eb4e49
@@ -139,15 +112,6 @@ http://127.0.0.1:6878/ace/getstream?id=26159ba451167e962f4f9236ab4c7626f7eb4e49
 
 #EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="RUGBY",AV 15 - RUGBY - FRIENDLY MATCH - AUSTRALIA-NEW ZEALAND [17/10/2026 - 07:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=26159ba451167e962f4f9236ab4c7626f7eb4e49
-
-#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="BASKETBALL",AV 16 - BASKETBALL - WOMEN EUROLEAGUE - FENERBAHCE-VALENCIA [14/10/2026 - 20:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=7a053fc56fc93f42ec656382408e647055110e3e
-
-#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="SOCCER",AV 16 - SOCCER - SOUTH AMERICA CUP - ATLETICO MINEIRO-MONTEVIDEO [15/10/2026 - 00:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=7a053fc56fc93f42ec656382408e647055110e3e
-
-#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="SOCCER",AV 16 - SOCCER - LIBERTADORES CUP - FLUMINENSE-PALMEIRAS [15/10/2026 - 02:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=7a053fc56fc93f42ec656382408e647055110e3e
 
 #EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="BASKETBALL",AV 16 - BASKETBALL - EUROLEAGUE - REAL MADRID-ASVEL [15/10/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=7a053fc56fc93f42ec656382408e647055110e3e
@@ -182,11 +146,17 @@ http://127.0.0.1:6878/ace/getstream?id=350bb4d726e2dd4dc4b2b17b59da783fdb07c11b
 #EXTINF:-1 tvg-id="AV21" tvg-logo="" group-title="VACIO",AV21 
 http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 
-#EXTINF:-1 tvg-id="AV22" tvg-logo="" group-title="VACIO",AV22 
+#EXTINF:-1 tvg-id="AV22" tvg-logo="" group-title="SOCCER",AV 22 - SOCCER - UEFA EUROPE LEAGUE - SAINT GILLOISE-REAL SOCIEDAD [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
 
-#EXTINF:-1 tvg-id="AV23" tvg-logo="" group-title="VACIO",AV23 
-http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
+#EXTINF:-1 tvg-id="AV22" tvg-logo="" group-title="SOCCER",AV 22 - SOCCER - UEFA EUROPE LEAGUE - CELTA-JUVENTUS [15/10/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
+
+#EXTINF:-1 tvg-id="AV23" tvg-logo="" group-title="SOCCER",AV 23 - SOCCER - UEFA EUROPE LEAGUE - SAINT GILLOISE-REAL SOCIEDAD [15/10/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
+
+#EXTINF:-1 tvg-id="AV23" tvg-logo="" group-title="SOCCER",AV 23 - SOCCER - UEFA EUROPE LEAGUE - CELTA-JUVENTUS [15/10/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
 
 #EXTINF:-1 tvg-id="AV24" tvg-logo="" group-title="VACIO",AV24 
 http://127.0.0.1:6878/ace/getstream?id=63b1933154919d116f08e33ffcb31a23f9483989
@@ -224,26 +194,8 @@ http://127.0.0.1:6878/ace/getstream?id=3ebcfc00921a4a9307dec97e078f8dc12eee27e7
 #EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="HANDBALL",AV 35 - HANDBALL - SPANISH LEAGUE - LEON-VILLA ARANDA [16/10/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=7152d5f5fdb2184c88c2bb433d8b8f619cdc16b2
 
-#EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="SOCCER",AV 36 - SOCCER - UEFA YOUTH LEAGUE - MANCHESTER CITY-PSG [14/10/2026 - 16:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
-
-#EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="BASKETBALL",AV 36 - BASKETBALL - UEFA CHAMPIONS LEAGUE - LASK KINZ-LIVERPOOL [14/10/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
-
-#EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="SOCCER",AV 36 - SOCCER - UEFA CHAMPIONS LEAGUE - REAL BETIS-PORTO [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
-
-#EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="SOCCER",AV 36 - SOCCER - SOUTH AMERICA CUP - ATLETICO MINEIRO-MONTEVIDEO [15/10/2026 - 00:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
-
 #EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="SOCCER",AV 36 - SOCCER - UEFA EUROPE LEAGUE - FCU CRAIOVA-GETAFE [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
-
-#EXTINF:-1 tvg-id="AV37" tvg-logo="" group-title="BASKETBALL",AV 37 - BASKETBALL - UEFA CHAMPIONS LEAGUE - FEYENOORD-COMO 1907 [14/10/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=85a8e0675bc27ddfd403b8f72953c606d07a8de8
-
-#EXTINF:-1 tvg-id="AV37" tvg-logo="" group-title="SOCCER",AV 37 - SOCCER - UEFA CHAMPIONS LEAGUE - MANCHESTER CITY-PSG [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=85a8e0675bc27ddfd403b8f72953c606d07a8de8
 
 #EXTINF:-1 tvg-id="AV37" tvg-logo="" group-title="SOCCER",AV 37 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=85a8e0675bc27ddfd403b8f72953c606d07a8de8
@@ -260,26 +212,8 @@ http://127.0.0.1:6878/ace/getstream?id=e41352c657506cfe6eecc4f17982f69275f1660b
 #EXTINF:-1 tvg-id="AV40" tvg-logo="" group-title="VACIO",AV40 
 http://127.0.0.1:6878/ace/getstream?id=f588f41735c0c8ec0c412ef25ca5e5ac3b3626b9
 
-#EXTINF:-1 tvg-id="AV41" tvg-logo="" group-title="SOCCER",AV 41 - SOCCER - UEFA YOUTH LEAGUE - MANCHESTER CITY-PSG [14/10/2026 - 16:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=74ab4e4ec7e2da001f473ca40893b7307b8029c5
-
-#EXTINF:-1 tvg-id="AV41" tvg-logo="" group-title="BASKETBALL",AV 41 - BASKETBALL - UEFA CHAMPIONS LEAGUE - LASK KINZ-LIVERPOOL [14/10/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=74ab4e4ec7e2da001f473ca40893b7307b8029c5
-
-#EXTINF:-1 tvg-id="AV41" tvg-logo="" group-title="SOCCER",AV 41 - SOCCER - UEFA CHAMPIONS LEAGUE - REAL BETIS-PORTO [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=74ab4e4ec7e2da001f473ca40893b7307b8029c5
-
-#EXTINF:-1 tvg-id="AV41" tvg-logo="" group-title="SOCCER",AV 41 - SOCCER - SOUTH AMERICA CUP - ATLETICO MINEIRO-MONTEVIDEO [15/10/2026 - 00:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=74ab4e4ec7e2da001f473ca40893b7307b8029c5
-
 #EXTINF:-1 tvg-id="AV41" tvg-logo="" group-title="SOCCER",AV 41 - SOCCER - UEFA EUROPE LEAGUE - FCU CRAIOVA-GETAFE [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=74ab4e4ec7e2da001f473ca40893b7307b8029c5
-
-#EXTINF:-1 tvg-id="AV42" tvg-logo="" group-title="BASKETBALL",AV 42 - BASKETBALL - UEFA CHAMPIONS LEAGUE - FEYENOORD-COMO 1907 [14/10/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
-
-#EXTINF:-1 tvg-id="AV42" tvg-logo="" group-title="SOCCER",AV 42 - SOCCER - UEFA CHAMPIONS LEAGUE - MANCHESTER CITY-PSG [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
 
 #EXTINF:-1 tvg-id="AV42" tvg-logo="" group-title="SOCCER",AV 42 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
@@ -356,32 +290,17 @@ http://127.0.0.1:6878/ace/getstream?id=646a1ed4ece843de1979f7888cbdd4d937506a28
 #EXTINF:-1 tvg-id="AV59" tvg-logo="" group-title="VACIO",AV59 
 http://127.0.0.1:6878/ace/getstream?id=d298c6e5c8be71f5995b45289c6388b225318b3c
 
-#EXTINF:-1 tvg-id="AV60" tvg-logo="" group-title="SOCCER",AV 60 - SOCCER - UEFA CHAMPIONS LEAGUE - SIMULCAST [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
-
 #EXTINF:-1 tvg-id="AV60" tvg-logo="" group-title="SOCCER",AV 60 - SOCCER - UEFA EUROPE LEAGUE - BENFICA-CELTIC [15/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
-
-#EXTINF:-1 tvg-id="AV61" tvg-logo="" group-title="SOCCER",AV 61 - SOCCER - UEFA CHAMPIONS LEAGUE - SIMULCAST [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 
 #EXTINF:-1 tvg-id="AV61" tvg-logo="" group-title="SOCCER",AV 61 - SOCCER - UEFA EUROPE LEAGUE - BENFICA-CELTIC [15/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
-
-#EXTINF:-1 tvg-id="AV62" tvg-logo="" group-title="SOCCER",AV 62 - SOCCER - UEFA CHAMPIONS LEAGUE - ASTON VILLA-FENERBAHCE [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=3e430d14ef1cf1c147c7b06332081291e05a1431
+http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
 
 #EXTINF:-1 tvg-id="AV62" tvg-logo="" group-title="SOCCER",AV 62 - SOCCER - UEFA EUROPE LEAGUE - LYON-CRYSTAL PALACE [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=3e430d14ef1cf1c147c7b06332081291e05a1431
 
 #EXTINF:-1 tvg-id="AV62" tvg-logo="" group-title="SOCCER",AV 62 - SOCCER - UEFA EUROPE LEAGUE - HOFFENHEIM-BESIKTAS [15/10/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=3e430d14ef1cf1c147c7b06332081291e05a1431
-
-#EXTINF:-1 tvg-id="AV63" tvg-logo="" group-title="SOCCER",AV 63 - SOCCER - UEFA CHAMPIONS LEAGUE - ASTON VILLA-FENERBAHCE [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=5bed693c6a22de55f1061c509bba5e3aeb2ea2aa
-
-#EXTINF:-1 tvg-id="AV63" tvg-logo="" group-title="SOCCER",AV 63 - SOCCER - UEFA CHAMPIONS LEAGUE - SHARTAK-AEK FC [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=5bed693c6a22de55f1061c509bba5e3aeb2ea2aa
 
 #EXTINF:-1 tvg-id="AV63" tvg-logo="" group-title="SOCCER",AV 63 - SOCCER - UEFA EUROPE LEAGUE - LYON-CRYSTAL PALACE [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=5bed693c6a22de55f1061c509bba5e3aeb2ea2aa
@@ -392,23 +311,26 @@ http://127.0.0.1:6878/ace/getstream?id=5bed693c6a22de55f1061c509bba5e3aeb2ea2aa
 #EXTINF:-1 tvg-id="AV63" tvg-logo="" group-title="SOCCER",AV 63 - SOCCER - UEFA EUROPE LEAGUE - HOFFENHEIM-BESIKTAS [15/10/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=5bed693c6a22de55f1061c509bba5e3aeb2ea2aa
 
-#EXTINF:-1 tvg-id="AV64" tvg-logo="" group-title="SOCCER",AV 64 - SOCCER - UEFA CHAMPIONS LEAGUE - SHARTAK-AEK FC [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=5620c0ce3dcbf14a6375cb2c2d681207f45eb97d
-
 #EXTINF:-1 tvg-id="AV64" tvg-logo="" group-title="SOCCER",AV 64 - SOCCER - UEFA EUROPE LEAGUE - SPARTA PRAHA-LILLESTROM [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=5620c0ce3dcbf14a6375cb2c2d681207f45eb97d
 
 #EXTINF:-1 tvg-id="AV65" tvg-logo="" group-title="VACIO",AV65 
 http://127.0.0.1:6878/ace/getstream?id=3e430d14ef1cf1c147c7b06332081291e05a1431
 
-#EXTINF:-1 tvg-id="AV66" tvg-logo="" group-title="VACIO",AV66 
+#EXTINF:-1 tvg-id="AV66" tvg-logo="" group-title="SOCCER",AV 66 - SOCCER - UEFA EUROPE LEAGUE - FCU CRAIOVA-GETAFE [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
 
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [15/10/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=cfc371890bfb502737a26de5215e50929c52d0f9
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [15/10/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=cfc371890bfb502737a26de5215e50929c52d0f9
+
 #EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - CARTAGENA-CE EUROPA [16/10/2026 - 19:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=3fbc1b7dc316f19b77e7f7cfc775a0af67adcc7f
+http://127.0.0.1:6878/ace/getstream?id=cfc371890bfb502737a26de5215e50929c52d0f9
 
 #EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - ALCORCON-HUESCA [16/10/2026 - 21:15 CET]
-http://127.0.0.1:6878/ace/getstream?id=3fbc1b7dc316f19b77e7f7cfc775a0af67adcc7f
+http://127.0.0.1:6878/ace/getstream?id=cfc371890bfb502737a26de5215e50929c52d0f9
 
 #EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - CARTAGENA-CE EUROPA [16/10/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=3fbc1b7dc316f19b77e7f7cfc775a0af67adcc7f
@@ -461,15 +383,6 @@ http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
 #EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="RUGBY",AV 71 - RUGBY - FRIENDLY MATCH - AUSTRALIA-NEW ZEALAND [17/10/2026 - 07:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
 
-#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="BASKETBALL",AV 72 - BASKETBALL - WOMEN EUROLEAGUE - FENERBAHCE-VALENCIA [14/10/2026 - 20:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=6b60251bc893c4e79fdfa37a1f5f6212e73ea6f9
-
-#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="SOCCER",AV 72 - SOCCER - SOUTH AMERICA CUP - ATLETICO MINEIRO-MONTEVIDEO [15/10/2026 - 00:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=6b60251bc893c4e79fdfa37a1f5f6212e73ea6f9
-
-#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="SOCCER",AV 72 - SOCCER - LIBERTADORES CUP - FLUMINENSE-PALMEIRAS [15/10/2026 - 02:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=6b60251bc893c4e79fdfa37a1f5f6212e73ea6f9
-
 #EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="BASKETBALL",AV 72 - BASKETBALL - EUROLEAGUE - REAL MADRID-ASVEL [15/10/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=6b60251bc893c4e79fdfa37a1f5f6212e73ea6f9
 
@@ -487,15 +400,6 @@ http://127.0.0.1:6878/ace/getstream?id=6b60251bc893c4e79fdfa37a1f5f6212e73ea6f9
 
 #EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="RUGBY",AV 72 - RUGBY - FRIENDLY MATCH - AUSTRALIA-NEW ZEALAND [17/10/2026 - 07:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=6b60251bc893c4e79fdfa37a1f5f6212e73ea6f9
-
-#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="BASKETBALL",AV 73 - BASKETBALL - WOMEN EUROLEAGUE - FENERBAHCE-VALENCIA [14/10/2026 - 20:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=26159ba451167e962f4f9236ab4c7626f7eb4e49
-
-#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="SOCCER",AV 73 - SOCCER - SOUTH AMERICA CUP - ATLETICO MINEIRO-MONTEVIDEO [15/10/2026 - 00:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=26159ba451167e962f4f9236ab4c7626f7eb4e49
-
-#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="SOCCER",AV 73 - SOCCER - LIBERTADORES CUP - FLUMINENSE-PALMEIRAS [15/10/2026 - 02:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=26159ba451167e962f4f9236ab4c7626f7eb4e49
 
 #EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="BASKETBALL",AV 73 - BASKETBALL - EUROLEAGUE - REAL MADRID-ASVEL [15/10/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=26159ba451167e962f4f9236ab4c7626f7eb4e49
@@ -521,10 +425,13 @@ http://127.0.0.1:6878/ace/getstream?id=0e5d8c9724fa9163f49096b70484e315251eb785
 #EXTINF:-1 tvg-id="AV75" tvg-logo="" group-title="VACIO",AV75 
 http://127.0.0.1:6878/ace/getstream?id=476b6f6583517bd75c15c4663bf45fab7c8da9cf
 
-#EXTINF:-1 tvg-id="AV76" tvg-logo="" group-title="VACIO",AV76 
+#EXTINF:-1 tvg-id="AV76" tvg-logo="" group-title="SOCCER",AV 76 - SOCCER - UEFA EUROPE LEAGUE - FCU CRAIOVA-GETAFE [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=38f7b2044e549df2039ff26cefa6f9a60c854d5e
 
-#EXTINF:-1 tvg-id="AV77" tvg-logo="" group-title="VACIO",AV77 
+#EXTINF:-1 tvg-id="AV77" tvg-logo="" group-title="SOCCER",AV 77 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [15/10/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=4416843c96b7f7a1bc55c476091a60fff0922bc7
+
+#EXTINF:-1 tvg-id="AV77" tvg-logo="" group-title="SOCCER",AV 77 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [15/10/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=4416843c96b7f7a1bc55c476091a60fff0922bc7
 
 #EXTINF:-1 tvg-id="AV78" tvg-logo="" group-title="VACIO",AV78 
@@ -569,17 +476,11 @@ http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
 #EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="SOCCER",AV 91 - SOCCER - SPANISH LEAGUE - DEPORTIVO-LEVANTE [16/10/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=b63fcadc2390455d8a328f6c16b8b0a9adec21a3
 
-#EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="SOCCER",AV 92 - SOCCER - UEFA CHAMPIONS LEAGUE - ROMA-REAL MADRID [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
-
 #EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="SOCCER",AV 92 - SOCCER - UEFA EUROPE LEAGUE - SAINT GILLOISE-REAL SOCIEDAD [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
 
 #EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="SOCCER",AV 92 - SOCCER - UEFA EUROPE LEAGUE - CELTA-JUVENTUS [15/10/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
-
-#EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="SOCCER",AV 93 - SOCCER - UEFA CHAMPIONS LEAGUE - ROMA-REAL MADRID [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
 
 #EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="SOCCER",AV 93 - SOCCER - UEFA EUROPE LEAGUE - SAINT GILLOISE-REAL SOCIEDAD [15/10/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
@@ -590,14 +491,8 @@ http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
 #EXTINF:-1 tvg-id="AV94" tvg-logo="" group-title="VACIO",AV94 
 http://127.0.0.1:6878/ace/getstream?id=56ef80b811b65df74edae1f2a23805c45600caad
 
-#EXTINF:-1 tvg-id="AV95" tvg-logo="" group-title="BASKETBALL",AV 95 - BASKETBALL - CHAMPIONS LEAGUE - BAMBERG-MURCIA [14/10/2026 - 19:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=b35b3eb8e22365bf3469efd6d1f3b82618a6e18a
-
 #EXTINF:-1 tvg-id="AV95" tvg-logo="" group-title="HANDBALL",AV 95 - HANDBALL - SPANISH LEAGUE - LEON-VILLA ARANDA [16/10/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=b35b3eb8e22365bf3469efd6d1f3b82618a6e18a
-
-#EXTINF:-1 tvg-id="AV96" tvg-logo="" group-title="BASKETBALL",AV 96 - BASKETBALL - CHAMPIONS LEAGUE - BAMBERG-MURCIA [14/10/2026 - 19:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=77cf022557c56cdf8d8115f50e61f846ad72ee05
 
 #EXTINF:-1 tvg-id="AV96" tvg-logo="" group-title="HANDBALL",AV 96 - HANDBALL - SPANISH LEAGUE - LEON-VILLA ARANDA [16/10/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=77cf022557c56cdf8d8115f50e61f846ad72ee05
@@ -662,10 +557,10 @@ http://127.0.0.1:6878/ace/getstream?id=c8c172886e466fbe443433f8e95d201e34edd879
 #EXTINF:-1 tvg-id="AV109" tvg-logo="" group-title="BOXING",AV 109 - BOXING - BOXING EVENT - PROFESSIONAL FIGHTERS LEAGUE [17/10/2026 - 00:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=c8c172886e466fbe443433f8e95d201e34edd879
 
-#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-ANDORRA [14/10/2026 - 20:00 CET]
+#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="VACIO",AV110 
 http://127.0.0.1:6878/ace/getstream?id=6fbd92735502bdebbf1ea58f4298e49759c0cf07
 
-#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-ANDORRA [14/10/2026 - 20:00 CET]
+#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="VACIO",AV111 
 http://127.0.0.1:6878/ace/getstream?id=4005aabe21ba9c6d748845db91e4f48d99f58639
 
 #EXTINF:-1 tvg-id="AV112" tvg-logo="" group-title="VACIO",AV112 
@@ -674,23 +569,11 @@ http://127.0.0.1:6878/ace/getstream?id=853129258a5cb51f27829eddb934e58b45978344
 #EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="VACIO",AV113 
 http://127.0.0.1:6878/ace/getstream?id=13d68ecb392251a81489ce75be90388498ecfb91
 
-#EXTINF:-1 tvg-id="AV114" tvg-logo="" group-title="BASKETBALL",AV 114 - BASKETBALL - EUROLEAGUE - HAPOEL-BESIKTAS [14/10/2026 - 18:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=34b91125bd752462f1eca2d8d52f5f40fa761aa0
-
-#EXTINF:-1 tvg-id="AV114" tvg-logo="" group-title="BASKETBALL",AV 114 - BASKETBALL - EUROCUP - LA LAGUNA TENERIFE-MAXIMA ROMA [14/10/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=34b91125bd752462f1eca2d8d52f5f40fa761aa0
-
 #EXTINF:-1 tvg-id="AV114" tvg-logo="" group-title="BASKETBALL",AV 114 - BASKETBALL - EUROLEAGUE - VALENCIA-MACCABI TEL AVIV [15/10/2026 - 20:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=34b91125bd752462f1eca2d8d52f5f40fa761aa0
 
 #EXTINF:-1 tvg-id="AV114" tvg-logo="" group-title="BASKETBALL",AV 114 - BASKETBALL - EUROLEAGUE - BARCELONA-OLYMPIACOS [16/10/2026 - 20:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=34b91125bd752462f1eca2d8d52f5f40fa761aa0
-
-#EXTINF:-1 tvg-id="AV115" tvg-logo="" group-title="BASKETBALL",AV 115 - BASKETBALL - EUROLEAGUE - ZARAGOZA-LANDES [14/10/2026 - 19:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=c8c33b2673efe7f386790c5966643820578f3535
-
-#EXTINF:-1 tvg-id="AV115" tvg-logo="" group-title="BASKETBALL",AV 115 - BASKETBALL - EUROCUP - BURGOS-HAPOEL [14/10/2026 - 20:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=c8c33b2673efe7f386790c5966643820578f3535
 
 #EXTINF:-1 tvg-id="AV115" tvg-logo="" group-title="BASKETBALL",AV 115 - BASKETBALL - EUROLEAGUE - FENERBAHCE-PARTIZAN [15/10/2026 - 19:45 CET]
 http://127.0.0.1:6878/ace/getstream?id=c8c33b2673efe7f386790c5966643820578f3535
