@@ -16,6 +16,7 @@ permissions:
 jobs:
   update-m3u:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     
     # Permisos explícitos para que el bot pueda escribir en el repo
     permissions:

@@ -16,6 +16,7 @@ permissions:
 jobs:
   update_script:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
     - name: Checkout del repositorio

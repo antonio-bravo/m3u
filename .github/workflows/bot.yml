@@ -16,6 +16,7 @@ jobs:
   dependabot:
     if: contains(github.event.pull_request.user.login, '[bot]')
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PR_NUMBER: ${{ github.event.pull_request.number }}
