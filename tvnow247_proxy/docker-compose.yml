@@ -2,6 +2,7 @@ services:
   tvnow-proxy:
     # build: .
     image: ghcr.io/antonio-bravo/m3u/tvnow247-proxy:latest
+    pull_policy: always
     container_name: tvnow247-proxy
     restart: unless-stopped
     ports:
