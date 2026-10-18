@@ -21,9 +21,12 @@ import time
 import logging
 import re
 import subprocess
+import warnings
 from urllib.parse import urlparse
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+warnings.filterwarnings("ignore", category=UserWarning)
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -89,7 +92,7 @@ def _extraer_dominios_de_texto(texto):
         parsed = urlparse(m)
         if parsed.scheme and parsed.netloc:
             netloc = parsed.netloc.lower()
-            if not any(x in netloc for x in ["github", "logos", "schema", "w3.org", "tcdru136ovur", "tcllu137fien"]):
+            if not any(x in netloc for x in ["github", "logos", "schema", "w3.org", "tcdru136ovur", "tcllu137fien", "apis-data", "tcpwe"]):
                 base = f"{parsed.scheme}://{parsed.netloc}"
                 if base not in dominios:
                     dominios.append(base)
@@ -141,6 +144,8 @@ def obtener_seed_domains(session):
 
     # 5. Portales principales / mirrors de reserva
     portales_reserva = [
+        "https://www.fctv33hd.host",
+        "https://www.fctv33hd.club",
         "http://rbtv77.com",
         "http://superabbit77.com",
         "https://superabbit77.com",
@@ -242,6 +247,9 @@ def obtener_informacion_sitio_dinamica(session, site_base):
                                     break
                 except Exception:
                     pass
+
+                if hosts and route_pattern:
+                    break
     except Exception as e:
         logging.warning(f"Fallo al extraer información dinamica desde {site_base}: {e}")
 
@@ -333,6 +341,92 @@ def _texto(valor):
     return str(valor)
 
 
+def _decode_varint(buf, pos):
+    """Decodifica un entero varint de protobuf de forma rápida en memoria."""
+    res = 0
+    shift = 0
+    while pos < len(buf):
+        b = buf[pos]
+        pos += 1
+        res |= (b & 0x7F) << shift
+        if not (b & 0x80):
+            return res, pos
+        shift += 7
+    raise ValueError("Varint truncado")
+
+
+def decodificar_respuesta_partidos(buf):
+    """
+    Decodifica la respuesta protobuf de la agenda de partidos de forma ultra-rápida.
+
+    Evita la inferencia recursiva global de typedefs de blackboxprotobuf sobre
+    cientos de partidos simultáneos (que causa un bloqueo de CPU de más de 30 minutos).
+    Desempaqueta el contenedor exterior a nivel de wire format (campo 10 -> campo 1)
+    y decodifica cada partido individualmente de forma aislada en submilisegundos.
+    """
+    pos = 0
+    end = len(buf)
+    raw_matches_bytes = []
+
+    try:
+        while pos < end:
+            tag, pos = _decode_varint(buf, pos)
+            fn = tag >> 3
+            wt = tag & 7
+            if wt == 0:
+                _, pos = _decode_varint(buf, pos)
+            elif wt == 1:
+                pos += 8
+            elif wt == 2:
+                length, pos = _decode_varint(buf, pos)
+                if fn == 10:
+                    # Campo 10 es el contenedor de los partidos
+                    sub_pos = pos
+                    sub_end = pos + length
+                    while sub_pos < sub_end:
+                        s_tag, sub_pos = _decode_varint(buf, sub_pos)
+                        s_fn = s_tag >> 3
+                        s_wt = s_tag & 7
+                        if s_wt == 0:
+                            _, sub_pos = _decode_varint(buf, sub_pos)
+                        elif s_wt == 1:
+                            sub_pos += 8
+                        elif s_wt == 2:
+                            s_len, sub_pos = _decode_varint(buf, sub_pos)
+                            if s_fn == 1:
+                                raw_matches_bytes.append(buf[sub_pos:sub_pos + s_len])
+                            sub_pos += s_len
+                        elif s_wt == 5:
+                            sub_pos += 4
+                        else:
+                            break
+                    break
+                pos += length
+            elif wt == 5:
+                pos += 4
+            else:
+                break
+    except Exception as e:
+        logging.debug(f"Aviso durante desempaquetado de contenedor wire format: {e}")
+
+    if raw_matches_bytes:
+        partidos = []
+        for m_bytes in raw_matches_bytes:
+            try:
+                m_msg, _ = blackboxprotobuf.decode_message(m_bytes)
+                partidos.append(m_msg)
+            except Exception as e:
+                logging.debug(f"Error decodificando partido individual: {e}")
+        return partidos
+
+    # Fallback si no se encontró la jerarquía habitual en el buffer
+    msg, _ = blackboxprotobuf.decode_message(buf)
+    partidos_raw = msg.get("10", {}).get("1", [])
+    if isinstance(partidos_raw, dict):
+        partidos_raw = [partidos_raw]
+    return partidos_raw
+
+
 def obtener_partidos_futbol(session, data_hosts):
     """Descarga y decodifica la agenda de futbol probando los DATA_HOSTS dinamicos."""
     ultimo_error = None
@@ -347,10 +441,7 @@ def obtener_partidos_futbol(session, data_hosts):
                 timeout=REQUEST_TIMEOUT,
             )
             resp.raise_for_status()
-            msg, _ = blackboxprotobuf.decode_message(resp.content)
-            partidos_raw = msg.get("10", {}).get("1", [])
-            if isinstance(partidos_raw, dict):
-                partidos_raw = [partidos_raw]
+            partidos_raw = decodificar_respuesta_partidos(resp.content)
             logging.info(f"OK {host}: {len(partidos_raw)} partidos recibidos")
             return partidos_raw
         except Exception as e:

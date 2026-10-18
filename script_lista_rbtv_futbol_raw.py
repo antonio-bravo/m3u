@@ -11,7 +11,10 @@ import sys
 import time
 import json
 import logging
+import warnings
 from datetime import datetime, timezone
+
+warnings.filterwarnings("ignore", category=UserWarning)
 
 import requests
 import blackboxprotobuf

@@ -1,6 +1,8 @@
-2026-10-16 11:59:38,124 [INFO] Semillas descubiertas dinamicamente (4): ['https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
-2026-10-16 11:59:38,716 [INFO] SITE_BASE resuelto dinamicamente (score 1) desde semilla 'https://www.fctv33hd.club': https://www.fctv33hd.club
-2026-10-16 11:59:39,172 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
-2026-10-16 11:59:39,643 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
-2026-10-16 12:01:01,810 [INFO] OK https://apis-data10.tcpwe138stya.ru: 174 partidos recibidos
-2026-10-16 12:01:01,813 [INFO] Generado lista_rbtv_futbol.m3u con 173 partidos de futbol (SITE_BASE: https://www.fctv33hd.club)
+2026-10-18 15:40:01,744 [INFO] Semillas descubiertas dinamicamente (5): ['https://www.fctv33hd.club', 'https://www.fctv33hd.host', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
+2026-10-18 15:40:01,893 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'BadStatusLine('<!DOCTYPE html>\n')': /
+2026-10-18 15:40:02,641 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'BadStatusLine('<!DOCTYPE html>\n')': /
+2026-10-18 15:40:02,887 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.club': https://www.fctv33hd.host
+2026-10-18 15:40:03,341 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
+2026-10-18 15:40:03,341 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
+2026-10-18 15:40:04,065 [INFO] OK https://apis-data10.tcpwe138stya.ru: 277 partidos recibidos
+2026-10-18 15:40:04,070 [INFO] Generado lista_rbtv_futbol.m3u con 276 partidos de futbol (SITE_BASE: https://www.fctv33hd.host)
