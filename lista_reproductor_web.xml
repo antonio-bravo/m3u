@@ -1,278 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-10-18 05:30</datetime>
-    <league>Serie A</league>
-    <teams>Udinese vs Lecce</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>1-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes-2.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>1-2</channel_id>
-        <url>https://pirlotv.la/canal-2.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>1-3</channel_id>
-        <url>https://pirlotv.la/canal-3.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>1-4</channel_id>
-        <url>https://pirlotv.la/canal-4.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-18 07:00</datetime>
-    <league>LaLiga</league>
-    <teams>Osasuna vs Racing Santander</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>2-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>2-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9sYWxpZ2ExLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>2-3</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9sYWxpZ2EyLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>2-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9sYWxpZ2EzLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>2-5</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9sYWxpZ2E0LnBocA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-18 07:00</datetime>
-    <league>LaLiga 2</league>
-    <teams>Ceuta vs Real Oviedo</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>3-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes-14.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5</channel_name>
-        <channel_id>3-2</channel_id>
-        <url>https://pirlotv.la/canal-5.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 6 (HD)</channel_name>
-        <channel_id>3-3</channel_id>
-        <url>https://pirlotv.la/canal-6.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 7 (HD)</channel_name>
-        <channel_id>3-4</channel_id>
-        <url>https://pirlotv.la/canal-7.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-18 07:30</datetime>
-    <league>Eredivisie</league>
-    <teams>SC Cambuur vs AZ Alkmaar</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>4-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes-3.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 8</channel_name>
-        <channel_id>4-2</channel_id>
-        <url>https://pirlotv.la/canal-8.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 9 (HD)</channel_name>
-        <channel_id>4-3</channel_id>
-        <url>https://pirlotv.la/canal-9.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 10 (HD)</channel_name>
-        <channel_id>4-4</channel_id>
-        <url>https://pirlotv.la/canal-10.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-18 08:00</datetime>
-    <league>Premier League</league>
-    <teams>Leeds United vs Manchester United</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>5-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes-2.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 2</channel_name>
-        <channel_id>5-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyMS5waHA=</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>5-3</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyMi5waHA=</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>5-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyMy5waHA=</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>5-5</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyNC5waHA=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-18 08:00</datetime>
-    <league>Premier League</league>
-    <teams>Brighton &amp; Hove Albion vs Crystal Palace</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>6-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes-4.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 11</channel_name>
-        <channel_id>6-2</channel_id>
-        <url>https://pirlotv.la/canal-11.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 12 (HD)</channel_name>
-        <channel_id>6-3</channel_id>
-        <url>https://pirlotv.la/canal-12.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 13 (HD)</channel_name>
-        <channel_id>6-4</channel_id>
-        <url>https://pirlotv.la/canal-13.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-18 08:00</datetime>
-    <league>Premier League</league>
-    <teams>AFC Bournemouth vs Sunderland</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>7-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes-5.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 14</channel_name>
-        <channel_id>7-2</channel_id>
-        <url>https://pirlotv.la/canal-14.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 15 (HD)</channel_name>
-        <channel_id>7-3</channel_id>
-        <url>https://pirlotv.la/canal-15.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 16 (HD)</channel_name>
-        <channel_id>7-4</channel_id>
-        <url>https://pirlotv.la/canal-16.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-18 08:00</datetime>
-    <league>Serie A</league>
-    <teams>Fiorentina vs Como</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 1</channel_name>
-        <channel_id>8-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes-6.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 17</channel_name>
-        <channel_id>8-2</channel_id>
-        <url>https://pirlotv.la/canal-17.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 18 (HD)</channel_name>
-        <channel_id>8-3</channel_id>
-        <url>https://pirlotv.la/canal-18.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 19 (HD)</channel_name>
-        <channel_id>8-4</channel_id>
-        <url>https://pirlotv.la/canal-19.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-18 08:00</datetime>
-    <league>Ligue 1</league>
-    <teams>Angers vs Olympique Marseille</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 20 (HD)</channel_name>
-        <channel_id>9-1</channel_id>
-        <url>https://pirlotv.la/canal-20.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 21 (HD)</channel_name>
-        <channel_id>9-2</channel_id>
-        <url>https://pirlotv.la/canal-21.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-18 08:00</datetime>
-    <league>Liga de Uruguay</league>
-    <teams>Albion FC vs Montevideo City Torque</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 22 (HD)</channel_name>
-        <channel_id>10-1</channel_id>
-        <url>https://pirlotv.la/canal-22.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 23 (HD)</channel_name>
-        <channel_id>10-2</channel_id>
-        <url>https://pirlotv.la/canal-23.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-10-18 08:30</datetime>
     <league>Bundesliga</league>
     <teams>Bayer Leverkusen vs Friburgo</teams>
     <channels>
       <channel>
         <channel_name>Canal 24 (HD)</channel_name>
-        <channel_id>11-1</channel_id>
+        <channel_id>1-1</channel_id>
         <url>https://pirlotv.la/canal-24.php</url>
       </channel>
       <channel>
         <channel_name>Canal 25 (HD)</channel_name>
-        <channel_id>11-2</channel_id>
+        <channel_id>1-2</channel_id>
         <url>https://pirlotv.la/canal-25.php</url>
       </channel>
     </channels>
@@ -284,22 +24,22 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>12-1</channel_id>
+        <channel_id>2-1</channel_id>
         <url>https://pirlotv.la/capo-deportes-7.php</url>
       </channel>
       <channel>
         <channel_name>Canal 26</channel_name>
-        <channel_id>12-2</channel_id>
+        <channel_id>2-2</channel_id>
         <url>https://pirlotv.la/canal-26.php</url>
       </channel>
       <channel>
         <channel_name>Canal 27 (HD)</channel_name>
-        <channel_id>12-3</channel_id>
+        <channel_id>2-3</channel_id>
         <url>https://pirlotv.la/canal-27.php</url>
       </channel>
       <channel>
         <channel_name>Canal 28 (HD)</channel_name>
-        <channel_id>12-4</channel_id>
+        <channel_id>2-4</channel_id>
         <url>https://pirlotv.la/canal-28.php</url>
       </channel>
     </channels>
@@ -311,27 +51,27 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>13-1</channel_id>
+        <channel_id>3-1</channel_id>
         <url>https://pirlotv.la/capo-deportes.php</url>
       </channel>
       <channel>
         <channel_name>Canal 2</channel_name>
-        <channel_id>13-2</channel_id>
+        <channel_id>3-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9sYWxpZ2E1LnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>13-3</channel_id>
+        <channel_id>3-3</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9sYWxpZ2E2LnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>13-4</channel_id>
+        <channel_id>3-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9sYWxpZ2E3LnBocA==</url>
       </channel>
       <channel>
         <channel_name>Canal 5 (HD)</channel_name>
-        <channel_id>13-5</channel_id>
+        <channel_id>3-5</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9sYWxpZ2E4LnBocA==</url>
       </channel>
     </channels>
@@ -343,22 +83,22 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>14-1</channel_id>
+        <channel_id>4-1</channel_id>
         <url>https://pirlotv.la/capo-deportes-14.php</url>
       </channel>
       <channel>
         <channel_name>Canal 29</channel_name>
-        <channel_id>14-2</channel_id>
+        <channel_id>4-2</channel_id>
         <url>https://pirlotv.la/canal-29.php</url>
       </channel>
       <channel>
         <channel_name>Canal 30 (HD)</channel_name>
-        <channel_id>14-3</channel_id>
+        <channel_id>4-3</channel_id>
         <url>https://pirlotv.la/canal-30.php</url>
       </channel>
       <channel>
         <channel_name>Canal 31 (HD)</channel_name>
-        <channel_id>14-4</channel_id>
+        <channel_id>4-4</channel_id>
         <url>https://pirlotv.la/canal-31.php</url>
       </channel>
     </channels>
@@ -370,23 +110,408 @@
     <channels>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>15-1</channel_id>
+        <channel_id>5-1</channel_id>
         <url>https://pirlotv.la/capo-deportes-8.php</url>
       </channel>
       <channel>
         <channel_name>Canal 32</channel_name>
-        <channel_id>15-2</channel_id>
+        <channel_id>5-2</channel_id>
         <url>https://pirlotv.la/canal-32.php</url>
       </channel>
       <channel>
         <channel_name>Canal 33 (HD)</channel_name>
-        <channel_id>15-3</channel_id>
+        <channel_id>5-3</channel_id>
         <url>https://pirlotv.la/canal-33.php</url>
       </channel>
       <channel>
         <channel_name>Canal 34 (HD)</channel_name>
-        <channel_id>15-4</channel_id>
+        <channel_id>5-4</channel_id>
         <url>https://pirlotv.la/canal-34.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 10:15</datetime>
+    <league>Ligue 1</league>
+    <teams>Lorient vs AS Monaco</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 35 (HD)</channel_name>
+        <channel_id>6-1</channel_id>
+        <url>https://pirlotv.la/canal-35.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 36 (HD)</channel_name>
+        <channel_id>6-2</channel_id>
+        <url>https://pirlotv.la/canal-36.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 10:15</datetime>
+    <league>Ligue 1</league>
+    <teams>Paris FC vs Stade Rennais</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 37 (HD)</channel_name>
+        <channel_id>7-1</channel_id>
+        <url>https://pirlotv.la/canal-37.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 38 (HD)</channel_name>
+        <channel_id>7-2</channel_id>
+        <url>https://pirlotv.la/canal-38.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 10:15</datetime>
+    <league>Ligue 1</league>
+    <teams>Le Havre AC vs AJ Auxerre</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 39 (HD)</channel_name>
+        <channel_id>8-1</channel_id>
+        <url>https://pirlotv.la/canal-39.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 40 (HD)</channel_name>
+        <channel_id>8-2</channel_id>
+        <url>https://pirlotv.la/canal-40.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 10:30</datetime>
+    <league>Premier League</league>
+    <teams>Nottingham Forest vs Arsenal</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>9-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-2.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>9-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyNS5waHA=</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>9-3</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyNi5waHA=</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>9-4</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyNy5waHA=</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>9-5</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyOC5waHA=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 10:30</datetime>
+    <league>Bundesliga</league>
+    <teams>Borussia Monchengladbach vs Hoffenheim</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>10-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-9.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>10-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9idW5kZXNsaWdhMS5waHA=</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>10-3</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9idW5kZXNsaWdhMi5waHA=</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>10-4</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9idW5kZXNsaWdhMy5waHA=</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>10-5</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9idW5kZXNsaWdhNC5waHA=</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 11:00</datetime>
+    <league>Serie A</league>
+    <teams>AC Milan vs Atalanta</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>11-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-10.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>11-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9zZXJpZWExLnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>11-3</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9zZXJpZWEyLnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>11-4</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9zZXJpZWEzLnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>11-5</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9zZXJpZWE0LnBocA==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 11:00</datetime>
+    <league>Liga de Peru</league>
+    <teams>Sporting Cristal vs Comerciantes Unidos</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>12-1</channel_id>
+        <url>https://pirlotv.la/en-vivo/liga-1-max.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 41</channel_name>
+        <channel_id>12-2</channel_id>
+        <url>https://pirlotv.la/canal-41.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 42 (HD)</channel_name>
+        <channel_id>12-3</channel_id>
+        <url>https://pirlotv.la/canal-42.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 43 (HD)</channel_name>
+        <channel_id>12-4</channel_id>
+        <url>https://pirlotv.la/canal-43.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 11:30</datetime>
+    <league>LaLiga</league>
+    <teams>Málaga vs Real Sociedad</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>13-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>13-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9sYWxpZ2ExLnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>13-3</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9sYWxpZ2EyLnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>13-4</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9sYWxpZ2EzLnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>13-5</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9sYWxpZ2E0LnBocA==</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 11:30</datetime>
+    <league>LaLiga 2</league>
+    <teams>Girona vs Andorra</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>14-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-14.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 44</channel_name>
+        <channel_id>14-2</channel_id>
+        <url>https://pirlotv.la/canal-44.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 45 (HD)</channel_name>
+        <channel_id>14-3</channel_id>
+        <url>https://pirlotv.la/canal-45.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 46 (HD)</channel_name>
+        <channel_id>14-4</channel_id>
+        <url>https://pirlotv.la/canal-46.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 11:30</datetime>
+    <league>LaLiga 2</league>
+    <teams>Real Valladolid vs Eldense</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>15-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-15.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 47</channel_name>
+        <channel_id>15-2</channel_id>
+        <url>https://pirlotv.la/canal-47.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 48 (HD)</channel_name>
+        <channel_id>15-3</channel_id>
+        <url>https://pirlotv.la/canal-48.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 49 (HD)</channel_name>
+        <channel_id>15-4</channel_id>
+        <url>https://pirlotv.la/canal-49.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 11:30</datetime>
+    <league>Liga de Ecuador</league>
+    <teams>Delfín vs Manta FC</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 50</channel_name>
+        <channel_id>16-1</channel_id>
+        <url>https://pirlotv.la/canal-50.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>16-2</channel_id>
+        <url>https://pirlotv.la/canal-1.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2 (HD)</channel_name>
+        <channel_id>16-3</channel_id>
+        <url>https://pirlotv.la/canal-2.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 12:45</datetime>
+    <league>Liga de Argentina</league>
+    <teams>Racing Club vs Independiente</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>17-1</channel_id>
+        <url>https://pirlotv.la/en-vivo/espn-premium.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3</channel_name>
+        <channel_id>17-2</channel_id>
+        <url>https://pirlotv.la/canal-3.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>17-3</channel_id>
+        <url>https://pirlotv.la/canal-4.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>17-4</channel_id>
+        <url>https://pirlotv.la/canal-5.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 13:00</datetime>
+    <league>Liga de Uruguay</league>
+    <teams>Danubio vs Central Español</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 6 (HD)</channel_name>
+        <channel_id>18-1</channel_id>
+        <url>https://pirlotv.la/canal-6.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 7 (HD)</channel_name>
+        <channel_id>18-2</channel_id>
+        <url>https://pirlotv.la/canal-7.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 13:15</datetime>
+    <league>Liga de Peru</league>
+    <teams>FC Cajamarca vs Deportivo Moquegua</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>19-1</channel_id>
+        <url>https://pirlotv.la/en-vivo/liga-1-max.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 8</channel_name>
+        <channel_id>19-2</channel_id>
+        <url>https://pirlotv.la/canal-8.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 9 (HD)</channel_name>
+        <channel_id>19-3</channel_id>
+        <url>https://pirlotv.la/canal-9.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 10 (HD)</channel_name>
+        <channel_id>19-4</channel_id>
+        <url>https://pirlotv.la/canal-10.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-10-18 13:45</datetime>
+    <league>Serie A</league>
+    <teams>Juventus Turín vs Lazio Roma</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 1</channel_name>
+        <channel_id>20-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-2.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 2</channel_name>
+        <channel_id>20-2</channel_id>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9zZXJpZWE1LnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 3 (HD)</channel_name>
+        <channel_id>20-3</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9zZXJpZWE2LnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4 (HD)</channel_name>
+        <channel_id>20-4</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9zZXJpZWE3LnBocA==</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>20-5</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9zZXJpZWE4LnBocA==</url>
       </channel>
     </channels>
   </event>
