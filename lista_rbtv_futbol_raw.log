@@ -1,9 +1,7 @@
-2026-10-18 15:40:16,527 [INFO] Semillas descubiertas dinamicamente (5): ['https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
-2026-10-18 15:40:16,680 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'BadStatusLine('<!DOCTYPE html>\n')': /
-2026-10-18 15:40:17,436 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'BadStatusLine('<!DOCTYPE html>\n')': /
-2026-10-18 15:40:17,584 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.club': https://www.fctv33hd.host
-2026-10-18 15:40:17,901 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
-2026-10-18 15:40:17,901 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
-2026-10-18 15:40:18,356 [INFO] Dominios de reproductor descubiertos (6): ['https://jack07eo.mpanrc4imind.my', 'https://nadia73bc.mp77g69ainei3gx2voxygen.ru', 'https://morgan67cg.006hndchurch05g7ifbreathing.sbs', 'https://lola73.30nqt3mainfkyl16mirror.cfd', 'https://ziggy55.q2l0completelyuea1piece.cfd', 'https://love29.5qh8x8caughtkx37breathing.cfd']
-2026-10-18 15:40:18,948 [INFO] OK https://apis-data10.tcpwe138stya.ru: 276 partidos recibidos
-2026-10-18 15:40:18,951 [INFO] Generado lista_rbtv_futbol_raw.m3u con 275 entradas de reproductor directo.
+2026-10-18 13:42:39,231 [INFO] Semillas descubiertas dinamicamente (5): ['https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
+2026-10-18 13:42:40,019 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.club': https://www.fctv33hd.host
+2026-10-18 13:42:40,500 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
+2026-10-18 13:42:40,500 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
+2026-10-18 13:42:41,327 [INFO] Dominios de reproductor descubiertos (6): ['https://jack07eo.mpanrc4imind.my', 'https://nadia73bc.mp77g69ainei3gx2voxygen.ru', 'https://morgan67cg.006hndchurch05g7ifbreathing.sbs', 'https://lola73.30nqt3mainfkyl16mirror.cfd', 'https://ziggy55.q2l0completelyuea1piece.cfd', 'https://love29.5qh8x8caughtkx37breathing.cfd']
+2026-10-18 13:42:41,772 [INFO] OK https://apis-data10.tcpwe138stya.ru: 277 partidos recibidos
+2026-10-18 13:42:41,778 [INFO] Generado lista_rbtv_futbol_raw.m3u con 276 entradas de reproductor directo.
