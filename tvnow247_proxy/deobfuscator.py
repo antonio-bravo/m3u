@@ -12,33 +12,64 @@ logger = logging.getLogger("tvnow_deobfuscator")
 def deobfuscate_segment(data: bytes) -> bytes:
     """
     Desofusca un segmento devuelto por CDN (TikTok u otros).
-    Si los datos están empaquetados como una imagen PNG con cabecera TIKTIKPX,
-    extrae los píxeles RGB reales, desempaqueta la carga y descomprime con GZIP
-    para devolver los paquetes de transporte MPEG-TS limpios.
+    Soporta:
+    1. MPEG-TS puro (comienza con el byte de sincronización 0x47).
+    2. Formato actual TVNow247: Contenedor RIFF / WEBP con payload MPEG-TS en chunk EXIF.
+    3. Formato anterior: Imagen PNG con cabecera TIKTIKPX o compresión GZIP directa.
     """
-    # Si no tiene la firma binaria de un PNG (\x89PNG\r\n\x1a\n), devolver tal cual
-    if not data.startswith(b"\x89PNG\r\n\x1a\n"):
+    if not data:
         return data
 
-    try:
-        # Abrir imagen y obtener píxeles en bruto descomprimiendo el filtrado PNG
-        im = Image.open(io.BytesIO(data))
-        raw_pixels = im.tobytes()
+    # 1. Ya es flujo MPEG-TS directo
+    if data.startswith(b"\x47"):
+        return data
 
-        # Comprobar firma TIKTIKPX
-        if raw_pixels[:8] == b"TIKTIKPX":
-            content_len = int.from_bytes(raw_pixels[8:12], "big")
-            payload = raw_pixels[12:12 + content_len]
-            # Descomprimir flujo MPEG-TS
-            ts_data = gzip.decompress(payload)
-            return ts_data
+    # 2. Formato WebP (RIFF....WEBP) con payload MPEG-TS en chunk EXIF
+    if data.startswith(b"RIFF") and b"WEBP" in data[:16]:
+        try:
+            exif_idx = data.find(b"EXIF")
+            if exif_idx != -1 and len(data) >= exif_idx + 8:
+                chunk_size = int.from_bytes(data[exif_idx + 4:exif_idx + 8], "little")
+                payload = data[exif_idx + 8:exif_idx + 8 + chunk_size]
 
-        # Si es un PNG sin cabecera TIKTIKPX pero con payload gzip directo
-        if raw_pixels[:3] == b"\x1f\x8b\x08":
-            return gzip.decompress(raw_pixels)
+                # Si el payload viniese comprimido con gzip
+                if payload.startswith(b"\x1f\x8b\x08"):
+                    try:
+                        return gzip.decompress(payload)
+                    except Exception:
+                        pass
 
-    except Exception as e:
-        logger.error(f"Error al desofuscar segmento PNG: {e}")
+                # Si empieza directamente con el sync byte 0x47 de MPEG-TS
+                if payload.startswith(b"\x47"):
+                    return payload
+
+                # Buscar posible offset del sync byte 0x47 dentro de los primeros bytes
+                sync_pos = payload.find(b"\x47")
+                if 0 <= sync_pos < 64:
+                    return payload[sync_pos:]
+
+                return payload
+        except Exception as e:
+            logger.error(f"Error al desofuscar segmento WEBP/EXIF: {e}")
+
+    # 3. Formato anterior: imagen PNG con cabecera TIKTIKPX o gzip
+    if data.startswith(b"\x89PNG\r\n\x1a\n"):
+        try:
+            im = Image.open(io.BytesIO(data))
+            raw_pixels = im.tobytes()
+
+            # Comprobar firma TIKTIKPX
+            if raw_pixels[:8] == b"TIKTIKPX":
+                content_len = int.from_bytes(raw_pixels[8:12], "big")
+                payload = raw_pixels[12:12 + content_len]
+                return gzip.decompress(payload)
+
+            # Si es un PNG sin cabecera TIKTIKPX pero con payload gzip directo
+            if raw_pixels[:3] == b"\x1f\x8b\x08":
+                return gzip.decompress(raw_pixels)
+
+        except Exception as e:
+            logger.error(f"Error al desofuscar segmento PNG: {e}")
 
     # Fallback: devolver los datos originales si no se pudo transformar
     return data

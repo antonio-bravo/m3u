@@ -6,14 +6,14 @@ Este servicio es un middleware en **Docker** que permite reproducir canales de *
 
 ## 🎯 ¿Qué problema resuelve?
 
-Los servidores de streaming de TVNow247 entregan listas HLS cuyos segmentos de video están camuflados como imágenes PNG alojadas en la CDN de TikTok.
-Internamente, cada imagen PNG contiene una cabecera binaria `TIKTIKPX` seguida de datos comprimidos en GZIP que esconden el flujo real de video MPEG-TS.
+Los servidores de streaming de TVNow247 entregan listas HLS cuyos segmentos de video están camuflados como imágenes (formatos **WebP** y **PNG**) alojadas en la CDN de TikTok.
+En el formato WebP actual, cada archivo contiene una imagen mínima y la carga real de video MPEG-TS empaquetada en el chunk de metadatos `EXIF`. En versiones anteriores, se utilizaban imágenes PNG con cabecera `TIKTIKPX` y compresión GZIP.
 
 Este contenedor:
-1. **Intercepta las listas M3U8** y resuelve los tokens de acceso dinámicos.
-2. **Descarga cada fragmento PNG** desde la CDN de TikTok.
-3. **Desofusca el payload** (desempaqueta `TIKTIKPX` y descomprime GZIP al vuelo en ~25 ms).
-4. **Entrega paquetes de video MPEG-TS limpios y estándar** a tu reproductor.
+1. **Intercepta las listas M3U8** y resuelve o regenera los tokens de acceso dinámicos.
+2. **Descarga cada fragmento camuflado** (WebP/PNG) desde la CDN de TikTok.
+3. **Desofusca el payload** (extrae el flujo MPEG-TS del contenedor WebP/EXIF o PNG al vuelo en sub-milisegundos).
+4. **Entrega paquetes de video MPEG-TS limpios y estándar** (`video/mp2t`) a tu reproductor.
 
 ---
 

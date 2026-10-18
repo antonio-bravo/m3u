@@ -62,19 +62,23 @@ async def shutdown_event():
         await http_client.aclose()
 
 
-async def probe_proxy_domain(domain: str, test_channel_id: str = "51") -> bool:
-    """Valida si un dominio proxy responde con lista válida."""
+async def probe_proxy_domain(domain: str, test_channel_ids: Optional[List[str]] = None) -> bool:
+    """Valida si un dominio proxy responde con lista válida probando canales de control fiables."""
     if not domain or not http_client:
         return False
-    token = encode_token(test_channel_id)
-    test_url = f"https://{domain}/api/proxy/playlist?token={token}"
-    headers = {**HEADERS, "Referer": f"https://{domain}/"}
-    try:
-        r = await http_client.get(test_url, headers=headers, timeout=4.0)
-        if r.status_code == 200 and "#EXTM3U" in r.text:
-            return True
-    except Exception:
-        pass
+    if test_channel_ids is None:
+        test_channel_ids = ["303", "758", "51", "371"]
+
+    for test_cid in test_channel_ids:
+        token = encode_token(test_cid)
+        test_url = f"https://{domain}/api/proxy/playlist?token={token}"
+        headers = {**HEADERS, "Referer": f"https://{domain}/"}
+        try:
+            r = await http_client.get(test_url, headers=headers, timeout=3.5)
+            if r.status_code == 200 and "#EXTM3U" in r.text:
+                return True
+        except Exception:
+            pass
     return False
 
 
@@ -110,7 +114,7 @@ async def discover_proxy_domain() -> str:
                     pass
 
             # Probar candidatos comunes
-            candidates = ["tvnow247.top", "chunk.tvnow247.today", active_host]
+            candidates = ["chunk.tvnow247.today", "tvnow247.top", active_host]
             for cand in candidates:
                 if await probe_proxy_domain(cand):
                     logger.info(f"Dominio proxy validado: {cand}")
@@ -297,15 +301,20 @@ async def get_live_playlist(channel_id: str, request: Request):
     candidate_domains = [d for d in candidate_domains if d and not (d in seen_domains or seen_domains.add(d))]
 
     r = None
+    last_res = None
     for d in candidate_domains:
         upstream_url = f"https://{d}/api/proxy/playlist?token={token}"
         try:
-            res = await http_client.get(upstream_url, headers={**HEADERS, "Referer": f"https://{d}/"})
+            res = await http_client.get(upstream_url, headers={**HEADERS, "Referer": f"https://{d}/"}, timeout=5.0)
+            last_res = res
             if res.status_code == 200 and "#EXTM3U" in res.text:
                 r = res
                 if d != state.active_domain:
                     logger.info(f"Cambiando dominio activo a {d}")
                     state.active_domain = d
+                break
+            # Si el backend upstream ya respondió que la fuente está caída, no hace falta reintentar dominios espejo
+            if res.status_code in (403, 502) and "upstream error" in res.text.lower():
                 break
         except Exception as ex:
             logger.warning(f"Error consultando upstream {d}: {ex}")
@@ -313,18 +322,26 @@ async def get_live_playlist(channel_id: str, request: Request):
     # Si ninguno de los dominios directos funcionó, intentar fallback a resolver API
     if not r or r.status_code != 200 or "#EXTM3U" not in r.text:
         try:
-            fallback_res = await http_client.get(f"https://chat.cfbu247.sbs/api/resolve-dlstream/{channel_id}")
+            fallback_res = await http_client.get(f"https://chat.cfbu247.sbs/api/resolve-dlstream/{channel_id}", timeout=6.0)
             if fallback_res.status_code == 200:
                 data = fallback_res.json()
                 alt_url = data.get("proxyPlaylistUrl") or data.get("m3u8")
+                ref = data.get("referer") or f"https://{state.active_domain}/"
                 if alt_url:
-                    r = await http_client.get(alt_url)
-        except Exception:
-            pass
+                    fb_r = await http_client.get(alt_url, headers={**HEADERS, "Referer": ref}, timeout=6.0)
+                    last_res = fb_r
+                    if fb_r.status_code == 200 and "#EXTM3U" in fb_r.text:
+                        r = fb_r
+        except Exception as ex:
+            logger.warning(f"Error consultando API resolve fallback para canal {channel_id}: {ex}")
 
     if not r or r.status_code != 200 or "#EXTM3U" not in r.text:
-        status_code = r.status_code if r else 502
-        raise HTTPException(status_code=502, detail=f"Upstream no devolvió una lista válida (estado {status_code})")
+        status_code = last_res.status_code if last_res else (r.status_code if r else 502)
+        resp_text = (last_res.text if last_res else (r.text if r else "")).strip().lower()
+        err_detail = f"Upstream no devolvió una lista válida (estado {status_code})"
+        if "upstream error" in resp_text or "unavailable" in resp_text or status_code in (403, 502):
+            err_detail += f": el canal {channel_id} está temporalmente inactivo o caído en los servidores de TVNow247"
+        raise HTTPException(status_code=502, detail=err_detail)
 
     # Reescribir las URLs de los segmentos para que pasen por /segment de forma segura con base64
     rewritten_lines = []
