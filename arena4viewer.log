@@ -1,5 +1,9 @@
-2026-10-18 00:57:13,836 [INFO] 🚀 Iniciando extracción de Arena4Viewer...
-2026-10-18 00:57:13,836 [INFO] 📡 Probando servidor: https://www.arena4viewer.in
-2026-10-18 00:57:15,320 [INFO] ✅ ¡Éxito! Encontrados 139 canales en https://www.arena4viewer.in
-2026-10-18 00:57:15,321 [INFO] ✨ Archivo 'arena4viewer.m3u' generado correctamente.
-2026-10-18 00:57:15,321 [INFO] 📺 Rango de canales: 1 al 160
+2026-10-18 05:49:20,115 [INFO] 🚀 Iniciando extracción de Arena4Viewer...
+2026-10-18 05:49:20,115 [INFO] 📡 Probando servidor: https://www.arena4viewer.in
+2026-10-18 05:49:21,446 [WARNING] ⚠️ Servidor https://www.arena4viewer.in respondió con status 409
+2026-10-18 05:49:21,447 [INFO] 📡 Probando servidor: https://www.arena4viewer.pl
+2026-10-18 05:49:21,501 [ERROR] ❌ Error conectando a https://www.arena4viewer.pl: HTTPSConnectionPool(host='www.arena4viewer.pl', port=443): Max retries exceeded with url: /misguia2.php (Caused by NameResolutionError("HTTPSConnection(host='www.arena4viewer.pl', port=443): Failed to resolve 'www.arena4viewer.pl' ([Errno -2] Name or service not known)"))
+2026-10-18 05:49:21,501 [INFO] 📡 Probando servidor: https://www.arena4viewer.co.in
+2026-10-18 05:49:22,910 [INFO] ✅ ¡Éxito! Encontrados 139 canales en https://www.arena4viewer.co.in
+2026-10-18 05:49:22,946 [INFO] ✨ Archivo 'arena4viewer.m3u' generado correctamente.
+2026-10-18 05:49:22,946 [INFO] 📺 Rango de canales: 1 al 160
