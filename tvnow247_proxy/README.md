@@ -61,38 +61,37 @@ Una vez que el contenedor esté corriendo en el puerto `8080`:
 
 | Recurso | URL | Uso |
 | :--- | :--- | :--- |
-| **Panel Web** | `http://localhost:8888/` | Interfaz web de estado e información |
+| **Reproductor Web PRO** | `http://localhost:8888/` | Reproductor web moderno con medidor de búfer y explorador |
+| **Canal Directo Web** | `http://localhost:8888/player/{id}` | Ej: `http://localhost:8888/player/303` (reproduce directamente) |
 | **Lista M3U Completa** | `http://localhost:8888/channels.m3u` | Para TiviMate, OTT Navigator, IPTV Smarters, etc. |
-| **Canal Específico** | `http://localhost:8888/live/{id}.m3u8` | Ej: `http://localhost:8888/live/652.m3u8` |
+| **Canal Específico HLS** | `http://localhost:8888/live/{id}.m3u8` | Con ventana ampliada y TIME-OFFSET |
+| **Canal con Offset Personalizado** | `http://localhost:8888/live/{id}.m3u8?offset=20` | Ajusta los segundos de colchón de búfer (ej. 20s) |
 | **Proxy de URL Directa** | `http://localhost:8888/proxy?url=...` | Pasa la URL que tenías directamente |
+| **API de Canales (JSON)** | `http://localhost:8888/api/channels` | Catálogo de canales con logos y grupos |
+| **Estado y Rendimiento** | `http://localhost:8888/api/status` | Métricas de aciertos de caché, prefetches y salud |
 
-### Ejemplos:
+---
 
-#### 1. VLC Media Player
-Abre VLC y ve a:
-> **Medio** ➔ **Abrir ubicación de red...**  
-> Introduce: `http://localhost:8888/live/652.m3u8`  
-> Haz clic en **Reproducir**.
+## ⚡ Mejoras del Sistema PRO de Búfer
 
-O por línea de comandos:
-```bash
-vlc "http://localhost:8888/live/652.m3u8"
-```
+1. **Ventana Deslizante Extendida (Sliding Window):**  
+   Los servidores de TVNow247 solo ofrecen 3 o 4 fragmentos (~12 segundos de vídeo total). El proxy mantiene un historial contiguo de hasta **8 fragmentos (~30 segundos)**, evitando que el reproductor agote los datos si hay un microcorte.
 
-#### 2. TiviMate / OTT Navigator / IPTV Smarters
-Añade una nueva lista de reproducción tipo M3U:
-- **URL de la lista:** `http://TU_IP_LOCAL:8888/channels.m3u`
-- La lista cargará automáticamente los más de 800 canales con sus nombres, logos y categorías.
+2. **Inyección de `TIME-OFFSET` (RFC 8216):**  
+   Inyecta la directiva `#EXT-X-START:TIME-OFFSET=-12.0,PRECISE=YES` (o el valor indicado en `?offset=...`). Esto obliga al reproductor a situarse 12-20 segundos por detrás del directo, acumulando de inmediato un colchón de seguridad de 3 o 4 segmentos en el navegador.
 
-#### 3. Probar la URL que fallaba anteriormente
-Si tienes una URL como:
-`https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NTIiLCJ0cyI6MTc5MTkxMjkwMzE2MH0`
+3. **Precarga Predictiva en RAM (Background Prefetching):**  
+   Al solicitar una lista M3U8, el proxy lanza en segundo plano la descarga y desofuscación de los siguientes segmentos hacia una caché LRU en RAM. Cuando el reproductor solicita el archivo `.ts`, el proxy responde en **< 1 ms** con carga instantánea.
 
-Simplemente pásala por el proxy:
-```
-http://localhost:8888/proxy?url=https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NTIiLCJ0cyI6MTc5MTkxMjkwMzE2MH0
-```
-El proxy detectará automáticamente el `channelId` ("652"), renovará el token caducado y desofuscará los segmentos para que reproduzca al instante.
+4. **Soporte HTTP Byte-Range y ETag:**  
+   Permite peticiones parciales `206 Partial Content` y cabeceras de inmutabilidad `Cache-Control: public, max-age=86400, immutable`.
+
+5. **Reproductor Web Integrado de Alta Fidelidad:**  
+   - Medidor de salud de búfer en tiempo real con indicador luminoso dinámico.
+   - 3 perfiles de búfer seleccionables con un clic: *Ultra Estable (20s)*, *Equilibrado (12s)* y *Baja Latencia (4s)*.
+   - Refuerzo de audio Web Audio API (100%, 150%, 200%) para canales con emisión baja.
+   - HUD con estadísticas técnicas en pantalla (Resolución, Bitrate, Búfer exacto en segundos, Hits de caché).
+   - Barra lateral con búsqueda instantánea y filtros por país entre más de 800 canales.
 
 ---
 
