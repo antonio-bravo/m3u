@@ -33,10 +33,10 @@ HEADERS = {
 }
 BASE_SITES = ["https://tvnow247.today", "https://tvnow247.top"]
 
-# Configuración de búfer y caché
-MAX_SEGMENT_CACHE_ITEMS = int(os.environ.get("MAX_CACHE_ITEMS", 60))
-DEFAULT_BUFFER_OFFSET = float(os.environ.get("BUFFER_OFFSET_SECONDS", 12.0))
-WINDOW_MAX_SEGMENTS = int(os.environ.get("WINDOW_MAX_SEGMENTS", 8))
+# Configuración de búfer y caché optimizados
+MAX_SEGMENT_CACHE_ITEMS = int(os.environ.get("MAX_CACHE_ITEMS", 120))
+DEFAULT_BUFFER_OFFSET = float(os.environ.get("BUFFER_OFFSET_SECONDS", 16.0))
+WINDOW_MAX_SEGMENTS = int(os.environ.get("WINDOW_MAX_SEGMENTS", 12))
 
 
 # ---------------------------------------------------------------------------
@@ -99,17 +99,43 @@ segment_cache = SegmentCache(max_items=MAX_SEGMENT_CACHE_ITEMS)
 # ---------------------------------------------------------------------------
 # Gestor de Ventana Deslizante de Canales (Sliding Window & Buffer Offset)
 # ---------------------------------------------------------------------------
+class SegmentItem:
+    def __init__(self, seq: int, inf: str, raw_url: str):
+        self.seq = seq
+        self.inf = inf
+        self.raw_url = raw_url
+        # Extraer key canónica por path de CDN para deduplicación exacta
+        parsed = urlparse(raw_url)
+        self.path_key = parsed.path if parsed.path else raw_url
+
+
 class ChannelWindowManager:
     """
-    Mantiene un historial contiguo de los últimos segmentos por canal para ampliar
-    la ventana M3U8 de 3 a 8 segmentos (~30 segundos de vídeo disponibles) e inyectar
+    Mantiene un historial contiguo y deslizante de segmentos por canal ampliando
+    la ventana M3U8 de 3 a 12 segmentos (~60 segundos de vídeo) e inyectando
     el tag RFC 8216 EXT-X-START:TIME-OFFSET para buffering instantáneo y cero congelaciones.
+
+    Totalmente protegido contra:
+    1. Reinicios de número de secuencia upstream (ej. de 244790 a 219).
+    2. Cambios de dominio upstream transparentes sin cortes.
+    3. Microcortes o caídas temporales (sirve la última ventana válida en memoria).
     """
     def __init__(self, max_segments: int = WINDOW_MAX_SEGMENTS):
         self.max_segments = max_segments
-        # channel_id -> list of (seq_num, inf_line, raw_url)
-        self.windows: Dict[str, List[Tuple[int, str, str]]] = {}
+        # channel_id -> list of SegmentItem
+        self.windows: Dict[str, List[SegmentItem]] = {}
+        self.last_seq_assigned: Dict[str, int] = {}
         self.last_updated: Dict[str, float] = {}
+        self.last_rendered_m3u8: Dict[str, str] = {}
+        self.last_target_dur: Dict[str, int] = {}
+
+    def get_cached_m3u8(self, channel_id: str) -> Optional[str]:
+        """Devuelve la última lista M3U8 generada si existe y tiene menos de 120s de antigüedad."""
+        if channel_id in self.last_rendered_m3u8:
+            age = time.time() - self.last_updated.get(channel_id, 0)
+            if age < 120.0:
+                return self.last_rendered_m3u8[channel_id]
+        return None
 
     def process_and_extend(
         self,
@@ -122,36 +148,56 @@ class ChannelWindowManager:
     ) -> str:
         now = time.time()
         self.last_updated[channel_id] = now
+        self.last_target_dur[channel_id] = target_dur
 
         # Limpiar canales inactivos hace más de 15 minutos
         stale = [cid for cid, t in self.last_updated.items() if now - t > 900]
         for cid in stale:
             self.windows.pop(cid, None)
+            self.last_seq_assigned.pop(cid, None)
             self.last_updated.pop(cid, None)
+            self.last_rendered_m3u8.pop(cid, None)
+            self.last_target_dur.pop(cid, None)
 
         existing = self.windows.get(channel_id, [])
-        seq_map = {item[0]: (item[1], item[2]) for item in existing}
 
-        for i, (inf, url) in enumerate(incoming):
-            seq_map[media_seq + i] = (inf, url)
+        if not existing:
+            # Inicialización para un canal nuevo
+            curr_seq = media_seq
+            new_window = []
+            for inf, url in incoming:
+                new_window.append(SegmentItem(seq=curr_seq, inf=inf, raw_url=url))
+                curr_seq += 1
+            self.windows[channel_id] = new_window
+            self.last_seq_assigned[channel_id] = curr_seq - 1
+        else:
+            # Ya existe ventana previa: identificamos qué segmentos entrantes son realmente nuevos
+            existing_paths = {item.path_key for item in existing}
+            last_seq = self.last_seq_assigned.get(channel_id, existing[-1].seq)
 
-        sorted_seqs = sorted(seq_map.keys())
-        contiguous: List[Tuple[int, str, str]] = []
-        for s in reversed(sorted_seqs):
-            if not contiguous:
-                contiguous.append((s, seq_map[s][0], seq_map[s][1]))
-            else:
-                if contiguous[-1][0] - 1 == s:
-                    contiguous.append((s, seq_map[s][0], seq_map[s][1]))
-                else:
-                    break
-        contiguous.reverse()
+            new_items = []
+            for inf, url in incoming:
+                p_key = urlparse(url).path or url
+                if p_key not in existing_paths:
+                    last_seq += 1
+                    new_item = SegmentItem(seq=last_seq, inf=inf, raw_url=url)
+                    new_items.append(new_item)
+                    existing_paths.add(p_key)
 
-        if len(contiguous) > self.max_segments:
-            contiguous = contiguous[-self.max_segments:]
+            if new_items:
+                existing.extend(new_items)
+                self.last_seq_assigned[channel_id] = last_seq
 
-        self.windows[channel_id] = contiguous
-        start_seq = contiguous[0][0]
+            # Recortar ventana a max_segments
+            if len(existing) > self.max_segments:
+                existing = existing[-self.max_segments:]
+            self.windows[channel_id] = existing
+
+        contiguous = self.windows[channel_id]
+        if not contiguous:
+            start_seq = media_seq
+        else:
+            start_seq = contiguous[0].seq
 
         lines = [
             "#EXTM3U",
@@ -162,18 +208,20 @@ class ChannelWindowManager:
         ]
 
         # Tag de offset HLS estándar RFC 8216: inicia la reproducción X segundos por detrás del vivo
-        # permitiendo que el navegador pre-cargue múltiples fragmentos y cree un colchón seguro.
+        # permitiendo acumular un gran colchón de búfer sin cortes.
         if buffer_offset is not None and buffer_offset != 0 and len(contiguous) >= 4:
             offset_val = -abs(buffer_offset)
             lines.append(f"#EXT-X-START:TIME-OFFSET={offset_val:.1f},PRECISE=YES")
 
-        for s_num, inf, raw_url in contiguous:
-            b64_seg = base64.urlsafe_b64encode(raw_url.encode("utf-8")).decode("utf-8")
+        for item in contiguous:
+            b64_seg = base64.urlsafe_b64encode(item.raw_url.encode("utf-8")).decode("utf-8")
             local_seg_url = f"{base_url}/segment?b64={b64_seg}"
-            lines.append(inf)
+            lines.append(item.inf)
             lines.append(local_seg_url)
 
-        return "\n".join(lines) + "\n"
+        rendered = "\n".join(lines) + "\n"
+        self.last_rendered_m3u8[channel_id] = rendered
+        return rendered
 
 
 window_manager = ChannelWindowManager(max_segments=WINDOW_MAX_SEGMENTS)
@@ -371,16 +419,23 @@ async def fetch_and_deobfuscate_segment(raw_url: str) -> bytes:
         raise HTTPException(status_code=500, detail=f"Error al desofuscar segmento: {e}")
 
 
-async def prefetch_segments_task(urls: List[str]):
-    """Precarga en memoria RAM en segundo plano los segmentos futuros de la lista."""
-    for raw_url in urls:
-        if segment_cache.has(raw_url):
-            continue
+async def _prefetch_single(url: str, sem: asyncio.Semaphore):
+    if segment_cache.has(url):
+        return
+    async with sem:
         try:
-            await segment_cache.get_or_fetch(raw_url, lambda u=raw_url: fetch_and_deobfuscate_segment(u))
+            await segment_cache.get_or_fetch(url, lambda: fetch_and_deobfuscate_segment(url))
             segment_cache.prefetches += 1
         except Exception:
             pass
+
+
+async def prefetch_segments_task(urls: List[str]):
+    """Precarga en memoria RAM en segundo plano los segmentos de forma concurrente."""
+    sem = asyncio.Semaphore(4)
+    tasks = [_prefetch_single(u, sem) for u in urls if not segment_cache.has(u)]
+    if tasks:
+        await asyncio.gather(*tasks, return_exceptions=True)
 
 
 def parse_playlist_body(text: str) -> Tuple[int, int, List[Tuple[str, str]]]:
@@ -452,7 +507,7 @@ def make_segment_response(ts_bytes: bytes, request: Request) -> Response:
 async def get_live_playlist(
     channel_id: str,
     request: Request,
-    offset: Optional[float] = Query(None, description="Offset de buffer en segundos (ej. 12.0)")
+    offset: Optional[float] = Query(None, description="Offset de buffer en segundos (ej. 16.0)")
 ):
     """Obtiene, amplía la ventana deslizante y reescribe la lista M3U8 para un canal con buffer offset."""
     global http_client
@@ -463,8 +518,8 @@ async def get_live_playlist(
     token = encode_token(channel_id)
     time_offset = offset if offset is not None else DEFAULT_BUFFER_OFFSET
 
-    # Probar dominios proxy candidatos en orden de prioridad
-    candidate_domains = [state.active_domain, "chunk.tvnow247.today", "tvnow247.top", "tvnow247.today"]
+    # Probar dominios proxy candidatos en orden de prioridad óptima
+    candidate_domains = [state.active_domain, "tvnow247.top", "chunk.tvnow247.today", "tvnow247.today"]
     seen_domains = set()
     candidate_domains = [d for d in candidate_domains if d and not (d in seen_domains or seen_domains.add(d))]
 
@@ -473,9 +528,9 @@ async def get_live_playlist(
     for d in candidate_domains:
         upstream_url = f"https://{d}/api/proxy/playlist?token={token}"
         try:
-            res = await http_client.get(upstream_url, headers={**HEADERS, "Referer": f"https://{d}/"}, timeout=5.0)
+            res = await http_client.get(upstream_url, headers={**HEADERS, "Referer": f"https://{d}/"}, timeout=3.5)
             last_res = res
-            if res.status_code == 200 and "#EXTM3U" in res.text:
+            if "#EXTM3U" in res.text and (res.status_code == 200 or res.status_code == 503):
                 r = res
                 if d != state.active_domain:
                     logger.info(f"Cambiando dominio activo a {d}")
@@ -484,25 +539,41 @@ async def get_live_playlist(
             if res.status_code in (403, 502) and "upstream error" in res.text.lower():
                 break
         except Exception as ex:
-            logger.warning(f"Error consultando upstream {d}: {ex}")
+            logger.debug(f"Error consultando upstream {d}: {ex}")
 
-    # Fallback a resolver API
-    if not r or r.status_code != 200 or "#EXTM3U" not in r.text:
+    # Fallback a resolver API si los dominios directos no respondieron
+    if not r or "#EXTM3U" not in r.text:
         try:
-            fallback_res = await http_client.get(f"https://chat.cfbu247.sbs/api/resolve-dlstream/{channel_id}", timeout=6.0)
+            fallback_res = await http_client.get(f"https://tvnow247.top/api/resolve-dlstream/{channel_id}", timeout=3.5)
+            if fallback_res.status_code != 200:
+                fallback_res = await http_client.get(f"https://chat.cfbu247.sbs/api/resolve-dlstream/{channel_id}", timeout=3.5)
             if fallback_res.status_code == 200:
                 data = fallback_res.json()
                 alt_url = data.get("proxyPlaylistUrl") or data.get("m3u8")
                 ref = data.get("referer") or f"https://{state.active_domain}/"
                 if alt_url:
-                    fb_r = await http_client.get(alt_url, headers={**HEADERS, "Referer": ref}, timeout=6.0)
+                    fb_r = await http_client.get(alt_url, headers={**HEADERS, "Referer": ref}, timeout=4.0)
                     last_res = fb_r
-                    if fb_r.status_code == 200 and "#EXTM3U" in fb_r.text:
+                    if "#EXTM3U" in fb_r.text and fb_r.status_code in (200, 503):
                         r = fb_r
         except Exception as ex:
-            logger.warning(f"Error consultando API resolve fallback para canal {channel_id}: {ex}")
+            logger.debug(f"Error consultando API resolve fallback para canal {channel_id}: {ex}")
 
-    if not r or r.status_code != 200 or "#EXTM3U" not in r.text:
+    # Si upstream falló momentáneamente, entregar la última ventana buena en caché para mantener el búfer vivo
+    if not r or "#EXTM3U" not in r.text:
+        cached_m3u8 = window_manager.get_cached_m3u8(channel_id)
+        if cached_m3u8:
+            logger.warning(f"Upstream momentáneamente inactivo para canal {channel_id}; entregando ventana en memoria para evitar rotura de búfer.")
+            return Response(
+                content=cached_m3u8,
+                media_type="application/vnd.apple.mpegurl",
+                headers={
+                    "Cache-Control": "no-cache, no-store, must-revalidate",
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS"
+                }
+            )
+
         status_code = last_res.status_code if last_res else (r.status_code if r else 502)
         resp_text = (last_res.text if last_res else (r.text if r else "")).strip().lower()
         err_detail = f"Upstream no devolvió una lista válida (estado {status_code})"
@@ -561,31 +632,36 @@ async def proxy_direct_url(
             return await get_live_playlist(cid, request, offset=offset)
 
     global http_client
-    r = await http_client.get(url, timeout=8.0)
-    if r.status_code != 200:
+    r = await http_client.get(url, timeout=6.0)
+    if "#EXTM3U" not in r.text and r.status_code != 200:
         raise HTTPException(status_code=r.status_code, detail="Error al consultar URL")
 
-    # Reescribir segmentos y precargar
+    # Reescribir segmentos, ampliar ventana deslizante y precargar
     media_seq, target_dur, incoming_segs = parse_playlist_body(r.text)
+    pseudo_cid = f"custom_{abs(hash(parsed.path)) % 100000}"
+    time_offset = offset if offset is not None else DEFAULT_BUFFER_OFFSET
+
+    m3u8_content = window_manager.process_and_extend(
+        channel_id=pseudo_cid,
+        media_seq=media_seq,
+        target_dur=target_dur,
+        incoming=incoming_segs,
+        base_url=base_url,
+        buffer_offset=time_offset
+    )
+
     raw_urls = [s_url for _, s_url in incoming_segs]
     if raw_urls:
         asyncio.create_task(prefetch_segments_task(raw_urls))
 
-    rewritten_lines = []
-    for line in r.text.splitlines():
-        line = line.strip()
-        if not line or line.startswith("## by HACKERMAN"):
-            continue
-        if line.startswith("#"):
-            rewritten_lines.append(line)
-        else:
-            b64_seg = base64.urlsafe_b64encode(line.encode("utf-8")).decode("utf-8")
-            rewritten_lines.append(f"{base_url}/segment?b64={b64_seg}")
-
     return Response(
-        content="\n".join(rewritten_lines) + "\n",
+        content=m3u8_content,
         media_type="application/vnd.apple.mpegurl",
-        headers={"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS"}
+        headers={
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS"
+        }
     )
 
 
@@ -1122,6 +1198,26 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
         .form-group {{ margin-bottom: 1rem; }}
         .form-label {{ display: block; font-size: 0.85rem; margin-bottom: 0.4rem; color: var(--text-muted); }}
         .form-input {{ width: 100%; background: var(--bg-elevated); border: 1px solid var(--border-line); padding: 0.6rem 0.8rem; border-radius: 8px; color: var(--text-main); font-family: var(--font-mono); font-size: 0.85rem; }}
+        .btn-recover {{
+            background: linear-gradient(135deg, #0284c7, #2563eb);
+            color: #fff;
+            font-size: 0.78rem;
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            margin-left: 0.5rem;
+        }}
+        .btn-recover:hover {{
+            background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+            box-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+            transform: translateY(-1px);
+        }}
     </style>
 </head>
 <body>
@@ -1134,11 +1230,12 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
             </div>
         </a>
 
-        <div class="header-center">
+        <div class="header-center" style="display: flex; align-items: center; gap: 0.5rem;">
             <div id="buffer-pill" class="buffer-pill" title="Segundos de vídeo acumulados en memoria por delante del punto actual de reproducción">
                 <span id="buffer-dot" class="status-dot dot-yellow"></span>
                 <span id="buffer-text">Búfer: 0.0s (Iniciando)</span>
             </div>
+            <button class="btn-recover" id="recover-buffer-btn" onclick="recoverBuffer()" title="Fuerza la recuperación del búfer sincronizando con el directo">⚡ Recuperar Búfer</button>
         </div>
 
         <div class="header-actions">
@@ -1351,21 +1448,24 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
             }}
 
             if (Hls.isSupported()) {{
-                // Configuración de Hls.js optimizada para BÚFER ULTRA ESTABLE
+                // Configuración de Hls.js optimizada para BÚFER ULTRA ESTABLE Y RESILIENTE
                 const hlsConfig = {{
                     enableWorker: true,
-                    maxBufferLength: 35,          // Mantener hasta 35s en búfer local
-                    maxMaxBufferLength: 70,       // Tope máximo 70s
-                    maxBufferSize: 60 * 1024 * 1024, // Búfer de hasta 60MB en memoria
+                    maxBufferLength: 50,          // Mantener hasta 50s en búfer local
+                    maxMaxBufferLength: 100,      // Tope máximo 100s
+                    maxBufferSize: 120 * 1024 * 1024, // Búfer de hasta 120MB en memoria
                     backBufferLength: 30,         // Retroceso fluido
-                    liveSyncDurationCount: 3,     // Distancia segura respecto al directo
-                    liveMaxLatencyDurationCount: 10,
+                    liveSyncDurationCount: 4,     // 4 segmentos de colchón (~20s de búfer)
+                    liveMaxLatencyDurationCount: 15,
                     liveDurationInfinity: true,
-                    manifestLoadingTimeOut: 8000,
-                    manifestLoadingMaxRetry: 5,
-                    fragLoadingTimeOut: 12000,
-                    fragLoadingMaxRetry: 4,
-                    lowLatencyMode: false         // Desactivado a propósito para priorizar estabilidad absoluta
+                    manifestLoadingTimeOut: 6000,
+                    manifestLoadingMaxRetry: 6,
+                    fragLoadingTimeOut: 10000,
+                    fragLoadingMaxRetry: 5,
+                    nudgeMaxRetry: 6,
+                    nudgeOffset: 0.2,
+                    highBufferWatchdogPeriod: 2,
+                    lowLatencyMode: false         // Priorizar estabilidad absoluta sin congelaciones
                 }};
 
                 hls = new Hls(hlsConfig);
@@ -1383,19 +1483,26 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
                 }});
 
                 hls.on(Hls.Events.ERROR, (event, data) => {{
+                    if (data.details === Hls.ErrorDetails.BUFFER_STALLED_ERROR) {{
+                        console.warn("Buffer stalled detectado. Recuperando...");
+                        hls.startLoad();
+                        if (video.buffered.length > 0) {{
+                            video.currentTime += 0.15;
+                        }}
+                    }}
                     if (data.fatal) {{
                         switch (data.type) {{
                             case Hls.ErrorTypes.NETWORK_ERROR:
-                                console.warn("Error de red HLS, recuperando...");
+                                console.warn("Error de red HLS fatal, recuperando flujo...");
                                 hls.startLoad();
                                 break;
                             case Hls.ErrorTypes.MEDIA_ERROR:
-                                console.warn("Error de medios HLS, recuperando...");
+                                console.warn("Error de medios HLS fatal, recuperando códec/buffer...");
                                 hls.recoverMediaError();
                                 break;
                             default:
-                                console.error("Error fatal irrecuperable:", data);
-                                hls.destroy();
+                                console.error("Error fatal irrecuperable, reintentando carga:", data);
+                                setTimeout(() => hls.loadSource(url), 1200);
                                 break;
                         }}
                     }}
@@ -1405,6 +1512,23 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
                 video.src = url;
                 video.play().catch(e => console.log("Autoplay:", e));
             }}
+        }}
+
+        // Función para forzar recuperación manual o automática del búfer
+        function recoverBuffer() {{
+            if (!video) return;
+            const text = document.getElementById('buffer-text');
+            if (text) text.textContent = "⚡ Recuperando búfer...";
+            if (hls) {{
+                hls.startLoad();
+                if (hls.liveSyncPosition) {{
+                    video.currentTime = hls.liveSyncPosition;
+                }} else if (video.buffered.length > 0) {{
+                    const end = video.buffered.end(video.buffered.length - 1);
+                    video.currentTime = Math.max(0, end - 2.0);
+                }}
+            }}
+            video.play().catch(() => {{}});
         }}
 
         // Monitor de Salud de Búfer en Tiempo Real (cada 400ms)
@@ -1549,11 +1673,21 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
         function closeModal(id) {{ document.getElementById(id).classList.remove('show'); }}
 
         function submitDirectUrl() {{
-            const url = document.getElementById('direct-url-input').value.trim();
+            let url = document.getElementById('direct-url-input').value.trim();
             if (!url) return;
             closeModal('direct-url-modal');
             document.getElementById('current-name').textContent = "Stream Personalizado";
             document.getElementById('current-group').textContent = "Direct URL";
+
+            // Si el usuario pegó la URL de su contenedor local con /proxy?url=..., extraer la url interna
+            if (url.includes('/proxy?url=')) {{
+                try {{
+                    const parsedUrl = new URL(url, window.location.origin);
+                    const innerUrl = parsedUrl.searchParams.get('url');
+                    if (innerUrl) url = innerUrl;
+                }} catch(e) {{}}
+            }}
+
             const proxyUrl = `/proxy?url=${{encodeURIComponent(url)}}&offset=${{currentBufferOffset}}`;
             loadStream(proxyUrl);
         }}
@@ -1565,6 +1699,9 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
                 if (e.code === 'Space') {{
                     e.preventDefault();
                     video.paused ? video.play() : video.pause();
+                }} else if (e.code === 'KeyR') {{
+                    e.preventDefault();
+                    recoverBuffer();
                 }} else if (e.code === 'KeyF') {{
                     e.preventDefault();
                     document.fullscreenElement ? document.exitFullscreen() : video.requestFullscreen();
