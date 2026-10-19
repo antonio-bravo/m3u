@@ -211,7 +211,7 @@ class ChannelWindowManager:
         # permitiendo acumular un gran colchón de búfer sin cortes.
         if buffer_offset is not None and buffer_offset != 0 and len(contiguous) >= 4:
             offset_val = -abs(buffer_offset)
-            lines.append(f"#EXT-X-START:TIME-OFFSET={offset_val:.1f},PRECISE=YES")
+            lines.append(f"#EXT-X-START:TIME-OFFSET={offset_val:.1f},PRECISE=NO")
 
         for item in contiguous:
             b64_seg = base64.urlsafe_b64encode(item.raw_url.encode("utf-8")).decode("utf-8")
@@ -1230,12 +1230,13 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
             </div>
         </a>
 
-        <div class="header-center" style="display: flex; align-items: center; gap: 0.5rem;">
+        <div class="header-center" style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
             <div id="buffer-pill" class="buffer-pill" title="Segundos de vídeo acumulados en memoria por delante del punto actual de reproducción">
                 <span id="buffer-dot" class="status-dot dot-yellow"></span>
                 <span id="buffer-text">Búfer: 0.0s (Iniciando)</span>
             </div>
-            <button class="btn-recover" id="recover-buffer-btn" onclick="recoverBuffer()" title="Fuerza la recuperación del búfer sincronizando con el directo">⚡ Recuperar Búfer</button>
+            <span id="auto-recover-badge" class="badge-auto" style="font-size:0.75rem; color:#10b981; background:rgba(16,185,129,0.15); border:1px solid rgba(16,185,129,0.3); border-radius:999px; padding:4px 10px; font-weight:600; display:flex; align-items:center; gap:4px;" title="Supervisa y salta micro-cortes y recupera el búfer automáticamente sin necesidad de pulsar botones">🛡️ Auto-Recuperación Activa</span>
+            <button class="btn-recover" id="recover-buffer-btn" onclick="recoverBuffer(false)" title="Fuerza la recuperación del búfer sincronizando con el directo">⚡ Recuperar Búfer</button>
         </div>
 
         <div class="header-actions">
@@ -1448,24 +1449,26 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
             }}
 
             if (Hls.isSupported()) {{
-                // Configuración de Hls.js optimizada para BÚFER ULTRA ESTABLE Y RESILIENTE
+                // Configuración de Hls.js optimizada para BÚFER ULTRA ESTABLE Y RESILIENTE CON TOLERANCIA A HUECOS PTS
                 const hlsConfig = {{
                     enableWorker: true,
-                    maxBufferLength: 50,          // Mantener hasta 50s en búfer local
-                    maxMaxBufferLength: 100,      // Tope máximo 100s
-                    maxBufferSize: 120 * 1024 * 1024, // Búfer de hasta 120MB en memoria
-                    backBufferLength: 30,         // Retroceso fluido
-                    liveSyncDurationCount: 4,     // 4 segmentos de colchón (~20s de búfer)
-                    liveMaxLatencyDurationCount: 15,
+                    maxBufferLength: 60,              // Mantener hasta 60s en búfer local
+                    maxMaxBufferLength: 120,          // Tope máximo 120s
+                    maxBufferSize: 150 * 1024 * 1024, // Búfer de hasta 150MB en memoria
+                    maxBufferHole: 0.8,               // Tolera y salta automáticamente micro-huecos PTS de hasta 800ms
+                    maxSeekHole: 2.0,                 // Tolera huecos de hasta 2s en saltos
+                    backBufferLength: 30,             // Retroceso fluido
+                    liveSyncDuration: 18.0,           // Mantener 18s de distancia al vivo para búfer blindado
+                    liveMaxLatencyDuration: 45.0,
                     liveDurationInfinity: true,
                     manifestLoadingTimeOut: 6000,
                     manifestLoadingMaxRetry: 6,
                     fragLoadingTimeOut: 10000,
                     fragLoadingMaxRetry: 5,
-                    nudgeMaxRetry: 6,
-                    nudgeOffset: 0.2,
-                    highBufferWatchdogPeriod: 2,
-                    lowLatencyMode: false         // Priorizar estabilidad absoluta sin congelaciones
+                    nudgeMaxRetry: 10,
+                    nudgeOffset: 0.1,
+                    highBufferWatchdogPeriod: 1,      // Supervisión interna de Hls.js cada 1 segundo
+                    lowLatencyMode: false             // Priorizar estabilidad absoluta sin congelaciones
                 }};
 
                 hls = new Hls(hlsConfig);
@@ -1484,24 +1487,22 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
 
                 hls.on(Hls.Events.ERROR, (event, data) => {{
                     if (data.details === Hls.ErrorDetails.BUFFER_STALLED_ERROR) {{
-                        console.warn("Buffer stalled detectado. Recuperando...");
+                        console.warn("[HLS] Buffer stalled reportado por Hls.js. Auto-recuperando...");
                         hls.startLoad();
-                        if (video.buffered.length > 0) {{
-                            video.currentTime += 0.15;
-                        }}
+                        recoverBuffer(true);
                     }}
                     if (data.fatal) {{
                         switch (data.type) {{
                             case Hls.ErrorTypes.NETWORK_ERROR:
-                                console.warn("Error de red HLS fatal, recuperando flujo...");
+                                console.warn("[HLS] Error de red HLS fatal, recuperando flujo...");
                                 hls.startLoad();
                                 break;
                             case Hls.ErrorTypes.MEDIA_ERROR:
-                                console.warn("Error de medios HLS fatal, recuperando códec/buffer...");
+                                console.warn("[HLS] Error de medios HLS fatal, recuperando códec/buffer...");
                                 hls.recoverMediaError();
                                 break;
                             default:
-                                console.error("Error fatal irrecuperable, reintentando carga:", data);
+                                console.error("[HLS] Error fatal irrecuperable, reintentando carga:", data);
                                 setTimeout(() => hls.loadSource(url), 1200);
                                 break;
                         }}
@@ -1514,37 +1515,73 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
             }}
         }}
 
+        // Cálculo del búfer continuo real puenteando micro-huecos (< 0.8s) entre fragmentos TS
+        function getRealContinuousBufferAhead() {{
+            if (!video || !video.buffered.length) return 0;
+            const cur = video.currentTime;
+            let total = 0;
+            let matched = false;
+
+            for (let i = 0; i < video.buffered.length; i++) {{
+                const s = video.buffered.start(i);
+                const e = video.buffered.end(i);
+                if (!matched) {{
+                    if (cur >= s && cur <= e) {{
+                        matched = true;
+                        total += (e - cur);
+                    }} else if (s > cur && (s - cur) <= 0.8) {{
+                        // El cabezal está en un micro-hueco justo antes del rango i
+                        matched = true;
+                        total += (e - s);
+                    }}
+                }} else {{
+                    const prevEnd = video.buffered.end(i - 1);
+                    if (s - prevEnd <= 0.8) {{
+                        total += (e - s);
+                    }} else {{
+                        break;
+                    }}
+                }}
+            }}
+            return total;
+        }}
+
         // Función para forzar recuperación manual o automática del búfer
-        function recoverBuffer() {{
+        function recoverBuffer(isAuto = false) {{
             if (!video) return;
             const text = document.getElementById('buffer-text');
-            if (text) text.textContent = "⚡ Recuperando búfer...";
+            const dot = document.getElementById('buffer-dot');
+            if (dot) dot.className = 'status-dot dot-yellow';
+            if (text) text.textContent = isAuto ? "⚡ Auto-recuperando búfer..." : "⚡ Recuperando búfer...";
+
+            console.log(`[BufferRecovery] Sincronizando búfer (isAuto=${{isAuto}})...`);
             if (hls) {{
                 hls.startLoad();
-                if (hls.liveSyncPosition) {{
-                    video.currentTime = hls.liveSyncPosition;
+                // Colocar el cabezal con un colchón seguro de ~16 segundos por detrás del vivo
+                if (hls.liveSyncPosition && hls.liveSyncPosition > 20) {{
+                    const targetPos = Math.max(0, hls.liveSyncPosition - 16.0);
+                    video.currentTime = targetPos;
                 }} else if (video.buffered.length > 0) {{
                     const end = video.buffered.end(video.buffered.length - 1);
-                    video.currentTime = Math.max(0, end - 2.0);
+                    video.currentTime = Math.max(0, end - 12.0);
                 }}
             }}
             video.play().catch(() => {{}});
         }}
 
-        // Monitor de Salud de Búfer en Tiempo Real (cada 400ms)
+        // -------------------------------------------------------------------
+        // Centinela Autónomo: Salto de Micro-Gaps y Auto-Recuperación de Búfer
+        // -------------------------------------------------------------------
+        let lastPlayheadPos = -1;
+        let stallTicks = 0;
+        let lastAutoRecoverTimestamp = 0;
+        let consecutiveStallCount = 0;
+
         setInterval(() => {{
             if (!video) return;
 
-            let bufferAhead = 0;
             const curTime = video.currentTime;
-            for (let i = 0; i < video.buffered.length; i++) {{
-                const start = video.buffered.start(i);
-                const end = video.buffered.end(i);
-                if (curTime >= start && curTime <= end) {{
-                    bufferAhead = end - curTime;
-                    break;
-                }}
-            }}
+            const bufferAhead = getRealContinuousBufferAhead();
 
             const dot = document.getElementById('buffer-dot');
             const text = document.getElementById('buffer-text');
@@ -1565,14 +1602,76 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
                 text.textContent = `Pausado`;
             }} else {{
                 dot.className = 'status-dot dot-red';
-                text.textContent = `Búfer: 0.0s (Sincronizando)`;
+                text.textContent = `Búfer: ${{bufferAhead.toFixed(1)}}s (Sincronizando)`;
             }}
 
             // HUD Stats
             if (video.videoWidth && document.getElementById('hud-res')) {{
                 document.getElementById('hud-res').textContent = `${{video.videoWidth}}x${{video.videoHeight}}`;
             }}
-        }}, 400);
+
+            // Si está pausado deliberadamente por el usuario o ha terminado, no intervenir
+            if (video.paused || video.ended) {{
+                stallTicks = 0;
+                lastPlayheadPos = curTime;
+                return;
+            }}
+
+            // Comprobar si el vídeo está avanzando
+            const isAdvancing = Math.abs(curTime - lastPlayheadPos) > 0.04;
+            lastPlayheadPos = curTime;
+
+            if (isAdvancing) {{
+                stallTicks = 0;
+                consecutiveStallCount = 0;
+                return;
+            }}
+
+            // Si el vídeo debería reproducirse pero no avanza:
+            stallTicks++;
+
+            // NIVEL 1: Micro-gap hopper (salto de hueco PTS de 40ms entre fragmentos TS)
+            // Se activa a partir de ~600ms de estancamiento
+            if (stallTicks >= 2) {{
+                for (let i = 0; i < video.buffered.length; i++) {{
+                    const bStart = video.buffered.start(i);
+                    const bEnd = video.buffered.end(i);
+                    // Si el siguiente rango empieza justo después del tiempo actual (<= 1.5s)
+                    if (bStart > curTime && (bStart - curTime) <= 1.5) {{
+                        console.log(`[Watchdog] Saltando micro-gap PTS (${{(bStart - curTime).toFixed(3)}}s) hacia ${{bStart + 0.04}}s`);
+                        video.currentTime = bStart + 0.04;
+                        video.play().catch(() => {{}});
+                        stallTicks = 0;
+                        return;
+                    }}
+                }}
+            }}
+
+            // NIVEL 2: Auto-recuperación de búfer sin interacción del usuario
+            // Si lleva congelado >= 6 ticks (~1.8s) y el búfer inmediato está agotado
+            if (stallTicks >= 6) {{
+                const now = Date.now();
+                if (now - lastAutoRecoverTimestamp > 3500) {{
+                    lastAutoRecoverTimestamp = now;
+                    consecutiveStallCount++;
+                    console.warn(`[Watchdog] Congelación detectada (#${{consecutiveStallCount}}). Disparando auto-recuperación de búfer...`);
+
+                    if (consecutiveStallCount >= 4) {{
+                        // Múltiples congelaciones consecutivas: recargar origen limpiamente
+                        console.warn("[Watchdog] Reinicializando pipeline tras múltiples congelaciones...");
+                        consecutiveStallCount = 0;
+                        if (currentChannel) {{
+                            loadStream(`/live/${{currentChannel.id}}.m3u8?offset=${{currentBufferOffset}}`);
+                        }} else {{
+                            recoverBuffer(true);
+                        }}
+                    }} else {{
+                        recoverBuffer(true);
+                    }}
+                    stallTicks = 0;
+                }}
+            }}
+        }}, 300);
 
         // Perfiles de búfer
         function setBufferProfile(mode) {{
