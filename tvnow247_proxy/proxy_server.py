@@ -130,10 +130,10 @@ class ChannelWindowManager:
         self.last_target_dur: Dict[str, int] = {}
 
     def get_cached_m3u8(self, channel_id: str) -> Optional[str]:
-        """Devuelve la última lista M3U8 generada si existe y tiene menos de 120s de antigüedad."""
+        """Devuelve la última lista M3U8 generada si existe y tiene menos de 300s de antigüedad para evitar 502."""
         if channel_id in self.last_rendered_m3u8:
             age = time.time() - self.last_updated.get(channel_id, 0)
-            if age < 120.0:
+            if age < 300.0:
                 return self.last_rendered_m3u8[channel_id]
         return None
 
@@ -147,22 +147,33 @@ class ChannelWindowManager:
         buffer_offset: Optional[float] = DEFAULT_BUFFER_OFFSET
     ) -> str:
         now = time.time()
+        last_t = self.last_updated.get(channel_id, 0)
         self.last_updated[channel_id] = now
         self.last_target_dur[channel_id] = target_dur
 
-        # Limpiar canales inactivos hace más de 15 minutos
-        stale = [cid for cid, t in self.last_updated.items() if now - t > 900]
-        for cid in stale:
-            self.windows.pop(cid, None)
-            self.last_seq_assigned.pop(cid, None)
-            self.last_updated.pop(cid, None)
-            self.last_rendered_m3u8.pop(cid, None)
-            self.last_target_dur.pop(cid, None)
+        # Si el canal ha estado inactivo más de 35 segundos (más de una lista upstream completa),
+        # la ventana previa es discontinua y debe reiniciarse limpiamente para evitar huecos temporales.
+        if now - last_t > 35.0:
+            self.windows.pop(channel_id, None)
+            self.last_seq_assigned.pop(channel_id, None)
 
         existing = self.windows.get(channel_id, [])
 
+        # Comprobar solapamiento real con la ventana existente
+        if existing:
+            existing_paths = {item.path_key for item in existing}
+            incoming_paths = {urlparse(url).path or url for _, url in incoming}
+            overlap = existing_paths.intersection(incoming_paths)
+            if not overlap:
+                # No hay solapamiento: los segmentos entrantes no son contiguos con los previos.
+                # Reiniciamos la ventana limpiamente con los segmentos en vivo para evitar saltos temporales.
+                logger.info(f"Salto/desconexión detectada en canal {channel_id} (0 solapamiento). Reiniciando ventana deslizante limpia.")
+                existing = []
+                self.windows.pop(channel_id, None)
+                self.last_seq_assigned.pop(channel_id, None)
+
         if not existing:
-            # Inicialización para un canal nuevo
+            # Inicialización para un canal nuevo o ventana reiniciada
             curr_seq = media_seq
             new_window = []
             for inf, url in incoming:
@@ -171,7 +182,7 @@ class ChannelWindowManager:
             self.windows[channel_id] = new_window
             self.last_seq_assigned[channel_id] = curr_seq - 1
         else:
-            # Ya existe ventana previa: identificamos qué segmentos entrantes son realmente nuevos
+            # Ya existe ventana previa contigua: identificamos qué segmentos entrantes son realmente nuevos
             existing_paths = {item.path_key for item in existing}
             last_seq = self.last_seq_assigned.get(channel_id, existing[-1].seq)
 
@@ -198,6 +209,16 @@ class ChannelWindowManager:
             start_seq = media_seq
         else:
             start_seq = contiguous[0].seq
+
+        # RFC 8216 sección 4.3.3.1: TARGETDURATION debe ser >= que la duración máxima de cualquier segmento en la lista
+        max_seg_dur = target_dur
+        for item in contiguous:
+            try:
+                val_str = item.inf.split(":")[1].split(",")[0].strip()
+                max_seg_dur = max(max_seg_dur, int(float(val_str) + 0.999))
+            except Exception:
+                pass
+        target_dur = max_seg_dur
 
         lines = [
             "#EXTM3U",
@@ -507,7 +528,8 @@ def make_segment_response(ts_bytes: bytes, request: Request) -> Response:
 async def get_live_playlist(
     channel_id: str,
     request: Request,
-    offset: Optional[float] = Query(None, description="Offset de buffer en segundos (ej. 16.0)")
+    offset: Optional[float] = Query(None, description="Offset de buffer en segundos (ej. 16.0)"),
+    preferred_domain: Optional[str] = None
 ):
     """Obtiene, amplía la ventana deslizante y reescribe la lista M3U8 para un canal con buffer offset."""
     global http_client
@@ -518,48 +540,72 @@ async def get_live_playlist(
     token = encode_token(channel_id)
     time_offset = offset if offset is not None else DEFAULT_BUFFER_OFFSET
 
-    # Probar dominios proxy candidatos en orden de prioridad óptima
-    candidate_domains = [state.active_domain, "tvnow247.top", "chunk.tvnow247.today", "tvnow247.today"]
-    seen_domains = set()
-    candidate_domains = [d for d in candidate_domains if d and not (d in seen_domains or seen_domains.add(d))]
+    # Construir lista de dominios candidatos priorizando el preferido y tvnow247.top (el más rápido y fiable)
+    candidate_domains = []
+    if preferred_domain and preferred_domain not in candidate_domains:
+        candidate_domains.append(preferred_domain)
+    for d in ["tvnow247.top", "chunk.tvnow247.today", state.active_domain, "tvnow247.today"]:
+        if d and d not in candidate_domains:
+            candidate_domains.append(d)
 
     r = None
     last_res = None
-    for d in candidate_domains:
-        upstream_url = f"https://{d}/api/proxy/playlist?token={token}"
+
+    # Función auxiliar para consultar un dominio upstream de forma segura y veloz
+    async def fetch_domain(d: str) -> Optional[Tuple[httpx.Response, str]]:
+        url = f"https://{d}/api/proxy/playlist?token={token}"
         try:
-            res = await http_client.get(upstream_url, headers={**HEADERS, "Referer": f"https://{d}/"}, timeout=3.5)
-            last_res = res
+            res = await http_client.get(
+                url,
+                headers={**HEADERS, "Referer": f"https://{d}/"},
+                timeout=4.0,
+                follow_redirects=True
+            )
             if "#EXTM3U" in res.text and (res.status_code == 200 or res.status_code == 503):
-                r = res
-                if d != state.active_domain:
-                    logger.info(f"Cambiando dominio activo a {d}")
-                    state.active_domain = d
-                break
-            if res.status_code in (403, 502) and "upstream error" in res.text.lower():
-                break
-        except Exception as ex:
-            logger.debug(f"Error consultando upstream {d}: {ex}")
+                return res, d
+        except Exception:
+            pass
+        return None
 
-    # Fallback a resolver API si los dominios directos no respondieron
-    if not r or "#EXTM3U" not in r.text:
-        try:
-            fallback_res = await http_client.get(f"https://tvnow247.top/api/resolve-dlstream/{channel_id}", timeout=3.5)
-            if fallback_res.status_code != 200:
-                fallback_res = await http_client.get(f"https://chat.cfbu247.sbs/api/resolve-dlstream/{channel_id}", timeout=3.5)
-            if fallback_res.status_code == 200:
-                data = fallback_res.json()
-                alt_url = data.get("proxyPlaylistUrl") or data.get("m3u8")
-                ref = data.get("referer") or f"https://{state.active_domain}/"
-                if alt_url:
-                    fb_r = await http_client.get(alt_url, headers={**HEADERS, "Referer": ref}, timeout=4.0)
-                    last_res = fb_r
-                    if "#EXTM3U" in fb_r.text and fb_r.status_code in (200, 503):
-                        r = fb_r
-        except Exception as ex:
-            logger.debug(f"Error consultando API resolve fallback para canal {channel_id}: {ex}")
+    # Paso 1: Probar el dominio principal con ventana rápida de 0.8s
+    primary_domain = candidate_domains[0]
+    primary_task = asyncio.create_task(fetch_domain(primary_domain))
+    try:
+        done, _ = await asyncio.wait([primary_task], timeout=0.8)
+        if done:
+            result = primary_task.result()
+            if result:
+                r, d_winner = result
+                if d_winner != state.active_domain:
+                    state.active_domain = d_winner
+    except Exception:
+        pass
 
-    # Si upstream falló momentáneamente, entregar la última ventana buena en caché para mantener el búfer vivo
+    # Paso 2: Si el principal tardó más de 800ms o falló, lanzar concurrentemente sobre los demás candidatos
+    if not r:
+        backup_domains = [d for d in candidate_domains if d != primary_domain]
+        if backup_domains:
+            tasks = [asyncio.create_task(fetch_domain(d)) for d in backup_domains]
+            if not primary_task.done():
+                tasks.append(primary_task)
+
+            for fut in asyncio.as_completed(tasks):
+                try:
+                    res_tuple = await fut
+                    if res_tuple:
+                        r, d_winner = res_tuple
+                        if d_winner != state.active_domain:
+                            logger.info(f"Cambiando dominio activo a {d_winner}")
+                            state.active_domain = d_winner
+                        break
+                except Exception:
+                    pass
+
+            for t in tasks:
+                if not t.done():
+                    t.cancel()
+
+    # Si upstream falló momentáneamente, entregar la última ventana buena en memoria para mantener el búfer vivo
     if not r or "#EXTM3U" not in r.text:
         cached_m3u8 = window_manager.get_cached_m3u8(channel_id)
         if cached_m3u8:
@@ -629,7 +675,8 @@ async def proxy_direct_url(
         token_info = decode_token(token_str)
         if token_info and "channelId" in token_info:
             cid = str(token_info["channelId"])
-            return await get_live_playlist(cid, request, offset=offset)
+            pref_dom = parsed.netloc if parsed.netloc else None
+            return await get_live_playlist(cid, request, offset=offset, preferred_domain=pref_dom)
 
     global http_client
     r = await http_client.get(url, timeout=6.0)
