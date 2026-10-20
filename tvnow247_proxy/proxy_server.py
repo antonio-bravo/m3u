@@ -1418,6 +1418,8 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
         let hls = null;
         let allChannels = [];
         let currentChannel = null;
+        let currentCustomUrl = null;
+        let currentStreamUrl = null;
         let activeCategory = 'ALL';
         let currentBufferOffset = 20.0;
         let audioCtx = null, gainNode = null, boostLevel = 1.0;
@@ -1425,21 +1427,31 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
         // Iniciar aplicación
         window.addEventListener('DOMContentLoaded', () => {{
             initAudioContextOnUserGesture();
-            loadChannelsCatalog();
             startStatsPolling();
             setupKeyboardShortcuts();
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const directUrlParam = urlParams.get('url');
+            if (directUrlParam) {{
+                loadChannelsCatalog(false);
+                loadCustomDirectUrl(directUrlParam);
+            }} else {{
+                loadChannelsCatalog(true);
+            }}
         }});
 
-        async function loadChannelsCatalog() {{
+        async function loadChannelsCatalog(autoSelect = true) {{
             try {{
                 const res = await fetch('/api/channels');
                 allChannels = await res.json();
                 renderChannelList(allChannels);
 
                 // Seleccionar canal inicial
-                let target = allChannels.find(c => c.id === INITIAL_CHANNEL_ID);
-                if (!target && allChannels.length > 0) target = allChannels[0];
-                if (target) selectChannel(target);
+                if (autoSelect) {{
+                    let target = allChannels.find(c => c.id === INITIAL_CHANNEL_ID);
+                    if (!target && allChannels.length > 0) target = allChannels[0];
+                    if (target) selectChannel(target);
+                }}
             }} catch (e) {{
                 console.error("Error al cargar canales:", e);
                 document.getElementById('channel-list').innerHTML = '<div style="padding:2rem;text-align:center;color:#ef4444;">Error al cargar canales</div>';
@@ -1470,6 +1482,7 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
 
         function selectChannel(ch) {{
             currentChannel = ch;
+            currentCustomUrl = null;
             document.getElementById('current-name').textContent = ch.name;
             document.getElementById('current-logo').src = ch.logo || '/placeholder.png';
             document.getElementById('current-group').textContent = ch.group || 'Live';
@@ -1491,22 +1504,23 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
         }}
 
         function loadStream(url) {{
+            currentStreamUrl = url;
             if (hls) {{
                 hls.destroy();
             }}
 
             if (Hls.isSupported()) {{
-                // Configuración de Hls.js optimizada para BÚFER ULTRA ESTABLE Y RESILIENTE CON TOLERANCIA A HUECOS PTS
+                // Configuración dinámica de Hls.js vinculada al perfil de búfer seleccionado
                 const hlsConfig = {{
                     enableWorker: true,
-                    maxBufferLength: 60,              // Mantener hasta 60s en búfer local
+                    maxBufferLength: currentBufferOffset >= 20 ? 60 : (currentBufferOffset >= 12 ? 35 : 15),
                     maxMaxBufferLength: 120,          // Tope máximo 120s
                     maxBufferSize: 150 * 1024 * 1024, // Búfer de hasta 150MB en memoria
                     maxBufferHole: 0.8,               // Tolera y salta automáticamente micro-huecos PTS de hasta 800ms
                     maxSeekHole: 2.0,                 // Tolera huecos de hasta 2s en saltos
                     backBufferLength: 30,             // Retroceso fluido
-                    liveSyncDuration: 18.0,           // Mantener 18s de distancia al vivo para búfer blindado
-                    liveMaxLatencyDuration: 45.0,
+                    liveSyncDuration: currentBufferOffset, // Distancia sincronizada al vivo según perfil activo
+                    liveMaxLatencyDuration: Math.max(currentBufferOffset * 2.5, 12.0),
                     liveDurationInfinity: true,
                     manifestLoadingTimeOut: 6000,
                     manifestLoadingMaxRetry: 6,
@@ -1515,7 +1529,7 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
                     nudgeMaxRetry: 10,
                     nudgeOffset: 0.1,
                     highBufferWatchdogPeriod: 1,      // Supervisión interna de Hls.js cada 1 segundo
-                    lowLatencyMode: false             // Priorizar estabilidad absoluta sin congelaciones
+                    lowLatencyMode: (currentBufferOffset <= 6) // Modo baja latencia solo si perfil low
                 }};
 
                 hls = new Hls(hlsConfig);
@@ -1601,16 +1615,16 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
             if (dot) dot.className = 'status-dot dot-yellow';
             if (text) text.textContent = isAuto ? "⚡ Auto-recuperando búfer..." : "⚡ Recuperando búfer...";
 
-            console.log(`[BufferRecovery] Sincronizando búfer (isAuto=${{isAuto}})...`);
+            console.log(`[BufferRecovery] Sincronizando búfer a offset ${{currentBufferOffset}}s (isAuto=${{isAuto}})...`);
             if (hls) {{
                 hls.startLoad();
-                // Colocar el cabezal con un colchón seguro de ~16 segundos por detrás del vivo
-                if (hls.liveSyncPosition && hls.liveSyncPosition > 20) {{
-                    const targetPos = Math.max(0, hls.liveSyncPosition - 16.0);
+                const targetOffset = currentBufferOffset || 16.0;
+                if (hls.liveSyncPosition && hls.liveSyncPosition > (targetOffset + 3.0)) {{
+                    const targetPos = Math.max(0, hls.liveSyncPosition - targetOffset);
                     video.currentTime = targetPos;
                 }} else if (video.buffered.length > 0) {{
                     const end = video.buffered.end(video.buffered.length - 1);
-                    video.currentTime = Math.max(0, end - 12.0);
+                    video.currentTime = Math.max(0, end - Math.min(targetOffset * 0.75, end));
                 }}
             }}
             video.play().catch(() => {{}});
@@ -1707,7 +1721,9 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
                         // Múltiples congelaciones consecutivas: recargar origen limpiamente
                         console.warn("[Watchdog] Reinicializando pipeline tras múltiples congelaciones...");
                         consecutiveStallCount = 0;
-                        if (currentChannel) {{
+                        if (currentCustomUrl) {{
+                            loadStream(`/proxy?url=${{encodeURIComponent(currentCustomUrl)}}&offset=${{currentBufferOffset}}`);
+                        }} else if (currentChannel) {{
                             loadStream(`/live/${{currentChannel.id}}.m3u8?offset=${{currentBufferOffset}}`);
                         }} else {{
                             recoverBuffer(true);
@@ -1725,16 +1741,47 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
             document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
             if (mode === 'stable') {{
                 currentBufferOffset = 20.0;
-                document.getElementById('mode-stable').classList.add('active');
+                const btn = document.getElementById('mode-stable');
+                if (btn) btn.classList.add('active');
             }} else if (mode === 'balanced') {{
                 currentBufferOffset = 12.0;
-                document.getElementById('mode-balanced').classList.add('active');
+                const btn = document.getElementById('mode-balanced');
+                if (btn) btn.classList.add('active');
             }} else if (mode === 'low') {{
                 currentBufferOffset = 4.0;
-                document.getElementById('mode-low').classList.add('active');
+                const btn = document.getElementById('mode-low');
+                if (btn) btn.classList.add('active');
             }}
-            if (currentChannel) {{
-                selectChannel(currentChannel);
+
+            const text = document.getElementById('buffer-text');
+            if (text) text.textContent = `Ajustando perfil: ${{mode.toUpperCase()}} (${{currentBufferOffset}}s)...`;
+            console.log(`[BufferProfile] Perfil '${{mode}}' activado (Offset: ${{currentBufferOffset}}s)`);
+
+            // 1. Reconfigurar dinámicamente Hls.js en tiempo real
+            if (hls && hls.config) {{
+                hls.config.liveSyncDuration = currentBufferOffset;
+                hls.config.liveMaxLatencyDuration = Math.max(currentBufferOffset * 2.5, 12.0);
+                hls.config.maxBufferLength = currentBufferOffset >= 20 ? 60 : (currentBufferOffset >= 12 ? 35 : 15);
+                hls.config.lowLatencyMode = (currentBufferOffset <= 6);
+            }}
+
+            // 2. Recargar flujo con el nuevo offset en el backend
+            if (currentCustomUrl) {{
+                const proxyUrl = `/proxy?url=${{encodeURIComponent(currentCustomUrl)}}&offset=${{currentBufferOffset}}`;
+                loadStream(proxyUrl);
+            }} else if (currentChannel) {{
+                const streamUrl = `/live/${{currentChannel.id}}.m3u8?offset=${{currentBufferOffset}}`;
+                loadStream(streamUrl);
+            }} else if (currentStreamUrl) {{
+                try {{
+                    const u = new URL(currentStreamUrl, window.location.origin);
+                    u.searchParams.set('offset', currentBufferOffset);
+                    loadStream(u.pathname + u.search);
+                }} catch(e) {{
+                    recoverBuffer(false);
+                }}
+            }} else {{
+                recoverBuffer(false);
             }}
         }}
 
@@ -1818,13 +1865,9 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
         function openM3uModal() {{ document.getElementById('m3u-modal').classList.add('show'); }}
         function closeModal(id) {{ document.getElementById(id).classList.remove('show'); }}
 
-        function submitDirectUrl() {{
-            let url = document.getElementById('direct-url-input').value.trim();
+        function loadCustomDirectUrl(rawUrl) {{
+            let url = rawUrl.trim();
             if (!url) return;
-            closeModal('direct-url-modal');
-            document.getElementById('current-name').textContent = "Stream Personalizado";
-            document.getElementById('current-group').textContent = "Direct URL";
-
             // Si el usuario pegó la URL de su contenedor local con /proxy?url=..., extraer la url interna
             if (url.includes('/proxy?url=')) {{
                 try {{
@@ -1834,8 +1877,23 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
                 }} catch(e) {{}}
             }}
 
+            currentCustomUrl = url;
+            currentChannel = null;
+
+            document.getElementById('current-name').textContent = "Stream Personalizado";
+            document.getElementById('current-group').textContent = "Direct URL";
+            document.getElementById('current-m3u8-url').value = `${{BASE_URL}}/proxy?url=${{encodeURIComponent(url)}}&offset=${{currentBufferOffset}}`;
+            document.querySelectorAll('.channel-item').forEach(el => el.classList.remove('active'));
+
             const proxyUrl = `/proxy?url=${{encodeURIComponent(url)}}&offset=${{currentBufferOffset}}`;
             loadStream(proxyUrl);
+        }}
+
+        function submitDirectUrl() {{
+            const val = document.getElementById('direct-url-input').value.trim();
+            if (!val) return;
+            closeModal('direct-url-modal');
+            loadCustomDirectUrl(val);
         }}
 
         // Atajos de teclado
