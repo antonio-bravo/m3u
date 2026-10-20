@@ -1,6 +1,8 @@
-2026-10-20 10:27:36,894 [INFO] Semillas descubiertas dinamicamente (5): ['https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
-2026-10-20 10:27:37,952 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.club': https://www.fctv33hd.host
-2026-10-20 10:27:38,373 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
-2026-10-20 10:27:38,373 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
-2026-10-20 10:27:39,029 [INFO] OK https://apis-data10.tcpwe138stya.ru: 80 partidos recibidos
-2026-10-20 10:27:39,031 [INFO] Generado lista_rbtv_futbol.m3u con 78 partidos de futbol (SITE_BASE: https://www.fctv33hd.host)
+2026-10-20 15:24:10,526 [INFO] Semillas descubiertas dinamicamente (5): ['https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
+2026-10-20 15:24:10,694 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1082)'))': /
+2026-10-20 15:24:11,414 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1082)'))': /
+2026-10-20 15:24:22,334 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.host': https://www.fctv33hd.press
+2026-10-20 15:24:22,840 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
+2026-10-20 15:24:22,840 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
+2026-10-20 15:24:23,512 [INFO] OK https://apis-data10.tcpwe138stya.ru: 104 partidos recibidos
+2026-10-20 15:24:23,515 [INFO] Generado lista_rbtv_futbol.m3u con 102 partidos de futbol (SITE_BASE: https://www.fctv33hd.press)
