@@ -1,8 +1,8 @@
-2026-10-21 01:03:19,925 [INFO] Semillas descubiertas dinamicamente (6): ['https://www.fctv33hd.press', 'https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
-2026-10-21 01:03:20,085 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1082)'))': /
-2026-10-21 01:03:20,807 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1082)'))': /
-2026-10-21 01:03:20,950 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.host': https://www.fctv33hd.press
-2026-10-21 01:03:21,421 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
-2026-10-21 01:03:21,421 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
-2026-10-21 01:03:22,083 [INFO] OK https://apis-data10.tcpwe138stya.ru: 128 partidos recibidos
-2026-10-21 01:03:22,085 [INFO] Generado lista_rbtv_futbol.m3u con 127 partidos de futbol (SITE_BASE: https://www.fctv33hd.press)
+2026-10-21 06:38:46,611 [INFO] Semillas descubiertas dinamicamente (6): ['https://www.fctv33hd.press', 'https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
+2026-10-21 06:38:46,749 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1082)'))': /
+2026-10-21 06:38:47,492 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1082)'))': /
+2026-10-21 06:38:47,650 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.host': https://www.fctv33hd.press
+2026-10-21 06:38:48,023 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
+2026-10-21 06:38:48,023 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
+2026-10-21 06:38:48,793 [INFO] OK https://apis-data10.tcpwe138stya.ru: 119 partidos recibidos
+2026-10-21 06:38:48,797 [INFO] Generado lista_rbtv_futbol.m3u con 117 partidos de futbol (SITE_BASE: https://www.fctv33hd.press)
