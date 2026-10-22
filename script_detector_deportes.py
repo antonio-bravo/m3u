@@ -1,10 +1,16 @@
 import requests
 import xml.etree.ElementTree as ET
 import re
-from transformers import pipeline
+# Carga bajo demanda del clasificador IA
+classifier = None
 
-# Modelo multilingüe y público de HuggingFace
-classifier = pipeline("zero-shot-classification", model="joeddav/xlm-roberta-large-xnli")
+def get_classifier():
+    global classifier
+    if classifier is None:
+        print("Cargando modelo de IA para clasificar eventos no reconocidos...")
+        from transformers import pipeline
+        classifier = pipeline("zero-shot-classification", model="joeddav/xlm-roberta-large-xnli")
+    return classifier
 
 # Lista rica y variada de deportes en español e inglés
 deportes = [
@@ -62,11 +68,91 @@ urls = [
     "https://raw.githubusercontent.com/tutw/platinsport-m3u-updater/main/lista_agenda_DEPORTE-LIBRE.FANS.xml"
 ]
 
+# Diccionario de reglas directas para competiciones y deportes frecuentes
+KEYWORDS = {
+    'balonmano': [
+        'ehf', 'balonmano', 'handball', 'liga asobal'
+    ],
+    'fórmula 1': [
+        'f1', 'formula 1', 'fórmula 1', 'formula one', 'f1 academy'
+    ],
+    'motociclismo': [
+        'motogp', 'moto2', 'moto3', 'superbike', 'motociclismo', 'supercross'
+    ],
+    'baloncesto': [
+        'nba', 'euroliga', 'euroleague', 'eurocup', 'acb', 'baloncesto', 'basketball', 'basket', 'wnba', 'liga endesa'
+    ],
+    'tenis': [
+        'atp', 'wta', 'roland garros', 'wimbledon', 'us open', 'australian open', 'tenis', 'tennis', 'davis cup', 'copa davis'
+    ],
+    'ciclismo': [
+        'tour de francia', 'giro ditalia', 'giro de italia', 'vuelta a españa', 'ciclismo', 'cycling'
+    ],
+    'pádel': [
+        'padel', 'pádel', 'premier padel'
+    ],
+    'mma / boxeo': [
+        'ufc', 'mma', 'bellator', 'boxeo', 'boxing', 'fight night'
+    ],
+    'golf': [
+        'pga', 'liv golf', 'ryder cup', 'golf', 'championship', 'ladies championship'
+    ],
+    'snooker / billar': [
+        'abierto de irlanda del norte', 'snooker', 'billar'
+    ],
+    'fútbol americano': [
+        'nfl', 'american football'
+    ],
+    'béisbol': [
+        'mlb', 'béisbol', 'baseball'
+    ],
+    'hockey': [
+        'nhl', 'hockey sobre hielo', 'ice hockey'
+    ],
+    'rugby': [
+        'rugby', 'six nations', 'seis naciones'
+    ],
+    'fútbol': [
+        'fifa', 'champions league', 'champions', 'europa league', 'conference', 'laliga', 'la liga',
+        'premier league', 'serie a', 'bundesliga', 'ligue 1', 'copa del rey', 'fútbol', 'futbol',
+        'soccer', 'fc ', 'cf ', 'calcio', 'eredivisie', 'libertadores', 'sudamericana', 'mls', 'fa cup',
+        'conmebol', 'concacaf', 'uefa'
+    ]
+}
+
+def detect_by_keyword(text):
+    t = text.lower()
+    for sport, words in KEYWORDS.items():
+        for w in words:
+            if re.search(r'(?i)\b' + re.escape(w) + r'\b', t):
+                return sport
+    return None
+
+cache_deportes = {}
+
 def detectar_deporte_ia(nombre_evento):
+    if not nombre_evento:
+        return "desconocido"
+
+    if nombre_evento in cache_deportes:
+        return cache_deportes[nombre_evento]
+
+    # 1. Reglas directas por palabras clave (ultrarrápidas e instantáneas)
+    deporte_directo = detect_by_keyword(nombre_evento)
+    if deporte_directo:
+        cache_deportes[nombre_evento] = deporte_directo
+        return deporte_directo
+
+    # 2. Si no coincide con ninguna palabra clave, usar IA zero-shot
     try:
-        resultado = classifier(nombre_evento, deportes)
-        return resultado["labels"][0]
-    except Exception:
+        clf = get_classifier()
+        resultado = clf(nombre_evento, deportes)
+        deporte_ia = resultado["labels"][0]
+        cache_deportes[nombre_evento] = deporte_ia
+        return deporte_ia
+    except Exception as e:
+        print(f"Error clasificando con IA '{nombre_evento}': {e}")
+        cache_deportes[nombre_evento] = "desconocido"
         return "desconocido"
 
 def parse_m3u(content):

@@ -28,7 +28,7 @@ jobs:
         uses: actions/cache@v6
         with:
           path: ~/.cache/huggingface
-          key: huggingface-models-distilbert-base-uncased-mnli
+          key: huggingface-models-xlm-roberta-large-xnli
 
       - name: Configura Python
         uses: actions/setup-python@v7
