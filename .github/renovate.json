@@ -5,7 +5,11 @@
   "addLabels": ["dependencies"],
   "packageRules": [
     {
-      "matchPackageNames": ["protobuf", "python"],
+      "matchFileNames": [".github/workflows/detecta_deportes.yml"],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": ["protobuf", "python", "actions/setup-python"],
       "enabled": false
     },
     {
