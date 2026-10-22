@@ -165,16 +165,18 @@ class ChannelWindowManager:
             incoming_paths = {urlparse(url).path or url for _, url in incoming}
             overlap = existing_paths.intersection(incoming_paths)
             if not overlap:
-                # No hay solapamiento: los segmentos entrantes no son contiguos con los previos.
-                # Reiniciamos la ventana limpiamente con los segmentos en vivo para evitar saltos temporales.
-                logger.info(f"Salto/desconexión detectada en canal {channel_id} (0 solapamiento). Reiniciando ventana deslizante limpia.")
+                logger.info(f"Salto/desconexión detectada en canal {channel_id} (0 solapamiento). Reiniciando ventana deslizante limpia manteniendo secuencia creciente.")
                 existing = []
                 self.windows.pop(channel_id, None)
-                self.last_seq_assigned.pop(channel_id, None)
 
         if not existing:
-            # Inicialización para un canal nuevo o ventana reiniciada
-            curr_seq = media_seq
+            # Inicialización para canal nuevo o ventana reiniciada:
+            # Garantizar que media sequence nunca retroceda respecto a lo ya entregado a Hls.js
+            prev_seq = self.last_seq_assigned.get(channel_id)
+            if prev_seq is not None and prev_seq >= media_seq:
+                curr_seq = prev_seq + 1
+            else:
+                curr_seq = media_seq
             new_window = []
             for inf, url in incoming:
                 new_window.append(SegmentItem(seq=curr_seq, inf=inf, raw_url=url))
@@ -1607,24 +1609,49 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
             return total;
         }}
 
-        // Función para forzar recuperación manual o automática del búfer
+        // Función para forzar recuperación o salto hacia adelante al vivo (NUNCA hacia atrás)
         function recoverBuffer(isAuto = false) {{
             if (!video) return;
             const text = document.getElementById('buffer-text');
             const dot = document.getElementById('buffer-dot');
             if (dot) dot.className = 'status-dot dot-yellow';
-            if (text) text.textContent = isAuto ? "⚡ Auto-recuperando búfer..." : "⚡ Recuperando búfer...";
+            if (text) text.textContent = isAuto ? "⚡ Sincronizando adelante al vivo..." : "⚡ Saltando al vivo...";
 
-            console.log(`[BufferRecovery] Sincronizando búfer a offset ${{currentBufferOffset}}s (isAuto=${{isAuto}})...`);
+            const curTime = video.currentTime;
+            console.log(`[BufferRecovery] Sincronizando emisión (curTime=${{curTime.toFixed(1)}}s, isAuto=${{isAuto}})...`);
             if (hls) {{
                 hls.startLoad();
-                const targetOffset = currentBufferOffset || 16.0;
-                if (hls.liveSyncPosition && hls.liveSyncPosition > (targetOffset + 3.0)) {{
-                    const targetPos = Math.max(0, hls.liveSyncPosition - targetOffset);
-                    video.currentTime = targetPos;
-                }} else if (video.buffered.length > 0) {{
-                    const end = video.buffered.end(video.buffered.length - 1);
-                    video.currentTime = Math.max(0, end - Math.min(targetOffset * 0.75, end));
+
+                let jumped = false;
+                // 1. Si existe un tramo con búfer justo por delante del tiempo actual, saltar inmediatamente a ese tramo
+                for (let i = 0; i < video.buffered.length; i++) {{
+                    const bStart = video.buffered.start(i);
+                    if (bStart > curTime && (bStart - curTime) <= 6.0) {{
+                        console.log(`[BufferRecovery] Saltando hueco hacia adelante (${{curTime.toFixed(1)}}s -> ${{bStart + 0.05}}s)`);
+                        video.currentTime = bStart + 0.05;
+                        jumped = true;
+                        break;
+                    }}
+                }}
+
+                // 2. Si no hay búfer inmediato y conocemos la posición del vivo, saltar SIEMPRE HACIA ADELANTE
+                if (!jumped && hls.liveSyncPosition) {{
+                    const livePos = hls.liveSyncPosition;
+                    // Solo saltamos si el vivo está estrictamente por delante de la posición actual (evita repetir escenas ya vistas)
+                    if (livePos > curTime + 0.5) {{
+                        console.log(`[BufferRecovery] Saltando HACIA ADELANTE al vivo (${{curTime.toFixed(1)}}s -> ${{livePos.toFixed(1)}}s)`);
+                        video.currentTime = livePos;
+                        jumped = true;
+                    }}
+                }}
+
+                // 3. Si el final del búfer total está por delante del cabezal, saltar al extremo más reciente
+                if (!jumped && video.buffered.length > 0) {{
+                    const lastEnd = video.buffered.end(video.buffered.length - 1);
+                    if (lastEnd > curTime + 0.5) {{
+                        console.log(`[BufferRecovery] Saltando adelante al extremo del búfer (${{curTime.toFixed(1)}}s -> ${{lastEnd - 0.2}}s)`);
+                        video.currentTime = lastEnd - 0.2;
+                    }}
                 }}
             }}
             video.play().catch(() => {{}});
@@ -1692,13 +1719,13 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
             stallTicks++;
 
             // NIVEL 1: Micro-gap hopper (salto de hueco PTS de 40ms entre fragmentos TS)
-            // Se activa a partir de ~600ms de estancamiento
-            if (stallTicks >= 2) {{
+            // Se activa a partir de ~900ms (3 ticks)
+            if (stallTicks >= 3) {{
                 for (let i = 0; i < video.buffered.length; i++) {{
                     const bStart = video.buffered.start(i);
                     const bEnd = video.buffered.end(i);
-                    // Si el siguiente rango empieza justo después del tiempo actual (<= 1.5s)
-                    if (bStart > curTime && (bStart - curTime) <= 1.5) {{
+                    // Si el siguiente rango empieza justo después del tiempo actual (<= 2.5s)
+                    if (bStart > curTime && (bStart - curTime) <= 2.5) {{
                         console.log(`[Watchdog] Saltando micro-gap PTS (${{(bStart - curTime).toFixed(3)}}s) hacia ${{bStart + 0.04}}s`);
                         video.currentTime = bStart + 0.04;
                         video.play().catch(() => {{}});
@@ -1708,28 +1735,27 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
                 }}
             }}
 
-            // NIVEL 2: Auto-recuperación de búfer sin interacción del usuario
-            // Si lleva congelado >= 6 ticks (~1.8s) y el búfer inmediato está agotado
-            if (stallTicks >= 6) {{
+            // NIVEL 2: Búfer agotado y estancamiento prolongado (>= 10 ticks = 3.0s)
+            // Salta HACIA ADELANTE hacia el vivo en vez de retroceder al pasado
+            if (stallTicks >= 10) {{
                 const now = Date.now();
-                if (now - lastAutoRecoverTimestamp > 3500) {{
+                if (now - lastAutoRecoverTimestamp > 3000) {{
                     lastAutoRecoverTimestamp = now;
                     consecutiveStallCount++;
-                    console.warn(`[Watchdog] Congelación detectada (#${{consecutiveStallCount}}). Disparando auto-recuperación de búfer...`);
+                    console.warn(`[Watchdog] Estancamiento prolongado detectado (#${{consecutiveStallCount}}). Saltando adelante hacia el vivo...`);
 
+                    recoverBuffer(true);
+
+                    // Si tras varios intentos consecutivos sigue congelado, forzar recarga en el punto en vivo
                     if (consecutiveStallCount >= 4) {{
-                        // Múltiples congelaciones consecutivas: recargar origen limpiamente
-                        console.warn("[Watchdog] Reinicializando pipeline tras múltiples congelaciones...");
+                        console.warn("[Watchdog] Re-sincronizando stream al vivo tras múltiples congelaciones...");
                         consecutiveStallCount = 0;
-                        if (currentCustomUrl) {{
-                            loadStream(`/proxy?url=${{encodeURIComponent(currentCustomUrl)}}&offset=${{currentBufferOffset}}`);
-                        }} else if (currentChannel) {{
-                            loadStream(`/live/${{currentChannel.id}}.m3u8?offset=${{currentBufferOffset}}`);
-                        }} else {{
-                            recoverBuffer(true);
+                        if (hls) {{
+                            hls.startLoad();
+                            if (hls.liveSyncPosition && hls.liveSyncPosition > curTime) {{
+                                video.currentTime = hls.liveSyncPosition;
+                            }}
                         }}
-                    }} else {{
-                        recoverBuffer(true);
                     }}
                     stallTicks = 0;
                 }}
