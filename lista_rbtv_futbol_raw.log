@@ -1,9 +1,7 @@
-2026-10-23 01:01:32,951 [INFO] Semillas descubiertas dinamicamente (6): ['https://www.fctv33go.cfd', 'https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
-2026-10-23 01:01:33,065 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1082)'))': /
-2026-10-23 01:01:33,800 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1082)'))': /
-2026-10-23 01:01:38,902 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.host': https://www.fctv33go.cfd
-2026-10-23 01:01:39,412 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
-2026-10-23 01:01:39,412 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
-2026-10-23 01:01:40,222 [INFO] Dominios de reproductor descubiertos (6): ['https://jack09eo.mpanrc4imind.my', 'https://nadia77bc.mp77g69ainei3gx2voxygen.ru', 'https://morgan69cg.006hndchurch05g7ifbreathing.sbs', 'https://lola75.30nqt3mainfkyl16mirror.cfd', 'https://ziggy57.q2l0completelyuea1piece.cfd', 'https://love31.5qh8x8caughtkx37breathing.cfd']
-2026-10-23 01:01:40,667 [INFO] OK https://apis-data10.tcpwe138stya.ru: 165 partidos recibidos
-2026-10-23 01:01:40,684 [INFO] Generado lista_rbtv_futbol_raw.m3u con 164 entradas de reproductor directo.
+2026-10-23 06:33:28,394 [INFO] Semillas descubiertas dinamicamente (6): ['https://www.fctv33go.cfd', 'https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
+2026-10-23 06:33:29,248 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.host': https://www.fctv33go.cfd
+2026-10-23 06:33:29,599 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
+2026-10-23 06:33:29,599 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
+2026-10-23 06:33:30,367 [INFO] Dominios de reproductor descubiertos (6): ['https://jack09eo.mpanrc4imind.my', 'https://nadia77bc.mp77g69ainei3gx2voxygen.ru', 'https://morgan69cg.006hndchurch05g7ifbreathing.sbs', 'https://lola75.30nqt3mainfkyl16mirror.cfd', 'https://ziggy57.q2l0completelyuea1piece.cfd', 'https://love31.5qh8x8caughtkx37breathing.cfd']
+2026-10-23 06:33:31,015 [INFO] OK https://apis-data10.tcpwe138stya.ru: 169 partidos recibidos
+2026-10-23 06:33:31,020 [INFO] Generado lista_rbtv_futbol_raw.m3u con 169 entradas de reproductor directo.
