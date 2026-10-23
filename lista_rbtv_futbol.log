@@ -1,8 +1,6 @@
-2026-10-22 22:47:58,855 [INFO] Semillas descubiertas dinamicamente (6): ['https://www.fctv33go.cfd', 'https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
-2026-10-22 22:47:58,997 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1082)'))': /
-2026-10-22 22:47:59,732 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1082)'))': /
-2026-10-22 22:47:59,866 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.host': https://www.fctv33go.cfd
-2026-10-22 22:48:00,446 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
-2026-10-22 22:48:00,446 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
-2026-10-22 22:48:01,100 [INFO] OK https://apis-data10.tcpwe138stya.ru: 157 partidos recibidos
-2026-10-22 22:48:01,104 [INFO] Generado lista_rbtv_futbol.m3u con 156 partidos de futbol (SITE_BASE: https://www.fctv33go.cfd)
+2026-10-23 01:03:00,587 [INFO] Semillas descubiertas dinamicamente (6): ['https://www.fctv33go.cfd', 'https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
+2026-10-23 01:03:01,810 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.host': https://www.fctv33go.cfd
+2026-10-23 01:03:02,376 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
+2026-10-23 01:03:02,376 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
+2026-10-23 01:03:02,997 [INFO] OK https://apis-data10.tcpwe138stya.ru: 165 partidos recibidos
+2026-10-23 01:03:03,002 [INFO] Generado lista_rbtv_futbol.m3u con 164 partidos de futbol (SITE_BASE: https://www.fctv33go.cfd)
