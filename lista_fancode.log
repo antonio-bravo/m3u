@@ -1,0 +1,21 @@
+2026-10-23 22:50:30,450 [INFO] === Iniciando generador M3U para FanCode ===
+2026-10-23 22:50:30,450 [INFO] Consultando fuente FanCode 'drmlive_json' (https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json)...
+2026-10-23 22:50:30,697 [INFO] Fuente 'drmlive_json' proporcionó 4 eventos.
+2026-10-23 22:50:30,698 [INFO] Consultando fuente FanCode 'bytecapsule_json' (https://raw.githubusercontent.com/byte-capsule/FanCode-Hls-Fetcher/main/Fancode_hls_m3u8.Json)...
+2026-10-23 22:50:30,900 [INFO] Fuente 'bytecapsule_json' proporcionó 5 eventos.
+2026-10-23 22:50:30,901 [INFO] Consultando fuente FanCode 'zyphx8_fancode_m3u' (https://raw.githubusercontent.com/doctor-8trange/zyphx8/refs/heads/main/data/fancode.m3u)...
+2026-10-23 22:50:30,928 [INFO] Fuente 'zyphx8_fancode_m3u' proporcionó 5 eventos.
+2026-10-23 22:50:30,928 [INFO] Consultando fuente FanCode 'zyphx8_np_m3u' (https://raw.githubusercontent.com/doctor-8trange/zyphx8/refs/heads/main/data/np.m3u)...
+2026-10-23 22:50:30,955 [INFO] Fuente 'zyphx8_np_m3u' proporcionó 0 eventos.
+2026-10-23 22:50:30,955 [INFO] Consultando fuente FanCode 'kajju027_m3u' (https://raw.githubusercontent.com/kajju027/Fancode-Events-Json/main/fc.m3u)...
+2026-10-23 22:50:31,168 [INFO] Fuente 'kajju027_m3u' proporcionó 4 eventos.
+2026-10-23 22:50:31,168 [INFO] Total de eventos únicos recopilados: 10
+2026-10-23 22:50:31,169 [INFO] Archivo M3U guardado con éxito en 'lista_fancode.m3u' (10 canales).
+2026-10-23 22:50:31,169 [INFO] Archivo M3U guardado con éxito en 'lista_fancode_direct.m3u' (10 canales).
+2026-10-23 22:50:31,169 [INFO] Se detectaron 2 eventos con participación o competición española.
+2026-10-23 22:50:31,170 [INFO] Archivo M3U guardado con éxito en 'lista_fancode_ES.m3u' (2 canales).
+2026-10-23 22:50:31,170 [INFO] Resumen de eventos por categoría:
+2026-10-23 22:50:31,170 [INFO]   - Football: 5 transmisiones
+2026-10-23 22:50:31,170 [INFO]   - Cricket: 3 transmisiones
+2026-10-23 22:50:31,170 [INFO]   - Tennis: 2 transmisiones
+2026-10-23 22:50:31,170 [INFO] === Proceso finalizado con éxito ===
