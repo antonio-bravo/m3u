@@ -1,520 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-10-25 16:30</datetime>
-    <league>MLS</league>
-    <teams>Red Bull New York vs Inter Miami</teams>
-    <channels>
-      <channel>
-        <channel_name>Capo Deportes 1</channel_name>
-        <channel_id>1-1</channel_id>
-        <url>https://rojadirectaplay.la/2026/inter-miami-vs-new-york-city-mls-j29-en-vivo.php</url>
-      </channel>
-      <channel>
-        <channel_name>MLS 1</channel_name>
-        <channel_id>1-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9idW5kZXNsaWdhNS5waHA=</url>
-      </channel>
-      <channel>
-        <channel_name>MLS 2 (HD)</channel_name>
-        <channel_id>1-3</channel_id>
-        <url>https://tarjetarojatv.la/2026/inter-miami-vs-new-york-city-mls-j29-en-vivo.php</url>
-      </channel>
-      <channel>
-        <channel_name>MLS 3 (HD)</channel_name>
-        <channel_id>1-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9idW5kZXNsaWdhNy5waHA=</url>
-      </channel>
-      <channel>
-        <channel_name>MLS 4 (HD)</channel_name>
-        <channel_id>1-5</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9idW5kZXNsaWdhOC5waHA=</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 16:30</datetime>
-    <league>Liga de Ecuador</league>
-    <teams>LDU Quito vs Macará</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 11</channel_name>
-        <channel_id>2-1</channel_id>
-        <url>https://pirlotv.la/canal-36.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 37</channel_name>
-        <channel_id>2-2</channel_id>
-        <url>https://pirlotv.la/canal-37.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 38 (HD)</channel_name>
-        <channel_id>2-3</channel_id>
-        <url>https://pirlotv.la/canal-38.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 16:30</datetime>
-    <league>Brasileirao</league>
-    <teams>Palmeiras vs Red Bull Bragantino</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 39 (HD)</channel_name>
-        <channel_id>3-1</channel_id>
-        <url>https://pirlotv.la/canal-39.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 40 (HD)</channel_name>
-        <channel_id>3-2</channel_id>
-        <url>https://pirlotv.la/canal-40.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 16:30</datetime>
-    <league>Brasileirao</league>
-    <teams>Vasco da Gama vs Corinthians</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 41 (HD)</channel_name>
-        <channel_id>4-1</channel_id>
-        <url>https://pirlotv.la/canal-41.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 42 (HD)</channel_name>
-        <channel_id>4-2</channel_id>
-        <url>https://pirlotv.la/canal-42.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 18:00</datetime>
-    <league>Liga MX</league>
-    <teams>León vs Toluca</teams>
-    <channels>
-      <channel>
-        <channel_name>Capo Deportes 2</channel_name>
-        <channel_id>5-1</channel_id>
-        <url>https://rojadirectaplay.la/2026/leon-vs-toluca-liga-mx-j14-en-vivo.php</url>
-      </channel>
-      <channel>
-        <channel_name>Liga MX 1</channel_name>
-        <channel_id>5-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXgxLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Liga MX 2 (HD)</channel_name>
-        <channel_id>5-3</channel_id>
-        <url>https://tarjetarojatv.la/2026/leon-vs-toluca-liga-mx-j14-en-vivo.php</url>
-      </channel>
-      <channel>
-        <channel_name>Liga MX 3 (HD)</channel_name>
-        <channel_id>5-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXgzLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Liga MX 4 (HD)</channel_name>
-        <channel_id>5-5</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXg0LnBocA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 17:15</datetime>
-    <league>Liga de Argentina</league>
-    <teams>San Lorenzo vs Newell's Old Boys</teams>
-    <channels>
-      <channel>
-        <channel_name>TNT Sports</channel_name>
-        <channel_id>6-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/tnt-sports-argentina.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 43</channel_name>
-        <channel_id>6-2</channel_id>
-        <url>https://pirlotv.la/canal-43.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 44 (HD)</channel_name>
-        <channel_id>6-3</channel_id>
-        <url>https://pirlotv.la/canal-44.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 45 (HD)</channel_name>
-        <channel_id>6-4</channel_id>
-        <url>https://pirlotv.la/canal-45.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 17:30</datetime>
-    <league>Liga de Uruguay</league>
-    <teams>Deportivo Maldonado vs Danubio</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 46 (HD)</channel_name>
-        <channel_id>7-1</channel_id>
-        <url>https://pirlotv.la/canal-46.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 47 (HD)</channel_name>
-        <channel_id>7-2</channel_id>
-        <url>https://pirlotv.la/canal-47.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 17:30</datetime>
-    <league>Brasileirao</league>
-    <teams>Chapecoense vs Fluminense</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 48 (HD)</channel_name>
-        <channel_id>8-1</channel_id>
-        <url>https://pirlotv.la/canal-48.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 49 (HD)</channel_name>
-        <channel_id>8-2</channel_id>
-        <url>https://pirlotv.la/canal-49.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 18:00</datetime>
-    <league>Liga de Chile</league>
-    <teams>O'Higgins vs Cobresal</teams>
-    <channels>
-      <channel>
-        <channel_name>TNT Sports Chile</channel_name>
-        <channel_id>9-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/tnt-sports-chile.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 5</channel_name>
-        <channel_id>9-2</channel_id>
-        <url>https://pirlotv.la/canal-5.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 6 (HD)</channel_name>
-        <channel_id>9-3</channel_id>
-        <url>https://pirlotv.la/canal-6.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 7 (HD)</channel_name>
-        <channel_id>9-4</channel_id>
-        <url>https://pirlotv.la/canal-7.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 18:05</datetime>
-    <league>Liga de Colombia</league>
-    <teams>América de Cali vs Cúcuta Deportivo</teams>
-    <channels>
-      <channel>
-        <channel_name>Win Sports +</channel_name>
-        <channel_id>10-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/win-sports-plus.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 8</channel_name>
-        <channel_id>10-2</channel_id>
-        <url>https://pirlotv.la/canal-8.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 9 (HD)</channel_name>
-        <channel_id>10-3</channel_id>
-        <url>https://pirlotv.la/canal-9.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 10 (HD)</channel_name>
-        <channel_id>10-4</channel_id>
-        <url>https://pirlotv.la/canal-10.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 18:30</datetime>
-    <league>MLS</league>
-    <teams>Atlanta United vs Chicago Fire</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 11 (HD)</channel_name>
-        <channel_id>11-1</channel_id>
-        <url>https://pirlotv.la/canal-11.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 12 (HD)</channel_name>
-        <channel_id>11-2</channel_id>
-        <url>https://pirlotv.la/canal-12.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 18:30</datetime>
-    <league>MLS</league>
-    <teams>DC United vs Cincinnati</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 13 (HD)</channel_name>
-        <channel_id>12-1</channel_id>
-        <url>https://pirlotv.la/canal-13.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 14 (HD)</channel_name>
-        <channel_id>12-2</channel_id>
-        <url>https://pirlotv.la/canal-14.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 18:30</datetime>
-    <league>MLS</league>
-    <teams>Orlando City vs New York City FC</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 15 (HD)</channel_name>
-        <channel_id>13-1</channel_id>
-        <url>https://pirlotv.la/canal-15.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 16 (HD)</channel_name>
-        <channel_id>13-2</channel_id>
-        <url>https://pirlotv.la/canal-16.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 18:00</datetime>
-    <league>Liga de Chile</league>
-    <teams>O'Higgins vs Cobresal</teams>
-    <channels>
-      <channel>
-        <channel_name>TNT Sports Chile</channel_name>
-        <channel_id>14-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/tnt-sports-chile.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 17</channel_name>
-        <channel_id>14-2</channel_id>
-        <url>https://pirlotv.la/canal-17.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 18 (HD)</channel_name>
-        <channel_id>14-3</channel_id>
-        <url>https://pirlotv.la/canal-18.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 19 (HD)</channel_name>
-        <channel_id>14-4</channel_id>
-        <url>https://pirlotv.la/canal-19.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 18:05</datetime>
-    <league>Liga de Colombia</league>
-    <teams>América de Cali vs Cúcuta Deportivo</teams>
-    <channels>
-      <channel>
-        <channel_name>Win Sports +</channel_name>
-        <channel_id>15-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/win-sports-plus.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 20</channel_name>
-        <channel_id>15-2</channel_id>
-        <url>https://pirlotv.la/canal-20.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 21 (HD)</channel_name>
-        <channel_id>15-3</channel_id>
-        <url>https://pirlotv.la/canal-21.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 22 (HD)</channel_name>
-        <channel_id>15-4</channel_id>
-        <url>https://pirlotv.la/canal-22.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 19:00</datetime>
-    <league>Brasileirao</league>
-    <teams>Santos FC vs Bahía</teams>
-    <channels>
-      <channel>
-        <channel_name>Win Sports</channel_name>
-        <channel_id>16-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/win-sports.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 23</channel_name>
-        <channel_id>16-2</channel_id>
-        <url>https://pirlotv.la/canal-23.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 24 (HD)</channel_name>
-        <channel_id>16-3</channel_id>
-        <url>https://pirlotv.la/canal-24.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 25 (HD)</channel_name>
-        <channel_id>16-4</channel_id>
-        <url>https://pirlotv.la/canal-25.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 19:00</datetime>
-    <league>Serie Mundial</league>
-    <teams>Tampa Bay Rays vs Milwaukee Brewers</teams>
-    <channels>
-      <channel>
-        <channel_name>Capo Deportes 11</channel_name>
-        <channel_id>17-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes-11.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 26</channel_name>
-        <channel_id>17-2</channel_id>
-        <url>https://pirlotv.la/canal-26.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 27 (HD)</channel_name>
-        <channel_id>17-3</channel_id>
-        <url>https://pirlotv.la/canal-27.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 28 (HD)</channel_name>
-        <channel_id>17-4</channel_id>
-        <url>https://pirlotv.la/canal-28.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 29 (HD)</channel_name>
-        <channel_id>17-5</channel_id>
-        <url>https://pirlotv.la/canal-29.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 19:00</datetime>
-    <league>NBA</league>
-    <teams>San Antonio Spurs vs Houston Rockets</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 30 (HD)</channel_name>
-        <channel_id>18-1</channel_id>
-        <url>https://pirlotv.la/canal-30.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 31 (HD)</channel_name>
-        <channel_id>18-2</channel_id>
-        <url>https://pirlotv.la/canal-31.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 19:30</datetime>
-    <league>Liga de Argentina</league>
-    <teams>Rosario Central vs Huracán</teams>
-    <channels>
-      <channel>
-        <channel_name>ESPN Premium</channel_name>
-        <channel_id>19-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/espn-premium.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 32</channel_name>
-        <channel_id>19-2</channel_id>
-        <url>https://pirlotv.la/canal-32.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 33 (HD)</channel_name>
-        <channel_id>19-3</channel_id>
-        <url>https://pirlotv.la/canal-33.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 34 (HD)</channel_name>
-        <channel_id>19-4</channel_id>
-        <url>https://pirlotv.la/canal-34.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 19:30</datetime>
-    <league>Liga de Peru</league>
-    <teams>Universitario vs Juan Pablo II</teams>
-    <channels>
-      <channel>
-        <channel_name>Liga 1 Max</channel_name>
-        <channel_id>20-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/liga-1-max.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 35</channel_name>
-        <channel_id>20-2</channel_id>
-        <url>https://pirlotv.la/canal-35.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 36 (HD)</channel_name>
-        <channel_id>20-3</channel_id>
-        <url>https://pirlotv.la/canal-36.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 37 (HD)</channel_name>
-        <channel_id>20-4</channel_id>
-        <url>https://pirlotv.la/canal-37.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-10-25 19:30</datetime>
-    <league>MLS</league>
-    <teams>Houston Dynamo vs Minnesota United</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 38 (HD)</channel_name>
-        <channel_id>21-1</channel_id>
-        <url>https://pirlotv.la/canal-38.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 39 (HD)</channel_name>
-        <channel_id>21-2</channel_id>
-        <url>https://pirlotv.la/canal-39.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
     <datetime>2026-10-25 20:00</datetime>
     <league>Liga MX</league>
     <teams>Monterrey Rayados vs Guadalajara Chivas</teams>
     <channels>
       <channel>
         <channel_name>Capo Deportes 1</channel_name>
-        <channel_id>22-1</channel_id>
+        <channel_id>1-1</channel_id>
         <url>https://rojadirectaplay.la/2026/monterrey-vs-guadalajara-liga-mx-j14-en-vivo.php</url>
       </channel>
       <channel>
         <channel_name>Liga MX 5</channel_name>
-        <channel_id>22-2</channel_id>
+        <channel_id>1-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXg1LnBocA==</url>
       </channel>
       <channel>
         <channel_name>Liga MX 6 (HD)</channel_name>
-        <channel_id>22-3</channel_id>
+        <channel_id>1-3</channel_id>
         <url>https://tarjetarojatv.la/2026/monterrey-vs-guadalajara-liga-mx-j14-en-vivo.php</url>
       </channel>
       <channel>
         <channel_name>Liga MX 7 (HD)</channel_name>
-        <channel_id>22-4</channel_id>
+        <channel_id>1-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXg3LnBocA==</url>
       </channel>
       <channel>
         <channel_name>Liga MX 8 (HD)</channel_name>
-        <channel_id>22-5</channel_id>
+        <channel_id>1-5</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXg4LnBocA==</url>
       </channel>
     </channels>
@@ -526,22 +39,22 @@
     <channels>
       <channel>
         <channel_name>Win Sports +</channel_name>
-        <channel_id>23-1</channel_id>
+        <channel_id>2-1</channel_id>
         <url>https://pirlotv.la/en-vivo/win-sports-plus.php</url>
       </channel>
       <channel>
         <channel_name>Canal 40</channel_name>
-        <channel_id>23-2</channel_id>
+        <channel_id>2-2</channel_id>
         <url>https://pirlotv.la/canal-40.php</url>
       </channel>
       <channel>
         <channel_name>Canal 41 (HD)</channel_name>
-        <channel_id>23-3</channel_id>
+        <channel_id>2-3</channel_id>
         <url>https://pirlotv.la/canal-41.php</url>
       </channel>
       <channel>
         <channel_name>Canal 42 (HD)</channel_name>
-        <channel_id>23-4</channel_id>
+        <channel_id>2-4</channel_id>
         <url>https://pirlotv.la/canal-42.php</url>
       </channel>
     </channels>
@@ -553,12 +66,12 @@
     <channels>
       <channel>
         <channel_name>Canal 43 (HD)</channel_name>
-        <channel_id>24-1</channel_id>
+        <channel_id>3-1</channel_id>
         <url>https://pirlotv.la/canal-43.php</url>
       </channel>
       <channel>
         <channel_name>Canal 44 (HD)</channel_name>
-        <channel_id>24-2</channel_id>
+        <channel_id>3-2</channel_id>
         <url>https://pirlotv.la/canal-44.php</url>
       </channel>
     </channels>
@@ -570,12 +83,12 @@
     <channels>
       <channel>
         <channel_name>Canal 45 (HD)</channel_name>
-        <channel_id>25-1</channel_id>
+        <channel_id>4-1</channel_id>
         <url>https://pirlotv.la/canal-45.php</url>
       </channel>
       <channel>
         <channel_name>Canal 46 (HD)</channel_name>
-        <channel_id>25-2</channel_id>
+        <channel_id>4-2</channel_id>
         <url>https://pirlotv.la/canal-46.php</url>
       </channel>
     </channels>
@@ -587,27 +100,27 @@
     <channels>
       <channel>
         <channel_name>Capo Deportes 1</channel_name>
-        <channel_id>26-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes.php</url>
+        <channel_id>5-1</channel_id>
+        <url>https://rojadirectaplay.la/2026/pumas-unam-vs-tigres-uanl-liga-mx-j14-en-vivo.php</url>
       </channel>
       <channel>
         <channel_name>Liga MX 1</channel_name>
-        <channel_id>26-2</channel_id>
+        <channel_id>5-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXgxLnBocA==</url>
       </channel>
       <channel>
-        <channel_name>Liga MX 2 (HD)</channel_name>
-        <channel_id>26-3</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXgyLnBocA==</url>
+        <channel_name>Liga MX 6 (HD)</channel_name>
+        <channel_id>5-3</channel_id>
+        <url>https://tarjetarojatv.la/2026/pumas-unam-vs-tigres-uanl-liga-mx-j14-en-vivo.php</url>
       </channel>
       <channel>
         <channel_name>Liga MX 3 (HD)</channel_name>
-        <channel_id>26-4</channel_id>
+        <channel_id>5-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXgzLnBocA==</url>
       </channel>
       <channel>
         <channel_name>Liga MX 4 (HD)</channel_name>
-        <channel_id>26-5</channel_id>
+        <channel_id>5-5</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXg0LnBocA==</url>
       </channel>
     </channels>
