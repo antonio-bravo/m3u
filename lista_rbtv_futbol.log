@@ -1,6 +1,9 @@
-2026-10-25 21:16:28,219 [INFO] Semillas descubiertas dinamicamente (6): ['https://www.fctv33go.homes', 'https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
-2026-10-25 21:16:29,155 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.host': https://www.fctv33go.homes
-2026-10-25 21:16:29,490 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
-2026-10-25 21:16:29,490 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
-2026-10-25 21:16:30,289 [INFO] OK https://apis-data10.tcpwe138stya.ru: 225 partidos recibidos
-2026-10-25 21:16:30,296 [INFO] Generado lista_rbtv_futbol.m3u con 222 partidos de futbol (SITE_BASE: https://www.fctv33go.homes)
+2026-10-25 23:36:43,143 [INFO] Semillas descubiertas dinamicamente (6): ['https://www.fctv33go.homes', 'https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
+2026-10-25 23:36:53,376 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.fctv33hd.host', port=443): Read timed out. (read timeout=10)")': /
+2026-10-25 23:36:55,915 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.fctv33go.homes', port=443): Read timed out. (read timeout=10)")': /
+2026-10-25 23:37:06,649 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.fctv33go.homes', port=443): Read timed out. (read timeout=10)")': /
+2026-10-25 23:37:10,419 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.host': https://www.fctv33go.homes
+2026-10-25 23:37:13,275 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
+2026-10-25 23:37:13,275 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
+2026-10-25 23:37:14,085 [INFO] OK https://apis-data10.tcpwe138stya.ru: 209 partidos recibidos
+2026-10-25 23:37:14,091 [INFO] Generado lista_rbtv_futbol.m3u con 206 partidos de futbol (SITE_BASE: https://www.fctv33go.homes)
