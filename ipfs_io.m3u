@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-10-28 01:18:15
-# Total Channels: 115
-# Generated: 2026-10-28T01:11:39Z
+# IPFS Acestream Channels - 2026-10-28 08:24:50
+# Total Channels: 111
+# Generated: 2026-10-28T08:00:04Z
 
 # -------- AIRE LIBRE --------
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="AIRE LIBRE",ALTITUDE SPORTS 1080p *
@@ -155,9 +155,6 @@ http://127.0.0.1:6878/ace/getstream?id=623f9ce3c4adfcd9771da41a6cc433632cf2c680
 #EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p *
 http://127.0.0.1:6878/ace/getstream?id=2772b75c3bc7cfe214514a7745f63024620f3a29
 
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p **
-http://127.0.0.1:6878/ace/getstream?id=f9e9258cb14ede2f9369be4cba395ffe3e04e4fb
-
 #EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-logo="https://i.ibb.co/Tc97zSb/liga2.png" group-title="LA LIGA",M+ LaLiga 2 720p **
 http://127.0.0.1:6878/ace/getstream?id=2c2de8ff47a9a6112aa1266c10cbd3388bee99be
 
@@ -195,9 +192,6 @@ http://127.0.0.1:6878/ace/getstream?id=4ebfc0fec81001b9dd9127e7aa4d44af646caaae
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 3 720p *
 http://127.0.0.1:6878/ace/getstream?id=d9f5ce28da077c646f54f5230ee50ec96dfeb51d
 
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 3 720p **
-http://127.0.0.1:6878/ace/getstream?id=6a53508fcfa4958dc64e19458eb7a18b40d6f97d
-
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 3 1080p **
 http://127.0.0.1:6878/ace/getstream?id=0a0b5378b86ba925ee783e21060939f37d1acd12
 
@@ -211,16 +205,13 @@ http://127.0.0.1:6878/ace/getstream?id=17d823e0a466eae35bcda111f210084720a3bde0
 http://127.0.0.1:6878/ace/getstream?id=a00d327958dcf0a9eab73930abd75205b13229aa
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 4" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 4 1080p **
-http://127.0.0.1:6878/ace/getstream?id=779d5f7f11a1d695b8f24aba7da1fa37c2870962
+http://127.0.0.1:6878/ace/getstream?id=6451c596854f380be78ee2edc5f81bdb503ac2b7
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 4" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 4 1080p **
-http://127.0.0.1:6878/ace/getstream?id=6451c596854f380be78ee2edc5f81bdb503ac2b7
+http://127.0.0.1:6878/ace/getstream?id=779d5f7f11a1d695b8f24aba7da1fa37c2870962
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 5" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 5 1080p *
 http://127.0.0.1:6878/ace/getstream?id=999f4cf3175f2a0dedb6ab6586c19aff13bf3792
-
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 5" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 5 1080p **
-http://127.0.0.1:6878/ace/getstream?id=bda1f3d66f797d1ea6d0da95a2830f536f344ca2
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 5" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 5 1080p **
 http://127.0.0.1:6878/ace/getstream?id=6bae4e20f02fe6c3251db7d6fe89d199ad92dcca
@@ -263,9 +254,6 @@ http://127.0.0.1:6878/ace/getstream?id=3d44884484303f51879f93ddaff6e4c267df2e3e
 
 #EXTINF:-1 tvg-id="M+ Deportes HD" tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" group-title="MOVISTAR DEPORTES",M+ Deportes 1080p **
 http://127.0.0.1:6878/ace/getstream?id=8e22b547768ad2455e2015591ed2b06434d7415e
-
-#EXTINF:-1 tvg-id="M+ Deportes 2 HD" tvg-logo="https://i.ibb.co/q95fBKV/deportes2.png" group-title="MOVISTAR DEPORTES",M+ Deportes 2 720p **
-http://127.0.0.1:6878/ace/getstream?id=a159a45f78eb14679d3b0be74f258c7f54422a84
 
 #EXTINF:-1 tvg-id="M+ Deportes 2 HD" tvg-logo="https://i.ibb.co/q95fBKV/deportes2.png" group-title="MOVISTAR DEPORTES",M+ Deportes 2 1080p *
 http://127.0.0.1:6878/ace/getstream?id=87c7cb2150dbb779e2ac24d4c5762b430d4feb82
