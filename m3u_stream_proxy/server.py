@@ -8,7 +8,7 @@ from urllib.parse import quote, unquote
 
 import httpx
 from fastapi import FastAPI, Request, Query, HTTPException, Response, BackgroundTasks
-from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse, StreamingResponse
+from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse, StreamingResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
@@ -166,11 +166,17 @@ async def get_channels(
 
 
 @app.get("/api/channels/{channel_id}")
-async def get_channel_by_id(channel_id: str):
+async def get_channel_by_id(channel_id: str, request: Request):
     ch = manager.get_channel_by_id(channel_id)
     if not ch:
         raise HTTPException(status_code=404, detail="Canal no encontrado")
-    return JSONResponse(ch)
+    base_url = str(request.base_url).rstrip("/")
+    res = dict(ch)
+    res["live_url"] = f"{base_url}/live/{channel_id}.m3u8"
+    if ch.get("acestream_id"):
+        res["ts_url"] = f"{base_url}/ace/stream/{ch['acestream_id']}"
+        res["ace_uri"] = f"acestream://{ch['acestream_id']}"
+    return JSONResponse(res)
 
 
 @app.get("/api/groups")
@@ -347,27 +353,86 @@ async def stream_ace_ts(acestream_id: str):
 
 
 # ---------------------------------------------------------------------------
+# Endpoints de Streaming Directo por Canal (/live/{channel_id})
+# ---------------------------------------------------------------------------
+@app.get("/live/{channel_id}.m3u8")
+@app.head("/live/{channel_id}.m3u8")
+async def get_channel_live_m3u8(
+    channel_id: str,
+    request: Request,
+    offset: Optional[float] = Query(None)
+):
+    """
+    Ruta directa para reproducir cualquier canal en reproductores externos
+    (VLC, Kodi, TiviMate, Smart TV) o en la web.
+    """
+    ch = manager.channels.get(channel_id)
+    if not ch:
+        raise HTTPException(status_code=404, detail="Canal no encontrado")
+
+    base_url = str(request.base_url).rstrip("/")
+    if ch.get("acestream_id"):
+        return await ace_proxy.get_hls_manifest(ch["acestream_id"], request_base_url=base_url)
+
+    target_url = ch.get("url")
+    if not target_url:
+        raise HTTPException(status_code=400, detail="El canal no tiene URL válida")
+
+    buf_offset = offset if offset is not None else manager.settings.get("buffer_offset_seconds", 16.0)
+    return await proxy_m3u8_manifest(target_url, request_base_url=base_url, buffer_offset=buf_offset)
+
+
+@app.get("/live/{channel_id}.ts")
+@app.get("/live/{channel_id}")
+async def get_channel_live_ts(channel_id: str, request: Request):
+    """
+    Ruta directa para flujo MPEG-TS directo (óptimo para VLC, Kodi o decodificadores).
+    """
+    ch = manager.channels.get(channel_id)
+    if not ch:
+        raise HTTPException(status_code=404, detail="Canal no encontrado")
+
+    if ch.get("acestream_id"):
+        return await ace_proxy.stream_direct_ts(ch["acestream_id"])
+
+    target_url = ch.get("url")
+    if not target_url:
+        raise HTTPException(status_code=400, detail="El canal no tiene URL válida")
+
+    return RedirectResponse(url=target_url)
+
+
+# ---------------------------------------------------------------------------
 # Exportador de Lista M3U Unificada
 # ---------------------------------------------------------------------------
 @app.get("/playlist.m3u", response_class=PlainTextResponse)
+@app.get("/channels.m3u", response_class=PlainTextResponse)
 async def export_m3u_playlist(
     request: Request,
     source_id: Optional[str] = Query(None),
     stream_type: Optional[str] = Query(None),
+    type: Optional[str] = Query(None),
     group: Optional[str] = Query(None)
 ):
     """
     Genera un archivo M3U unificado con todos los canales (o filtrados)
     con URLs proxificadas listas para TiviMate, OTT Navigator, Kodi, VLC, etc.
     """
+    filter_type = stream_type or type
     base_url = str(request.base_url).rstrip("/")
     lines = ["#EXTM3U"]
 
     for ch in manager.channels.values():
         if source_id and ch.get("source_id") != source_id:
             continue
-        if stream_type and ch.get("stream_type") != stream_type:
-            continue
+        if filter_type:
+            ft = filter_type.lower()
+            if ft in ("ace", "acestream") and not ch.get("acestream_id"):
+                continue
+            elif ft == "hls" and (ch.get("stream_type") != "hls" or ch.get("acestream_id")):
+                continue
+            elif ft not in ("ace", "acestream", "hls") and ch.get("stream_type") != filter_type:
+                continue
         if group and ch.get("group") != group:
             continue
 
@@ -379,14 +444,7 @@ async def export_m3u_playlist(
         extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{logo}" group-title="{grp}", {name}'
         lines.append(extinf)
 
-        if ch.get("acestream_id"):
-            # Generar URL HLS proxificada del canal AceStream
-            play_url = f"{base_url}/ace/manifest/{ch['acestream_id']}.m3u8"
-        elif ch.get("stream_type") == "hls":
-            play_url = f"{base_url}/stream/proxy.m3u8?url={quote(ch['url'], safe='')}"
-        else:
-            play_url = ch.get("url", "")
-
+        play_url = f"{base_url}/live/{ch['id']}.m3u8"
         lines.append(play_url)
 
     m3u_text = "\n".join(lines)

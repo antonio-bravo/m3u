@@ -202,22 +202,77 @@
             background: rgba(239, 68, 68, 0.3);
         }
 
-        /* Layout Principal */
+        /* Layout Principal Redimensionable */
+        :root {
+            --sidebar-width: 420px;
+        }
+
         .main-container {
             flex: 1;
             display: grid;
-            grid-template-columns: 1fr 420px;
-            gap: 1.25rem;
+            grid-template-columns: 1fr 10px var(--sidebar-width, 420px);
+            gap: 0.75rem;
             padding: 1.25rem 1.5rem;
-            max-width: 1920px;
+            max-width: 100%;
             margin: 0 auto;
             width: 100%;
+            align-items: start;
+            box-sizing: border-box;
         }
 
         @media (max-width: 1100px) {
             .main-container {
                 grid-template-columns: 1fr;
             }
+            .sidebar-resizer {
+                display: none !important;
+            }
+        }
+
+        /* Divisor / Resizer para ajustar tamaño de la lista de canales */
+        .sidebar-resizer {
+            width: 10px;
+            height: calc(100vh - 110px);
+            position: sticky;
+            top: 85px;
+            cursor: col-resize;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            touch-action: none;
+            border-radius: 4px;
+            z-index: 10;
+            background: transparent;
+            transition: background 0.2s ease;
+        }
+        .sidebar-resizer:hover, .sidebar-resizer.is-dragging {
+            background: rgba(99, 102, 241, 0.25);
+        }
+        .resizer-handle {
+            width: 3px;
+            height: 48px;
+            border-radius: 2px;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.2s ease;
+        }
+        .sidebar-resizer:hover .resizer-handle, .sidebar-resizer.is-dragging .resizer-handle {
+            background: var(--primary);
+            height: 72px;
+            width: 4px;
+            box-shadow: 0 0 10px rgba(99, 102, 241, 0.7);
+        }
+
+        body.is-resizing {
+            cursor: col-resize !important;
+            user-select: none !important;
+        }
+        body.is-resizing * {
+            user-select: none !important;
+            pointer-events: none !important;
+        }
+        body.is-resizing .sidebar-resizer {
+            pointer-events: auto !important;
         }
 
         /* Tarjeta del Reproductor */
@@ -331,7 +386,7 @@
             min-width: 0;
             flex: 1;
             overflow: hidden;
-            cursor: default;
+            cursor: pointer;
         }
 
         .channel-title-box h2 {
@@ -342,12 +397,27 @@
             overflow: hidden;
             text-overflow: ellipsis;
             display: block;
+            transform: translateX(0);
+            transition: color 0.2s;
         }
 
-        .channel-title-box.is-scrolling h2 {
-            text-overflow: clip;
-            display: inline-block;
-            animation: scroll-text-anim var(--scroll-duration, 5s) ease-in-out infinite;
+        .channel-title-box:hover h2 {
+            color: #fff;
+        }
+
+        .channel-title-box.has-overflow:hover h2,
+        .channel-title-box.has-overflow.is-scrolling h2 {
+            text-overflow: clip !important;
+            display: inline-block !important;
+            animation: scroll-text-anim var(--scroll-duration, 6s) ease-in-out infinite;
+        }
+
+        .channel-title-box.is-expanded h2 {
+            white-space: normal !important;
+            text-overflow: unset !important;
+            animation: none !important;
+            transform: none !important;
+            word-break: break-word;
         }
 
         .tags-row {
@@ -631,10 +701,63 @@
             transform: translateX(0);
         }
 
+        /* Auto-scroll para tarjetas largas al hacer hover o si es el canal activo */
+        .channel-card.has-overflow:hover .channel-card-name,
+        .channel-card.has-overflow.active .channel-card-name,
         .channel-card.is-scrolling .channel-card-name {
-            text-overflow: clip;
-            display: inline-block;
+            text-overflow: clip !important;
+            display: inline-block !important;
             animation: scroll-text-anim var(--scroll-duration, 5s) ease-in-out infinite;
+        }
+
+        /* Modo 2 Líneas (Título completo sin truncar) */
+        .channel-list-container.wrap-2 .channel-card-name {
+            white-space: normal !important;
+            display: -webkit-box !important;
+            -webkit-line-clamp: 2 !important;
+            -webkit-box-orient: vertical !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            animation: none !important;
+            transform: none !important;
+            line-height: 1.28;
+            max-height: 2.6em;
+            word-break: break-word;
+        }
+
+        /* Controles de vista en la cabecera del sidebar */
+        .sidebar-view-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            padding: 2px 2px 0 2px;
+        }
+
+        .view-opt-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.72rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: all 0.2s ease;
+        }
+        .view-opt-btn:hover {
+            color: #fff;
+            border-color: var(--primary);
+            background: rgba(99, 102, 241, 0.15);
+        }
+        .view-opt-btn.active {
+            color: var(--primary);
+            border-color: var(--primary);
+            background: rgba(99, 102, 241, 0.2);
+            font-weight: 600;
         }
 
         @keyframes scroll-text-anim {
@@ -667,17 +790,35 @@
         .tag-ace { background: rgba(6, 182, 212, 0.2); color: #22d3ee; }
         .tag-hls { background: rgba(99, 102, 241, 0.2); color: #a5b4fc; }
 
-        .channel-card-fav {
+        .channel-card-actions {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            margin-left: auto;
+            flex-shrink: 0;
+        }
+
+        .channel-card-btn {
             background: transparent;
             border: none;
-            color: rgba(255, 255, 255, 0.2);
-            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.25);
+            font-size: 0.95rem;
             cursor: pointer;
             padding: 4px;
-            transition: color 0.2s;
+            border-radius: 4px;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+        .channel-card-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
         }
         .channel-card-fav.active { color: #fbbf24; }
         .channel-card-fav:hover { color: #fbbf24; }
+        .channel-card-copy:hover { color: var(--primary); }
 
         /* Paginación en sidebar */
         .sidebar-footer {
@@ -918,7 +1059,7 @@
             <button class="btn btn-primary" onclick="openGithubModal()">🐙 Escanear GitHub</button>
             <button class="btn" onclick="openSourcesModal()">📂 Fuentes M3U</button>
             <button class="btn" onclick="openSettingsModal()">⚙️ Ajustes & AceStream</button>
-            <button class="btn" onclick="openExportModal()">📋 Exportar M3U</button>
+            <button class="btn" onclick="openExportModal()" title="Enlaces M3U y URLs de streaming directo para otros dispositivos">📋 Enlaces M3U</button>
             <button class="btn" onclick="toggleHud()">📊 HUD</button>
         </div>
     </header>
@@ -952,7 +1093,7 @@
             <div class="channel-info-bar">
                 <div class="channel-left">
                     <img id="current-logo" class="channel-logo-lg" src="" alt="Logo" onerror="this.onerror=null;this.src=FALLBACK_SVG;">
-                    <div class="channel-title-box">
+                    <div class="channel-title-box" onclick="togglePlayerTitleExpand()" title="Pasa el ratón para hacer scroll o haz clic para ver el título completo">
                         <h2 id="current-name">Selecciona un canal</h2>
                         <div class="tags-row">
                             <span id="current-group" class="pill">General</span>
@@ -966,7 +1107,7 @@
                     <button id="fav-btn" class="btn-fav" onclick="toggleCurrentFavorite()" title="Guardar en favoritos">⭐</button>
                     <button id="open-ace-btn" class="btn btn-ace" style="display:none;" onclick="openInAceStreamApp()" title="Abrir en la aplicación nativa AceStream">⚡ Abrir AceStream</button>
                     <button class="btn" onclick="openInVlc()" title="Abrir enlace en reproductor externo">📺 Abrir en VLC</button>
-                    <button class="btn" onclick="copyStreamUrl()" title="Copiar URL del stream">📋 Copiar Enlace</button>
+                    <button class="btn" id="copy-btn" onclick="copyStreamUrl()" title="Copiar enlace del canal para VLC, Kodi o Smart TV">📋 Copiar Enlace</button>
                     <button class="btn" id="audio-boost-btn" onclick="cycleAudioBoost()" title="Amplificar volumen del stream">🔊 Vol: 100%</button>
                     <button class="btn" onclick="togglePiP()" title="Modo PiP flotante">🔲 PiP</button>
                 </div>
@@ -985,6 +1126,11 @@
                 </div>
             </div>
         </section>
+
+        <!-- Barra divisoria redimensionable (Splitter) -->
+        <div id="sidebar-resizer" class="sidebar-resizer" title="Arrastra hacia la izquierda o derecha para cambiar el tamaño de la lista de canales">
+            <div class="resizer-handle"></div>
+        </div>
 
         <!-- Barra Lateral de Canales -->
         <aside class="channels-sidebar">
@@ -1011,6 +1157,17 @@
                     <button class="type-pill" onclick="setTypeFilter('fav', this)">⭐ Favoritos</button>
                     <button class="type-pill" onclick="setTypeFilter('acestream', this)">⚡ AceStream</button>
                     <button class="type-pill" onclick="setTypeFilter('hls', this)">📺 HLS / Directo</button>
+                </div>
+
+                <!-- Opciones de tamaño y visualización de títulos -->
+                <div class="sidebar-view-controls">
+                    <div style="display:flex; align-items:center; gap:6px;">
+                        <span>Títulos:</span>
+                        <button id="toggle-wrap-btn" class="view-opt-btn" onclick="toggleTitleWrap()" title="Alternar entre 1 línea (con auto-scroll) o 2 líneas (título completo)">📑 2 Líneas</button>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:6px;">
+                        <button id="toggle-width-btn" class="view-opt-btn" onclick="toggleSidebarWidth()" title="Alternar ancho rápido de la lista (Normal 420px / Amplio 620px)">↔️ Expandir</button>
+                    </div>
                 </div>
             </div>
 
@@ -1168,31 +1325,68 @@
         </div>
     </div>
 
-    <!-- Modal 4: Exportar M3U -->
+    <!-- Modal 4: Exportar M3U y Enlaces Directos -->
     <div id="export-modal" class="modal-backdrop">
-        <div class="modal-content">
+        <div class="modal-content" style="max-width: 580px;">
             <div class="modal-header">
-                <div class="modal-title">📋 Exportar Lista M3U para Apps Externas</div>
+                <div class="modal-title">📋 Enlaces M3U y Reproducción en Otros Dispositivos</div>
                 <button class="modal-close" onclick="closeModals()">✕</button>
             </div>
             <div class="modal-body">
-                <p style="font-size:0.85rem; color:var(--text-muted);">
-                    Usa estos enlaces en reproductores IPTV como <b>TiviMate, OTT Navigator, Kodi, VLC, IPTV Smarters</b> o Smart TV:
+                <!-- SECCIÓN CANAL ACTUAL -->
+                <div style="background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.25); border-radius: 8px; padding: 1rem; margin-bottom: 1.25rem;">
+                    <div style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.35rem; display: flex; align-items: center; justify-content: space-between;">
+                        <span>📺 Canal Actual:</span>
+                        <span id="export-current-ch-name" style="color: var(--primary); font-weight: 700; max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Ninguno seleccionado</span>
+                    </div>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+                        Pega este enlace en <b>VLC</b> (Medio &gt; Abrir ubicación de red), <b>Kodi, TiviMate o Smart TV</b>:
+                    </p>
+                    <div class="form-group" style="margin-bottom: 0.5rem;">
+                        <label class="form-label" style="font-size: 0.78rem;">URL Stream del Canal (.m3u8):</label>
+                        <div style="display:flex; gap:0.5rem;">
+                            <input type="text" id="export-current-channel-url" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
+                            <button class="btn btn-primary" onclick="copyToClipboard('export-current-channel-url', null, '📋 Enlace del canal copiado')">📋 Copiar</button>
+                        </div>
+                    </div>
+                    <div id="export-ace-extra-urls" style="display: none; margin-top: 0.75rem; border-top: 1px dashed rgba(255, 255, 255, 0.1); padding-top: 0.75rem;">
+                        <div class="form-group" style="margin-bottom: 0.5rem;">
+                            <label class="form-label" style="font-size: 0.78rem;">Stream Directo MPEG-TS (VLC sin HLS / Decodificadores):</label>
+                            <div style="display:flex; gap:0.5rem;">
+                                <input type="text" id="export-current-ts-url" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
+                                <button class="btn" onclick="copyToClipboard('export-current-ts-url', null, '📋 Stream TS copiado para VLC')">📋 Copiar</button>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label class="form-label" style="font-size: 0.78rem;">ID Nativo AceStream:</label>
+                            <div style="display:flex; gap:0.5rem;">
+                                <input type="text" id="export-current-ace-id" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
+                                <button class="btn" onclick="copyToClipboard('export-current-ace-id', null, '📋 ID AceStream copiado')">📋 Copiar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom: 0.75rem;">
+                    Listas M3U completas para añadir a clientes IPTV (<b>TiviMate, OTT Navigator, Smart IPTV</b>):
                 </p>
                 <div class="form-group">
-                    <label class="form-label">Lista M3U Unificada Completa</label>
+                    <label class="form-label">Lista M3U Completa (Todos los canales)</label>
                     <div style="display:flex; gap:0.5rem;">
-                        <input type="text" id="export-full-url" class="form-input" style="flex:1;" readonly>
-                        <button class="btn" onclick="copyToClipboard('export-full-url')">📋 Copiar</button>
+                        <input type="text" id="export-full-url" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
+                        <button class="btn" onclick="copyToClipboard('export-full-url', null, '📋 Lista M3U completa copiada')">📋 Copiar</button>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="form-label">Lista M3U Solo AceStream</label>
+                    <label class="form-label">Lista M3U Solo Canales AceStream</label>
                     <div style="display:flex; gap:0.5rem;">
-                        <input type="text" id="export-ace-url" class="form-input" style="flex:1;" readonly>
-                        <button class="btn" onclick="copyToClipboard('export-ace-url')">📋 Copiar</button>
+                        <input type="text" id="export-ace-url" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
+                        <button class="btn" onclick="copyToClipboard('export-ace-url', null, '📋 Lista AceStream copiada')">📋 Copiar</button>
                     </div>
                 </div>
+                <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.75rem; line-height: 1.4;">
+                    💡 <b>Consejo:</b> Al hacer clic sobre cualquier campo se selecciona todo el texto para copiarlo fácilmente.
+                </p>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-primary" onclick="closeModals()">Listo</button>
@@ -1230,9 +1424,10 @@
 
         // Inicialización al cargar la página
         window.addEventListener("DOMContentLoaded", async () => {
+            initSidebarResizer();
+            initTitleWrap();
             initAudioBoost();
             setupHlsAutoRecovery();
-            initMarqueeListeners();
             await loadSettings();
             await loadSourcesAndFilters();
             await fetchChannels();
@@ -1241,7 +1436,11 @@
             // Export URLs
             const base = window.location.origin;
             document.getElementById("export-full-url").value = `${base}/playlist.m3u`;
-            document.getElementById("export-ace-url").value = `${base}/playlist.m3u?type=acestream`;
+            document.getElementById("export-ace-url").value = `${base}/playlist.m3u?stream_type=acestream`;
+
+            window.addEventListener("resize", () => {
+                updateChannelMarquees();
+            });
         });
 
         // --------------------------------------------------------------------
@@ -1387,7 +1586,10 @@
             document.getElementById("current-source").textContent = ch.source_name || "M3U";
 
             const titleBox = document.querySelector(".channel-title-box");
-            if (titleBox) stopTitleMarquee(titleBox);
+            if (titleBox) {
+                titleBox.classList.remove("is-expanded");
+                updatePlayerTitleMarquee();
+            }
             
             const logoEl = document.getElementById("current-logo");
             logoEl.src = ch.tvg_logo || FALLBACK_SVG;
@@ -1412,6 +1614,27 @@
             document.querySelectorAll(".channel-card").forEach(el => {
                 el.classList.toggle("active", el.dataset.id === ch.id);
             });
+
+            // Sincronizar campos del modal de enlaces para otros dispositivos
+            const base = window.location.origin;
+            const liveUrl = `${base}/live/${ch.id}.m3u8`;
+            const chNameModal = document.getElementById("export-current-ch-name");
+            if (chNameModal) chNameModal.textContent = ch.name;
+            const currentUrlInput = document.getElementById("export-current-channel-url");
+            if (currentUrlInput) currentUrlInput.value = liveUrl;
+
+            const aceExtra = document.getElementById("export-ace-extra-urls");
+            if (aceExtra) {
+                if (ch.acestream_id) {
+                    aceExtra.style.display = "block";
+                    const tsInput = document.getElementById("export-current-ts-url");
+                    if (tsInput) tsInput.value = `${base}/ace/stream/${ch.acestream_id}`;
+                    const aceIdInput = document.getElementById("export-current-ace-id");
+                    if (aceIdInput) aceIdInput.value = `acestream://${ch.acestream_id}`;
+                } else {
+                    aceExtra.style.display = "none";
+                }
+            }
         }
 
         // --------------------------------------------------------------------
@@ -1560,7 +1783,7 @@
                 const logoSrc = ch.tvg_logo ? escapeHtml(ch.tvg_logo) : FALLBACK_SVG;
 
                 html += `
-                    <div class="channel-card ${isCurrent ? 'active' : ''}" data-id="${ch.id}" onclick="onChannelCardClick('${ch.id}')" title="${escapeHtml(ch.name)}">
+                    <div class="channel-card ${isCurrent ? 'active' : ''}" data-id="${ch.id}" onclick="onChannelCardClick('${ch.id}')" onmouseenter="measureCardMarquee(this)" title="${escapeHtml(ch.name)}">
                         <img class="channel-card-logo" src="${logoSrc}" onerror="this.onerror=null;this.src=FALLBACK_SVG;" alt="Logo">
                         <div class="channel-card-info">
                             <div class="channel-card-name" title="${escapeHtml(ch.name)}">${escapeHtml(ch.name)}</div>
@@ -1569,12 +1792,16 @@
                                 <span>${escapeHtml(ch.group || "General")}</span>
                             </div>
                         </div>
-                        <button class="channel-card-fav ${starClass}" onclick="toggleFavFromCard(event, '${ch.id}')" title="Favorito">⭐</button>
+                        <div class="channel-card-actions">
+                            <button class="channel-card-btn channel-card-copy" onclick="copyChannelLink(event, '${ch.id}')" title="Copiar enlace para otro dispositivo (VLC, Kodi, etc.)">📋</button>
+                            <button class="channel-card-btn channel-card-fav ${starClass}" onclick="toggleFavFromCard(event, '${ch.id}')" title="Favorito">⭐</button>
+                        </div>
                     </div>
                 `;
             }
 
             listEl.innerHTML = html;
+            updateChannelMarquees();
         }
 
         function updatePaginationUI(data) {
@@ -1667,15 +1894,41 @@
         }
 
         function openInVlc() {
-            if (!currentStreamUrl) return;
-            copyToClipboard(null, currentStreamUrl);
-            showToast("Enlace de reproducción copiado para VLC u otro reproductor");
+            if (!currentChannel) {
+                showToast("⚠️ Selecciona un canal primero");
+                return;
+            }
+            const base = window.location.origin;
+            const targetUrl = currentChannel.acestream_id ? `${base}/ace/stream/${currentChannel.acestream_id}` : `${base}/live/${currentChannel.id}.m3u8`;
+            copyToClipboard(null, targetUrl, `📺 Enlace para VLC copiado al portapapeles`);
+            try {
+                window.location.href = `vlc://${targetUrl}`;
+            } catch (e) {}
         }
 
         function copyStreamUrl() {
-            if (!currentStreamUrl) return;
-            copyToClipboard(null, currentStreamUrl);
-            showToast("Enlace copiado al portapapeles");
+            if (!currentChannel) {
+                showToast("⚠️ Selecciona un canal primero");
+                return;
+            }
+            const base = window.location.origin;
+            const targetUrl = `${base}/live/${currentChannel.id}.m3u8`;
+            copyToClipboard(null, targetUrl, `📋 Enlace de "${currentChannel.name}" copiado para VLC / Kodi`);
+            const btn = document.getElementById("copy-btn");
+            if (btn) {
+                const orig = btn.innerHTML;
+                btn.innerHTML = "✅ ¡Copiado!";
+                setTimeout(() => { btn.innerHTML = orig; }, 2000);
+            }
+        }
+
+        function copyChannelLink(e, chId) {
+            if (e) e.stopPropagation();
+            const base = window.location.origin;
+            const targetUrl = `${base}/live/${chId}.m3u8`;
+            const card = document.querySelector(`.channel-card[data-id="${chId}"]`);
+            const name = card ? (card.querySelector(".channel-card-name")?.textContent || "Canal") : "Canal";
+            copyToClipboard(null, targetUrl, `📋 Enlace de "${name}" copiado para VLC / Kodi`);
         }
 
         function togglePiP() {
@@ -1904,6 +2157,7 @@
                     `;
                 }
                 listEl.innerHTML = html;
+            updateChannelMarquees();
             } catch (e) {
                 listEl.innerHTML = `<div style="color:var(--danger); padding:1rem;">Error cargando fuentes.</div>`;
             }
@@ -1936,6 +2190,7 @@
                     `;
                 }
                 listEl.innerHTML = html;
+            updateChannelMarquees();
             } catch (e) {
                 listEl.innerHTML = `<div style="color:var(--danger); padding:1rem;">Error buscando listas locales.</div>`;
             }
@@ -2127,6 +2382,35 @@
         // Export Modal & Utilidades
         // --------------------------------------------------------------------
         function openExportModal() {
+            const base = window.location.origin;
+            document.getElementById("export-full-url").value = `${base}/playlist.m3u`;
+            document.getElementById("export-ace-url").value = `${base}/playlist.m3u?stream_type=acestream`;
+
+            const chNameModal = document.getElementById("export-current-ch-name");
+            const currentUrlInput = document.getElementById("export-current-channel-url");
+            const aceExtra = document.getElementById("export-ace-extra-urls");
+
+            if (currentChannel) {
+                if (chNameModal) chNameModal.textContent = currentChannel.name;
+                if (currentUrlInput) currentUrlInput.value = `${base}/live/${currentChannel.id}.m3u8`;
+
+                if (aceExtra) {
+                    if (currentChannel.acestream_id) {
+                        aceExtra.style.display = "block";
+                        const tsInput = document.getElementById("export-current-ts-url");
+                        if (tsInput) tsInput.value = `${base}/ace/stream/${currentChannel.acestream_id}`;
+                        const aceIdInput = document.getElementById("export-current-ace-id");
+                        if (aceIdInput) aceIdInput.value = `acestream://${currentChannel.acestream_id}`;
+                    } else {
+                        aceExtra.style.display = "none";
+                    }
+                }
+            } else {
+                if (chNameModal) chNameModal.textContent = "Ninguno seleccionado";
+                if (currentUrlInput) currentUrlInput.value = "Selecciona un canal para obtener su enlace directo";
+                if (aceExtra) aceExtra.style.display = "none";
+            }
+
             document.getElementById("export-modal").classList.add("active");
         }
 
@@ -2151,96 +2435,273 @@
             window._toastTimeout = setTimeout(() => toast.classList.remove("active"), 3500);
         }
 
-        function copyToClipboard(elementId, directText = null) {
+        function copyToClipboard(elementId, directText = null, customToast = null) {
             let text = directText;
             if (!text && elementId) {
-                text = document.getElementById(elementId).value;
+                const el = document.getElementById(elementId);
+                if (el) text = el.value || el.innerText;
             }
-            if (navigator.clipboard && text) {
-                navigator.clipboard.writeText(text);
-                showToast("Copiado al portapapeles");
+            if (!text) {
+                showToast("⚠️ No hay enlace disponible para copiar");
+                return;
+            }
+
+            const successMsg = customToast || "📋 Enlace copiado al portapapeles";
+
+            // Fallback usando textarea compatible con HTTP local / LAN
+            function execCommandCopy(str) {
+                try {
+                    const temp = document.createElement("textarea");
+                    temp.value = str;
+                    temp.setAttribute("readonly", "");
+                    temp.style.position = "fixed";
+                    temp.style.left = "-9999px";
+                    temp.style.top = "0";
+                    temp.style.opacity = "0";
+                    document.body.appendChild(temp);
+                    temp.focus();
+                    temp.select();
+                    temp.setSelectionRange(0, 99999);
+                    const successful = document.execCommand("copy");
+                    document.body.removeChild(temp);
+                    if (successful) {
+                        showToast(successMsg);
+                        return true;
+                    }
+                } catch (e) {
+                    console.warn("Fallback execCommand falló:", e);
+                }
+                return false;
+            }
+
+            // Si está en contexto seguro (HTTPS o localhost) y navigator.clipboard existe
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(() => {
+                    showToast(successMsg);
+                }).catch(() => {
+                    if (!execCommandCopy(text)) {
+                        prompt("Copia este enlace manualmente (Ctrl+C / Cmd+C):", text);
+                    }
+                });
+            } else {
+                if (!execCommandCopy(text)) {
+                    prompt("Copia este enlace manualmente (Ctrl+C / Cmd+C):", text);
+                }
             }
         }
 
         // --------------------------------------------------------------------
-        // Auto-scroll / Marquee dinámico para títulos largos
+        // Redimensionamiento de Lista de Canales (Splitter Resizer)
         // --------------------------------------------------------------------
-        function initMarqueeListeners() {
+        let isResizingSidebar = false;
+        let resizeStartX = 0;
+        let resizeStartWidth = 420;
+
+        function initSidebarResizer() {
+            const resizer = document.getElementById("sidebar-resizer");
+            if (!resizer) return;
+
+            // Cargar ancho guardado previamente
+            const savedWidth = localStorage.getItem("m3u_sidebar_width");
+            if (savedWidth) {
+                const px = parseInt(savedWidth, 10);
+                if (px >= 300 && px <= 1200) {
+                    setSidebarWidth(px);
+                }
+            }
+
+            const onMouseDown = (e) => {
+                isResizingSidebar = true;
+                resizeStartX = e.clientX;
+                const sidebar = document.querySelector(".channels-sidebar");
+                resizeStartWidth = sidebar ? sidebar.getBoundingClientRect().width : 420;
+                document.body.classList.add("is-resizing");
+                resizer.classList.add("is-dragging");
+                window.addEventListener("mousemove", onMouseMove);
+                window.addEventListener("mouseup", onMouseUp);
+            };
+
+            const onMouseMove = (e) => {
+                if (!isResizingSidebar) return;
+                const delta = resizeStartX - e.clientX; // Hacia la izquierda agranda el sidebar
+                let newWidth = resizeStartWidth + delta;
+                const minWidth = 320;
+                const maxWidth = Math.max(minWidth, window.innerWidth - 380);
+                newWidth = Math.max(minWidth, Math.min(newWidth, maxWidth));
+                setSidebarWidth(newWidth);
+            };
+
+            const onMouseUp = () => {
+                if (!isResizingSidebar) return;
+                isResizingSidebar = false;
+                document.body.classList.remove("is-resizing");
+                resizer.classList.remove("is-dragging");
+                window.removeEventListener("mousemove", onMouseMove);
+                window.removeEventListener("mouseup", onMouseUp);
+                const sidebar = document.querySelector(".channels-sidebar");
+                if (sidebar) {
+                    const currentWidth = Math.round(sidebar.getBoundingClientRect().width);
+                    localStorage.setItem("m3u_sidebar_width", currentWidth);
+                }
+                updateChannelMarquees();
+            };
+
+            resizer.addEventListener("mousedown", onMouseDown);
+
+            // Soporte táctil (tablets / móviles)
+            resizer.addEventListener("touchstart", (e) => {
+                if (e.touches.length !== 1) return;
+                isResizingSidebar = true;
+                resizeStartX = e.touches[0].clientX;
+                const sidebar = document.querySelector(".channels-sidebar");
+                resizeStartWidth = sidebar ? sidebar.getBoundingClientRect().width : 420;
+                resizer.classList.add("is-dragging");
+            }, { passive: true });
+
+            window.addEventListener("touchmove", (e) => {
+                if (!isResizingSidebar || e.touches.length !== 1) return;
+                const delta = resizeStartX - e.touches[0].clientX;
+                let newWidth = resizeStartWidth + delta;
+                const minWidth = 300;
+                const maxWidth = Math.max(minWidth, window.innerWidth - 250);
+                newWidth = Math.max(minWidth, Math.min(newWidth, maxWidth));
+                setSidebarWidth(newWidth);
+            }, { passive: true });
+
+            window.addEventListener("touchend", () => {
+                if (isResizingSidebar) {
+                    isResizingSidebar = false;
+                    resizer.classList.remove("is-dragging");
+                    const sidebar = document.querySelector(".channels-sidebar");
+                    if (sidebar) {
+                        const currentWidth = Math.round(sidebar.getBoundingClientRect().width);
+                        localStorage.setItem("m3u_sidebar_width", currentWidth);
+                    }
+                    updateChannelMarquees();
+                }
+            });
+        }
+
+        function setSidebarWidth(px) {
+            document.documentElement.style.setProperty("--sidebar-width", `${px}px`);
+            const btn = document.getElementById("toggle-width-btn");
+            if (btn) {
+                btn.textContent = px >= 550 ? "↔️ Reducir" : "↔️ Expandir";
+                btn.classList.toggle("active", px >= 550);
+            }
+        }
+
+        function toggleSidebarWidth() {
+            const current = getComputedStyle(document.documentElement).getPropertyValue("--sidebar-width").trim();
+            const currentPx = parseInt(current, 10) || 420;
+            const targetPx = currentPx >= 550 ? 420 : 620;
+            setSidebarWidth(targetPx);
+            localStorage.setItem("m3u_sidebar_width", targetPx);
+            updateChannelMarquees();
+            showToast(`Ancho de lista ajustado a ${targetPx}px`);
+        }
+
+        // --------------------------------------------------------------------
+        // Modo de visualización de títulos (1 línea vs 2 líneas)
+        // --------------------------------------------------------------------
+        let currentTitleWrapMode = localStorage.getItem("m3u_title_wrap") || "wrap-1";
+
+        function initTitleWrap() {
             const listEl = document.getElementById("channel-list");
+            const btn = document.getElementById("toggle-wrap-btn");
             if (listEl) {
-                listEl.addEventListener("mouseover", (e) => {
-                    const card = e.target.closest(".channel-card");
-                    if (!card || card.contains(e.relatedTarget)) return;
-                    startCardMarquee(card);
-                });
-
-                listEl.addEventListener("mouseout", (e) => {
-                    const card = e.target.closest(".channel-card");
-                    if (!card || card.contains(e.relatedTarget)) return;
-                    stopCardMarquee(card);
-                });
-
-                listEl.addEventListener("focusin", (e) => {
-                    const card = e.target.closest(".channel-card");
-                    if (card) startCardMarquee(card);
-                });
-
-                listEl.addEventListener("focusout", (e) => {
-                    const card = e.target.closest(".channel-card");
-                    if (card) stopCardMarquee(card);
-                });
+                listEl.classList.remove("wrap-1", "wrap-2");
+                listEl.classList.add(currentTitleWrapMode);
             }
-
-            const titleBox = document.querySelector(".channel-title-box");
-            if (titleBox) {
-                titleBox.addEventListener("mouseover", (e) => {
-                    if (titleBox.contains(e.relatedTarget)) return;
-                    startTitleMarquee(titleBox);
-                });
-
-                titleBox.addEventListener("mouseout", (e) => {
-                    if (titleBox.contains(e.relatedTarget)) return;
-                    stopTitleMarquee(titleBox);
-                });
+            if (btn) {
+                btn.textContent = currentTitleWrapMode === "wrap-2" ? "📄 1 Línea" : "📑 2 Líneas";
+                btn.classList.toggle("active", currentTitleWrapMode === "wrap-2");
             }
         }
 
-        function startCardMarquee(card) {
+        function toggleTitleWrap() {
+            currentTitleWrapMode = currentTitleWrapMode === "wrap-1" ? "wrap-2" : "wrap-1";
+            localStorage.setItem("m3u_title_wrap", currentTitleWrapMode);
+            initTitleWrap();
+            if (currentTitleWrapMode === "wrap-1") {
+                updateChannelMarquees();
+                showToast("Modo 1 línea con auto-scroll activado");
+            } else {
+                showToast("Modo 2 líneas activado (títulos completos)");
+            }
+        }
+
+        // --------------------------------------------------------------------
+        // Auto-scroll / Marquee dinámico y fluido para títulos largos
+        // --------------------------------------------------------------------
+        function updateChannelMarquees() {
+            const listEl = document.getElementById("channel-list");
+            if (listEl && listEl.classList.contains("wrap-2")) {
+                document.querySelectorAll("#channel-list .channel-card").forEach(card => {
+                    card.classList.remove("has-overflow");
+                });
+                return;
+            }
+
+            requestAnimationFrame(() => {
+                document.querySelectorAll("#channel-list .channel-card").forEach(card => {
+                    measureCardMarquee(card);
+                });
+                updatePlayerTitleMarquee();
+            });
+        }
+
+        function measureCardMarquee(card) {
             const nameEl = card.querySelector(".channel-card-name");
             if (!nameEl) return;
-            const overflow = nameEl.scrollWidth - nameEl.clientWidth;
-            if (overflow > 4) {
-                const scrollDist = -(overflow + 10);
-                const duration = Math.max(3.0, (overflow / 35) + 1.2);
-                card.style.setProperty("--scroll-dist", `${scrollDist}px`);
-                card.style.setProperty("--scroll-duration", `${duration.toFixed(2)}s`);
-                card.classList.add("is-scrolling");
-            }
-        }
 
-        function stopCardMarquee(card) {
-            card.classList.remove("is-scrolling");
+            // Limpiar valores para medir ancho natural
+            nameEl.style.removeProperty("--scroll-dist");
+            nameEl.style.removeProperty("--scroll-duration");
             card.style.removeProperty("--scroll-dist");
             card.style.removeProperty("--scroll-duration");
-        }
+            card.classList.remove("has-overflow");
 
-        function startTitleMarquee(box) {
-            const nameEl = document.getElementById("current-name");
-            if (!nameEl) return;
             const overflow = nameEl.scrollWidth - nameEl.clientWidth;
-            if (overflow > 6) {
+            if (overflow > 4) {
                 const scrollDist = -(overflow + 14);
-                const duration = Math.max(3.5, (overflow / 40) + 1.5);
-                box.style.setProperty("--scroll-dist", `${scrollDist}px`);
-                box.style.setProperty("--scroll-duration", `${duration.toFixed(2)}s`);
-                box.classList.add("is-scrolling");
+                const duration = Math.max(3.5, (overflow / 32) + 1.5);
+                nameEl.style.setProperty("--scroll-dist", `${scrollDist}px`);
+                nameEl.style.setProperty("--scroll-duration", `${duration.toFixed(2)}s`);
+                card.style.setProperty("--scroll-dist", `${scrollDist}px`);
+                card.style.setProperty("--scroll-duration", `${duration.toFixed(2)}s`);
+                card.classList.add("has-overflow");
             }
         }
 
-        function stopTitleMarquee(box) {
-            box.classList.remove("is-scrolling");
-            box.style.removeProperty("--scroll-dist");
-            box.style.removeProperty("--scroll-duration");
+        function updatePlayerTitleMarquee() {
+            const titleBox = document.querySelector(".channel-title-box");
+            const nameEl = document.getElementById("current-name");
+            if (!titleBox || !nameEl) return;
+
+            nameEl.style.removeProperty("--scroll-dist");
+            nameEl.style.removeProperty("--scroll-duration");
+            titleBox.style.removeProperty("--scroll-dist");
+            titleBox.style.removeProperty("--scroll-duration");
+            titleBox.classList.remove("has-overflow");
+
+            const overflow = nameEl.scrollWidth - titleBox.clientWidth;
+            if (overflow > 6) {
+                const scrollDist = -(overflow + 20);
+                const duration = Math.max(4.0, (overflow / 35) + 2.0);
+                nameEl.style.setProperty("--scroll-dist", `${scrollDist}px`);
+                nameEl.style.setProperty("--scroll-duration", `${duration.toFixed(2)}s`);
+                titleBox.style.setProperty("--scroll-dist", `${scrollDist}px`);
+                titleBox.style.setProperty("--scroll-duration", `${duration.toFixed(2)}s`);
+                titleBox.classList.add("has-overflow");
+            }
+        }
+
+        function togglePlayerTitleExpand() {
+            const titleBox = document.querySelector(".channel-title-box");
+            if (titleBox) {
+                titleBox.classList.toggle("is-expanded");
+            }
         }
 
         function escapeHtml(str) {
