@@ -185,6 +185,12 @@ async def get_channels(
     return JSONResponse(result)
 
 
+@app.get("/api/channels/custom")
+async def get_custom_channels():
+    """Devuelve la lista de canales personalizados agregados por el usuario."""
+    return JSONResponse(manager.get_custom_channels())
+
+
 @app.get("/api/channels/{channel_id}")
 async def get_channel_by_id(channel_id: str, request: Request):
     ch = manager.get_channel_by_id(channel_id)
@@ -196,6 +202,14 @@ async def get_channel_by_id(channel_id: str, request: Request):
     if ch.get("acestream_id"):
         res["ts_url"] = f"{base_url}/ace/stream/{ch['acestream_id']}"
         res["ace_uri"] = f"acestream://{ch['acestream_id']}"
+        res["engine_urls"] = [
+            {
+                "id": s["id"],
+                "name": s.get("name", s["id"]),
+                "url": f"{s['url'].rstrip('/')}/ace/getstream?id={ch['acestream_id']}"
+            }
+            for s in ace_proxy.get_server_list()
+        ]
     return JSONResponse(res)
 
 
@@ -445,7 +459,24 @@ async def direct_play_stream(payload: DirectPlayPayload, request: Request):
     if ch.get("acestream_id"):
         res["ts_url"] = f"{base_url}/ace/stream/{ch['acestream_id']}"
         res["ace_uri"] = f"acestream://{ch['acestream_id']}"
+        res["engine_urls"] = [
+            {
+                "id": s["id"],
+                "name": s.get("name", s["id"]),
+                "url": f"{s['url'].rstrip('/')}/ace/getstream?id={ch['acestream_id']}"
+            }
+            for s in ace_proxy.get_server_list()
+        ]
     return JSONResponse(res)
+
+
+@app.delete("/api/channels/{channel_id}")
+async def delete_channel(channel_id: str):
+    """Elimina un canal personalizado (AceStream ID o URL directa)."""
+    success = manager.delete_custom_channel(channel_id)
+    if not success:
+        raise HTTPException(status_code=404, detail="Canal personalizado no encontrado o no es eliminable")
+    return JSONResponse({"status": "deleted", "id": channel_id})
 
 
 # ---------------------------------------------------------------------------
@@ -542,8 +573,6 @@ async def get_channel_live_ts(channel_id: str, request: Request, server_id: Opti
 
     return RedirectResponse(url=target_url)
 
-    return RedirectResponse(url=target_url)
-
 
 # ---------------------------------------------------------------------------
 # Exportador de Lista M3U Unificada
@@ -555,15 +584,24 @@ async def export_m3u_playlist(
     source_id: Optional[str] = Query(None),
     stream_type: Optional[str] = Query(None),
     type: Optional[str] = Query(None),
-    group: Optional[str] = Query(None)
+    group: Optional[str] = Query(None),
+    format: Optional[str] = Query(None),
+    server_id: Optional[str] = Query(None)
 ):
     """
     Genera un archivo M3U unificado con todos los canales (o filtrados)
     con URLs proxificadas listas para TiviMate, OTT Navigator, Kodi, VLC, etc.
+    o enlaces directos al motor AceStream si format=getstream.
     """
     filter_type = stream_type or type
     base_url = str(request.base_url).rstrip("/")
     lines = ["#EXTM3U"]
+
+    # Si se pide formato getstream directo, obtener la base del servidor solicitado
+    srv_clean_url = None
+    if format == "getstream":
+        url, _, _ = ace_proxy.get_server_info(server_id)
+        srv_clean_url = url.rstrip("/")
 
     for ch in manager.channels.values():
         if source_id and ch.get("source_id") != source_id:
@@ -587,7 +625,13 @@ async def export_m3u_playlist(
         extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{logo}" group-title="{grp}", {name}'
         lines.append(extinf)
 
-        play_url = f"{base_url}/live/{ch['id']}.m3u8"
+        if ch.get("acestream_id") and format == "getstream" and srv_clean_url:
+            play_url = f"{srv_clean_url}/ace/getstream?id={ch['acestream_id']}"
+        elif ch.get("acestream_id") and format == "ts":
+            play_url = f"{base_url}/ace/stream/{ch['acestream_id']}"
+        else:
+            play_url = f"{base_url}/live/{ch['id']}.m3u8"
+
         lines.append(play_url)
 
     m3u_text = "\n".join(lines)

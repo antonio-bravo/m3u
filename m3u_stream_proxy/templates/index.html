@@ -819,6 +819,7 @@
         .channel-card-fav.active { color: #fbbf24; }
         .channel-card-fav:hover { color: #fbbf24; }
         .channel-card-copy:hover { color: var(--primary); }
+        .channel-card-del:hover { color: var(--danger) !important; background: rgba(239, 68, 68, 0.2) !important; }
 
         /* Paginación en sidebar */
         .sidebar-footer {
@@ -1111,6 +1112,7 @@
                     <button class="btn" id="copy-btn" onclick="copyStreamUrl()" title="Copiar enlace del canal para VLC, Kodi o Smart TV">📋 Copiar Enlace</button>
                     <button class="btn" id="audio-boost-btn" onclick="cycleAudioBoost()" title="Amplificar volumen del stream">🔊 Vol: 100%</button>
                     <button class="btn" onclick="togglePiP()" title="Modo PiP flotante">🔲 PiP</button>
+                    <button class="btn btn-danger" id="delete-current-ch-btn" style="display:none;" onclick="deleteCurrentPlayingChannel()" title="Eliminar este canal personalizado">🗑️ Eliminar</button>
                 </div>
             </div>
 
@@ -1379,15 +1381,23 @@
                         </div>
                     </div>
                     <div id="export-ace-extra-urls" style="display: none; margin-top: 0.75rem; border-top: 1px dashed rgba(255, 255, 255, 0.1); padding-top: 0.75rem;">
+                        <div style="font-size: 0.8rem; font-weight: 600; color: #38bdf8; margin-bottom: 0.45rem; display: flex; align-items: center; justify-content: space-between;">
+                            <span>⚡ Enlaces Directos al Motor AceStream (/ace/getstream):</span>
+                            <span style="font-size: 0.7rem; color: var(--text-muted);">Sin VPN / Con VPN</span>
+                        </div>
+                        <div id="export-ace-engines-container" style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <!-- Generado dinámicamente: Sin VPN, Con VPN, etc. -->
+                        </div>
+
                         <div class="form-group" style="margin-bottom: 0.5rem;">
-                            <label class="form-label" style="font-size: 0.78rem;">Stream Directo MPEG-TS (VLC sin HLS / Decodificadores):</label>
+                            <label class="form-label" style="font-size: 0.78rem;">Stream Proxificado MPEG-TS (VLC sin HLS / Decodificadores):</label>
                             <div style="display:flex; gap:0.5rem;">
                                 <input type="text" id="export-current-ts-url" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
                                 <button class="btn" onclick="copyToClipboard('export-current-ts-url', null, '📋 Stream TS copiado para VLC')">📋 Copiar</button>
                             </div>
                         </div>
                         <div class="form-group" style="margin-bottom: 0;">
-                            <label class="form-label" style="font-size: 0.78rem;">ID Nativo AceStream:</label>
+                            <label class="form-label" style="font-size: 0.78rem;">ID Nativo AceStream (Hash / URI):</label>
                             <div style="display:flex; gap:0.5rem;">
                                 <input type="text" id="export-current-ace-id" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
                                 <button class="btn" onclick="copyToClipboard('export-current-ace-id', null, '📋 ID AceStream copiado')">📋 Copiar</button>
@@ -1400,18 +1410,22 @@
                     Listas M3U completas para añadir a clientes IPTV (<b>TiviMate, OTT Navigator, Smart IPTV</b>):
                 </p>
                 <div class="form-group">
-                    <label class="form-label">Lista M3U Completa (Todos los canales)</label>
+                    <label class="form-label">Lista M3U Completa Proxificada (Todos los canales HLS)</label>
                     <div style="display:flex; gap:0.5rem;">
                         <input type="text" id="export-full-url" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
                         <button class="btn" onclick="copyToClipboard('export-full-url', null, '📋 Lista M3U completa copiada')">📋 Copiar</button>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="form-label">Lista M3U Solo Canales AceStream</label>
+                    <label class="form-label">Lista M3U Solo Canales AceStream (Proxificada HLS)</label>
                     <div style="display:flex; gap:0.5rem;">
                         <input type="text" id="export-ace-url" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
                         <button class="btn" onclick="copyToClipboard('export-ace-url', null, '📋 Lista AceStream copiada')">📋 Copiar</button>
                     </div>
+                </div>
+                <!-- Listas M3U directas getstream por motor -->
+                <div id="export-ace-m3u-engines" style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <!-- Generado dinámicamente -->
                 </div>
                 <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.75rem; line-height: 1.4;">
                     💡 <b>Consejo:</b> Al hacer clic sobre cualquier campo se selecciona todo el texto para copiarlo fácilmente.
@@ -1436,7 +1450,10 @@
                 </p>
 
                 <div class="form-group">
-                    <label class="form-label">AceStream ID o Enlace:</label>
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+                        <label class="form-label" style="margin-bottom:0;">AceStream ID o Enlace:</label>
+                        <button type="button" class="btn" style="padding: 2px 8px; font-size: 0.72rem;" onclick="clearDirectPlayInput()" title="Limpiar el texto introducido">✕ Limpiar campo</button>
+                    </div>
                     <textarea id="direct-stream-input" class="form-input" rows="2" placeholder="Ej: 7f9857c45764ef2c7cdfb619b89db3056a57a51f&#10;o acestream://... o https://.../stream.m3u8" style="font-family: monospace; font-size: 0.82rem;" oninput="onDirectInputChange(this.value)"></textarea>
                     <div id="direct-stream-detected-badge" style="display:none; font-size:0.75rem; color:#22d3ee; margin-top:4px; font-weight:600;"></div>
                 </div>
@@ -1458,6 +1475,17 @@
                         <input type="checkbox" id="direct-save-fav" checked style="accent-color:var(--primary); cursor:pointer;">
                         <span>⭐ Guardar en favoritos para poder volver a reproducirlo cuando quieras</span>
                     </label>
+                </div>
+
+                <!-- Lista de canales pegados existentes -->
+                <div id="saved-custom-channels-section" style="margin-top: 1.1rem; border-top: 1px solid var(--border); padding-top: 0.8rem; display: none;">
+                    <div style="font-size: 0.8rem; font-weight: 600; color: #cbd5e1; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                        <span>📺 Canales AceStream Pegados Guardados</span>
+                        <span id="saved-custom-channels-count" style="font-size: 0.72rem; color: var(--text-muted);">0 canales</span>
+                    </div>
+                    <div id="saved-custom-channels-list" style="max-height: 150px; overflow-y: auto; display: flex; flex-direction: column; gap: 6px;">
+                        <!-- Llenado dinámicamente -->
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -1484,6 +1512,7 @@
         let gainNode = null;
         let audioBoostLevel = 1.0;
         let bufferCheckInterval = null;
+        let currentLoadedChannels = [];
         let activeFilter = {
             search: "",
             source: "all",
@@ -1682,6 +1711,11 @@
             if (ch.is_favorite) favBtn.classList.add("active");
             else favBtn.classList.remove("active");
 
+            const delPlayingBtn = document.getElementById("delete-current-ch-btn");
+            if (delPlayingBtn) {
+                delPlayingBtn.style.display = ch.is_custom ? "inline-flex" : "none";
+            }
+
             document.getElementById("hud-channel").textContent = ch.name;
             document.getElementById("hud-type").textContent = ch.acestream_id ? `AceStream (${ch.acestream_id.slice(0, 8)}...)` : 'HLS Direct';
 
@@ -1824,6 +1858,7 @@
                 const res = await fetch(`/api/channels?${params.toString()}`);
                 const data = await res.json();
 
+                currentLoadedChannels = data.channels || [];
                 renderChannelsList(data.channels);
                 updatePaginationUI(data);
 
@@ -1856,6 +1891,7 @@
                 const typeTag = isAce ? `<span class="card-type-tag tag-ace">ACE</span>` : `<span class="card-type-tag tag-hls">HLS</span>`;
                 const starClass = ch.is_favorite ? "active" : "";
                 const logoSrc = ch.tvg_logo ? escapeHtml(ch.tvg_logo) : FALLBACK_SVG;
+                const delBtn = ch.is_custom ? `<button class="channel-card-btn channel-card-del" onclick="deleteCustomChannel(event, '${ch.id}', '${escapeHtml(ch.name)}')" title="Eliminar este canal personalizado">🗑️</button>` : '';
 
                 html += `
                     <div class="channel-card ${isCurrent ? 'active' : ''}" data-id="${ch.id}" onclick="onChannelCardClick('${ch.id}')" onmouseenter="measureCardMarquee(this)" title="${escapeHtml(ch.name)}">
@@ -1870,6 +1906,7 @@
                         <div class="channel-card-actions">
                             <button class="channel-card-btn channel-card-copy" onclick="copyChannelLink(event, '${ch.id}')" title="Copiar enlace para otro dispositivo (VLC, Kodi, etc.)">📋</button>
                             <button class="channel-card-btn channel-card-fav ${starClass}" onclick="toggleFavFromCard(event, '${ch.id}')" title="Favorito">⭐</button>
+                            ${delBtn}
                         </div>
                     </div>
                 `;
@@ -1986,9 +2023,17 @@
                 showToast("⚠️ Selecciona un canal primero");
                 return;
             }
-            const base = window.location.origin;
-            const targetUrl = `${base}/live/${currentChannel.id}.m3u8`;
-            copyToClipboard(null, targetUrl, `📋 Enlace de "${currentChannel.name}" copiado para VLC / Kodi`);
+            if (currentChannel.acestream_id) {
+                const activeSrv = aceServers.find(s => s.id === activeAceServerId) || aceServers[0];
+                const cleanUrl = activeSrv ? (activeSrv.url || "").replace(/\/+$/, '') : window.location.origin;
+                const directUrl = `${cleanUrl}/ace/getstream?id=${currentChannel.acestream_id}`;
+                copyToClipboard(null, directUrl, `📋 Enlace ${activeSrv ? activeSrv.name : 'AceStream'} copiado`);
+                openExportModal();
+            } else {
+                const base = window.location.origin;
+                const targetUrl = `${base}/live/${currentChannel.id}.m3u8`;
+                copyToClipboard(null, targetUrl, `📋 Enlace de "${currentChannel.name}" copiado para VLC / Kodi`);
+            }
             const btn = document.getElementById("copy-btn");
             if (btn) {
                 const orig = btn.innerHTML;
@@ -1999,10 +2044,17 @@
 
         function copyChannelLink(e, chId) {
             if (e) e.stopPropagation();
+            const ch = (currentLoadedChannels || []).find(c => c.id === chId) || (currentChannel && currentChannel.id === chId ? currentChannel : null);
+
+            if (ch && ch.acestream_id) {
+                // Si es un canal AceStream, abrimos el modal de enlaces para ver y copiar Sin VPN y Con VPN
+                openExportModal(ch);
+                return;
+            }
+
             const base = window.location.origin;
             const targetUrl = `${base}/live/${chId}.m3u8`;
-            const card = document.querySelector(`.channel-card[data-id="${chId}"]`);
-            const name = card ? (card.querySelector(".channel-card-name")?.textContent || "Canal") : "Canal";
+            const name = ch ? ch.name : "Canal";
             copyToClipboard(null, targetUrl, `📋 Enlace de "${name}" copiado para VLC / Kodi`);
         }
 
@@ -2609,10 +2661,136 @@
             document.getElementById("direct-save-fav").checked = true;
             document.getElementById("direct-stream-detected-badge").style.display = "none";
             document.getElementById("direct-play-modal").classList.add("active");
+            loadCustomChannelsList();
             setTimeout(() => {
                 const inp = document.getElementById("direct-stream-input");
                 if (inp) inp.focus();
             }, 100);
+        }
+
+        function clearDirectPlayInput() {
+            const inp = document.getElementById("direct-stream-input");
+            const nameInp = document.getElementById("direct-name-input");
+            const badge = document.getElementById("direct-stream-detected-badge");
+            if (inp) inp.value = "";
+            if (nameInp) nameInp.value = "";
+            if (badge) badge.style.display = "none";
+            if (inp) inp.focus();
+        }
+
+        async function loadCustomChannelsList() {
+            const sec = document.getElementById("saved-custom-channels-section");
+            const listEl = document.getElementById("saved-custom-channels-list");
+            const countEl = document.getElementById("saved-custom-channels-count");
+            if (!sec || !listEl) return;
+
+            try {
+                const res = await fetch("/api/channels/custom");
+                if (!res.ok) return;
+                const channels = await res.json();
+
+                if (!channels || channels.length === 0) {
+                    sec.style.display = "none";
+                    return;
+                }
+
+                sec.style.display = "block";
+                if (countEl) countEl.textContent = `${channels.length} canal${channels.length > 1 ? 'es' : ''}`;
+
+                let html = "";
+                for (const ch of channels) {
+                    const previewId = ch.acestream_id ? `ID: ${ch.acestream_id.slice(0, 10)}...${ch.acestream_id.slice(-6)}` : ch.url;
+                    html += `
+                        <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+                            <div style="flex: 1; min-width: 0;">
+                                <div style="font-weight: 600; font-size: 0.82rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${escapeHtml(ch.name)}">${escapeHtml(ch.name)}</div>
+                                <div style="font-size: 0.7rem; color: var(--text-muted); font-family: 'JetBrains Mono'; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${escapeHtml(previewId)}</div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 4px;">
+                                <button class="btn btn-ace" style="padding: 2px 8px; font-size: 0.72rem;" onclick="playSavedCustomChannel('${ch.id}')" title="Reproducir este canal">▶️</button>
+                                <button class="btn btn-danger" style="padding: 2px 8px; font-size: 0.72rem;" onclick="deleteCustomChannel(event, '${ch.id}', '${escapeHtml(ch.name)}')" title="Borrar este AceStream">🗑️</button>
+                            </div>
+                        </div>
+                    `;
+                }
+                listEl.innerHTML = html;
+            } catch (e) {
+                console.warn("Error cargando canales personalizados:", e);
+            }
+        }
+
+        async function playSavedCustomChannel(chId) {
+            closeModals();
+            try {
+                const res = await fetch(`/api/channels?search=${encodeURIComponent(chId)}`);
+                if (res.ok) {
+                    const data = await res.json();
+                    const ch = data.channels && data.channels.find(c => c.id === chId);
+                    if (ch) {
+                        playChannel(ch);
+                        return;
+                    }
+                }
+            } catch (e) {}
+
+            const card = document.querySelector(`.channel-card[data-id="${chId}"]`);
+            if (card) {
+                onChannelCardClick(chId);
+            }
+        }
+
+        async function deleteCustomChannel(event, channelId, channelName) {
+            if (event) {
+                event.stopPropagation();
+                event.preventDefault();
+            }
+            const displayName = channelName || "este canal";
+            if (!confirm(`¿Eliminar el canal AceStream "${displayName}" de tu lista?`)) {
+                return;
+            }
+
+            try {
+                showSpinner("Eliminando canal...");
+                const res = await fetch(`/api/channels/${channelId}`, {
+                    method: "DELETE"
+                });
+                hideSpinner();
+
+                if (res.ok) {
+                    showToast(`🗑️ Canal "${displayName}" eliminado`);
+
+                    // Si el canal actual eliminado es el que se está reproduciendo
+                    if (currentChannel && currentChannel.id === channelId) {
+                        if (hls) {
+                            hls.destroy();
+                            hls = null;
+                        }
+                        video.pause();
+                        video.src = "";
+                        currentChannel = null;
+                        document.getElementById("current-name").textContent = "Selecciona un canal";
+                        document.getElementById("current-logo").src = FALLBACK_SVG;
+                        const delBtn = document.getElementById("delete-current-ch-btn");
+                        if (delBtn) delBtn.style.display = "none";
+                    }
+
+                    // Recargar canales y lista del modal
+                    await fetchChannels();
+                    await loadCustomChannelsList();
+                } else {
+                    const err = await res.json().catch(() => ({}));
+                    showToast(err.detail || "No se pudo eliminar el canal");
+                }
+            } catch (e) {
+                hideSpinner();
+                showToast("Error de conexión al eliminar el canal");
+            }
+        }
+
+        function deleteCurrentPlayingChannel() {
+            if (currentChannel) {
+                deleteCustomChannel(null, currentChannel.id, currentChannel.name);
+            }
         }
 
         function onDirectInputChange(val) {
@@ -2674,10 +2852,9 @@
                     showToast(`▶️ Reproduciendo: ${channel.name}`);
                     playChannel(channel);
 
-                    // Si se guardó en favoritos, recargar lista para que aparezca
-                    if (saveFav) {
-                        await fetchChannels();
-                    }
+                    // Recargar lista para que aparezca y actualizar favoritos
+                    await fetchChannels();
+                    await loadCustomChannelsList();
                 } else {
                     const err = await res.json().catch(() => ({}));
                     showToast(err.detail || "Error al procesar el enlace");
@@ -2691,26 +2868,73 @@
         // --------------------------------------------------------------------
         // Export Modal & Utilidades
         // --------------------------------------------------------------------
-        function openExportModal() {
+        function openExportModal(channelOverride = null) {
             const base = window.location.origin;
             document.getElementById("export-full-url").value = `${base}/playlist.m3u`;
             document.getElementById("export-ace-url").value = `${base}/playlist.m3u?stream_type=acestream`;
 
+            // Listas M3U directas getstream para cada servidor AceStream
+            const m3uEnginesContainer = document.getElementById("export-ace-m3u-engines");
+            if (m3uEnginesContainer) {
+                let m3uHtml = "";
+                for (const s of aceServers) {
+                    const m3uUrl = `${base}/playlist.m3u?format=getstream&server_id=${encodeURIComponent(s.id)}`;
+                    const sName = s.name || s.id;
+                    const inputId = `export-m3u-engine-${s.id}`;
+                    m3uHtml += `
+                        <div class="form-group" style="margin-bottom: 0.25rem;">
+                            <label class="form-label" style="font-size: 0.78rem;">Lista M3U Directa AceStream (${escapeHtml(sName)}):</label>
+                            <div style="display:flex; gap:0.5rem;">
+                                <input type="text" id="${inputId}" value="${escapeHtml(m3uUrl)}" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
+                                <button class="btn" onclick="copyToClipboard('${inputId}', null, '📋 Lista M3U (${escapeHtml(sName)}) copiada')">📋 Copiar</button>
+                            </div>
+                        </div>
+                    `;
+                }
+                m3uEnginesContainer.innerHTML = m3uHtml;
+            }
+
+            const targetCh = channelOverride || currentChannel;
             const chNameModal = document.getElementById("export-current-ch-name");
             const currentUrlInput = document.getElementById("export-current-channel-url");
             const aceExtra = document.getElementById("export-ace-extra-urls");
+            const enginesContainer = document.getElementById("export-ace-engines-container");
 
-            if (currentChannel) {
-                if (chNameModal) chNameModal.textContent = currentChannel.name;
-                if (currentUrlInput) currentUrlInput.value = `${base}/live/${currentChannel.id}.m3u8`;
+            if (targetCh) {
+                if (chNameModal) chNameModal.textContent = targetCh.name;
+                if (currentUrlInput) currentUrlInput.value = `${base}/live/${targetCh.id}.m3u8`;
 
                 if (aceExtra) {
-                    if (currentChannel.acestream_id) {
+                    if (targetCh.acestream_id) {
                         aceExtra.style.display = "block";
                         const tsInput = document.getElementById("export-current-ts-url");
-                        if (tsInput) tsInput.value = `${base}/ace/stream/${currentChannel.acestream_id}`;
+                        if (tsInput) tsInput.value = `${base}/ace/stream/${targetCh.acestream_id}`;
                         const aceIdInput = document.getElementById("export-current-ace-id");
-                        if (aceIdInput) aceIdInput.value = `acestream://${currentChannel.acestream_id}`;
+                        if (aceIdInput) aceIdInput.value = `acestream://${targetCh.acestream_id}`;
+
+                        // Generar enlaces directos getstream para cada motor AceStream
+                        if (enginesContainer) {
+                            let engHtml = "";
+                            for (const s of aceServers) {
+                                const cleanUrl = (s.url || "").replace(/\/+$/, '');
+                                const directGetStream = `${cleanUrl}/ace/getstream?id=${targetCh.acestream_id}`;
+                                const sName = s.name || s.id;
+                                const inputId = `export-ace-engine-${s.id}`;
+                                engHtml += `
+                                    <div class="form-group" style="margin-bottom: 0.4rem; background: rgba(0,0,0,0.25); padding: 8px 10px; border-radius: 6px; border: 1px solid var(--border);">
+                                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 4px;">
+                                            <span style="font-size: 0.78rem; font-weight: 600; color: #a5f3fc;">⚡ ${escapeHtml(sName)}:</span>
+                                            <span style="font-size: 0.7rem; color: var(--text-muted); font-family: 'JetBrains Mono';">${escapeHtml(cleanUrl)}</span>
+                                        </div>
+                                        <div style="display:flex; gap:0.5rem;">
+                                            <input type="text" id="${inputId}" value="${escapeHtml(directGetStream)}" class="form-input" style="flex:1; font-family: monospace; font-size: 0.8rem; padding: 4px 8px;" readonly onclick="this.select()">
+                                            <button class="btn btn-ace" style="padding: 4px 10px; font-size: 0.75rem;" onclick="copyToClipboard('${inputId}', null, '📋 Enlace ${escapeHtml(sName)} copiado')">📋 Copiar</button>
+                                        </div>
+                                    </div>
+                                `;
+                            }
+                            enginesContainer.innerHTML = engHtml;
+                        }
                     } else {
                         aceExtra.style.display = "none";
                     }

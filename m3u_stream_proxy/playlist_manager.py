@@ -115,6 +115,9 @@ class PlaylistManager:
                     self.custom_channels = json.load(f)
                     for cid, ch in self.custom_channels.items():
                         ch["is_favorite"] = cid in self.favorites
+                        ch["is_custom"] = True
+                        ch["source_id"] = "direct_play"
+                        ch["source_name"] = "Direct Play"
                         self.channels[cid] = ch
             except Exception as e:
                 logger.error(f"Error cargando custom_channels.json: {e}")
@@ -125,6 +128,37 @@ class PlaylistManager:
                 json.dump(self.custom_channels, f, indent=2, ensure_ascii=False)
         except Exception as e:
             logger.error(f"Error guardando custom_channels.json: {e}")
+
+    def delete_custom_channel(self, channel_id: str) -> bool:
+        """Elimina un canal personalizado/directo agregado por el usuario."""
+        deleted = False
+        if channel_id in self.custom_channels:
+            del self.custom_channels[channel_id]
+            self.save_custom_channels()
+            deleted = True
+
+        if channel_id in self.channels:
+            del self.channels[channel_id]
+            deleted = True
+
+        if channel_id in self.favorites:
+            self.favorites.remove(channel_id)
+            self.save_favorites()
+
+        if "direct_play" in self.source_channel_map and channel_id in self.source_channel_map["direct_play"]:
+            self.source_channel_map["direct_play"].remove(channel_id)
+
+        return deleted
+
+    def get_custom_channels(self) -> List[Dict]:
+        """Devuelve los canales personalizados guardados."""
+        result = []
+        for cid, ch in self.custom_channels.items():
+            item = dict(ch)
+            item["is_favorite"] = cid in self.favorites
+            item["is_custom"] = True
+            result.append(item)
+        return result
 
     def add_direct_channel(self, identifier: str, name: Optional[str] = None, save_favorite: bool = False, server_id: Optional[str] = None) -> Dict:
         import hashlib
@@ -554,8 +588,9 @@ class PlaylistManager:
             # Clonar canal y agregar metadatos de estado para la vista
             item = dict(ch)
             item["is_favorite"] = is_fav
+            item["is_custom"] = bool(ch.get("is_custom", False))
             source_info = self.sources.get(ch.get("source_id", ""), {})
-            item["source_name"] = source_info.get("name", "Fuente Desconocida")
+            item["source_name"] = "Direct Play" if item["is_custom"] else source_info.get("name", "Fuente Desconocida")
             matched.append(item)
 
         total_count = len(matched)
