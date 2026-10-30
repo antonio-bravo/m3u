@@ -99,17 +99,20 @@ async def startup_event():
     
     # Si no hay fuentes configuradas, revisar si existen listas locales y añadir 'canales_acestream.m3u' si existe
     if not manager.sources:
-        local_files = manager.scan_local_playlists()
-        for f in local_files:
-            if "acestream" in f["name"].lower():
-                logger.info(f"Detectada lista local inicial: {f['name']}. Añadiéndola como fuente por defecto...")
-                await manager.add_source(
-                    name=f["name"],
-                    source_type="local",
-                    url_or_path=f["path"],
-                    enabled=True
-                )
-                break
+        try:
+            local_files = manager.scan_local_playlists()
+            for f in local_files:
+                if "acestream" in f["name"].lower():
+                    logger.info(f"Detectada lista local inicial: {f['name']}. Añadiéndola como fuente por defecto...")
+                    await manager.add_source(
+                        name=f["name"],
+                        source_type="local",
+                        url_or_path=f["path"],
+                        enabled=True
+                    )
+                    break
+        except Exception as e:
+            logger.error(f"Error cargando lista local inicial por defecto: {e}")
 
     # Sincronizar fuentes activas al inicio
     asyncio.create_task(manager.sync_all_enabled_sources())
@@ -197,13 +200,17 @@ async def get_sources():
 
 @app.post("/api/sources")
 async def add_source(payload: AddSourcePayload):
-    new_src = await manager.add_source(
-        name=payload.name,
-        source_type=payload.type,
-        url_or_path=payload.url_or_path,
-        enabled=payload.enabled
-    )
-    return JSONResponse(new_src)
+    try:
+        new_src = await manager.add_source(
+            name=payload.name,
+            source_type=payload.type,
+            url_or_path=payload.url_or_path,
+            enabled=payload.enabled
+        )
+        return JSONResponse(new_src)
+    except Exception as e:
+        logger.error(f"Error en add_source: {e}")
+        raise HTTPException(status_code=400, detail=f"No se pudo añadir la fuente: {str(e)}")
 
 
 @app.post("/api/sources/{source_id}/toggle")
@@ -250,18 +257,27 @@ async def scan_github(payload: GithubScanPayload):
 @app.post("/api/github/import")
 async def import_github_files(payload: GithubImportPayload):
     imported = []
+    errors = []
     for f in payload.files:
         name = f.get("filename", "GitHub Playlist")
         raw_url = f.get("raw_url", "")
         if raw_url:
-            src = await manager.add_source(
-                name=f"{name}",
-                source_type="github",
-                url_or_path=raw_url,
-                enabled=True
-            )
-            imported.append(src)
-    return JSONResponse({"status": "imported", "imported_count": len(imported)})
+            try:
+                src = await manager.add_source(
+                    name=f"{name}",
+                    source_type="github",
+                    url_or_path=raw_url,
+                    enabled=True
+                )
+                imported.append(src)
+            except Exception as e:
+                logger.error(f"Error importando {name}: {e}")
+                errors.append(f"{name}: {str(e)}")
+    return JSONResponse({
+        "status": "imported",
+        "imported_count": len(imported),
+        "errors": errors
+    })
 
 
 # ---------------------------------------------------------------------------

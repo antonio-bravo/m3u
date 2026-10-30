@@ -6,7 +6,7 @@ import httpx
 
 logger = logging.getLogger("m3u_stream_proxy.github")
 
-GITHUB_URL_REGEX = re.compile(r'github\.com/([^/]+)/([^/]+)(?:/(?:tree|blob)/([^/]+)(?:/(.*))?)?', re.IGNORECASE)
+GITHUB_URL_REGEX = re.compile(r'github\.com/([^/]+)/([^/]+)(?:/(?:tree|blob|raw)/([^/]+)(?:/(.*))?)?', re.IGNORECASE)
 RAW_GITHUB_REGEX = re.compile(r'raw\.githubusercontent\.com/([^/]+)/([^/]+)/([^/]+)/(.*)', re.IGNORECASE)
 
 
@@ -25,15 +25,24 @@ def normalize_github_url(url: str) -> str:
     """
     Si se introduce una URL de visualización en GitHub como:
     https://github.com/owner/repo/blob/main/path/to/file.m3u
+    o https://github.com/owner/repo/raw/main/path/to/file.m3u
+    o https://github.com/owner/repo/blob/refs/heads/main/path/to/file.m3u
     La convierte a su enlace crudo directo:
     https://raw.githubusercontent.com/owner/repo/main/path/to/file.m3u
     """
     m = GITHUB_URL_REGEX.search(url)
-    if m and "/blob/" in url:
+    if m and any(part in url.lower() for part in ("/blob/", "/raw/")):
         owner = m.group(1)
         repo = m.group(2).removesuffix(".git")
         branch = m.group(3) or "main"
         path = m.group(4) or ""
+        if branch.startswith("refs/heads/"):
+            branch = branch.removeprefix("refs/heads/")
+        elif branch == "refs" and path.startswith("heads/"):
+            parts = path.split("/", 2)
+            if len(parts) >= 2:
+                branch = parts[1]
+                path = parts[2] if len(parts) > 2 else ""
         return f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}"
     return url
 

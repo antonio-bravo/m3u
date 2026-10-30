@@ -311,6 +311,8 @@
             display: flex;
             align-items: center;
             gap: 1rem;
+            min-width: 0;
+            flex: 1;
         }
 
         .channel-logo-lg {
@@ -322,12 +324,30 @@
             padding: 4px;
             object-fit: contain;
             box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            flex-shrink: 0;
+        }
+
+        .channel-title-box {
+            min-width: 0;
+            flex: 1;
+            overflow: hidden;
+            cursor: default;
         }
 
         .channel-title-box h2 {
             font-size: 1.25rem;
             font-weight: 700;
             margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+        }
+
+        .channel-title-box.is-scrolling h2 {
+            text-overflow: clip;
+            display: inline-block;
+            animation: scroll-text-anim var(--scroll-duration, 5s) ease-in-out infinite;
         }
 
         .tags-row {
@@ -597,6 +617,7 @@
         .channel-card-info {
             flex: 1;
             min-width: 0;
+            overflow: hidden;
         }
 
         .channel-card-name {
@@ -606,6 +627,26 @@
             overflow: hidden;
             text-overflow: ellipsis;
             color: var(--text-main);
+            display: block;
+            transform: translateX(0);
+        }
+
+        .channel-card.is-scrolling .channel-card-name {
+            text-overflow: clip;
+            display: inline-block;
+            animation: scroll-text-anim var(--scroll-duration, 5s) ease-in-out infinite;
+        }
+
+        @keyframes scroll-text-anim {
+            0%, 20% {
+                transform: translateX(0);
+            }
+            60%, 80% {
+                transform: translateX(var(--scroll-dist, 0px));
+            }
+            95%, 100% {
+                transform: translateX(0);
+            }
         }
 
         .channel-card-meta {
@@ -910,7 +951,7 @@
             <!-- Información del canal seleccionado -->
             <div class="channel-info-bar">
                 <div class="channel-left">
-                    <img id="current-logo" class="channel-logo-lg" src="" alt="Logo" onerror="this.src=FALLBACK_SVG">
+                    <img id="current-logo" class="channel-logo-lg" src="" alt="Logo" onerror="this.onerror=null;this.src=FALLBACK_SVG;">
                     <div class="channel-title-box">
                         <h2 id="current-name">Selecciona un canal</h2>
                         <div class="tags-row">
@@ -1165,7 +1206,7 @@
     </div>
 
     <script>
-        const FALLBACK_SVG = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="%2394a3b8" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>';
+        const FALLBACK_SVG = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5NGEzYjgiIHN0cm9rZS13aWR0aD0iMiI+PHJlY3QgeD0iMiIgeT0iNyIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE1IiByeD0iMiIvPjxwb2x5bGluZSBwb2ludHM9IjE3IDIgMTIgNyA3IDIiLz48L3N2Zz4=';
 
         // Estado Global
         let hls = null;
@@ -1191,6 +1232,7 @@
         window.addEventListener("DOMContentLoaded", async () => {
             initAudioBoost();
             setupHlsAutoRecovery();
+            initMarqueeListeners();
             await loadSettings();
             await loadSourcesAndFilters();
             await fetchChannels();
@@ -1338,9 +1380,14 @@
         }
 
         function updateChannelUI(ch) {
-            document.getElementById("current-name").textContent = ch.name;
+            const currentNameEl = document.getElementById("current-name");
+            currentNameEl.textContent = ch.name;
+            currentNameEl.title = ch.name;
             document.getElementById("current-group").textContent = ch.group || "General";
             document.getElementById("current-source").textContent = ch.source_name || "M3U";
+
+            const titleBox = document.querySelector(".channel-title-box");
+            if (titleBox) stopTitleMarquee(titleBox);
             
             const logoEl = document.getElementById("current-logo");
             logoEl.src = ch.tvg_logo || FALLBACK_SVG;
@@ -1510,12 +1557,13 @@
                 const isAce = !!ch.acestream_id;
                 const typeTag = isAce ? `<span class="card-type-tag tag-ace">ACE</span>` : `<span class="card-type-tag tag-hls">HLS</span>`;
                 const starClass = ch.is_favorite ? "active" : "";
+                const logoSrc = ch.tvg_logo ? escapeHtml(ch.tvg_logo) : FALLBACK_SVG;
 
                 html += `
-                    <div class="channel-card ${isCurrent ? 'active' : ''}" data-id="${ch.id}" onclick="onChannelCardClick('${ch.id}')">
-                        <img class="channel-card-logo" src="${ch.tvg_logo || FALLBACK_SVG}" onerror="this.src=FALLBACK_SVG" alt="Logo">
+                    <div class="channel-card ${isCurrent ? 'active' : ''}" data-id="${ch.id}" onclick="onChannelCardClick('${ch.id}')" title="${escapeHtml(ch.name)}">
+                        <img class="channel-card-logo" src="${logoSrc}" onerror="this.onerror=null;this.src=FALLBACK_SVG;" alt="Logo">
                         <div class="channel-card-info">
-                            <div class="channel-card-name">${escapeHtml(ch.name)}</div>
+                            <div class="channel-card-name" title="${escapeHtml(ch.name)}">${escapeHtml(ch.name)}</div>
                             <div class="channel-card-meta">
                                 ${typeTag}
                                 <span>${escapeHtml(ch.group || "General")}</span>
@@ -1780,7 +1828,11 @@
                 });
 
                 const result = await res.json();
-                showToast(`¡${result.imported_count} listas añadidas con éxito!`);
+                if (result.errors && result.errors.length > 0) {
+                    showToast(`Importadas ${result.imported_count} listas. Hubo ${result.errors.length} avisos.`);
+                } else {
+                    showToast(`¡${result.imported_count} listas añadidas con éxito!`);
+                }
                 closeModals();
                 await loadSourcesAndFilters();
                 await fetchChannels();
@@ -1828,17 +1880,20 @@
                 let html = "";
                 for (const s of sources) {
                     const statusColor = s.status === 'ok' ? 'var(--success)' : (s.status === 'syncing' ? 'var(--warning)' : 'var(--danger)');
+                    const statusText = s.status === 'ok' ? 'Activa' : (s.status === 'syncing' ? 'Sincronizando...' : 'Error');
                     html += `
-                        <div style="background:var(--bg-card); border:1px solid var(--border); padding:10px 14px; border-radius:var(--radius-sm); display:flex; align-items:center; justify-content:space-between; gap:10px;">
+                        <div style="background:var(--bg-card); border:1px solid ${s.status === 'error' ? 'rgba(239, 68, 68, 0.4)' : 'var(--border)'}; padding:10px 14px; border-radius:var(--radius-sm); display:flex; align-items:center; justify-content:space-between; gap:10px;">
                             <div style="flex:1; min-width:0;">
                                 <div style="font-weight:600; font-size:0.88rem; display:flex; align-items:center; gap:6px;">
                                     <span style="width:8px; height:8px; border-radius:50%; background:${statusColor};"></span>
                                     ${escapeHtml(s.name)}
+                                    <span style="font-size:0.7rem; color:${statusColor}; font-weight:700;">[${statusText}]</span>
                                 </div>
-                                <div style="font-size:0.72rem; color:var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${escapeHtml(s.url_or_path)}</div>
+                                <div style="font-size:0.72rem; color:var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${escapeHtml(s.url_or_path)}">${escapeHtml(s.url_or_path)}</div>
                                 <div style="font-size:0.72rem; color:var(--text-muted); margin-top:2px;">
                                     ${s.channel_count} canales • Tipo: ${s.type.toUpperCase()}
                                 </div>
+                                ${s.error_message ? `<div style="font-size:0.72rem; color:var(--danger); margin-top:3px; word-break:break-all;">⚠️ ${escapeHtml(s.error_message)}</div>` : ''}
                             </div>
                             <div style="display:flex; align-items:center; gap:6px;">
                                 <button class="btn" style="padding:4px 8px; font-size:0.75rem;" onclick="syncSource('${s.id}')">🔄 Sync</button>
@@ -1888,22 +1943,37 @@
 
         async function toggleLocalPlaylist(id, name, pathEncoded, isAdded) {
             const path = decodeURIComponent(pathEncoded);
-            if (isAdded) {
-                await fetch(`/api/sources/${id}`, { method: "DELETE" });
-                showToast(`Lista '${name}' desactivada`);
-            } else {
-                await fetch("/api/sources", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({
-                        name: name,
-                        type: "local",
-                        url_or_path: path
-                    })
-                });
-                showToast(`Lista local '${name}' activada y cargando canales`);
+            try {
+                if (isAdded) {
+                    await fetch(`/api/sources/${id}`, { method: "DELETE" });
+                    showToast(`Lista '${name}' desactivada y eliminada`);
+                } else {
+                    const res = await fetch("/api/sources", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                            name: name,
+                            type: "local",
+                            url_or_path: path
+                        })
+                    });
+                    if (res.ok) {
+                        const data = await res.json();
+                        if (data.status === 'error') {
+                            showToast(`Aviso al cargar lista: ${data.error_message}`);
+                        } else {
+                            showToast(`Lista local '${name}' activada (${data.channel_count} canales)`);
+                        }
+                    } else {
+                        const err = await res.json().catch(() => ({}));
+                        showToast(err.detail || `Error al activar la lista '${name}'`);
+                    }
+                }
+            } catch (e) {
+                showToast("Error de conexión al activar lista local");
             }
             await renderLocalPlaylists();
+            await renderActiveSources();
             await loadSourcesAndFilters();
             await fetchChannels();
         }
@@ -1927,6 +1997,7 @@
             if (!confirm("¿Eliminar esta fuente M3U?")) return;
             await fetch(`/api/sources/${id}`, { method: "DELETE" });
             renderActiveSources();
+            renderLocalPlaylists();
             await loadSourcesAndFilters();
             await fetchChannels();
         }
@@ -1950,17 +2021,23 @@
                     })
                 });
                 if (res.ok) {
-                    showToast("Fuente añadida y sincronizándose");
+                    const data = await res.json();
+                    if (data.status === 'error') {
+                        showToast(`Fuente guardada pero con error: ${data.error_message || 'Fallo al sincronizar'}`);
+                    } else {
+                        showToast("Fuente añadida y sincronizada");
+                    }
                     document.getElementById("new-source-name").value = "";
                     document.getElementById("new-source-url").value = "";
                     switchSourcesTab('active');
                     await loadSourcesAndFilters();
                     await fetchChannels();
                 } else {
-                    showToast("Error añadiendo la fuente");
+                    const err = await res.json().catch(() => ({}));
+                    showToast(err.detail || "Error añadiendo la fuente");
                 }
             } catch (e) {
-                showToast("Error de conexión");
+                showToast("Error de conexión con el servidor");
             }
         }
 
@@ -2083,6 +2160,87 @@
                 navigator.clipboard.writeText(text);
                 showToast("Copiado al portapapeles");
             }
+        }
+
+        // --------------------------------------------------------------------
+        // Auto-scroll / Marquee dinámico para títulos largos
+        // --------------------------------------------------------------------
+        function initMarqueeListeners() {
+            const listEl = document.getElementById("channel-list");
+            if (listEl) {
+                listEl.addEventListener("mouseover", (e) => {
+                    const card = e.target.closest(".channel-card");
+                    if (!card || card.contains(e.relatedTarget)) return;
+                    startCardMarquee(card);
+                });
+
+                listEl.addEventListener("mouseout", (e) => {
+                    const card = e.target.closest(".channel-card");
+                    if (!card || card.contains(e.relatedTarget)) return;
+                    stopCardMarquee(card);
+                });
+
+                listEl.addEventListener("focusin", (e) => {
+                    const card = e.target.closest(".channel-card");
+                    if (card) startCardMarquee(card);
+                });
+
+                listEl.addEventListener("focusout", (e) => {
+                    const card = e.target.closest(".channel-card");
+                    if (card) stopCardMarquee(card);
+                });
+            }
+
+            const titleBox = document.querySelector(".channel-title-box");
+            if (titleBox) {
+                titleBox.addEventListener("mouseover", (e) => {
+                    if (titleBox.contains(e.relatedTarget)) return;
+                    startTitleMarquee(titleBox);
+                });
+
+                titleBox.addEventListener("mouseout", (e) => {
+                    if (titleBox.contains(e.relatedTarget)) return;
+                    stopTitleMarquee(titleBox);
+                });
+            }
+        }
+
+        function startCardMarquee(card) {
+            const nameEl = card.querySelector(".channel-card-name");
+            if (!nameEl) return;
+            const overflow = nameEl.scrollWidth - nameEl.clientWidth;
+            if (overflow > 4) {
+                const scrollDist = -(overflow + 10);
+                const duration = Math.max(3.0, (overflow / 35) + 1.2);
+                card.style.setProperty("--scroll-dist", `${scrollDist}px`);
+                card.style.setProperty("--scroll-duration", `${duration.toFixed(2)}s`);
+                card.classList.add("is-scrolling");
+            }
+        }
+
+        function stopCardMarquee(card) {
+            card.classList.remove("is-scrolling");
+            card.style.removeProperty("--scroll-dist");
+            card.style.removeProperty("--scroll-duration");
+        }
+
+        function startTitleMarquee(box) {
+            const nameEl = document.getElementById("current-name");
+            if (!nameEl) return;
+            const overflow = nameEl.scrollWidth - nameEl.clientWidth;
+            if (overflow > 6) {
+                const scrollDist = -(overflow + 14);
+                const duration = Math.max(3.5, (overflow / 40) + 1.5);
+                box.style.setProperty("--scroll-dist", `${scrollDist}px`);
+                box.style.setProperty("--scroll-duration", `${duration.toFixed(2)}s`);
+                box.classList.add("is-scrolling");
+            }
+        }
+
+        function stopTitleMarquee(box) {
+            box.classList.remove("is-scrolling");
+            box.style.removeProperty("--scroll-dist");
+            box.style.removeProperty("--scroll-duration");
         }
 
         function escapeHtml(str) {

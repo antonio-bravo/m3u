@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import time
 import glob
@@ -125,17 +126,19 @@ class PlaylistManager:
         ]
 
         seen_paths = set()
+        seen_filenames = set()
         for d in search_dirs:
             if not os.path.exists(d):
                 continue
             for pattern in ["*.m3u", "*.m3u8"]:
                 for filepath in glob.glob(os.path.join(d, pattern)):
                     norm_path = os.path.realpath(filepath)
-                    if norm_path in seen_paths:
+                    filename = os.path.basename(norm_path)
+                    if norm_path in seen_paths or filename in seen_filenames:
                         continue
                     seen_paths.add(norm_path)
+                    seen_filenames.add(filename)
 
-                    filename = os.path.basename(norm_path)
                     # Omitir archivos temporales o de backup
                     if filename.startswith(".") or "test" in filename.lower():
                         continue
@@ -145,9 +148,20 @@ class PlaylistManager:
                     except OSError:
                         size = 0
 
-                    source_id = f"local_{filename.replace('.', '_').replace('-', '_')}"
-                    is_added = source_id in self.sources
-                    is_enabled = self.sources[source_id].get("enabled", True) if is_added else False
+                    # Comprobar si ya está dada de alta en sources
+                    matched_sid = None
+                    is_enabled = False
+                    for sid, s in self.sources.items():
+                        if s.get("type") == "local":
+                            s_path = s.get("url_or_path", "")
+                            if s_path == norm_path or os.path.basename(s_path) == filename:
+                                matched_sid = sid
+                                is_enabled = s.get("enabled", True)
+                                break
+
+                    clean_filename = re.sub(r'[^a-zA-Z0-9_]', '_', filename.lower())
+                    source_id = matched_sid or f"local_{clean_filename}"
+                    is_added = matched_sid is not None
 
                     discovered.append({
                         "id": source_id,
@@ -179,24 +193,45 @@ class PlaylistManager:
             if source_type in ("github", "url"):
                 url_or_path = normalize_github_url(url_or_path.strip())
 
-            # Generar ID limpio
-            clean_name = re.sub(r'[^a-zA-Z0-9_]', '_', name.lower())
-            source_id = f"src_{clean_name}_{int(time.time())}"
+            # Comprobar si ya existe una fuente con la misma ruta o URL para evitar duplicados
+            existing_id = None
+            for sid, s in self.sources.items():
+                if s.get("url_or_path") == url_or_path:
+                    existing_id = sid
+                    break
+                if source_type == "local" and os.path.basename(s.get("url_or_path", "")) == os.path.basename(url_or_path):
+                    existing_id = sid
+                    break
 
-            source_entry = {
-                "id": source_id,
-                "name": name,
-                "type": source_type, # 'github', 'url', 'local'
-                "url_or_path": url_or_path,
-                "enabled": enabled,
-                "auto_sync": auto_sync,
-                "channel_count": 0,
-                "last_synced": None,
-                "status": "pending",
-                "error_message": ""
-            }
+            if existing_id:
+                source_id = existing_id
+                source_entry = self.sources[source_id]
+                source_entry["name"] = name
+                source_entry["type"] = source_type
+                source_entry["enabled"] = enabled
+                source_entry["url_or_path"] = url_or_path
+            else:
+                if source_type == "local":
+                    clean_name = re.sub(r'[^a-zA-Z0-9_]', '_', os.path.basename(url_or_path).lower())
+                    source_id = f"local_{clean_name}"
+                else:
+                    clean_name = re.sub(r'[^a-zA-Z0-9_]', '_', name.lower())
+                    source_id = f"src_{clean_name}_{int(time.time())}"
 
-            self.sources[source_id] = source_entry
+                source_entry = {
+                    "id": source_id,
+                    "name": name,
+                    "type": source_type, # 'github', 'url', 'local'
+                    "url_or_path": url_or_path,
+                    "enabled": enabled,
+                    "auto_sync": auto_sync,
+                    "channel_count": 0,
+                    "last_synced": None,
+                    "status": "pending",
+                    "error_message": ""
+                }
+                self.sources[source_id] = source_entry
+
             self.save_sources()
 
         if enabled:
@@ -232,10 +267,23 @@ class PlaylistManager:
     async def remove_source(self, source_id: str):
         """Elimina una fuente y sus canales."""
         async with self._lock:
+            target_sid = None
             if source_id in self.sources:
-                del self.sources[source_id]
+                target_sid = source_id
+            else:
+                # Búsqueda de coincidencia alternativa para listas locales
+                for sid, s in self.sources.items():
+                    if s.get("type") == "local":
+                        s_fname = os.path.basename(s.get("url_or_path", ""))
+                        clean_fname = f"local_{re.sub(r'[^a-zA-Z0-9_]', '_', s_fname.lower())}"
+                        if sid == clean_fname or clean_fname == source_id:
+                            target_sid = sid
+                            break
+
+            if target_sid and target_sid in self.sources:
+                del self.sources[target_sid]
                 self.save_sources()
-            self._unload_source_channels(source_id)
+                self._unload_source_channels(target_sid)
 
     def _unload_source_channels(self, source_id: str):
         """Descarga de la memoria los canales de una fuente específica."""
@@ -253,18 +301,36 @@ class PlaylistManager:
 
         source = self.sources[source_id]
         source_type = source.get("type", "url")
-        url_or_path = source.get("url_or_path", "")
+        url_or_path = source.get("url_or_path", "").strip()
+
+        # Detección automática si es archivo local o URL remota
+        is_local = source_type == "local" or url_or_path.startswith("/") or not url_or_path.startswith("http")
 
         source["status"] = "syncing"
         logger.info(f"Sincronizando fuente '{source['name']}' ({source_type}: {url_or_path})...")
 
         try:
             channels = []
-            if source_type == "local":
+            if is_local:
                 # Leer archivo local directamente
-                if not os.path.exists(url_or_path):
+                resolved_path = url_or_path
+                if not os.path.exists(resolved_path):
+                    filename = os.path.basename(url_or_path)
+                    candidates = [
+                        os.path.join(self.local_playlists_dir, filename),
+                        os.path.join("/app/local_playlists", filename),
+                        os.path.abspath(os.path.join(os.path.dirname(__file__), "..", filename)),
+                        os.path.abspath(filename),
+                    ]
+                    for cand in candidates:
+                        if os.path.exists(cand):
+                            resolved_path = cand
+                            break
+
+                if not os.path.exists(resolved_path):
                     raise FileNotFoundError(f"Archivo local no existe: {url_or_path}")
-                channels = parse_m3u_file(url_or_path, source_id=source_id)
+
+                channels = parse_m3u_file(resolved_path, source_id=source_id)
             else:
                 # Descargar por HTTP
                 headers = {
@@ -424,5 +490,5 @@ class PlaylistManager:
                 "status": s.get("status", "ok"),
                 "error_message": s.get("error_message", "")
             })
-        summary.sort(key=lambda x: x["name"].lower())
+        summary.sort(key=lambda x: (x.get("name") or "").lower())
         return summary

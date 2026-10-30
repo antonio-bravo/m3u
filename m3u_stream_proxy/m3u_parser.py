@@ -59,6 +59,21 @@ def detect_stream_type(url: str, acestream_id: Optional[str] = None) -> str:
         return "direct"
 
 
+def split_extinf_line(line: str) -> Tuple[str, str]:
+    """
+    Separa los metadatos y el título de una línea #EXTINF:
+    El separador oficial es la primera coma que NO esté dentro de comillas dobles.
+    """
+    content = line[8:].strip()
+    in_quotes = False
+    for i, char in enumerate(content):
+        if char == '"':
+            in_quotes = not in_quotes
+        elif char == ',' and not in_quotes:
+            return content[:i].strip(), content[i + 1:].strip()
+    return content, ""
+
+
 def parse_m3u_lines(lines: Generator[str, None, None], source_id: str = "") -> Generator[Dict, None, None]:
     """
     Parsea líneas de un archivo M3U/M3U8 de forma eficiente y en streaming.
@@ -86,16 +101,9 @@ def parse_m3u_lines(lines: Generator[str, None, None], source_id: str = "") -> G
                 "stream_type": "direct"
             }
 
-            # Separar atributos del título (el título va tras la última coma)
-            # Ejemplo: #EXTINF:-1 tvg-id="123" group-title="Deportes", Nombre Canal
-            comma_idx = line.rfind(",")
-            if comma_idx != -1:
-                title_part = line[comma_idx + 1:].strip()
-                meta_part = line[8:comma_idx].strip()
-                if title_part:
-                    current_channel["name"] = title_part
-            else:
-                meta_part = line[8:].strip()
+            meta_part, title_part = split_extinf_line(line)
+            if title_part:
+                current_channel["name"] = title_part
 
             # Extraer atributos clave="valor"
             attrs = ATTR_REGEX.findall(meta_part)
@@ -107,12 +115,18 @@ def parse_m3u_lines(lines: Generator[str, None, None], source_id: str = "") -> G
                     current_channel["tvg_name"] = val
                 elif k_lower == "tvg-logo":
                     current_channel["tvg_logo"] = val
-                elif k_lower == "group-title":
+                elif k_lower in ("group-title", "tvg-group", "group"):
                     current_channel["group"] = val.strip() or "General"
 
             # Si el nombre sigue vacío pero hay tvg-name, usarlo
             if (not current_channel["name"] or current_channel["name"] == "Canal Desconocido") and current_channel["tvg_name"]:
                 current_channel["name"] = current_channel["tvg_name"]
+
+        elif line.startswith("#EXTGRP:"):
+            if current_channel is not None:
+                grp = line[8:].strip()
+                if grp:
+                    current_channel["group"] = grp
 
         elif line.startswith("#"):
             # Otras directivas M3U (#EXTM3U, #EXTVLCOPT, etc.)
