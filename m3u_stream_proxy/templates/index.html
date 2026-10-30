@@ -1056,6 +1056,7 @@
         </div>
 
         <div class="header-actions">
+            <button class="btn btn-ace" onclick="openDirectPlayModal()" title="Pegar y reproducir un AceStream ID o URL directa">⚡ Pegar AceStream ID</button>
             <button class="btn btn-primary" onclick="openGithubModal()">🐙 Escanear GitHub</button>
             <button class="btn" onclick="openSourcesModal()">📂 Fuentes M3U</button>
             <button class="btn" onclick="openSettingsModal()">⚙️ Ajustes & AceStream</button>
@@ -1121,8 +1122,11 @@
                     <button class="mode-btn" id="prof-balanced" onclick="setBufferProfile('balanced')">⚡ Equilibrado (12s)</button>
                     <button class="mode-btn" id="prof-low" onclick="setBufferProfile('low')">🚀 Baja Latencia (4s)</button>
                 </div>
-                <div style="font-size:0.76rem; color:var(--text-muted);">
-                    Motor AceStream: <span id="engine-status-text" style="color:var(--ace-color); font-weight:600;">Comprobando...</span>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="font-size:0.76rem; color:var(--text-muted);">Motor:</span>
+                    <select id="header-engine-select" class="custom-select" style="padding:2px 8px; font-size:0.75rem; height:26px; border-radius:4px; max-width:200px;" onchange="switchAceStreamServer(this.value)" title="Cambiar servidor AceStream (Sin VPN / Con VPN)">
+                    </select>
+                    <span id="engine-status-text" style="color:var(--ace-color); font-weight:600; font-size:0.76rem;">Comprobando...</span>
                 </div>
             </div>
         </section>
@@ -1285,21 +1289,46 @@
         </div>
     </div>
 
-    <!-- Modal 3: Ajustes & AceStream -->
+    <!-- Modal 3: Ajustes & AceStream Multi-Servidor -->
     <div id="settings-modal" class="modal-backdrop">
-        <div class="modal-content">
+        <div class="modal-content" style="max-width: 620px;">
             <div class="modal-header">
-                <div class="modal-title">⚙️ Ajustes & Configuración AceStream</div>
+                <div class="modal-title">⚙️ Ajustes & Servidores AceStream</div>
                 <button class="modal-close" onclick="closeModals()">✕</button>
             </div>
             <div class="modal-body">
-                <div class="form-group">
-                    <label class="form-label">URL del Motor AceStream (HTTP Engine)</label>
-                    <div style="display:flex; gap:0.5rem;">
-                        <input type="text" id="settings-ace-url" class="form-input" style="flex:1;" placeholder="http://host.docker.internal:6878 o http://127.0.0.1:6878">
-                        <button class="btn btn-ace" onclick="testAceStreamConnection()">🔌 Probar</button>
+                <!-- SECCIÓN SERVIDORES ACESTREAM -->
+                <div style="background: rgba(6, 182, 212, 0.08); border: 1px solid rgba(6, 182, 212, 0.25); border-radius: 8px; padding: 1rem; margin-bottom: 1.25rem;">
+                    <div style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem; display: flex; align-items: center; justify-content: space-between;">
+                        <span>📡 Servidores AceStream (Sin VPN / Con VPN)</span>
+                        <button class="btn btn-ace" style="padding: 3px 8px; font-size: 0.72rem;" onclick="refreshAceServersList()">🔄 Comprobar Estado</button>
                     </div>
-                    <span id="ace-test-result" style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;"></span>
+                    <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+                        Configura un servidor sin VPN (para máxima velocidad) y otro con VPN (para saltar bloqueos de operadores). Puedes alternar entre ellos con un solo clic:
+                    </p>
+
+                    <!-- Lista dinámica de servidores -->
+                    <div id="settings-ace-servers-list" style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem;">
+                        <!-- Generado por JS -->
+                    </div>
+
+                    <!-- Formulario para añadir servidor -->
+                    <div style="background: rgba(0,0,0,0.25); border: 1px dashed rgba(255,255,255,0.15); border-radius: 6px; padding: 0.75rem;">
+                        <div style="font-size: 0.78rem; font-weight: 600; margin-bottom: 0.4rem; color: #a5f3fc;">➕ Añadir Nuevo Servidor AceStream</div>
+                        <div style="display: grid; grid-template-columns: 1fr 1.6fr auto; gap: 0.5rem; align-items: center;">
+                            <input type="text" id="new-srv-name" class="form-input" placeholder="Nombre (ej: Con VPN)">
+                            <input type="text" id="new-srv-url" class="form-input" placeholder="URL (ej: http://192.168.1.150:6878)">
+                            <button class="btn btn-ace" style="padding: 6px 12px; font-size: 0.78rem;" onclick="addNewAceServer()">Añadir</button>
+                        </div>
+                    </div>
+
+                    <!-- Failover automático -->
+                    <div style="margin-top: 0.75rem;">
+                        <label style="display:flex; align-items:center; gap:8px; font-size:0.78rem; cursor:pointer; color:var(--text-main);">
+                            <input type="checkbox" id="settings-auto-failover" checked style="accent-color:var(--primary); cursor:pointer;">
+                            <span>🔄 <b>Conmutación automática (Failover):</b> Si el servidor seleccionado falla o está bloqueado, intentar automáticamente con el servidor alternativo</span>
+                        </label>
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -1394,6 +1423,50 @@
         </div>
     </div>
 
+    <!-- Modal 5: Pegar y Reproducir AceStream ID o Stream Directo -->
+    <div id="direct-play-modal" class="modal-backdrop">
+        <div class="modal-content" style="max-width: 560px;">
+            <div class="modal-header">
+                <div class="modal-title">⚡ Reproducir AceStream ID / Stream Directo</div>
+                <button class="modal-close" onclick="closeModals()">✕</button>
+            </div>
+            <div class="modal-body">
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.85rem;">
+                    Pega un <b>AceStream ID</b> (hash de 40 dígitos), un enlace <code>acestream://...</code> o una URL directa <code>.m3u8</code> para reproducirla inmediatamente en el proxy:
+                </p>
+
+                <div class="form-group">
+                    <label class="form-label">AceStream ID o Enlace:</label>
+                    <textarea id="direct-stream-input" class="form-input" rows="2" placeholder="Ej: 7f9857c45764ef2c7cdfb619b89db3056a57a51f&#10;o acestream://... o https://.../stream.m3u8" style="font-family: monospace; font-size: 0.82rem;" oninput="onDirectInputChange(this.value)"></textarea>
+                    <div id="direct-stream-detected-badge" style="display:none; font-size:0.75rem; color:#22d3ee; margin-top:4px; font-weight:600;"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Servidor AceStream a utilizar:</label>
+                    <select id="direct-server-select" class="form-input" style="font-size:0.85rem;">
+                        <!-- Se llena dinámicamente con las opciones Sin VPN / Con VPN -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Nombre del Canal / Evento (opcional):</label>
+                    <input type="text" id="direct-name-input" class="form-input" placeholder="Ej: F1 en Directo, Champions League, etc.">
+                </div>
+
+                <div style="margin-top: 0.5rem; background: rgba(255,255,255,0.03); padding: 0.6rem 0.75rem; border-radius: 6px; border: 1px solid var(--border);">
+                    <label style="display:flex; align-items:center; gap:8px; font-size:0.82rem; cursor:pointer; color:var(--text-main);">
+                        <input type="checkbox" id="direct-save-fav" checked style="accent-color:var(--primary); cursor:pointer;">
+                        <span>⭐ Guardar en favoritos para poder volver a reproducirlo cuando quieras</span>
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModals()">Cancelar</button>
+                <button class="btn btn-primary" onclick="submitDirectPlay()">▶️ Reproducir Ahora</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Toast de Notificaciones -->
     <div id="toast" class="toast">
         <span id="toast-msg">Mensaje</span>
@@ -1429,6 +1502,7 @@
             initAudioBoost();
             setupHlsAutoRecovery();
             await loadSettings();
+            await loadAceServers();
             await loadSourcesAndFilters();
             await fetchChannels();
             checkEngineHealth();
@@ -1494,7 +1568,8 @@
             if (channel.acestream_id) {
                 // Modo AceStream
                 // Se solicita el manifiesto HLS proxificado generado por el motor AceStream
-                streamUrl = `${base}/ace/manifest/${channel.acestream_id}.m3u8`;
+                const serverParam = channel.acestream_server_id ? `?server_id=${encodeURIComponent(channel.acestream_server_id)}` : '';
+                streamUrl = `${base}/ace/manifest/${channel.acestream_id}.m3u8${serverParam}`;
                 document.getElementById("open-ace-btn").style.display = "inline-flex";
             } else if (channel.stream_type === "hls") {
                 // Modo HLS estándar -> usar CORS Proxy inteligente
@@ -2301,11 +2376,14 @@
         // --------------------------------------------------------------------
         async function openSettingsModal() {
             document.getElementById("settings-modal").classList.add("active");
-            document.getElementById("settings-ace-url").value = appSettings.acestream_engine_url || "http://host.docker.internal:6878";
             document.getElementById("settings-offset").value = appSettings.buffer_offset_seconds || 16;
             document.getElementById("settings-sync-hours").value = appSettings.auto_sync_hours || 6;
             document.getElementById("settings-gh-token").value = appSettings.github_token || "";
-            document.getElementById("ace-test-result").textContent = "";
+            const failoverEl = document.getElementById("settings-auto-failover");
+            if (failoverEl) {
+                failoverEl.checked = appSettings.auto_failover_acestream !== false;
+            }
+            await refreshAceServersList();
         }
 
         async function loadSettings() {
@@ -2318,11 +2396,12 @@
         }
 
         async function saveSettings() {
+            const failoverEl = document.getElementById("settings-auto-failover");
             const updated = {
-                acestream_engine_url: document.getElementById("settings-ace-url").value.trim(),
                 buffer_offset_seconds: parseFloat(document.getElementById("settings-offset").value) || 16.0,
                 auto_sync_hours: parseInt(document.getElementById("settings-sync-hours").value) || 6,
-                github_token: document.getElementById("settings-gh-token").value.trim()
+                github_token: document.getElementById("settings-gh-token").value.trim(),
+                auto_failover_acestream: failoverEl ? failoverEl.checked : true
             };
 
             try {
@@ -2334,47 +2413,278 @@
                 appSettings = await res.json();
                 showToast("Ajustes guardados correctamente");
                 closeModals();
-                checkEngineHealth();
+                await loadAceServers();
             } catch (e) {
                 showToast("Error guardando ajustes");
             }
         }
 
-        async function testAceStreamConnection() {
-            const lbl = document.getElementById("ace-test-result");
-            lbl.style.color = "var(--text-muted)";
-            lbl.textContent = "⏳ Conectando con el motor AceStream...";
+        // --------------------------------------------------------------------
+        // Gestión Multi-Servidor AceStream (Sin VPN / Con VPN)
+        // --------------------------------------------------------------------
+        let aceServers = [];
+        let activeAceServerId = "direct";
 
+        async function loadAceServers() {
             try {
-                const res = await fetch("/api/acestream/check");
+                const res = await fetch("/api/acestream/servers");
+                if (!res.ok) return;
                 const data = await res.json();
-                if (data.online) {
-                    lbl.style.color = "var(--success)";
-                    lbl.textContent = `✅ ${data.message}`;
-                } else {
-                    lbl.style.color = "var(--danger)";
-                    lbl.textContent = `❌ ${data.message}`;
+                aceServers = data.servers || [];
+                activeAceServerId = data.active_server_id || "direct";
+
+                // 1. Selector rápido en la barra del reproductor
+                const headerSelect = document.getElementById("header-engine-select");
+                if (headerSelect) {
+                    headerSelect.innerHTML = aceServers.map(s => {
+                        const statusIcon = s.online ? `⚡ ${s.latency_ms}ms` : `❌ Off`;
+                        return `<option value="${s.id}" ${s.id === activeAceServerId ? 'selected' : ''}>${escapeHtml(s.name)} [${statusIcon}]</option>`;
+                    }).join("");
+                }
+
+                // 2. Selector en el modal de Direct Play
+                const directSelect = document.getElementById("direct-server-select");
+                if (directSelect) {
+                    directSelect.innerHTML = aceServers.map(s => {
+                        return `<option value="${s.id}" ${s.id === activeAceServerId ? 'selected' : ''}>${escapeHtml(s.name)} (${s.url})</option>`;
+                    }).join("");
+                }
+
+                // 3. Renderizar lista en Ajustes
+                renderSettingsAceServersList(aceServers, activeAceServerId);
+
+                // 4. Actualizar estado del motor en header
+                const activeSrv = aceServers.find(s => s.id === activeAceServerId) || aceServers[0];
+                const statusEl = document.getElementById("engine-status-text");
+                if (statusEl && activeSrv) {
+                    if (activeSrv.online) {
+                        statusEl.textContent = `En línea (${activeSrv.latency_ms}ms)`;
+                        statusEl.style.color = "var(--success)";
+                    } else {
+                        statusEl.textContent = "Sin conexión";
+                        statusEl.style.color = "var(--danger)";
+                    }
                 }
             } catch (e) {
-                lbl.style.color = "var(--danger)";
-                lbl.textContent = "❌ No se pudo conectar al endpoint de comprobación.";
+                console.warn("Error cargando servidores AceStream:", e);
+            }
+        }
+
+        async function switchAceStreamServer(serverId) {
+            try {
+                showSpinner("Cambiando servidor AceStream...");
+                const res = await fetch("/api/acestream/active", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ server_id: serverId })
+                });
+                hideSpinner();
+                if (res.ok) {
+                    const data = await res.json();
+                    activeAceServerId = serverId;
+                    const sName = data.server ? data.server.name : serverId;
+                    showToast(`Motor AceStream cambiado a: ${sName}`);
+                    await loadAceServers();
+
+                    // Si se estaba reproduciendo un canal AceStream, recargarlo con el nuevo motor
+                    if (currentChannel && currentChannel.acestream_id) {
+                        currentChannel.acestream_server_id = serverId;
+                        playChannel(currentChannel);
+                    }
+                } else {
+                    showToast("Error cambiando de servidor");
+                }
+            } catch (e) {
+                hideSpinner();
+                showToast("Error de conexión al cambiar de servidor");
+            }
+        }
+
+        async function refreshAceServersList() {
+            const listEl = document.getElementById("settings-ace-servers-list");
+            if (listEl) {
+                listEl.innerHTML = `<div style="font-size:0.75rem; color:var(--text-muted); padding:6px;">⏳ Verificando latencia y estado de los servidores...</div>`;
+            }
+            await loadAceServers();
+        }
+
+        function renderSettingsAceServersList(servers, activeId) {
+            const listEl = document.getElementById("settings-ace-servers-list");
+            if (!listEl) return;
+
+            if (!servers || servers.length === 0) {
+                listEl.innerHTML = `<div style="font-size:0.78rem; color:var(--text-muted);">No hay servidores configurados.</div>`;
+                return;
+            }
+
+            let html = "";
+            for (const s of servers) {
+                const isActive = s.id === activeId;
+                const statusColor = s.online ? "var(--success)" : "var(--danger)";
+                const statusText = s.online ? `En línea • ${s.latency_ms}ms` : (s.error || "Sin respuesta");
+
+                html += `
+                    <div style="background:var(--bg-card); border:1px solid ${isActive ? 'var(--primary)' : 'var(--border)'}; border-radius:6px; padding:8px 12px; display:flex; align-items:center; justify-content:space-between; gap:10px;">
+                        <div style="flex:1; min-width:0;">
+                            <div style="font-size:0.85rem; font-weight:600; display:flex; align-items:center; gap:6px;">
+                                <span style="width:8px; height:8px; border-radius:50%; background:${statusColor};"></span>
+                                <span>${escapeHtml(s.name)}</span>
+                                ${isActive ? '<span class="pill pill-ace" style="padding:1px 6px; font-size:0.68rem;">Activo</span>' : ''}
+                            </div>
+                            <div style="font-size:0.73rem; color:var(--text-muted); margin-top:2px; font-family:\'JetBrains Mono\';">${escapeHtml(s.url)}</div>
+                            <div style="font-size:0.7rem; color:${statusColor}; margin-top:2px;">● ${escapeHtml(statusText)}</div>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:6px;">
+                            ${!isActive ? `<button class="btn btn-ace" style="padding:4px 8px; font-size:0.75rem;" onclick="switchAceStreamServer('${s.id}')">Activar</button>` : ''}
+                            ${servers.length > 1 ? `<button class="btn btn-danger" style="padding:4px 8px; font-size:0.75rem;" onclick="deleteAceServer('${s.id}', '${escapeHtml(s.name)}')">🗑️</button>` : ''}
+                        </div>
+                    </div>
+                `;
+            }
+            listEl.innerHTML = html;
+        }
+
+        async function addNewAceServer() {
+            const nameEl = document.getElementById("new-srv-name");
+            const urlEl = document.getElementById("new-srv-url");
+            const name = nameEl.value.trim();
+            const url = urlEl.value.trim();
+
+            if (!name || !url) {
+                showToast("Por favor ingresa un nombre y una URL válida");
+                return;
+            }
+
+            try {
+                const res = await fetch("/api/acestream/servers", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ name, url })
+                });
+                if (res.ok) {
+                    nameEl.value = "";
+                    urlEl.value = "";
+                    showToast(`Servidor "${name}" añadido correctamente`);
+                    await loadAceServers();
+                } else {
+                    const err = await res.json().catch(() => ({}));
+                    showToast(err.detail || "Error al añadir el servidor");
+                }
+            } catch (e) {
+                showToast("Error de conexión al añadir el servidor");
+            }
+        }
+
+        async function deleteAceServer(srvId, name) {
+            if (!confirm(`¿Seguro que deseas eliminar el servidor AceStream "${name}"?`)) {
+                return;
+            }
+
+            try {
+                const res = await fetch(`/api/acestream/servers/${srvId}`, {
+                    method: "DELETE"
+                });
+                if (res.ok) {
+                    showToast(`Servidor "${name}" eliminado`);
+                    await loadAceServers();
+                } else {
+                    const err = await res.json().catch(() => ({}));
+                    showToast(err.detail || "Error al eliminar servidor");
+                }
+            } catch (e) {
+                showToast("Error al conectar con el servidor");
             }
         }
 
         async function checkEngineHealth() {
+            await loadAceServers();
+        }
+
+        // --------------------------------------------------------------------
+        // Reproducción Directa (Pegar AceStream ID o URL)
+        // --------------------------------------------------------------------
+        function openDirectPlayModal() {
+            document.getElementById("direct-stream-input").value = "";
+            document.getElementById("direct-name-input").value = "";
+            document.getElementById("direct-save-fav").checked = true;
+            document.getElementById("direct-stream-detected-badge").style.display = "none";
+            document.getElementById("direct-play-modal").classList.add("active");
+            setTimeout(() => {
+                const inp = document.getElementById("direct-stream-input");
+                if (inp) inp.focus();
+            }, 100);
+        }
+
+        function onDirectInputChange(val) {
+            const raw = val.trim();
+            const badge = document.getElementById("direct-stream-detected-badge");
+            if (!raw) {
+                badge.style.display = "none";
+                return;
+            }
+
+            const hexPattern = /^[a-fA-F0-9]{40,64}$/;
+            if (hexPattern.test(raw)) {
+                badge.textContent = `⚡ AceStream ID detectado (${raw.length} caracteres)`;
+                badge.style.display = "block";
+            } else if (raw.startsWith("acestream://")) {
+                badge.textContent = `⚡ Enlace acestream:// detectado`;
+                badge.style.display = "block";
+            } else if (raw.includes("ace/getstream") || raw.includes("id=")) {
+                badge.textContent = `⚡ AceStream HTTP Stream detectado`;
+                badge.style.display = "block";
+            } else if (raw.toLowerCase().includes(".m3u8")) {
+                badge.textContent = `📺 Stream HLS (.m3u8) detectado`;
+                badge.style.display = "block";
+            } else {
+                badge.textContent = `📺 Stream Directo URL detectado`;
+                badge.style.display = "block";
+            }
+        }
+
+        async function submitDirectPlay() {
+            const input = document.getElementById("direct-stream-input").value.trim();
+            const name = document.getElementById("direct-name-input").value.trim();
+            const serverId = document.getElementById("direct-server-select").value;
+            const saveFav = document.getElementById("direct-save-fav").checked;
+
+            if (!input) {
+                showToast("Por favor pega un AceStream ID o enlace");
+                return;
+            }
+
             try {
-                const res = await fetch("/api/acestream/check");
-                const data = await res.json();
-                const el = document.getElementById("engine-status-text");
-                if (data.online) {
-                    el.textContent = "En línea (6878)";
-                    el.style.color = "var(--success)";
+                showSpinner("Registrando y preparando stream...");
+                const res = await fetch("/api/channels/direct-play", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        identifier: input,
+                        name: name || undefined,
+                        save_favorite: saveFav,
+                        server_id: serverId
+                    })
+                });
+
+                hideSpinner();
+
+                if (res.ok) {
+                    const channel = await res.json();
+                    closeModals();
+                    showToast(`▶️ Reproduciendo: ${channel.name}`);
+                    playChannel(channel);
+
+                    // Si se guardó en favoritos, recargar lista para que aparezca
+                    if (saveFav) {
+                        await fetchChannels();
+                    }
                 } else {
-                    el.textContent = "No conectado";
-                    el.style.color = "var(--text-muted)";
+                    const err = await res.json().catch(() => ({}));
+                    showToast(err.detail || "Error al procesar el enlace");
                 }
             } catch (e) {
-                console.warn(e);
+                hideSpinner();
+                showToast("Error de conexión al iniciar stream directo");
             }
         }
 

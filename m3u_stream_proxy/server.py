@@ -42,7 +42,7 @@ app.add_middleware(
 
 # Instancias principales
 manager = PlaylistManager(data_dir=DATA_DIR, local_playlists_dir=LOCAL_PLAYLISTS_DIR)
-ace_proxy = AceStreamProxy(lambda: manager.settings.get("acestream_engine_url", "http://host.docker.internal:6878"))
+ace_proxy = AceStreamProxy(lambda: manager.settings)
 
 # Ruta al archivo de plantilla HTML
 TEMPLATES_DIR = os.path.join(os.path.dirname(__file__), "templates")
@@ -67,11 +67,31 @@ class GithubImportPayload(BaseModel):
     files: List[Dict]
 
 
+class AceServerPayload(BaseModel):
+    id: Optional[str] = None
+    name: str
+    url: str
+    is_default: bool = False
+
+
+class SetActiveServerPayload(BaseModel):
+    server_id: str
+
+
+class DirectPlayPayload(BaseModel):
+    identifier: str
+    name: Optional[str] = ""
+    save_favorite: bool = False
+    server_id: Optional[str] = None
+
+
 class SettingsPayload(BaseModel):
     acestream_engine_url: str
     buffer_offset_seconds: float = 16.0
     auto_sync_hours: int = 6
     github_token: Optional[str] = ""
+    auto_failover_acestream: Optional[bool] = True
+    active_acestream_server_id: Optional[str] = None
 
 
 # ---------------------------------------------------------------------------
@@ -300,14 +320,132 @@ async def update_settings(payload: SettingsPayload):
     manager.settings["buffer_offset_seconds"] = payload.buffer_offset_seconds
     manager.settings["auto_sync_hours"] = payload.auto_sync_hours
     manager.settings["github_token"] = payload.github_token.strip() if payload.github_token else ""
+    if payload.auto_failover_acestream is not None:
+        manager.settings["auto_failover_acestream"] = payload.auto_failover_acestream
+    if payload.active_acestream_server_id:
+        manager.settings["active_acestream_server_id"] = payload.active_acestream_server_id
     manager.save_settings()
     return JSONResponse(manager.settings)
 
 
 @app.get("/api/acestream/check")
-async def check_acestream_status():
-    result = await ace_proxy.check_engine_health()
+async def check_acestream_status(server_id: Optional[str] = Query(None)):
+    result = await ace_proxy.check_engine_health(server_id=server_id)
     return JSONResponse(result)
+
+
+@app.get("/api/acestream/servers")
+async def get_acestream_servers():
+    """Devuelve todos los servidores AceStream configurados con su estado en vivo."""
+    servers = await ace_proxy.check_all_servers()
+    return JSONResponse({
+        "servers": servers,
+        "active_server_id": manager.settings.get("active_acestream_server_id", "direct"),
+        "auto_failover": manager.settings.get("auto_failover_acestream", True)
+    })
+
+
+@app.post("/api/acestream/servers")
+async def add_or_update_acestream_server(payload: AceServerPayload):
+    """Añade o actualiza un servidor de AceStream (ej: con o sin VPN)."""
+    servers = manager.settings.get("acestream_servers", [])
+    srv_id = payload.id or f"srv_{int(time.time())}"
+    clean_url = payload.url.strip().rstrip("/")
+    if not clean_url.startswith("http://") and not clean_url.startswith("https://"):
+        clean_url = f"http://{clean_url}"
+
+    existing = next((s for s in servers if s.get("id") == srv_id), None)
+    if existing:
+        existing["name"] = payload.name.strip()
+        existing["url"] = clean_url
+        if payload.is_default:
+            for s in servers:
+                s["is_default"] = (s.get("id") == srv_id)
+            manager.settings["active_acestream_server_id"] = srv_id
+            manager.settings["acestream_engine_url"] = clean_url
+    else:
+        if payload.is_default:
+            for s in servers:
+                s["is_default"] = False
+            manager.settings["active_acestream_server_id"] = srv_id
+            manager.settings["acestream_engine_url"] = clean_url
+        servers.append({
+            "id": srv_id,
+            "name": payload.name.strip(),
+            "url": clean_url,
+            "is_default": payload.is_default or len(servers) == 0
+        })
+
+    manager.settings["acestream_servers"] = servers
+    manager.save_settings()
+    return JSONResponse({
+        "status": "ok",
+        "servers": await ace_proxy.check_all_servers(),
+        "active_server_id": manager.settings.get("active_acestream_server_id", "direct")
+    })
+
+
+@app.delete("/api/acestream/servers/{server_id}")
+async def delete_acestream_server(server_id: str):
+    """Elimina un servidor de AceStream si hay más de uno."""
+    servers = manager.settings.get("acestream_servers", [])
+    if len(servers) <= 1:
+        raise HTTPException(status_code=400, detail="No puedes eliminar el único servidor configurado")
+
+    manager.settings["acestream_servers"] = [s for s in servers if s.get("id") != server_id]
+    if manager.settings.get("active_acestream_server_id") == server_id:
+        new_active = manager.settings["acestream_servers"][0]
+        manager.settings["active_acestream_server_id"] = new_active["id"]
+        manager.settings["acestream_engine_url"] = new_active["url"]
+
+    manager.save_settings()
+    return JSONResponse({
+        "status": "ok",
+        "servers": await ace_proxy.check_all_servers(),
+        "active_server_id": manager.settings.get("active_acestream_server_id")
+    })
+
+
+@app.post("/api/acestream/active")
+async def set_active_acestream_server(payload: SetActiveServerPayload):
+    """Cambia en caliente el servidor AceStream activo."""
+    servers = manager.settings.get("acestream_servers", [])
+    target = next((s for s in servers if s.get("id") == payload.server_id), None)
+    if not target:
+        raise HTTPException(status_code=404, detail="Servidor AceStream no encontrado")
+
+    manager.settings["active_acestream_server_id"] = payload.server_id
+    manager.settings["acestream_engine_url"] = target["url"]
+    manager.save_settings()
+    return JSONResponse({
+        "status": "ok",
+        "active_server_id": payload.server_id,
+        "server": target
+    })
+
+
+@app.post("/api/channels/direct-play")
+async def direct_play_stream(payload: DirectPlayPayload, request: Request):
+    """
+    Permite pegar directamente un AceStream ID, URI o URL HLS y empezar a reproducirlo.
+    """
+    try:
+        ch = manager.add_direct_channel(
+            identifier=payload.identifier,
+            name=payload.name,
+            save_favorite=payload.save_favorite,
+            server_id=payload.server_id
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    base_url = str(request.base_url).rstrip("/")
+    res = dict(ch)
+    res["live_url"] = f"{base_url}/live/{ch['id']}.m3u8"
+    if ch.get("acestream_id"):
+        res["ts_url"] = f"{base_url}/ace/stream/{ch['acestream_id']}"
+        res["ace_uri"] = f"acestream://{ch['acestream_id']}"
+    return JSONResponse(res)
 
 
 # ---------------------------------------------------------------------------
@@ -333,23 +471,23 @@ async def stream_proxy_segment(request: Request, url: str = Query(...)):
 # Proxy de AceStream (HLS & Direct TS)
 # ---------------------------------------------------------------------------
 @app.get("/ace/manifest/{acestream_id}.m3u8")
-async def stream_ace_manifest(request: Request, acestream_id: str):
+async def stream_ace_manifest(request: Request, acestream_id: str, server_id: Optional[str] = Query(None)):
     """Proxy de manifiesto HLS generado por el motor AceStream."""
     base_url = str(request.base_url).rstrip("/")
-    return await ace_proxy.get_hls_manifest(acestream_id, request_base_url=base_url)
+    return await ace_proxy.get_hls_manifest(acestream_id, request_base_url=base_url, server_id=server_id)
 
 
 @app.get("/ace/segment")
-async def stream_ace_segment(request: Request, url: str = Query(...)):
+async def stream_ace_segment(request: Request, url: str = Query(...), server_id: Optional[str] = Query(None)):
     """Proxy de fragmento AceStream con soporte CORS."""
     target_url = unquote(url)
     return await proxy_segment_request(target_url, request)
 
 
 @app.get("/ace/stream/{acestream_id}")
-async def stream_ace_ts(acestream_id: str):
+async def stream_ace_ts(acestream_id: str, server_id: Optional[str] = Query(None)):
     """Proxy directo de flujo MPEG-TS desde /ace/getstream."""
-    return await ace_proxy.stream_direct_ts(acestream_id)
+    return await ace_proxy.stream_direct_ts(acestream_id, server_id=server_id)
 
 
 # ---------------------------------------------------------------------------
@@ -360,7 +498,8 @@ async def stream_ace_ts(acestream_id: str):
 async def get_channel_live_m3u8(
     channel_id: str,
     request: Request,
-    offset: Optional[float] = Query(None)
+    offset: Optional[float] = Query(None),
+    server_id: Optional[str] = Query(None)
 ):
     """
     Ruta directa para reproducir cualquier canal en reproductores externos
@@ -372,7 +511,8 @@ async def get_channel_live_m3u8(
 
     base_url = str(request.base_url).rstrip("/")
     if ch.get("acestream_id"):
-        return await ace_proxy.get_hls_manifest(ch["acestream_id"], request_base_url=base_url)
+        target_server = server_id or ch.get("acestream_server_id")
+        return await ace_proxy.get_hls_manifest(ch["acestream_id"], request_base_url=base_url, server_id=target_server)
 
     target_url = ch.get("url")
     if not target_url:
@@ -384,7 +524,7 @@ async def get_channel_live_m3u8(
 
 @app.get("/live/{channel_id}.ts")
 @app.get("/live/{channel_id}")
-async def get_channel_live_ts(channel_id: str, request: Request):
+async def get_channel_live_ts(channel_id: str, request: Request, server_id: Optional[str] = Query(None)):
     """
     Ruta directa para flujo MPEG-TS directo (óptimo para VLC, Kodi o decodificadores).
     """
@@ -393,11 +533,14 @@ async def get_channel_live_ts(channel_id: str, request: Request):
         raise HTTPException(status_code=404, detail="Canal no encontrado")
 
     if ch.get("acestream_id"):
-        return await ace_proxy.stream_direct_ts(ch["acestream_id"])
+        target_server = server_id or ch.get("acestream_server_id")
+        return await ace_proxy.stream_direct_ts(ch["acestream_id"], server_id=target_server)
 
     target_url = ch.get("url")
     if not target_url:
         raise HTTPException(status_code=400, detail="El canal no tiene URL válida")
+
+    return RedirectResponse(url=target_url)
 
     return RedirectResponse(url=target_url)
 

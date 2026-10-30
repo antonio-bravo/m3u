@@ -25,11 +25,36 @@ class PlaylistManager:
         self.sources_file = os.path.join(self.data_dir, "sources.json")
         self.favorites_file = os.path.join(self.data_dir, "favorites.json")
         self.settings_file = os.path.join(self.data_dir, "settings.json")
+        self.custom_channels_file = os.path.join(self.data_dir, "custom_channels.json")
 
         self.sources: Dict[str, Dict] = {}
         self.favorites: Set[str] = set()
+        self.custom_channels: Dict[str, Dict] = {}
+
+        default_engine = os.environ.get("ACESTREAM_ENGINE_URL", "http://host.docker.internal:6878")
+        vpn_engine = os.environ.get("ACESTREAM_VPN_ENGINE_URL", "")
+
+        default_servers = [
+            {
+                "id": "direct",
+                "name": "⚡ Sin VPN",
+                "url": default_engine,
+                "is_default": True
+            }
+        ]
+        if vpn_engine:
+            default_servers.append({
+                "id": "vpn",
+                "name": "🛡️ Con VPN",
+                "url": vpn_engine,
+                "is_default": False
+            })
+
         self.settings: Dict[str, Any] = {
-            "acestream_engine_url": os.environ.get("ACESTREAM_ENGINE_URL", "http://host.docker.internal:6878"),
+            "acestream_engine_url": default_engine,
+            "acestream_servers": default_servers,
+            "active_acestream_server_id": "direct",
+            "auto_failover_acestream": True,
             "buffer_offset_seconds": float(os.environ.get("BUFFER_OFFSET_SECONDS", 16.0)),
             "auto_sync_hours": int(os.environ.get("AUTO_SYNC_HOURS", 6)),
             "github_token": os.environ.get("GITHUB_TOKEN", "")
@@ -47,6 +72,7 @@ class PlaylistManager:
         self.load_settings()
         self.load_favorites()
         self.load_sources()
+        self.load_custom_channels()
 
     # -------------------------------------------------------------------------
     # Persistencia de Configuración, Favoritos y Fuentes
@@ -60,12 +86,113 @@ class PlaylistManager:
             except Exception as e:
                 logger.error(f"Error cargando settings.json: {e}")
 
+        # Garantizar que acestream_servers exista y sea consistente
+        if "acestream_servers" not in self.settings or not self.settings["acestream_servers"]:
+            self.settings["acestream_servers"] = [
+                {
+                    "id": "direct",
+                    "name": "⚡ Sin VPN",
+                    "url": self.settings.get("acestream_engine_url", "http://host.docker.internal:6878"),
+                    "is_default": True
+                }
+            ]
+        if "active_acestream_server_id" not in self.settings:
+            self.settings["active_acestream_server_id"] = self.settings["acestream_servers"][0]["id"]
+        if "auto_failover_acestream" not in self.settings:
+            self.settings["auto_failover_acestream"] = True
+
     def save_settings(self):
         try:
             with open(self.settings_file, "w", encoding="utf-8") as f:
                 json.dump(self.settings, f, indent=2, ensure_ascii=False)
         except Exception as e:
             logger.error(f"Error guardando settings.json: {e}")
+
+    def load_custom_channels(self):
+        if os.path.exists(self.custom_channels_file):
+            try:
+                with open(self.custom_channels_file, "r", encoding="utf-8") as f:
+                    self.custom_channels = json.load(f)
+                    for cid, ch in self.custom_channels.items():
+                        ch["is_favorite"] = cid in self.favorites
+                        self.channels[cid] = ch
+            except Exception as e:
+                logger.error(f"Error cargando custom_channels.json: {e}")
+
+    def save_custom_channels(self):
+        try:
+            with open(self.custom_channels_file, "w", encoding="utf-8") as f:
+                json.dump(self.custom_channels, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            logger.error(f"Error guardando custom_channels.json: {e}")
+
+    def add_direct_channel(self, identifier: str, name: Optional[str] = None, save_favorite: bool = False, server_id: Optional[str] = None) -> Dict:
+        import hashlib
+        raw = identifier.strip().strip('"').strip("'")
+        if not raw:
+            raise ValueError("El identificador o enlace no puede estar vacío")
+
+        stream_type = "direct"
+        acestream_id = None
+        play_url = raw
+
+        # Detección inteligente de AceStream
+        hex_pattern = r'^[a-fA-F0-9]{40,64}$'
+        if re.match(hex_pattern, raw):
+            stream_type = "acestream"
+            acestream_id = raw.lower()
+            play_url = f"http://127.0.0.1:6878/ace/getstream?id={acestream_id}"
+        elif raw.startswith("acestream://"):
+            clean = raw.replace("acestream://", "").split("/")[0].split("?")[0].strip()
+            stream_type = "acestream"
+            acestream_id = clean.lower()
+            play_url = f"http://127.0.0.1:6878/ace/getstream?id={acestream_id}"
+        elif "ace/getstream" in raw or "ace/manifest" in raw or "id=" in raw:
+            match = re.search(r'[?&]id=([a-fA-F0-9]{40,64})', raw)
+            if match:
+                stream_type = "acestream"
+                acestream_id = match.group(1).lower()
+                play_url = f"http://127.0.0.1:6878/ace/getstream?id={acestream_id}"
+        elif ".m3u8" in raw.lower():
+            stream_type = "hls"
+
+        # Generar un ID único determinista
+        if acestream_id:
+            ch_id = f"ace_{acestream_id[:16]}"
+            default_name = f"⚡ AceStream: {acestream_id[:8]}...{acestream_id[-4:]}"
+        else:
+            hashed = hashlib.md5(raw.encode()).hexdigest()[:16]
+            ch_id = f"custom_{hashed}"
+            default_name = f"📺 Stream: {raw.split('/')[-1].split('?')[0] or raw[:20]}"
+
+        channel_name = name.strip() if name and name.strip() else default_name
+
+        channel = {
+            "id": ch_id,
+            "name": channel_name,
+            "tvg_id": f"direct_{ch_id}",
+            "tvg_name": channel_name,
+            "tvg_logo": "",
+            "group": "AceStream Directo" if stream_type == "acestream" else "Stream Directo",
+            "url": play_url,
+            "acestream_id": acestream_id,
+            "stream_type": stream_type,
+            "acestream_server_id": server_id or self.settings.get("active_acestream_server_id", "direct"),
+            "source_id": "direct_play",
+            "source_name": "Direct Play",
+            "is_favorite": save_favorite,
+            "is_custom": True
+        }
+
+        self.channels[ch_id] = channel
+        self.custom_channels[ch_id] = channel
+        self.save_custom_channels()
+
+        if save_favorite:
+            self.favorites.add(ch_id)
+            self.save_favorites()
+
+        return channel
 
     def load_favorites(self):
         if os.path.exists(self.favorites_file):
