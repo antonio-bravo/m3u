@@ -1,0 +1,19 @@
+#EXTM3U url-tvg=""
+#EXTINF:-1 tvg-id="CHANNEL1" tvg-name="Sports Channel 1 HD (720p 60fps)" tvg-logo="https://i.imgur.com/K3Vw8Vn.png" group-title="Deportes Directo",Sports Channel 1 HD (720p 60fps)
+https://robloxstachatonline.skibid.im/hls/channel1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FUT2" tvg-name="Fútbol 2 HD (720p 25fps)" tvg-logo="https://i.imgur.com/K3Vw8Vn.png" group-title="Deportes Directo",Fútbol 2 HD (720p 25fps)
+https://robloxstachatonline.skibid.im/hls/fut2/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FUT3" tvg-name="Fútbol 3 HD (720p 25fps)" tvg-logo="https://i.imgur.com/K3Vw8Vn.png" group-title="Deportes Directo",Fútbol 3 HD (720p 25fps)
+https://robloxstachatonline.skibid.im/hls/fut3/playlist.m3u8
+
+# --- Servidores Espejo de Respaldo (CDN Hayuhi) ---
+#EXTINF:-1 tvg-id="CHANNEL1_MIRROR" tvg-name="CHANNEL1 HD [Mirror Barmaley]" group-title="Deportes Espejos",CHANNEL1 HD [Mirror Barmaley]
+https://barmaley.hayuhi.online/hls/channel1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FUT2_MIRROR" tvg-name="FUT2 HD [Mirror Barmaley]" group-title="Deportes Espejos",FUT2 HD [Mirror Barmaley]
+https://barmaley.hayuhi.online/hls/fut2/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FUT3_MIRROR" tvg-name="FUT3 HD [Mirror Barmaley]" group-title="Deportes Espejos",FUT3 HD [Mirror Barmaley]
+https://barmaley.hayuhi.online/hls/fut3/playlist.m3u8

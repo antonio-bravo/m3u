@@ -1,0 +1,28 @@
+services:
+  m3u-hub:
+    build: .
+    image: ghcr.io/antonio-bravo/m3u/m3u-stream-proxy:latest
+    container_name: m3u-stream-proxy
+    restart: unless-stopped
+    ports:
+      - "8899:8899"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./data:/app/data
+      - ../:/app/local_playlists:ro
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - PORT=8899
+      - PYTHONUNBUFFERED=1
+      - ACESTREAM_ENGINE_URL=${ACESTREAM_ENGINE_URL:-http://host.docker.internal:6878}
+      - BUFFER_OFFSET_SECONDS=${BUFFER_OFFSET_SECONDS:-16.0}
+      - AUTO_SYNC_HOURS=${AUTO_SYNC_HOURS:-6}
+      - GITHUB_TOKEN=${GITHUB_TOKEN:-}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
