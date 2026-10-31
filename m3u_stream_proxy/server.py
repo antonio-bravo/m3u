@@ -949,6 +949,15 @@ async def export_m3u_playlist(
     if format in ("getstream", "manifest"):
         url, _, _ = ace_proxy.get_server_info(server_id)
         srv_clean_url = url.rstrip("/")
+        # Si la URL es localhost, 127.0.0.1 o host.docker.internal, traducirla a la IP/host del cliente para dispositivos externos
+        try:
+            parsed_srv = urlparse(srv_clean_url)
+            if parsed_srv.hostname in ("127.0.0.1", "localhost", "host.docker.internal"):
+                client_host = request.headers.get("host", "").split(":")[0] or request.base_url.hostname
+                port_part = f":{parsed_srv.port}" if parsed_srv.port else ":6878"
+                srv_clean_url = f"{parsed_srv.scheme or 'http'}://{client_host}{port_part}"
+        except Exception:
+            pass
 
     for ch in manager.channels.values():
         if source_id and ch.get("source_id") != source_id:

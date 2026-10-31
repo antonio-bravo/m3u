@@ -3752,7 +3752,15 @@
                         if (enginesContainer) {
                             let engHtml = "";
                             for (const s of aceServers) {
-                                const cleanUrl = (s.url || "").replace(/\/+$/, '');
+                                let cleanUrl = (s.url || "").replace(/\/+$/, '');
+                                // Para VLC/Smart TV externos, si la URL del motor es localhost o host.docker.internal, traducir a la IP actual del navegador
+                                try {
+                                    const u = new URL(cleanUrl);
+                                    if (['localhost', '127.0.0.1', 'host.docker.internal'].includes(u.hostname.toLowerCase())) {
+                                        u.hostname = window.location.hostname;
+                                        cleanUrl = u.origin;
+                                    }
+                                } catch (e) { }
                                 const directManifest = `${cleanUrl}/ace/manifest.m3u8?id=${targetCh.acestream_id}`;
                                 const directGetStream = `${cleanUrl}/ace/getstream?id=${targetCh.acestream_id}`;
                                 const sName = s.name || s.id;
