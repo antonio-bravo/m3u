@@ -139,13 +139,20 @@ class HDHomeRunSettingsPayload(BaseModel):
 # Tareas de fondo y Ciclo de vida
 # ---------------------------------------------------------------------------
 async def background_sync_worker():
-    """Sincroniza periódicamente las listas M3U activas."""
+    """Sincroniza periódicamente las listas M3U activas y repositorios GitHub."""
     while True:
         try:
             sync_hours = manager.settings.get("auto_sync_hours", 6)
             sleep_seconds = max(3600, sync_hours * 3600)
             await asyncio.sleep(sleep_seconds)
-            logger.info("Iniciando auto-sincronización periódica de listas M3U...")
+            logger.info("Iniciando auto-sincronización periódica de listas M3U y repositorios...")
+            # Sincronizar repositorios GitHub guardados para descubrir nuevos archivos o cambios
+            for repo_id in list(manager.github_repos.keys()):
+                try:
+                    logger.info(f"Auto-sincronizando repositorio GitHub: {repo_id}")
+                    await manager.update_github_repo(repo_id, reimport_all=True)
+                except Exception as e:
+                    logger.warning(f"Error auto-sincronizando repo GitHub {repo_id}: {e}")
             await manager.sync_all_enabled_sources()
         except asyncio.CancelledError:
             break
@@ -158,7 +165,13 @@ async def background_sync_worker():
 async def startup_event():
     logger.info("Iniciando M3U Stream Hub & AceStream Proxy...")
     
-    # Si no hay fuentes configuradas, revisar si existen listas locales y añadir 'canales_acestream.m3u' si existe
+    # 1. Auto-importar repositorios GitHub o URLs de listas M3U configuradas en variables de entorno
+    try:
+        await manager.auto_import_from_env()
+    except Exception as e:
+        logger.error(f"Error durante auto_import_from_env: {e}")
+
+    # 2. Si no hay fuentes configuradas, revisar si existen listas locales y añadir 'canales_acestream.m3u' si existe
     if not manager.sources:
         try:
             local_files = manager.scan_local_playlists()

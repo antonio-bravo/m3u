@@ -85,6 +85,7 @@ services:
       - ACESTREAM_VPN_ENGINE_URL=http://127.0.0.1:6878
       - BUFFER_OFFSET_SECONDS=16.0
       - AUTO_SYNC_HOURS=6
+      - GITHUB_REPOS=https://github.com/antonio-bravo/m3u
       - GITHUB_TOKEN=
     logging:
       driver: "json-file"
@@ -125,6 +126,7 @@ services:
       - ACESTREAM_VPN_ENGINE_URL=http://host.docker.internal:6878
       - BUFFER_OFFSET_SECONDS=16.0
       - AUTO_SYNC_HOURS=6
+      - GITHUB_REPOS=https://github.com/antonio-bravo/m3u
 ```
 
 ---
@@ -138,6 +140,8 @@ services:
 | `ACESTREAM_VPN_ENGINE_URL`| *(vacío)* | URL opcional de un segundo motor AceStream enrutado mediante **VPN**. |
 | `BUFFER_OFFSET_SECONDS` | `16.0` | Tiempo de retardo seguro en segundos para amortiguar micro-cortes en HLS. |
 | `AUTO_SYNC_HOURS` | `6` | Intervalo en horas para sincronizar automáticamente repositorios GitHub. |
+| `GITHUB_REPOS` | *(vacío)* | URL(s) o identificadores de repositorios GitHub (separados por coma, ej. `https://github.com/antonio-bravo/m3u`) para **auto-escanear, descargar en caché local e importar todas sus listas M3U al arrancar el contenedor**. |
+| `M3U_URLS` | *(vacío)* | URL(s) directas de listas `.m3u` remotas (separadas por coma) para auto-importar al inicio. |
 | `GITHUB_TOKEN` | *(vacío)* | Token de GitHub (opcional) para aumentar el límite de peticiones de la API a 5.000 req/hora. |
 | `DATA_DIR` | `/app/data` | Directorio de persistencia interna para la base de datos de canales y ajustes. |
 | `LOCAL_PLAYLISTS_DIR` | `/app/local_playlists` | Directorio donde el proxy busca archivos `.m3u` locales en el host. |

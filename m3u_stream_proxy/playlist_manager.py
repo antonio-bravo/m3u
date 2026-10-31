@@ -470,13 +470,15 @@ class PlaylistManager:
         # 1. Escanear
         scan_res = await scan_github_repository(f"{owner}/{repo_name}", github_token=token)
         if not scan_res.get("success"):
-            raise RuntimeError(scan_res.get("error", "Error al escanear repositorio de GitHub"))
-
-        repo["branch"] = scan_res.get("branch", repo.get("branch", "main"))
-        repo["files_count"] = scan_res.get("files_count", 0)
-        repo["files"] = scan_res.get("files", [])
-        repo["last_scanned"] = int(time.time())
-        self.save_github_repos()
+            if not repo.get("files"):
+                raise RuntimeError(scan_res.get("error", "Error al escanear repositorio de GitHub"))
+            logger.warning(f"No se pudo escanear GitHub ({scan_res.get('error')}), usando lista de archivos previamente conocida.")
+        else:
+            repo["branch"] = scan_res.get("branch", repo.get("branch", "main"))
+            repo["files_count"] = scan_res.get("files_count", 0)
+            repo["files"] = scan_res.get("files", [])
+            repo["last_scanned"] = int(time.time())
+            self.save_github_repos()
 
         files_to_sync = repo["files"]
         if not reimport_all and repo.get("imported_sources"):
@@ -549,6 +551,48 @@ class PlaylistManager:
             "total_channels": total_channels,
             "errors": errors
         }
+
+    async def auto_import_from_env(self):
+        """
+        Importa automáticamente repositorios de GitHub o URLs de listas M3U
+        configuradas en variables de entorno (GITHUB_REPOS / GITHUB_REPO, M3U_URLS / M3U_URL).
+        """
+        # 1. Repositorios de GitHub
+        env_github = os.environ.get("GITHUB_REPOS") or os.environ.get("GITHUB_REPO") or ""
+        if env_github.strip():
+            repo_list = [r.strip().strip("'\"") for r in re.split(r'[,;\n]', env_github) if r.strip().strip("'\"")]
+            for repo_entry in repo_list:
+                try:
+                    logger.info(f"🔄 [AUTO-IMPORT] Detectado repositorio GitHub en entorno: {repo_entry}")
+                    repo_obj = await self.add_or_update_github_repo(repo_entry, scan_now=False)
+                    res = await self.update_github_repo(repo_obj["id"], reimport_all=True)
+                    logger.info(
+                        f"✅ [AUTO-IMPORT] Repositorio '{repo_obj.get('name')}' listo: "
+                        f"{res.get('updated_sources', 0)} listas M3U sincronizadas, {res.get('total_channels', 0)} canales cargados."
+                    )
+                except Exception as e:
+                    logger.error(f"❌ [AUTO-IMPORT] Error procesando repositorio GitHub '{repo_entry}': {e}")
+
+        # 2. URLs directas de listas M3U
+        env_m3u = os.environ.get("M3U_URLS") or os.environ.get("M3U_URL") or ""
+        if env_m3u.strip():
+            url_list = [u.strip().strip("'\"") for u in re.split(r'[,;\n]', env_m3u) if u.strip().strip("'\"")]
+            for url in url_list:
+                try:
+                    clean_url = url.split("?")[0]
+                    name = os.path.basename(clean_url) or "Lista Remota"
+                    if not name.lower().endswith((".m3u", ".m3u8")):
+                        name += ".m3u"
+                    logger.info(f"🔄 [AUTO-IMPORT] Detectada lista M3U en entorno: {url}")
+                    await self.add_source(
+                        name=name,
+                        source_type="url",
+                        url_or_path=url,
+                        enabled=True
+                    )
+                    logger.info(f"✅ [AUTO-IMPORT] Lista M3U '{name}' importada correctamente.")
+                except Exception as e:
+                    logger.error(f"❌ [AUTO-IMPORT] Error procesando lista M3U '{url}': {e}")
 
     # -------------------------------------------------------------------------
     # Detección de Listas M3U Locales

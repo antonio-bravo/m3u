@@ -22,6 +22,8 @@ services:
       - BUFFER_OFFSET_SECONDS=${BUFFER_OFFSET_SECONDS:-16.0}
       - AUTO_SYNC_HOURS=${AUTO_SYNC_HOURS:-6}
       - GITHUB_TOKEN=${GITHUB_TOKEN:-}
+      - GITHUB_REPOS=${GITHUB_REPOS:-https://github.com/antonio-bravo/m3u}
+      - M3U_URLS=${M3U_URLS:-}
     logging:
       driver: "json-file"
       options:
