@@ -11,7 +11,6 @@ services:
     volumes:
       - ./data:/app/data
       - ../:/app/local_playlists:ro
-      - ./templates:/app/templates:ro
     env_file:
       - path: .env
         required: false

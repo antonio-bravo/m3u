@@ -49,6 +49,22 @@ TEMPLATES_DIR = os.path.join(os.path.dirname(__file__), "templates")
 INDEX_HTML_PATH = os.path.join(TEMPLATES_DIR, "index.html")
 
 
+def find_index_html() -> Optional[str]:
+    candidate_paths = [
+        INDEX_HTML_PATH,
+        os.path.join(os.path.dirname(__file__), "templates", "index.html"),
+        os.path.join(os.getcwd(), "templates", "index.html"),
+        "/app/templates/index.html",
+        os.path.join(LOCAL_PLAYLISTS_DIR, "m3u_stream_proxy", "templates", "index.html"),
+        os.path.join(os.path.dirname(__file__), "index.html"),
+        "/app/index.html",
+    ]
+    for p in candidate_paths:
+        if p and os.path.isfile(p):
+            return p
+    return None
+
+
 # ---------------------------------------------------------------------------
 # Modelos Pydantic para peticiones
 # ---------------------------------------------------------------------------
@@ -165,9 +181,11 @@ async def startup_event():
 # ---------------------------------------------------------------------------
 @app.get("/", response_class=HTMLResponse)
 async def serve_index():
-    if not os.path.exists(INDEX_HTML_PATH):
+    path = find_index_html()
+    if not path:
+        logger.error(f"index.html no encontrado. Rutas evaluadas: {INDEX_HTML_PATH}")
         raise HTTPException(status_code=500, detail="index.html no encontrado")
-    with open(INDEX_HTML_PATH, "r", encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8") as f:
         return HTMLResponse(content=f.read())
 
 
