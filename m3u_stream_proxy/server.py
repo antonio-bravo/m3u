@@ -613,9 +613,11 @@ async def delete_channel(channel_id: str):
 async def stream_proxy_m3u8(request: Request, url: str = Query(...)):
     """CORS Proxy para manifiestos HLS remotos."""
     target_url = unquote(url)
+    ref = request.query_params.get("ref")
+    ua = request.query_params.get("ua")
     base_url = str(request.base_url).rstrip("/")
     offset = manager.settings.get("buffer_offset_seconds", 16.0)
-    return await proxy_m3u8_manifest(target_url, request_base_url=base_url, buffer_offset=offset)
+    return await proxy_m3u8_manifest(target_url, request_base_url=base_url, buffer_offset=offset, custom_ref=ref, custom_ua=ua)
 
 
 @app.get("/stream/segment")

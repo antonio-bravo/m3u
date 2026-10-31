@@ -39,23 +39,69 @@ class SegmentCache:
 segment_cache = SegmentCache(max_items=100)
 
 
-async def proxy_m3u8_manifest(
-    target_url: str,
-    request_base_url: str,
-    buffer_offset: float = 16.0
-) -> Response:
+def parse_stream_url_and_headers(raw_url: str) -> Tuple[str, Dict[str, str]]:
     """
-    Descarga una lista de reproducción HLS (.m3u8), reescribe los fragmentos
-    y sub-listas para que pasen por el proxy y entrega cabeceras CORS permisivas.
+    Separa la URL real de las cabeceras personalizadas pasadas con la sintaxis IPTV |Header=Value&...
+    Ej: https://example.com/live.m3u8|User-Agent=CustomUA&Referer=https://ref.com/
     """
     headers = {
         "User-Agent": DEFAULT_USER_AGENT,
         "Accept": "*/*"
     }
+    if not raw_url:
+        return "", headers
+
+    if "|" in raw_url:
+        parts = raw_url.split("|", 1)
+        actual_url = parts[0].strip()
+        header_str = parts[1].strip()
+        for pair in header_str.split("&"):
+            if "=" in pair:
+                k, v = pair.split("=", 1)
+                k_clean = k.strip()
+                v_clean = v.strip()
+                k_lower = k_clean.lower()
+                if k_lower in ("user-agent", "http-user-agent"):
+                    headers["User-Agent"] = v_clean
+                elif k_lower in ("referer", "referrer", "http-referer"):
+                    headers["Referer"] = v_clean
+                elif k_lower in ("origin", "http-origin"):
+                    headers["Origin"] = v_clean
+                else:
+                    headers[k_clean] = v_clean
+        return actual_url, headers
+
+    return raw_url.strip(), headers
+
+
+async def proxy_m3u8_manifest(
+    target_url: str,
+    request_base_url: str,
+    buffer_offset: float = 16.0,
+    custom_ref: Optional[str] = None,
+    custom_ua: Optional[str] = None
+) -> Response:
+    """
+    Descarga una lista de reproducción HLS (.m3u8), reescribe los fragmentos
+    y sub-listas para que pasen por el proxy y entrega cabeceras CORS permisivas.
+    Soporta cabeceras personalizadas de listas IPTV (ej. FanCode, AK47 con User-Agent o Referer).
+    """
+    clean_target_url, headers = parse_stream_url_and_headers(target_url)
+    if custom_ref:
+        headers["Referer"] = custom_ref
+    if custom_ua:
+        headers["User-Agent"] = custom_ua
+
+    # Parámetros para propagar en sub-manifiestos y segmentos
+    extra_query = ""
+    if "Referer" in headers:
+        extra_query += f"&ref={quote(headers['Referer'], safe='')}"
+    if headers.get("User-Agent") and headers["User-Agent"] != DEFAULT_USER_AGENT:
+        extra_query += f"&ua={quote(headers['User-Agent'], safe='')}"
 
     try:
         async with httpx.AsyncClient(timeout=15.0, follow_redirects=True) as client:
-            r = await client.get(target_url, headers=headers)
+            r = await client.get(clean_target_url, headers=headers)
             if r.status_code != 200:
                 raise HTTPException(status_code=r.status_code, detail=f"Error obteniendo stream remoto: {r.status_code}")
             
@@ -88,9 +134,9 @@ async def proxy_m3u8_manifest(
                         sub_uri = m.group(1)
                         full_sub = urljoin(final_url, sub_uri)
                         if ".m3u8" in full_sub:
-                            proxy_uri = f"{request_base_url}/stream/proxy.m3u8?url={quote(full_sub, safe='')}"
+                            proxy_uri = f"{request_base_url}/stream/proxy.m3u8?url={quote(full_sub, safe='')}{extra_query}"
                         else:
-                            proxy_uri = f"{request_base_url}/stream/segment?url={quote(full_sub, safe='')}"
+                            proxy_uri = f"{request_base_url}/stream/segment?url={quote(full_sub, safe='')}{extra_query}"
                         return f'URI="{proxy_uri}"'
                     s_line = re.sub(r'URI="([^"]+)"', replace_uri, s_line)
                 rewritten.append(s_line)
@@ -101,10 +147,10 @@ async def proxy_m3u8_manifest(
 
                 if clean_item.endswith(".m3u8") or ".m3u8" in clean_item:
                     # Sub-manifiesto
-                    proxy_line = f"{request_base_url}/stream/proxy.m3u8?url={quote(full_item_url, safe='')}"
+                    proxy_line = f"{request_base_url}/stream/proxy.m3u8?url={quote(full_item_url, safe='')}{extra_query}"
                 else:
                     # Segmento de video
-                    proxy_line = f"{request_base_url}/stream/segment?url={quote(full_item_url, safe='')}"
+                    proxy_line = f"{request_base_url}/stream/segment?url={quote(full_item_url, safe='')}{extra_query}"
 
                 rewritten.append(proxy_line)
 
@@ -131,11 +177,20 @@ async def proxy_segment_request(target_url: str, request: Request) -> Response:
     Descarga y sirve un fragmento de video (.ts, .m4s, .aac) con caché y CORS.
     Soporta peticiones parciales Range (206 Partial Content).
     """
+    clean_target_url, req_headers = parse_stream_url_and_headers(target_url)
+
+    ref_param = request.query_params.get("ref")
+    ua_param = request.query_params.get("ua")
+    if ref_param:
+        req_headers["Referer"] = ref_param
+    if ua_param:
+        req_headers["User-Agent"] = ua_param
+
     # Comprobar si está en caché RAM
-    cached = segment_cache.get(target_url)
+    cached = segment_cache.get(clean_target_url)
     if cached:
         data, content_type = cached
-        if not content_type or "octet-stream" in content_type or ".ts" in target_url.lower() or "/ace/c/" in target_url:
+        if not content_type or "octet-stream" in content_type or ".ts" in clean_target_url.lower() or "/ace/c/" in clean_target_url:
             content_type = "video/mp2t"
         return Response(
             content=data,
@@ -147,12 +202,6 @@ async def proxy_segment_request(target_url: str, request: Request) -> Response:
             }
         )
 
-    # Descargar desde origen
-    req_headers = {
-        "User-Agent": DEFAULT_USER_AGENT,
-        "Accept": "*/*"
-    }
-
     # Trasladar cabecera Range si el reproductor la solicita
     range_header = request.headers.get("Range")
     if range_header:
@@ -160,7 +209,7 @@ async def proxy_segment_request(target_url: str, request: Request) -> Response:
 
     try:
         async with httpx.AsyncClient(timeout=20.0, follow_redirects=True) as client:
-            r = await client.get(target_url, headers=req_headers)
+            r = await client.get(clean_target_url, headers=req_headers)
             if r.status_code not in (200, 206):
                 raise HTTPException(status_code=r.status_code, detail="Error descargando fragmento")
 
@@ -171,14 +220,14 @@ async def proxy_segment_request(target_url: str, request: Request) -> Response:
                 or "octet-stream" in c_type
                 or "text/html" in c_type
                 or "text/plain" in c_type
-                or ".ts" in target_url.lower()
-                or "/ace/c/" in target_url
+                or ".ts" in clean_target_url.lower()
+                or "/ace/c/" in clean_target_url
             ):
                 c_type = "video/mp2t"
 
             # Guardar en caché si fue un 200 completo y no excede 10MB
             if r.status_code == 200 and len(data) <= 10 * 1024 * 1024:
-                segment_cache.set(target_url, data, c_type)
+                segment_cache.set(clean_target_url, data, c_type)
 
             resp_headers = {
                 "Access-Control-Allow-Origin": "*",
