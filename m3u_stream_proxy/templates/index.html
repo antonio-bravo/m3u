@@ -2064,10 +2064,11 @@
             if (channel.acestream_id) {
                 // Modo AceStream
                 // Se solicita el manifiesto HLS proxificado generado por el motor AceStream
-                const serverParam = channel.acestream_server_id ? `?server_id=${encodeURIComponent(channel.acestream_server_id)}` : '';
+                const targetServerId = channel.acestream_server_id || (activeAceServerId && activeAceServerId !== 'direct' ? activeAceServerId : '');
+                const serverParam = targetServerId ? `?server_id=${encodeURIComponent(targetServerId)}` : '';
                 streamUrl = `${base}/ace/manifest/${channel.acestream_id}.m3u8${serverParam}`;
                 document.getElementById("open-ace-btn").style.display = "inline-flex";
-                startAceStreamStatsMonitor(channel.acestream_id, channel.acestream_server_id);
+                startAceStreamStatsMonitor(channel.acestream_id, targetServerId);
             } else if (channel.stream_type === "hls") {
                 // Modo HLS estándar -> usar CORS Proxy inteligente
                 streamUrl = `${base}/stream/proxy.m3u8?url=${encodeURIComponent(channel.url)}`;
@@ -2092,13 +2093,33 @@
                 hls = null;
             }
 
+            // Monitorear eventos nativos del elemento de video
+            video.onplaying = () => {
+                hideSpinner();
+            };
+            video.onwaiting = () => {
+                showSpinner("Llenando búfer...");
+            };
+            video.onerror = () => {
+                hideSpinner();
+                if (video.error) {
+                    console.error("HTML5 Video Error:", video.error);
+                    showToast(`Error del reproductor de video (código ${video.error.code})`);
+                }
+            };
+
             if (Hls.isSupported()) {
                 hls = new Hls({
                     maxBufferLength: 30,
                     maxMaxBufferLength: 60,
                     liveSyncDurationCount: 3,
                     enableWorker: true,
-                    lowLatencyMode: false
+                    lowLatencyMode: false,
+                    manifestLoadingTimeOut: 35000,
+                    manifestLoadingMaxRetry: 4,
+                    manifestLoadingRetryDelay: 1500,
+                    levelLoadingTimeOut: 35000,
+                    fragLoadingTimeOut: 30000
                 });
 
                 hls.loadSource(url);
@@ -2106,7 +2127,19 @@
 
                 hls.on(Hls.Events.MANIFEST_PARSED, () => {
                     hideSpinner();
-                    video.play().catch(e => console.log("Autoplay bloqueado:", e));
+                    const playPromise = video.play();
+                    if (playPromise !== undefined) {
+                        playPromise.catch(e => {
+                            console.log("Autoplay con audio bloqueado:", e);
+                            video.muted = true;
+                            video.play().catch(err => console.log("Autoplay silenciado también bloqueado:", err));
+                            showToast("🔊 Reproduciendo silenciado (Autoplay). Haz clic en el video para activar sonido.");
+                        });
+                    }
+                });
+
+                hls.on(Hls.Events.FRAG_LOADED, () => {
+                    hideSpinner();
                 });
 
                 hls.on(Hls.Events.ERROR, (event, data) => {
@@ -2114,7 +2147,7 @@
                     if (data.fatal) {
                         switch (data.type) {
                             case Hls.ErrorTypes.NETWORK_ERROR:
-                                showToast("Error de red en stream. Reintentando...");
+                                showToast(`Error de red en stream (${data.details || ''}). Reintentando...`);
                                 hls.startLoad();
                                 break;
                             case Hls.ErrorTypes.MEDIA_ERROR:
@@ -2123,7 +2156,7 @@
                                 break;
                             default:
                                 hideSpinner();
-                                showToast("No se pudo reproducir este stream.");
+                                showToast(`No se pudo reproducir este stream (${data.details || 'Error desconocido'}).`);
                                 break;
                         }
                     }
@@ -2142,7 +2175,14 @@
                 video.src = url;
                 video.addEventListener('loadedmetadata', () => {
                     hideSpinner();
-                    video.play().catch(e => console.log(e));
+                    const playPromise = video.play();
+                    if (playPromise !== undefined) {
+                        playPromise.catch(e => {
+                            video.muted = true;
+                            video.play().catch(err => console.log(err));
+                            showToast("🔊 Reproduciendo silenciado (Autoplay). Haz clic en el video para activar sonido.");
+                        });
+                    }
                 });
             } else {
                 hideSpinner();

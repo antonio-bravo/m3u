@@ -135,6 +135,8 @@ async def proxy_segment_request(target_url: str, request: Request) -> Response:
     cached = segment_cache.get(target_url)
     if cached:
         data, content_type = cached
+        if not content_type or "octet-stream" in content_type or ".ts" in target_url.lower() or "/ace/c/" in target_url:
+            content_type = "video/mp2t"
         return Response(
             content=data,
             media_type=content_type,
@@ -163,8 +165,15 @@ async def proxy_segment_request(target_url: str, request: Request) -> Response:
                 raise HTTPException(status_code=r.status_code, detail="Error descargando fragmento")
 
             data = r.content
-            c_type = r.headers.get("content-type", "video/mp2t")
-            if "text/html" in c_type:
+            c_type = r.headers.get("content-type", "")
+            if (
+                not c_type
+                or "octet-stream" in c_type
+                or "text/html" in c_type
+                or "text/plain" in c_type
+                or ".ts" in target_url.lower()
+                or "/ace/c/" in target_url
+            ):
                 c_type = "video/mp2t"
 
             # Guardar en caché si fue un 200 completo y no excede 10MB

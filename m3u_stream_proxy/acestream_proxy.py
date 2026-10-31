@@ -177,12 +177,12 @@ class AceStreamProxy:
             if now - cached_time < 1200:
                 stat_url = cached_url
 
-        async with httpx.AsyncClient(timeout=2.5, follow_redirects=True) as client:
-            # Si no tenemos stat_url, pedir el manifiesto con format=json
+        async with httpx.AsyncClient(timeout=8.0, follow_redirects=True) as client:
+            # Si no tenemos stat_url, pedir el manifiesto con format=json (puede tardar unos segundos en inicializar)
             if not stat_url:
                 manifest_api = f"{base_url}/ace/manifest.m3u8?format=json&id={clean_id}"
                 try:
-                    r = await client.get(manifest_api)
+                    r = await client.get(manifest_api, timeout=8.0)
                     if r.status_code == 200:
                         data = r.json()
                         resp_obj = data.get("response") or {}
@@ -196,7 +196,7 @@ class AceStreamProxy:
             if not stat_url:
                 getstream_api = f"{base_url}/ace/getstream?format=json&id={clean_id}"
                 try:
-                    r = await client.get(getstream_api)
+                    r = await client.get(getstream_api, timeout=8.0)
                     if r.status_code == 200:
                         data = r.json()
                         resp_obj = data.get("response") or {}
@@ -206,10 +206,10 @@ class AceStreamProxy:
                 except Exception as e:
                     logger.debug(f"No se pudo obtener stat_url vía getstream para {clean_id}: {e}")
 
-            # Si finalmente tenemos stat_url, consultarlo
+            # Si finalmente tenemos stat_url, consultarlo rápidamente
             if stat_url:
                 try:
-                    r = await client.get(stat_url)
+                    r = await client.get(stat_url, timeout=3.0)
                     if r.status_code == 200:
                         data = r.json()
                         stats = data.get("response") or {}
@@ -311,9 +311,9 @@ class AceStreamProxy:
 
         primary_url, primary_id, primary_name = self.get_server_info(server_id)
 
-        # Construir lista de servidores a probar: primero el elegido, luego el resto
+        # Construir lista de servidores a probar: primero el elegido, luego el resto si auto_failover está activo y no se forzó server_id
         candidates: List[Tuple[str, str, str]] = [(primary_url, primary_id, primary_name)]
-        if auto_failover and len(servers) > 1:
+        if auto_failover and len(servers) > 1 and not server_id:
             for s in servers:
                 s_url = self._clean_url(s["url"])
                 s_id = s["id"]
@@ -330,9 +330,9 @@ class AceStreamProxy:
             }
 
             try:
-                # Se asigna timeout generoso (30s) para permitir el prebuffering P2P inicial en arranques en frío
+                # Se asigna timeout generoso (45s) para permitir el prebuffering P2P inicial en arranques en frío
                 transport_limits = httpx.Limits(max_keepalive_connections=5, max_connections=10)
-                async with httpx.AsyncClient(timeout=httpx.Timeout(30.0, connect=5.0), limits=transport_limits, follow_redirects=True) as client:
+                async with httpx.AsyncClient(timeout=httpx.Timeout(45.0, connect=5.0), limits=transport_limits, follow_redirects=True) as client:
                     r = await client.get(manifest_url, headers=headers)
 
                     # Si el motor devuelve 500, significa que la sesión HLS previa expiró o se colgó en el motor.
