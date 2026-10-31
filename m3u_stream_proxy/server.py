@@ -226,7 +226,8 @@ async def get_channel_by_id(channel_id: str, request: Request):
             {
                 "id": s["id"],
                 "name": s.get("name", s["id"]),
-                "url": f"{s['url'].rstrip('/')}/ace/getstream?id={ch['acestream_id']}"
+                "url": f"{s['url'].rstrip('/')}/ace/getstream?id={ch['acestream_id']}",
+                "manifest_url": f"{s['url'].rstrip('/')}/ace/manifest.m3u8?id={ch['acestream_id']}"
             }
             for s in ace_proxy.get_server_list()
         ]
@@ -554,7 +555,8 @@ async def direct_play_stream(payload: DirectPlayPayload, request: Request):
             {
                 "id": s["id"],
                 "name": s.get("name", s["id"]),
-                "url": f"{s['url'].rstrip('/')}/ace/getstream?id={ch['acestream_id']}"
+                "url": f"{s['url'].rstrip('/')}/ace/getstream?id={ch['acestream_id']}",
+                "manifest_url": f"{s['url'].rstrip('/')}/ace/manifest.m3u8?id={ch['acestream_id']}"
             }
             for s in ace_proxy.get_server_list()
         ]
@@ -908,9 +910,9 @@ async def export_m3u_playlist(
     base_url = str(request.base_url).rstrip("/")
     lines = ["#EXTM3U"]
 
-    # Si se pide formato getstream directo, obtener la base del servidor solicitado
+    # Si se pide formato getstream o manifest directo, obtener la base del servidor solicitado
     srv_clean_url = None
-    if format == "getstream":
+    if format in ("getstream", "manifest"):
         url, _, _ = ace_proxy.get_server_info(server_id)
         srv_clean_url = url.rstrip("/")
 
@@ -938,6 +940,8 @@ async def export_m3u_playlist(
 
         if ch.get("acestream_id") and format == "getstream" and srv_clean_url:
             play_url = f"{srv_clean_url}/ace/getstream?id={ch['acestream_id']}"
+        elif ch.get("acestream_id") and format == "manifest" and srv_clean_url:
+            play_url = f"{srv_clean_url}/ace/manifest.m3u8?id={ch['acestream_id']}"
         elif ch.get("acestream_id") and format == "ts":
             play_url = f"{base_url}/ace/stream/{ch['acestream_id']}"
         else:
