@@ -2373,9 +2373,33 @@
                 },
                 manifest: {
                     dash: {
-                        ignoreSuggestedPresentationDelay: true,
+                        ignoreMinBufferTime: true,
+                        ignoreSuggestedPresentationDelay: false,
                         autoCorrectDrift: true,
-                        initialSegmentLimit: 2
+                        initialSegmentLimit: 2,
+                        manifestPreprocessor: function (el) {
+                            try {
+                                const delayStr = el.getAttribute('suggestedPresentationDelay');
+                                let s = 0;
+                                if (delayStr) {
+                                    const m = delayStr.match(/[0-9.]+/g);
+                                    s = m ? parseFloat(m[m.length - 1]) : 0;
+                                }
+                                if (!s || s < 15) el.setAttribute('suggestedPresentationDelay', 'PT18S');
+                            } catch (e) { }
+                        },
+                        manifestPreprocessorTXml: function (el) {
+                            try {
+                                if (!el.attributes) el.attributes = {};
+                                const delayStr = el.attributes['suggestedPresentationDelay'];
+                                let s = 0;
+                                if (delayStr) {
+                                    const m = delayStr.match(/[0-9.]+/g);
+                                    s = m ? parseFloat(m[m.length - 1]) : 0;
+                                }
+                                if (!s || s < 15) el.attributes['suggestedPresentationDelay'] = 'PT18S';
+                            } catch (e) { }
+                        }
                     },
                     retryParameters: {
                         maxAttempts: 4,
@@ -2385,6 +2409,7 @@
                     }
                 },
                 streaming: {
+                    infiniteLiveStreamDuration: true,
                     bufferingGoal: bufGoal,
                     rebufferingGoal: rebufGoal,
                     bufferBehind: 30,
@@ -2414,6 +2439,9 @@
 
             try {
                 await player.load(cleanUrl);
+                try {
+                    player.setTextTrackVisibility(false);
+                } catch (e) { }
                 hideSpinner();
                 const playPromise = video.play();
                 if (playPromise !== undefined) {
@@ -2752,23 +2780,17 @@
                 }
                 video.play().catch(() => { });
             } else if (shakaPlayer) {
-                showToast("⚡ Saltando micro-corte DASH / DRM...");
+                showToast("⚡ Resincronizando con el directo...");
                 try {
-                    const buffered = video.buffered;
-                    let jumped = false;
-                    for (let i = 0; i < buffered.length; i++) {
-                        if (buffered.start(i) <= video.currentTime && video.currentTime < buffered.end(i)) {
-                            video.currentTime = Math.min(buffered.end(i) - 0.2, video.currentTime + 0.6);
-                            jumped = true;
-                            break;
-                        } else if (buffered.start(i) > video.currentTime && (buffered.start(i) - video.currentTime) < 6.0) {
-                            video.currentTime = buffered.start(i) + 0.1;
-                            jumped = true;
-                            break;
+                    if (typeof shakaPlayer.goToLive === 'function') {
+                        shakaPlayer.goToLive();
+                    } else if (typeof shakaPlayer.isLive === 'function' && shakaPlayer.isLive()) {
+                        const range = shakaPlayer.seekRange();
+                        if (range && range.end) {
+                            video.currentTime = Math.max(range.start || 0, range.end - 1.0);
                         }
-                    }
-                    if (!jumped && buffered.length > 0) {
-                        video.currentTime = Math.max(0, buffered.end(buffered.length - 1) - 1.0);
+                    } else if (video.buffered.length > 0) {
+                        video.currentTime = Math.max(0, video.buffered.end(video.buffered.length - 1) - 1.0);
                     }
                     video.play().catch(() => { });
                 } catch (e) {
