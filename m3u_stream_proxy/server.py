@@ -252,7 +252,7 @@ async def get_channel_by_id(channel_id: str, request: Request):
         raise HTTPException(status_code=404, detail="Canal no encontrado")
     base_url = str(request.base_url).rstrip("/")
     res = dict(ch)
-    res["live_url"] = f"{base_url}/live/{channel_id}.m3u8"
+    res["live_url"] = f"{base_url}/live/{channel_id}.mpd" if ch.get("stream_type") == "dash" else f"{base_url}/live/{channel_id}.m3u8"
     if ch.get("acestream_id"):
         res["ts_url"] = f"{base_url}/ace/stream/{ch['acestream_id']}"
         res["ace_uri"] = f"acestream://{ch['acestream_id']}"
@@ -653,6 +653,21 @@ async def stream_ace_ts(acestream_id: str, server_id: Optional[str] = Query(None
 # ---------------------------------------------------------------------------
 # Endpoints de Streaming Directo por Canal (/live/{channel_id})
 # ---------------------------------------------------------------------------
+@app.get("/live/{channel_id}.mpd")
+@app.head("/live/{channel_id}.mpd")
+async def get_channel_live_mpd(channel_id: str, request: Request):
+    """
+    Ruta directa para flujo MPEG-DASH (.mpd), óptimo para Shaka Player, Kodi o TiviMate con ClearKey.
+    """
+    ch = manager.channels.get(channel_id)
+    if not ch:
+        raise HTTPException(status_code=404, detail="Canal no encontrado")
+    target_url = ch.get("url", "").split("|")[0].strip()
+    if not target_url:
+        raise HTTPException(status_code=400, detail="El canal no tiene URL válida")
+    return RedirectResponse(url=target_url)
+
+
 @app.get("/live/{channel_id}.m3u8")
 @app.head("/live/{channel_id}.m3u8")
 async def get_channel_live_m3u8(
@@ -677,6 +692,10 @@ async def get_channel_live_m3u8(
     target_url = ch.get("url")
     if not target_url:
         raise HTTPException(status_code=400, detail="El canal no tiene URL válida")
+
+    if ch.get("stream_type") == "dash":
+        clean_target = target_url.split("|")[0].strip()
+        return RedirectResponse(url=clean_target)
 
     buf_offset = offset if offset is not None else manager.settings.get("buffer_offset_seconds", 16.0)
     return await proxy_m3u8_manifest(target_url, request_base_url=base_url, buffer_offset=buf_offset)
@@ -983,12 +1002,21 @@ async def export_m3u_playlist(
         extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{logo}" group-title="{grp}", {name}'
         lines.append(extinf)
 
+        if ch.get("license_type"):
+            lines.append(f"#KODIPROP:inputstream.adaptive.license_type={ch['license_type']}")
+        elif ch.get("license_key"):
+            lines.append("#KODIPROP:inputstream.adaptive.license_type=clearkey")
+        if ch.get("license_key"):
+            lines.append(f"#KODIPROP:inputstream.adaptive.license_key={ch['license_key']}")
+
         if ch.get("acestream_id") and format == "getstream" and srv_clean_url:
             play_url = f"{srv_clean_url}/ace/getstream?id={ch['acestream_id']}"
         elif ch.get("acestream_id") and format == "manifest" and srv_clean_url:
             play_url = f"{srv_clean_url}/ace/manifest.m3u8?id={ch['acestream_id']}"
         elif ch.get("acestream_id") and format == "ts":
             play_url = f"{base_url}/ace/stream/{ch['acestream_id']}"
+        elif ch.get("stream_type") == "dash":
+            play_url = ch.get("url") or f"{base_url}/live/{ch['id']}.mpd"
         else:
             play_url = f"{base_url}/live/{ch['id']}.m3u8"
 

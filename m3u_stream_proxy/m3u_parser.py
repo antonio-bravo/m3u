@@ -43,12 +43,14 @@ def detect_acestream_id(url: str) -> Optional[str]:
 
 
 def detect_stream_type(url: str, acestream_id: Optional[str] = None) -> str:
-    """Clasifica el tipo de stream: acestream, hls, video, o direct."""
+    """Clasifica el tipo de stream: acestream, hls, dash, video, o direct."""
     if acestream_id:
         return "acestream"
     
-    clean = url.lower().split("?")[0]
-    if clean.endswith(".m3u8") or ".m3u8" in clean or "/hls/" in clean:
+    clean = url.lower().split("?")[0].split("|")[0]
+    if clean.endswith(".mpd") or ".mpd" in clean or "/dash/" in clean or "cenc.mpd" in clean:
+        return "dash"
+    elif clean.endswith(".m3u8") or ".m3u8" in clean or "/hls/" in clean:
         return "hls"
     elif clean.endswith((".mp4", ".mkv", ".avi", ".ts", ".webm")):
         return "video"
@@ -98,7 +100,9 @@ def parse_m3u_lines(lines: Generator[str, None, None], source_id: str = "") -> G
                 "group": "General",
                 "url": "",
                 "acestream_id": None,
-                "stream_type": "direct"
+                "stream_type": "direct",
+                "license_type": None,
+                "license_key": None
             }
 
             meta_part, title_part = split_extinf_line(line)
@@ -128,6 +132,14 @@ def parse_m3u_lines(lines: Generator[str, None, None], source_id: str = "") -> G
                 if grp:
                     current_channel["group"] = grp
 
+        elif line.startswith("#KODIPROP:inputstream.adaptive.license_type="):
+            if current_channel is not None:
+                current_channel["license_type"] = line.split("=", 1)[1].strip()
+
+        elif line.startswith("#KODIPROP:inputstream.adaptive.license_key="):
+            if current_channel is not None:
+                current_channel["license_key"] = line.split("=", 1)[1].strip()
+
         elif line.startswith("#"):
             # Otras directivas M3U (#EXTM3U, #EXTVLCOPT, etc.)
             continue
@@ -137,7 +149,10 @@ def parse_m3u_lines(lines: Generator[str, None, None], source_id: str = "") -> G
                 current_channel["url"] = line
                 ace_id = detect_acestream_id(line)
                 current_channel["acestream_id"] = ace_id
-                current_channel["stream_type"] = detect_stream_type(line, ace_id)
+                st = detect_stream_type(line, ace_id)
+                if current_channel.get("license_key") and st in ("hls", "direct") and (".mpd" in line.lower() or "cenc" in line.lower()):
+                    st = "dash"
+                current_channel["stream_type"] = st
 
                 # Generar ID único persistente
                 channel_index += 1
@@ -165,7 +180,9 @@ def parse_m3u_lines(lines: Generator[str, None, None], source_id: str = "") -> G
                     "group": "General",
                     "url": line,
                     "acestream_id": ace_id,
-                    "stream_type": detect_stream_type(line, ace_id)
+                    "stream_type": detect_stream_type(line, ace_id),
+                    "license_type": None,
+                    "license_key": None
                 }
 
 

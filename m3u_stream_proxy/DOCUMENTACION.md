@@ -8,7 +8,7 @@
 
 1. [Arquitectura y Funcionamiento](#-arquitectura-y-funcionamiento)
 2. [Opciones de Despliegue con Docker](#-opciones-de-despliegue-con-docker)
-   - [A. Despliegue en QNAP NAS (Container Station)](#a-despliegue-en-qnap-nas-container-station-recomendado)
+   - [A. Despliegue en NAS (Container Station)](#a-despliegue-en-nas-container-station-recomendado)
    - [B. Despliegue en Docker Compose Estándar (Linux / Mac / Windows)](#b-despliegue-en-docker-compose-estándar)
    - [C. Variables de Entorno](#c-variables-de-entorno)
 3. [Configuración de Motores AceStream](#-configuración-de-motores-acestream)
@@ -60,7 +60,7 @@
 
 ## 📦 Opciones de Despliegue con Docker
 
-### A. Despliegue en QNAP NAS (Container Station) [Recomendado]
+### A. Despliegue en NAS (Container Station) [Recomendado]
 
 En sistemas NAS basados en Linux (como QNAP o Synology), la configuración más estable y de mayor rendimiento es utilizar **`network_mode: host`**. Esto elimina la sobrecarga del puente de red y permite que el proxy se conecte directamente con el motor AceStream en `127.0.0.1` sin que el firewall del NAS lo bloquee.
 
@@ -80,8 +80,8 @@ services:
     environment:
       - PORT=8899
       - PYTHONUNBUFFERED=1
-      - ACESTREAM_ENGINE_URL="http://127.0.0.1:6879"
-      - ACESTREAM_VPN_ENGINE_URL="http://127.0.0.1:6878"
+      - ACESTREAM_ENGINE_URL=http://127.0.0.1:6879
+      - ACESTREAM_VPN_ENGINE_URL=http://127.0.0.1:6878
       - BUFFER_OFFSET_SECONDS=16.0
       - AUTO_SYNC_HOURS=6
       - GITHUB_TOKEN=
@@ -93,7 +93,7 @@ services:
 ```
 
 > [!IMPORTANT]
-> **Regla de oro sobre volúmenes en QNAP:**
+> **Regla de oro sobre volúmenes en NAS:**
 > * Monta **únicamente** la carpeta `./data:/app/data` para persistencia de ajustes y favoritos.
 > * **NUNCA montes carpetas vacías del NAS en `/app` o `/app/templates`**, ya que eso ocultaría la interfaz web del contenedor.
 
@@ -225,6 +225,33 @@ Puedes importar las listas generadas por el proxy en cualquier cliente IPTV (**T
 
 ---
 
+## 🔐 Compatibilidad con Listas AK47, FanCode y Canales DASH / ClearKey DRM
+
+El proxy incluye compatibilidad integral con listas complejas como **AK47Sports** y canales protegidos como **FanCode**:
+
+### ¿Cómo funcionan los canales de FanCode en AK47 sin VPN?
+1. **Canales 24/7 (FANCODE 1, FANCODE 2 FHD/HD):**
+   - Se emiten a través de la infraestructura global de **Amazon Prime Video / AIV OTT** (`otte.cache.aiv-cdn.net`) en formato **MPEG-DASH (`.mpd`)**.
+   - No tienen bloqueo geográfico por IP europea/española, pero su vídeo está protegido mediante cifrado **ClearKey DRM**.
+   - La aplicación AK47 utiliza ExoPlayer pasando las claves simétricas de ClearKey (`license_key: <KID>:<KEY>`).
+
+2. **Reproducción directa en la Interfaz Web (Shaka Player):**
+   - El proxy incorpora el motor **Shaka Player** de Google junto a **HLS.js**.
+   - Al reproducir un canal de tipo DASH o con clave ClearKey (como FanCode o ESPN Argentina de AK47), el reproductor configura automáticamente la API W3C Encrypted Media Extensions (EME) con la clave del canal y lo decodifica en tiempo real en tu navegador sin requerir extensiones ni VPN.
+
+3. **Exportación a Reproductores Externos (TiviMate, Kodi, OTT Navigator):**
+   - Al descargar o vincular la lista en `/playlist.m3u`, el proxy preserva automáticamente las directivas:
+     ```text
+     #KODIPROP:inputstream.adaptive.license_type=clearkey
+     #KODIPROP:inputstream.adaptive.license_key=<KID>:<KEY>
+     ```
+   - Esto permite que aplicaciones en Android TV o decodificadores reproduzcan los canales de FanCode y AK47 con aceleración por hardware.
+
+4. **Canales de Eventos FanCode (HLS con Headers):**
+   - Los eventos temporales en HLS que incluyen parámetros de cabeceras móviles (`|User-Agent=ReactNativeVideo...&Referer=https://fancode.com/`) son procesados por el proxy inteligente `cors_hls_proxy.py`, inyectando las cabeceras requeridas tanto en los sub-manifiestos como en los segmentos de vídeo `.ts`.
+
+---
+
 ## 📺 Integración con Plex y Jellyfin (HDHomeRun)
 
 El proxy incluye un emulador de sintonizador **SiliconDust HDHomeRun** virtual. Esto permite a **Plex Live TV & DVR** y **Jellyfin Live TV** detectar el proxy como una sintonizadora de televisión física en la red local.
@@ -279,7 +306,8 @@ Accede desde tu navegador a `http://<IP_PROXY>:8899`:
 ### 3. La barra de información del canal se solapa con los botones
 * **Solución:** Actualiza a la última versión de la imagen Docker (`ghcr.io/antonio-bravo/m3u/m3u-stream-proxy:latest`). La barra de información cuenta con diseño responsivo que reubica automáticamente los botones en una segunda línea para proteger el título y las etiquetas.
 
-### 4. ¿Cómo actualizar la imagen en QNAP Container Station?
+### 4. ¿Cómo actualizar la imagen en NAS Container Station?
 1. Entra a **Container Station > Imágenes**.
 2. Pulsa en **Extraer (Pull)** e introduce `ghcr.io/antonio-bravo/m3u/m3u-stream-proxy:latest`.
 3. Reinicia tu aplicación o contenedor para aplicar los cambios.
+

@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/shaka-player@4.11.20/dist/shaka-player.compiled.min.js"></script>
     <style>
         :root {
             --bg-base: #090d16;
@@ -582,6 +583,12 @@
             border-color: rgba(99, 102, 241, 0.3);
         }
 
+        .pill-dash {
+            background: rgba(168, 85, 247, 0.15);
+            color: #c084fc;
+            border-color: rgba(168, 85, 247, 0.35);
+        }
+
         .pill-source {
             background: rgba(255, 255, 255, 0.05);
             color: #e2e8f0;
@@ -953,6 +960,11 @@
         .tag-hls {
             background: rgba(99, 102, 241, 0.2);
             color: #a5b4fc;
+        }
+
+        .tag-dash {
+            background: rgba(168, 85, 247, 0.2);
+            color: #c084fc;
         }
 
         .channel-card-actions {
@@ -1448,7 +1460,8 @@
                     <button class="type-pill active" onclick="setTypeFilter('all', this)">Todos</button>
                     <button class="type-pill" onclick="setTypeFilter('fav', this)">⭐ Favoritos</button>
                     <button class="type-pill" onclick="setTypeFilter('acestream', this)">⚡ AceStream</button>
-                    <button class="type-pill" onclick="setTypeFilter('hls', this)">📺 HLS / Directo</button>
+                    <button class="type-pill" onclick="setTypeFilter('hls', this)">📺 HLS</button>
+                    <button class="type-pill" onclick="setTypeFilter('dash', this)">🔒 DASH / ClearKey</button>
                 </div>
 
                 <!-- Opciones de tamaño y visualización de títulos -->
@@ -2014,6 +2027,7 @@
 
         // Estado Global
         let hls = null;
+        let shakaPlayer = null;
         let video = document.getElementById("video-player");
         let currentChannel = null;
         let currentStreamUrl = "";
@@ -2094,8 +2108,81 @@
         }
 
         // --------------------------------------------------------------------
-        // Reproductor de Video & HLS Engine
+        // Reproductor de Video (HLS.js & Shaka Player para DASH/ClearKey)
         // --------------------------------------------------------------------
+        async function initShakaPlayer() {
+            if (window.shaka && !shakaPlayer) {
+                shaka.polyfill.installAll();
+                if (shaka.Player.isBrowserSupported()) {
+                    shakaPlayer = new shaka.Player(video);
+                    shakaPlayer.addEventListener('error', (event) => {
+                        console.error('Shaka Player Error:', event.detail);
+                        hideSpinner();
+                        showToast(`Error de reproducción DASH (${event.detail.code || 'DRM'})`);
+                    });
+                }
+            }
+            return shakaPlayer;
+        }
+
+        async function loadDashStream(channel) {
+            showSpinner("Cargando stream DASH / ClearKey...");
+
+            if (hls) {
+                hls.destroy();
+                hls = null;
+            }
+
+            const player = await initShakaPlayer();
+            if (!player) {
+                hideSpinner();
+                showToast("Tu navegador no soporta reproducción MPEG-DASH / EME.");
+                return;
+            }
+
+            try {
+                await player.unload();
+            } catch (e) {}
+
+            // Configurar ClearKey DRM si el canal dispone de license_key
+            if (channel.license_key && channel.license_key.includes(':')) {
+                const parts = channel.license_key.split(':');
+                const kid = parts[0].trim();
+                const key = parts[1].trim();
+                player.configure({
+                    drm: {
+                        clearKeys: {
+                            [kid]: key
+                        }
+                    }
+                });
+            } else {
+                player.configure({ drm: { clearKeys: {} } });
+            }
+
+            const cleanUrl = channel.url.split('|')[0].trim();
+            currentStreamUrl = cleanUrl;
+
+            try {
+                await player.load(cleanUrl);
+                hideSpinner();
+                const playPromise = video.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(e => {
+                        console.log("Autoplay DASH silenciado:", e);
+                        video.muted = true;
+                        video.play().catch(err => console.log("Autoplay bloqueado:", err));
+                    });
+                }
+            } catch (err) {
+                console.error("Error al cargar stream DASH en Shaka:", err);
+                hideSpinner();
+                showToast("Error al reproducir stream DASH: " + (err.message || err.code));
+            }
+
+            startBufferMonitor();
+        }
+
         function playChannel(channel) {
             currentChannel = channel;
             updateChannelUI(channel);
@@ -2105,30 +2192,43 @@
 
             if (channel.acestream_id) {
                 // Modo AceStream
-                // Se solicita el manifiesto HLS proxificado generado por el motor AceStream
                 const targetServerId = channel.acestream_server_id || (activeAceServerId && activeAceServerId !== 'direct' ? activeAceServerId : '');
                 const serverParam = targetServerId ? `?server_id=${encodeURIComponent(targetServerId)}` : '';
                 streamUrl = `${base}/ace/manifest/${channel.acestream_id}.m3u8${serverParam}`;
                 document.getElementById("open-ace-btn").style.display = "inline-flex";
                 startAceStreamStatsMonitor(channel.acestream_id, targetServerId);
+                currentStreamUrl = streamUrl;
+                loadStreamInPlayer(streamUrl);
+            } else if (channel.stream_type === "dash" || (channel.url && (channel.url.includes('.mpd') || channel.url.includes('cenc.mpd')))) {
+                // Modo DASH / ClearKey con Shaka Player
+                document.getElementById("open-ace-btn").style.display = "none";
+                stopAceStreamStatsMonitor();
+                loadDashStream(channel);
             } else if (channel.stream_type === "hls") {
                 // Modo HLS estándar -> usar CORS Proxy inteligente
                 streamUrl = `${base}/stream/proxy.m3u8?url=${encodeURIComponent(channel.url)}`;
                 document.getElementById("open-ace-btn").style.display = "none";
                 stopAceStreamStatsMonitor();
+                currentStreamUrl = streamUrl;
+                loadStreamInPlayer(streamUrl);
             } else {
                 // Stream directo o video
                 streamUrl = `${base}/stream/proxy.m3u8?url=${encodeURIComponent(channel.url)}`;
                 document.getElementById("open-ace-btn").style.display = "none";
                 stopAceStreamStatsMonitor();
+                currentStreamUrl = streamUrl;
+                loadStreamInPlayer(streamUrl);
             }
-
-            currentStreamUrl = streamUrl;
-            loadStreamInPlayer(streamUrl);
         }
 
         function loadStreamInPlayer(url) {
             showSpinner("Cargando stream...");
+
+            if (shakaPlayer) {
+                try {
+                    shakaPlayer.unload();
+                } catch (e) {}
+            }
 
             if (hls) {
                 hls.destroy();
@@ -2254,6 +2354,9 @@
             if (ch.acestream_id) {
                 typePill.textContent = "⚡ AceStream";
                 typePill.className = "pill pill-ace";
+            } else if (ch.stream_type === "dash" || ch.license_key) {
+                typePill.textContent = ch.license_key ? "🔒 DASH ClearKey" : "🔒 DASH";
+                typePill.className = "pill pill-dash";
             } else {
                 typePill.textContent = "📺 HLS";
                 typePill.className = "pill pill-hls";
@@ -2269,7 +2372,13 @@
             }
 
             document.getElementById("hud-channel").textContent = ch.name;
-            document.getElementById("hud-type").textContent = ch.acestream_id ? `AceStream (${ch.acestream_id.slice(0, 8)}...)` : 'HLS Direct';
+            let hudTypeTxt = 'HLS Direct';
+            if (ch.acestream_id) {
+                hudTypeTxt = `AceStream (${ch.acestream_id.slice(0, 8)}...)`;
+            } else if (ch.stream_type === "dash" || ch.license_key) {
+                hudTypeTxt = ch.license_key ? 'DASH (ClearKey DRM)' : 'DASH Direct';
+            }
+            document.getElementById("hud-type").textContent = hudTypeTxt;
 
             // Resaltar en sidebar
             document.querySelectorAll(".channel-card").forEach(el => {
@@ -2278,7 +2387,7 @@
 
             // Sincronizar campos del modal de enlaces para otros dispositivos
             const base = window.location.origin;
-            const liveUrl = `${base}/live/${ch.id}.m3u8`;
+            const liveUrl = (ch.stream_type === "dash" || ch.license_key) ? `${base}/live/${ch.id}.mpd` : `${base}/live/${ch.id}.m3u8`;
             const chNameModal = document.getElementById("export-current-ch-name");
             if (chNameModal) chNameModal.textContent = ch.name;
             const currentUrlInput = document.getElementById("export-current-channel-url");
@@ -2440,7 +2549,15 @@
             for (const ch of channels) {
                 const isCurrent = currentChannel && currentChannel.id === ch.id;
                 const isAce = !!ch.acestream_id;
-                const typeTag = isAce ? `<span class="card-type-tag tag-ace">ACE</span>` : `<span class="card-type-tag tag-hls">HLS</span>`;
+                const isDash = ch.stream_type === "dash" || !!ch.license_key;
+                let typeTag = "";
+                if (isAce) {
+                    typeTag = `<span class="card-type-tag tag-ace">ACE</span>`;
+                } else if (isDash) {
+                    typeTag = `<span class="card-type-tag tag-dash">DASH</span>`;
+                } else {
+                    typeTag = `<span class="card-type-tag tag-hls">HLS</span>`;
+                }
                 const starClass = ch.is_favorite ? "active" : "";
                 const logoSrc = ch.tvg_logo ? escapeHtml(ch.tvg_logo) : FALLBACK_SVG;
                 const delBtn = ch.is_custom ? `<button class="channel-card-btn channel-card-del" onclick="deleteCustomChannel(event, '${ch.id}', '${escapeHtml(ch.name)}')" title="Eliminar este canal personalizado">🗑️</button>` : '';
