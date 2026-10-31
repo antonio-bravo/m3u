@@ -17,9 +17,10 @@
    - [Resolución Inteligente de IP para Dispositivos Externos](#resolución-inteligente-de-ip-para-dispositivos-externos)
 4. [Formatos de Enlace Disponibles](#-formatos-de-enlace-disponibles)
 5. [Exportación de Listas M3U para Clientes IPTV](#-exportación-de-listas-m3u-para-clientes-iptv)
-6. [Integración con Plex y Jellyfin (HDHomeRun)](#-integración-con-plex-y-jellyfin-hdhomerun)
-7. [Funcionalidades de la Interfaz Web PRO](#-funcionalidades-de-la-interfaz-web-pro)
-8. [Resolución de Problemas Frecuentes (FAQ)](#-resolución-de-problemas-frecuentes-faq)
+6. [Compatibilidad con Listas AK47, FanCode y Canales DASH / ClearKey DRM](#-compatibilidad-con-listas-ak47-fancode-y-canales-dash--clearkey-drm)
+7. [Integración con Plex y Jellyfin (HDHomeRun)](#-integración-con-plex-y-jellyfin-hdhomerun)
+8. [Funcionalidades de la Interfaz Web PRO](#-funcionalidades-de-la-interfaz-web-pro)
+9. [Resolución de Problemas Frecuentes (FAQ)](#-resolución-de-problemas-frecuentes-faq)
 
 ---
 
@@ -322,4 +323,28 @@ Accede desde tu navegador a `http://<IP_PROXY>:8899`:
 1. Entra a **Container Station > Imágenes**.
 2. Pulsa en **Extraer (Pull)** e introduce `ghcr.io/antonio-bravo/m3u/m3u-stream-proxy:latest`.
 3. Reinicia tu aplicación o contenedor para aplicar los cambios.
+
+### 5. Los canales DASH / ClearKey (FanCode, etc.) se quedan en pantalla negra en el navegador
+* **Causa:** Política de seguridad estándar del W3C para navegadores web (**Insecure Context**). Las APIs de descifrado **EME (Encrypted Media Extensions)** y **ClearKey** están estrictamente bloqueadas en conexiones `http://` que no sean `localhost`. Al acceder desde tu ordenador a la IP del NAS (`http://192.168.x.x:8899`), el navegador bloquea la clave de descifrado y el vídeo no puede mostrar imagen.
+* **Solución en Google Chrome / Microsoft Edge / Brave (en 4 pasos):**
+  1. En una nueva pestaña del navegador, escribe en la barra de direcciones:
+     ```text
+     chrome://flags/#unsafely-treat-insecure-origin-as-secure
+     ```
+     *(En Microsoft Edge escribe: `edge://flags/#unsafely-treat-insecure-origin-as-secure`)*
+  2. En la casilla de texto debajo de **Insecure origins treated as secure**, introduce la dirección completa de tu NAS con protocolo `http://` y puerto `:8899`:
+     ```text
+     http://<IP_DE_TU_NAS>:8899
+     ```
+     *(Ejemplo: `http://192.168.1.100:8899`)*
+  3. Cambia el menú desplegable que dice **Disabled** a **Enabled**.
+  4. Pulsa el botón azul **Relaunch** (Reiniciar) que aparece en la esquina inferior derecha.
+  5. Al reabrirse el navegador, entra de nuevo a la interfaz web y pulsa en cualquier canal de FanCode o DASH: ¡se reproducirá de inmediato con vídeo y audio!
+
+> [!NOTE]
+> **¿Por qué en TiviMate, Kodi o la app de AK47 no hace falta configurar nada?**
+> Porque los reproductores nativos de Android y decodificadores acceden directamente al chip de descifrado por hardware del dispositivo (ExoPlayer / MediaDrm), saltándose las restricciones de los navegadores web. Para verlos en tu televisor, simplemente importa `http://<IP_NAS>:8899/playlist.m3u` en TiviMate o Kodi.
+
+> [!WARNING]
+> **Safari en macOS e iOS:** Apple no implementa el estándar ClearKey (`org.w3.clearkey`) en Safari (solo soporta FairPlay). Para reproducir canales ClearKey en Mac o iPhone/iPad a través de la web, utiliza Google Chrome o una aplicación nativa como IINA o VLC.
 
