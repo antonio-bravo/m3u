@@ -99,7 +99,7 @@ class AceStreamProxy:
             clean
         ]
         start_t = time.time()
-        async with httpx.AsyncClient(timeout=2.0) as client:
+        async with httpx.AsyncClient(timeout=4.0) as client:
             for u in test_urls:
                 try:
                     r = await client.get(u)
