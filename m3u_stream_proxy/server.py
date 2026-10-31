@@ -53,15 +53,20 @@ def find_index_html() -> Optional[str]:
     candidate_paths = [
         INDEX_HTML_PATH,
         os.path.join(os.path.dirname(__file__), "templates", "index.html"),
-        os.path.join(os.getcwd(), "templates", "index.html"),
         "/app/templates/index.html",
+        "/opt/templates/index.html",
+        os.path.join(os.getcwd(), "templates", "index.html"),
         os.path.join(LOCAL_PLAYLISTS_DIR, "m3u_stream_proxy", "templates", "index.html"),
         os.path.join(os.path.dirname(__file__), "index.html"),
         "/app/index.html",
     ]
     for p in candidate_paths:
         if p and os.path.isfile(p):
-            return p
+            try:
+                if os.path.getsize(p) > 100:
+                    return p
+            except Exception:
+                pass
     return None
 
 
@@ -182,11 +187,22 @@ async def startup_event():
 @app.get("/", response_class=HTMLResponse)
 async def serve_index():
     path = find_index_html()
-    if not path:
-        logger.error(f"index.html no encontrado. Rutas evaluadas: {INDEX_HTML_PATH}")
-        raise HTTPException(status_code=500, detail="index.html no encontrado")
-    with open(path, "r", encoding="utf-8") as f:
-        return HTMLResponse(content=f.read())
+    if path:
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                content = f.read()
+                if content and len(content.strip()) > 100:
+                    return HTMLResponse(content=content)
+        except Exception as e:
+            logger.warning(f"Error al leer index.html desde archivo {path}: {e}")
+
+    # Fallback embebido infalible (evita errores si el volumen del host oculta /app/templates)
+    try:
+        from default_template import get_embedded_index_html
+        return HTMLResponse(content=get_embedded_index_html())
+    except Exception as e:
+        logger.error(f"Error al cargar plantilla embebida: {e}")
+        raise HTTPException(status_code=500, detail="index.html no disponible")
 
 
 @app.get("/health")
