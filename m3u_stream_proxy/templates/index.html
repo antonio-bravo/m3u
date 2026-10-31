@@ -2264,6 +2264,7 @@
                 shaka.polyfill.installAll();
                 if (shaka.Player.isBrowserSupported()) {
                     shakaPlayer = new shaka.Player(video);
+
                     shakaPlayer.addEventListener('error', (event) => {
                         console.error('Shaka Player Error:', event.detail);
                         hideSpinner();
@@ -2272,6 +2273,29 @@
                         } else {
                             showToast(`Error de reproducción DASH (${event.detail.code || 'DRM'})`);
                         }
+                    });
+
+                    shakaPlayer.addEventListener('buffering', (event) => {
+                        if (event.buffering) {
+                            showSpinner("Llenando búfer DASH...");
+                        } else {
+                            hideSpinner();
+                        }
+                    });
+
+                    shakaPlayer.addEventListener('adaptation', () => {
+                        try {
+                            const tracks = shakaPlayer.getVariantTracks();
+                            const active = tracks.find(t => t.active);
+                            if (active) {
+                                if (active.width && active.height) {
+                                    document.getElementById("hud-res").textContent = `${active.width}x${active.height}`;
+                                }
+                                if (active.bandwidth) {
+                                    document.getElementById("hud-bitrate").textContent = `${Math.round(active.bandwidth / 1000)} kbps`;
+                                }
+                            }
+                        } catch (e) {}
                     });
                 }
             }
@@ -2313,21 +2337,80 @@
                 await player.unload();
             } catch (e) {}
 
-            // Configurar ClearKey DRM si el canal dispone de license_key
+            // Configurar ClearKey DRM
+            const clearKeysConfig = {};
             if (channel.license_key && channel.license_key.includes(':')) {
                 const parts = channel.license_key.split(':');
-                const kid = parts[0].trim();
-                const key = parts[1].trim();
-                player.configure({
-                    drm: {
-                        clearKeys: {
-                            [kid]: key
-                        }
-                    }
-                });
-            } else {
-                player.configure({ drm: { clearKeys: {} } });
+                const rawKid = parts[0].trim();
+                const rawKey = parts[1].trim();
+                const cleanKid = rawKid.replace(/-/g, '').toLowerCase();
+                const cleanKey = rawKey.replace(/-/g, '').toLowerCase();
+                clearKeysConfig[cleanKid] = cleanKey;
+                if (rawKid !== cleanKid) {
+                    clearKeysConfig[rawKid] = rawKey;
+                }
             }
+
+            // Parámetros de búfer optimizados anti-congelamiento
+            let liveLatency = 12;
+            let bufGoal = 25;
+            let rebufGoal = 3;
+            if (typeof activeBufferProfile !== 'undefined') {
+                if (activeBufferProfile === 'balanced') {
+                    liveLatency = 8;
+                    bufGoal = 15;
+                    rebufGoal = 2;
+                } else if (activeBufferProfile === 'low') {
+                    liveLatency = 4;
+                    bufGoal = 8;
+                    rebufGoal = 1.5;
+                }
+            }
+
+            player.configure({
+                drm: {
+                    clearKeys: clearKeysConfig
+                },
+                manifest: {
+                    dash: {
+                        ignoreSuggestedPresentationDelay: true,
+                        autoCorrectDrift: true,
+                        initialSegmentLimit: 2
+                    },
+                    retryParameters: {
+                        maxAttempts: 4,
+                        baseDelay: 1000,
+                        backoffFactor: 2,
+                        timeout: 12000
+                    }
+                },
+                streaming: {
+                    bufferingGoal: bufGoal,
+                    rebufferingGoal: rebufGoal,
+                    bufferBehind: 30,
+                    liveEdgeLatency: liveLatency,
+                    safeSeekOffset: 4,
+                    jumpLargeGaps: true,
+                    smallGapLimit: 1.5,
+                    stallEnabled: true,
+                    stallThreshold: 1.0,
+                    stallSkip: 0.5,
+                    inaccurateManifestTolerance: 2.0,
+                    gapDetectionThreshold: 0.5,
+                    alwaysStreamText: false,
+                    retryParameters: {
+                        maxAttempts: 5,
+                        baseDelay: 1000,
+                        backoffFactor: 2,
+                        timeout: 15000
+                    }
+                },
+                abr: {
+                    enabled: true,
+                    defaultBandwidthEstimate: 3000000,
+                    switchInterval: 8
+                }
+            });
 
             try {
                 await player.load(cleanUrl);
@@ -2627,51 +2710,118 @@
             }, 1000);
         }
 
+        let activeBufferProfile = 'stable';
+        let lastKnownPlayTime = 0;
+        let playStallCount = 0;
+
         function setupHlsAutoRecovery() {
-            // Si el video se congela por más de 5 segundos con búfer 0, resincronizar
-            let stallCount = 0;
+            // Monitor inteligente de congelamiento (stalling) aplicable a HLS y Shaka (DASH)
             setInterval(() => {
-                if (video && !video.paused && video.readyState < 3) {
-                    stallCount++;
-                    if (stallCount >= 6) {
-                        console.log("Auto-Recuperación: saltando micro-corte.");
+                if (!video || video.paused || video.seeking) {
+                    playStallCount = 0;
+                    if (video) lastKnownPlayTime = video.currentTime;
+                    return;
+                }
+
+                // Detectar si el tiempo no avanza a pesar de estar en reproducción activa
+                const isTimeAdvancing = Math.abs(video.currentTime - lastKnownPlayTime) > 0.2;
+                lastKnownPlayTime = video.currentTime;
+
+                if (!isTimeAdvancing) {
+                    playStallCount++;
+                    // Si se queda congelado durante 4 segundos seguidos
+                    if (playStallCount >= 4) {
+                        console.warn("Auto-Recuperación: video congelado detectado. Resincronizando...");
                         recoverBuffer();
-                        stallCount = 0;
+                        playStallCount = 0;
                     }
                 } else {
-                    stallCount = 0;
+                    playStallCount = 0;
                 }
             }, 1000);
         }
 
         function recoverBuffer() {
-            if (!hls && !video) return;
-            showToast("⚡ Resincronizando con el directo...");
+            if (!video) return;
+
             if (hls) {
+                showToast("⚡ Resincronizando stream HLS...");
                 hls.startLoad();
                 if (video.buffered.length > 0) {
                     video.currentTime = video.buffered.end(video.buffered.length - 1) - 1.0;
                 }
                 video.play().catch(() => { });
+            } else if (shakaPlayer) {
+                showToast("⚡ Saltando micro-corte DASH / DRM...");
+                try {
+                    const buffered = video.buffered;
+                    let jumped = false;
+                    for (let i = 0; i < buffered.length; i++) {
+                        if (buffered.start(i) <= video.currentTime && video.currentTime < buffered.end(i)) {
+                            video.currentTime = Math.min(buffered.end(i) - 0.2, video.currentTime + 0.6);
+                            jumped = true;
+                            break;
+                        } else if (buffered.start(i) > video.currentTime && (buffered.start(i) - video.currentTime) < 6.0) {
+                            video.currentTime = buffered.start(i) + 0.1;
+                            jumped = true;
+                            break;
+                        }
+                    }
+                    if (!jumped && buffered.length > 0) {
+                        video.currentTime = Math.max(0, buffered.end(buffered.length - 1) - 1.0);
+                    }
+                    video.play().catch(() => { });
+                } catch (e) {
+                    console.error("Error en Shaka recoverBuffer:", e);
+                }
             } else {
+                showToast("⚡ Resincronizando reproductor...");
                 video.load();
                 video.play().catch(() => { });
             }
         }
 
         function setBufferProfile(profile) {
+            activeBufferProfile = profile;
             document.querySelectorAll(".mode-btn").forEach(b => b.classList.remove("active"));
             if (profile === 'stable') {
                 document.getElementById("prof-stable").classList.add("active");
                 if (hls) hls.config.maxBufferLength = 40;
+                if (shakaPlayer) {
+                    shakaPlayer.configure({
+                        streaming: {
+                            bufferingGoal: 25,
+                            rebufferingGoal: 3,
+                            liveEdgeLatency: 14
+                        }
+                    });
+                }
                 showToast("Perfil Búfer: Ultra Estable (20s)");
             } else if (profile === 'balanced') {
                 document.getElementById("prof-balanced").classList.add("active");
                 if (hls) hls.config.maxBufferLength = 20;
+                if (shakaPlayer) {
+                    shakaPlayer.configure({
+                        streaming: {
+                            bufferingGoal: 15,
+                            rebufferingGoal: 2,
+                            liveEdgeLatency: 9
+                        }
+                    });
+                }
                 showToast("Perfil Búfer: Equilibrado (12s)");
             } else {
                 document.getElementById("prof-low").classList.add("active");
                 if (hls) hls.config.maxBufferLength = 8;
+                if (shakaPlayer) {
+                    shakaPlayer.configure({
+                        streaming: {
+                            bufferingGoal: 6,
+                            rebufferingGoal: 1.5,
+                            liveEdgeLatency: 4
+                        }
+                    });
+                }
                 showToast("Perfil Búfer: Baja Latencia (4s)");
             }
         }

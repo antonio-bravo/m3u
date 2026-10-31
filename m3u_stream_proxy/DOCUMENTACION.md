@@ -349,6 +349,14 @@ Accede desde tu navegador a `http://<IP_PROXY>:8899`:
 > **¿Por qué en TiviMate, Kodi o la app de AK47 no hace falta configurar nada?**
 > Porque los reproductores nativos de Android y decodificadores acceden directamente al chip de descifrado por hardware del dispositivo (ExoPlayer / MediaDrm), saltándose las restricciones de los navegadores web. Para verlos en tu televisor, simplemente importa `http://<IP_NAS>:8899/playlist.m3u` en TiviMate o Kodi.
 
+### 6. Micro-cortes o congelamiento en canales DASH / ClearKey
+* **Causa:** En emisiones dinámicas en directo (MPEG-DASH), muchos servidores asignan un retardo sugerido excesivamente bajo (de solo 2 segundos) y se producen pequeñas discontinuidades de marcas de tiempo (*timestamp gaps*) entre fragmentos. Además, un monitor de búfer estándar que reinicie el reproductor rompería la sesión de descifrado ClearKey.
+* **Solución aplicada:**
+  1. Se ha configurado Shaka Player con **`ignoreSuggestedPresentationDelay: true`** y una latencia segura respecto al directo (`liveEdgeLatency: 12s`), lo que permite crear un búfer estable de 20-30 segundos en lugar de solo 2 segundos.
+  2. Se ha activado **`jumpLargeGaps: true`** y **`stallSkip: 0.5s`**, de forma que cualquier hueco en la emisión se salta al instante sin detener la imagen.
+  3. El monitor de auto-recuperación ahora detecta congelamientos reales y salta el micro-corte suavemente en caliente, protegiendo las claves DRM sin resetear el reproductor.
+  4. Puedes alternar entre los perfiles **Ultra Estable (20s)**, **Equilibrado (12s)** o **Baja Latencia (4s)** en los botones debajo del reproductor.
+
 > [!WARNING]
 > **Safari en macOS e iOS:** Apple no implementa el estándar ClearKey (`org.w3.clearkey`) en Safari (solo soporta FairPlay). Para reproducir canales ClearKey en Mac o iPhone/iPad a través de la web, utiliza Google Chrome o una aplicación nativa como IINA o VLC.
 
