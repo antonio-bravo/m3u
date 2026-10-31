@@ -2156,7 +2156,6 @@
         window.addEventListener("DOMContentLoaded", async () => {
             initSidebarResizer();
             initTitleWrap();
-            initAudioBoost();
             setupHlsAutoRecovery();
             await loadSettings();
             await loadAceServers();
@@ -2193,6 +2192,11 @@
         }
 
         function cycleAudioBoost() {
+            if (currentChannel && (currentChannel.stream_type === "dash" || currentChannel.license_key)) {
+                showToast("ℹ️ Audio nativo activo (los canales DRM no permiten filtros WebAudio por seguridad del navegador)");
+                return;
+            }
+
             if (!audioContext || !gainNode) {
                 initAudioBoost();
             }
@@ -2443,12 +2447,19 @@
                     player.setTextTrackVisibility(false);
                 } catch (e) { }
                 hideSpinner();
+                video.muted = false;
                 const playPromise = video.play();
                 if (playPromise !== undefined) {
                     playPromise.catch(e => {
-                        console.log("Autoplay DASH silenciado:", e);
+                        console.log("Autoplay DASH con sonido bloqueado por el navegador:", e);
                         video.muted = true;
                         video.play().catch(err => console.log("Autoplay bloqueado:", err));
+                        showToast("🔇 Haz clic en el reproductor para activar el sonido");
+                        const unmuteHandler = () => {
+                            video.muted = false;
+                            video.removeEventListener('click', unmuteHandler);
+                        };
+                        video.addEventListener('click', unmuteHandler, { once: true });
                     });
                 }
             } catch (err) {
@@ -2745,21 +2756,29 @@
         function setupHlsAutoRecovery() {
             // Monitor inteligente de congelamiento (stalling) aplicable a HLS y Shaka (DASH)
             setInterval(() => {
-                if (!video || video.paused || video.seeking) {
+                // Si el reproductor no existe, está en pausa, buscando, o cargando datos (readyState < 3)
+                if (!video || video.paused || video.seeking || video.readyState < 3) {
                     playStallCount = 0;
                     if (video) lastKnownPlayTime = video.currentTime;
                     return;
                 }
 
-                // Detectar si el tiempo no avanza a pesar de estar en reproducción activa
+                // Si Shaka Player está en proceso activo de buffering interno, resetear contador
+                if (shakaPlayer && typeof shakaPlayer.isBuffering === 'function' && shakaPlayer.isBuffering()) {
+                    playStallCount = 0;
+                    lastKnownPlayTime = video.currentTime;
+                    return;
+                }
+
+                // Detectar si el tiempo no avanza a pesar de estar en reproducción activa con datos
                 const isTimeAdvancing = Math.abs(video.currentTime - lastKnownPlayTime) > 0.2;
                 lastKnownPlayTime = video.currentTime;
 
                 if (!isTimeAdvancing) {
                     playStallCount++;
-                    // Si se queda congelado durante 4 segundos seguidos
-                    if (playStallCount >= 4) {
-                        console.warn("Auto-Recuperación: video congelado detectado. Resincronizando...");
+                    // Esperar al menos 6 segundos continuos de congelamiento real antes de intervenir
+                    if (playStallCount >= 6) {
+                        console.warn("Auto-Recuperación: video congelado detectado. Desatascando búfer...");
                         recoverBuffer();
                         playStallCount = 0;
                     }
@@ -2780,17 +2799,24 @@
                 }
                 video.play().catch(() => { });
             } else if (shakaPlayer) {
-                showToast("⚡ Resincronizando con el directo...");
+                showToast("⚡ Desatascando búfer DASH...");
                 try {
-                    if (typeof shakaPlayer.goToLive === 'function') {
-                        shakaPlayer.goToLive();
-                    } else if (typeof shakaPlayer.isLive === 'function' && shakaPlayer.isLive()) {
-                        const range = shakaPlayer.seekRange();
-                        if (range && range.end) {
-                            video.currentTime = Math.max(range.start || 0, range.end - 1.0);
+                    const buffered = video.buffered;
+                    let jumped = false;
+                    for (let i = 0; i < buffered.length; i++) {
+                        if (buffered.start(i) <= video.currentTime && video.currentTime < buffered.end(i)) {
+                            // Salto mínimo para salir del micro-corte manteniéndose dentro del búfer descargado
+                            video.currentTime = Math.min(buffered.end(i) - 0.2, video.currentTime + 0.4);
+                            jumped = true;
+                            break;
+                        } else if (buffered.start(i) > video.currentTime && (buffered.start(i) - video.currentTime) < 6.0) {
+                            video.currentTime = buffered.start(i) + 0.1;
+                            jumped = true;
+                            break;
                         }
-                    } else if (video.buffered.length > 0) {
-                        video.currentTime = Math.max(0, video.buffered.end(video.buffered.length - 1) - 1.0);
+                    }
+                    if (!jumped && buffered.length > 0) {
+                        video.currentTime = Math.max(0, buffered.end(buffered.length - 1) - 1.0);
                     }
                     video.play().catch(() => { });
                 } catch (e) {
