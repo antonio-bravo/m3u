@@ -334,6 +334,14 @@ class AceStreamProxy:
                 transport_limits = httpx.Limits(max_keepalive_connections=5, max_connections=10)
                 async with httpx.AsyncClient(timeout=httpx.Timeout(30.0, connect=5.0), limits=transport_limits, follow_redirects=True) as client:
                     r = await client.get(manifest_url, headers=headers)
+
+                    # Si el motor devuelve 500, significa que la sesión HLS previa expiró o se colgó en el motor.
+                    # Solicitamos una nueva sesión limpia pasando un sid único basado en timestamp.
+                    if r.status_code == 500:
+                        logger.info(f"Sesión HLS previa en {s_name} expirada (500). Solicitando nueva sesión limpia...")
+                        fresh_url = f"{base_url}/ace/manifest.m3u8?id={acestream_id}&sid={int(time.time())}"
+                        r = await client.get(fresh_url, headers=headers)
+
                     if r.status_code != 200:
                         last_error = f"{s_name} devolvió código HTTP {r.status_code}"
                         logger.warning(f"AceStream engine {s_name} devolvió {r.status_code} para {manifest_url}")
@@ -344,6 +352,8 @@ class AceStreamProxy:
                         last_error = f"{s_name} devolvió respuesta no válida"
                         logger.warning(f"AceStream {s_name} devolvió respuesta no M3U8 para {manifest_url}")
                         continue
+
+                    effective_url = str(r.url)
 
                 # Si respondió correctamente, reescribir manifiesto
                 logger.info(f"Stream AceStream {acestream_id} obtenido con éxito desde '{s_name}' ({base_url})")
@@ -361,13 +371,13 @@ class AceStreamProxy:
                         if 'URI="' in s_line:
                             def replace_uri(m):
                                 target_uri = m.group(1)
-                                full_target = urljoin(manifest_url, target_uri)
+                                full_target = urljoin(effective_url, target_uri)
                                 proxy_uri = f"{request_base_url}/ace/segment?url={quote(full_target, safe='')}&server_id={s_id}"
                                 return f'URI="{proxy_uri}"'
                             s_line = re.sub(r'URI="([^"]+)"', replace_uri, s_line)
                         rewritten_lines.append(s_line)
                     else:
-                        full_segment_url = urljoin(manifest_url, s_line)
+                        full_segment_url = urljoin(effective_url, s_line)
                         proxy_segment_url = f"{request_base_url}/ace/segment?url={quote(full_segment_url, safe='')}&server_id={s_id}"
                         rewritten_lines.append(proxy_segment_url)
 
