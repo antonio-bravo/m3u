@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M3U Stream Hub & AceStream Proxy PRO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
     <style>
         :root {
@@ -124,9 +127,21 @@
             border-radius: 50%;
             transition: all 0.3s ease;
         }
-        .dot-green { background: var(--success); box-shadow: 0 0 10px var(--success); }
-        .dot-yellow { background: var(--warning); box-shadow: 0 0 10px var(--warning); }
-        .dot-red { background: var(--danger); box-shadow: 0 0 10px var(--danger); }
+
+        .dot-green {
+            background: var(--success);
+            box-shadow: 0 0 10px var(--success);
+        }
+
+        .dot-yellow {
+            background: var(--warning);
+            box-shadow: 0 0 10px var(--warning);
+        }
+
+        .dot-red {
+            background: var(--danger);
+            box-shadow: 0 0 10px var(--danger);
+        }
 
         .badge-auto {
             font-size: 0.75rem;
@@ -198,6 +213,7 @@
             border-color: rgba(239, 68, 68, 0.3);
             color: #fca5a5;
         }
+
         .btn-danger:hover {
             background: rgba(239, 68, 68, 0.3);
         }
@@ -224,6 +240,7 @@
             .main-container {
                 grid-template-columns: 1fr;
             }
+
             .sidebar-resizer {
                 display: none !important;
             }
@@ -246,9 +263,12 @@
             background: transparent;
             transition: background 0.2s ease;
         }
-        .sidebar-resizer:hover, .sidebar-resizer.is-dragging {
+
+        .sidebar-resizer:hover,
+        .sidebar-resizer.is-dragging {
             background: rgba(99, 102, 241, 0.25);
         }
+
         .resizer-handle {
             width: 3px;
             height: 48px;
@@ -256,7 +276,9 @@
             background: rgba(255, 255, 255, 0.2);
             transition: all 0.2s ease;
         }
-        .sidebar-resizer:hover .resizer-handle, .sidebar-resizer.is-dragging .resizer-handle {
+
+        .sidebar-resizer:hover .resizer-handle,
+        .sidebar-resizer.is-dragging .resizer-handle {
             background: var(--primary);
             height: 72px;
             width: 4px;
@@ -267,10 +289,12 @@
             cursor: col-resize !important;
             user-select: none !important;
         }
+
         body.is-resizing * {
             user-select: none !important;
             pointer-events: none !important;
         }
+
         body.is-resizing .sidebar-resizer {
             pointer-events: auto !important;
         }
@@ -310,9 +334,11 @@
             top: 12px;
             left: 12px;
             background: rgba(9, 13, 22, 0.85);
+            background: rgba(9, 13, 22, 0.90);
             backdrop-filter: blur(8px);
             border: 1px solid var(--border);
             padding: 8px 12px;
+            padding: 10px 14px;
             border-radius: var(--radius-sm);
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.72rem;
@@ -320,12 +346,72 @@
             display: none;
             flex-direction: column;
             gap: 4px;
+            gap: 5px;
             z-index: 10;
             pointer-events: none;
+            min-width: 250px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
         }
-        .stats-hud.active { display: flex; }
-        .hud-row { display: flex; justify-content: space-between; gap: 14px; }
-        .hud-val { color: var(--primary); font-weight: 600; }
+
+        .stats-hud.active {
+            display: flex;
+        }
+
+        .hud-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 14px;
+        }
+
+        .hud-val {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .hud-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .hud-val {
+            color: var(--primary);
+            font-weight: 600;
+            text-align: right;
+        }
+
+        .hud-header {
+            font-weight: 700;
+            color: #94a3b8;
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding-bottom: 2px;
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+
+        .pill-peers {
+            background: rgba(56, 189, 248, 0.15);
+            color: #38bdf8;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            font-size: 0.72rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .pill-peers:hover {
+            background: rgba(56, 189, 248, 0.25);
+        }
+
+        .pill-speed {
+            background: rgba(16, 185, 129, 0.15);
+            color: #10b981;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            font-size: 0.72rem;
+            cursor: pointer;
+        }
 
         /* Spinner de carga de video */
         .player-spinner {
@@ -340,7 +426,11 @@
             gap: 12px;
             z-index: 5;
         }
-        .player-spinner.active { display: flex; }
+
+        .player-spinner.active {
+            display: flex;
+        }
+
         .spinner-ring {
             width: 44px;
             height: 44px;
@@ -349,7 +439,12 @@
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
         }
-        @keyframes spin { to { transform: rotate(360deg); } }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
 
         /* Detalles del canal reproduciendo */
         .channel-info-bar {
@@ -378,7 +473,7 @@
             border-radius: var(--radius-md);
             padding: 4px;
             object-fit: contain;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
             flex-shrink: 0;
         }
 
@@ -468,6 +563,7 @@
             cursor: pointer;
             transition: all 0.2s;
         }
+
         .btn-fav.active {
             color: #fbbf24;
             border-color: rgba(251, 191, 36, 0.4);
@@ -527,7 +623,10 @@
             gap: 5px;
             transition: transform 0.2s;
         }
-        .btn-recover:hover { transform: scale(1.02); }
+
+        .btn-recover:hover {
+            transform: scale(1.02);
+        }
 
         /* Barra Lateral de Canales */
         .channels-sidebar {
@@ -568,10 +667,12 @@
             outline: none;
             transition: border-color 0.2s;
         }
+
         .search-input:focus {
             border-color: var(--primary);
             box-shadow: 0 0 10px var(--primary-glow);
         }
+
         .search-icon {
             position: absolute;
             left: 10px;
@@ -580,6 +681,7 @@
             color: var(--text-muted);
             font-size: 0.9rem;
         }
+
         .search-clear {
             position: absolute;
             right: 10px;
@@ -592,7 +694,10 @@
             font-size: 0.9rem;
             display: none;
         }
-        .search-clear.active { display: block; }
+
+        .search-clear.active {
+            display: block;
+        }
 
         .filters-row {
             display: grid;
@@ -612,7 +717,10 @@
             outline: none;
             cursor: pointer;
         }
-        .custom-select:focus { border-color: var(--primary); }
+
+        .custom-select:focus {
+            border-color: var(--primary);
+        }
 
         .type-pills {
             display: flex;
@@ -633,6 +741,7 @@
             white-space: nowrap;
             transition: all 0.2s;
         }
+
         .type-pill.active {
             background: var(--primary);
             color: #fff;
@@ -748,11 +857,13 @@
             gap: 4px;
             transition: all 0.2s ease;
         }
+
         .view-opt-btn:hover {
             color: #fff;
             border-color: var(--primary);
             background: rgba(99, 102, 241, 0.15);
         }
+
         .view-opt-btn.active {
             color: var(--primary);
             border-color: var(--primary);
@@ -761,13 +872,19 @@
         }
 
         @keyframes scroll-text-anim {
-            0%, 20% {
+
+            0%,
+            20% {
                 transform: translateX(0);
             }
-            60%, 80% {
+
+            60%,
+            80% {
                 transform: translateX(var(--scroll-dist, 0px));
             }
-            95%, 100% {
+
+            95%,
+            100% {
                 transform: translateX(0);
             }
         }
@@ -787,8 +904,16 @@
             border-radius: 4px;
             font-weight: 600;
         }
-        .tag-ace { background: rgba(6, 182, 212, 0.2); color: #22d3ee; }
-        .tag-hls { background: rgba(99, 102, 241, 0.2); color: #a5b4fc; }
+
+        .tag-ace {
+            background: rgba(6, 182, 212, 0.2);
+            color: #22d3ee;
+        }
+
+        .tag-hls {
+            background: rgba(99, 102, 241, 0.2);
+            color: #a5b4fc;
+        }
 
         .channel-card-actions {
             display: flex;
@@ -812,14 +937,28 @@
             justify-content: center;
             line-height: 1;
         }
+
         .channel-card-btn:hover {
             color: #fff;
             background: rgba(255, 255, 255, 0.1);
         }
-        .channel-card-fav.active { color: #fbbf24; }
-        .channel-card-fav:hover { color: #fbbf24; }
-        .channel-card-copy:hover { color: var(--primary); }
-        .channel-card-del:hover { color: var(--danger) !important; background: rgba(239, 68, 68, 0.2) !important; }
+
+        .channel-card-fav.active {
+            color: #fbbf24;
+        }
+
+        .channel-card-fav:hover {
+            color: #fbbf24;
+        }
+
+        .channel-card-copy:hover {
+            color: var(--primary);
+        }
+
+        .channel-card-del:hover {
+            color: var(--danger) !important;
+            background: rgba(239, 68, 68, 0.2) !important;
+        }
 
         /* Paginación en sidebar */
         .sidebar-footer {
@@ -847,6 +986,7 @@
             font-size: 0.74rem;
             cursor: pointer;
         }
+
         .page-btn:disabled {
             opacity: 0.4;
             cursor: not-allowed;
@@ -864,7 +1004,10 @@
             z-index: 1000;
             padding: 1rem;
         }
-        .modal-backdrop.active { display: flex; }
+
+        .modal-backdrop.active {
+            display: flex;
+        }
 
         .modal-content {
             background: var(--bg-surface);
@@ -879,9 +1022,17 @@
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
             animation: modalIn 0.25s ease;
         }
+
         @keyframes modalIn {
-            from { transform: scale(0.96); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
+            from {
+                transform: scale(0.96);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
 
         .modal-header {
@@ -909,7 +1060,11 @@
             padding: 4px;
             border-radius: 6px;
         }
-        .modal-close:hover { color: #fff; background: rgba(255,255,255,0.06); }
+
+        .modal-close:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.06);
+        }
 
         .modal-body {
             padding: 1.25rem 1.5rem;
@@ -942,7 +1097,10 @@
             font-size: 0.88rem;
             outline: none;
         }
-        .form-input:focus { border-color: var(--primary); }
+
+        .form-input:focus {
+            border-color: var(--primary);
+        }
 
         .modal-footer {
             padding: 1rem 1.5rem;
@@ -972,6 +1130,7 @@
             font-size: 0.82rem;
             cursor: pointer;
         }
+
         .tab-btn.active {
             background: var(--primary);
             color: #fff;
@@ -1004,6 +1163,7 @@
             padding: 8px 12px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.04);
         }
+
         .files-table tr:hover td {
             background: var(--bg-card-hover);
         }
@@ -1017,7 +1177,7 @@
             border: 1px solid var(--border);
             padding: 10px 16px;
             border-radius: var(--radius-sm);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             display: none;
             align-items: center;
             gap: 10px;
@@ -1025,16 +1185,44 @@
             z-index: 2000;
             animation: toastIn 0.2s ease;
         }
-        .toast.active { display: flex; }
-        @keyframes toastIn { from { transform: translateY(10px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+        .toast.active {
+            display: flex;
+        }
+
+        @keyframes toastIn {
+            from {
+                transform: translateY(10px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
 
         /* Custom scrollbars */
-        ::-webkit-scrollbar { width: 6px; height: 6px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); border-radius: 999px; }
-        ::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.25); }
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 999px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
     </style>
 </head>
+
 <body>
 
     <!-- Header Superior -->
@@ -1048,20 +1236,26 @@
         </a>
 
         <div class="header-center">
-            <div id="buffer-pill" class="buffer-pill" title="Búfer acumulado en memoria por delante del punto de reproducción">
+            <div id="buffer-pill" class="buffer-pill"
+                title="Búfer acumulado en memoria por delante del punto de reproducción">
                 <span id="buffer-dot" class="status-dot dot-yellow"></span>
                 <span id="buffer-text">Búfer: 0.0s (Iniciando)</span>
             </div>
-            <span class="badge-auto" title="Supervisa y salta micro-cortes automáticamente">🛡️ Auto-Recuperación Activa</span>
+            <span class="badge-auto" title="Supervisa y salta micro-cortes automáticamente">🛡️ Auto-Recuperación
+                Activa</span>
             <button class="btn-recover" onclick="recoverBuffer()">⚡ Recuperar Búfer</button>
         </div>
 
         <div class="header-actions">
-            <button class="btn btn-ace" onclick="openDirectPlayModal()" title="Pegar y reproducir un AceStream ID o URL directa">⚡ Pegar AceStream ID</button>
+            <button class="btn btn-ace" onclick="openDirectPlayModal()"
+                title="Pegar y reproducir un AceStream ID o URL directa">⚡ Pegar AceStream ID</button>
             <button class="btn btn-primary" onclick="openGithubModal()">🐙 Escanear GitHub</button>
             <button class="btn" onclick="openSourcesModal()">📂 Fuentes M3U</button>
             <button class="btn" onclick="openSettingsModal()">⚙️ Ajustes & AceStream</button>
-            <button class="btn" onclick="openExportModal()" title="Enlaces M3U y URLs de streaming directo para otros dispositivos">📋 Enlaces M3U</button>
+            <button class="btn" onclick="openExportModal()"
+                title="Enlaces M3U y URLs de streaming directo para otros dispositivos">📋 Enlaces M3U</button>
+            <button class="btn" onclick="openHdhomerunModal()"
+                title="Emulador de Sintonizador HDHomeRun para Plex y Jellyfin Live TV & DVR" style="background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3);">📺 Plex & Jellyfin</button>
             <button class="btn" onclick="toggleHud()">📊 HUD</button>
         </div>
     </header>
@@ -1073,46 +1267,87 @@
         <section class="player-card">
             <div class="video-wrapper">
                 <video id="video-player" controls autoplay playsinline></video>
-                
+
                 <!-- HUD de estadísticas -->
                 <div id="stats-hud" class="stats-hud">
+                    <div class="hud-header">📡 Stream & Video</div>
                     <div class="hud-row"><span>Canal:</span> <span id="hud-channel" class="hud-val">-</span></div>
                     <div class="hud-row"><span>Tipo de Stream:</span> <span id="hud-type" class="hud-val">-</span></div>
-                    <div class="hud-row"><span>Búfer adelante:</span> <span id="hud-buffer" class="hud-val">0.0 s</span></div>
-                    <div class="hud-row"><span>Resolución:</span> <span id="hud-res" class="hud-val">Detectando...</span></div>
-                    <div class="hud-row"><span>Tasa de bits:</span> <span id="hud-bitrate" class="hud-val">-</span></div>
-                    <div class="hud-row"><span>Caché Proxy:</span> <span id="hud-cache" class="hud-val">RAM (Hit)</span></div>
+                    <div class="hud-row"><span>Búfer adelante:</span> <span id="hud-buffer" class="hud-val">0.0 s</span>
+                    </div>
+                    <div class="hud-row"><span>Tipo Stream:</span> <span id="hud-type" class="hud-val">-</span></div>
+                    <div class="hud-row"><span>Resolución:</span> <span id="hud-res"
+                            class="hud-val">Detectando...</span></div>
+                    <div class="hud-row"><span>Búfer HTML5:</span> <span id="hud-buffer" class="hud-val">0.0 s</span>
+                    </div>
+                    <div class="hud-row"><span>Tasa de bits:</span> <span id="hud-bitrate" class="hud-val">-</span>
+                    </div>
+                    <div class="hud-row"><span>Caché Proxy:</span> <span id="hud-cache" class="hud-val">RAM (Hit)</span>
+                    </div>
+
+                    <div id="hud-ace-section" style="display:none; flex-direction:column; gap:5px;">
+                        <div class="hud-header">⚡ AceStream P2P Telemetría</div>
+                        <div class="hud-row"><span>Motor Activo:</span> <span id="hud-ace-server"
+                                class="hud-val">-</span></div>
+                        <div class="hud-row"><span>Estado P2P:</span> <span id="hud-ace-status" class="hud-val">-</span>
+                        </div>
+                        <div class="hud-row"><span>Peers Conectados:</span> <span id="hud-ace-peers" class="hud-val"
+                                style="color:#38bdf8;">0 peers</span></div>
+                        <div class="hud-row"><span>Velocidad Bajada:</span> <span id="hud-ace-down" class="hud-val"
+                                style="color:#10b981;">0 KB/s</span></div>
+                        <div class="hud-row"><span>Velocidad Subida:</span> <span id="hud-ace-up" class="hud-val">0
+                                KB/s</span></div>
+                        <div class="hud-row"><span>Datos Descargados:</span> <span id="hud-ace-downloaded"
+                                class="hud-val">0 MB</span></div>
+                        <div class="hud-row"><span>Calidad Señal:</span> <span id="hud-ace-health"
+                                class="hud-val">-</span></div>
+                    </div>
                 </div>
 
                 <!-- Spinner de carga -->
                 <div id="player-spinner" class="player-spinner">
                     <div class="spinner-ring"></div>
-                    <span id="spinner-msg" style="font-size: 0.85rem; font-weight: 500; color: #e2e8f0;">Conectando con el stream...</span>
+                    <span id="spinner-msg" style="font-size: 0.85rem; font-weight: 500; color: #e2e8f0;">Conectando con
+                        el stream...</span>
                 </div>
             </div>
 
             <!-- Información del canal seleccionado -->
             <div class="channel-info-bar">
                 <div class="channel-left">
-                    <img id="current-logo" class="channel-logo-lg" src="" alt="Logo" onerror="this.onerror=null;this.src=FALLBACK_SVG;">
-                    <div class="channel-title-box" onclick="togglePlayerTitleExpand()" title="Pasa el ratón para hacer scroll o haz clic para ver el título completo">
+                    <img id="current-logo" class="channel-logo-lg" src="" alt="Logo"
+                        onerror="this.onerror=null;this.src=FALLBACK_SVG;">
+                    <div class="channel-title-box" onclick="togglePlayerTitleExpand()"
+                        title="Pasa el ratón para hacer scroll o haz clic para ver el título completo">
                         <h2 id="current-name">Selecciona un canal</h2>
                         <div class="tags-row">
                             <span id="current-group" class="pill">General</span>
                             <span id="current-type" class="pill pill-hls">HLS</span>
                             <span id="current-source" class="pill pill-source">M3U</span>
+                            <span id="hud-peers-badge" class="pill pill-peers" style="display:none;"
+                                onclick="toggleHud()" title="Peers conectados en vivo (Clic para abrir HUD)">👥 0
+                                peers</span>
+                            <span id="hud-speed-badge" class="pill pill-speed" style="display:none;"
+                                onclick="toggleHud()" title="Velocidad de descarga en vivo">⬇ 0 KB/s</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="header-actions">
-                    <button id="fav-btn" class="btn-fav" onclick="toggleCurrentFavorite()" title="Guardar en favoritos">⭐</button>
-                    <button id="open-ace-btn" class="btn btn-ace" style="display:none;" onclick="openInAceStreamApp()" title="Abrir en la aplicación nativa AceStream">⚡ Abrir AceStream</button>
-                    <button class="btn" onclick="openInVlc()" title="Abrir enlace en reproductor externo">📺 Abrir en VLC</button>
-                    <button class="btn" id="copy-btn" onclick="copyStreamUrl()" title="Copiar enlace del canal para VLC, Kodi o Smart TV">📋 Copiar Enlace</button>
-                    <button class="btn" id="audio-boost-btn" onclick="cycleAudioBoost()" title="Amplificar volumen del stream">🔊 Vol: 100%</button>
+                    <button id="fav-btn" class="btn-fav" onclick="toggleCurrentFavorite()"
+                        title="Guardar en favoritos">⭐</button>
+                    <button id="open-ace-btn" class="btn btn-ace" style="display:none;" onclick="openInAceStreamApp()"
+                        title="Abrir en la aplicación nativa AceStream">⚡ Abrir AceStream</button>
+                    <button class="btn" onclick="openInVlc()" title="Abrir enlace en reproductor externo">📺 Abrir en
+                        VLC</button>
+                    <button class="btn" id="copy-btn" onclick="copyStreamUrl()"
+                        title="Copiar enlace del canal para VLC, Kodi o Smart TV">📋 Copiar Enlace</button>
+                    <button class="btn" id="audio-boost-btn" onclick="cycleAudioBoost()"
+                        title="Amplificar volumen del stream">🔊 Vol: 100%</button>
                     <button class="btn" onclick="togglePiP()" title="Modo PiP flotante">🔲 PiP</button>
-                    <button class="btn btn-danger" id="delete-current-ch-btn" style="display:none;" onclick="deleteCurrentPlayingChannel()" title="Eliminar este canal personalizado">🗑️ Eliminar</button>
+                    <button class="btn btn-danger" id="delete-current-ch-btn" style="display:none;"
+                        onclick="deleteCurrentPlayingChannel()" title="Eliminar este canal personalizado">🗑️
+                        Eliminar</button>
                 </div>
             </div>
 
@@ -1120,21 +1355,29 @@
             <div class="buffer-toolbar">
                 <div class="mode-group">
                     <span style="font-size:0.75rem; color:var(--text-muted); margin-right:4px;">Perfil de Búfer:</span>
-                    <button class="mode-btn active" id="prof-stable" onclick="setBufferProfile('stable')">🛡️ Ultra Estable (20s)</button>
-                    <button class="mode-btn" id="prof-balanced" onclick="setBufferProfile('balanced')">⚡ Equilibrado (12s)</button>
-                    <button class="mode-btn" id="prof-low" onclick="setBufferProfile('low')">🚀 Baja Latencia (4s)</button>
+                    <button class="mode-btn active" id="prof-stable" onclick="setBufferProfile('stable')">🛡️ Ultra
+                        Estable (20s)</button>
+                    <button class="mode-btn" id="prof-balanced" onclick="setBufferProfile('balanced')">⚡ Equilibrado
+                        (12s)</button>
+                    <button class="mode-btn" id="prof-low" onclick="setBufferProfile('low')">🚀 Baja Latencia
+                        (4s)</button>
                 </div>
                 <div style="display:flex; align-items:center; gap:8px;">
                     <span style="font-size:0.76rem; color:var(--text-muted);">Motor:</span>
-                    <select id="header-engine-select" class="custom-select" style="padding:2px 8px; font-size:0.75rem; height:26px; border-radius:4px; max-width:200px;" onchange="switchAceStreamServer(this.value)" title="Cambiar servidor AceStream (Sin VPN / Con VPN)">
+                    <select id="header-engine-select" class="custom-select"
+                        style="padding:2px 8px; font-size:0.75rem; height:26px; border-radius:4px; max-width:200px;"
+                        onchange="switchAceStreamServer(this.value)"
+                        title="Cambiar servidor AceStream (Sin VPN / Con VPN)">
                     </select>
-                    <span id="engine-status-text" style="color:var(--ace-color); font-weight:600; font-size:0.76rem;">Comprobando...</span>
+                    <span id="engine-status-text"
+                        style="color:var(--ace-color); font-weight:600; font-size:0.76rem;">Comprobando...</span>
                 </div>
             </div>
         </section>
 
         <!-- Barra divisoria redimensionable (Splitter) -->
-        <div id="sidebar-resizer" class="sidebar-resizer" title="Arrastra hacia la izquierda o derecha para cambiar el tamaño de la lista de canales">
+        <div id="sidebar-resizer" class="sidebar-resizer"
+            title="Arrastra hacia la izquierda o derecha para cambiar el tamaño de la lista de canales">
             <div class="resizer-handle"></div>
         </div>
 
@@ -1144,7 +1387,8 @@
                 <!-- Buscador -->
                 <div class="search-box">
                     <span class="search-icon">🔍</span>
-                    <input type="text" id="search-input" class="search-input" placeholder="Buscar canal, equipo, evento..." oninput="handleSearch(this.value)">
+                    <input type="text" id="search-input" class="search-input"
+                        placeholder="Buscar canal, equipo, evento..." oninput="handleSearch(this.value)">
                     <button id="search-clear" class="search-clear" onclick="clearSearch()">✕</button>
                 </div>
 
@@ -1169,10 +1413,13 @@
                 <div class="sidebar-view-controls">
                     <div style="display:flex; align-items:center; gap:6px;">
                         <span>Títulos:</span>
-                        <button id="toggle-wrap-btn" class="view-opt-btn" onclick="toggleTitleWrap()" title="Alternar entre 1 línea (con auto-scroll) o 2 líneas (título completo)">📑 2 Líneas</button>
+                        <button id="toggle-wrap-btn" class="view-opt-btn" onclick="toggleTitleWrap()"
+                            title="Alternar entre 1 línea (con auto-scroll) o 2 líneas (título completo)">📑 2
+                            Líneas</button>
                     </div>
                     <div style="display:flex; align-items:center; gap:6px;">
-                        <button id="toggle-width-btn" class="view-opt-btn" onclick="toggleSidebarWidth()" title="Alternar ancho rápido de la lista (Normal 420px / Amplio 620px)">↔️ Expandir</button>
+                        <button id="toggle-width-btn" class="view-opt-btn" onclick="toggleSidebarWidth()"
+                            title="Alternar ancho rápido de la lista (Normal 420px / Amplio 620px)">↔️ Expandir</button>
                     </div>
                 </div>
             </div>
@@ -1195,35 +1442,81 @@
 
     </main>
 
-    <!-- Modal 1: Escanear Repositorio GitHub -->
+    <!-- Modal 1: Escanear y Gestionar Repositorios GitHub -->
     <div id="github-modal" class="modal-backdrop">
-        <div class="modal-content">
+        <div class="modal-content" style="max-width: 820px;">
             <div class="modal-header">
-                <div class="modal-title">🐙 Escanear Repositorio de GitHub</div>
+                <div class="modal-title">🐙 Repositorios de GitHub y Listas M3U</div>
                 <button class="modal-close" onclick="closeModals()">✕</button>
             </div>
-            <div class="modal-body">
-                <p style="font-size:0.85rem; color:var(--text-muted);">
-                    Introduce la URL o nombre del repositorio (ej. <code>https://github.com/usuario/repo</code> o <code>usuario/repo</code>). Buscaremos automáticamente todos los archivos <code>.m3u</code> y <code>.m3u8</code>.
-                </p>
-                <div class="form-group">
-                    <label class="form-label">Repositorio de GitHub</label>
+            <div class="modal-body" style="display:flex; flex-direction:column; gap:1rem;">
+
+                <!-- Añadir / Guardar repositorio -->
+                <div
+                    style="background:var(--bg-card); padding:0.85rem 1rem; border-radius:10px; border:1px solid var(--border-color);">
+                    <div
+                        style="font-weight:600; font-size:0.85rem; margin-bottom:0.35rem; color:var(--text-main); display:flex; align-items:center; gap:0.4rem;">
+                        <span>➕ Añadir o Guardar Repositorio GitHub</span>
+                    </div>
+                    <p style="font-size:0.78rem; color:var(--text-muted); margin-bottom:0.6rem;">
+                        Introduce la URL o nombre (ej. <code>https://github.com/usuario/repo</code> o
+                        <code>usuario/repo</code>). El contenedor guardará el repositorio localmente, creará copia en
+                        caché de los archivos <code>.m3u/.m3u8</code> y permitirá actualizarlos con 1 solo clic.
+                    </p>
                     <div style="display:flex; gap:0.5rem;">
-                        <input type="text" id="github-repo-input" class="form-input" style="flex:1;" placeholder="ej. https://github.com/davidmuma/EPG_dobleM o usuario/repo">
-                        <button class="btn btn-primary" id="btn-scan-github" onclick="scanGithubRepo()">🔍 Escanear</button>
+                        <input type="text" id="github-repo-input" class="form-input" style="flex:1;"
+                            placeholder="ej. https://github.com/davidmuma/EPG_dobleM o usuario/repo"
+                            onkeydown="if(event.key==='Enter') scanGithubRepo()">
+                        <button class="btn btn-primary" id="btn-scan-github" onclick="scanGithubRepo()">
+                            💾 Guardar y Escanear
+                        </button>
                     </div>
                 </div>
 
-                <div id="github-results-box" style="display:none; flex-direction:column; gap:0.5rem;">
-                    <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <span id="github-results-title" style="font-size:0.82rem; font-weight:600;">Archivos encontrados:</span>
-                        <button class="btn" style="padding:2px 8px; font-size:0.75rem;" onclick="toggleSelectAllGithubFiles()">Marcar/Desmarcar todos</button>
+                <!-- Repositorios Guardados Localmente -->
+                <div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+                        <div
+                            style="font-weight:600; font-size:0.85rem; color:var(--text-main); display:flex; align-items:center; gap:0.4rem;">
+                            <span>📚 Repositorios Guardados Localmente</span>
+                            <span id="saved-repos-badge"
+                                style="font-size:0.72rem; padding:1px 7px; background:var(--bg-card); border-radius:10px; border:1px solid var(--border-color); color:var(--text-muted);">0</span>
+                        </div>
+                        <button class="btn" style="padding:2px 8px; font-size:0.72rem;" onclick="loadSavedGithubRepos()"
+                            title="Refrescar lista">🔄 Refrescar</button>
                     </div>
-                    <div class="files-table-wrapper">
+
+                    <div id="saved-github-repos-list"
+                        style="display:flex; flex-direction:column; gap:0.5rem; max-height:220px; overflow-y:auto; padding-right:2px;">
+                        <div style="text-align:center; padding:1rem; color:var(--text-muted); font-size:0.8rem;">
+                            Cargando repositorios guardados...</div>
+                    </div>
+                </div>
+
+                <!-- Explorador de Archivos M3U del repositorio -->
+                <div id="github-results-box"
+                    style="display:none; flex-direction:column; gap:0.5rem; border-top:1px solid var(--border-color); padding-top:0.75rem;">
+                    <div
+                        style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+                        <div>
+                            <span id="github-results-title"
+                                style="font-size:0.82rem; font-weight:600; color:var(--text-main);">Archivos
+                                encontrados:</span>
+                        </div>
+                        <div style="display:flex; gap:0.4rem;">
+                            <button class="btn" style="padding:2px 8px; font-size:0.72rem;"
+                                onclick="toggleSelectAllGithubFiles()">Marcar/Desmarcar todos</button>
+                            <button class="btn btn-primary" id="btn-import-gh" onclick="importSelectedGithubFiles()"
+                                style="padding:3px 12px; font-size:0.78rem;">📥 Importar Seleccionados</button>
+                        </div>
+                    </div>
+                    <div class="files-table-wrapper"
+                        style="max-height:220px; overflow-y:auto; border:1px solid var(--border-color); border-radius:8px;">
                         <table class="files-table">
                             <thead>
                                 <tr>
-                                    <th width="35"><input type="checkbox" id="gh-check-all" onchange="toggleSelectAllGithubFiles(this.checked)"></th>
+                                    <th width="35"><input type="checkbox" id="gh-check-all"
+                                            onchange="toggleSelectAllGithubFiles(this.checked)"></th>
                                     <th>Archivo / Ruta</th>
                                     <th>Tamaño</th>
                                 </tr>
@@ -1235,8 +1528,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn" onclick="closeModals()">Cancelar</button>
-                <button class="btn btn-primary" id="btn-import-gh" onclick="importSelectedGithubFiles()" style="display:none;">📥 Importar Seleccionados</button>
+                <button class="btn" onclick="closeModals()">Cerrar</button>
             </div>
         </div>
     </div>
@@ -1250,14 +1542,18 @@
             </div>
             <div class="modal-body">
                 <div class="modal-tabs">
-                    <button class="tab-btn active" id="tab-sources-btn" onclick="switchSourcesTab('active')">Fuentes Configuradas</button>
-                    <button class="tab-btn" id="tab-local-btn" onclick="switchSourcesTab('local')">Listas Locales Detectadas</button>
-                    <button class="tab-btn" id="tab-add-btn" onclick="switchSourcesTab('add')">+ Añadir URL / Lista</button>
+                    <button class="tab-btn active" id="tab-sources-btn" onclick="switchSourcesTab('active')">Fuentes
+                        Configuradas</button>
+                    <button class="tab-btn" id="tab-local-btn" onclick="switchSourcesTab('local')">Listas Locales
+                        Detectadas</button>
+                    <button class="tab-btn" id="tab-add-btn" onclick="switchSourcesTab('add')">+ Añadir URL /
+                        Lista</button>
                 </div>
 
                 <!-- Tab 1: Fuentes Activas -->
                 <div id="tab-sources-content" style="display:flex; flex-direction:column; gap:0.75rem;">
-                    <div id="sources-list" style="display:flex; flex-direction:column; gap:0.5rem; max-height:360px; overflow-y:auto;">
+                    <div id="sources-list"
+                        style="display:flex; flex-direction:column; gap:0.5rem; max-height:360px; overflow-y:auto;">
                         <!-- Fuentes cargadas vía API -->
                     </div>
                 </div>
@@ -1267,7 +1563,8 @@
                     <p style="font-size:0.82rem; color:var(--text-muted);">
                         Archivos M3U descubiertos en el proyecto raíz o carpeta <code>local_playlists/</code>:
                     </p>
-                    <div id="local-list" style="display:flex; flex-direction:column; gap:0.5rem; max-height:360px; overflow-y:auto;">
+                    <div id="local-list"
+                        style="display:flex; flex-direction:column; gap:0.5rem; max-height:360px; overflow-y:auto;">
                         <!-- Listas locales detectadas -->
                     </div>
                 </div>
@@ -1276,11 +1573,13 @@
                 <div id="tab-add-content" style="display:none; flex-direction:column; gap:1rem;">
                     <div class="form-group">
                         <label class="form-label">Nombre descriptivo de la lista</label>
-                        <input type="text" id="new-source-name" class="form-input" placeholder="ej. Deportes España, Películas IPTV...">
+                        <input type="text" id="new-source-name" class="form-input"
+                            placeholder="ej. Deportes España, Películas IPTV...">
                     </div>
                     <div class="form-group">
                         <label class="form-label">URL del archivo M3U / M3U8 o Enlace GitHub</label>
-                        <input type="text" id="new-source-url" class="form-input" placeholder="https://raw.githubusercontent.com/... o https://.../playlist.m3u">
+                        <input type="text" id="new-source-url" class="form-input"
+                            placeholder="https://raw.githubusercontent.com/... o https://.../playlist.m3u">
                     </div>
                     <button class="btn btn-primary" onclick="submitNewSource()">➕ Añadir y Sincronizar Fuente</button>
                 </div>
@@ -1300,35 +1599,48 @@
             </div>
             <div class="modal-body">
                 <!-- SECCIÓN SERVIDORES ACESTREAM -->
-                <div style="background: rgba(6, 182, 212, 0.08); border: 1px solid rgba(6, 182, 212, 0.25); border-radius: 8px; padding: 1rem; margin-bottom: 1.25rem;">
-                    <div style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem; display: flex; align-items: center; justify-content: space-between;">
+                <div
+                    style="background: rgba(6, 182, 212, 0.08); border: 1px solid rgba(6, 182, 212, 0.25); border-radius: 8px; padding: 1rem; margin-bottom: 1.25rem;">
+                    <div
+                        style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem; display: flex; align-items: center; justify-content: space-between;">
                         <span>📡 Servidores AceStream (Sin VPN / Con VPN)</span>
-                        <button class="btn btn-ace" style="padding: 3px 8px; font-size: 0.72rem;" onclick="refreshAceServersList()">🔄 Comprobar Estado</button>
+                        <button class="btn btn-ace" style="padding: 3px 8px; font-size: 0.72rem;"
+                            onclick="refreshAceServersList()">🔄 Comprobar Estado</button>
                     </div>
                     <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.75rem;">
-                        Configura un servidor sin VPN (para máxima velocidad) y otro con VPN (para saltar bloqueos de operadores). Puedes alternar entre ellos con un solo clic:
+                        Configura un servidor sin VPN (para máxima velocidad) y otro con VPN (para saltar bloqueos de
+                        operadores). Puedes alternar entre ellos con un solo clic:
                     </p>
 
                     <!-- Lista dinámica de servidores -->
-                    <div id="settings-ace-servers-list" style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem;">
+                    <div id="settings-ace-servers-list"
+                        style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem;">
                         <!-- Generado por JS -->
                     </div>
 
                     <!-- Formulario para añadir servidor -->
-                    <div style="background: rgba(0,0,0,0.25); border: 1px dashed rgba(255,255,255,0.15); border-radius: 6px; padding: 0.75rem;">
-                        <div style="font-size: 0.78rem; font-weight: 600; margin-bottom: 0.4rem; color: #a5f3fc;">➕ Añadir Nuevo Servidor AceStream</div>
-                        <div style="display: grid; grid-template-columns: 1fr 1.6fr auto; gap: 0.5rem; align-items: center;">
+                    <div
+                        style="background: rgba(0,0,0,0.25); border: 1px dashed rgba(255,255,255,0.15); border-radius: 6px; padding: 0.75rem;">
+                        <div style="font-size: 0.78rem; font-weight: 600; margin-bottom: 0.4rem; color: #a5f3fc;">➕
+                            Añadir Nuevo Servidor AceStream</div>
+                        <div
+                            style="display: grid; grid-template-columns: 1fr 1.6fr auto; gap: 0.5rem; align-items: center;">
                             <input type="text" id="new-srv-name" class="form-input" placeholder="Nombre (ej: Con VPN)">
-                            <input type="text" id="new-srv-url" class="form-input" placeholder="URL (ej: http://192.168.1.150:6878)">
-                            <button class="btn btn-ace" style="padding: 6px 12px; font-size: 0.78rem;" onclick="addNewAceServer()">Añadir</button>
+                            <input type="text" id="new-srv-url" class="form-input"
+                                placeholder="URL (ej: http://192.168.1.150:6878)">
+                            <button class="btn btn-ace" style="padding: 6px 12px; font-size: 0.78rem;"
+                                onclick="addNewAceServer()">Añadir</button>
                         </div>
                     </div>
 
                     <!-- Failover automático -->
                     <div style="margin-top: 0.75rem;">
-                        <label style="display:flex; align-items:center; gap:8px; font-size:0.78rem; cursor:pointer; color:var(--text-main);">
-                            <input type="checkbox" id="settings-auto-failover" checked style="accent-color:var(--primary); cursor:pointer;">
-                            <span>🔄 <b>Conmutación automática (Failover):</b> Si el servidor seleccionado falla o está bloqueado, intentar automáticamente con el servidor alternativo</span>
+                        <label
+                            style="display:flex; align-items:center; gap:8px; font-size:0.78rem; cursor:pointer; color:var(--text-main);">
+                            <input type="checkbox" id="settings-auto-failover" checked
+                                style="accent-color:var(--primary); cursor:pointer;">
+                            <span>🔄 <b>Conmutación automática (Failover):</b> Si el servidor seleccionado falla o está
+                                bloqueado, intentar automáticamente con el servidor alternativo</span>
                         </label>
                     </div>
                 </div>
@@ -1336,7 +1648,8 @@
                 <div class="form-group">
                     <label class="form-label">Segundos de Offset de Búfer (RFC 8216 TIME-OFFSET)</label>
                     <input type="number" id="settings-offset" class="form-input" min="0" max="60" step="1" value="16">
-                    <span style="font-size:0.75rem; color:var(--text-muted);">Segundos por detrás del directo para acumular fragmentos en el navegador y evitar cortes.</span>
+                    <span style="font-size:0.75rem; color:var(--text-muted);">Segundos por detrás del directo para
+                        acumular fragmentos en el navegador y evitar cortes.</span>
                 </div>
 
                 <div class="form-group">
@@ -1346,7 +1659,8 @@
 
                 <div class="form-group">
                     <label class="form-label">GitHub Token Personal (Opcional)</label>
-                    <input type="password" id="settings-gh-token" class="form-input" placeholder="ghp_xxxxxxxxxxxx (para evitar límite de peticiones de GitHub)">
+                    <input type="password" id="settings-gh-token" class="form-input"
+                        placeholder="ghp_xxxxxxxxxxxx (para evitar límite de peticiones de GitHub)">
                 </div>
             </div>
             <div class="modal-footer">
@@ -1365,42 +1679,64 @@
             </div>
             <div class="modal-body">
                 <!-- SECCIÓN CANAL ACTUAL -->
-                <div style="background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.25); border-radius: 8px; padding: 1rem; margin-bottom: 1.25rem;">
-                    <div style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.35rem; display: flex; align-items: center; justify-content: space-between;">
+                <div
+                    style="background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.25); border-radius: 8px; padding: 1rem; margin-bottom: 1.25rem;">
+                    <div
+                        style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.35rem; display: flex; align-items: center; justify-content: space-between;">
                         <span>📺 Canal Actual:</span>
-                        <span id="export-current-ch-name" style="color: var(--primary); font-weight: 700; max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Ninguno seleccionado</span>
+                        <span id="export-current-ch-name"
+                            style="color: var(--primary); font-weight: 700; max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Ninguno
+                            seleccionado</span>
                     </div>
                     <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.75rem;">
-                        Pega este enlace en <b>VLC</b> (Medio &gt; Abrir ubicación de red), <b>Kodi, TiviMate o Smart TV</b>:
+                        Pega este enlace en <b>VLC</b> (Medio &gt; Abrir ubicación de red), <b>Kodi, TiviMate o Smart
+                            TV</b>:
                     </p>
                     <div class="form-group" style="margin-bottom: 0.5rem;">
                         <label class="form-label" style="font-size: 0.78rem;">URL Stream del Canal (.m3u8):</label>
                         <div style="display:flex; gap:0.5rem;">
-                            <input type="text" id="export-current-channel-url" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
-                            <button class="btn btn-primary" onclick="copyToClipboard('export-current-channel-url', null, '📋 Enlace del canal copiado')">📋 Copiar</button>
+                            <input type="text" id="export-current-channel-url" class="form-input"
+                                style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly
+                                onclick="this.select()">
+                            <button class="btn btn-primary"
+                                onclick="copyToClipboard('export-current-channel-url', null, '📋 Enlace del canal copiado')">📋
+                                Copiar</button>
                         </div>
                     </div>
-                    <div id="export-ace-extra-urls" style="display: none; margin-top: 0.75rem; border-top: 1px dashed rgba(255, 255, 255, 0.1); padding-top: 0.75rem;">
-                        <div style="font-size: 0.8rem; font-weight: 600; color: #38bdf8; margin-bottom: 0.45rem; display: flex; align-items: center; justify-content: space-between;">
+                    <div id="export-ace-extra-urls"
+                        style="display: none; margin-top: 0.75rem; border-top: 1px dashed rgba(255, 255, 255, 0.1); padding-top: 0.75rem;">
+                        <div
+                            style="font-size: 0.8rem; font-weight: 600; color: #38bdf8; margin-bottom: 0.45rem; display: flex; align-items: center; justify-content: space-between;">
                             <span>⚡ Enlaces Directos al Motor AceStream (/ace/getstream):</span>
                             <span style="font-size: 0.7rem; color: var(--text-muted);">Sin VPN / Con VPN</span>
                         </div>
-                        <div id="export-ace-engines-container" style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem;">
+                        <div id="export-ace-engines-container"
+                            style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem;">
                             <!-- Generado dinámicamente: Sin VPN, Con VPN, etc. -->
                         </div>
 
                         <div class="form-group" style="margin-bottom: 0.5rem;">
-                            <label class="form-label" style="font-size: 0.78rem;">Stream Proxificado MPEG-TS (VLC sin HLS / Decodificadores):</label>
+                            <label class="form-label" style="font-size: 0.78rem;">Stream Proxificado MPEG-TS (VLC sin
+                                HLS / Decodificadores):</label>
                             <div style="display:flex; gap:0.5rem;">
-                                <input type="text" id="export-current-ts-url" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
-                                <button class="btn" onclick="copyToClipboard('export-current-ts-url', null, '📋 Stream TS copiado para VLC')">📋 Copiar</button>
+                                <input type="text" id="export-current-ts-url" class="form-input"
+                                    style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly
+                                    onclick="this.select()">
+                                <button class="btn"
+                                    onclick="copyToClipboard('export-current-ts-url', null, '📋 Stream TS copiado para VLC')">📋
+                                    Copiar</button>
                             </div>
                         </div>
                         <div class="form-group" style="margin-bottom: 0;">
-                            <label class="form-label" style="font-size: 0.78rem;">ID Nativo AceStream (Hash / URI):</label>
+                            <label class="form-label" style="font-size: 0.78rem;">ID Nativo AceStream (Hash /
+                                URI):</label>
                             <div style="display:flex; gap:0.5rem;">
-                                <input type="text" id="export-current-ace-id" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
-                                <button class="btn" onclick="copyToClipboard('export-current-ace-id', null, '📋 ID AceStream copiado')">📋 Copiar</button>
+                                <input type="text" id="export-current-ace-id" class="form-input"
+                                    style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly
+                                    onclick="this.select()">
+                                <button class="btn"
+                                    onclick="copyToClipboard('export-current-ace-id', null, '📋 ID AceStream copiado')">📋
+                                    Copiar</button>
                             </div>
                         </div>
                     </div>
@@ -1412,27 +1748,142 @@
                 <div class="form-group">
                     <label class="form-label">Lista M3U Completa Proxificada (Todos los canales HLS)</label>
                     <div style="display:flex; gap:0.5rem;">
-                        <input type="text" id="export-full-url" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
-                        <button class="btn" onclick="copyToClipboard('export-full-url', null, '📋 Lista M3U completa copiada')">📋 Copiar</button>
+                        <input type="text" id="export-full-url" class="form-input"
+                            style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly
+                            onclick="this.select()">
+                        <button class="btn"
+                            onclick="copyToClipboard('export-full-url', null, '📋 Lista M3U completa copiada')">📋
+                            Copiar</button>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="form-label">Lista M3U Solo Canales AceStream (Proxificada HLS)</label>
                     <div style="display:flex; gap:0.5rem;">
-                        <input type="text" id="export-ace-url" class="form-input" style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly onclick="this.select()">
-                        <button class="btn" onclick="copyToClipboard('export-ace-url', null, '📋 Lista AceStream copiada')">📋 Copiar</button>
+                        <input type="text" id="export-ace-url" class="form-input"
+                            style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly
+                            onclick="this.select()">
+                        <button class="btn"
+                            onclick="copyToClipboard('export-ace-url', null, '📋 Lista AceStream copiada')">📋
+                            Copiar</button>
                     </div>
                 </div>
                 <!-- Listas M3U directas getstream por motor -->
-                <div id="export-ace-m3u-engines" style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <div id="export-ace-m3u-engines"
+                    style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
                     <!-- Generado dinámicamente -->
                 </div>
                 <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.75rem; line-height: 1.4;">
-                    💡 <b>Consejo:</b> Al hacer clic sobre cualquier campo se selecciona todo el texto para copiarlo fácilmente.
+                    💡 <b>Consejo:</b> Al hacer clic sobre cualquier campo se selecciona todo el texto para copiarlo
+                    fácilmente.
                 </p>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-primary" onclick="closeModals()">Listo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Emulador de Sintonizador HDHomeRun (Plex & Jellyfin) -->
+    <div id="hdhomerun-modal" class="modal-backdrop">
+        <div class="modal-content" style="max-width: 680px;">
+            <div class="modal-header">
+                <div class="modal-title">📺 Emulador HDHomeRun para Plex y Jellyfin (Live TV & DVR)</div>
+                <button class="modal-close" onclick="closeModals()">✕</button>
+            </div>
+            <div class="modal-body" style="display:flex; flex-direction:column; gap:1.1rem;">
+                
+                <!-- Tarjeta de Estado del Sintonizador -->
+                <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:10px; padding:1rem; display:flex; flex-direction:column; gap:0.6rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <div style="display:flex; align-items:center; gap:0.5rem;">
+                            <span class="status-dot dot-green"></span>
+                            <span style="font-weight:700; color:var(--text-main); font-size:0.95rem;" id="hdr-tuner-name">M3U Stream Hub Tuner</span>
+                        </div>
+                        <span class="badge" style="background:rgba(16,185,129,0.15); color:#10b981; border:1px solid rgba(16,185,129,0.3); font-size:0.75rem; padding:2px 8px; border-radius:10px;">🟢 Sintonizador Activo</span>
+                    </div>
+
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(130px, 1fr)); gap:0.5rem; margin-top:0.4rem;">
+                        <div style="background:rgba(255,255,255,0.03); padding:0.5rem 0.75rem; border-radius:6px; border:1px solid rgba(255,255,255,0.06);">
+                            <div style="font-size:0.7rem; color:var(--text-muted);">Sintonizadores:</div>
+                            <div style="font-size:1rem; font-weight:700; color:var(--primary);" id="hdr-tuners-count">4 Tuners</div>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.03); padding:0.5rem 0.75rem; border-radius:6px; border:1px solid rgba(255,255,255,0.06);">
+                            <div style="font-size:0.7rem; color:var(--text-muted);">Canales en Guía:</div>
+                            <div style="font-size:1rem; font-weight:700; color:#38bdf8;" id="hdr-channels-count">0 canales</div>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.03); padding:0.5rem 0.75rem; border-radius:6px; border:1px solid rgba(255,255,255,0.06);">
+                            <div style="font-size:0.7rem; color:var(--text-muted);">Modo de Parrilla:</div>
+                            <div style="font-size:0.85rem; font-weight:700; color:#e2e8f0;" id="hdr-mode-text">⭐ Favoritos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- URLs de Conexión para Plex y Jellyfin -->
+                <div>
+                    <label class="form-label">URL de Detección para Plex / Jellyfin (Introduce esta IP en tu servidor):</label>
+                    <div style="display:flex; gap:0.5rem; margin-bottom:0.6rem;">
+                        <input type="text" id="hdr-discover-url" class="form-input" style="flex:1; font-family:monospace; font-size:0.82rem;" readonly onclick="this.select()">
+                        <button class="btn" onclick="copyToClipboard('hdr-discover-url', null, '📋 URL de Sintonizador copiada')">📋 Copiar</button>
+                    </div>
+
+                    <div style="display:flex; gap:0.5rem;">
+                        <a id="hdr-btn-discover" href="/discover.json" target="_blank" class="btn" style="flex:1; text-align:center; text-decoration:none; font-size:0.78rem;">🔍 Ver discover.json</a>
+                        <a id="hdr-btn-lineup" href="/lineup.json" target="_blank" class="btn" style="flex:1; text-align:center; text-decoration:none; font-size:0.78rem;">📋 Ver lineup.json</a>
+                    </div>
+                </div>
+
+                <!-- Configuración del Sintonizador -->
+                <div style="border-top:1px solid var(--border-color); padding-top:0.75rem; display:flex; flex-direction:column; gap:0.75rem;">
+                    <div style="font-weight:600; font-size:0.85rem; color:var(--text-main);">⚙️ Configuración de Canales y Sintonizadores</div>
+                    
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+                        <div class="form-group" style="margin-bottom:0;">
+                            <label class="form-label" style="font-size:0.75rem;">Qué canales exponer a Plex/Jellyfin:</label>
+                            <select id="hdr-select-mode" class="custom-select" style="width:100%; font-size:0.8rem;">
+                                <option value="favorites">⭐ Solo Canales Favoritos (Recomendado)</option>
+                                <option value="acestream">⚡ Solo Canales AceStream</option>
+                                <option value="all">🌐 Todos los canales habilitados</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin-bottom:0;">
+                            <label class="form-label" style="font-size:0.75rem;">Número de Tuners (Streams simultáneos):</label>
+                            <select id="hdr-select-tuners" class="custom-select" style="width:100%; font-size:0.8rem;">
+                                <option value="2">2 Sintonizadores</option>
+                                <option value="4" selected>4 Sintonizadores</option>
+                                <option value="8">8 Sintonizadores</option>
+                                <option value="16">16 Sintonizadores</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+                        <div class="form-group" style="margin-bottom:0;">
+                            <label class="form-label" style="font-size:0.75rem;">Nombre del Dispositivo en Plex:</label>
+                            <input type="text" id="hdr-input-name" class="form-input" style="font-size:0.8rem;" value="M3U Stream Hub">
+                        </div>
+                        <div class="form-group" style="margin-bottom:0;">
+                            <label class="form-label" style="font-size:0.75rem;">Límite Máx. de Canales (Plex recomienda &lt; 400):</label>
+                            <input type="number" id="hdr-input-max" class="form-input" style="font-size:0.8rem;" value="300" min="10" max="1000">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" style="align-self:flex-start; font-size:0.8rem; padding:5px 14px;" onclick="saveHdhomerunSettings()">
+                        💾 Guardar Ajustes de Sintonizador
+                    </button>
+                </div>
+
+                <!-- Guía rápida de configuración -->
+                <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:8px; padding:0.75rem; font-size:0.78rem; color:var(--text-muted); line-height:1.45;">
+                    <b style="color:var(--text-main);">📖 Cómo añadirlo a tu Servidor:</b>
+                    <ul style="padding-left:1.2rem; margin-top:0.3rem; margin-bottom:0;">
+                        <li><b>Plex:</b> Ve a <i>Ajustes ➔ TV en directo y DVR ➔ Configurar Plex DVR</i>. Si no lo auto-detecta, haz clic en <i>"¿No encuentras tu dispositivo? Introduce su dirección de red"</i> y escribe <code>http://&lt;IP-del-servidor&gt;:8899</code>.</li>
+                        <li><b>Jellyfin:</b> Ve a <i>Panel de control ➔ TV en directo ➔ Sintonizadores de TV ➔ +</i>. Elige Tipo <b>HDHomeRun</b> y pon la URL <code>http://&lt;IP-del-servidor&gt;:8899</code>.</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="closeModals()">Cerrar</button>
             </div>
         </div>
     </div>
@@ -1446,16 +1897,24 @@
             </div>
             <div class="modal-body">
                 <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.85rem;">
-                    Pega un <b>AceStream ID</b> (hash de 40 dígitos), un enlace <code>acestream://...</code> o una URL directa <code>.m3u8</code> para reproducirla inmediatamente en el proxy:
+                    Pega un <b>AceStream ID</b> (hash de 40 dígitos), un enlace <code>acestream://...</code> o una URL
+                    directa <code>.m3u8</code> para reproducirla inmediatamente en el proxy:
                 </p>
 
                 <div class="form-group">
-                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
                         <label class="form-label" style="margin-bottom:0;">AceStream ID o Enlace:</label>
-                        <button type="button" class="btn" style="padding: 2px 8px; font-size: 0.72rem;" onclick="clearDirectPlayInput()" title="Limpiar el texto introducido">✕ Limpiar campo</button>
+                        <button type="button" class="btn" style="padding: 2px 8px; font-size: 0.72rem;"
+                            onclick="clearDirectPlayInput()" title="Limpiar el texto introducido">✕ Limpiar
+                            campo</button>
                     </div>
-                    <textarea id="direct-stream-input" class="form-input" rows="2" placeholder="Ej: 7f9857c45764ef2c7cdfb619b89db3056a57a51f&#10;o acestream://... o https://.../stream.m3u8" style="font-family: monospace; font-size: 0.82rem;" oninput="onDirectInputChange(this.value)"></textarea>
-                    <div id="direct-stream-detected-badge" style="display:none; font-size:0.75rem; color:#22d3ee; margin-top:4px; font-weight:600;"></div>
+                    <textarea id="direct-stream-input" class="form-input" rows="2"
+                        placeholder="Ej: 7f9857c45764ef2c7cdfb619b89db3056a57a51f&#10;o acestream://... o https://.../stream.m3u8"
+                        style="font-family: monospace; font-size: 0.82rem;"
+                        oninput="onDirectInputChange(this.value)"></textarea>
+                    <div id="direct-stream-detected-badge"
+                        style="display:none; font-size:0.75rem; color:#22d3ee; margin-top:4px; font-weight:600;"></div>
                 </div>
 
                 <div class="form-group">
@@ -1467,23 +1926,31 @@
 
                 <div class="form-group">
                     <label class="form-label">Nombre del Canal / Evento (opcional):</label>
-                    <input type="text" id="direct-name-input" class="form-input" placeholder="Ej: F1 en Directo, Champions League, etc.">
+                    <input type="text" id="direct-name-input" class="form-input"
+                        placeholder="Ej: F1 en Directo, Champions League, etc.">
                 </div>
 
-                <div style="margin-top: 0.5rem; background: rgba(255,255,255,0.03); padding: 0.6rem 0.75rem; border-radius: 6px; border: 1px solid var(--border);">
-                    <label style="display:flex; align-items:center; gap:8px; font-size:0.82rem; cursor:pointer; color:var(--text-main);">
-                        <input type="checkbox" id="direct-save-fav" checked style="accent-color:var(--primary); cursor:pointer;">
+                <div
+                    style="margin-top: 0.5rem; background: rgba(255,255,255,0.03); padding: 0.6rem 0.75rem; border-radius: 6px; border: 1px solid var(--border);">
+                    <label
+                        style="display:flex; align-items:center; gap:8px; font-size:0.82rem; cursor:pointer; color:var(--text-main);">
+                        <input type="checkbox" id="direct-save-fav" checked
+                            style="accent-color:var(--primary); cursor:pointer;">
                         <span>⭐ Guardar en favoritos para poder volver a reproducirlo cuando quieras</span>
                     </label>
                 </div>
 
                 <!-- Lista de canales pegados existentes -->
-                <div id="saved-custom-channels-section" style="margin-top: 1.1rem; border-top: 1px solid var(--border); padding-top: 0.8rem; display: none;">
-                    <div style="font-size: 0.8rem; font-weight: 600; color: #cbd5e1; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                <div id="saved-custom-channels-section"
+                    style="margin-top: 1.1rem; border-top: 1px solid var(--border); padding-top: 0.8rem; display: none;">
+                    <div
+                        style="font-size: 0.8rem; font-weight: 600; color: #cbd5e1; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
                         <span>📺 Canales AceStream Pegados Guardados</span>
-                        <span id="saved-custom-channels-count" style="font-size: 0.72rem; color: var(--text-muted);">0 canales</span>
+                        <span id="saved-custom-channels-count" style="font-size: 0.72rem; color: var(--text-muted);">0
+                            canales</span>
                     </div>
-                    <div id="saved-custom-channels-list" style="max-height: 150px; overflow-y: auto; display: flex; flex-direction: column; gap: 6px;">
+                    <div id="saved-custom-channels-list"
+                        style="max-height: 150px; overflow-y: auto; display: flex; flex-direction: column; gap: 6px;">
                         <!-- Llenado dinámicamente -->
                     </div>
                 </div>
@@ -1600,14 +2067,17 @@
                 const serverParam = channel.acestream_server_id ? `?server_id=${encodeURIComponent(channel.acestream_server_id)}` : '';
                 streamUrl = `${base}/ace/manifest/${channel.acestream_id}.m3u8${serverParam}`;
                 document.getElementById("open-ace-btn").style.display = "inline-flex";
+                startAceStreamStatsMonitor(channel.acestream_id, channel.acestream_server_id);
             } else if (channel.stream_type === "hls") {
                 // Modo HLS estándar -> usar CORS Proxy inteligente
                 streamUrl = `${base}/stream/proxy.m3u8?url=${encodeURIComponent(channel.url)}`;
                 document.getElementById("open-ace-btn").style.display = "none";
+                stopAceStreamStatsMonitor();
             } else {
                 // Stream directo o video
                 streamUrl = `${base}/stream/proxy.m3u8?url=${encodeURIComponent(channel.url)}`;
                 document.getElementById("open-ace-btn").style.display = "none";
+                stopAceStreamStatsMonitor();
             }
 
             currentStreamUrl = streamUrl;
@@ -1694,7 +2164,7 @@
                 titleBox.classList.remove("is-expanded");
                 updatePlayerTitleMarquee();
             }
-            
+
             const logoEl = document.getElementById("current-logo");
             logoEl.src = ch.tvg_logo || FALLBACK_SVG;
 
@@ -1813,10 +2283,10 @@
                 if (video.buffered.length > 0) {
                     video.currentTime = video.buffered.end(video.buffered.length - 1) - 1.0;
                 }
-                video.play().catch(() => {});
+                video.play().catch(() => { });
             } else {
                 video.load();
-                video.play().catch(() => {});
+                video.play().catch(() => { });
             }
         }
 
@@ -1981,7 +2451,7 @@
             const data = await res.json();
             currentChannel.is_favorite = data.is_favorite;
             document.getElementById("fav-btn").classList.toggle("active", data.is_favorite);
-            
+
             // Actualizar tarjeta en sidebar
             const cardFav = document.querySelector(`.channel-card[data-id="${currentChannel.id}"] .channel-card-fav`);
             if (cardFav) cardFav.classList.toggle("active", data.is_favorite);
@@ -2015,7 +2485,7 @@
             copyToClipboard(null, targetUrl, `📺 Enlace para VLC copiado al portapapeles`);
             try {
                 window.location.href = `vlc://${targetUrl}`;
-            } catch (e) {}
+            } catch (e) { }
         }
 
         function copyStreamUrl() {
@@ -2066,8 +2536,104 @@
             }
         }
 
+        // --------------------------------------------------------------------
+        // Telemetría y Estadísticas AceStream P2P en Vivo (HUD)
+        // --------------------------------------------------------------------
+        let aceStatsInterval = null;
+
+        function stopAceStreamStatsMonitor() {
+            if (aceStatsInterval) {
+                clearInterval(aceStatsInterval);
+                aceStatsInterval = null;
+            }
+            const peersBadge = document.getElementById("hud-peers-badge");
+            const speedBadge = document.getElementById("hud-speed-badge");
+            const aceSection = document.getElementById("hud-ace-section");
+            if (peersBadge) peersBadge.style.display = "none";
+            if (speedBadge) speedBadge.style.display = "none";
+            if (aceSection) aceSection.style.display = "none";
+        }
+
+        function startAceStreamStatsMonitor(acestream_id, server_id) {
+            stopAceStreamStatsMonitor();
+            if (!acestream_id) return;
+
+            const peersBadge = document.getElementById("hud-peers-badge");
+            const speedBadge = document.getElementById("hud-speed-badge");
+            const aceSection = document.getElementById("hud-ace-section");
+
+            if (peersBadge) {
+                peersBadge.textContent = "👥 Conectando...";
+                peersBadge.style.display = "inline-flex";
+            }
+            if (speedBadge) {
+                speedBadge.textContent = "⬇ 0 KB/s";
+                speedBadge.style.display = "inline-flex";
+            }
+            if (aceSection) {
+                aceSection.style.display = "flex";
+            }
+
+            const fetchStats = async () => {
+                if (!currentChannel || currentChannel.acestream_id !== acestream_id) {
+                    stopAceStreamStatsMonitor();
+                    return;
+                }
+
+                try {
+                    const sid = server_id || currentChannel.acestream_server_id || "";
+                    const param = sid ? `&server_id=${encodeURIComponent(sid)}` : "";
+                    const res = await fetch(`/api/acestream/stats?id=${encodeURIComponent(acestream_id)}${param}`);
+                    if (!res.ok) return;
+                    const data = await res.json();
+
+                    if (data.online) {
+                        // Actualizar badges en la cabecera del reproductor
+                        if (peersBadge) {
+                            const peerDot = data.peers >= 15 ? "🟢" : (data.peers >= 5 ? "🟢" : (data.peers >= 1 ? "🟡" : "🔴"));
+                            peersBadge.innerHTML = `${peerDot} <b>${data.peers}</b> peers`;
+                            peersBadge.title = `AceStream P2P: ${data.peers} peers (${data.health_label}) en ${data.server_name}. Clic para ver HUD`;
+                        }
+                        if (speedBadge) {
+                            speedBadge.innerHTML = `⬇️ <b>${data.speed_down_formatted}</b>`;
+                            speedBadge.title = `Descarga: ${data.speed_down_formatted} | Subida: ${data.speed_up_formatted} | Total: ${data.downloaded_formatted}`;
+                        }
+
+                        // Actualizar HUD desplegable
+                        const hudServer = document.getElementById("hud-ace-server");
+                        const hudStatus = document.getElementById("hud-ace-status");
+                        const hudPeers = document.getElementById("hud-ace-peers");
+                        const hudDown = document.getElementById("hud-ace-down");
+                        const hudUp = document.getElementById("hud-ace-up");
+                        const hudDl = document.getElementById("hud-ace-downloaded");
+                        const hudHealth = document.getElementById("hud-ace-health");
+
+                        if (hudServer) hudServer.textContent = data.server_name;
+                        if (hudStatus) hudStatus.textContent = data.status_label;
+                        if (hudPeers) hudPeers.textContent = `${data.peers} conectados`;
+                        if (hudDown) hudDown.textContent = data.speed_down_formatted;
+                        if (hudUp) hudUp.textContent = data.speed_up_formatted;
+                        if (hudDl) hudDl.textContent = data.downloaded_formatted;
+                        if (hudHealth) hudHealth.textContent = data.health_label;
+                    }
+                } catch (e) {
+                    console.debug("Error obteniendo telemetría AceStream:", e);
+                }
+            };
+
+            // Primera llamada inmediata
+            fetchStats();
+            // Polling cada 2 segundos
+            aceStatsInterval = setInterval(fetchStats, 2000);
+        }
+
         function toggleHud() {
             document.getElementById("stats-hud").classList.toggle("active");
+            const hud = document.getElementById("stats-hud");
+            hud.classList.toggle("active");
+            if (hud.classList.contains("active") && currentChannel && currentChannel.acestream_id) {
+                startAceStreamStatsMonitor(currentChannel.acestream_id, currentChannel.acestream_server_id);
+            }
         }
 
         // --------------------------------------------------------------------
@@ -2100,11 +2666,93 @@
         }
 
         // --------------------------------------------------------------------
-        // Modal de GitHub Scanner
+        // Repositorios de GitHub y Scanner
         // --------------------------------------------------------------------
-        function openGithubModal() {
+        let savedGithubRepos = [];
+        let currentActiveRepoId = null;
+
+        function formatTimeAgo(timestamp) {
+            if (!timestamp) return "Nunca";
+            const now = Math.floor(Date.now() / 1000);
+            const diff = Math.max(0, now - timestamp);
+            if (diff < 60) return "Hace un momento";
+            if (diff < 3600) return `Hace ${Math.floor(diff / 60)} min`;
+            if (diff < 86400) return `Hace ${Math.floor(diff / 3600)} h`;
+            return `Hace ${Math.floor(diff / 86400)} d`;
+        }
+
+        async function openGithubModal() {
             document.getElementById("github-modal").classList.add("active");
+            await loadSavedGithubRepos();
             document.getElementById("github-repo-input").focus();
+        }
+
+        async function loadSavedGithubRepos() {
+            const listEl = document.getElementById("saved-github-repos-list");
+            const badgeEl = document.getElementById("saved-repos-badge");
+            try {
+                const res = await fetch("/api/github/repos");
+                const data = await res.json();
+                if (data.success && data.repos) {
+                    savedGithubRepos = data.repos;
+                    if (badgeEl) badgeEl.textContent = savedGithubRepos.length;
+                    renderSavedGithubRepos(savedGithubRepos);
+                }
+            } catch (e) {
+                if (listEl) listEl.innerHTML = `<div style="text-align:center; color:var(--danger); font-size:0.8rem; padding:0.5rem;">Error cargando repositorios guardados</div>`;
+            }
+        }
+
+        function renderSavedGithubRepos(repos) {
+            const listEl = document.getElementById("saved-github-repos-list");
+            if (!listEl) return;
+
+            if (!repos || repos.length === 0) {
+                listEl.innerHTML = `
+                    <div style="text-align:center; padding:1.25rem; color:var(--text-muted); font-size:0.8rem; border:1px dashed var(--border-color); border-radius:8px;">
+                        No tienes repositorios de GitHub guardados todavía.<br>Introduce una URL arriba para escanear y guardarlo.
+                    </div>
+                `;
+                return;
+            }
+
+            let html = "";
+            repos.forEach(repo => {
+                const filesCount = repo.files_count || (repo.files ? repo.files.length : 0);
+                const importedCount = repo.imported_count || 0;
+                const lastScanStr = formatTimeAgo(repo.last_scanned);
+
+                html += `
+                    <div class="repo-card" style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:8px; padding:0.65rem 0.85rem; display:flex; justify-content:space-between; align-items:center; gap:0.5rem; flex-wrap:wrap;">
+                        <div style="display:flex; flex-direction:column; gap:0.2rem; min-width:200px; flex:1;">
+                            <div style="display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap;">
+                                <a href="${repo.url}" target="_blank" rel="noopener noreferrer" style="font-weight:700; color:var(--accent-color); text-decoration:none; font-size:0.85rem;">
+                                    🐙 ${escapeHtml(repo.name)}
+                                </a>
+                                <span style="font-size:0.68rem; padding:1px 5px; background:rgba(255,255,255,0.06); border-radius:4px; color:var(--text-muted);">🌿 ${escapeHtml(repo.branch || 'main')}</span>
+                                <span style="font-size:0.68rem; padding:1px 5px; background:rgba(0,180,255,0.12); color:#38bdf8; border-radius:4px; font-weight:600;">📁 ${filesCount} listas</span>
+                            </div>
+                            <div style="font-size:0.72rem; color:var(--text-muted); display:flex; gap:0.75rem; flex-wrap:wrap;">
+                                <span>Último escaneo: <b>${lastScanStr}</b></span>
+                                <span>Listas activas: <b>${importedCount}</b></span>
+                            </div>
+                        </div>
+                        <div style="display:flex; gap:0.4rem; align-items:center;">
+                            <button class="btn btn-primary" style="padding:4px 9px; font-size:0.75rem; display:flex; align-items:center; gap:3px;" onclick="updateSavedGithubRepo('${repo.id}', this)" title="Escanear, descargar archivos a caché local y actualizar canales">
+                                🔄 Actualizar Canales
+                            </button>
+                            <button class="btn" style="padding:4px 9px; font-size:0.75rem; display:flex; align-items:center; gap:3px;" onclick="exploreSavedGithubRepo('${repo.id}')" title="Ver archivos encontrados y seleccionar cuáles importar">
+                                📂 Ver Archivos
+                            </button>
+                            <button class="btn btn-danger" style="padding:4px 8px; font-size:0.75rem;" onclick="deleteSavedGithubRepo('${repo.id}', '${escapeHtml(repo.name)}')" title="Eliminar este repositorio guardado">
+                                🗑️
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+
+            listEl.innerHTML = html;
         }
 
         async function scanGithubRepo() {
@@ -2131,13 +2779,101 @@
                     return;
                 }
 
+                currentActiveRepoId = data.repo_id || `${data.owner.toLowerCase()}_${data.repo.toLowerCase()}`;
                 scannedGithubFiles = data.files || [];
                 renderScannedGithubFiles(data);
+                await loadSavedGithubRepos();
+                showToast(`¡Repositorio guardado y ${data.files_count} archivos encontrados!`);
             } catch (e) {
                 showToast("Error de conexión al escanear GitHub");
             } finally {
-                btn.textContent = "🔍 Escanear";
+                btn.textContent = "💾 Guardar y Escanear";
                 btn.disabled = false;
+            }
+        }
+
+        async function exploreSavedGithubRepo(repoId) {
+            const repo = savedGithubRepos.find(r => r.id === repoId);
+            if (!repo) return;
+
+            currentActiveRepoId = repoId;
+            if (repo.files && repo.files.length > 0) {
+                scannedGithubFiles = repo.files;
+                renderScannedGithubFiles({
+                    owner: repo.owner,
+                    repo: repo.repo,
+                    branch: repo.branch,
+                    files_count: repo.files.length,
+                    files: repo.files
+                });
+                const box = document.getElementById("github-results-box");
+                if (box) {
+                    box.style.display = "flex";
+                    box.scrollIntoView({ behavior: "smooth" });
+                }
+            } else {
+                document.getElementById("github-repo-input").value = repo.url || `${repo.owner}/${repo.repo}`;
+                await scanGithubRepo();
+            }
+        }
+
+        async function updateSavedGithubRepo(repoId, btnEl) {
+            if (btnEl) {
+                btnEl.textContent = "⏳ Actualizando...";
+                btnEl.disabled = true;
+            }
+            showToast("Escaneando repositorio y actualizando canales...");
+
+            try {
+                const res = await fetch(`/api/github/repos/${repoId}/update`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ reimport_all: true })
+                });
+                const data = await res.json();
+                if (!data.success) {
+                    showToast(data.error || "Error al actualizar repositorio");
+                    return;
+                }
+
+                showToast(`¡Repositorio '${data.repo_name}' actualizado! ${data.updated_sources} listas (${data.total_channels.toLocaleString()} canales).`);
+                await loadSavedGithubRepos();
+                await loadSourcesAndFilters();
+                await fetchChannels();
+            } catch (e) {
+                showToast("Error al actualizar canales del repositorio");
+            } finally {
+                if (btnEl) {
+                    btnEl.textContent = "🔄 Actualizar Canales";
+                    btnEl.disabled = false;
+                }
+            }
+        }
+
+        async function deleteSavedGithubRepo(repoId, repoName) {
+            const confirmDelete = confirm(`¿Estás seguro de que deseas eliminar el repositorio guardado '${repoName}'?\n\nPulsa Aceptar para eliminarlo (también se retirarán sus canales importados) o Cancelar.`);
+            if (!confirmDelete) return;
+
+            try {
+                const res = await fetch(`/api/github/repos/${repoId}?delete_sources=true`, {
+                    method: "DELETE"
+                });
+                const data = await res.json();
+                if (data.success) {
+                    showToast(`Repositorio '${repoName}' eliminado correctamente.`);
+                    if (currentActiveRepoId === repoId) {
+                        const box = document.getElementById("github-results-box");
+                        if (box) box.style.display = "none";
+                        currentActiveRepoId = null;
+                    }
+                    await loadSavedGithubRepos();
+                    await loadSourcesAndFilters();
+                    await fetchChannels();
+                } else {
+                    showToast(data.error || "Error al eliminar repositorio");
+                }
+            } catch (e) {
+                showToast("Error de conexión al eliminar repositorio");
             }
         }
 
@@ -2146,12 +2882,12 @@
             const box = document.getElementById("github-results-box");
             const importBtn = document.getElementById("btn-import-gh");
 
-            document.getElementById("github-results-title").textContent = `Encontrados ${data.files_count} archivos M3U en '${data.owner}/${data.repo}' (${data.branch}):`;
+            document.getElementById("github-results-title").textContent = `Archivos M3U en '${data.owner}/${data.repo}' (${data.branch}) [${data.files_count}]:`;
 
             if (data.files.length === 0) {
                 tbody.innerHTML = `<tr><td colspan="3" style="text-align:center; color:var(--text-muted); padding:1rem;">No se encontraron archivos .m3u o .m3u8 en este repositorio.</td></tr>`;
                 box.style.display = "flex";
-                importBtn.style.display = "none";
+                if (importBtn) importBtn.style.display = "none";
                 return;
             }
 
@@ -2161,17 +2897,17 @@
                     <tr>
                         <td><input type="checkbox" class="gh-file-cb" data-idx="${idx}" checked></td>
                         <td>
-                            <div style="font-weight:600; color:var(--text-main);">${escapeHtml(f.filename)}</div>
-                            <div style="font-size:0.72rem; color:var(--text-muted);">${escapeHtml(f.path)}</div>
+                            <div style="font-weight:600; color:var(--text-main); font-size:0.82rem;">${escapeHtml(f.filename)}</div>
+                            <div style="font-size:0.7rem; color:var(--text-muted);">${escapeHtml(f.path)}</div>
                         </td>
-                        <td style="font-family:'JetBrains Mono'; font-size:0.75rem; color:var(--text-muted);">${f.size_formatted}</td>
+                        <td style="font-family:'JetBrains Mono'; font-size:0.72rem; color:var(--text-muted);">${f.size_formatted}</td>
                     </tr>
                 `;
             });
 
             tbody.innerHTML = html;
             box.style.display = "flex";
-            importBtn.style.display = "inline-flex";
+            if (importBtn) importBtn.style.display = "inline-flex";
         }
 
         function toggleSelectAllGithubFiles(checked) {
@@ -2204,7 +2940,10 @@
                 const res = await fetch("/api/github/import", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ files: selectedFiles })
+                    body: JSON.stringify({
+                        files: selectedFiles,
+                        repo_id: currentActiveRepoId
+                    })
                 });
 
                 const result = await res.json();
@@ -2214,6 +2953,7 @@
                     showToast(`¡${result.imported_count} listas añadidas con éxito!`);
                 }
                 closeModals();
+                await loadSavedGithubRepos();
                 await loadSourcesAndFilters();
                 await fetchChannels();
             } catch (e) {
@@ -2284,7 +3024,7 @@
                     `;
                 }
                 listEl.innerHTML = html;
-            updateChannelMarquees();
+                updateChannelMarquees();
             } catch (e) {
                 listEl.innerHTML = `<div style="color:var(--danger); padding:1rem;">Error cargando fuentes.</div>`;
             }
@@ -2317,7 +3057,7 @@
                     `;
                 }
                 listEl.innerHTML = html;
-            updateChannelMarquees();
+                updateChannelMarquees();
             } catch (e) {
                 listEl.innerHTML = `<div style="color:var(--danger); padding:1rem;">Error buscando listas locales.</div>`;
             }
@@ -2731,7 +3471,7 @@
                         return;
                     }
                 }
-            } catch (e) {}
+            } catch (e) { }
 
             const card = document.querySelector(`.channel-card[data-id="${chId}"]`);
             if (card) {
@@ -2946,6 +3686,74 @@
             }
 
             document.getElementById("export-modal").classList.add("active");
+        }
+
+        // --------------------------------------------------------------------
+        // Emulador HDHomeRun (Plex & Jellyfin)
+        // --------------------------------------------------------------------
+        async function openHdhomerunModal() {
+            document.getElementById("hdhomerun-modal").classList.add("active");
+            await loadHdhomerunStatus();
+        }
+
+        async function loadHdhomerunStatus() {
+            try {
+                const res = await fetch("/api/hdhomerun/status");
+                if (!res.ok) return;
+                const data = await res.json();
+
+                document.getElementById("hdr-tuner-name").textContent = `${data.friendly_name} Tuner`;
+                document.getElementById("hdr-tuners-count").textContent = `${data.tuner_count} Tuners`;
+                document.getElementById("hdr-channels-count").textContent = `${data.total_channels} canales`;
+
+                const modeLabels = {
+                    "favorites": "⭐ Solo Favoritos",
+                    "acestream": "⚡ Solo AceStream",
+                    "all": "🌐 Todos los canales"
+                };
+                document.getElementById("hdr-mode-text").textContent = modeLabels[data.mode] || data.mode;
+
+                const hostUrl = window.location.origin;
+                document.getElementById("hdr-discover-url").value = `${hostUrl}/discover.json`;
+                document.getElementById("hdr-btn-discover").href = `${hostUrl}/discover.json`;
+                document.getElementById("hdr-btn-lineup").href = `${hostUrl}/lineup.json`;
+
+                document.getElementById("hdr-select-mode").value = data.mode || "favorites";
+                document.getElementById("hdr-select-tuners").value = String(data.tuner_count || 4);
+                document.getElementById("hdr-input-name").value = data.friendly_name || "M3U Stream Hub";
+                document.getElementById("hdr-input-max").value = data.max_channels || 300;
+            } catch (e) {
+                console.error("Error cargando estado de HDHomeRun:", e);
+            }
+        }
+
+        async function saveHdhomerunSettings() {
+            try {
+                const mode = document.getElementById("hdr-select-mode").value;
+                const tuners = parseInt(document.getElementById("hdr-select-tuners").value) || 4;
+                const name = document.getElementById("hdr-input-name").value.trim() || "M3U Stream Hub";
+                const maxCh = parseInt(document.getElementById("hdr-input-max").value) || 300;
+
+                const res = await fetch("/api/hdhomerun/settings", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        hdhomerun_mode: mode,
+                        hdhomerun_tuners: tuners,
+                        hdhomerun_name: name,
+                        hdhomerun_max_channels: maxCh
+                    })
+                });
+
+                if (res.ok) {
+                    showToast("¡Ajustes de HDHomeRun guardados con éxito!");
+                    await loadHdhomerunStatus();
+                } else {
+                    showToast("Error guardando ajustes");
+                }
+            } catch (e) {
+                showToast("Error de conexión al guardar ajustes");
+            }
         }
 
         function closeModals() {
@@ -3249,4 +4057,5 @@
         }
     </script>
 </body>
+
 </html>

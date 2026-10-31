@@ -9,7 +9,7 @@ from typing import Dict, List, Optional, Set, Any
 import httpx
 
 from m3u_parser import parse_m3u_file, parse_m3u_text, detect_acestream_id, detect_stream_type
-from github_scanner import normalize_github_url, format_bytes
+from github_scanner import normalize_github_url, format_bytes, parse_repo_identifier, scan_github_repository, RAW_GITHUB_REGEX
 
 logger = logging.getLogger("m3u_stream_proxy.manager")
 
@@ -26,10 +26,14 @@ class PlaylistManager:
         self.favorites_file = os.path.join(self.data_dir, "favorites.json")
         self.settings_file = os.path.join(self.data_dir, "settings.json")
         self.custom_channels_file = os.path.join(self.data_dir, "custom_channels.json")
+        self.github_repos_file = os.path.join(self.data_dir, "github_repos.json")
+        self.github_cache_dir = os.path.join(self.data_dir, "github_cache")
+        os.makedirs(self.github_cache_dir, exist_ok=True)
 
         self.sources: Dict[str, Dict] = {}
         self.favorites: Set[str] = set()
         self.custom_channels: Dict[str, Dict] = {}
+        self.github_repos: Dict[str, Dict] = {}
 
         default_engine = os.environ.get("ACESTREAM_ENGINE_URL", "http://host.docker.internal:6878")
         vpn_engine = os.environ.get("ACESTREAM_VPN_ENGINE_URL", "")
@@ -57,7 +61,14 @@ class PlaylistManager:
             "auto_failover_acestream": True,
             "buffer_offset_seconds": float(os.environ.get("BUFFER_OFFSET_SECONDS", 16.0)),
             "auto_sync_hours": int(os.environ.get("AUTO_SYNC_HOURS", 6)),
-            "github_token": os.environ.get("GITHUB_TOKEN", "")
+            "github_token": os.environ.get("GITHUB_TOKEN", ""),
+            "hdhomerun_enabled": True,
+            "hdhomerun_name": "M3U Stream Hub",
+            "hdhomerun_tuners": 4,
+            "hdhomerun_mode": "favorites",
+            "hdhomerun_group": "",
+            "hdhomerun_source_id": "",
+            "hdhomerun_max_channels": 300
         }
 
         # Almacén de canales en memoria indexado
@@ -65,6 +76,8 @@ class PlaylistManager:
         self.channels: Dict[str, Dict] = {}
         # source_id -> list of channel_ids
         self.source_channel_map: Dict[str, List[str]] = {}
+        # Mapeo de número de guía virtual para HDHomeRun (GuideNumber -> channel_id)
+        self.hdhomerun_channel_map: Dict[str, str] = {}
 
         self._lock = asyncio.Lock()
 
@@ -73,6 +86,7 @@ class PlaylistManager:
         self.load_favorites()
         self.load_sources()
         self.load_custom_channels()
+        self.load_github_repos()
 
     # -------------------------------------------------------------------------
     # Persistencia de Configuración, Favoritos y Fuentes
@@ -100,6 +114,16 @@ class PlaylistManager:
             self.settings["active_acestream_server_id"] = self.settings["acestream_servers"][0]["id"]
         if "auto_failover_acestream" not in self.settings:
             self.settings["auto_failover_acestream"] = True
+        if "hdhomerun_enabled" not in self.settings:
+            self.settings["hdhomerun_enabled"] = True
+        if "hdhomerun_name" not in self.settings:
+            self.settings["hdhomerun_name"] = "M3U Stream Hub"
+        if "hdhomerun_tuners" not in self.settings:
+            self.settings["hdhomerun_tuners"] = 4
+        if "hdhomerun_mode" not in self.settings:
+            self.settings["hdhomerun_mode"] = "favorites"
+        if "hdhomerun_max_channels" not in self.settings:
+            self.settings["hdhomerun_max_channels"] = 300
 
     def save_settings(self):
         try:
@@ -271,6 +295,262 @@ class PlaylistManager:
             logger.error(f"Error guardando sources.json: {e}")
 
     # -------------------------------------------------------------------------
+    # Persistencia y Gestión de Repositorios GitHub y Caché Local
+    # -------------------------------------------------------------------------
+    def load_github_repos(self):
+        if os.path.exists(self.github_repos_file):
+            try:
+                with open(self.github_repos_file, "r", encoding="utf-8") as f:
+                    self.github_repos = json.load(f)
+            except Exception as e:
+                logger.error(f"Error cargando github_repos.json: {e}")
+                self.github_repos = {}
+        else:
+            self.github_repos = {}
+
+        # Auto-descubrir repositorios desde fuentes existentes si está vacío
+        if not self.github_repos and self.sources:
+            for sid, s in self.sources.items():
+                url = s.get("url_or_path", "")
+                m = RAW_GITHUB_REGEX.search(url)
+                if m:
+                    owner, repo, branch, path = m.group(1), m.group(2), m.group(3), m.group(4)
+                    repo_id = f"{owner.lower()}_{repo.lower()}"
+                    if repo_id not in self.github_repos:
+                        self.github_repos[repo_id] = {
+                            "id": repo_id,
+                            "url": f"https://github.com/{owner}/{repo}",
+                            "owner": owner,
+                            "repo": repo,
+                            "branch": branch,
+                            "name": f"{owner}/{repo}",
+                            "added_at": int(time.time()),
+                            "last_scanned": None,
+                            "files_count": 0,
+                            "files": [],
+                            "imported_sources": []
+                        }
+                    if sid not in self.github_repos[repo_id]["imported_sources"]:
+                        self.github_repos[repo_id]["imported_sources"].append(sid)
+                    s["github_repo_id"] = repo_id
+                    s["github_path"] = path
+            if self.github_repos:
+                self.save_github_repos()
+
+    def save_github_repos(self):
+        try:
+            with open(self.github_repos_file, "w", encoding="utf-8") as f:
+                json.dump(self.github_repos, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            logger.error(f"Error guardando github_repos.json: {e}")
+
+    def get_github_cache_filepath(self, repo_id: str, path: str) -> str:
+        clean_path = path.replace("..", "").lstrip("/\\")
+        full_path = os.path.join(self.github_cache_dir, repo_id, clean_path)
+        os.makedirs(os.path.dirname(full_path), exist_ok=True)
+        return full_path
+
+    def save_file_to_github_cache(self, repo_id: str, path: str, content: str) -> str:
+        filepath = self.get_github_cache_filepath(repo_id, path)
+        try:
+            with open(filepath, "w", encoding="utf-8") as f:
+                f.write(content)
+        except Exception as e:
+            logger.error(f"Error guardando archivo en caché local {filepath}: {e}")
+        return filepath
+
+    def get_file_from_github_cache(self, repo_id: str, path: str) -> Optional[str]:
+        filepath = self.get_github_cache_filepath(repo_id, path)
+        if os.path.exists(filepath):
+            try:
+                with open(filepath, "r", encoding="utf-8", errors="replace") as f:
+                    return f.read()
+            except Exception as e:
+                logger.error(f"Error leyendo archivo de caché local {filepath}: {e}")
+        return None
+
+    def get_github_repos(self) -> List[Dict]:
+        """Devuelve la lista de repositorios GitHub guardados con estadísticas."""
+        repos = []
+        for rid, r in self.github_repos.items():
+            imported_count = 0
+            for sid, s in self.sources.items():
+                if s.get("github_repo_id") == rid or (r.get("owner") and f"/{r['owner'].lower()}/{r['repo'].lower()}/" in s.get("url_or_path", "").lower()):
+                    imported_count += 1
+
+            repo_item = dict(r)
+            repo_item["imported_count"] = imported_count
+            repos.append(repo_item)
+
+        repos.sort(key=lambda x: x.get("added_at") or 0, reverse=True)
+        return repos
+
+    async def add_or_update_github_repo(self, repo_input: str, scan_now: bool = True) -> Dict:
+        """Añade o actualiza un repositorio GitHub guardado."""
+        owner, repo, branch = parse_repo_identifier(repo_input)
+        if not owner or not repo:
+            raise ValueError("URL o identificador de repositorio no válido. Usa formato 'usuario/repo' o 'https://github.com/usuario/repo'.")
+
+        repo_id = f"{owner.lower()}_{repo.lower()}"
+        now = int(time.time())
+
+        if repo_id not in self.github_repos:
+            self.github_repos[repo_id] = {
+                "id": repo_id,
+                "url": f"https://github.com/{owner}/{repo}",
+                "owner": owner,
+                "repo": repo,
+                "branch": branch or "main",
+                "name": f"{owner}/{repo}",
+                "added_at": now,
+                "last_scanned": None,
+                "files_count": 0,
+                "files": [],
+                "imported_sources": []
+            }
+
+        repo_obj = self.github_repos[repo_id]
+
+        if scan_now:
+            token = self.settings.get("github_token") or os.environ.get("GITHUB_TOKEN", "")
+            scan_res = await scan_github_repository(f"{owner}/{repo}", github_token=token)
+            if scan_res.get("success"):
+                repo_obj["branch"] = scan_res.get("branch", repo_obj.get("branch", "main"))
+                repo_obj["files_count"] = scan_res.get("files_count", 0)
+                repo_obj["files"] = scan_res.get("files", [])
+                repo_obj["last_scanned"] = now
+
+        self.save_github_repos()
+        return repo_obj
+
+    async def delete_github_repo(self, repo_id: str, delete_sources: bool = False) -> bool:
+        """Elimina un repositorio GitHub guardado y opcionalmente sus fuentes asociadas."""
+        async with self._lock:
+            if repo_id not in self.github_repos:
+                return False
+
+            repo = self.github_repos[repo_id]
+            owner = repo.get("owner", "").lower()
+            repo_name = repo.get("repo", "").lower()
+
+            if delete_sources:
+                sources_to_remove = []
+                for sid, s in self.sources.items():
+                    if s.get("github_repo_id") == repo_id:
+                        sources_to_remove.append(sid)
+                    elif f"/{owner}/{repo_name}/" in s.get("url_or_path", "").lower():
+                        sources_to_remove.append(sid)
+
+                for sid in sources_to_remove:
+                    del self.sources[sid]
+                    self._unload_source_channels(sid)
+                self.save_sources()
+
+            import shutil
+            cache_folder = os.path.join(self.github_cache_dir, repo_id)
+            if os.path.exists(cache_folder):
+                shutil.rmtree(cache_folder, ignore_errors=True)
+
+            del self.github_repos[repo_id]
+            self.save_github_repos()
+            return True
+
+    async def update_github_repo(self, repo_id: str, reimport_all: bool = True) -> Dict:
+        """
+        Escanea el repositorio, descarga copias en caché local y sincroniza/reimporta canales.
+        """
+        if repo_id not in self.github_repos:
+            raise ValueError(f"Repositorio {repo_id} no encontrado")
+
+        repo = self.github_repos[repo_id]
+        owner = repo["owner"]
+        repo_name = repo["repo"]
+        token = self.settings.get("github_token") or os.environ.get("GITHUB_TOKEN", "")
+
+        # 1. Escanear
+        scan_res = await scan_github_repository(f"{owner}/{repo_name}", github_token=token)
+        if not scan_res.get("success"):
+            raise RuntimeError(scan_res.get("error", "Error al escanear repositorio de GitHub"))
+
+        repo["branch"] = scan_res.get("branch", repo.get("branch", "main"))
+        repo["files_count"] = scan_res.get("files_count", 0)
+        repo["files"] = scan_res.get("files", [])
+        repo["last_scanned"] = int(time.time())
+        self.save_github_repos()
+
+        files_to_sync = repo["files"]
+        if not reimport_all and repo.get("imported_sources"):
+            imported_paths = set()
+            for sid in repo["imported_sources"]:
+                s = self.sources.get(sid)
+                if s and s.get("github_path"):
+                    imported_paths.add(s["github_path"].lower())
+            if imported_paths:
+                files_to_sync = [f for f in files_to_sync if f["path"].lower() in imported_paths]
+
+        # 2. Descargar, almacenar en caché local y sincronizar fuentes
+        updated_sources = 0
+        total_channels = 0
+        errors = []
+
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "Accept": "*/*"
+        }
+        if token:
+            headers["Authorization"] = f"token {token}"
+
+        async with httpx.AsyncClient(timeout=45.0, follow_redirects=True) as client:
+            for f in files_to_sync:
+                fname = f.get("filename", "")
+                fpath = f.get("path", "")
+                raw_url = f.get("raw_url", "")
+                if not raw_url:
+                    continue
+
+                content = None
+                try:
+                    r = await client.get(raw_url, headers=headers)
+                    if r.status_code == 200:
+                        content = r.text
+                        self.save_file_to_github_cache(repo_id, fpath, content)
+                except Exception as e:
+                    logger.warning(f"Error descargando {raw_url}: {e}")
+                    content = self.get_file_from_github_cache(repo_id, fpath)
+
+                if content is None:
+                    errors.append(f"No se pudo descargar {fname}")
+                    continue
+
+                try:
+                    src = await self.add_source(
+                        name=fname,
+                        source_type="github",
+                        url_or_path=raw_url,
+                        enabled=True,
+                        github_repo_id=repo_id,
+                        github_path=fpath
+                    )
+                    sid = src["id"]
+                    if sid not in repo["imported_sources"]:
+                        repo["imported_sources"].append(sid)
+                    updated_sources += 1
+                    total_channels += src.get("channel_count", 0)
+                except Exception as e:
+                    errors.append(f"Error procesando {fname}: {str(e)}")
+
+        self.save_github_repos()
+        return {
+            "success": True,
+            "repo_id": repo_id,
+            "repo_name": repo["name"],
+            "files_count": repo["files_count"],
+            "updated_sources": updated_sources,
+            "total_channels": total_channels,
+            "errors": errors
+        }
+
+    # -------------------------------------------------------------------------
     # Detección de Listas M3U Locales
     # -------------------------------------------------------------------------
     def scan_local_playlists(self) -> List[Dict]:
@@ -346,7 +626,9 @@ class PlaylistManager:
         source_type: str,
         url_or_path: str,
         enabled: bool = True,
-        auto_sync: bool = True
+        auto_sync: bool = True,
+        github_repo_id: Optional[str] = None,
+        github_path: Optional[str] = None
     ) -> Dict:
         """Añade una nueva fuente M3U (GitHub, URL remota o archivo local) y sincroniza sus canales."""
         async with self._lock:
@@ -371,6 +653,10 @@ class PlaylistManager:
                 source_entry["type"] = source_type
                 source_entry["enabled"] = enabled
                 source_entry["url_or_path"] = url_or_path
+                if github_repo_id:
+                    source_entry["github_repo_id"] = github_repo_id
+                if github_path:
+                    source_entry["github_path"] = github_path
             else:
                 if source_type == "local":
                     clean_name = re.sub(r'[^a-zA-Z0-9_]', '_', os.path.basename(url_or_path).lower())
@@ -389,8 +675,16 @@ class PlaylistManager:
                     "channel_count": 0,
                     "last_synced": None,
                     "status": "pending",
-                    "error_message": ""
+                    "error_message": "",
+                    "github_repo_id": github_repo_id or "",
+                    "github_path": github_path or ""
                 }
+                if not source_entry["github_repo_id"] and ("github" in source_type or "raw.githubusercontent.com" in url_or_path):
+                    m_raw = RAW_GITHUB_REGEX.search(url_or_path)
+                    if m_raw:
+                        source_entry["github_repo_id"] = f"{m_raw.group(1).lower()}_{m_raw.group(2).lower()}"
+                        source_entry["github_path"] = m_raw.group(4)
+
                 self.sources[source_id] = source_entry
 
             self.save_sources()
@@ -498,10 +792,42 @@ class PlaylistManager:
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
                     "Accept": "*/*"
                 }
-                async with httpx.AsyncClient(timeout=45.0, follow_redirects=True) as client:
-                    r = await client.get(url_or_path, headers=headers)
-                    r.raise_for_status()
-                    channels = parse_m3u_text(r.text, source_id=source_id)
+                token = self.settings.get("github_token") or os.environ.get("GITHUB_TOKEN", "")
+                if token and ("github.com" in url_or_path or "raw.githubusercontent.com" in url_or_path):
+                    headers["Authorization"] = f"token {token}"
+
+                repo_id_for_cache = source.get("github_repo_id")
+                cached_filename = source.get("github_path") or os.path.basename(url_or_path.split("?")[0])
+                if not repo_id_for_cache and "raw.githubusercontent.com" in url_or_path:
+                    m_raw = RAW_GITHUB_REGEX.search(url_or_path)
+                    if m_raw:
+                        repo_id_for_cache = f"{m_raw.group(1).lower()}_{m_raw.group(2).lower()}"
+                        cached_filename = m_raw.group(4) or cached_filename
+                        source["github_repo_id"] = repo_id_for_cache
+                        source["github_path"] = cached_filename
+
+                content = None
+                try:
+                    async with httpx.AsyncClient(timeout=35.0, follow_redirects=True) as client:
+                        r = await client.get(url_or_path, headers=headers)
+                        r.raise_for_status()
+                        content = r.text
+                        if repo_id_for_cache and content:
+                            self.save_file_to_github_cache(repo_id_for_cache, cached_filename, content)
+                except Exception as dl_err:
+                    logger.warning(f"Error descargando {url_or_path}: {dl_err}. Buscando en copia local en caché...")
+                    if repo_id_for_cache:
+                        content = self.get_file_from_github_cache(repo_id_for_cache, cached_filename)
+                    if not content:
+                        cand = os.path.join(self.local_playlists_dir, os.path.basename(cached_filename))
+                        if os.path.exists(cand):
+                            with open(cand, "r", encoding="utf-8", errors="replace") as f:
+                                content = f.read()
+                    if not content:
+                        raise dl_err
+                    logger.info(f"Fuente '{source['name']}' cargada exitosamente desde caché local persistente.")
+
+                channels = parse_m3u_text(content, source_id=source_id)
 
             # Cargar los canales procesados en memoria protegidos por Lock
             async with self._lock:
@@ -654,3 +980,87 @@ class PlaylistManager:
             })
         summary.sort(key=lambda x: (x.get("name") or "").lower())
         return summary
+
+    # -------------------------------------------------------------------------
+    # Emulador HDHomeRun (Plex, Jellyfin, Emby)
+    # -------------------------------------------------------------------------
+    def get_hdhomerun_lineup(
+        self,
+        base_url: str,
+        favorites_only: Optional[bool] = None,
+        group: Optional[str] = None,
+        source_id: Optional[str] = None,
+        stream_type: Optional[str] = None,
+        limit: Optional[int] = None
+    ) -> List[Dict]:
+        """
+        Genera la parrilla de canales adaptada para el sintonizador HDHomeRun
+        (Plex, Jellyfin, Emby), mapeando números de guía y manteniendo un índice en memoria.
+        """
+        mode = self.settings.get("hdhomerun_mode", "favorites")
+        max_ch = limit or int(self.settings.get("hdhomerun_max_channels", 300))
+        grp_filter = group or self.settings.get("hdhomerun_group") or None
+        src_filter = source_id or self.settings.get("hdhomerun_source_id") or None
+
+        use_favorites = favorites_only if favorites_only is not None else (mode == "favorites")
+        selected_channels = []
+
+        if use_favorites:
+            for cid in self.favorites:
+                if cid in self.channels:
+                    selected_channels.append(self.channels[cid])
+
+            # Si aún no hay favoritos guardados, tomar los primeros canales de fuentes habilitadas
+            if not selected_channels:
+                for cid, ch in self.channels.items():
+                    if len(selected_channels) >= min(max_ch, 50):
+                        break
+                    s = self.sources.get(ch.get("source_id", ""))
+                    if s and not s.get("enabled", True):
+                        continue
+                    selected_channels.append(ch)
+        else:
+            for cid, ch in self.channels.items():
+                s = self.sources.get(ch.get("source_id", ""))
+                if s and not s.get("enabled", True):
+                    continue
+
+                if mode == "acestream" or stream_type == "acestream":
+                    if not ch.get("acestream_id"):
+                        continue
+
+                if grp_filter and grp_filter != "all" and ch.get("group") != grp_filter:
+                    continue
+
+                if src_filter and src_filter != "all" and ch.get("source_id") != src_filter:
+                    continue
+
+                selected_channels.append(ch)
+                if len(selected_channels) >= max_ch:
+                    break
+
+        selected_channels = selected_channels[:max_ch]
+
+        lineup = []
+        new_channel_map = {}
+
+        for idx, ch in enumerate(selected_channels, start=1):
+            guide_num = str(idx)
+            cid = ch["id"]
+            new_channel_map[guide_num] = cid
+
+            name = ch.get("name") or f"Canal {guide_num}"
+            stream_url = f"{base_url}/auto/v{guide_num}"
+
+            lineup.append({
+                "GuideNumber": guide_num,
+                "GuideName": name,
+                "URL": stream_url,
+                "ChannelID": cid,
+                "Station": ch.get("tvg_id") or name,
+                "StreamType": ch.get("stream_type", "direct"),
+                "Group": ch.get("group", "General")
+            })
+
+        self.hdhomerun_channel_map = new_channel_map
+        return lineup

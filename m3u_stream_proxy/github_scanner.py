@@ -52,10 +52,19 @@ def parse_repo_identifier(repo_input: str) -> Tuple[Optional[str], Optional[str]
     Extrae (owner, repo, branch) a partir de:
     - https://github.com/owner/repo
     - https://github.com/owner/repo/tree/master
+    - https://raw.githubusercontent.com/owner/repo/main/path...
     - owner/repo
     """
     cleaned = repo_input.strip()
-    
+
+    # 0. Probar URL raw de GitHub
+    m_raw = RAW_GITHUB_REGEX.search(cleaned)
+    if m_raw:
+        owner = m_raw.group(1)
+        repo = m_raw.group(2).removesuffix(".git")
+        branch = m_raw.group(3)
+        return owner, repo, branch
+
     # 1. Probar URL estándar de GitHub
     m = GITHUB_URL_REGEX.search(cleaned)
     if m:

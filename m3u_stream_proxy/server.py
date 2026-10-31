@@ -65,6 +65,16 @@ class GithubScanPayload(BaseModel):
 
 class GithubImportPayload(BaseModel):
     files: List[Dict]
+    repo_id: Optional[str] = None
+
+
+class SaveGithubRepoPayload(BaseModel):
+    url: str
+    scan_now: bool = True
+
+
+class UpdateGithubRepoPayload(BaseModel):
+    reimport_all: bool = True
 
 
 class AceServerPayload(BaseModel):
@@ -92,6 +102,16 @@ class SettingsPayload(BaseModel):
     github_token: Optional[str] = ""
     auto_failover_acestream: Optional[bool] = True
     active_acestream_server_id: Optional[str] = None
+
+
+class HDHomeRunSettingsPayload(BaseModel):
+    hdhomerun_enabled: Optional[bool] = None
+    hdhomerun_name: Optional[str] = None
+    hdhomerun_tuners: Optional[int] = None
+    hdhomerun_mode: Optional[str] = None
+    hdhomerun_group: Optional[str] = None
+    hdhomerun_source_id: Optional[str] = None
+    hdhomerun_max_channels: Optional[int] = None
 
 
 # ---------------------------------------------------------------------------
@@ -283,14 +303,62 @@ async def scan_local_playlists():
 
 
 # ---------------------------------------------------------------------------
-# API REST: Escaneo e Importación de GitHub
+# API REST: Gestión, Escaneo e Importación de Repositorios GitHub
 # ---------------------------------------------------------------------------
+@app.get("/api/github/repos")
+async def get_saved_github_repos():
+    repos = manager.get_github_repos()
+    return JSONResponse({"success": True, "repos": repos})
+
+
+@app.post("/api/github/repos")
+async def add_saved_github_repo(payload: SaveGithubRepoPayload):
+    try:
+        repo = await manager.add_or_update_github_repo(payload.url, scan_now=payload.scan_now)
+        return JSONResponse({"success": True, "repo": repo})
+    except Exception as e:
+        logger.error(f"Error guardando repositorio GitHub {payload.url}: {e}")
+        return JSONResponse({"success": False, "error": str(e)}, status_code=400)
+
+
+@app.delete("/api/github/repos/{repo_id}")
+async def delete_saved_github_repo(repo_id: str, delete_sources: bool = Query(False)):
+    deleted = await manager.delete_github_repo(repo_id, delete_sources=delete_sources)
+    if not deleted:
+        raise HTTPException(status_code=404, detail="Repositorio no encontrado")
+    return JSONResponse({"success": True, "repo_id": repo_id})
+
+
+@app.post("/api/github/repos/{repo_id}/update")
+async def update_saved_github_repo(repo_id: str, payload: Optional[UpdateGithubRepoPayload] = None):
+    reimport_all = payload.reimport_all if payload else True
+    try:
+        res = await manager.update_github_repo(repo_id, reimport_all=reimport_all)
+        return JSONResponse(res)
+    except Exception as e:
+        logger.error(f"Error actualizando repositorio {repo_id}: {e}")
+        return JSONResponse({"success": False, "error": str(e)}, status_code=400)
+
+
 @app.post("/api/github/scan")
 async def scan_github(payload: GithubScanPayload):
+    token = manager.settings.get("github_token")
     result = await scan_github_repository(
         repo_input=payload.repo,
-        github_token=manager.settings.get("github_token")
+        github_token=token
     )
+    if result.get("success"):
+        try:
+            # Auto-guardar o actualizar el repositorio en github_repos.json
+            repo = await manager.add_or_update_github_repo(payload.repo, scan_now=False)
+            repo["branch"] = result.get("branch", repo.get("branch", "main"))
+            repo["files_count"] = result.get("files_count", 0)
+            repo["files"] = result.get("files", [])
+            repo["last_scanned"] = int(time.time())
+            manager.save_github_repos()
+            result["repo_id"] = repo["id"]
+        except Exception as e:
+            logger.warning(f"No se pudo auto-guardar repositorio en lista: {e}")
     return JSONResponse(result)
 
 
@@ -298,21 +366,34 @@ async def scan_github(payload: GithubScanPayload):
 async def import_github_files(payload: GithubImportPayload):
     imported = []
     errors = []
+    repo = manager.github_repos.get(payload.repo_id) if payload.repo_id else None
+
     for f in payload.files:
         name = f.get("filename", "GitHub Playlist")
         raw_url = f.get("raw_url", "")
+        fpath = f.get("path", name)
         if raw_url:
             try:
                 src = await manager.add_source(
                     name=f"{name}",
                     source_type="github",
                     url_or_path=raw_url,
-                    enabled=True
+                    enabled=True,
+                    github_repo_id=payload.repo_id,
+                    github_path=fpath
                 )
                 imported.append(src)
+                if repo and src["id"] not in repo.get("imported_sources", []):
+                    if "imported_sources" not in repo:
+                        repo["imported_sources"] = []
+                    repo["imported_sources"].append(src["id"])
             except Exception as e:
                 logger.error(f"Error importando {name}: {e}")
                 errors.append(f"{name}: {str(e)}")
+
+    if repo:
+        manager.save_github_repos()
+
     return JSONResponse({
         "status": "imported",
         "imported_count": len(imported),
@@ -346,6 +427,16 @@ async def update_settings(payload: SettingsPayload):
 async def check_acestream_status(server_id: Optional[str] = Query(None)):
     result = await ace_proxy.check_engine_health(server_id=server_id)
     return JSONResponse(result)
+
+
+@app.get("/api/acestream/stats")
+async def get_acestream_stream_stats(
+    id: str = Query(..., description="Hash ID de AceStream"),
+    server_id: Optional[str] = Query(None, description="Servidor específico a consultar")
+):
+    """Devuelve telemetría P2P en vivo (peers conectados, velocidad descarga/subida, búfer)."""
+    stats = await ace_proxy.get_stream_stats(acestream_id=id, server_id=server_id)
+    return JSONResponse(stats)
 
 
 @app.get("/api/acestream/servers")
@@ -572,6 +663,226 @@ async def get_channel_live_ts(channel_id: str, request: Request, server_id: Opti
         raise HTTPException(status_code=400, detail="El canal no tiene URL válida")
 
     return RedirectResponse(url=target_url)
+
+
+# ---------------------------------------------------------------------------
+# Emulador de Sintonizador Digital HDHomeRun (Plex, Jellyfin, Emby)
+# ---------------------------------------------------------------------------
+@app.get("/discover.json")
+@app.head("/discover.json")
+async def hdhomerun_discover(request: Request):
+    """
+    Protocolo de descubrimiento oficial de sintonizador SiliconDust HDHomeRun.
+    Permite que Plex Live TV y Jellyfin reconozcan este contenedor como un sintonizador físico.
+    """
+    base_url = str(request.base_url).rstrip("/")
+    tuner_count = int(manager.settings.get("hdhomerun_tuners", 4))
+    friendly_name = manager.settings.get("hdhomerun_name", "M3U Stream Hub")
+    device_id = "104E2026"
+
+    query_str = str(request.url.query)
+    lineup_url = f"{base_url}/lineup.json"
+    if query_str:
+        lineup_url = f"{lineup_url}?{query_str}"
+
+    return JSONResponse({
+        "FriendlyName": friendly_name,
+        "Manufacturer": "SiliconDust",
+        "ModelNumber": "HDTC-2US",
+        "FirmwareName": "hdhomerun_tc_atsc",
+        "FirmwareVersion": "20230505",
+        "DeviceID": device_id,
+        "DeviceAuth": "m3ustreamproxy2026",
+        "TunerCount": tuner_count,
+        "BaseURL": base_url,
+        "LineupURL": lineup_url
+    })
+
+
+@app.get("/lineup_status.json")
+@app.head("/lineup_status.json")
+async def hdhomerun_lineup_status():
+    """Estado de escaneo del sintonizador HDHomeRun para Plex y Jellyfin."""
+    return JSONResponse({
+        "ScanInProgress": 0,
+        "ScanPossible": 1,
+        "Source": "Cable",
+        "SourceList": ["Cable", "Antenna"]
+    })
+
+
+@app.post("/lineup.post")
+@app.get("/lineup.post")
+async def hdhomerun_lineup_post():
+    """Respuesta a comandos de escaneo enviados por Plex o Jellyfin."""
+    return JSONResponse({"status": "ok"})
+
+
+@app.get("/device.xml", response_class=Response)
+@app.get("/upnp/device.xml", response_class=Response)
+async def hdhomerun_device_xml(request: Request):
+    """Descriptor XML UPnP / DLNA para auto-descubrimiento en red local."""
+    base_url = str(request.base_url).rstrip("/")
+    friendly_name = manager.settings.get("hdhomerun_name", "M3U Stream Hub")
+    xml_content = f"""<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  <device>
+    <deviceType>urn:schemas-upnp-org:device:MediaServer:1</deviceType>
+    <friendlyName>{friendly_name}</friendlyName>
+    <manufacturer>SiliconDust</manufacturer>
+    <modelName>HDTC-2US</modelName>
+    <modelNumber>HDTC-2US</modelNumber>
+    <serialNumber>104E2026</serialNumber>
+    <UDN>uuid:20261031-104e-4f2b-8899-m3ustreamhub</UDN>
+    <presentationURL>{base_url}</presentationURL>
+  </device>
+</root>"""
+    return Response(content=xml_content, media_type="application/xml")
+
+
+@app.get("/lineup.json")
+@app.head("/lineup.json")
+async def hdhomerun_lineup(
+    request: Request,
+    favorites: Optional[bool] = Query(None),
+    group: Optional[str] = Query(None),
+    source_id: Optional[str] = Query(None),
+    limit: Optional[int] = Query(None)
+):
+    """Parrilla de canales oficial HDHomeRun para Plex y Jellyfin."""
+    base_url = str(request.base_url).rstrip("/")
+    lineup = manager.get_hdhomerun_lineup(
+        base_url=base_url,
+        favorites_only=favorites,
+        group=group,
+        source_id=source_id,
+        limit=limit
+    )
+    result = [
+        {
+            "GuideNumber": item["GuideNumber"],
+            "GuideName": item["GuideName"],
+            "URL": item["URL"]
+        }
+        for item in lineup
+    ]
+    return JSONResponse(result)
+
+
+async def _serve_hdhomerun_stream(
+    identifier: str,
+    request: Request,
+    server_id: Optional[str] = None
+):
+    """Lógica central de sintonía HDHomeRun para Plex, Jellyfin y Emby."""
+    base_url = str(request.base_url).rstrip("/")
+    if not manager.hdhomerun_channel_map:
+        manager.get_hdhomerun_lineup(base_url=base_url)
+
+    target_id = None
+    clean_num = identifier.lstrip("v").strip()
+
+    # 1. Buscar por número de guía (ej. "1", "2")
+    if clean_num in manager.hdhomerun_channel_map:
+        target_id = manager.hdhomerun_channel_map[clean_num]
+    elif identifier in manager.hdhomerun_channel_map:
+        target_id = manager.hdhomerun_channel_map[identifier]
+    # 2. Buscar por ID directo de canal
+    elif identifier in manager.channels:
+        target_id = identifier
+    elif clean_num in manager.channels:
+        target_id = clean_num
+
+    if not target_id or target_id not in manager.channels:
+        raise HTTPException(status_code=404, detail="Canal no encontrado en el sintonizador")
+
+    ch = manager.channels[target_id]
+
+    # Para peticiones HEAD (sondeos rápidos de Plex / Jellyfin para comprobar estado de sintonía)
+    if request.method == "HEAD":
+        media_type = "video/mp2t" if ch.get("acestream_id") else "application/vnd.apple.mpegurl"
+        return Response(
+            status_code=200,
+            media_type=media_type,
+            headers={
+                "Access-Control-Allow-Origin": "*",
+                "Cache-Control": "no-cache",
+                "Connection": "close"
+            }
+        )
+
+    # 1. Si es AceStream -> Flujo MPEG-TS continuo directo
+    if ch.get("acestream_id"):
+        target_server = server_id or ch.get("acestream_server_id")
+        return await ace_proxy.stream_direct_ts(ch["acestream_id"], server_id=target_server)
+
+    # 2. Si es HLS -> Servir manifiesto proxificado con offset
+    target_url = ch.get("url", "")
+    if ".m3u8" in target_url.lower() or ch.get("stream_type") == "hls":
+        buf_offset = manager.settings.get("buffer_offset_seconds", 16.0)
+        return await proxy_m3u8_manifest(target_url, request_base_url=base_url, buffer_offset=buf_offset)
+
+    return RedirectResponse(url=target_url)
+
+
+@app.get("/auto/v{guide_num}")
+@app.head("/auto/v{guide_num}")
+async def hdhomerun_stream_vguide(guide_num: str, request: Request, server_id: Optional[str] = Query(None)):
+    """Punto de sintonía HDHomeRun estándar con prefijo v (ej. /auto/v1)."""
+    return await _serve_hdhomerun_stream(guide_num, request, server_id)
+
+
+@app.get("/auto/{channel_id}")
+@app.head("/auto/{channel_id}")
+async def hdhomerun_stream_any(channel_id: str, request: Request, server_id: Optional[str] = Query(None)):
+    """Punto de sintonía HDHomeRun por número o ID de canal (ej. /auto/1 o /auto/ch_123)."""
+    return await _serve_hdhomerun_stream(channel_id, request, server_id)
+
+
+@app.get("/api/hdhomerun/status")
+async def get_hdhomerun_status(request: Request):
+    """Devuelve el estado completo del sintonizador HDHomeRun y su parrilla para el panel web."""
+    base_url = str(request.base_url).rstrip("/")
+    lineup = manager.get_hdhomerun_lineup(base_url=base_url)
+    return JSONResponse({
+        "enabled": manager.settings.get("hdhomerun_enabled", True),
+        "friendly_name": manager.settings.get("hdhomerun_name", "M3U Stream Hub"),
+        "tuner_count": manager.settings.get("hdhomerun_tuners", 4),
+        "mode": manager.settings.get("hdhomerun_mode", "favorites"),
+        "max_channels": manager.settings.get("hdhomerun_max_channels", 300),
+        "group_filter": manager.settings.get("hdhomerun_group", ""),
+        "source_filter": manager.settings.get("hdhomerun_source_id", ""),
+        "total_channels": len(lineup),
+        "discover_url": f"{base_url}/discover.json",
+        "lineup_url": f"{base_url}/lineup.json",
+        "channels_sample": lineup[:10]
+    })
+
+
+@app.post("/api/hdhomerun/settings")
+async def update_hdhomerun_settings(payload: HDHomeRunSettingsPayload):
+    """Actualiza la configuración del sintonizador HDHomeRun."""
+    if payload.hdhomerun_enabled is not None:
+        manager.settings["hdhomerun_enabled"] = payload.hdhomerun_enabled
+    if payload.hdhomerun_name is not None:
+        manager.settings["hdhomerun_name"] = payload.hdhomerun_name.strip()
+    if payload.hdhomerun_tuners is not None:
+        manager.settings["hdhomerun_tuners"] = max(1, min(32, payload.hdhomerun_tuners))
+    if payload.hdhomerun_mode is not None:
+        manager.settings["hdhomerun_mode"] = payload.hdhomerun_mode
+    if payload.hdhomerun_group is not None:
+        manager.settings["hdhomerun_group"] = payload.hdhomerun_group
+    if payload.hdhomerun_source_id is not None:
+        manager.settings["hdhomerun_source_id"] = payload.hdhomerun_source_id
+    if payload.hdhomerun_max_channels is not None:
+        manager.settings["hdhomerun_max_channels"] = max(10, min(2000, payload.hdhomerun_max_channels))
+
+    manager.save_settings()
+    return JSONResponse({"success": True, "settings": manager.settings})
 
 
 # ---------------------------------------------------------------------------
