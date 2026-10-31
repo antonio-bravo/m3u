@@ -2,7 +2,8 @@
 
 Un centro multimedia moderno y servidor proxy en **Docker** para gestionar, escanear y reproducir listas **M3U / M3U8** desde repositorios de **GitHub**, listas locales y enlaces directos, con soporte completo para canales **AceStream** y streams HLS.
 
-Inspirado en la tecnología y el diseño de `tvnow247_proxy`, este contenedor permite unificar todas tus fuentes IPTV en una interfaz web de alta fidelidad y exportar una lista M3U unificada para tus reproductores externos.
+> 📖 **¿Buscas la guía técnica completa para NAS (QNAP/Synology), Plex/Jellyfin o solución de problemas?**  
+> Consulta la **[Guía de Documentación Completa (DOCUMENTACION.md)](./DOCUMENTACION.md)**.
 
 ---
 
