@@ -466,6 +466,81 @@
             }
         }
 
+        /* Overlay de aviso DRM / Insecure Context */
+        .drm-warning-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(9, 13, 22, 0.94);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            z-index: 25;
+            text-align: center;
+        }
+
+        .drm-warning-card {
+            max-width: 520px;
+            width: 100%;
+            background: var(--bg-card);
+            border: 1px solid rgba(168, 85, 247, 0.4);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .drm-warning-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .drm-warning-desc {
+            font-size: 0.84rem;
+            color: #94a3b8;
+            line-height: 1.45;
+        }
+
+        .drm-opts-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            text-align: left;
+            margin-top: 6px;
+        }
+
+        .drm-opt-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 0.8rem;
+        }
+
+        .drm-opt-card b {
+            color: #c084fc;
+        }
+
+        .drm-opt-card code {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.76rem;
+            color: #38bdf8;
+            word-break: break-all;
+            margin-top: 3px;
+        }
+
         /* Detalles del canal reproduciendo */
         .channel-info-bar {
             display: flex;
@@ -1362,6 +1437,36 @@
                     <span id="spinner-msg" style="font-size: 0.85rem; font-weight: 500; color: #e2e8f0;">Conectando con
                         el stream...</span>
                 </div>
+
+                <!-- Overlay de advertencia DRM / Insecure Context -->
+                <div id="drm-warning-overlay" class="drm-warning-overlay" style="display: none;">
+                    <div class="drm-warning-card">
+                        <div class="drm-warning-title" id="drm-warning-title">🔒 Descifrado DRM bloqueado por el navegador</div>
+                        <div class="drm-warning-desc" id="drm-warning-desc">
+                            Por estándar de seguridad W3C, los navegadores web (Chrome, Edge, Firefox, Safari) <b>bloquean el descifrado ClearKey DRM</b> cuando la página se abre mediante una dirección IP por HTTP (<code>http://...:8899</code>).
+                        </div>
+                        <div class="drm-opts-grid" id="drm-opts-container">
+                            <div class="drm-opt-card">
+                                <b>📺 Opción 1 (Recomendada): Ver en TV o móvil</b><br>
+                                <span style="color:#94a3b8;">Aplicaciones nativas como <b>TiviMate, Kodi o OTT Navigator</b> no tienen esta restricción web y reproducen este canal directamente por hardware.</span>
+                                <div style="margin-top:8px;">
+                                    <button class="btn btn-sm btn-primary" onclick="copyCurrentStreamUrl()">📋 Copiar Enlace Directo</button>
+                                </div>
+                            </div>
+                            <div class="drm-opt-card" id="chrome-flag-card">
+                                <b>💻 Opción 2: Habilitar en este navegador (Chrome / Edge)</b><br>
+                                <span style="color:#94a3b8;">1. Abre en otra pestaña:</span><br>
+                                <code>chrome://flags/#unsafely-treat-insecure-origin-as-secure</code><br>
+                                <span style="color:#94a3b8;">2. Añade este origen:</span><br>
+                                <code id="drm-origin-code">http://...:8899</code><br>
+                                <span style="color:#94a3b8;">3. Selecciónalo en <b>Enabled</b> y pulsa en <b>Relaunch</b>.</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 6px; display: flex; justify-content: center; gap: 8px;">
+                            <button class="btn btn-sm" onclick="hideDrmWarning()">Cerrar Aviso</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Información del canal seleccionado -->
@@ -2110,6 +2215,50 @@
         // --------------------------------------------------------------------
         // Reproductor de Video (HLS.js & Shaka Player para DASH/ClearKey)
         // --------------------------------------------------------------------
+        function showDrmWarning(type) {
+            const overlay = document.getElementById("drm-warning-overlay");
+            if (!overlay) return;
+            const titleEl = document.getElementById("drm-warning-title");
+            const descEl = document.getElementById("drm-warning-desc");
+            const codeEl = document.getElementById("drm-origin-code");
+            const flagCard = document.getElementById("chrome-flag-card");
+
+            if (codeEl) codeEl.textContent = window.location.origin;
+
+            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+            if (type === "404_expired") {
+                titleEl.textContent = "⚠️ Canal no disponible en el servidor emisor";
+                descEl.innerHTML = "El servidor de origen ha cerrado la transmisión o el enlace ha caducado en la lista M3U (Error 404).";
+                if (flagCard) flagCard.style.display = "none";
+            } else if (isSafari) {
+                titleEl.textContent = "🍎 Safari no soporta ClearKey DRM";
+                descEl.innerHTML = "Apple Safari en macOS e iOS <b>no admite el estándar ClearKey</b> (únicamente admite FairPlay). Para reproducir este canal en la web, utiliza <b>Google Chrome o Microsoft Edge</b>, o ábrelo en una app compatible.";
+                if (flagCard) flagCard.style.display = "none";
+            } else {
+                titleEl.textContent = "🔒 Descifrado DRM bloqueado por el navegador (HTTP)";
+                descEl.innerHTML = "Por estándar de seguridad W3C, los navegadores (Chrome, Edge, Firefox) <b>bloquean el descifrado ClearKey DRM</b> cuando la página se abre mediante una dirección IP por HTTP (<code>" + window.location.origin + "</code>).";
+                if (flagCard) flagCard.style.display = "block";
+            }
+
+            overlay.style.display = "flex";
+        }
+
+        function hideDrmWarning() {
+            const overlay = document.getElementById("drm-warning-overlay");
+            if (overlay) overlay.style.display = "none";
+        }
+
+        function copyCurrentStreamUrl() {
+            if (!currentStreamUrl && currentChannel) {
+                currentStreamUrl = currentChannel.url ? currentChannel.url.split('|')[0].trim() : '';
+            }
+            if (currentStreamUrl) {
+                navigator.clipboard.writeText(currentStreamUrl);
+                showToast("📋 Enlace copiado al portapapeles. Pégalo en TiviMate, Kodi o VLC.");
+            }
+        }
+
         async function initShakaPlayer() {
             if (window.shaka && !shakaPlayer) {
                 shaka.polyfill.installAll();
@@ -2118,7 +2267,11 @@
                     shakaPlayer.addEventListener('error', (event) => {
                         console.error('Shaka Player Error:', event.detail);
                         hideSpinner();
-                        showToast(`Error de reproducción DASH (${event.detail.code || 'DRM'})`);
+                        if (event.detail && (event.detail.category === 6 || event.detail.code === 6001)) {
+                            showDrmWarning("drm_insecure");
+                        } else {
+                            showToast(`Error de reproducción DASH (${event.detail.code || 'DRM'})`);
+                        }
                     });
                 }
             }
@@ -2126,6 +2279,7 @@
         }
 
         async function loadDashStream(channel) {
+            hideDrmWarning();
             showSpinner("Cargando stream DASH / ClearKey...");
 
             if (hls) {
@@ -2133,10 +2287,25 @@
                 hls = null;
             }
 
+            const cleanUrl = channel.url.split('|')[0].trim();
+            currentStreamUrl = cleanUrl;
+
+            // Comprobación de Safari
+            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+            if (isSafari && channel.license_key) {
+                hideSpinner();
+                showDrmWarning("safari_unsupported");
+                return;
+            }
+
+            if (!window.isSecureContext && channel.license_key) {
+                console.warn("Contexto inseguro (HTTP por IP): el navegador probablemente bloqueará ClearKey EME.");
+            }
+
             const player = await initShakaPlayer();
             if (!player) {
                 hideSpinner();
-                showToast("Tu navegador no soporta reproducción MPEG-DASH / EME.");
+                showDrmWarning("drm_insecure");
                 return;
             }
 
@@ -2160,9 +2329,6 @@
                 player.configure({ drm: { clearKeys: {} } });
             }
 
-            const cleanUrl = channel.url.split('|')[0].trim();
-            currentStreamUrl = cleanUrl;
-
             try {
                 await player.load(cleanUrl);
                 hideSpinner();
@@ -2177,13 +2343,24 @@
             } catch (err) {
                 console.error("Error al cargar stream DASH en Shaka:", err);
                 hideSpinner();
-                showToast("Error al reproducir stream DASH: " + (err.message || err.code));
+
+                const isDrmError = (err.category === 6) || (err.code === 6001) || (err.code === 6002) || !window.isSecureContext;
+                const is404 = (err.code === 1001) || (err.code === 1002) || (err.data && err.data.includes && err.data.includes(404));
+
+                if (is404) {
+                    showDrmWarning("404_expired");
+                } else if (isDrmError) {
+                    showDrmWarning("drm_insecure");
+                } else {
+                    showToast(`Error stream DASH (código ${err.code || 'DRM'})`);
+                }
             }
 
             startBufferMonitor();
         }
 
         function playChannel(channel) {
+            hideDrmWarning();
             currentChannel = channel;
             updateChannelUI(channel);
 
@@ -2222,6 +2399,7 @@
         }
 
         function loadStreamInPlayer(url) {
+            hideDrmWarning();
             showSpinner("Cargando stream...");
 
             if (shakaPlayer) {

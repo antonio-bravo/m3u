@@ -235,17 +235,29 @@ El proxy incluye compatibilidad integral con listas complejas como **AK47Sports*
    - No tienen bloqueo geográfico por IP europea/española, pero su vídeo está protegido mediante cifrado **ClearKey DRM**.
    - La aplicación AK47 utiliza ExoPlayer pasando las claves simétricas de ClearKey (`license_key: <KID>:<KEY>`).
 
-2. **Reproducción directa en la Interfaz Web (Shaka Player):**
+2. **Reproducción directa en la Interfaz Web (Shaka Player) y Política de Seguridad W3C (HTTP vs HTTPS):**
    - El proxy incorpora el motor **Shaka Player** de Google junto a **HLS.js**.
-   - Al reproducir un canal de tipo DASH o con clave ClearKey (como FanCode o ESPN Argentina de AK47), el reproductor configura automáticamente la API W3C Encrypted Media Extensions (EME) con la clave del canal y lo decodifica en tiempo real en tu navegador sin requerir extensiones ni VPN.
+   - **¿Por qué la pantalla se queda en negro en el navegador al abrirlo por HTTP?**
+     - Los navegadores modernos (Google Chrome, Microsoft Edge, Firefox, Brave) siguen estrictamente la especificación oficial del W3C: **las APIs de descifrado DRM (Encrypted Media Extensions / EME) están bloqueadas por seguridad en conexiones HTTP que no sean `localhost`** (Contexto no seguro / Insecure Context).
+     - Al acceder a la web mediante la IP local de tu NAS (`http://192.168.x.x:8899`), el navegador bloquea la creación del descifrador y genera el error DRM 6001 (`REQUESTED_KEY_SYSTEM_CONFIG_UNAVAILABLE`), impidiendo que el reproductor web descifre el vídeo.
+     - En **Safari (macOS / iOS)**, Apple no implementa la especificación ClearKey (`org.w3.clearkey`), permitiendo únicamente FairPlay.
+   - **Cómo activar la reproducción en Chrome / Edge en 3 pasos:**
+     1. Abre una nueva pestaña en tu navegador e ingresa a:
+        ```text
+        chrome://flags/#unsafely-treat-insecure-origin-as-secure
+        ```
+     2. En el campo de texto, introduce la URL de tu proxy en el NAS (ejemplo: `http://192.168.1.100:8899`).
+     3. Cambia el desplegable de **Disabled** a **Enabled** y pulsa el botón **Relaunch** (Reiniciar). ¡El navegador desbloqueará el descifrado ClearKey y los canales se reproducirán al instante!
 
-3. **Exportación a Reproductores Externos (TiviMate, Kodi, OTT Navigator):**
-   - Al descargar o vincular la lista en `/playlist.m3u`, el proxy preserva automáticamente las directivas:
+3. **Reproducción en Aplicaciones Nativas (TiviMate, Kodi, OTT Navigator):**
+   - Las aplicaciones nativas en Android, Android TV, Fire TV y decodificadores **no tienen las limitaciones de seguridad de los navegadores web**.
+   - Acceden directamente a los descifradores por hardware de Android o Kodi.
+   - Al importar la lista M3U unificada (`http://<IP_NAS>:8899/playlist.m3u`), el proxy entrega las directivas intactas:
      ```text
      #KODIPROP:inputstream.adaptive.license_type=clearkey
      #KODIPROP:inputstream.adaptive.license_key=<KID>:<KEY>
      ```
-   - Esto permite que aplicaciones en Android TV o decodificadores reproduzcan los canales de FanCode y AK47 con aceleración por hardware.
+   - Esto garantiza reproducción fluida y aceleración por hardware en televisión sin necesidad de tocar ajustes de navegador.
 
 4. **Canales de Eventos FanCode (HLS con Headers):**
    - Los eventos temporales en HLS que incluyen parámetros de cabeceras móviles (`|User-Agent=ReactNativeVideo...&Referer=https://fancode.com/`) son procesados por el proxy inteligente `cors_hls_proxy.py`, inyectando las cabeceras requeridas tanto en los sub-manifiestos como en los segmentos de vídeo `.ts`.
