@@ -966,15 +966,26 @@ async def export_m3u_playlist(
     stream_type: Optional[str] = Query(None),
     type: Optional[str] = Query(None),
     group: Optional[str] = Query(None),
+    search: Optional[str] = Query(None),
+    favorites: Optional[bool] = Query(None),
+    fav: Optional[bool] = Query(None),
     format: Optional[str] = Query(None),
-    server_id: Optional[str] = Query(None)
+    server_id: Optional[str] = Query(None),
+    limit: Optional[int] = Query(None)
 ):
     """
     Genera un archivo M3U unificado con todos los canales (o filtrados)
     con URLs proxificadas listas para TiviMate, OTT Navigator, Kodi, VLC, etc.
     o enlaces directos al motor AceStream si format=getstream.
+    Permite filtrar por:
+    - ?fav=1 o ?favorites=true (Solo canales favoritos)
+    - ?type=dash / acestream / hls
+    - ?search=palabra (Buscar por nombre o grupo)
+    - ?group=nombre_grupo
+    - ?limit=100
     """
     filter_type = stream_type or type
+    only_fav = bool(favorites or fav)
     base_url = str(request.base_url).rstrip("/")
     lines = ["#EXTM3U"]
 
@@ -993,7 +1004,16 @@ async def export_m3u_playlist(
         except Exception:
             pass
 
+    exported_count = 0
     for ch in manager.channels.values():
+        if only_fav and ch.get("id") not in manager.favorites:
+            continue
+        if search:
+            s_low = search.lower()
+            ch_name = (ch.get("name") or "").lower()
+            ch_grp = (ch.get("group") or "").lower()
+            if s_low not in ch_name and s_low not in ch_grp:
+                continue
         if source_id and ch.get("source_id") != source_id:
             continue
         if filter_type:
@@ -1050,6 +1070,9 @@ async def export_m3u_playlist(
             play_url = f"{base_url}/live/{ch['id']}.m3u8"
 
         lines.append(play_url)
+        exported_count += 1
+        if limit and exported_count >= limit:
+            break
 
     m3u_text = "\n".join(lines)
     return PlainTextResponse(

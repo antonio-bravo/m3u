@@ -1905,6 +1905,31 @@
                 <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom: 0.75rem;">
                     Listas M3U completas para añadir a clientes IPTV (<b>TiviMate, OTT Navigator, Smart IPTV</b>):
                 </p>
+                <div class="form-group" style="background: rgba(234, 179, 8, 0.08); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(234, 179, 8, 0.35);">
+                    <label class="form-label" style="color: #fbbf24; font-weight: 700;">⭐ Lista M3U Solo Favoritos (Recomendado para Kodi / Smart TV)</label>
+                    <div style="display:flex; gap:0.5rem; margin-top: 4px;">
+                        <input type="text" id="export-fav-url" class="form-input"
+                            style="flex:1; font-family: monospace; font-size: 0.82rem; border-color: rgba(234, 179, 8, 0.4);" readonly
+                            onclick="this.select()">
+                        <button class="btn"
+                            onclick="copyToClipboard('export-fav-url', null, '📋 Lista Solo Favoritos copiada')">📋
+                            Copiar</button>
+                    </div>
+                    <div style="font-size:0.73rem; color:var(--text-muted); margin-top:4px;">
+                        💡 <b>¡La solución contra el lag!</b> Solo exporta los canales que hayas marcado con estrella. Kodi carga al instante en lugar de saturarse con 50.000 canales.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">🔒 Lista M3U Solo Canales DASH / ClearKey</label>
+                    <div style="display:flex; gap:0.5rem;">
+                        <input type="text" id="export-dash-url" class="form-input"
+                            style="flex:1; font-family: monospace; font-size: 0.82rem;" readonly
+                            onclick="this.select()">
+                        <button class="btn"
+                            onclick="copyToClipboard('export-dash-url', null, '📋 Lista DASH copiada')">📋
+                            Copiar</button>
+                    </div>
+                </div>
                 <div class="form-group">
                     <label class="form-label">Lista M3U Completa Proxificada (Todos los canales HLS)</label>
                     <div style="display:flex; gap:0.5rem;">
@@ -2165,8 +2190,10 @@
 
             // Export URLs
             const base = window.location.origin;
-            document.getElementById("export-full-url").value = `${base}/playlist.m3u`;
-            document.getElementById("export-ace-url").value = `${base}/playlist.m3u?stream_type=acestream`;
+            if (document.getElementById("export-fav-url")) document.getElementById("export-fav-url").value = `${base}/playlist.m3u?fav=1`;
+            if (document.getElementById("export-dash-url")) document.getElementById("export-dash-url").value = `${base}/playlist.m3u?type=dash`;
+            if (document.getElementById("export-full-url")) document.getElementById("export-full-url").value = `${base}/playlist.m3u`;
+            if (document.getElementById("export-ace-url")) document.getElementById("export-ace-url").value = `${base}/playlist.m3u?stream_type=acestream`;
 
             window.addEventListener("resize", () => {
                 updateChannelMarquees();
@@ -4185,8 +4212,10 @@
         // --------------------------------------------------------------------
         function openExportModal(channelOverride = null) {
             const base = window.location.origin;
-            document.getElementById("export-full-url").value = `${base}/playlist.m3u`;
-            document.getElementById("export-ace-url").value = `${base}/playlist.m3u?stream_type=acestream`;
+            if (document.getElementById("export-fav-url")) document.getElementById("export-fav-url").value = `${base}/playlist.m3u?fav=1`;
+            if (document.getElementById("export-dash-url")) document.getElementById("export-dash-url").value = `${base}/playlist.m3u?type=dash`;
+            if (document.getElementById("export-full-url")) document.getElementById("export-full-url").value = `${base}/playlist.m3u`;
+            if (document.getElementById("export-ace-url")) document.getElementById("export-ace-url").value = `${base}/playlist.m3u?stream_type=acestream`;
 
             // Listas M3U directas para cada servidor AceStream (Manifest HLS y getstream TS)
             const m3uEnginesContainer = document.getElementById("export-ace-m3u-engines");
