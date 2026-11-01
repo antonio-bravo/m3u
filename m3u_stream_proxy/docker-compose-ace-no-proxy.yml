@@ -1,0 +1,16 @@
+services:
+  acestream:
+    image: ghcr.io/martinbjeldbak/acestream-http-proxy:latest
+    container_name: acelink-no-proxy
+    #platform: linux/amd64
+    restart: unless-stopped
+    pull_policy: always
+    ports:
+      - "6879:6878"
+    environment:
+      ALLOW_REMOTE_ACCESS: "yes"
+    volumes:
+      - acestream-data:/home/appuser/.ACEStream
+
+volumes:
+  acestream-data:
