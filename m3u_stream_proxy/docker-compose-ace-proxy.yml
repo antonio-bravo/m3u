@@ -23,8 +23,10 @@ services:
 
 
   acelink:
-    image: martinbjeldbak/acestream-http-proxy:latest
+    image: ghcr.io/martinbjeldbak/acestream-http-proxy:latest
+    pull_policy: always
     container_name: acelink_container
+    restart: unless-stopped
     environment:
       - ALLOW_REMOTE_ACCESS=yes
     depends_on:
