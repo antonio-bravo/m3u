@@ -1022,11 +1022,21 @@ async def export_m3u_playlist(
             lines.append("#KODIPROP:inputstream=inputstream.adaptive")
             if is_dash:
                 lines.append("#KODIPROP:inputstream.adaptive.manifest_type=mpd")
-            lic_type = ch.get("license_type") or ("clearkey" if ch.get("license_key") else None)
-            if lic_type:
-                lines.append(f"#KODIPROP:inputstream.adaptive.license_type={lic_type}")
-            if ch.get("license_key"):
-                lines.append(f"#KODIPROP:inputstream.adaptive.license_key={ch['license_key']}")
+
+            lic_key = (ch.get("license_key") or "").strip()
+            lic_type = (ch.get("license_type") or "clearkey").strip()
+
+            if "clearkey" in lic_type.lower() and lic_key:
+                clean_pair = lic_key.replace("-", "").lower()
+                lines.append(f"#KODIPROP:inputstream.adaptive.drm_legacy=org.w3.clearkey|{clean_pair}")
+                if ":" in clean_pair:
+                    kid, key = clean_pair.split(":", 1)
+                    lines.append(f'#KODIPROP:inputstream.adaptive.drm={{"org.w3.clearkey":{{"keyids":{{"{kid.strip()}":"{key.strip()}"}}}}}}')
+            else:
+                if lic_type:
+                    lines.append(f"#KODIPROP:inputstream.adaptive.license_type={lic_type}")
+                if lic_key:
+                    lines.append(f"#KODIPROP:inputstream.adaptive.license_key={lic_key}")
 
         if ch.get("acestream_id") and format == "getstream" and srv_clean_url:
             play_url = f"{srv_clean_url}/ace/getstream?id={ch['acestream_id']}"

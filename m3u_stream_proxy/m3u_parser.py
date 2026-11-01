@@ -132,6 +132,30 @@ def parse_m3u_lines(lines: Generator[str, None, None], source_id: str = "") -> G
                 if grp:
                     current_channel["group"] = grp
 
+        elif line.startswith("#KODIPROP:inputstream.adaptive.drm_legacy="):
+            if current_channel is not None:
+                val = line.split("=", 1)[1].strip()
+                if "|" in val:
+                    ltype, lkey = val.split("|", 1)
+                    current_channel["license_type"] = ltype.strip()
+                    current_channel["license_key"] = lkey.strip()
+                else:
+                    current_channel["license_key"] = val
+
+        elif line.startswith("#KODIPROP:inputstream.adaptive.drm="):
+            if current_channel is not None and not current_channel.get("license_key"):
+                import json
+                try:
+                    drm_data = json.loads(line.split("=", 1)[1].strip())
+                    ck = drm_data.get("org.w3.clearkey", {}).get("keyids", {})
+                    if ck:
+                        kid = list(ck.keys())[0]
+                        key = ck[kid]
+                        current_channel["license_type"] = "org.w3.clearkey"
+                        current_channel["license_key"] = f"{kid}:{key}"
+                except Exception:
+                    pass
+
         elif line.startswith("#KODIPROP:inputstream.adaptive.license_type="):
             if current_channel is not None:
                 current_channel["license_type"] = line.split("=", 1)[1].strip()

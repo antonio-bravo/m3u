@@ -305,8 +305,13 @@ def write_m3u(filepath, entries, default_group=None):
 
             f.write(f'#EXTINF:-1 tvg-name="{title}" tvg-logo="{logo}" group-title="{group}",{title}\n')
             if license_key:
-                f.write("#KODIPROP:inputstream.adaptive.license_type=clearkey\n")
-                f.write(f"#KODIPROP:inputstream.adaptive.license_key={license_key}\n")
+                clean_pair = license_key.replace("-", "").lower()
+                f.write("#KODIPROP:inputstream=inputstream.adaptive\n")
+                f.write("#KODIPROP:inputstream.adaptive.manifest_type=mpd\n")
+                f.write(f"#KODIPROP:inputstream.adaptive.drm_legacy=org.w3.clearkey|{clean_pair}\n")
+                if ":" in clean_pair:
+                    kid, key = clean_pair.split(":", 1)
+                    f.write(f'#KODIPROP:inputstream.adaptive.drm={{"org.w3.clearkey":{{"keyids":{{"{kid.strip()}":"{key.strip()}"}}}}}}\n')
             f.write(f"{url}\n\n")
     logging.info(f"Lista guardada exitosamente en '{filepath}' ({len(entries)} canales)")
 
