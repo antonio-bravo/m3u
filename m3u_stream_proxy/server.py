@@ -1015,12 +1015,18 @@ async def export_m3u_playlist(
         extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{logo}" group-title="{grp}", {name}'
         lines.append(extinf)
 
-        if ch.get("license_type"):
-            lines.append(f"#KODIPROP:inputstream.adaptive.license_type={ch['license_type']}")
-        elif ch.get("license_key"):
-            lines.append("#KODIPROP:inputstream.adaptive.license_type=clearkey")
-        if ch.get("license_key"):
-            lines.append(f"#KODIPROP:inputstream.adaptive.license_key={ch['license_key']}")
+        is_dash = (ch.get("stream_type") == "dash") or (ch.get("url") and ".mpd" in ch.get("url"))
+        has_drm = bool(ch.get("license_key") or ch.get("license_type"))
+
+        if is_dash or has_drm:
+            lines.append("#KODIPROP:inputstream=inputstream.adaptive")
+            if is_dash:
+                lines.append("#KODIPROP:inputstream.adaptive.manifest_type=mpd")
+            lic_type = ch.get("license_type") or ("clearkey" if ch.get("license_key") else None)
+            if lic_type:
+                lines.append(f"#KODIPROP:inputstream.adaptive.license_type={lic_type}")
+            if ch.get("license_key"):
+                lines.append(f"#KODIPROP:inputstream.adaptive.license_key={ch['license_key']}")
 
         if ch.get("acestream_id") and format == "getstream" and srv_clean_url:
             play_url = f"{srv_clean_url}/ace/getstream?id={ch['acestream_id']}"
