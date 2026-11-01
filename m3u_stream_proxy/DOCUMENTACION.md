@@ -200,30 +200,32 @@ Para cada canal AceStream, el proxy genera y proporciona diferentes formatos seg
 
 ---
 
-## 📋 Exportación de Listas M3U para Clientes IPTV
+## 📋 Exportación de Listas M3U y Filtrado Inteligente
 
-Puedes importar las listas generadas por el proxy en cualquier cliente IPTV (**TiviMate, OTT Navigator, IPTV Smarters, VLC, Kodi**):
+El servidor proxy genera listas M3U unificadas preparadas para cualquier cliente IPTV (**TiviMate, OTT Navigator, Kodi, IPTV Smarters, VLC**).
 
-### 1. Listas Generales Proxificadas (HLS)
-* **Lista Completa (Todos los canales):**
-  ```text
-  http://<IP_PROXY>:8899/playlist.m3u
-  ```
-* **Lista Solo Canales AceStream:**
-  ```text
-  http://<IP_PROXY>:8899/playlist.m3u?type=acestream
-  ```
-* **Lista Filtrada por Categoría o Grupo:**
-  ```text
-  http://<IP_PROXY>:8899/playlist.m3u?group=Deportes
-  ```
+### Parámetros de Filtrado por URL (Anti-Lag para Smart TV y Kodi)
+Cargar más de 50.000 canales en un televisor o decodificador con recursos limitados satura la base de datos y la memoria RAM. El proxy permite solicitar únicamente los canales que realmente necesitas mediante parámetros en la URL:
 
-### 2. Listas Directas al Motor AceStream
-* **Lista Formato HLS Manifest (Motor AceStream directo):**
+| Parámetro | Ejemplo de URL | Descripción |
+| :--- | :--- | :--- |
+| **⭐ Solo Favoritos** | `http://<IP>:8899/playlist.m3u?fav=1` | **Recomendado para Kodi / Smart TV.** Exporta únicamente los canales marcados con estrella en la web. Carga en 1 segundo. |
+| **🔒 Solo DASH / DRM** | `http://<IP>:8899/playlist.m3u?type=dash` | Exporta únicamente emisiones MPEG-DASH con o sin ClearKey (ZDF, FanCode, etc.). |
+| **⚡ Solo AceStream** | `http://<IP>:8899/playlist.m3u?type=acestream` | Exporta únicamente canales P2P de AceStream en formato HLS proxificado. |
+| **🔍 Búsqueda por texto** | `http://<IP>:8899/playlist.m3u?search=spain` | Filtra canales cuyo nombre o grupo contenga la palabra especificada (ej. `spain`, `fhd`, `dazn`). |
+| **📁 Por Categoría** | `http://<IP>:8899/playlist.m3u?group=Sports+HD` | Filtra por el nombre exacto del grupo M3U. |
+| **🔢 Límite de canales** | `http://<IP>:8899/playlist.m3u?limit=100` | Limita la lista a los primeros *N* canales encontrados. |
+
+> [!TIP]
+> **Combinación de filtros:** Puedes encadenar parámetros libremente, por ejemplo:  
+> `http://<IP>:8899/playlist.m3u?type=dash&search=spain` (canales DASH que contengan "spain").
+
+### Listas Directas al Motor AceStream (Sin transcodificación del proxy)
+* **Formato HLS Manifest directo (`/ace/manifest.m3u8`):**
   ```text
   http://<IP_PROXY>:8899/playlist.m3u?format=manifest&server_id=direct
   ```
-* **Lista Formato MPEG-TS Directo (`/ace/getstream`):**
+* **Formato MPEG-TS Directo (`/ace/getstream`):**
   ```text
   http://<IP_PROXY>:8899/playlist.m3u?format=getstream&server_id=direct
   ```
@@ -232,40 +234,51 @@ Puedes importar las listas generadas por el proxy en cualquier cliente IPTV (**T
 
 ## 🔐 Compatibilidad con Listas AK47, FanCode y Canales DASH / ClearKey DRM
 
-El proxy incluye compatibilidad integral con listas complejas como **AK47Sports** y canales protegidos como **FanCode**:
+El proxy incluye compatibilidad integral con listas complejas como **AK47Sports** y canales protegidos como **FanCode**, **ZDF**, etc.:
 
-### ¿Cómo funcionan los canales de FanCode en AK47 sin VPN?
-1. **Canales 24/7 (FANCODE 1, FANCODE 2 FHD/HD):**
-   - Se emiten a través de la infraestructura global de **Amazon Prime Video / AIV OTT** (`otte.cache.aiv-cdn.net`) en formato **MPEG-DASH (`.mpd`)**.
-   - No tienen bloqueo geográfico por IP europea/española, pero su vídeo está protegido mediante cifrado **ClearKey DRM**.
-   - La aplicación AK47 utiliza ExoPlayer pasando las claves simétricas de ClearKey (`license_key: <KID>:<KEY>`).
+### 1. ¿Cómo funcionan los canales de FanCode en AK47 sin VPN?
+* **Canales 24/7 (FANCODE 1, FANCODE 2 FHD/HD):**
+  - Se emiten a través de la infraestructura global de **Amazon Prime Video / AIV OTT** (`otte.cache.aiv-cdn.net`) en formato **MPEG-DASH (`.mpd`)**.
+  - No tienen bloqueo geográfico por IP europea/española, pero su vídeo está protegido mediante cifrado **ClearKey DRM**.
+  - La aplicación AK47 utiliza ExoPlayer pasando las claves simétricas de ClearKey (`license_key: <KID>:<KEY>`).
 
-2. **Reproducción directa en la Interfaz Web (Shaka Player) y Política de Seguridad W3C (HTTP vs HTTPS):**
-   - El proxy incorpora el motor **Shaka Player** de Google junto a **HLS.js**.
-   - **¿Por qué la pantalla se queda en negro en el navegador al abrirlo por HTTP?**
-     - Los navegadores modernos (Google Chrome, Microsoft Edge, Firefox, Brave) siguen estrictamente la especificación oficial del W3C: **las APIs de descifrado DRM (Encrypted Media Extensions / EME) están bloqueadas por seguridad en conexiones HTTP que no sean `localhost`** (Contexto no seguro / Insecure Context).
-     - Al acceder a la web mediante la IP local de tu NAS (`http://192.168.x.x:8899`), el navegador bloquea la creación del descifrador y genera el error DRM 6001 (`REQUESTED_KEY_SYSTEM_CONFIG_UNAVAILABLE`), impidiendo que el reproductor web descifre el vídeo.
-     - En **Safari (macOS / iOS)**, Apple no implementa la especificación ClearKey (`org.w3.clearkey`), permitiendo únicamente FairPlay.
-   - **Cómo activar la reproducción en Chrome / Edge en 3 pasos:**
-     1. Abre una nueva pestaña en tu navegador e ingresa a:
-        ```text
-        chrome://flags/#unsafely-treat-insecure-origin-as-secure
-        ```
-     2. En el campo de texto, introduce la URL de tu proxy en el NAS (ejemplo: `http://192.168.1.100:8899`).
-     3. Cambia el desplegable de **Disabled** a **Enabled** y pulsa el botón **Relaunch** (Reiniciar). ¡El navegador desbloqueará el descifrado ClearKey y los canales se reproducirán al instante!
-
-3. **Reproducción en Aplicaciones Nativas (TiviMate, Kodi, OTT Navigator):**
-   - Las aplicaciones nativas en Android, Android TV, Fire TV y decodificadores **no tienen las limitaciones de seguridad de los navegadores web**.
-   - Acceden directamente a los descifradores por hardware de Android o Kodi.
-   - Al importar la lista M3U unificada (`http://<IP_NAS>:8899/playlist.m3u`), el proxy entrega las directivas intactas:
+### 2. Reproducción directa en la Interfaz Web (Shaka Player) y Política de Seguridad W3C (HTTP vs HTTPS)
+* El proxy incorpora el motor **Shaka Player** de Google junto a **HLS.js**.
+* **¿Por qué la pantalla se queda en negro en el navegador al abrirlo por HTTP?**
+  - Los navegadores modernos (Google Chrome, Microsoft Edge, Firefox, Brave) siguen estrictamente la especificación oficial del W3C: **las APIs de descifrado DRM (Encrypted Media Extensions / EME) están bloqueadas por seguridad en conexiones HTTP que no sean `localhost`** (Contexto no seguro / Insecure Context).
+  - Al acceder a la web mediante la IP local de tu NAS (`http://192.168.x.x:8899`), el navegador bloquea la creación del descifrador y genera el error DRM 6001 (`REQUESTED_KEY_SYSTEM_CONFIG_UNAVAILABLE`), impidiendo que el reproductor web descifre el vídeo.
+  - En **Safari (macOS / iOS)**, Apple no implementa la especificación ClearKey (`org.w3.clearkey`), permitiendo únicamente FairPlay.
+* **Cómo activar la reproducción en Chrome / Edge en 3 pasos:**
+  1. Abre una nueva pestaña en tu navegador e ingresa a:
      ```text
-     #KODIPROP:inputstream.adaptive.license_type=clearkey
-     #KODIPROP:inputstream.adaptive.license_key=<KID>:<KEY>
+     chrome://flags/#unsafely-treat-insecure-origin-as-secure
      ```
-   - Esto garantiza reproducción fluida y aceleración por hardware en televisión sin necesidad de tocar ajustes de navegador.
+  2. En el campo de texto, introduce la URL de tu proxy en el NAS (ejemplo: `http://192.168.1.100:8899`).
+  3. Cambia el desplegable de **Disabled** a **Enabled** y pulsa el botón **Relaunch** (Reiniciar). ¡El navegador desbloqueará el descifrado ClearKey y los canales se reproducirán al instante!
 
-4. **Canales de Eventos FanCode (HLS con Headers):**
-   - Los eventos temporales en HLS que incluyen parámetros de cabeceras móviles (`|User-Agent=ReactNativeVideo...&Referer=https://fancode.com/`) son procesados por el proxy inteligente `cors_hls_proxy.py`, inyectando las cabeceras requeridas tanto en los sub-manifiestos como en los segmentos de vídeo `.ts`.
+### 3. Reproducción en Kodi en Android TV y Clientes Nativos (TiviMate, OTT Navigator)
+* Las aplicaciones nativas en Android, Android TV, Fire TV y decodificadores **no sufren las limitaciones de seguridad de los navegadores web** porque acceden directamente a los descifradores por hardware del dispositivo (ExoPlayer / MediaDrm / InputStream Adaptive).
+* **Directivas oficiales de Kodi generadas por el proxy:**
+  Kodi rechaza el uso de `license_key` en canales ClearKey (ya que espera una URL de servidor). Por ello, el proxy inyecta automáticamente la sintaxis estándar exigida por **InputStream Adaptive**:
+  ```text
+  #KODIPROP:inputstream=inputstream.adaptive
+  #KODIPROP:inputstream.adaptive.manifest_type=mpd
+  #KODIPROP:inputstream.adaptive.drm_legacy=org.w3.clearkey|<KID>:<KEY>
+  #KODIPROP:inputstream.adaptive.drm={"org.w3.clearkey":{"keyids":{"<KID>":"<KEY>"}}}
+  ```
+* **Configuración paso a paso en Kodi (Android TV):**
+  1. **Activar InputStream Adaptive:** Ve a *Ajustes > Add-ons > Mis Add-ons > VideoPlayer InputStream > InputStream Adaptive* y verifica que esté **Habilitado**.
+  2. **Configurar PVR IPTV Simple Client:** Ve a *Ajustes > Add-ons > Clientes PVR > PVR IPTV Simple Client > Configuración*.
+     - En la pestaña **General**, establece la **Ubicación** en **Ruta remota (dirección de Internet)**.
+     - En **URL de la lista**, introduce:
+       ```text
+       http://<IP_DE_TU_SERVIDOR>:8899/playlist.m3u?fav=1
+       ```
+       *(Usa `?fav=1` para cargar solo los canales que marques con estrella en la web y evitar el lag de 50.000 canales).*
+  3. **Reiniciar Kodi:** Los canales se sincronizarán y reproducirán de forma fluida y con aceleración por hardware.
+
+### 4. Canales de Eventos FanCode (HLS con Headers)
+* Los eventos temporales en HLS que incluyen parámetros de cabeceras móviles (`|User-Agent=ReactNativeVideo...&Referer=https://fancode.com/`) son procesados por el proxy inteligente `cors_hls_proxy.py`, inyectando las cabeceras requeridas tanto en los sub-manifiestos como en los segmentos de vídeo `.ts`.
 
 ---
 
@@ -349,13 +362,41 @@ Accede desde tu navegador a `http://<IP_PROXY>:8899`:
 > **¿Por qué en TiviMate, Kodi o la app de AK47 no hace falta configurar nada?**
 > Porque los reproductores nativos de Android y decodificadores acceden directamente al chip de descifrado por hardware del dispositivo (ExoPlayer / MediaDrm), saltándose las restricciones de los navegadores web. Para verlos en tu televisor, simplemente importa `http://<IP_NAS>:8899/playlist.m3u` en TiviMate o Kodi.
 
-### 6. Micro-cortes o congelamiento en canales DASH / ClearKey
-* **Causa:** En emisiones dinámicas en directo (MPEG-DASH), muchos servidores asignan un retardo sugerido excesivamente bajo (de solo 2 segundos) y se producen pequeñas discontinuidades de marcas de tiempo (*timestamp gaps*) entre fragmentos. Además, un monitor de búfer estándar que reinicie el reproductor rompería la sesión de descifrado ClearKey.
+### 6. Micro-cortes, congelamiento o falta de audio en canales DASH / ClearKey en la web
+* **Causas identificadas:**
+  1. **Retardo de CDN:** Canales como ZDF requieren un retardo de publicación de 24 segundos en la CDN, mientras que canales como FanCode traen configurados apenas 2 segundos. Forzar un retardo erróneo causaba peticiones a fragmentos no publicados y congelamiento.
+  2. **Interferencia de Web Audio:** Al arrancar la página, el navegador silenciaba el audio si se enrutaba por Web Audio API debido a restricciones DRM de la especificación W3C.
+  3. **Timeline gigante (600.000 horas):** Shaka Player por defecto asignaba un valor $2^{31}-1$ a la duración en emisiones con base de tiempo fija.
 * **Solución aplicada:**
-  1. Se ha configurado Shaka Player con **`ignoreSuggestedPresentationDelay: true`** y una latencia segura respecto al directo (`liveEdgeLatency: 12s`), lo que permite crear un búfer estable de 20-30 segundos en lugar de solo 2 segundos.
-  2. Se ha activado **`jumpLargeGaps: true`** y **`stallSkip: 0.5s`**, de forma que cualquier hueco en la emisión se salta al instante sin detener la imagen.
-  3. El monitor de auto-recuperación ahora detecta congelamientos reales y salta el micro-corte suavemente en caliente, protegiendo las claves DRM sin resetear el reproductor.
-  4. Puedes alternar entre los perfiles **Ultra Estable (20s)**, **Equilibrado (12s)** o **Baja Latencia (4s)** en los botones debajo del reproductor.
+  1. Preprocesador dinámico de manifiestos (`manifestPreprocessor` y `manifestPreprocessorTXml`): detecta automáticamente si el canal necesita un retardo mayor (preserva los 24s de ZDF) o si necesita elevarse a 18s seguros (FanCode/Otte).
+  2. Audio nativo directo sin filtros intermediarios en el arranque, garantizando que el audio oficial del canal suene a través de los altavoces.
+  3. Se activó `infiniteLiveStreamDuration: true`, mostrando una línea de tiempo limpia y el indicador nativo de directo (**LIVE**).
+  4. La auto-recuperación ahora realiza micro-ajustes estrictamente dentro del búfer descargado, sin saltar al vacío ni perder las claves DRM.
+
+### 7. En Kodi sale el error *"One or more items failed to play. Check the log for more information"*
+* **Causa:** 
+  1. La lista no especificaba `#KODIPROP:inputstream=inputstream.adaptive`, por lo que Kodi intentaba abrir el stream con ffmpeg (que no soporta descifrado CENC ClearKey).
+  2. O bien se utilizaba la etiqueta `inputstream.adaptive.license_key=...`, la cual en Kodi está reservada exclusivamente para URLs de servidores y provoca un fallo crítico al recibir claves simétricas de ClearKey.
+* **Solución:**
+  * El proxy ahora inyecta automáticamente la sintaxis oficial requerida por InputStream Adaptive:
+    ```text
+    #KODIPROP:inputstream=inputstream.adaptive
+    #KODIPROP:inputstream.adaptive.manifest_type=mpd
+    #KODIPROP:inputstream.adaptive.drm_legacy=org.w3.clearkey|<KID>:<KEY>
+    #KODIPROP:inputstream.adaptive.drm={"org.w3.clearkey":{"keyids":{"<KID>":"<KEY>"}}}
+    ```
+  * Asegúrate de que el add-on **InputStream Adaptive** esté en estado **Habilitado** en *Ajustes > Add-ons > Mis Add-ons > VideoPlayer InputStream > InputStream Adaptive*.
+
+### 8. Kodi se congela o tarda minutos en arrancar al cargar la lista (más de 50.000 canales)
+* **Causa:** Las listas mundiales contienen decenas de miles de canales de todos los países. Kodi guarda cada canal en una base de datos local SQLite en la memoria flash de Android TV, saturando la RAM del televisor.
+* **Soluciones recomendadas:**
+  1. **Usar el filtro de favoritos (La más rápida):** Marca tus canales preferidos con una estrella en la web del proxy y en Kodi pon:
+     ```text
+     http://<IP_SERVIDOR>:8899/playlist.m3u?fav=1
+     ```
+     Kodi cargará únicamente esos canales en 1 segundo.
+  2. **Usar el add-on IPTV Merge de SlyGuy:** Permite añadir la lista completa pero desmarcar con un solo clic los países o grupos que no quieras ver antes de transferirlos a IPTV Simple Client.
+  3. **Usar filtros de búsqueda por URL:** Por ejemplo, `http://<IP_SERVIDOR>:8899/playlist.m3u?search=spain` o `?type=dash`.
 
 > [!WARNING]
 > **Safari en macOS e iOS:** Apple no implementa el estándar ClearKey (`org.w3.clearkey`) en Safari (solo soporta FairPlay). Para reproducir canales ClearKey en Mac o iPhone/iPad a través de la web, utiliza Google Chrome o una aplicación nativa como IINA o VLC.
