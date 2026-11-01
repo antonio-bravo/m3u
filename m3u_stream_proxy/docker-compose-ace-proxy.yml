@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  vpn:
+    image: qmcgaw/gluetun
+    container_name: vpn_free
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    environment:
+      - VPN_SERVICE_PROVIDER=protonvpn
+      - VPN_TYPE=openvpn
+      - OPENVPN_USER="OPENVPN_USER"
+      - OPENVPN_PASSWORD="OPENVPN_PASSWORD"
+      - FREE_ONLY=on
+      - SERVER_COUNTRIES=Netherlands,Germany,France
+      - FIREWALL_INPUT_PORTS=6878
+      
+    ports:
+      - 6878:6878
+    restart: on-failure
+
+
+  acelink:
+    image: martinbjeldbak/acestream-http-proxy:latest
+    container_name: acelink_container
+    environment:
+      - ALLOW_REMOTE_ACCESS=yes
+    depends_on:
+      - vpn
+    #network_mode: "service:vpn"
+    network_mode: "container:vpn_free"
+    restart: on-failure
+    volumes:
+      - acestream-data:/home/appuser/.ACEStream
+volumes:
+  acestream-data:
