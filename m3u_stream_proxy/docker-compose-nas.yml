@@ -1,0 +1,18 @@
+services:
+  m3u-hub:
+    image: ghcr.io/antonio-bravo/m3u/m3u-stream-proxy:latest
+    container_name: m3u-stream-proxy
+    restart: unless-stopped
+    pull_policy: always
+    network_mode: host
+    volumes:
+      - ./data:/app/data
+      - ../:/app/local_playlists:ro
+    environment:
+      - PORT=8899
+      - PYTHONUNBUFFERED=1
+      - ACESTREAM_ENGINE_URL=http://127.0.0.1:6879
+      - ACESTREAM_VPN_ENGINE_URL=http://127.0.0.1:6878
+      - GITHUB_REPOS=https://github.com/antonio-bravo/m3u
+      - BUFFER_OFFSET_SECONDS=16.0
+      - AUTO_SYNC_HOURS=6
