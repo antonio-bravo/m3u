@@ -16,6 +16,8 @@ services:
       - FREE_ONLY=on
       - SERVER_COUNTRIES=Netherlands,Germany,France
       - FIREWALL_INPUT_PORTS=6878
+      - DNS_UPSTREAM_RESOLVER_TYPE=dot
+
       
     ports:
       - 6878:6878
@@ -26,13 +28,15 @@ services:
     image: ghcr.io/martinbjeldbak/acestream-http-proxy:latest
     pull_policy: always
     container_name: acelink_container
+    cap_add:
+      - NET_RAW
     restart: unless-stopped
     environment:
       - ALLOW_REMOTE_ACCESS=yes
     depends_on:
       - vpn
-    #network_mode: "service:vpn"
-    network_mode: "container:vpn_free"
+    network_mode: "service:vpn"
+    #network_mode: "container:vpn_free"
     volumes:
       - acestream-data:/home/appuser/.ACEStream
 volumes:
