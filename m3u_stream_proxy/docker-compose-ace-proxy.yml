@@ -33,7 +33,6 @@ services:
       - vpn
     #network_mode: "service:vpn"
     network_mode: "container:vpn_free"
-    restart: on-failure
     volumes:
       - acestream-data:/home/appuser/.ACEStream
 volumes:
