@@ -202,33 +202,39 @@ Para cada canal AceStream, el proxy genera y proporciona diferentes formatos seg
 
 ## 📋 Exportación de Listas M3U y Filtrado Inteligente
 
-El servidor proxy genera listas M3U unificadas preparadas para cualquier cliente IPTV (**TiviMate, OTT Navigator, Kodi, IPTV Smarters, VLC**).
+El servidor proxy genera listas M3U unificadas y optimizadas a través de los endpoints `/playlist.m3u` y `/channels.m3u`, preparadas para cualquier cliente IPTV (**TiviMate, OTT Navigator, Kodi, IPTV Smarters, VLC, GSE Smart IPTV**) o proxies de catálogo (**Threadfin, xTeVe**).
 
-### Parámetros de Filtrado por URL (Anti-Lag para Smart TV y Kodi)
-Cargar más de 50.000 canales en un televisor o decodificador con recursos limitados satura la base de datos y la memoria RAM. El proxy permite solicitar únicamente los canales que realmente necesitas mediante parámetros en la URL:
+### 🔍 Parámetros de Consulta (Query Strings) Disponibles
 
-| Parámetro | Ejemplo de URL | Descripción |
+Cargar más de 50.000 canales en un televisor, decodificador o servidor multimedia con recursos limitados satura la memoria RAM y bloquea las bases de datos. El proxy permite solicitar únicamente los canales que realmente necesitas aplicando parámetros de filtrado en la URL:
+
+| Parámetro Query | Ejemplo de URL | Descripción y Caso de Uso |
 | :--- | :--- | :--- |
-| **⭐ Solo Favoritos** | `http://<IP>:8899/playlist.m3u?fav=1` | **Recomendado para Kodi / Smart TV.** Exporta únicamente los canales marcados con estrella en la web. Carga en 1 segundo. |
-| **🔒 Solo DASH / DRM** | `http://<IP>:8899/playlist.m3u?type=dash` | Exporta únicamente emisiones MPEG-DASH con o sin ClearKey (ZDF, FanCode, etc.). |
-| **⚡ Solo AceStream** | `http://<IP>:8899/playlist.m3u?type=acestream` | Exporta únicamente canales P2P de AceStream en formato HLS proxificado. |
-| **🔍 Búsqueda por texto** | `http://<IP>:8899/playlist.m3u?search=spain` | Filtra canales cuyo nombre o grupo contenga la palabra especificada (ej. `spain`, `fhd`, `dazn`). |
-| **📁 Por Categoría** | `http://<IP>:8899/playlist.m3u?group=Sports+HD` | Filtra por el nombre exacto del grupo M3U. |
-| **🔢 Límite de canales** | `http://<IP>:8899/playlist.m3u?limit=100` | Limita la lista a los primeros *N* canales encontrados. |
+| **⭐ Solo Favoritos**<br>`?fav=1`<br>`?favorites=true` | `http://<IP>:8899/playlist.m3u?fav=1` | **Recomendado para Kodi, Plex y Smart TV.** Exporta únicamente los canales marcados con estrella en el panel web. Carga en 1 segundo y evita bloqueos. |
+| **🔒 Solo DASH / DRM**<br>`?type=dash` | `http://<IP>:8899/playlist.m3u?type=dash` | Exporta únicamente emisiones MPEG-DASH con o sin cifrado ClearKey (ZDF, FanCode, etc.), inyectando las etiquetas `#KODIPROP` para Kodi. |
+| **⚡ Solo AceStream**<br>`?type=acestream`<br>`?type=ace` | `http://<IP>:8899/playlist.m3u?type=acestream` | Exporta únicamente canales P2P de AceStream en formato HLS proxificado. |
+| **📡 Solo HLS**<br>`?type=hls` | `http://<IP>:8899/playlist.m3u?type=hls` | Exporta únicamente transmisiones HLS estándar (`.m3u8`) directas o con proxy CORS. |
+| **🔍 Búsqueda por Texto**<br>`?search=<palabra>` | `http://<IP>:8899/playlist.m3u?search=spain` | Filtra canales que contengan el término en su nombre o categoría (ej. `spain`, `laliga`, `f1`, `dazn`). No distingue mayúsculas. |
+| **📁 Por Categoría**<br>`?group=<grupo>` | `http://<IP>:8899/playlist.m3u?group=Sports+HD` | Filtra por el nombre exacto del grupo M3U (`group-title`). Los espacios se codifican con `+` o `%20`. |
+| **📦 Por Lista / Fuente**<br>`?source_id=<id>` | `http://<IP>:8899/playlist.m3u?source_id=lista_ak47sports.m3u` | Exporta únicamente los canales procedentes de un archivo local o repositorio específico. |
+| **🔢 Límite de Canales**<br>`?limit=<numero>` | `http://<IP>:8899/playlist.m3u?limit=100` | Limita la lista a los primeros *N* canales encontrados. |
+| **🎬 Manifiesto Nativo**<br>`?format=manifest` | `http://<IP>:8899/playlist.m3u?format=manifest&server_id=direct` | Enlaces HLS directos al motor AceStream (`/ace/manifest.m3u8?id=...`). Traduce `localhost` a la IP LAN real para TVs. |
+| **📺 MPEG-TS Directo**<br>`?format=getstream` | `http://<IP>:8899/playlist.m3u?format=getstream&server_id=direct` | Enlaces directos HTTP MPEG-TS al motor AceStream (`/ace/getstream?id=...`). |
+| **🔄 MPEG-TS Proxificado**<br>`?format=ts` | `http://<IP>:8899/playlist.m3u?format=ts` | Enlaces procesados por el proxy convertidos en flujo MPEG-TS continuo (`/ace/stream/{hash}`). Ideal para Plex y xTeVe. |
 
 > [!TIP]
-> **Combinación de filtros:** Puedes encadenar parámetros libremente, por ejemplo:  
-> `http://<IP>:8899/playlist.m3u?type=dash&search=spain` (canales DASH que contengan "spain").
-
-### Listas Directas al Motor AceStream (Sin transcodificación del proxy)
-* **Formato HLS Manifest directo (`/ace/manifest.m3u8`):**
-  ```text
-  http://<IP_PROXY>:8899/playlist.m3u?format=manifest&server_id=direct
-  ```
-* **Formato MPEG-TS Directo (`/ace/getstream`):**
-  ```text
-  http://<IP_PROXY>:8899/playlist.m3u?format=getstream&server_id=direct
-  ```
+> **Combinación de parámetros (Multi-filtro con `&`):**  
+> Puedes combinar múltiples parámetros libremente para crear listas hiper-específicas:
+> - **Solo canales favoritos de España:**  
+>   `http://<IP>:8899/playlist.m3u?fav=1&search=spain`
+> - **Solo favoritos con formato MPEG-TS (para Plex/Threadfin):**  
+>   `http://<IP>:8899/playlist.m3u?fav=1&format=ts`
+> - **Canales DASH ClearKey favoritos:**  
+>   `http://<IP>:8899/playlist.m3u?fav=1&type=dash`
+> - **Los 50 primeros canales de deportes:**  
+>   `http://<IP>:8899/playlist.m3u?group=Deportes&limit=50`
+> - **Canales de F1 en listas específicas:**  
+>   `http://<IP>:8899/playlist.m3u?search=f1&limit=20`
 
 ---
 
@@ -269,7 +275,7 @@ El proxy incluye compatibilidad integral con listas complejas como **AK47Sports*
 * **Configuración paso a paso en Kodi (Android TV):**
   1. **Activar InputStream Adaptive:** Ve a *Ajustes > Add-ons > Mis Add-ons > VideoPlayer InputStream > InputStream Adaptive* y verifica que esté **Habilitado**.
   2. **Configurar PVR IPTV Simple Client:** Ve a *Ajustes > Add-ons > Clientes PVR > PVR IPTV Simple Client > Configuración*.
-     - En la pestaña **General**, establece la **Ubicación** en **Ruta remota (dirección de Internet)**.
+     - En la pestaña **General**, establece la **Ubicación** en **Ruta remota (dirección de Internet)** *(evita la confusa ventana de "añadir ubicación de red y protocolos")*.
      - En **URL de la lista**, introduce:
        ```text
        http://<IP_DE_TU_SERVIDOR>:8899/playlist.m3u?fav=1
@@ -282,24 +288,105 @@ El proxy incluye compatibilidad integral con listas complejas como **AK47Sports*
 
 ---
 
-## 📺 Integración con Plex y Jellyfin (HDHomeRun)
+## 📺 Integración con Plex, Jellyfin y Emby (Live TV & DVR)
 
-El proxy incluye un emulador de sintonizador **SiliconDust HDHomeRun** virtual. Esto permite a **Plex Live TV & DVR** y **Jellyfin Live TV** detectar el proxy como una sintonizadora de televisión física en la red local.
+El proxy incorpora una emulación completa del protocolo de sintonizadores digitales **SiliconDust HDHomeRun**. Esto permite a **Plex Media Server (Plex Live TV & DVR)**, **Jellyfin** y **Emby** detectar el contenedor como una tarjeta sintonizadora de TV física conectada a tu red local.
 
-### Pasos para configurar en Plex:
-1. Abre Plex y ve a **Ajustes > Administrar > TV en vivo y DVR**.
-2. Haz clic en **Añadir dispositivo**.
-3. Si no lo detecta automáticamente por broadcast UDP, introduce manualmente la dirección:
+Existen **dos métodos** para integrar tus listas en Plex:
+
+---
+
+### Método 1: Sintonizador HDHomeRun Emulado (Recomendado y Directo)
+
+En este método no necesitas instalar herramientas intermedias como xTeVe o Threadfin. Plex se conecta directamente a los endpoints HDHomeRun del contenedor.
+
+```
+┌─────────────────────────┐             ┌───────────────────────────────────┐
+│       PLEX SERVER       │  HDHomeRun  │         M3U STREAM PROXY          │
+│  (Live TV & Grabador)   │◄───────────►│  /discover.json                   │
+│                         │   MPEG-TS   │  /lineup.json?favorites=true      │
+│  Tuner: "M3U Stream Hub"│◄────────────│  /auto/v1, /auto/v2 ...           │
+└─────────────────────────┘             └───────────────────────────────────┘
+```
+
+#### Paso a Paso en Plex:
+1. Abre tu navegador e inicia sesión en tu **Plex Web** (`http://<IP_PLEX>:32400/web`).
+2. Entra en **Ajustes ⚙️** (esquina superior derecha) ➔ en el menú izquierdo baja a **Administrar** ➔ **TV en vivo y DVR**.
+3. Haz clic en el botón amarillo **CONFIGURAR SINTONIZADOR DE PLEX** (o *Añadir dispositivo*).
+4. Si Plex no lo detecta automáticamente por broadcast UDP, pulsa en el enlace:  
+   👉 **"¿No ve su dispositivo? Especifique la dirección IP manualmente"**.
+5. Escribe la dirección del contenedor (con protocolo y puerto):
    ```text
-   http://<IP_NAS>:8899
+   http://<IP_DE_TU_NAS_O_PC>:8899
    ```
-4. Plex reconocerá el dispositivo como **M3U Stream Hub** con 4 sintonizadores virtuales.
-5. Selecciona la guía de canales o carga el archivo XMLTV si dispones de EPG.
+   *(Ejemplo: `http://192.168.1.100:8899`)*.
+6. Pulsa **Conectar**. Plex identificará el dispositivo como:
+   * **Dispositivo:** `SiliconDust HDTC-2US`
+   * **Nombre:** `M3U Stream Hub`
+   * **Sintonizadores:** 4 (o los configurados en Ajustes).
+7. Selecciona tipo de antena: **Cable** (o Antena) y continúa.
+8. En el paso de **Guía de Canales (EPG)**:
+   * Puedes vincular una guía EPG XMLTV si la tienes, o seleccionar la guía de canales de tu país y código postal para asociar los canales que coincidan.
 
-### Endpoints del Emulador:
-- Información del dispositivo: `http://<IP_PROXY>:8899/discover.json`
-- Parrilla de canales: `http://<IP_PROXY>:8899/lineup.json`
-- Estado del sintonizador: `http://<IP_PROXY>:8899/lineup_status.json`
+#### Endpoints HDHomeRun y Parámetros URL para Plex:
+
+| Endpoint | Ejemplo de URL | Función en Plex / Jellyfin |
+| :--- | :--- | :--- |
+| **Descriptor del Sintonizador** | `http://<IP>:8899/discover.json` | Proporciona a Plex los metadatos del dispositivo, número de sintonizadores y URL de la parrilla. |
+| **Parrilla de Canales** | `http://<IP>:8899/lineup.json` | Lista JSON con los números de guía (`GuideNumber`), nombres y enlaces de sintonía. |
+| **⭐ Parrilla Solo Favoritos** | `http://<IP>:8899/lineup.json?favorites=true` | **Imprescindible:** Limita la parrilla a los favoritos de la web para evitar que Plex se colapse con miles de canales. |
+| **📁 Parrilla por Grupo** | `http://<IP>:8899/lineup.json?group=Deportes` | Entrega a Plex únicamente los canales de esa categoría. |
+| **🔢 Parrilla con Límite** | `http://<IP>:8899/lineup.json?limit=100` | Limita la cantidad de canales que ve el sintonizador de Plex. |
+| **Estado del Sintonizador** | `http://<IP>:8899/lineup_status.json` | Simula el estado de escaneo de canales físicos de SiliconDust. |
+| **Auto-descubrimiento UPnP** | `http://<IP>:8899/device.xml` | Anuncio UPnP/SSDP para que Plex lo autodetecte en la misma subred. |
+| **Emisión del Canal** | `http://<IP>:8899/auto/v1` | URL donde Plex sintoniza el canal 1. Para AceStream, entrega un flujo continuo MPEG-TS limpio. |
+
+#### Ajustes del Sintonizador en la Web del Proxy (`⚙️ Ajustes & AceStream`):
+Desde la interfaz web del proxy puedes personalizar cómo interactúa Plex:
+* **Número de Sintonizadores Virtuales (1 a 32):** Define cuántos usuarios de Plex pueden ver o grabar canales simultáneamente (por defecto 4).
+* **Modo de Parrilla:**
+  * `⭐ Solo Favoritos (Recomendado)`: Solo envía a Plex los canales que marques con estrella.
+  * `⚡ Solo AceStream`: Solo canales P2P.
+  * `🌐 Todos los Canales`: Con límite máximo ajustable.
+* **Límite Máximo de Canales:** Configurable de 10 a 2000 canales (por defecto 300) para asegurar la máxima fluidez en Plex.
+
+---
+
+### Método 2: Vía Proxies de Canales (Threadfin, xTeVe, Tunarr)
+
+Si utilizas **Threadfin** (sucesor moderno de xTeVe) o **xTeVe** para unificar múltiples proveedores IPTV, filtrar listas y mapear guías XMLTV avanzadas antes de entregarlas a Plex:
+
+1. En Threadfin / xTeVe, crea una nueva fuente **M3U**.
+2. En la casilla **M3U Playlist URL**, introduce el enlace filtrado del contenedor:
+   ```text
+   http://<IP_DE_TU_SERVIDOR>:8899/playlist.m3u?fav=1&format=ts
+   ```
+   > **💡 ¿Por qué `&format=ts`?**  
+   > El parámetro `format=ts` le indica al proxy que sirva los canales AceStream en formato MPEG-TS continuo. Plex Media Server tiene soporte nativo perfecto para contenedores MPEG-TS, evitando problemas de transcodificación asociados a listas HLS segmentadas.
+3. Asigna tu archivo XMLTV de guía de programación (EPG).
+4. Threadfin / xTeVe expondrá su propio sintonizador virtual que conectarás en Plex en el puerto 34400.
+
+---
+
+### 🌐 Endpoints Directos de Reproducción y API REST
+
+Además de las listas M3U y la emulación HDHomeRun, el contenedor expone endpoints individuales y una API REST completa:
+
+#### Streams Individuales:
+* **Stream HLS Proxificado:** `http://<IP>:8899/live/{channel_id}.m3u8`
+* **Stream DASH MPD Directo:** `http://<IP>:8899/live/{channel_id}.mpd`
+* **Stream MPEG-TS Continuo:** `http://<IP>:8899/live/{channel_id}.ts`
+* **Manifiesto AceStream HLS:** `http://<IP>:8899/ace/manifest/{acestream_id}.m3u8`
+* **Stream AceStream MPEG-TS:** `http://<IP>:8899/ace/stream/{acestream_id}`
+
+#### Endpoints de la API REST (para integraciones con Home Assistant o scripts):
+* `GET /health` ➔ Chequeo de salud del contenedor (`status: ok`, canales activos, uptime).
+* `GET /api/channels` ➔ Catálogo paginado con filtros (`?search=`, `?group=`, `?favorites=1`, `?page=1`).
+* `GET /api/favorites` ➔ Array JSON con los IDs de todos los canales favoritos.
+* `POST /api/favorites/{channel_id}` ➔ Marca o desmarca un canal como favorito.
+* `GET /api/groups` ➔ Lista de todas las categorías disponibles y conteo de canales.
+* `GET /api/acestream/check` ➔ Estado y latencia en milisegundos de los motores AceStream (Normal y VPN).
+* `GET /api/hdhomerun/status` ➔ Configuración actual del emulador HDHomeRun para Plex.
 
 ---
 

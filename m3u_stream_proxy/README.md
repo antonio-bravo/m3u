@@ -66,19 +66,64 @@ docker compose -f m3u_stream_proxy/docker-compose.yml down
 
 ---
 
-## 📺 Cómo Utilizarlo
+## 📺 Cómo Utilizarlo y Guía de URLs
 
 Una vez que el contenedor esté corriendo en el puerto **`8899`**, abre en tu navegador:
 
 👉 **`http://localhost:8899/`**
 
-| Recurso | URL | Descripción |
+### 📋 URLs de Exportación M3U con Filtros Inteligentes
+
+El proxy permite filtrar dinámicamente tu lista mediante parámetros en la URL para que no satures dispositivos con recursos limitados (Kodi, Android TV, Fire TV, TiviMate, Plex):
+
+| Recurso / Filtro | Ejemplo de URL | Caso de Uso |
 | :--- | :--- | :--- |
-| **Reproductor Web PRO** | `http://localhost:8899/` | Interfaz completa con reproductor, explorador y buscador |
-| **Lista M3U Unificada** | `http://localhost:8899/playlist.m3u` | Lista completa para TiviMate, OTT Navigator, VLC |
-| **Lista Solo AceStream** | `http://localhost:8899/playlist.m3u?type=acestream` | Solo los canales de tipo AceStream |
-| **Catálogo de Canales (API)** | `http://localhost:8899/api/channels` | Paginado y con filtros |
-| **Estado AceStream Engine** | `http://localhost:8899/api/acestream/check` | Comprobación de salud del motor AceStream |
+| **⭐ Solo Favoritos (Recomendado)** | `http://<IP>:8899/playlist.m3u?fav=1` | **Ideal para Kodi, Plex y Smart TV.** Carga solo los canales marcados con estrella en la web en 1 segundo. |
+| **🔒 Solo DASH / ClearKey DRM** | `http://<IP>:8899/playlist.m3u?type=dash` | Canales MPEG-DASH con etiquetas `#KODIPROP` oficiales (ZDF, FanCode, etc.). |
+| **⚡ Solo AceStream** | `http://<IP>:8899/playlist.m3u?type=acestream` | Solo canales P2P de AceStream en HLS proxificado. |
+| **🔍 Búsqueda por Texto** | `http://<IP>:8899/playlist.m3u?search=spain` | Canales que contengan el término en su nombre o grupo (ej. `spain`, `laliga`, `f1`). |
+| **📁 Por Categoría** | `http://<IP>:8899/playlist.m3u?group=Sports+HD` | Solo canales de un grupo específico. |
+| **🔢 Límite de Canales** | `http://<IP>:8899/playlist.m3u?limit=50` | Limita la lista a los primeros *N* canales. |
+| **📺 Formato MPEG-TS para Plex/xTeVe** | `http://<IP>:8899/playlist.m3u?fav=1&format=ts` | Flujo MPEG-TS continuo ideal para sintonizadores y transcodificadores. |
+| **🎬 AceStream Manifest Directo** | `http://<IP>:8899/playlist.m3u?format=manifest&server_id=direct` | Manifiesto nativo del motor AceStream traduciendo la IP LAN para Smart TV. |
+| **🌐 Lista Completa Unificada** | `http://<IP>:8899/playlist.m3u` | Lista completa con todas las fuentes habilitadas. |
+
+> [!TIP]
+> **Combinación de filtros:** Puedes encadenar parámetros con `&`:  
+> `http://<IP>:8899/playlist.m3u?fav=1&search=laliga` (favoritos que contengan LaLiga).
+
+---
+
+## 📺 Integración con Plex Live TV & DVR (Sintonizador Virtual HDHomeRun)
+
+El contenedor emula un sintonizador **SiliconDust HDHomeRun**. Plex lo detecta como una tarjeta sintonizadora de TV física:
+
+1. En Plex Web, ve a **Ajustes ⚙️ > Administrar > TV en vivo y DVR**.
+2. Pulsa en **Añadir dispositivo** (o *Configurar sintonizador*).
+3. Si no aparece automáticamente, pulsa en **"¿No ve su dispositivo? Especifique la dirección IP manualmente"** e introduce:
+   ```text
+   http://<IP_DE_TU_SERVIDOR>:8899
+   ```
+4. Plex detectará el sintonizador **M3U Stream Hub** con sus sintonizadores virtuales.
+5. **Endpoints HDHomeRun disponibles:**
+   - **Información del dispositivo:** `http://<IP>:8899/discover.json`
+   - **Parrilla de canales para Plex:** `http://<IP>:8899/lineup.json?favorites=true`
+   - **Flujo de sintonía:** `http://<IP>:8899/auto/v1`, `/auto/v2`... (MPEG-TS continuo para AceStream).
+6. También puedes integrarlo mediante proxies como **Threadfin** o **xTeVe** apuntando a `http://<IP>:8899/playlist.m3u?fav=1&format=ts`.
+
+---
+
+## 📡 Endpoints de la API REST
+
+| Endpoint | Método | Descripción |
+| :--- | :--- | :--- |
+| `/health` | `GET` | Estado de salud, uptime y canales cargados. |
+| `/api/channels` | `GET` | Catálogo de canales paginado (`?search=`, `?favorites=1`, `?group=`). |
+| `/api/favorites` | `GET` | Lista de IDs de canales marcados como favoritos. |
+| `/api/favorites/{id}` | `POST` | Alternar estado favorito de un canal. |
+| `/api/groups` | `GET` | Listado de grupos y cantidad de canales. |
+| `/api/acestream/check` | `GET` | Medición de latencia y estado de los motores AceStream. |
+| `/api/hdhomerun/status` | `GET` | Estado del emulador HDHomeRun y canales mapeados para Plex. |
 
 ---
 
