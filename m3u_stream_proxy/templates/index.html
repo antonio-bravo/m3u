@@ -690,6 +690,168 @@
             background: rgba(251, 191, 36, 0.12);
         }
 
+        /* Selector de Pistas de Audio Dinámico */
+        .audio-track-wrapper {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn-audio-track {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-audio-track.has-multiple-tracks {
+            border-color: rgba(56, 189, 248, 0.45);
+            background: rgba(56, 189, 248, 0.09);
+            color: #38bdf8;
+            font-weight: 600;
+        }
+
+        .btn-audio-track.has-multiple-tracks:hover {
+            background: rgba(56, 189, 248, 0.18);
+            border-color: #38bdf8;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+        }
+
+        .audio-track-badge {
+            background: #0284c7;
+            color: #fff;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 1px 5px;
+            border-radius: 999px;
+            line-height: 1.2;
+            margin-left: 2px;
+        }
+
+        .audio-track-arrow {
+            font-size: 0.72rem;
+            margin-left: 1px;
+            transition: transform 0.2s ease;
+        }
+
+        .audio-track-menu {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            min-width: 250px;
+            max-width: 320px;
+            background: #0f172a;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 4px 12px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            overflow: hidden;
+            display: none;
+            flex-direction: column;
+            animation: fadeIn 0.15s ease-out;
+        }
+
+        .audio-track-menu.is-open {
+            display: flex;
+        }
+
+        .audio-menu-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.04);
+            border-bottom: 1px solid var(--border);
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .audio-menu-count {
+            color: var(--text-muted);
+            font-size: 0.72rem;
+            font-weight: 500;
+            margin-left: 4px;
+        }
+
+        .audio-menu-close {
+            cursor: pointer;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            padding: 2px 4px;
+            border-radius: 4px;
+            transition: color 0.15s;
+        }
+
+        .audio-menu-close:hover {
+            color: var(--text-main);
+        }
+
+        .audio-track-list {
+            max-height: 240px;
+            overflow-y: auto;
+            padding: 4px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .audio-track-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            transition: all 0.15s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .audio-track-item:hover {
+            background: var(--bg-card-hover);
+            color: var(--text-main);
+        }
+
+        .audio-track-item.active {
+            background: rgba(99, 102, 241, 0.15);
+            border-left-color: var(--primary);
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .audio-track-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            min-width: 0;
+            flex: 1;
+        }
+
+        .audio-track-name {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 0.82rem;
+        }
+
+        .audio-track-sub {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .audio-track-check {
+            font-size: 0.85rem;
+            color: #38bdf8;
+            margin-left: 8px;
+            font-weight: bold;
+        }
+
         /* Barra de perfiles de búfer y audio */
         .buffer-toolbar {
             display: flex;
@@ -1400,17 +1562,11 @@
                     <div class="hud-header">📡 Stream & Video</div>
                     <div class="hud-row"><span>Canal:</span> <span id="hud-channel" class="hud-val">-</span></div>
                     <div class="hud-row"><span>Tipo de Stream:</span> <span id="hud-type" class="hud-val">-</span></div>
-                    <div class="hud-row"><span>Búfer adelante:</span> <span id="hud-buffer" class="hud-val">0.0 s</span>
-                    </div>
-                    <div class="hud-row"><span>Tipo Stream:</span> <span id="hud-type" class="hud-val">-</span></div>
-                    <div class="hud-row"><span>Resolución:</span> <span id="hud-res"
-                            class="hud-val">Detectando...</span></div>
-                    <div class="hud-row"><span>Búfer HTML5:</span> <span id="hud-buffer" class="hud-val">0.0 s</span>
-                    </div>
-                    <div class="hud-row"><span>Tasa de bits:</span> <span id="hud-bitrate" class="hud-val">-</span>
-                    </div>
-                    <div class="hud-row"><span>Caché Proxy:</span> <span id="hud-cache" class="hud-val">RAM (Hit)</span>
-                    </div>
+                    <div class="hud-row"><span>Resolución:</span> <span id="hud-res" class="hud-val">Detectando...</span></div>
+                    <div class="hud-row"><span>Tasa de bits:</span> <span id="hud-bitrate" class="hud-val">-</span></div>
+                    <div class="hud-row"><span>Pista de Audio:</span> <span id="hud-audio-track" class="hud-val">-</span></div>
+                    <div class="hud-row"><span>Búfer HTML5:</span> <span id="hud-buffer" class="hud-val">0.0 s</span></div>
+                    <div class="hud-row"><span>Caché Proxy:</span> <span id="hud-cache" class="hud-val">RAM (Hit)</span></div>
 
                     <div id="hud-ace-section" style="display:none; flex-direction:column; gap:5px;">
                         <div class="hud-header">⚡ AceStream P2P Telemetría</div>
@@ -1501,6 +1657,30 @@
                         VLC</button>
                     <button class="btn" id="copy-btn" onclick="copyStreamUrl()"
                         title="Copiar enlace del canal para VLC, Kodi o Smart TV">📋 Copiar Enlace</button>
+                    
+                    <!-- Selector de Pista de Audio Dinámico -->
+                    <div class="audio-track-wrapper" id="audio-track-wrapper" style="display:none;">
+                        <button class="btn btn-audio-track" id="audio-track-btn" onclick="toggleAudioTrackMenu(event)"
+                            title="Pistas de audio disponibles">
+                            <span class="audio-track-icon">🎧</span>
+                            <span id="audio-track-label">Audio</span>
+                            <span class="audio-track-badge" id="audio-track-badge" style="display:none;"></span>
+                            <span class="audio-track-arrow">▾</span>
+                        </button>
+                        <div class="audio-track-menu" id="audio-track-menu">
+                            <div class="audio-menu-header">
+                                <div class="audio-menu-title">
+                                    <span>🎧 Pistas de Audio</span>
+                                    <span class="audio-menu-count" id="audio-menu-count"></span>
+                                </div>
+                                <span class="audio-menu-close" onclick="closeAudioTrackMenu(event)">✕</span>
+                            </div>
+                            <div class="audio-track-list" id="audio-track-list">
+                                <!-- Opciones inyectadas dinámicamente -->
+                            </div>
+                        </div>
+                    </div>
+
                     <button class="btn" id="audio-boost-btn" onclick="cycleAudioBoost()"
                         title="Amplificar volumen del stream">🔊 Vol: 100%</button>
                     <button class="btn" onclick="togglePiP()" title="Modo PiP flotante">🔲 PiP</button>
@@ -2164,6 +2344,7 @@
         let audioContext = null;
         let gainNode = null;
         let audioBoostLevel = 1.0;
+        let currentAudioTracks = [];
         let bufferCheckInterval = null;
         let currentLoadedChannels = [];
         let activeFilter = {
@@ -2244,6 +2425,347 @@
         }
 
         // --------------------------------------------------------------------
+        // Gestión Dinámica de Pistas de Audio (HLS.js, Shaka Player & Video Nativo)
+        // --------------------------------------------------------------------
+        const AUDIO_LANG_MAP = {
+            'es': 'Español', 'spa': 'Español', 'es-es': 'Español (Castellano)', 'es-la': 'Español (Latino)', 'es-419': 'Español (Latino)',
+            'en': 'Inglés', 'eng': 'Inglés', 'en-us': 'Inglés (EE.UU.)', 'en-gb': 'Inglés (Reino Unido)',
+            'ca': 'Català', 'cat': 'Català',
+            'gl': 'Galego', 'glg': 'Galego',
+            'eu': 'Euskera', 'eus': 'Euskera', 'baq': 'Euskera',
+            'fr': 'Francés', 'fra': 'Francés', 'fre': 'Francés',
+            'de': 'Alemán', 'deu': 'Alemán', 'ger': 'Alemán',
+            'it': 'Italiano', 'ita': 'Italiano',
+            'pt': 'Portugués', 'por': 'Portugués', 'pt-br': 'Portugués (Brasil)', 'pt-pt': 'Portugués (Portugal)',
+            'qaa': 'Versión Original (VO)', 'vo': 'Versión Original (VO)',
+            'ar': 'Árabe', 'ara': 'Árabe',
+            'ru': 'Ruso', 'rus': 'Ruso',
+            'hi': 'Hindi', 'hin': 'Hindi',
+            'zh': 'Chino', 'zho': 'Chino', 'chi': 'Chino',
+            'ja': 'Japonés', 'jpn': 'Japonés',
+            'ko': 'Coreano', 'kor': 'Coreano',
+            'nl': 'Holandés', 'nld': 'Holandés', 'dut': 'Holandés',
+            'pl': 'Polaco', 'pol': 'Polaco',
+            'tr': 'Turco', 'tur': 'Turco',
+            'und': 'Pista de Audio', 'mis': 'Pista de Audio', 'mul': 'Multiaudio'
+        };
+
+        function formatAudioTrackLabel(track, index) {
+            const rawLabel = (track.label || track.name || '').trim();
+            const rawLang = (track.lang || track.language || '').toLowerCase().trim();
+
+            const friendlyLang = AUDIO_LANG_MAP[rawLang] || (rawLang && rawLang !== 'und' && rawLang.length <= 4 ? rawLang.toUpperCase() : '');
+
+            if (rawLabel) {
+                const isGeneric = /^audio(_\d+)?$/i.test(rawLabel) || /^track[_\s]?\d+$/i.test(rawLabel) || /^stream[_\s]?\d+$/i.test(rawLabel);
+                if (isGeneric) {
+                    if (friendlyLang) return `${friendlyLang} (Pista ${index + 1})`;
+                    return `Pista de Audio ${index + 1}`;
+                }
+
+                if (friendlyLang && !rawLabel.toLowerCase().includes(friendlyLang.toLowerCase())) {
+                    return `${friendlyLang} - ${rawLabel}`;
+                }
+                return rawLabel;
+            }
+
+            if (friendlyLang) {
+                return friendlyLang;
+            }
+
+            return `Pista ${index + 1}`;
+        }
+
+        function getAudioChannelsString(channelsCount, channelsAttr) {
+            if (channelsCount === 6 || channelsAttr === '6' || channelsAttr === '5.1') return '5.1 Surround';
+            if (channelsCount === 2 || channelsAttr === '2') return 'Stereo (2.0)';
+            if (channelsCount === 1 || channelsAttr === '1') return 'Mono (1.0)';
+            if (channelsCount) return `${channelsCount} ch`;
+            if (channelsAttr) return `${channelsAttr} ch`;
+            return '';
+        }
+
+        function resetAudioTrackUI() {
+            currentAudioTracks = [];
+            closeAudioTrackMenu();
+            const wrapper = document.getElementById("audio-track-wrapper");
+            if (wrapper) wrapper.style.display = "none";
+            const labelEl = document.getElementById("audio-track-label");
+            if (labelEl) labelEl.textContent = "Audio";
+            const badgeEl = document.getElementById("audio-track-badge");
+            if (badgeEl) badgeEl.style.display = "none";
+            const btn = document.getElementById("audio-track-btn");
+            if (btn) btn.classList.remove("has-multiple-tracks");
+            const hudAudio = document.getElementById("hud-audio-track");
+            if (hudAudio) hudAudio.textContent = "-";
+        }
+
+        function toggleAudioTrackMenu(event) {
+            if (event) event.stopPropagation();
+            if (!currentAudioTracks || currentAudioTracks.length === 0) return;
+
+            if (currentAudioTracks.length === 1) {
+                const single = currentAudioTracks[0];
+                showToast(`ℹ️ Pista de audio: ${single ? single.displayName : 'Única'} (No hay más pistas disponibles)`);
+                return;
+            }
+
+            const menu = document.getElementById("audio-track-menu");
+            if (menu) {
+                menu.classList.toggle("is-open");
+            }
+        }
+
+        function closeAudioTrackMenu(event) {
+            if (event) event.stopPropagation();
+            const menu = document.getElementById("audio-track-menu");
+            if (menu) {
+                menu.classList.remove("is-open");
+            }
+        }
+
+        function updateAudioTrackUI() {
+            const wrapper = document.getElementById("audio-track-wrapper");
+            if (!wrapper) return;
+
+            if (!currentAudioTracks || currentAudioTracks.length === 0) {
+                wrapper.style.display = "none";
+                const hudAudio = document.getElementById("hud-audio-track");
+                if (hudAudio) hudAudio.textContent = "-";
+                return;
+            }
+
+            const activeTrack = currentAudioTracks.find(t => t.active) || currentAudioTracks[0];
+            const labelEl = document.getElementById("audio-track-label");
+            const badgeEl = document.getElementById("audio-track-badge");
+            const countEl = document.getElementById("audio-menu-count");
+            const btn = document.getElementById("audio-track-btn");
+            const arrow = btn ? btn.querySelector(".audio-track-arrow") : null;
+
+            if (labelEl && activeTrack) {
+                labelEl.textContent = `Audio: ${activeTrack.displayName}`;
+            }
+
+            if (currentAudioTracks.length > 1) {
+                if (badgeEl) {
+                    badgeEl.textContent = currentAudioTracks.length;
+                    badgeEl.style.display = "inline-block";
+                }
+                if (countEl) countEl.textContent = `(${currentAudioTracks.length})`;
+                if (btn) {
+                    btn.classList.add("has-multiple-tracks");
+                    btn.title = `Cambiar pista de audio (${currentAudioTracks.length} disponibles)`;
+                }
+                if (arrow) arrow.style.display = "inline";
+            } else {
+                if (badgeEl) badgeEl.style.display = "none";
+                if (countEl) countEl.textContent = "(1)";
+                if (btn) {
+                    btn.classList.remove("has-multiple-tracks");
+                    btn.title = `Pista de audio: ${activeTrack ? activeTrack.displayName : 'Única'} (Pista única)`;
+                }
+                if (arrow) arrow.style.display = "none";
+            }
+
+            // Rellenar lista desplegable
+            const list = document.getElementById("audio-track-list");
+            if (list) {
+                list.innerHTML = "";
+                currentAudioTracks.forEach((t, idx) => {
+                    const item = document.createElement("div");
+                    item.className = "audio-track-item" + (t.active ? " active" : "");
+                    item.onclick = (e) => {
+                        e.stopPropagation();
+                        switchAudioTrack(idx);
+                    };
+
+                    const info = document.createElement("div");
+                    info.className = "audio-track-info";
+
+                    const nameEl = document.createElement("div");
+                    nameEl.className = "audio-track-name";
+                    nameEl.textContent = t.displayName;
+
+                    const subEl = document.createElement("div");
+                    subEl.className = "audio-track-sub";
+                    const subParts = [];
+                    if (t.lang && t.lang !== "und") subParts.push(`[${t.lang.toUpperCase()}]`);
+                    if (t.channels) subParts.push(t.channels);
+                    if (t.role) subParts.push(t.role);
+                    if (t.active) subParts.push("● En reproducción");
+                    subEl.textContent = subParts.join(" • ") || "Pista estándar";
+
+                    info.appendChild(nameEl);
+                    info.appendChild(subEl);
+                    item.appendChild(info);
+
+                    if (t.active) {
+                        const check = document.createElement("div");
+                        check.className = "audio-track-check";
+                        check.textContent = "✓";
+                        item.appendChild(check);
+                    }
+
+                    list.appendChild(item);
+                });
+            }
+
+            wrapper.style.display = "inline-flex";
+
+            // Actualizar HUD
+            const hudAudio = document.getElementById("hud-audio-track");
+            if (hudAudio && activeTrack) {
+                const countSuffix = currentAudioTracks.length > 1 ? ` (${currentAudioTracks.length} disp.)` : ' (Única)';
+                hudAudio.textContent = `${activeTrack.displayName}${countSuffix}`;
+            }
+        }
+
+        function checkHlsAudioTracks(audioTracks) {
+            if (!hls) return;
+            const tracks = audioTracks || hls.audioTracks || [];
+            if (!tracks || tracks.length === 0) return;
+
+            const currentTrackId = hls.audioTrack;
+            currentAudioTracks = tracks.map((t, idx) => {
+                const isAct = (idx === currentTrackId) || (t.id === currentTrackId) || (currentTrackId === -1 && (t.default || idx === 0));
+                const channels = getAudioChannelsString(t.channels ? parseInt(t.channels) : null, t.channels);
+                return {
+                    id: t.id !== undefined ? t.id : idx,
+                    index: idx,
+                    name: t.name,
+                    lang: t.lang,
+                    channels: channels,
+                    role: t.default ? 'Principal' : '',
+                    active: isAct,
+                    type: 'hls',
+                    displayName: formatAudioTrackLabel(t, idx)
+                };
+            });
+
+            updateAudioTrackUI();
+        }
+
+        function checkShakaAudioTracks() {
+            if (!shakaPlayer) return;
+            try {
+                const variantTracks = shakaPlayer.getVariantTracks();
+                if (!variantTracks || variantTracks.length === 0) return;
+
+                const activeVariant = variantTracks.find(v => v.active);
+                const map = new Map();
+
+                variantTracks.forEach((v) => {
+                    const key = v.audioId !== null && v.audioId !== undefined ? 'aid_' + v.audioId : ((v.language || 'und') + '_' + (v.label || '') + '_' + (v.channelsCount || 0));
+                    if (!map.has(key)) {
+                        const channels = getAudioChannelsString(v.channelsCount, null);
+                        let roleStr = v.roles && v.roles.length > 0 ? v.roles[0] : '';
+                        const isAct = v.active || (activeVariant && activeVariant.audioId === v.audioId);
+
+                        map.set(key, {
+                            id: v.audioId !== null && v.audioId !== undefined ? v.audioId : v.id,
+                            variantId: v.id,
+                            audioId: v.audioId,
+                            language: v.language,
+                            lang: v.language,
+                            label: v.label,
+                            channels: channels,
+                            role: roleStr,
+                            active: isAct,
+                            type: 'shaka',
+                            variantTrack: v,
+                            displayName: formatAudioTrackLabel({ label: v.label, language: v.language, name: v.label }, map.size)
+                        });
+                    } else if (v.active) {
+                        map.get(key).active = true;
+                    }
+                });
+
+                currentAudioTracks = Array.from(map.values());
+                updateAudioTrackUI();
+            } catch (e) {
+                console.warn("Error leyendo pistas de Shaka Player:", e);
+            }
+        }
+
+        function checkNativeAudioTracks() {
+            if (!video || !video.audioTracks || video.audioTracks.length === 0) return;
+            const tracks = video.audioTracks;
+            currentAudioTracks = [];
+            for (let i = 0; i < tracks.length; i++) {
+                const t = tracks[i];
+                currentAudioTracks.push({
+                    id: t.id || i,
+                    index: i,
+                    name: t.label,
+                    lang: t.language,
+                    channels: '',
+                    role: t.kind || '',
+                    active: t.enabled,
+                    type: 'native',
+                    displayName: formatAudioTrackLabel({ label: t.label, language: t.language, name: t.label }, i)
+                });
+            }
+            updateAudioTrackUI();
+        }
+
+        function switchAudioTrack(index) {
+            const track = currentAudioTracks[index];
+            if (!track) return;
+
+            if (track.type === 'hls' && hls) {
+                hls.audioTrack = track.id;
+                currentAudioTracks.forEach((t, i) => t.active = (i === index));
+                updateAudioTrackUI();
+                closeAudioTrackMenu();
+                showToast(`🎧 Audio cambiado a: ${track.displayName}`);
+            } else if (track.type === 'shaka' && shakaPlayer) {
+                try {
+                    if (track.audioId !== null && track.audioId !== undefined) {
+                        const variants = shakaPlayer.getVariantTracks();
+                        const currentVariant = variants.find(v => v.active);
+                        let bestVariant = variants.find(v => v.audioId === track.audioId && currentVariant && v.height === currentVariant.height);
+                        if (!bestVariant) {
+                            bestVariant = variants.find(v => v.audioId === track.audioId);
+                        }
+                        if (bestVariant) {
+                            shakaPlayer.selectVariantTrack(bestVariant, false);
+                        } else if (track.language) {
+                            shakaPlayer.selectAudioLanguage(track.language, track.role || null);
+                        }
+                    } else if (track.language) {
+                        shakaPlayer.selectAudioLanguage(track.language, track.role || null);
+                    } else if (track.variantTrack) {
+                        shakaPlayer.selectVariantTrack(track.variantTrack, false);
+                    }
+                    currentAudioTracks.forEach((t, i) => t.active = (i === index));
+                    updateAudioTrackUI();
+                    closeAudioTrackMenu();
+                    showToast(`🎧 Audio cambiado a: ${track.displayName}`);
+                } catch (err) {
+                    console.error("Error al cambiar pista de audio en Shaka:", err);
+                    showToast("No se pudo cambiar la pista de audio");
+                }
+            } else if (track.type === 'native' && video.audioTracks) {
+                for (let i = 0; i < video.audioTracks.length; i++) {
+                    video.audioTracks[i].enabled = (i === track.index);
+                }
+                currentAudioTracks.forEach((t, i) => t.active = (i === index));
+                updateAudioTrackUI();
+                closeAudioTrackMenu();
+                showToast(`🎧 Audio cambiado a: ${track.displayName}`);
+            }
+        }
+
+        // Cerrar menú al hacer clic fuera
+        document.addEventListener('click', (e) => {
+            const menu = document.getElementById('audio-track-menu');
+            const btn = document.getElementById('audio-track-btn');
+            if (menu && menu.classList.contains('is-open') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                closeAudioTrackMenu();
+            }
+        });
+
+        // --------------------------------------------------------------------
         // Reproductor de Video (HLS.js & Shaka Player para DASH/ClearKey)
         // --------------------------------------------------------------------
         function showDrmWarning(type) {
@@ -2314,7 +2836,12 @@
                         }
                     });
 
+                    shakaPlayer.addEventListener('trackschanged', () => {
+                        checkShakaAudioTracks();
+                    });
+
                     shakaPlayer.addEventListener('adaptation', () => {
+                        checkShakaAudioTracks();
                         try {
                             const tracks = shakaPlayer.getVariantTracks();
                             const active = tracks.find(t => t.active);
@@ -2335,6 +2862,7 @@
 
         async function loadDashStream(channel) {
             hideDrmWarning();
+            resetAudioTrackUI();
             showSpinner("Cargando stream DASH / ClearKey...");
 
             if (hls) {
@@ -2473,6 +3001,7 @@
                 try {
                     player.setTextTrackVisibility(false);
                 } catch (e) { }
+                checkShakaAudioTracks();
                 hideSpinner();
                 video.muted = false;
                 const playPromise = video.play();
@@ -2510,6 +3039,7 @@
 
         function playChannel(channel) {
             hideDrmWarning();
+            resetAudioTrackUI();
             currentChannel = channel;
             updateChannelUI(channel);
 
@@ -2549,6 +3079,7 @@
 
         function loadStreamInPlayer(url) {
             hideDrmWarning();
+            resetAudioTrackUI();
             showSpinner("Cargando stream...");
 
             if (shakaPlayer) {
@@ -2596,6 +3127,7 @@
 
                 hls.on(Hls.Events.MANIFEST_PARSED, () => {
                     hideSpinner();
+                    checkHlsAudioTracks(hls.audioTracks);
                     const playPromise = video.play();
                     if (playPromise !== undefined) {
                         playPromise.catch(e => {
@@ -2607,8 +3139,22 @@
                     }
                 });
 
+                hls.on(Hls.Events.AUDIO_TRACKS_UPDATED, (event, data) => {
+                    checkHlsAudioTracks(data.audioTracks);
+                });
+
+                hls.on(Hls.Events.AUDIO_TRACK_SWITCHED, (event, data) => {
+                    if (currentAudioTracks && currentAudioTracks.length > 0) {
+                        currentAudioTracks.forEach(t => t.active = (t.id === data.id || t.index === data.id));
+                        updateAudioTrackUI();
+                    }
+                });
+
                 hls.on(Hls.Events.FRAG_LOADED, () => {
                     hideSpinner();
+                    if (currentAudioTracks.length === 0 && hls && hls.audioTracks && hls.audioTracks.length > 0) {
+                        checkHlsAudioTracks(hls.audioTracks);
+                    }
                 });
 
                 hls.on(Hls.Events.ERROR, (event, data) => {
@@ -2644,6 +3190,10 @@
                 video.src = url;
                 video.addEventListener('loadedmetadata', () => {
                     hideSpinner();
+                    checkNativeAudioTracks();
+                    if (video.audioTracks) {
+                        video.audioTracks.onchange = checkNativeAudioTracks;
+                    }
                     const playPromise = video.play();
                     if (playPromise !== undefined) {
                         playPromise.catch(e => {

@@ -401,11 +401,15 @@ Accede desde tu navegador a `http://<IP_PROXY>:8899`:
    - 🛡️ **Ultra Estable (20s):** Máxima protección contra congelamientos y fluctuaciones de red P2P.
    - ⚡ **Equilibrado (12s):** Configuración estándar recomendada.
    - 🚀 **Baja Latencia (4s):** Reduce el retraso respecto a la emisión en directo.
-3. **Amplificación de Audio (Web Audio API):**
+3. **Selector Inteligente de Pistas de Audio (Multi-audio / Idiomas / Radio):**
+   - Detección automática en tiempo real de pistas de audio alternativas en emisiones **HLS, DASH y AceStream (MPEG-TS)**.
+   - Menú interactivo con selector dinámico para cambiar entre diferentes idiomas (Español, Inglés, Catalán, etc.), comentaristas de radio deportiva (COPE, SER, Radio Marca) o sonido ambiente del estadio sin cortes en la imagen.
+   - Indicador de número de pistas con badges de canales (Stereo 2.0, 5.1 Surround) y monitorización en el HUD de estadísticas.
+4. **Amplificación de Audio (Web Audio API):**
    - Para emisiones con volumen de grabación bajo, amplifica la señal al **150%**, **200%** o **300%** sin distorsión.
-4. **Telemetría P2P en Vivo (HUD):**
-   - Muestra en tiempo real: número de *peers* conectados, velocidad de descarga en KB/s o MB/s y calidad de la señal del motor AceStream.
-5. **Escáner de Repositorios GitHub:**
+5. **Telemetría P2P en Vivo (HUD):**
+   - Muestra en tiempo real: número de *peers* conectados, velocidad de descarga en KB/s o MB/s, pista de audio activa y calidad de la señal del motor AceStream.
+6. **Escáner de Repositorios GitHub:**
    - Introduce cualquier enlace de GitHub (ej. `usuario/repositorio`) para rastrear automáticamente todos los archivos `.m3u` y añadirlos como fuentes sincronizadas periódicamente.
 
 ---

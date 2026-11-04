@@ -31,6 +31,7 @@ Un centro multimedia moderno y servidor proxy en **Docker** para gestionar, esca
    - Resuelve automáticamente los bloqueos de cabeceras CORS (`Access-Control-Allow-Origin`) de streams HLS remotos de GitHub para que el navegador los reproduzca sin errores.
    - **3 Perfiles de Búfer:** *Ultra Estable (20s)*, *Equilibrado (12s)* y *Baja Latencia (4s)*.
    - Medidor dinámico de búfer con semáforo luminoso y **Auto-recuperación activa** ante micro-cortes.
+   - **🎧 Selector Dinámico de Pistas de Audio:** Permite cambiar al instante entre diferentes pistas de audio (idiomas, emisoras de radio o sonido ambiente) cuando el stream emite múltiples pistas (HLS, DASH o AceStream).
    - **Amplificador de Audio Web Audio API:** Modos de volumen 100%, 150%, 200% y 300% para emisiones con volumen bajo.
 
 6. **📋 Exportador M3U para Dispositivos Externos:**
