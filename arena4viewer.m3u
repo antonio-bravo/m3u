@@ -1,5 +1,5 @@
 #EXTM3U
-# Arena4Viewer - Actualizado: 2026-11-06 09:18:04
+# Arena4Viewer - Actualizado: 2026-11-06 17:26:18
 # Fuente: https://www.arena4viewer.in
 
 #EXTINF:-1 tvg-id="AV1" tvg-logo="" group-title="VACIO",AV1 
@@ -14,100 +14,214 @@ http://127.0.0.1:6878/ace/getstream?id=7a949c4fcdb7031281a7bb69b2227945854bfb37
 #EXTINF:-1 tvg-id="AV4" tvg-logo="" group-title="VACIO",AV4 
 http://127.0.0.1:6878/ace/getstream?id=1b449fcf682ca2980e91371dd9b76f65f40c8b7a
 
-#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="TENNIS",AV 5 - TENNIS - PARIS MASTERS - DJOKOVIC-HIJIKATA [04/11/2026 - 15:00 CET]
+#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="TENNIS",AV 5 - TENNIS - PARIS MASTERS - SEMIFINAL 1 [07/11/2026 - 14:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
 
-#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="TENNIS",AV 5 - TENNIS - PARIS MASTERS - MICHELSEN-ALCARAZ [04/11/2026 - 19:00 CET]
+#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="TENNIS",AV 5 - TENNIS - PARIS MASTERS - SEMIFINAL 2 [07/11/2026 - 17:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
 
-#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="TENNIS",AV 5 - TENNIS - PARIS MASTERS - FILS-MACHAC [04/11/2026 - 20:30 CET]
+#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="TENNIS",AV 5 - TENNIS - PARIS MASTERS - FINAL [08/11/2026 - 15:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
 
 #EXTINF:-1 tvg-id="AV6" tvg-logo="" group-title="VACIO",AV6 
 http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
 
-#EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="VACIO",AV7 
+#EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="SOCCER",AV 7 - SOCCER - SPANISH LEAGUE - MALAGA-RACING SANTANDER [07/11/2026 - 14:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
 
-#EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="VACIO",AV8 
-http://127.0.0.1:6878/ace/getstream?id=cdf251af580d44a71302fb5634b734981a77f8b7
+#EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="SOCCER",AV 7 - SOCCER - SPANISH LEAGUE - ESPANYOL-DEPORTIVO [07/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
 
-#EXTINF:-1 tvg-id="AV9" tvg-logo="" group-title="VACIO",AV9 
+#EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="SOCCER",AV 7 - SOCCER - SPANISH LEAGUE - OSASUNA-ATHLETIC CLUB [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
+
+#EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="SOCCER",AV 7 - SOCCER - SPANISH LEAGUE - REAL SOCIEDAD-RAYO VALLECANO [08/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
+
+#EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="SOCCER",AV 7 - SOCCER - SPANISH LEAGUE - CELTA-LEVANTE [08/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
+
+#EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="SOCCER",AV 7 - SOCCER - SPANISH LEAGUE - ATLETICO DE MADRID-BARCELONA [08/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
+
+#EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="SOCCER",AV 8 - SOCCER - SPANISH LEAGUE - MALAGA-RACING SANTANDER [07/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
+
+#EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="SOCCER",AV 8 - SOCCER - SPANISH LEAGUE - ESPANYOL-DEPORTIVO [07/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
+
+#EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="SOCCER",AV 8 - SOCCER - SPANISH LEAGUE - OSASUNA-ATHLETIC CLUB [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
+
+#EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="SOCCER",AV 8 - SOCCER - SPANISH LEAGUE - REAL SOCIEDAD-RAYO VALLECANO [08/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
+
+#EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="SOCCER",AV 8 - SOCCER - SPANISH LEAGUE - CELTA-LEVANTE [08/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
+
+#EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="SOCCER",AV 8 - SOCCER - SPANISH LEAGUE - ATLETICO DE MADRID-BARCELONA [08/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
+
+#EXTINF:-1 tvg-id="AV9" tvg-logo="" group-title="SOCCER",AV 9 - SOCCER - SPANISH LEAGUE - CELTA-LEVANTE [08/11/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=4c8107cd9165bafd80ad21a71e8285a9a4c990df
 
-#EXTINF:-1 tvg-id="AV10" tvg-logo="" group-title="VACIO",AV10 
+#EXTINF:-1 tvg-id="AV10" tvg-logo="" group-title="SOCCER",AV 10 - SOCCER - SPANISH LEAGUE - CELTA-LEVANTE [08/11/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=e26e32779e026f1c51353b8fca92860765cf8e3c
 
-#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - UEFA YOUTH LEAGUE - DORTMUND-REAL BETIS [04/11/2026 - 16:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=f079cadc2ec13a5565c1deb0dee7bc9bb053affe
+#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - BUNDESLIGA - STUTTGART-WERDER BREMEN [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
 
-#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - UEFA CHAMPIONS LEAGUE - AEK FC-REAL MADRID [04/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=f079cadc2ec13a5565c1deb0dee7bc9bb053affe
+#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - ARGENTINA LEAGUE - BOCA JUNIORS-DEFENSA Y JUSTICIA [07/11/2026 - 21:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
 
-#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - UEFA EUROPE LEAGUE - REAL SOCIEDAD-LYON [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=f079cadc2ec13a5565c1deb0dee7bc9bb053affe
+#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - PREMIER LEAGUE - MANCHESTER UNITED-ASTON VILLA [08/11/2026 - 17:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
 
-#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - UEFA EUROPE LEAGUE - CELTA-SAINT GILLOISE [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=f079cadc2ec13a5565c1deb0dee7bc9bb053affe
+#EXTINF:-1 tvg-id="AV11" tvg-logo="" group-title="SOCCER",AV 11 - SOCCER - ITALIAN LEAGUE - FIORENTINA-JUVENTUS [08/11/2026 - 20:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
 
-#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",AV 12 - SOCCER - UEFA YOUTH LEAGUE - DORTMUND-REAL BETIS [04/11/2026 - 16:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=3f08d07a38f94ccc149cd57c420f11f7a4db1d50
+#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",AV 12 - SOCCER - BUNDESLIGA - STUTTGART-WERDER BREMEN [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=8ce3c02c950c857a1a258493bf2fb4628c1b48fd
 
-#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",AV 12 - SOCCER - UEFA CHAMPIONS LEAGUE - AEK FC-REAL MADRID [04/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=3f08d07a38f94ccc149cd57c420f11f7a4db1d50
+#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",AV 12 - SOCCER - ARGENTINA LEAGUE - BOCA JUNIORS-DEFENSA Y JUSTICIA [07/11/2026 - 21:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=8ce3c02c950c857a1a258493bf2fb4628c1b48fd
 
-#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",AV 12 - SOCCER - UEFA EUROPE LEAGUE - REAL SOCIEDAD-LYON [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=3f08d07a38f94ccc149cd57c420f11f7a4db1d50
+#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",AV 12 - SOCCER - PREMIER LEAGUE - MANCHESTER UNITED-ASTON VILLA [08/11/2026 - 17:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=8ce3c02c950c857a1a258493bf2fb4628c1b48fd
 
-#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",AV 12 - SOCCER - UEFA EUROPE LEAGUE - CELTA-SAINT GILLOISE [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=3f08d07a38f94ccc149cd57c420f11f7a4db1d50
+#EXTINF:-1 tvg-id="AV12" tvg-logo="" group-title="SOCCER",AV 12 - SOCCER - ITALIAN LEAGUE - FIORENTINA-JUVENTUS [08/11/2026 - 20:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=8ce3c02c950c857a1a258493bf2fb4628c1b48fd
 
-#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="VACIO",AV13 
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="BASKETBALL",AV 13 - BASKETBALL - USA NCAA - VIRGINIA-ARKANSAS [08/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
 
-#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="VACIO",AV14 
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="RUGBY",AV 13 - RUGBY - TOP 14 RUGBY - LA ROCHELLE-AVIRON BAYONNIS [08/11/2026 - 21:05 CET]
+http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
+
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="BASKETBALL",AV 14 - BASKETBALL - USA NCAA - VIRGINIA-ARKANSAS [08/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
 
-#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="BASKETBALL",AV 15 - BASKETBALL - EUROCUP - PANEVEZYS-MANRESA [04/11/2026 - 18:00 CET]
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="RUGBY",AV 14 - RUGBY - TOP 14 RUGBY - LA ROCHELLE-AVIRON BAYONNIS [08/11/2026 - 21:05 CET]
+http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
+
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="RUGBY",AV 15 - RUGBY - WORLD RUGBY NATIONS CUP - SPAIN-URUGUAY [07/11/2026 - 16:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 
-#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="TENNIS",AV 15 - TENNIS - PARIS MASTERS - MICHELSEN-ALCARAZ [04/11/2026 - 19:00 CET]
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="SOCCER",AV 15 - SOCCER - BUNDESLIGA - STUTTGART-WERDER BREMEN [07/11/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 
-#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="SOCCER",AV 15 - SOCCER - BRAZIL LEAGUE - PARANANESE-VASCO DA GAMA [04/11/2026 - 23:30 CET]
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="BASKETBALL",AV 15 - BASKETBALL - SPANISH LEAGUE - LLEIDA-BASKONIA [07/11/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 
-#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="BASKETBALL",AV 15 - BASKETBALL - EUROLEAGUE - HAPOEL-BARCELONA [05/11/2026 - 19:45 CET]
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="RUGBY",AV 15 - RUGBY - SPANISH LEAGUE - POZUELO-ALCOBENDAS [08/11/2026 - 14:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 
-#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="SOCCER",AV 15 - SOCCER - BRAZIL LEAGUE - PALMEIRAS-REMO [05/11/2026 - 23:30 CET]
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="SOCCER",AV 15 - SOCCER - PREMIER LEAGUE - MANCHESTER UNITED-ASTON VILLA [08/11/2026 - 17:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 
-#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="BASKETBALL",AV 16 - BASKETBALL - EUROCUP - PANEVEZYS-MANRESA [04/11/2026 - 18:00 CET]
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="SOCCER",AV 15 - SOCCER - ITALIAN LEAGUE - FIORENTINA-JUVENTUS [08/11/2026 - 20:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
+
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="RUGBY",AV 16 - RUGBY - WORLD RUGBY NATIONS CUP - SPAIN-URUGUAY [07/11/2026 - 16:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 
-#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="TENNIS",AV 16 - TENNIS - PARIS MASTERS - MICHELSEN-ALCARAZ [04/11/2026 - 19:00 CET]
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="SOCCER",AV 16 - SOCCER - BUNDESLIGA - STUTTGART-WERDER BREMEN [07/11/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 
-#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="SOCCER",AV 16 - SOCCER - BRAZIL LEAGUE - PARANANESE-VASCO DA GAMA [04/11/2026 - 23:30 CET]
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="BASKETBALL",AV 16 - BASKETBALL - SPANISH LEAGUE - LLEIDA-BASKONIA [07/11/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 
-#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="BASKETBALL",AV 16 - BASKETBALL - EUROLEAGUE - HAPOEL-BARCELONA [05/11/2026 - 19:45 CET]
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="RUGBY",AV 16 - RUGBY - SPANISH LEAGUE - POZUELO-ALCOBENDAS [08/11/2026 - 14:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 
-#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="SOCCER",AV 16 - SOCCER - BRAZIL LEAGUE - PALMEIRAS-REMO [05/11/2026 - 23:30 CET]
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="SOCCER",AV 16 - SOCCER - PREMIER LEAGUE - MANCHESTER UNITED-ASTON VILLA [08/11/2026 - 17:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 
-#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="VACIO",AV17 
-http://127.0.0.1:6878/ace/getstream?id=7dfdad16b3f6e75015a3496f43f3a7d290f3e3bc
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="SOCCER",AV 16 - SOCCER - ITALIAN LEAGUE - FIORENTINA-JUVENTUS [08/11/2026 - 20:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 
-#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="VACIO",AV18 
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SI",AV 17 - SI - PREMIER LEAGUE - LEEDS-TOTTENHAM [07/11/2026 - 13:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=4756343043f30011fa304c6635bfe36fd3429da9
+
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SOCCER",AV 17 - SOCCER - PREMIER LEAGUE - ARSENAL-HULL CITY [07/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=4756343043f30011fa304c6635bfe36fd3429da9
+
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SOCCER",AV 17 - SOCCER - PREMIER LEAGUE - NOTTINGHAM FOREST-MANCHESTER CITY [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=4756343043f30011fa304c6635bfe36fd3429da9
+
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="FOOTBALL",AV 17 - FOOTBALL - USA NFL - FALCONS-BENGALS [08/11/2026 - 15:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=4756343043f30011fa304c6635bfe36fd3429da9
+
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SOCCER (W)",AV 17 - SOCCER (W) - SPANISH LEAGUE - ATLETICO DE MADRID-BADALONA [09/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=4756343043f30011fa304c6635bfe36fd3429da9
+
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SI",AV 18 - SI - PREMIER LEAGUE - LEEDS-TOTTENHAM [07/11/2026 - 13:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
 
-#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="VACIO",AV19 
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SOCCER",AV 18 - SOCCER - PREMIER LEAGUE - ARSENAL-HULL CITY [07/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
+
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SOCCER",AV 18 - SOCCER - PREMIER LEAGUE - NOTTINGHAM FOREST-MANCHESTER CITY [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
+
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="FOOTBALL",AV 18 - FOOTBALL - USA NFL - FALCONS-BENGALS [08/11/2026 - 15:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
+
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SOCCER (W)",AV 18 - SOCCER (W) - SPANISH LEAGUE - ATLETICO DE MADRID-BADALONA [09/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="SOCCER (W)",AV 19 - SOCCER (W) - SPANISH LEAGUE - GRANADA-ESPANYOL [07/11/2026 - 12:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
 
-#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="VACIO",AV20 
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="SOCCER (W)",AV 19 - SOCCER (W) - SPANISH LEAGUE - ATHLETIC CLUB-REAL MADRID [07/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="BOXING",AV 19 - BOXING - BOXING EVENT - BUATSI-HUTCHINSON [07/11/2026 - 20:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="SOCCER (W)",AV 19 - SOCCER (W) - SPANISH LEAGUE - LOGROÑO-SEVILLA [08/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="SOCCER",AV 19 - SOCCER - PREMIER LEAGUE - SUNDERLAND-CHELSEA [08/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="SOCCER",AV 19 - SOCCER - PREMIER LEAGUE - MANCHESTER UNITED-ASTON VILLA [08/11/2026 - 17:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="FOOTBALL",AV 19 - FOOTBALL - USA NFL - BEARS-BUCCANEERS [09/11/2026 - 02:20 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="SOCCER (W)",AV 19 - SOCCER (W) - SPANISH LEAGUE - DEPORTIVO ABANCA-VALENCIA [09/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="FOOTBALL",AV 19 - FOOTBALL - USA NFL - VIKINGS-BILLS [10/11/2026 - 02:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="SOCCER (W)",AV 20 - SOCCER (W) - SPANISH LEAGUE - GRANADA-ESPANYOL [07/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="SOCCER (W)",AV 20 - SOCCER (W) - SPANISH LEAGUE - ATHLETIC CLUB-REAL MADRID [07/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="BOXING",AV 20 - BOXING - BOXING EVENT - BUATSI-HUTCHINSON [07/11/2026 - 20:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="SOCCER (W)",AV 20 - SOCCER (W) - SPANISH LEAGUE - LOGROÑO-SEVILLA [08/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="SOCCER",AV 20 - SOCCER - PREMIER LEAGUE - SUNDERLAND-CHELSEA [08/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="SOCCER",AV 20 - SOCCER - PREMIER LEAGUE - MANCHESTER UNITED-ASTON VILLA [08/11/2026 - 17:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="FOOTBALL",AV 20 - FOOTBALL - USA NFL - BEARS-BUCCANEERS [09/11/2026 - 02:20 CET]
+http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="SOCCER (W)",AV 20 - SOCCER (W) - SPANISH LEAGUE - DEPORTIVO ABANCA-VALENCIA [09/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="FOOTBALL",AV 20 - FOOTBALL - USA NFL - VIKINGS-BILLS [10/11/2026 - 02:15 CET]
 http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
 
 #EXTINF:-1 tvg-id="AV21" tvg-logo="" group-title="VACIO",AV21 
@@ -125,31 +239,10 @@ http://127.0.0.1:6878/ace/getstream?id=63b1933154919d116f08e33ffcb31a23f9483989
 #EXTINF:-1 tvg-id="AV25" tvg-logo="" group-title="VACIO",AV25 
 http://127.0.0.1:6878/ace/getstream?id=f8b0eae8fda973cf426311541d1668aa592f0a8c
 
-#EXTINF:-1 tvg-id="AV26" tvg-logo="" group-title="SOCCER",AV 26 - SOCCER - UEFA EUROPE LEAGUE - RENNES-OLYMPIACOS [04/11/2026 - 16:30 CET]
+#EXTINF:-1 tvg-id="AV26" tvg-logo="" group-title="VACIO",AV26 
 http://127.0.0.1:6878/ace/getstream?id=b9d9e849e7600d6a4144fa07b69368ea953e2582
 
-#EXTINF:-1 tvg-id="AV26" tvg-logo="" group-title="SOCCER",AV 26 - SOCCER - UEFA CHAMPIONS LEAGUE - DORTMUND-REAL BETIS [04/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=b9d9e849e7600d6a4144fa07b69368ea953e2582
-
-#EXTINF:-1 tvg-id="AV26" tvg-logo="" group-title="SOCCER",AV 26 - SOCCER - UEFA EUROPE LEAGUE - MILAN-FERENCVAROS [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=b9d9e849e7600d6a4144fa07b69368ea953e2582
-
-#EXTINF:-1 tvg-id="AV26" tvg-logo="" group-title="SOCCER",AV 26 - SOCCER - BRAZIL LEAGUE - PALMEIRAS-REMO [05/11/2026 - 23:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=b9d9e849e7600d6a4144fa07b69368ea953e2582
-
-#EXTINF:-1 tvg-id="AV27" tvg-logo="" group-title="SOCCER",AV 27 - SOCCER - UEFA CHAMPIONS LEAGUE - FENERBAHCE-LIVERPOOL [04/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=e9391650a52a1fd103935e8969c2da2fdc348fbb
-
-#EXTINF:-1 tvg-id="AV27" tvg-logo="" group-title="SOCCER",AV 27 - SOCCER - UEFA CHAMPIONS LEAGUE - PORTO-NAPOLI [04/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=e9391650a52a1fd103935e8969c2da2fdc348fbb
-
-#EXTINF:-1 tvg-id="AV27" tvg-logo="" group-title="SOCCER",AV 27 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=e9391650a52a1fd103935e8969c2da2fdc348fbb
-
-#EXTINF:-1 tvg-id="AV27" tvg-logo="" group-title="SOCCER",AV 27 - SOCCER - UEFA CONFERENCE LEAGUE - GETAFE-BRIGHTON [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=e9391650a52a1fd103935e8969c2da2fdc348fbb
-
-#EXTINF:-1 tvg-id="AV27" tvg-logo="" group-title="SOCCER",AV 27 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [05/11/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV27" tvg-logo="" group-title="VACIO",AV27 
 http://127.0.0.1:6878/ace/getstream?id=e9391650a52a1fd103935e8969c2da2fdc348fbb
 
 #EXTINF:-1 tvg-id="AV28" tvg-logo="" group-title="VACIO",AV28 
@@ -164,43 +257,28 @@ http://127.0.0.1:6878/ace/getstream?id=7bd9d072b65919352bda907b472961641e6e2930
 #EXTINF:-1 tvg-id="AV31" tvg-logo="" group-title="VACIO",AV31 
 http://127.0.0.1:6878/ace/getstream?id=7a8c26ece4d1ce106225a2bc66260f6a5b9be913
 
-#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="VACIO",AV32 
+#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="MOTOR",AV 32 - MOTOR - FIA ENDURANCE WORLDCUP - 6 HOURS OF MONZA-RACE [08/11/2026 - 11:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=ca185612d5b5b6e863a16fc0177e8a6db1d1d3c2
 
-#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="VACIO",AV33 
-http://127.0.0.1:6878/ace/getstream?id=61277ba97bff7c84d197cf6ceae3817f671b6619
+#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="MOTOR",AV 33 - MOTOR - FIA ENDURANCE WORLDCUP - 6 HOURS OF MONZA-RACE [08/11/2026 - 11:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=818735480ae40a4207ece5153ef9a3e798cef7aa
 
-#EXTINF:-1 tvg-id="AV34" tvg-logo="" group-title="VACIO",AV34 
+#EXTINF:-1 tvg-id="AV34" tvg-logo="" group-title="MMA",AV 34 - MMA - UFC FIGHT NIGHT - CORTES ACOSTA-WALKER [08/11/2026 - 00:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=dcc3be2e16b61b10557d8a7e954c5496ba5e4b60
 
-#EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="VACIO",AV35 
+#EXTINF:-1 tvg-id="AV34" tvg-logo="" group-title="HANDBALL",AV 34 - HANDBALL - SPANISH LEAGUE - BARCELONA-CIUDAD REAL [10/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=dcc3be2e16b61b10557d8a7e954c5496ba5e4b60
+
+#EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="MMA",AV 35 - MMA - UFC FIGHT NIGHT - CORTES ACOSTA-WALKER [08/11/2026 - 00:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=ce85dfd81162036f5d113343332e523ca94ce825
 
-#EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="SOCCER",AV 36 - SOCCER - UEFA EUROPE LEAGUE - RENNES-OLYMPIACOS [04/11/2026 - 16:30 CET]
+#EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="HANDBALL",AV 35 - HANDBALL - SPANISH LEAGUE - BARCELONA-CIUDAD REAL [10/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=ce85dfd81162036f5d113343332e523ca94ce825
+
+#EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="VACIO",AV36 
 http://127.0.0.1:6878/ace/getstream?id=231a1698890b6d930fc678ce8189bc7034ea2cda
 
-#EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="SOCCER",AV 36 - SOCCER - UEFA CHAMPIONS LEAGUE - DORTMUND-REAL BETIS [04/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=231a1698890b6d930fc678ce8189bc7034ea2cda
-
-#EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="SOCCER",AV 36 - SOCCER - UEFA EUROPE LEAGUE - MILAN-FERENCVAROS [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=231a1698890b6d930fc678ce8189bc7034ea2cda
-
-#EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="SOCCER",AV 36 - SOCCER - BRAZIL LEAGUE - PALMEIRAS-REMO [05/11/2026 - 23:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=231a1698890b6d930fc678ce8189bc7034ea2cda
-
-#EXTINF:-1 tvg-id="AV37" tvg-logo="" group-title="SOCCER",AV 37 - SOCCER - UEFA CHAMPIONS LEAGUE - FENERBAHCE-LIVERPOOL [04/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=df5cc2ad032952b5ea9730eb943892a3f72b1478
-
-#EXTINF:-1 tvg-id="AV37" tvg-logo="" group-title="SOCCER",AV 37 - SOCCER - UEFA CHAMPIONS LEAGUE - PORTO-NAPOLI [04/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=df5cc2ad032952b5ea9730eb943892a3f72b1478
-
-#EXTINF:-1 tvg-id="AV37" tvg-logo="" group-title="SOCCER",AV 37 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=df5cc2ad032952b5ea9730eb943892a3f72b1478
-
-#EXTINF:-1 tvg-id="AV37" tvg-logo="" group-title="SOCCER",AV 37 - SOCCER - UEFA CONFERENCE LEAGUE - GETAFE-BRIGHTON [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=df5cc2ad032952b5ea9730eb943892a3f72b1478
-
-#EXTINF:-1 tvg-id="AV37" tvg-logo="" group-title="SOCCER",AV 37 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [05/11/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV37" tvg-logo="" group-title="VACIO",AV37 
 http://127.0.0.1:6878/ace/getstream?id=df5cc2ad032952b5ea9730eb943892a3f72b1478
 
 #EXTINF:-1 tvg-id="AV38" tvg-logo="" group-title="VACIO",AV38 
@@ -212,58 +290,34 @@ http://127.0.0.1:6878/ace/getstream?id=e41352c657506cfe6eecc4f17982f69275f1660b
 #EXTINF:-1 tvg-id="AV40" tvg-logo="" group-title="VACIO",AV40 
 http://127.0.0.1:6878/ace/getstream?id=f588f41735c0c8ec0c412ef25ca5e5ac3b3626b9
 
-#EXTINF:-1 tvg-id="AV41" tvg-logo="" group-title="SOCCER",AV 41 - SOCCER - UEFA EUROPE LEAGUE - RENNES-OLYMPIACOS [04/11/2026 - 16:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=2edf107f0a39392308b6e11e8d4aedd38d8b4ac5
+#EXTINF:-1 tvg-id="AV41" tvg-logo="" group-title="VACIO",AV41 
+http://127.0.0.1:6878/ace/getstream?id=1856a9959619954e02edf1a36fcaca159fde257f
 
-#EXTINF:-1 tvg-id="AV41" tvg-logo="" group-title="SOCCER",AV 41 - SOCCER - UEFA CHAMPIONS LEAGUE - DORTMUND-REAL BETIS [04/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=2edf107f0a39392308b6e11e8d4aedd38d8b4ac5
-
-#EXTINF:-1 tvg-id="AV41" tvg-logo="" group-title="SOCCER",AV 41 - SOCCER - UEFA EUROPE LEAGUE - MILAN-FERENCVAROS [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=2edf107f0a39392308b6e11e8d4aedd38d8b4ac5
-
-#EXTINF:-1 tvg-id="AV41" tvg-logo="" group-title="SOCCER",AV 41 - SOCCER - BRAZIL LEAGUE - PALMEIRAS-REMO [05/11/2026 - 23:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=2edf107f0a39392308b6e11e8d4aedd38d8b4ac5
-
-#EXTINF:-1 tvg-id="AV42" tvg-logo="" group-title="SOCCER",AV 42 - SOCCER - UEFA CHAMPIONS LEAGUE - FENERBAHCE-LIVERPOOL [04/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=c6c9cd6cf39c3fe04d2ca3152f6ee13714cd390b
-
-#EXTINF:-1 tvg-id="AV42" tvg-logo="" group-title="SOCCER",AV 42 - SOCCER - UEFA CHAMPIONS LEAGUE - PORTO-NAPOLI [04/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=c6c9cd6cf39c3fe04d2ca3152f6ee13714cd390b
-
-#EXTINF:-1 tvg-id="AV42" tvg-logo="" group-title="SOCCER",AV 42 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=c6c9cd6cf39c3fe04d2ca3152f6ee13714cd390b
-
-#EXTINF:-1 tvg-id="AV42" tvg-logo="" group-title="SOCCER",AV 42 - SOCCER - UEFA CONFERENCE LEAGUE - GETAFE-BRIGHTON [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=c6c9cd6cf39c3fe04d2ca3152f6ee13714cd390b
-
-#EXTINF:-1 tvg-id="AV42" tvg-logo="" group-title="SOCCER",AV 42 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [05/11/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV42" tvg-logo="" group-title="VACIO",AV42 
 http://127.0.0.1:6878/ace/getstream?id=c6c9cd6cf39c3fe04d2ca3152f6ee13714cd390b
 
 #EXTINF:-1 tvg-id="AV43" tvg-logo="" group-title="VACIO",AV43 
 http://127.0.0.1:6878/ace/getstream?id=09e4b75e26a663329264fc386e0193bd3a7b0071
 
-#EXTINF:-1 tvg-id="AV44" tvg-logo="" group-title="VACIO",AV44 
-http://127.0.0.1:6878/ace/getstream?id=3313b734a8b64f993d682125bf657c1d0ebe0cf3
+#EXTINF:-1 tvg-id="AV44" tvg-logo="" group-title="SOCCER (W)",AV 44 - SOCCER (W) - SPANISH LEAGUE - EIBAR-REAL SOCIEDAD [07/11/2026 - 17:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=92fbff88dddba7ed9c86dfb87e59652ec6e1d40a
 
-#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="TENNIS",AV 45 - TENNIS - PARIS MASTERS - DJOKOVIC-HIJIKATA [04/11/2026 - 15:00 CET]
+#EXTINF:-1 tvg-id="AV44" tvg-logo="" group-title="SOCCER (W)",AV 44 - SOCCER (W) - SPANISH LEAGUE - BARCELONA-MADRID CFF [08/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=92fbff88dddba7ed9c86dfb87e59652ec6e1d40a
+
+#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="TENNIS",AV 45 - TENNIS - PARIS MASTERS - SEMIFINAL 1 [07/11/2026 - 14:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
 
-#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="TENNIS",AV 45 - TENNIS - PARIS MASTERS - MICHELSEN-ALCARAZ [04/11/2026 - 19:00 CET]
+#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="TENNIS",AV 45 - TENNIS - PARIS MASTERS - SEMIFINAL 2 [07/11/2026 - 17:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
 
-#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="TENNIS",AV 45 - TENNIS - PARIS MASTERS - FILS-MACHAC [04/11/2026 - 20:30 CET]
+#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="TENNIS",AV 45 - TENNIS - PARIS MASTERS - FINAL [08/11/2026 - 15:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
 
-#EXTINF:-1 tvg-id="AV46" tvg-logo="" group-title="TENNIS",AV 46 - TENNIS - PARIS MASTERS - MOLCAN-FRITZ [04/11/2026 - 15:30 CET]
+#EXTINF:-1 tvg-id="AV46" tvg-logo="" group-title="RUGBY",AV 46 - RUGBY - NATIONS CHAMPIONSHIP - SCOTLAND-NEW ZEALAND [07/11/2026 - 15:10 CET]
 http://127.0.0.1:6878/ace/getstream?id=239fc67555e053a344d0259560ae23c37a96e64b
 
-#EXTINF:-1 tvg-id="AV46" tvg-logo="" group-title="TENNIS",AV 46 - TENNIS - PARIS MASTERS - TIRANTE-STRUFF [04/11/2026 - 17:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=239fc67555e053a344d0259560ae23c37a96e64b
-
-#EXTINF:-1 tvg-id="AV47" tvg-logo="" group-title="TENNIS",AV 47 - TENNIS - PARIS MASTERS - BORGES-KHACHANOV [04/11/2026 - 15:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=4c9ddbeab40539125f41e75e534e18d20046e43a
-
-#EXTINF:-1 tvg-id="AV47" tvg-logo="" group-title="TENNIS",AV 47 - TENNIS - PARIS MASTERS - BERRETTINI-HUMBERT [04/11/2026 - 17:00 CET]
+#EXTINF:-1 tvg-id="AV47" tvg-logo="" group-title="VACIO",AV47 
 http://127.0.0.1:6878/ace/getstream?id=4c9ddbeab40539125f41e75e534e18d20046e43a
 
 #EXTINF:-1 tvg-id="AV48" tvg-logo="" group-title="VACIO",AV48 
@@ -281,16 +335,43 @@ http://127.0.0.1:6878/ace/getstream?id=4236714aa65e854f90bb6b710369bfb6e862cb23
 #EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="F1",AV 51 - F1 - BRAZIL GP - FREE 2 [06/11/2026 - 20:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=4236714aa65e854f90bb6b710369bfb6e862cb23
 
+#EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="F1",AV 51 - F1 - BRAZIL GP - F1-FREE 3 [07/11/2026 - 15:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=4236714aa65e854f90bb6b710369bfb6e862cb23
+
+#EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="F1",AV 51 - F1 - BRAZIL GP - F1-CLASSIFICATION [07/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=4236714aa65e854f90bb6b710369bfb6e862cb23
+
+#EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="F1",AV 51 - F1 - BRAZIL GP - F1-RACE [08/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=4236714aa65e854f90bb6b710369bfb6e862cb23
+
 #EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",AV 52 - F1 - BRAZIL GP - FREE 1 [06/11/2026 - 16:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=ddec3168fa49a02747936ffe2e1e4ec4c5e59e78
+http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
 
 #EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",AV 52 - F1 - BRAZIL GP - FREE 2 [06/11/2026 - 20:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=ddec3168fa49a02747936ffe2e1e4ec4c5e59e78
+http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
+
+#EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",AV 52 - F1 - BRAZIL GP - F1-FREE 3 [07/11/2026 - 15:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
+
+#EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",AV 52 - F1 - BRAZIL GP - F1-CLASSIFICATION [07/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
+
+#EXTINF:-1 tvg-id="AV52" tvg-logo="" group-title="F1",AV 52 - F1 - BRAZIL GP - F1-RACE [08/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
 
 #EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",AV 53 - F1 - BRAZIL GP - FREE 1 [06/11/2026 - 16:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=f8cc362318bc6b667dd6ba90969e3b34675c9a85
 
 #EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",AV 53 - F1 - BRAZIL GP - FREE 2 [06/11/2026 - 20:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=f8cc362318bc6b667dd6ba90969e3b34675c9a85
+
+#EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",AV 53 - F1 - BRAZIL GP - F1-FREE 3 [07/11/2026 - 15:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=f8cc362318bc6b667dd6ba90969e3b34675c9a85
+
+#EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",AV 53 - F1 - BRAZIL GP - F1-CLASSIFICATION [07/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=f8cc362318bc6b667dd6ba90969e3b34675c9a85
+
+#EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="F1",AV 53 - F1 - BRAZIL GP - F1-RACE [08/11/2026 - 18:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=f8cc362318bc6b667dd6ba90969e3b34675c9a85
 
 #EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",AV 54 - F1 - BRAZIL GP - FREE 1 [06/11/2026 - 16:30 CET]
@@ -299,25 +380,28 @@ http://127.0.0.1:6878/ace/getstream?id=dc149729d6b4be6ae8199eae450611d1d06e5149
 #EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",AV 54 - F1 - BRAZIL GP - FREE 2 [06/11/2026 - 20:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=dc149729d6b4be6ae8199eae450611d1d06e5149
 
-#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="TENNIS",AV 55 - TENNIS - PARIS MASTERS - DJOKOVIC-HIJIKATA [04/11/2026 - 15:00 CET]
+#EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",AV 54 - F1 - BRAZIL GP - F1-FREE 3 [07/11/2026 - 15:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=dc149729d6b4be6ae8199eae450611d1d06e5149
+
+#EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",AV 54 - F1 - BRAZIL GP - F1-CLASSIFICATION [07/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=dc149729d6b4be6ae8199eae450611d1d06e5149
+
+#EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="F1",AV 54 - F1 - BRAZIL GP - F1-RACE [08/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=dc149729d6b4be6ae8199eae450611d1d06e5149
+
+#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="TENNIS",AV 55 - TENNIS - PARIS MASTERS - SEMIFINAL 1 [07/11/2026 - 14:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=d06ea95ca6e1ed2df8f12346ff2d42306ec21408
 
-#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="TENNIS",AV 55 - TENNIS - PARIS MASTERS - MICHELSEN-ALCARAZ [04/11/2026 - 19:00 CET]
+#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="TENNIS",AV 55 - TENNIS - PARIS MASTERS - SEMIFINAL 2 [07/11/2026 - 17:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=d06ea95ca6e1ed2df8f12346ff2d42306ec21408
 
-#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="TENNIS",AV 55 - TENNIS - PARIS MASTERS - FILS-MACHAC [04/11/2026 - 20:30 CET]
+#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="TENNIS",AV 55 - TENNIS - PARIS MASTERS - FINAL [08/11/2026 - 15:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=d06ea95ca6e1ed2df8f12346ff2d42306ec21408
 
-#EXTINF:-1 tvg-id="AV56" tvg-logo="" group-title="TENNIS",AV 56 - TENNIS - PARIS MASTERS - MOLCAN-FRITZ [04/11/2026 - 15:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=c47fe0698f928f92481ca709ead6ff7b635a8bf9
+#EXTINF:-1 tvg-id="AV56" tvg-logo="" group-title="RUGBY",AV 56 - RUGBY - NATIONS CHAMPIONSHIP - SCOTLAND-NEW ZEALAND [07/11/2026 - 15:10 CET]
+http://127.0.0.1:6878/ace/getstream?id=335b8e8849b99763fe51b7aecef2338ffb8d0101
 
-#EXTINF:-1 tvg-id="AV56" tvg-logo="" group-title="TENNIS",AV 56 - TENNIS - PARIS MASTERS - TIRANTE-STRUFF [04/11/2026 - 17:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=c47fe0698f928f92481ca709ead6ff7b635a8bf9
-
-#EXTINF:-1 tvg-id="AV57" tvg-logo="" group-title="TENNIS",AV 57 - TENNIS - PARIS MASTERS - BORGES-KHACHANOV [04/11/2026 - 15:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=aabc797c7fa011ad4ad08b7bdaa9dc61e2cfb5ed
-
-#EXTINF:-1 tvg-id="AV57" tvg-logo="" group-title="TENNIS",AV 57 - TENNIS - PARIS MASTERS - BERRETTINI-HUMBERT [04/11/2026 - 17:00 CET]
+#EXTINF:-1 tvg-id="AV57" tvg-logo="" group-title="VACIO",AV57 
 http://127.0.0.1:6878/ace/getstream?id=aabc797c7fa011ad4ad08b7bdaa9dc61e2cfb5ed
 
 #EXTINF:-1 tvg-id="AV58" tvg-logo="" group-title="VACIO",AV58 
@@ -326,40 +410,16 @@ http://127.0.0.1:6878/ace/getstream?id=646a1ed4ece843de1979f7888cbdd4d937506a28
 #EXTINF:-1 tvg-id="AV59" tvg-logo="" group-title="VACIO",AV59 
 http://127.0.0.1:6878/ace/getstream?id=d298c6e5c8be71f5995b45289c6388b225318b3c
 
-#EXTINF:-1 tvg-id="AV60" tvg-logo="" group-title="SOCCER",AV 60 - SOCCER - UEFA CHAMPIONS LEAGUE - SIMULCAST [04/11/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV60" tvg-logo="" group-title="VACIO",AV60 
 http://127.0.0.1:6878/ace/getstream?id=d0b3e6728c08ff648cad74021c36a7410069160f
 
-#EXTINF:-1 tvg-id="AV60" tvg-logo="" group-title="SOCCER",AV 60 - SOCCER - BRAZIL LEAGUE - PARANANESE-VASCO DA GAMA [04/11/2026 - 23:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=d0b3e6728c08ff648cad74021c36a7410069160f
-
-#EXTINF:-1 tvg-id="AV60" tvg-logo="" group-title="SOCCER",AV 60 - SOCCER - UEFA EUROPE LEAGUE - SPARTA PRAHA-BOURNEMOUTH [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=d0b3e6728c08ff648cad74021c36a7410069160f
-
-#EXTINF:-1 tvg-id="AV60" tvg-logo="" group-title="SOCCER",AV 60 - SOCCER - UEFA EUROPE LEAGUE - AZ ALKMAAR-JUVENTUS [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=d0b3e6728c08ff648cad74021c36a7410069160f
-
-#EXTINF:-1 tvg-id="AV61" tvg-logo="" group-title="SOCCER",AV 61 - SOCCER - UEFA CHAMPIONS LEAGUE - SIMULCAST [04/11/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV61" tvg-logo="" group-title="VACIO",AV61 
 http://127.0.0.1:6878/ace/getstream?id=84a6cef9a6ffa932ab9517ebfc4275ef0fba10e2
 
-#EXTINF:-1 tvg-id="AV61" tvg-logo="" group-title="SOCCER",AV 61 - SOCCER - BRAZIL LEAGUE - PARANANESE-VASCO DA GAMA [04/11/2026 - 23:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=84a6cef9a6ffa932ab9517ebfc4275ef0fba10e2
-
-#EXTINF:-1 tvg-id="AV61" tvg-logo="" group-title="SOCCER",AV 61 - SOCCER - UEFA EUROPE LEAGUE - SPARTA PRAHA-BOURNEMOUTH [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=84a6cef9a6ffa932ab9517ebfc4275ef0fba10e2
-
-#EXTINF:-1 tvg-id="AV61" tvg-logo="" group-title="SOCCER",AV 61 - SOCCER - UEFA EUROPE LEAGUE - AZ ALKMAAR-JUVENTUS [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=84a6cef9a6ffa932ab9517ebfc4275ef0fba10e2
-
-#EXTINF:-1 tvg-id="AV62" tvg-logo="" group-title="SOCCER",AV 62 - SOCCER - UEFA CHAMPIONS LEAGUE - LEIPZIG-MANCHESTER CITY [04/11/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV62" tvg-logo="" group-title="VACIO",AV62 
 http://127.0.0.1:6878/ace/getstream?id=6d67f2d943279e0b0b99efd8ae6449f084e59087
 
-#EXTINF:-1 tvg-id="AV62" tvg-logo="" group-title="SOCCER",AV 62 - SOCCER - UEFA EUROPE LEAGUE - BAYER LEVERKUSEN [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=6d67f2d943279e0b0b99efd8ae6449f084e59087
-
-#EXTINF:-1 tvg-id="AV63" tvg-logo="" group-title="SOCCER",AV 63 - SOCCER - UEFA CHAMPIONS LEAGUE - LEIPZIG-MANCHESTER CITY [04/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=bbe2f4b7990119c1f641d3b4159b6246139c0df2
-
-#EXTINF:-1 tvg-id="AV63" tvg-logo="" group-title="SOCCER",AV 63 - SOCCER - UEFA EUROPE LEAGUE - BAYER LEVERKUSEN [05/11/2026 - 21:00 CET]
+#EXTINF:-1 tvg-id="AV63" tvg-logo="" group-title="VACIO",AV63 
 http://127.0.0.1:6878/ace/getstream?id=bbe2f4b7990119c1f641d3b4159b6246139c0df2
 
 #EXTINF:-1 tvg-id="AV64" tvg-logo="" group-title="VACIO",AV64 
@@ -368,37 +428,37 @@ http://127.0.0.1:6878/ace/getstream?id=29ffc3b86b86820af40fa03570ff7c15013f998e
 #EXTINF:-1 tvg-id="AV65" tvg-logo="" group-title="VACIO",AV65 
 http://127.0.0.1:6878/ace/getstream?id=0f4128dfadd0d4a1af293a0729991b5f49c10007
 
-#EXTINF:-1 tvg-id="AV66" tvg-logo="" group-title="SOCCER",AV 66 - SOCCER - UEFA EUROPE LEAGUE - RENNES-OLYMPIACOS [04/11/2026 - 16:30 CET]
+#EXTINF:-1 tvg-id="AV66" tvg-logo="" group-title="VACIO",AV66 
 http://127.0.0.1:6878/ace/getstream?id=f07e3d6d34753538e445d817ff3661e037c05bb8
-
-#EXTINF:-1 tvg-id="AV66" tvg-logo="" group-title="SOCCER",AV 66 - SOCCER - UEFA CHAMPIONS LEAGUE - DORTMUND-REAL BETIS [04/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=f07e3d6d34753538e445d817ff3661e037c05bb8
-
-#EXTINF:-1 tvg-id="AV66" tvg-logo="" group-title="SOCCER",AV 66 - SOCCER - UEFA EUROPE LEAGUE - MILAN-FERENCVAROS [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=f07e3d6d34753538e445d817ff3661e037c05bb8
-
-#EXTINF:-1 tvg-id="AV66" tvg-logo="" group-title="SOCCER",AV 66 - SOCCER - BRAZIL LEAGUE - PALMEIRAS-REMO [05/11/2026 - 23:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=f07e3d6d34753538e445d817ff3661e037c05bb8
-
-#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - UEFA CHAMPIONS LEAGUE - FENERBAHCE-LIVERPOOL [04/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
-
-#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - UEFA CHAMPIONS LEAGUE - PORTO-NAPOLI [04/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
-
-#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
-
-#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - UEFA CONFERENCE LEAGUE - GETAFE-BRIGHTON [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
-
-#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - UEFA EUROPE LEAGUE - SIMULCAST [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
 
 #EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - CACEREÑO-LUGO [06/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
 
 #EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - REAL AVILES-CD EXTREMADURA [06/11/2026 - 21:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - RACING FERROL-LOGROÑES [07/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - ALCORCON-REAL JAEN [07/11/2026 - 16:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - UNIONISTA-ZAMORA [07/11/2026 - 18:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - REAL ZARAGOZA-HUESCA [07/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - CE EUROPA-ATLETICO MADRILEÑO [08/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - RM CASTILLA-HERCULES [08/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - CULTURAL LEONESA-PONFERRADINA [08/11/2026 - 18:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - REAL MURCIA-ALGECIRAS [08/11/2026 - 20:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
 
 #EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - CACEREÑO-LUGO [06/11/2026 - 19:00 CET]
@@ -407,53 +467,89 @@ http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - REAL AVILES-CD EXTREMADURA [06/11/2026 - 21:15 CET]
 http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - RACING FERROL-LOGROÑES [07/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - ALCORCON-REAL JAEN [07/11/2026 - 16:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - UNIONISTA-ZAMORA [07/11/2026 - 18:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - REAL ZARAGOZA-HUESCA [07/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - CE EUROPA-ATLETICO MADRILEÑO [08/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - RM CASTILLA-HERCULES [08/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - CULTURAL LEONESA-PONFERRADINA [08/11/2026 - 18:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - REAL MURCIA-ALGECIRAS [08/11/2026 - 20:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
 #EXTINF:-1 tvg-id="AV69" tvg-logo="" group-title="VACIO",AV69 
 http://127.0.0.1:6878/ace/getstream?id=95ced66c1268717c19c1e3e020e3b23b0f02e504
 
-#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="VACIO",AV70 
-http://127.0.0.1:6878/ace/getstream?id=6f7214dfe764a28b3efeb145e92b1ebb6f89e989
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="BASKETBALL",AV 70 - BASKETBALL - USA NCAA - VIRGINIA-ARKANSAS [08/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=63307e32e9cbf51e7ca610f9fac0b9910217ea49
 
-#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="VACIO",AV71 
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="RUGBY",AV 70 - RUGBY - TOP 14 RUGBY - LA ROCHELLE-AVIRON BAYONNIS [08/11/2026 - 21:05 CET]
+http://127.0.0.1:6878/ace/getstream?id=63307e32e9cbf51e7ca610f9fac0b9910217ea49
+
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="BASKETBALL",AV 71 - BASKETBALL - USA NCAA - VIRGINIA-ARKANSAS [08/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
 
-#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="BASKETBALL",AV 72 - BASKETBALL - EUROCUP - PANEVEZYS-MANRESA [04/11/2026 - 18:00 CET]
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="RUGBY",AV 71 - RUGBY - TOP 14 RUGBY - LA ROCHELLE-AVIRON BAYONNIS [08/11/2026 - 21:05 CET]
+http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
+
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="RUGBY",AV 72 - RUGBY - WORLD RUGBY NATIONS CUP - SPAIN-URUGUAY [07/11/2026 - 16:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
 
-#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="TENNIS",AV 72 - TENNIS - PARIS MASTERS - MICHELSEN-ALCARAZ [04/11/2026 - 19:00 CET]
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="SOCCER",AV 72 - SOCCER - BUNDESLIGA - STUTTGART-WERDER BREMEN [07/11/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
 
-#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="SOCCER",AV 72 - SOCCER - BRAZIL LEAGUE - PARANANESE-VASCO DA GAMA [04/11/2026 - 23:30 CET]
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="BASKETBALL",AV 72 - BASKETBALL - SPANISH LEAGUE - LLEIDA-BASKONIA [07/11/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
 
-#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="BASKETBALL",AV 72 - BASKETBALL - EUROLEAGUE - HAPOEL-BARCELONA [05/11/2026 - 19:45 CET]
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="RUGBY",AV 72 - RUGBY - SPANISH LEAGUE - POZUELO-ALCOBENDAS [08/11/2026 - 14:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
 
-#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="SOCCER",AV 72 - SOCCER - BRAZIL LEAGUE - PALMEIRAS-REMO [05/11/2026 - 23:30 CET]
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="SOCCER",AV 72 - SOCCER - PREMIER LEAGUE - MANCHESTER UNITED-ASTON VILLA [08/11/2026 - 17:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
 
-#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="BASKETBALL",AV 73 - BASKETBALL - EUROCUP - PANEVEZYS-MANRESA [04/11/2026 - 18:00 CET]
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="SOCCER",AV 72 - SOCCER - ITALIAN LEAGUE - FIORENTINA-JUVENTUS [08/11/2026 - 20:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
+
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="RUGBY",AV 73 - RUGBY - WORLD RUGBY NATIONS CUP - SPAIN-URUGUAY [07/11/2026 - 16:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
 
-#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="TENNIS",AV 73 - TENNIS - PARIS MASTERS - MICHELSEN-ALCARAZ [04/11/2026 - 19:00 CET]
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="SOCCER",AV 73 - SOCCER - BUNDESLIGA - STUTTGART-WERDER BREMEN [07/11/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
 
-#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="SOCCER",AV 73 - SOCCER - BRAZIL LEAGUE - PARANANESE-VASCO DA GAMA [04/11/2026 - 23:30 CET]
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="BASKETBALL",AV 73 - BASKETBALL - SPANISH LEAGUE - LLEIDA-BASKONIA [07/11/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
 
-#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="BASKETBALL",AV 73 - BASKETBALL - EUROLEAGUE - HAPOEL-BARCELONA [05/11/2026 - 19:45 CET]
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="RUGBY",AV 73 - RUGBY - SPANISH LEAGUE - POZUELO-ALCOBENDAS [08/11/2026 - 14:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
 
-#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="SOCCER",AV 73 - SOCCER - BRAZIL LEAGUE - PALMEIRAS-REMO [05/11/2026 - 23:30 CET]
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="SOCCER",AV 73 - SOCCER - PREMIER LEAGUE - MANCHESTER UNITED-ASTON VILLA [08/11/2026 - 17:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
+
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="SOCCER",AV 73 - SOCCER - ITALIAN LEAGUE - FIORENTINA-JUVENTUS [08/11/2026 - 20:45 CET]
 http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
 
 #EXTINF:-1 tvg-id="AV74" tvg-logo="" group-title="VACIO",AV74 
-http://127.0.0.1:6878/ace/getstream?id=0e5d8c9724fa9163f49096b70484e315251eb785
+http://127.0.0.1:6878/ace/getstream?id=e1825dc2deae9f24ef55e6ff11fe780201ae758d
 
 #EXTINF:-1 tvg-id="AV75" tvg-logo="" group-title="VACIO",AV75 
-http://127.0.0.1:6878/ace/getstream?id=476b6f6583517bd75c15c4663bf45fab7c8da9cf
+http://127.0.0.1:6878/ace/getstream?id=1c00e6a5404f84e9bd22aa9d8f09e96ffa4ab319
 
 #EXTINF:-1 tvg-id="AV76" tvg-logo="" group-title="VACIO",AV76 
-http://127.0.0.1:6878/ace/getstream?id=38f7b2044e549df2039ff26cefa6f9a60c854d5e
+http://127.0.0.1:6878/ace/getstream?id=69f76f6516620d91612e7509077b5ac3bb4d3c0b
 
 #EXTINF:-1 tvg-id="AV77" tvg-logo="" group-title="VACIO",AV77 
 http://127.0.0.1:6878/ace/getstream?id=85a8e0675bc27ddfd403b8f72953c606d07a8de8
@@ -467,8 +563,26 @@ http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
 #EXTINF:-1 tvg-id="AV80" tvg-logo="" group-title="SOCCER",AV 80 - SOCCER - SPANISH LEAGUE - SEVILLA-ALAVES [06/11/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=529f5abd2c87209f69c0727ade740ff6f160be88
 
+#EXTINF:-1 tvg-id="AV80" tvg-logo="" group-title="SOCCER",AV 80 - SOCCER - SPANISH LEAGUE - VALENCIA-REAL MADRID [07/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=529f5abd2c87209f69c0727ade740ff6f160be88
+
+#EXTINF:-1 tvg-id="AV80" tvg-logo="" group-title="SOCCER",AV 80 - SOCCER - SPANISH LEAGUE - ELCHE-REAL BETIS [08/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=529f5abd2c87209f69c0727ade740ff6f160be88
+
+#EXTINF:-1 tvg-id="AV80" tvg-logo="" group-title="SOCCER",AV 80 - SOCCER - SPANISH LEAGUE - VILLARREAL-GETAFE [08/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=529f5abd2c87209f69c0727ade740ff6f160be88
+
 #EXTINF:-1 tvg-id="AV81" tvg-logo="" group-title="SOCCER",AV 81 - SOCCER - SPANISH LEAGUE - SEVILLA-ALAVES [06/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=43e902aa3226976ec722a4145541a2cb8e1b13fd
+http://127.0.0.1:6878/ace/getstream?id=7d898e9c227d706e5479b9b523ad615847825d14
+
+#EXTINF:-1 tvg-id="AV81" tvg-logo="" group-title="SOCCER",AV 81 - SOCCER - SPANISH LEAGUE - VALENCIA-REAL MADRID [07/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=7d898e9c227d706e5479b9b523ad615847825d14
+
+#EXTINF:-1 tvg-id="AV81" tvg-logo="" group-title="SOCCER",AV 81 - SOCCER - SPANISH LEAGUE - ELCHE-REAL BETIS [08/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=7d898e9c227d706e5479b9b523ad615847825d14
+
+#EXTINF:-1 tvg-id="AV81" tvg-logo="" group-title="SOCCER",AV 81 - SOCCER - SPANISH LEAGUE - VILLARREAL-GETAFE [08/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=7d898e9c227d706e5479b9b523ad615847825d14
 
 #EXTINF:-1 tvg-id="AV82" tvg-logo="" group-title="VACIO",AV82 
 http://127.0.0.1:6878/ace/getstream?id=4855b5c3263f207260e1c6cbd8c234df799cf7f2
@@ -480,57 +594,138 @@ http://127.0.0.1:6878/ace/getstream?id=34d4ed86aa5e56a84b151a80f6904605a0f77854
 http://127.0.0.1:6878/ace/getstream?id=4ef8d5f781b709d479cfc3961de9c92f0f0dcb0c
 
 #EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - CASTELLON-EIBAR [06/11/2026 - 20:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=e3138f1a8f174892b7b7f3af6daf7ee3a15888c6
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - BURGOS-CELTA B [07/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - CADIZ-REAL OVIEDO [07/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - LEGANES-ALBACETE [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - GIRONA-ALMERIA [08/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - SPORTING GIJON-REAL VALLADOLID [08/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - SABADELL-REAL SOCIEDAD B [09/11/2026 - 20:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
 
 #EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - CASTELLON-EIBAR [06/11/2026 - 20:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - BURGOS-CELTA B [07/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - CADIZ-REAL OVIEDO [07/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - LEGANES-ALBACETE [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - GIRONA-ALMERIA [08/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - SPORTING GIJON-REAL VALLADOLID [08/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - SABADELL-REAL SOCIEDAD B [09/11/2026 - 20:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV87" tvg-logo="" group-title="SOCCER",AV 87 - SOCCER - SPANISH LEAGUE 2 - CORDOBA-CEUTA [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=e3138f1a8f174892b7b7f3af6daf7ee3a15888c6
+
+#EXTINF:-1 tvg-id="AV87" tvg-logo="" group-title="SOCCER",AV 87 - SOCCER - SPANISH LEAGUE 2 - LAS PALMAS-ELDENSE [08/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=e3138f1a8f174892b7b7f3af6daf7ee3a15888c6
+
+#EXTINF:-1 tvg-id="AV88" tvg-logo="" group-title="SOCCER",AV 88 - SOCCER - SPANISH LEAGUE 2 - CORDOBA-CEUTA [07/11/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=bf511b771c3f2e3cc81fbf9d6c70935fc6eb5fdb
 
-#EXTINF:-1 tvg-id="AV87" tvg-logo="" group-title="VACIO",AV87 
-http://127.0.0.1:6878/ace/getstream?id=e63fbcafbfc9bcb7e1cffa1d2eea97cc77f7a198
-
-#EXTINF:-1 tvg-id="AV88" tvg-logo="" group-title="VACIO",AV88 
-http://127.0.0.1:6878/ace/getstream?id=3a21e651c0bffe810cfc8537065cb81f5ed68a55
+#EXTINF:-1 tvg-id="AV88" tvg-logo="" group-title="SOCCER",AV 88 - SOCCER - SPANISH LEAGUE 2 - LAS PALMAS-ELDENSE [08/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=bf511b771c3f2e3cc81fbf9d6c70935fc6eb5fdb
 
 #EXTINF:-1 tvg-id="AV89" tvg-logo="" group-title="SOCCER",AV 89 - SOCCER - SPANISH LEAGUE - SEVILLA-ALAVES [06/11/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=5bf898b0ffc2ca662b898a424a988a922ab88abd
 
-#EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="VACIO",AV90 
+#EXTINF:-1 tvg-id="AV89" tvg-logo="" group-title="SOCCER",AV 89 - SOCCER - SPANISH LEAGUE - VALENCIA-REAL MADRID [07/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=5bf898b0ffc2ca662b898a424a988a922ab88abd
+
+#EXTINF:-1 tvg-id="AV89" tvg-logo="" group-title="SOCCER",AV 89 - SOCCER - SPANISH LEAGUE - ELCHE-REAL BETIS [08/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=5bf898b0ffc2ca662b898a424a988a922ab88abd
+
+#EXTINF:-1 tvg-id="AV89" tvg-logo="" group-title="SOCCER",AV 89 - SOCCER - SPANISH LEAGUE - VILLARREAL-GETAFE [08/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=5bf898b0ffc2ca662b898a424a988a922ab88abd
+
+#EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="SOCCER",AV 90 - SOCCER - SPANISH LEAGUE - MALAGA-RACING SANTANDER [07/11/2026 - 14:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 
-#EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="VACIO",AV91 
-http://127.0.0.1:6878/ace/getstream?id=1c00e6a5404f84e9bd22aa9d8f09e96ffa4ab319
+#EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="SOCCER",AV 90 - SOCCER - SPANISH LEAGUE - ESPANYOL-DEPORTIVO [07/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 
-#EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="SOCCER",AV 92 - SOCCER - UEFA YOUTH LEAGUE - DORTMUND-REAL BETIS [04/11/2026 - 16:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
+#EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="SOCCER",AV 90 - SOCCER - SPANISH LEAGUE - OSASUNA-ATHLETIC CLUB [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 
-#EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="SOCCER",AV 92 - SOCCER - UEFA CHAMPIONS LEAGUE - AEK FC-REAL MADRID [04/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
+#EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="SOCCER",AV 90 - SOCCER - SPANISH LEAGUE - REAL SOCIEDAD-RAYO VALLECANO [08/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 
-#EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="SOCCER",AV 92 - SOCCER - UEFA EUROPE LEAGUE - REAL SOCIEDAD-LYON [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
+#EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="SOCCER",AV 90 - SOCCER - SPANISH LEAGUE - CELTA-LEVANTE [08/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 
-#EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="SOCCER",AV 92 - SOCCER - UEFA EUROPE LEAGUE - CELTA-SAINT GILLOISE [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
+#EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="SOCCER",AV 90 - SOCCER - SPANISH LEAGUE - ATLETICO DE MADRID-BARCELONA [08/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 
-#EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="SOCCER",AV 93 - SOCCER - UEFA YOUTH LEAGUE - DORTMUND-REAL BETIS [04/11/2026 - 16:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=bbc88eebc094d054d8131987231e0ec8aca1495b
+#EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="SOCCER",AV 91 - SOCCER - SPANISH LEAGUE - MALAGA-RACING SANTANDER [07/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
 
-#EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="SOCCER",AV 93 - SOCCER - UEFA CHAMPIONS LEAGUE - AEK FC-REAL MADRID [04/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=bbc88eebc094d054d8131987231e0ec8aca1495b
+#EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="SOCCER",AV 91 - SOCCER - SPANISH LEAGUE - ESPANYOL-DEPORTIVO [07/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
 
-#EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="SOCCER",AV 93 - SOCCER - UEFA EUROPE LEAGUE - REAL SOCIEDAD-LYON [05/11/2026 - 18:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=bbc88eebc094d054d8131987231e0ec8aca1495b
+#EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="SOCCER",AV 91 - SOCCER - SPANISH LEAGUE - OSASUNA-ATHLETIC CLUB [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
 
-#EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="SOCCER",AV 93 - SOCCER - UEFA EUROPE LEAGUE - CELTA-SAINT GILLOISE [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=bbc88eebc094d054d8131987231e0ec8aca1495b
+#EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="SOCCER",AV 91 - SOCCER - SPANISH LEAGUE - REAL SOCIEDAD-RAYO VALLECANO [08/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
+
+#EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="SOCCER",AV 91 - SOCCER - SPANISH LEAGUE - CELTA-LEVANTE [08/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
+
+#EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="SOCCER",AV 91 - SOCCER - SPANISH LEAGUE - ATLETICO DE MADRID-BARCELONA [08/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
+
+#EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="SOCCER",AV 92 - SOCCER - BUNDESLIGA - STUTTGART-WERDER BREMEN [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=66382069b0b1863428e2a107bbeb236241365e84
+
+#EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="SOCCER",AV 92 - SOCCER - ARGENTINA LEAGUE - BOCA JUNIORS-DEFENSA Y JUSTICIA [07/11/2026 - 21:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=66382069b0b1863428e2a107bbeb236241365e84
+
+#EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="SOCCER",AV 92 - SOCCER - PREMIER LEAGUE - MANCHESTER UNITED-ASTON VILLA [08/11/2026 - 17:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=66382069b0b1863428e2a107bbeb236241365e84
+
+#EXTINF:-1 tvg-id="AV92" tvg-logo="" group-title="SOCCER",AV 92 - SOCCER - ITALIAN LEAGUE - FIORENTINA-JUVENTUS [08/11/2026 - 20:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=66382069b0b1863428e2a107bbeb236241365e84
+
+#EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="SOCCER",AV 93 - SOCCER - BUNDESLIGA - STUTTGART-WERDER BREMEN [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=f65cb972f42c09fa89fb3eb6c3a11a8cfb339d41
+
+#EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="SOCCER",AV 93 - SOCCER - ARGENTINA LEAGUE - BOCA JUNIORS-DEFENSA Y JUSTICIA [07/11/2026 - 21:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=f65cb972f42c09fa89fb3eb6c3a11a8cfb339d41
+
+#EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="SOCCER",AV 93 - SOCCER - PREMIER LEAGUE - MANCHESTER UNITED-ASTON VILLA [08/11/2026 - 17:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=f65cb972f42c09fa89fb3eb6c3a11a8cfb339d41
+
+#EXTINF:-1 tvg-id="AV93" tvg-logo="" group-title="SOCCER",AV 93 - SOCCER - ITALIAN LEAGUE - FIORENTINA-JUVENTUS [08/11/2026 - 20:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=f65cb972f42c09fa89fb3eb6c3a11a8cfb339d41
 
 #EXTINF:-1 tvg-id="AV94" tvg-logo="" group-title="VACIO",AV94 
 http://127.0.0.1:6878/ace/getstream?id=56ef80b811b65df74edae1f2a23805c45600caad
 
-#EXTINF:-1 tvg-id="AV95" tvg-logo="" group-title="VACIO",AV95 
+#EXTINF:-1 tvg-id="AV95" tvg-logo="" group-title="SOCCER (W)",AV 95 - SOCCER (W) - SPANISH LEAGUE - EIBAR-REAL SOCIEDAD [07/11/2026 - 17:15 CET]
 http://127.0.0.1:6878/ace/getstream?id=e2a49cf36681e4b44a01e9561518a285c0ea1d8d
 
-#EXTINF:-1 tvg-id="AV96" tvg-logo="" group-title="VACIO",AV96 
+#EXTINF:-1 tvg-id="AV96" tvg-logo="" group-title="SOCCER (W)",AV 96 - SOCCER (W) - SPANISH LEAGUE - EIBAR-REAL SOCIEDAD [07/11/2026 - 17:15 CET]
 http://127.0.0.1:6878/ace/getstream?id=9abec634bfed7cf5d481abbc1575ef1972026498
 
 #EXTINF:-1 tvg-id="AV97" tvg-logo="" group-title="VACIO",AV97 
@@ -539,22 +734,40 @@ http://127.0.0.1:6878/ace/getstream?id=4ce1d784cf9b1fda3f73a5a1eedcd342b952bc29
 #EXTINF:-1 tvg-id="AV98" tvg-logo="" group-title="VACIO",AV98 
 http://127.0.0.1:6878/ace/getstream?id=02622fa2fab63847d88dc14fd9fa5c2fc35de8a8
 
-#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="BASKETBALL",AV 99 - BASKETBALL - EUROLEAGUE - REAL MADRID-PANATHINAIKOS [04/11/2026 - 20:45 CET]
+#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="TENNIS",AV 99 - TENNIS - PARIS MASTERS - SEMIFINAL 1 [07/11/2026 - 14:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=0b05fa66cfd62f9d4f686ff42f0c52ff3196a9fa
 
-#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="SOCCER",AV 99 - SOCCER - UEFA EUROPE LEAGUE - REAL SOCIEDAD-LYON [05/11/2026 - 18:45 CET]
+#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="SOCCER",AV 99 - SOCCER - SPANISH LEAGUE - OSASUNA-ATHLETIC CLUB [07/11/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=0b05fa66cfd62f9d4f686ff42f0c52ff3196a9fa
 
-#EXTINF:-1 tvg-id="AV100" tvg-logo="" group-title="BASKETBALL",AV 100 - BASKETBALL - EUROLEAGUE - REAL MADRID-PANATHINAIKOS [04/11/2026 - 20:45 CET]
+#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="BASKETBALL",AV 99 - BASKETBALL - SPANISH LEAGUE - BURGOS-VALENCIA [08/11/2026 - 12:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=0b05fa66cfd62f9d4f686ff42f0c52ff3196a9fa
+
+#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="TENNIS",AV 99 - TENNIS - PARIS MASTERS - FINAL [08/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0b05fa66cfd62f9d4f686ff42f0c52ff3196a9fa
+
+#EXTINF:-1 tvg-id="AV100" tvg-logo="" group-title="TENNIS",AV 100 - TENNIS - PARIS MASTERS - SEMIFINAL 1 [07/11/2026 - 14:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=a2d33536b7d55727c8f6bea010624d6478c3ba2d
 
-#EXTINF:-1 tvg-id="AV100" tvg-logo="" group-title="SOCCER",AV 100 - SOCCER - UEFA EUROPE LEAGUE - REAL SOCIEDAD-LYON [05/11/2026 - 18:45 CET]
+#EXTINF:-1 tvg-id="AV100" tvg-logo="" group-title="SOCCER",AV 100 - SOCCER - SPANISH LEAGUE - OSASUNA-ATHLETIC CLUB [07/11/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=a2d33536b7d55727c8f6bea010624d6478c3ba2d
 
-#EXTINF:-1 tvg-id="AV101" tvg-logo="" group-title="BASKETBALL",AV 101 - BASKETBALL - EUROLEAGUE - REAL MADRID-PANATHINAIKOS [04/11/2026 - 20:45 CET]
+#EXTINF:-1 tvg-id="AV100" tvg-logo="" group-title="BASKETBALL",AV 100 - BASKETBALL - SPANISH LEAGUE - BURGOS-VALENCIA [08/11/2026 - 12:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=a2d33536b7d55727c8f6bea010624d6478c3ba2d
+
+#EXTINF:-1 tvg-id="AV100" tvg-logo="" group-title="TENNIS",AV 100 - TENNIS - PARIS MASTERS - FINAL [08/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=a2d33536b7d55727c8f6bea010624d6478c3ba2d
+
+#EXTINF:-1 tvg-id="AV101" tvg-logo="" group-title="TENNIS",AV 101 - TENNIS - PARIS MASTERS - SEMIFINAL 1 [07/11/2026 - 14:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
 
-#EXTINF:-1 tvg-id="AV101" tvg-logo="" group-title="SOCCER",AV 101 - SOCCER - UEFA EUROPE LEAGUE - REAL SOCIEDAD-LYON [05/11/2026 - 18:45 CET]
+#EXTINF:-1 tvg-id="AV101" tvg-logo="" group-title="SOCCER",AV 101 - SOCCER - SPANISH LEAGUE - OSASUNA-ATHLETIC CLUB [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
+
+#EXTINF:-1 tvg-id="AV101" tvg-logo="" group-title="BASKETBALL",AV 101 - BASKETBALL - SPANISH LEAGUE - BURGOS-VALENCIA [08/11/2026 - 12:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
+
+#EXTINF:-1 tvg-id="AV101" tvg-logo="" group-title="TENNIS",AV 101 - TENNIS - PARIS MASTERS - FINAL [08/11/2026 - 15:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
 
 #EXTINF:-1 tvg-id="AV102" tvg-logo="" group-title="VACIO",AV102 
@@ -566,62 +779,92 @@ http://127.0.0.1:6878/ace/getstream?id=b96a9b23b5343ca748e126c9257f42e204d3f52c
 #EXTINF:-1 tvg-id="AV105" tvg-logo="" group-title="VACIO",AV105 
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
 
-#EXTINF:-1 tvg-id="AV106" tvg-logo="" group-title="SOCCER",AV 106 - SOCCER - SAUDI PRO LEAGUE - AL QADISIYA-AL FAYHA [05/11/2026 - 18:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=acc2d46eaf6a0b4c3dbd299ffcd67c2b946c2c3e
-
 #EXTINF:-1 tvg-id="AV106" tvg-logo="" group-title="BASKETBALL",AV 106 - BASKETBALL - EUROLEAGUE - VIRTUS BOLOGNA-DUBAI [06/11/2026 - 20:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=acc2d46eaf6a0b4c3dbd299ffcd67c2b946c2c3e
 
-#EXTINF:-1 tvg-id="AV107" tvg-logo="" group-title="SOCCER",AV 107 - SOCCER - SAUDI PRO LEAGUE - AL QADISIYA-AL FAYHA [05/11/2026 - 18:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=354a0fac478c2887a6e0382b1f39a54a5f7f7de1
+#EXTINF:-1 tvg-id="AV106" tvg-logo="" group-title="SOCCER (W)",AV 106 - SOCCER (W) - SPANISH LEAGUE - ATHLETIC CLUB-REAL MADRID [07/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=acc2d46eaf6a0b4c3dbd299ffcd67c2b946c2c3e
+
+#EXTINF:-1 tvg-id="AV106" tvg-logo="" group-title="SOCCER",AV 106 - SOCCER - SAUDI PRO LEAGUE - AL AHLI-AL TAAWOUN [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=acc2d46eaf6a0b4c3dbd299ffcd67c2b946c2c3e
+
+#EXTINF:-1 tvg-id="AV106" tvg-logo="" group-title="SOCCER",AV 106 - SOCCER - ARGENTINA LEAGUE - BOCA JUNIORS-DEFENSA Y JUSTICIA [07/11/2026 - 21:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=acc2d46eaf6a0b4c3dbd299ffcd67c2b946c2c3e
 
 #EXTINF:-1 tvg-id="AV107" tvg-logo="" group-title="BASKETBALL",AV 107 - BASKETBALL - EUROLEAGUE - VIRTUS BOLOGNA-DUBAI [06/11/2026 - 20:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=354a0fac478c2887a6e0382b1f39a54a5f7f7de1
+http://127.0.0.1:6878/ace/getstream?id=8d752ceceaa26b063d8edfa9c70352ada62c424d
 
-#EXTINF:-1 tvg-id="AV108" tvg-logo="" group-title="PADDLE",AV 108 - PADDLE - PREMIER PADDLE - WOMEN WORLDCUP-QUARTERS [05/11/2026 - 11:05 CET]
-http://127.0.0.1:6878/ace/getstream?id=973094e625613b693cffb05a3f98fabe2d59dafa
+#EXTINF:-1 tvg-id="AV107" tvg-logo="" group-title="SOCCER (W)",AV 107 - SOCCER (W) - SPANISH LEAGUE - ATHLETIC CLUB-REAL MADRID [07/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=8d752ceceaa26b063d8edfa9c70352ada62c424d
+
+#EXTINF:-1 tvg-id="AV107" tvg-logo="" group-title="SOCCER",AV 107 - SOCCER - SAUDI PRO LEAGUE - AL AHLI-AL TAAWOUN [07/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=8d752ceceaa26b063d8edfa9c70352ada62c424d
+
+#EXTINF:-1 tvg-id="AV107" tvg-logo="" group-title="SOCCER",AV 107 - SOCCER - ARGENTINA LEAGUE - BOCA JUNIORS-DEFENSA Y JUSTICIA [07/11/2026 - 21:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=8d752ceceaa26b063d8edfa9c70352ada62c424d
 
 #EXTINF:-1 tvg-id="AV108" tvg-logo="" group-title="PADDLE",AV 108 - PADDLE - WORLDCUP - SEMIFINALS [06/11/2026 - 16:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=973094e625613b693cffb05a3f98fabe2d59dafa
 
-#EXTINF:-1 tvg-id="AV109" tvg-logo="" group-title="PADDLE",AV 109 - PADDLE - PREMIER PADDLE - WOMEN WORLDCUP-QUARTERS [05/11/2026 - 11:05 CET]
-http://127.0.0.1:6878/ace/getstream?id=acd22bfea329235832b0d1d8d1ab7a963b31d5c7
+#EXTINF:-1 tvg-id="AV108" tvg-logo="" group-title="PADDLE",AV 108 - PADDLE - WORLDCUP - FINAL [07/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=973094e625613b693cffb05a3f98fabe2d59dafa
+
+#EXTINF:-1 tvg-id="AV108" tvg-logo="" group-title="PADDLE",AV 108 - PADDLE - WORLDCUP - FINAL [07/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=973094e625613b693cffb05a3f98fabe2d59dafa
 
 #EXTINF:-1 tvg-id="AV109" tvg-logo="" group-title="PADDLE",AV 109 - PADDLE - WORLDCUP - SEMIFINALS [06/11/2026 - 16:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=acd22bfea329235832b0d1d8d1ab7a963b31d5c7
+http://127.0.0.1:6878/ace/getstream?id=8fd3ab88c95744e502aca1cdb369e07941914344
 
-#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - USA NBA - PISTONS-76ERS [05/11/2026 - 01:00 CET]
+#EXTINF:-1 tvg-id="AV109" tvg-logo="" group-title="PADDLE",AV 109 - PADDLE - WORLDCUP - FINAL [07/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=8fd3ab88c95744e502aca1cdb369e07941914344
+
+#EXTINF:-1 tvg-id="AV109" tvg-logo="" group-title="PADDLE",AV 109 - PADDLE - WORLDCUP - FINAL [07/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=8fd3ab88c95744e502aca1cdb369e07941914344
+
+#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - U LEAGUE - VALENCIA B-GIRONA B [07/11/2026 - 12:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
 
-#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - USA NBA - PISTONS-76ERS [05/11/2026 - 01:00 CET]
+#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - SPANISH LEAGUE - LLEIDA-BASKONIA [07/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
+
+#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - SPANISH LEAGUE - TENERIFE-JOVENTUT [08/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
+
+#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - SPANISH LEAGUE - REAL MADRID-UCAM MURCIA [08/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
+
+#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - U LEAGUE - VALENCIA B-GIRONA B [07/11/2026 - 12:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
 
-#EXTINF:-1 tvg-id="AV112" tvg-logo="" group-title="BASKETBALL",AV 112 - BASKETBALL - USA NBA - SPURS-MAVERICKS [05/11/2026 - 03:30 CET]
+#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - SPANISH LEAGUE - LLEIDA-BASKONIA [07/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
+
+#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - SPANISH LEAGUE - TENERIFE-JOVENTUT [08/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
+
+#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - SPANISH LEAGUE - REAL MADRID-UCAM MURCIA [08/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
+
+#EXTINF:-1 tvg-id="AV112" tvg-logo="" group-title="BASKETBALL",AV 112 - BASKETBALL - SPANISH LEAGUE - GIRONA-BILBAO [07/11/2026 - 19:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=8edc606f4b349f43db14f5190180e2873659e972
 
-#EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="VACIO",AV113 
+#EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="BASKETBALL",AV 113 - BASKETBALL - SPANISH LEAGUE - MANRESA-OBRADOIRO [07/11/2026 - 18:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=39ec223a912728d4483766b0cb35c0a5a478aa9e
 
-#EXTINF:-1 tvg-id="AV114" tvg-logo="" group-title="BASKETBALL",AV 114 - BASKETBALL - EUROCUP - PANEVEZYS-MANRESA [04/11/2026 - 18:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
+#EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="BASKETBALL",AV 113 - BASKETBALL - SPANISH LEAGUE - BARCELONA-RIO BREOGAN [08/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=39ec223a912728d4483766b0cb35c0a5a478aa9e
 
-#EXTINF:-1 tvg-id="AV114" tvg-logo="" group-title="BASKETBALL",AV 114 - BASKETBALL - EUROLEAGUE - REAL MADRID-PANATHINAIKOS [04/11/2026 - 20:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
+#EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="BASKETBALL",AV 113 - BASKETBALL - USA NBA - PISTONS-LAKERS [09/11/2026 - 00:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=39ec223a912728d4483766b0cb35c0a5a478aa9e
 
 #EXTINF:-1 tvg-id="AV114" tvg-logo="" group-title="BASKETBALL",AV 114 - BASKETBALL - EUROLEAGUE - PARTIZAN-MACCABI [06/11/2026 - 20:45 CET]
 http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
 
-#EXTINF:-1 tvg-id="AV115" tvg-logo="" group-title="BASKETBALL",AV 115 - BASKETBALL - EUROLEAGUE - FENERBAHCE-BASKONIA [05/11/2026 - 19:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=28afccf091b7ddabb51e7aeb9a7c5ef15b0083bf
-
 #EXTINF:-1 tvg-id="AV115" tvg-logo="" group-title="BASKETBALL",AV 115 - BASKETBALL - EUROLEAGUE - PARTIZAN-MACCABI [06/11/2026 - 20:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=28afccf091b7ddabb51e7aeb9a7c5ef15b0083bf
+http://127.0.0.1:6878/ace/getstream?id=e9c285968edade2d0ce4cdcaa32bbe5f97716fb5
 
-#EXTINF:-1 tvg-id="AV116" tvg-logo="" group-title="BASKETBALL",AV 116 - BASKETBALL - EUROLEAGUE - ANADOLU EFES-PARIS [05/11/2026 - 18:15 CET]
-http://127.0.0.1:6878/ace/getstream?id=e28a5ad5a61205e42f375c40c4df412c2336a864
-
-#EXTINF:-1 tvg-id="AV116" tvg-logo="" group-title="BASKETBALL",AV 116 - BASKETBALL - EUROCUP - TENERIFE-NAPOCA [05/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=e28a5ad5a61205e42f375c40c4df412c2336a864
+#EXTINF:-1 tvg-id="AV116" tvg-logo="" group-title="VACIO",AV116 
+http://127.0.0.1:6878/ace/getstream?id=e675aecf437124d37f7f2daf31669f1af532a50c
 
 #EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - CACEREÑO-LUGO [06/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
@@ -629,11 +872,59 @@ http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 #EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - REAL AVILES-CD EXTREMADURA [06/11/2026 - 21:15 CET]
 http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - RACING FERROL-LOGROÑES [07/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - ALCORCON-REAL JAEN [07/11/2026 - 16:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - UNIONISTA-ZAMORA [07/11/2026 - 18:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - REAL ZARAGOZA-HUESCA [07/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - CE EUROPA-ATLETICO MADRILEÑO [08/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - RM CASTILLA-HERCULES [08/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - CULTURAL LEONESA-PONFERRADINA [08/11/2026 - 18:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - REAL MURCIA-ALGECIRAS [08/11/2026 - 20:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
 #EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - CACEREÑO-LUGO [06/11/2026 - 19:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=854ff9c607101791346111cd2366a392c3b8c351
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
 
 #EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - REAL AVILES-CD EXTREMADURA [06/11/2026 - 21:15 CET]
-http://127.0.0.1:6878/ace/getstream?id=854ff9c607101791346111cd2366a392c3b8c351
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - RACING FERROL-LOGROÑES [07/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - ALCORCON-REAL JAEN [07/11/2026 - 16:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - UNIONISTA-ZAMORA [07/11/2026 - 18:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - REAL ZARAGOZA-HUESCA [07/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - CE EUROPA-ATLETICO MADRILEÑO [08/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - RM CASTILLA-HERCULES [08/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - CULTURAL LEONESA-PONFERRADINA [08/11/2026 - 18:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - REAL MURCIA-ALGECIRAS [08/11/2026 - 20:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
 
 #EXTINF:-1 tvg-id="AV119" tvg-logo="" group-title="VACIO",AV119 
 http://127.0.0.1:6878/ace/getstream?id=3fbc1b7dc316f19b77e7f7cfc775a0af67adcc7f
@@ -644,10 +935,16 @@ http://127.0.0.1:6878/ace/getstream?id=e7ddca738693a902ce34fb80788b220676c15801
 #EXTINF:-1 tvg-id="AV121" tvg-logo="" group-title="VACIO",AV121 
 http://127.0.0.1:6878/ace/getstream?id=1e3451ef86d34c96aabece2ac7bcae70ba9ed767
 
-#EXTINF:-1 tvg-id="AV122" tvg-logo="" group-title="BASKETBALL",AV 122 - BASKETBALL - USA NBA - SPURS-MAVERICKS [05/11/2026 - 03:30 CET]
+#EXTINF:-1 tvg-id="AV122" tvg-logo="" group-title="BASKETBALL",AV 122 - BASKETBALL - SPANISH LEAGUE - GIRONA-BILBAO [07/11/2026 - 19:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=09ee8afc1d9b468d3b470c682cfcacd58a95e273
 
-#EXTINF:-1 tvg-id="AV123" tvg-logo="" group-title="VACIO",AV123 
+#EXTINF:-1 tvg-id="AV123" tvg-logo="" group-title="BASKETBALL",AV 123 - BASKETBALL - SPANISH LEAGUE - MANRESA-OBRADOIRO [07/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=95125f755562c0ffcb44abd94e338bd65472afea
+
+#EXTINF:-1 tvg-id="AV123" tvg-logo="" group-title="BASKETBALL",AV 123 - BASKETBALL - SPANISH LEAGUE - BARCELONA-RIO BREOGAN [08/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=95125f755562c0ffcb44abd94e338bd65472afea
+
+#EXTINF:-1 tvg-id="AV123" tvg-logo="" group-title="BASKETBALL",AV 123 - BASKETBALL - USA NBA - PISTONS-LAKERS [09/11/2026 - 00:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=95125f755562c0ffcb44abd94e338bd65472afea
 
 #EXTINF:-1 tvg-id="AV124" tvg-logo="" group-title="VACIO",AV124 
@@ -686,10 +983,58 @@ http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
 #EXTINF:-1 tvg-id="AV150" tvg-logo="" group-title="MOTOGP",AV 150 - MOTOGP - QATAR GP - FREE [06/11/2026 - 18:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
 
+#EXTINF:-1 tvg-id="AV150" tvg-logo="" group-title="MOTOGP",AV 150 - MOTOGP - QATAR GP - MOTOGP-FREE 2 [07/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
+
+#EXTINF:-1 tvg-id="AV150" tvg-logo="" group-title="MOTOGP",AV 150 - MOTOGP - QATAR GP - MOTOGP-CLASSIFICATION [07/11/2026 - 12:40 CET]
+http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
+
+#EXTINF:-1 tvg-id="AV150" tvg-logo="" group-title="MOTOGP",AV 150 - MOTOGP - QATAR GP - MOTO3-CLASSIFICATION [07/11/2026 - 14:50 CET]
+http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
+
+#EXTINF:-1 tvg-id="AV150" tvg-logo="" group-title="MOTOGP",AV 150 - MOTOGP - QATAR GP - MOTO2-CLASSIFICATION [07/11/2026 - 15:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
+
+#EXTINF:-1 tvg-id="AV150" tvg-logo="" group-title="MOTOGP",AV 150 - MOTOGP - QATAR GP - MOTOGP-SPRINT [07/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
+
+#EXTINF:-1 tvg-id="AV150" tvg-logo="" group-title="MOTOGP",AV 150 - MOTOGP - QATAR GP - MOTO3-RACE [08/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
+
+#EXTINF:-1 tvg-id="AV150" tvg-logo="" group-title="MOTOGP",AV 150 - MOTOGP - QATAR GP - MOTO2-RACE [08/11/2026 - 15:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
+
+#EXTINF:-1 tvg-id="AV150" tvg-logo="" group-title="MOTOGP",AV 150 - MOTOGP - QATAR GP - MOTOGP-RACE [08/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
+
 #EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="MOTOGP",AV 151 - MOTOGP - QATAR GP - FREE 1 [06/11/2026 - 13:45 CET]
 http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
 
 #EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="MOTOGP",AV 151 - MOTOGP - QATAR GP - FREE [06/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
+
+#EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="MOTOGP",AV 151 - MOTOGP - QATAR GP - MOTOGP-FREE 2 [07/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
+
+#EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="MOTOGP",AV 151 - MOTOGP - QATAR GP - MOTOGP-CLASSIFICATION [07/11/2026 - 12:40 CET]
+http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
+
+#EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="MOTOGP",AV 151 - MOTOGP - QATAR GP - MOTO3-CLASSIFICATION [07/11/2026 - 14:50 CET]
+http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
+
+#EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="MOTOGP",AV 151 - MOTOGP - QATAR GP - MOTO2-CLASSIFICATION [07/11/2026 - 15:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
+
+#EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="MOTOGP",AV 151 - MOTOGP - QATAR GP - MOTOGP-SPRINT [07/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
+
+#EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="MOTOGP",AV 151 - MOTOGP - QATAR GP - MOTO3-RACE [08/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
+
+#EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="MOTOGP",AV 151 - MOTOGP - QATAR GP - MOTO2-RACE [08/11/2026 - 15:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
+
+#EXTINF:-1 tvg-id="AV151" tvg-logo="" group-title="MOTOGP",AV 151 - MOTOGP - QATAR GP - MOTOGP-RACE [08/11/2026 - 17:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
 
 #EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="MOTOGP",AV 152 - MOTOGP - QATAR GP - FREE 1 [06/11/2026 - 13:45 CET]
@@ -698,10 +1043,58 @@ http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
 #EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="MOTOGP",AV 152 - MOTOGP - QATAR GP - FREE [06/11/2026 - 18:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
 
+#EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="MOTOGP",AV 152 - MOTOGP - QATAR GP - MOTOGP-FREE 2 [07/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
+
+#EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="MOTOGP",AV 152 - MOTOGP - QATAR GP - MOTOGP-CLASSIFICATION [07/11/2026 - 12:40 CET]
+http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
+
+#EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="MOTOGP",AV 152 - MOTOGP - QATAR GP - MOTO3-CLASSIFICATION [07/11/2026 - 14:50 CET]
+http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
+
+#EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="MOTOGP",AV 152 - MOTOGP - QATAR GP - MOTO2-CLASSIFICATION [07/11/2026 - 15:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
+
+#EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="MOTOGP",AV 152 - MOTOGP - QATAR GP - MOTOGP-SPRINT [07/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
+
+#EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="MOTOGP",AV 152 - MOTOGP - QATAR GP - MOTO3-RACE [08/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
+
+#EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="MOTOGP",AV 152 - MOTOGP - QATAR GP - MOTO2-RACE [08/11/2026 - 15:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
+
+#EXTINF:-1 tvg-id="AV152" tvg-logo="" group-title="MOTOGP",AV 152 - MOTOGP - QATAR GP - MOTOGP-RACE [08/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
+
 #EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="MOTOGP",AV 153 - MOTOGP - QATAR GP - FREE 1 [06/11/2026 - 13:45 CET]
 http://127.0.0.1:6878/ace/getstream?id=218137b5dc6bb17ec3df65019225ceb7ddeb37e6
 
 #EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="MOTOGP",AV 153 - MOTOGP - QATAR GP - FREE [06/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=218137b5dc6bb17ec3df65019225ceb7ddeb37e6
+
+#EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="MOTOGP",AV 153 - MOTOGP - QATAR GP - MOTOGP-FREE 2 [07/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=218137b5dc6bb17ec3df65019225ceb7ddeb37e6
+
+#EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="MOTOGP",AV 153 - MOTOGP - QATAR GP - MOTOGP-CLASSIFICATION [07/11/2026 - 12:40 CET]
+http://127.0.0.1:6878/ace/getstream?id=218137b5dc6bb17ec3df65019225ceb7ddeb37e6
+
+#EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="MOTOGP",AV 153 - MOTOGP - QATAR GP - MOTO3-CLASSIFICATION [07/11/2026 - 14:50 CET]
+http://127.0.0.1:6878/ace/getstream?id=218137b5dc6bb17ec3df65019225ceb7ddeb37e6
+
+#EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="MOTOGP",AV 153 - MOTOGP - QATAR GP - MOTO2-CLASSIFICATION [07/11/2026 - 15:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=218137b5dc6bb17ec3df65019225ceb7ddeb37e6
+
+#EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="MOTOGP",AV 153 - MOTOGP - QATAR GP - MOTOGP-SPRINT [07/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=218137b5dc6bb17ec3df65019225ceb7ddeb37e6
+
+#EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="MOTOGP",AV 153 - MOTOGP - QATAR GP - MOTO3-RACE [08/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=218137b5dc6bb17ec3df65019225ceb7ddeb37e6
+
+#EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="MOTOGP",AV 153 - MOTOGP - QATAR GP - MOTO2-RACE [08/11/2026 - 15:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=218137b5dc6bb17ec3df65019225ceb7ddeb37e6
+
+#EXTINF:-1 tvg-id="AV153" tvg-logo="" group-title="MOTOGP",AV 153 - MOTOGP - QATAR GP - MOTOGP-RACE [08/11/2026 - 17:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=218137b5dc6bb17ec3df65019225ceb7ddeb37e6
 
 #EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="MOTOGP",AV 154 - MOTOGP - QATAR GP - FREE 1 [06/11/2026 - 13:45 CET]
@@ -710,19 +1103,67 @@ http://127.0.0.1:6878/ace/getstream?id=03350f8996d41efb71c3e7a9a777e41d11df702f
 #EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="MOTOGP",AV 154 - MOTOGP - QATAR GP - FREE [06/11/2026 - 18:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=03350f8996d41efb71c3e7a9a777e41d11df702f
 
+#EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="MOTOGP",AV 154 - MOTOGP - QATAR GP - MOTOGP-FREE 2 [07/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=03350f8996d41efb71c3e7a9a777e41d11df702f
+
+#EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="MOTOGP",AV 154 - MOTOGP - QATAR GP - MOTOGP-CLASSIFICATION [07/11/2026 - 12:40 CET]
+http://127.0.0.1:6878/ace/getstream?id=03350f8996d41efb71c3e7a9a777e41d11df702f
+
+#EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="MOTOGP",AV 154 - MOTOGP - QATAR GP - MOTO3-CLASSIFICATION [07/11/2026 - 14:50 CET]
+http://127.0.0.1:6878/ace/getstream?id=03350f8996d41efb71c3e7a9a777e41d11df702f
+
+#EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="MOTOGP",AV 154 - MOTOGP - QATAR GP - MOTO2-CLASSIFICATION [07/11/2026 - 15:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=03350f8996d41efb71c3e7a9a777e41d11df702f
+
+#EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="MOTOGP",AV 154 - MOTOGP - QATAR GP - MOTOGP-SPRINT [07/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=03350f8996d41efb71c3e7a9a777e41d11df702f
+
+#EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="MOTOGP",AV 154 - MOTOGP - QATAR GP - MOTO3-RACE [08/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=03350f8996d41efb71c3e7a9a777e41d11df702f
+
+#EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="MOTOGP",AV 154 - MOTOGP - QATAR GP - MOTO2-RACE [08/11/2026 - 15:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=03350f8996d41efb71c3e7a9a777e41d11df702f
+
+#EXTINF:-1 tvg-id="AV154" tvg-logo="" group-title="MOTOGP",AV 154 - MOTOGP - QATAR GP - MOTOGP-RACE [08/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=03350f8996d41efb71c3e7a9a777e41d11df702f
+
 #EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="MOTOGP",AV 155 - MOTOGP - QATAR GP - FREE 1 [06/11/2026 - 13:45 CET]
 http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
 
 #EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="MOTOGP",AV 155 - MOTOGP - QATAR GP - FREE [06/11/2026 - 18:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
 
-#EXTINF:-1 tvg-id="AV160" tvg-logo="" group-title="BASKETBALL",AV 160 - BASKETBALL - USA NBA - SUNS-MAGIC [06/11/2026 - 03:00 CET]
+#EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="MOTOGP",AV 155 - MOTOGP - QATAR GP - MOTOGP-FREE 2 [07/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
+
+#EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="MOTOGP",AV 155 - MOTOGP - QATAR GP - MOTOGP-CLASSIFICATION [07/11/2026 - 12:40 CET]
+http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
+
+#EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="MOTOGP",AV 155 - MOTOGP - QATAR GP - MOTO3-CLASSIFICATION [07/11/2026 - 14:50 CET]
+http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
+
+#EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="MOTOGP",AV 155 - MOTOGP - QATAR GP - MOTO2-CLASSIFICATION [07/11/2026 - 15:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
+
+#EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="MOTOGP",AV 155 - MOTOGP - QATAR GP - MOTOGP-SPRINT [07/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
+
+#EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="MOTOGP",AV 155 - MOTOGP - QATAR GP - MOTO3-RACE [08/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
+
+#EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="MOTOGP",AV 155 - MOTOGP - QATAR GP - MOTO2-RACE [08/11/2026 - 15:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
+
+#EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="MOTOGP",AV 155 - MOTOGP - QATAR GP - MOTOGP-RACE [08/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
+
+#EXTINF:-1 tvg-id="AV160" tvg-logo="" group-title="VACIO",AV160 
 http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
 
-#EXTINF:-1 tvg-id="AV161" tvg-logo="" group-title="BASKETBALL",AV 161 - BASKETBALL - USA NBA - SUNS-MAGIC [06/11/2026 - 03:00 CET]
+#EXTINF:-1 tvg-id="AV161" tvg-logo="" group-title="VACIO",AV161 
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
 
-#EXTINF:-1 tvg-id="AV162" tvg-logo="" group-title="BASKETBALL",AV 162 - BASKETBALL - USA NBA - SUNS-MAGIC [06/11/2026 - 03:00 CET]
+#EXTINF:-1 tvg-id="AV162" tvg-logo="" group-title="VACIO",AV162 
 http://127.0.0.1:6878/ace/getstream?id=0d8baa9c49a73dc9310adeec38d2c2df03271180
 
 #EXTINF:-1 tvg-id="AV163" tvg-logo="" group-title="VACIO",AV163 
