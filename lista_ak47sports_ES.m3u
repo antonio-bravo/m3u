@@ -1,42 +1,5 @@
 #EXTM3U x-tvg-url=""
 
-#EXTINF:-1 tvg-name="Talleres Cordoba vs Estudiantes LP" tvg-logo="https://pbs.twimg.com/profile_images/2010875735523647488/w5gtN67X_400x400.jpg" group-title="AK47Sports - Eventos España",Talleres Cordoba vs Estudiantes LP
-http://193.47.62.50/hls/HJHJHJAAAAAAQQq.m3u8
-
-#EXTINF:-1 tvg-name="Osasuna vs Athletic Bilbao --- CH 1" tvg-logo="https://pbs.twimg.com/profile_images/2115751976109563904/8xS96H15_400x400.jpg" group-title="AK47Sports - Eventos España",Osasuna vs Athletic Bilbao --- CH 1
-http://193.47.62.50/hls/Z3333AAQQ.m3u8
-
-#EXTINF:-1 tvg-name="Osasuna vs Athletic Bilbao --- CH 2" tvg-logo="https://pbs.twimg.com/profile_images/2115751976109563904/8xS96H15_400x400.jpg" group-title="AK47Sports - Eventos España",Osasuna vs Athletic Bilbao --- CH 2
-https://www.rtmpcdn.com/live/e7798546-8e9b-4414-ae78-74f9711eec74.m3u8
-
-#EXTINF:-1 tvg-name="Leganes vs Albacete" tvg-logo="https://pbs.twimg.com/profile_images/2115751359991472128/NE-p-czZ_400x400.jpg" group-title="AK47Sports - Eventos España",Leganes vs Albacete
-http://193.47.62.50/hls/Z3333A.m3u8
-
-#EXTINF:-1 tvg-name="Cordoba vs Ceuta" tvg-logo="https://pbs.twimg.com/profile_images/2115751359991472128/NE-p-czZ_400x400.jpg" group-title="AK47Sports - Eventos España",Cordoba vs Ceuta
-http://193.47.62.50/hls/Z3333.m3u8
-
-#EXTINF:-1 tvg-name="Eibar W vs Real Sociedad W" tvg-logo="https://pbs.twimg.com/profile_images/2115726006921162752/iZLalX8u_400x400.jpg" group-title="AK47Sports - Eventos España",Eibar W vs Real Sociedad W
-http://193.47.62.50/hls/zazazaAAAA.m3u8
-
-#EXTINF:-1 tvg-name="Espanyol vs Deportivo la Coruna --- CH 1" tvg-logo="https://pbs.twimg.com/profile_images/2115751976109563904/8xS96H15_400x400.jpg" group-title="AK47Sports - Eventos España",Espanyol vs Deportivo la Coruna --- CH 1
-http://193.47.62.44/hls/Z444AAAAAAQQQQ.m3u8
-
-#EXTINF:-1 tvg-name="Espanyol vs Deportivo la Coruna --- CH 2" tvg-logo="https://pbs.twimg.com/profile_images/2115751976109563904/8xS96H15_400x400.jpg" group-title="AK47Sports - Eventos España",Espanyol vs Deportivo la Coruna --- CH 2
-https://www.rtmpcdn.com/live/833cecf8-4032-4fe7-a22c-f0e536d47dc0.m3u8
-
-#EXTINF:-1 tvg-name="Cadiz CF vs Real Oviedo" tvg-logo="https://pbs.twimg.com/profile_images/2115751359991472128/NE-p-czZ_400x400.jpg" group-title="AK47Sports - Eventos España",Cadiz CF vs Real Oviedo
-http://193.47.62.44/hls/Z444AA.m3u8
-
-#EXTINF:-1 tvg-name="Athletic Bilbao W vs Real Madrid W" tvg-logo="https://pbs.twimg.com/profile_images/2115726006921162752/iZLalX8u_400x400.jpg" group-title="AK47Sports - Eventos España",Athletic Bilbao W vs Real Madrid W
-http://193.47.62.44/hls/ATTTAAAAAQ.m3u8
-
-#EXTINF:-1 tvg-name="Malaga vs Racing Santander --- CH 2" tvg-logo="https://pbs.twimg.com/profile_images/2115751976109563904/8xS96H15_400x400.jpg" group-title="AK47Sports - Eventos España",Malaga vs Racing Santander --- CH 2
-https://www.rtmpcdn.com/live/6afad128-bc12-4050-9106-f521241144a6.m3u8
-
-#EXTINF:-1 tvg-name="[DRM] ENG | Ca Osasuna Vs Athletic Club" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4247680_53004_OSN_ATH_FC-Web.png" group-title="AK47Sports - Eventos España",[DRM] ENG | Ca Osasuna Vs Athletic Club
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.drm_legacy=org.w3.clearkey|{"keys":[{"k":"w90bq0xb4bmma8d3ic34w","kid":"0moecxjisfmvdz5qqr8seq","kty":"oct"}],"type":"temporary"}
-#KODIPROP:inputstream.adaptive.drm={"org.w3.clearkey":{"keyids":{"{"keys"":"[{"k":"w90bq0xb4bmma8d3ic34w","kid":"0moecxjisfmvdz5qqr8seq","kty":"oct"}],"type":"temporary"}"}}}
-https://in-mc-flive.fancode.com/mumbai/4247680_english_dash_783_1drmta-di_h264/index.mpd
+#EXTINF:-1 tvg-name="Rosario Central vs Estudiantes Rio Cuarto" tvg-logo="https://pbs.twimg.com/profile_images/2010875735523647488/w5gtN67X_400x400.jpg" group-title="AK47Sports - Eventos España",Rosario Central vs Estudiantes Rio Cuarto
+http://193.47.62.55/hls/TLLLAAAA.m3u8
 
