@@ -281,6 +281,60 @@ async def get_channel_by_id(channel_id: str, request: Request):
     return JSONResponse(res)
 
 
+@app.get("/api/channels/{channel_id}/sources")
+async def get_channel_alternative_sources(channel_id: str):
+    """Devuelve transmisiones y fuentes alternativas disponibles para el mismo canal en otras listas."""
+    target = manager.channels.get(channel_id)
+    if not target:
+        raise HTTPException(status_code=404, detail="Canal no encontrado")
+
+    import re
+    def normalize_name(n: str) -> str:
+        n = (n or "").lower()
+        n = re.sub(r'\(.*?\)|\[.*?\]', '', n)
+        n = re.sub(r'-->.*$', '', n)
+        n = re.sub(r'\b(fhd|hd|sd|4k|uhd|1080p|720p|hevc|raw|link\s*\d+|opcion\s*\d+|stream\s*\d+)\b', '', n)
+        return re.sub(r'[^a-z0-9]', '', n).strip()
+
+    target_norm = normalize_name(target.get("name", ""))
+    target_tvg = (target.get("tvg_id") or "").lower().strip()
+
+    alternatives = []
+    for cid, ch in manager.channels.items():
+        if cid == channel_id:
+            continue
+
+        ch_tvg = (ch.get("tvg_id") or "").lower().strip()
+        ch_norm = normalize_name(ch.get("name", ""))
+
+        matches = False
+        if target_tvg and ch_tvg and target_tvg == ch_tvg:
+            matches = True
+        elif target_norm and len(target_norm) >= 3 and target_norm == ch_norm:
+            matches = True
+
+        if matches:
+            alternatives.append({
+                "id": ch["id"],
+                "name": ch.get("name", "Canal"),
+                "source_name": ch.get("source_name", "M3U"),
+                "source_id": ch.get("source_id", ""),
+                "stream_type": ch.get("stream_type", "hls"),
+                "is_acestream": bool(ch.get("acestream_id")),
+                "group": ch.get("group", "General"),
+                "tvg_logo": ch.get("tvg_logo", "")
+            })
+            if len(alternatives) >= 25:
+                break
+
+    return JSONResponse({
+        "channel_id": channel_id,
+        "current_name": target.get("name"),
+        "total_sources": len(alternatives) + 1,
+        "alternatives": alternatives
+    })
+
+
 @app.get("/api/groups")
 async def get_groups(source_id: Optional[str] = Query(None)):
     groups = manager.get_groups(source_id=source_id)
@@ -644,10 +698,20 @@ async def stream_proxy_segment(request: Request, url: str = Query(...)):
 # Proxy de AceStream (HLS & Direct TS)
 # ---------------------------------------------------------------------------
 @app.get("/ace/manifest/{acestream_id}.m3u8")
-async def stream_ace_manifest(request: Request, acestream_id: str, server_id: Optional[str] = Query(None)):
-    """Proxy de manifiesto HLS generado por el motor AceStream."""
+async def stream_ace_manifest(
+    request: Request,
+    acestream_id: str,
+    server_id: Optional[str] = Query(None),
+    preferred_audio_language: Optional[str] = Query(None)
+):
+    """Proxy de manifiesto HLS generado por el motor AceStream con soporte de idioma de audio."""
     base_url = str(request.base_url).rstrip("/")
-    return await ace_proxy.get_hls_manifest(acestream_id, request_base_url=base_url, server_id=server_id)
+    return await ace_proxy.get_hls_manifest(
+        acestream_id,
+        request_base_url=base_url,
+        server_id=server_id,
+        preferred_audio_language=preferred_audio_language
+    )
 
 
 @app.get("/ace/segment")

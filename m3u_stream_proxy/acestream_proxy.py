@@ -298,12 +298,14 @@ class AceStreamProxy:
         self,
         acestream_id: str,
         request_base_url: str,
-        server_id: Optional[str] = None
+        server_id: Optional[str] = None,
+        preferred_audio_language: Optional[str] = None
     ) -> Response:
         """
         Obtiene el manifiesto HLS desde el motor AceStream y reescribe
         los enlaces de fragmentos para servirlos a través del proxy con soporte CORS.
-        Soporta failover automático entre múltiples servidores si está habilitado.
+        Soporta failover automático entre múltiples servidores si está habilitado y
+        permite forzar idioma de audio preferido (preferred_audio_language).
         """
         servers = self.get_server_list()
         val = self.get_settings_or_url()
@@ -322,8 +324,10 @@ class AceStreamProxy:
                     candidates.append((s_url, s_id, s_name))
 
         last_error = None
+        audio_param = f"&preferred_audio_language={preferred_audio_language}" if preferred_audio_language else ""
+
         for base_url, s_id, s_name in candidates:
-            manifest_url = f"{base_url}/ace/manifest.m3u8?id={acestream_id}"
+            manifest_url = f"{base_url}/ace/manifest.m3u8?id={acestream_id}{audio_param}"
             headers = {
                 "User-Agent": "M3U-Stream-Hub-Proxy/1.0",
                 "Accept": "*/*"
@@ -339,7 +343,7 @@ class AceStreamProxy:
                     # Solicitamos una nueva sesión limpia pasando un sid único basado en timestamp.
                     if r.status_code == 500:
                         logger.info(f"Sesión HLS previa en {s_name} expirada (500). Solicitando nueva sesión limpia...")
-                        fresh_url = f"{base_url}/ace/manifest.m3u8?id={acestream_id}&sid={int(time.time())}"
+                        fresh_url = f"{base_url}/ace/manifest.m3u8?id={acestream_id}&sid={int(time.time())}{audio_param}"
                         r = await client.get(fresh_url, headers=headers)
 
                     if r.status_code != 200:

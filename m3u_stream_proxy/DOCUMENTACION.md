@@ -378,10 +378,12 @@ Además de las listas M3U y la emulación HDHomeRun, el contenedor expone endpoi
 * **Stream MPEG-TS Continuo:** `http://<IP>:8899/live/{channel_id}.ts`
 * **Manifiesto AceStream HLS:** `http://<IP>:8899/ace/manifest/{acestream_id}.m3u8`
 * **Stream AceStream MPEG-TS:** `http://<IP>:8899/ace/stream/{acestream_id}`
+* **Manifiesto AceStream HLS con Idioma Preferido:** `http://<IP>:8899/ace/manifest/{acestream_id}.m3u8?preferred_audio_language=spa`
 
 #### Endpoints de la API REST (para integraciones con Home Assistant o scripts):
 * `GET /health` ➔ Chequeo de salud del contenedor (`status: ok`, canales activos, uptime).
 * `GET /api/channels` ➔ Catálogo paginado con filtros (`?search=`, `?group=`, `?favorites=1`, `?page=1`).
+* `GET /api/channels/{channel_id}/sources` ➔ Devuelve todas las transmisiones y fuentes alternativas encontradas en otras listas para el mismo canal.
 * `GET /api/favorites` ➔ Array JSON con los IDs de todos los canales favoritos.
 * `POST /api/favorites/{channel_id}` ➔ Marca o desmarca un canal como favorito.
 * `GET /api/groups` ➔ Lista de todas las categorías disponibles y conteo de canales.
@@ -394,22 +396,35 @@ Además de las listas M3U y la emulación HDHomeRun, el contenedor expone endpoi
 
 Accede desde tu navegador a `http://<IP_PROXY>:8899`:
 
-1. **Reproductor HLS.js Optimizado:**
-   - Reproducción sin interrupciones tanto de transmisiones HLS remotas como de canales P2P de AceStream.
-   - Modo Picture-in-Picture (PiP) para mantener la ventana flotante.
-2. **Perfiles de Búfer Dinámicos:**
+1. **Picture-in-Picture (PiP) Dual y Multivisión Flotante:**
+   - **PiP Nativo del Navegador:** Botón `🔲 PiP` para desacoplar el video en una ventana flotante del sistema operativo (compatible con Chrome, Firefox, Safari WebKit, Android y macOS).
+   - **Mini-Reproductor In-App Arrastrable:** Ventana flotante integrada en la propia página para ver un segundo canal simultáneamente mientras navegas por la lista de canales.
+   - **Conmutador de Foco de Audio (1-Click Swap):** Botón `🔇 / 🔊 Audio` en la cabecera del PiP para alternar el sonido entre el reproductor principal y el mini-reproductor en 1 clic.
+   - **Intercambio Rápido (`⇄ Swap`):** Pasa al instante el canal que estás viendo en PiP a la pantalla principal y viceversa sin recargar el navegador.
+   - **Botón `🔲` en Tarjetas de Canales:** Lanza cualquier canal de la lista directamente al mini-reproductor PiP sin interrumpir el canal principal.
+
+2. **Selector de Fuentes Alternativas Multi-Proveedor (`📡 N fuentes ▾`):**
+   - Cuando un canal cuenta con múltiples emisiones entre las listas cargadas (ej. enlace directo M3U, stream en AceStream P2P o mirror en DaddyLive), aparece una insignia con el conteo de fuentes.
+   - Al pulsar se despliega el menú con todas las opciones detectadas, permitiendo reproducir la alternativa en el reproductor principal (`▶ Ver`) o abrirla en la ventana flotante (`🔲 PiP`) para comparar señales o ver dos cámaras a la vez.
+
+3. **Selector Inteligente de Pistas de Audio (Multi-audio / Idiomas / Radio):**
+   - Detección automática en tiempo real de pistas de audio alternativas en emisiones **HLS, DASH y AceStream**.
+   - Para canales **AceStream P2P**, permite solicitar idiomas directamente al motor AceStream (`preferred_audio_language=spa|eng`) aunque el manifiesto original sea de rendición única.
+   - Menú interactivo con selector dinámico para cambiar entre diferentes idiomas (Español, Inglés, etc.), comentaristas de radio deportiva o sonido ambiente del estadio sin cortes en la imagen.
+   - Indicador de número de pistas con badges de canales (Stereo 2.0, 5.1 Surround) y monitorización en el HUD de estadísticas.
+
+4. **Perfiles de Búfer Dinámicos:**
    - 🛡️ **Ultra Estable (20s):** Máxima protección contra congelamientos y fluctuaciones de red P2P.
    - ⚡ **Equilibrado (12s):** Configuración estándar recomendada.
    - 🚀 **Baja Latencia (4s):** Reduce el retraso respecto a la emisión en directo.
-3. **Selector Inteligente de Pistas de Audio (Multi-audio / Idiomas / Radio):**
-   - Detección automática en tiempo real de pistas de audio alternativas en emisiones **HLS, DASH y AceStream (MPEG-TS)**.
-   - Menú interactivo con selector dinámico para cambiar entre diferentes idiomas (Español, Inglés, Catalán, etc.), comentaristas de radio deportiva (COPE, SER, Radio Marca) o sonido ambiente del estadio sin cortes en la imagen.
-   - Indicador de número de pistas con badges de canales (Stereo 2.0, 5.1 Surround) y monitorización en el HUD de estadísticas.
-4. **Amplificación de Audio (Web Audio API):**
+
+5. **Amplificación de Audio (Web Audio API):**
    - Para emisiones con volumen de grabación bajo, amplifica la señal al **150%**, **200%** o **300%** sin distorsión.
-5. **Telemetría P2P en Vivo (HUD):**
+
+6. **Telemetría P2P en Vivo (HUD):**
    - Muestra en tiempo real: número de *peers* conectados, velocidad de descarga en KB/s o MB/s, pista de audio activa y calidad de la señal del motor AceStream.
-6. **Escáner de Repositorios GitHub:**
+
+7. **Escáner de Repositorios GitHub:**
    - Introduce cualquier enlace de GitHub (ej. `usuario/repositorio`) para rastrear automáticamente todos los archivos `.m3u` y añadirlos como fuentes sincronizadas periódicamente.
 
 ---

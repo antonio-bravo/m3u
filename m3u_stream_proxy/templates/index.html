@@ -852,6 +852,292 @@
             font-weight: bold;
         }
 
+        /* Fuentes alternativas para el mismo canal */
+        .sources-wrapper {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .pill-sources {
+            background: rgba(168, 85, 247, 0.15) !important;
+            border: 1px solid rgba(168, 85, 247, 0.4) !important;
+            color: #c084fc !important;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+
+        .pill-sources:hover {
+            background: rgba(168, 85, 247, 0.25) !important;
+            border-color: #c084fc !important;
+            box-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .sources-dropdown-menu {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: 0;
+            min-width: 320px;
+            max-width: 440px;
+            max-height: 380px;
+            overflow-y: auto;
+            background: #0f172a;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            box-shadow: 0 14px 34px rgba(0, 0, 0, 0.7), 0 4px 14px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: none;
+            flex-direction: column;
+            animation: fadeIn 0.15s ease-out;
+        }
+
+        .sources-dropdown-menu.is-open {
+            display: flex;
+        }
+
+        .sources-menu-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.04);
+            border-bottom: 1px solid var(--border);
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .sources-menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 9px 12px;
+            gap: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            transition: background 0.15s ease;
+        }
+
+        .sources-menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .sources-menu-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .source-item-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .source-item-name {
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--text-main);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .source-item-meta {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 3px;
+        }
+
+        .source-item-actions {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex-shrink: 0;
+        }
+
+        .source-item-btn {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.73rem;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            font-weight: 500;
+        }
+
+        .source-item-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #fff;
+        }
+
+        .source-item-btn-pip {
+            background: rgba(139, 92, 246, 0.15);
+            border-color: rgba(139, 92, 246, 0.35);
+            color: #c084fc;
+        }
+
+        .source-item-btn-pip:hover {
+            background: #8b5cf6;
+            border-color: #8b5cf6;
+            color: #fff;
+        }
+
+        /* Floating In-App PiP Window (Dual Multiview) */
+        .pip-floating-container {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 380px;
+            height: 250px;
+            background: #0f172a;
+            border: 1px solid rgba(139, 92, 246, 0.45);
+            border-radius: 12px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(139, 92, 246, 0.25);
+            z-index: 99999;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            transition: box-shadow 0.2s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .pip-floating-container.is-active {
+            display: flex;
+        }
+
+        .pip-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px 10px;
+            background: rgba(15, 23, 42, 0.96);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            cursor: move;
+            user-select: none;
+            gap: 8px;
+        }
+
+        .pip-header-left {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            min-width: 0;
+            flex: 1;
+        }
+
+        .pip-header-logo {
+            width: 18px;
+            height: 18px;
+            border-radius: 3px;
+            object-fit: contain;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .pip-header-title {
+            font-size: 0.76rem;
+            font-weight: 600;
+            color: #f1f5f9;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .pip-actions {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex-shrink: 0;
+        }
+
+        .pip-act-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #cbd5e1;
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: 0.72rem;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .pip-act-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .pip-act-btn.active-audio {
+            background: rgba(16, 185, 129, 0.25);
+            border-color: #10b981;
+            color: #34d399;
+            font-weight: 600;
+            box-shadow: 0 0 8px rgba(16, 185, 129, 0.35);
+        }
+
+        .pip-act-btn.btn-close-pip:hover {
+            background: rgba(239, 68, 68, 0.3);
+            border-color: #ef4444;
+            color: #fca5a5;
+        }
+
+        .pip-video-area {
+            position: relative;
+            flex: 1;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .pip-video-area video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #000;
+        }
+
+        .pip-spinner {
+            position: absolute;
+            color: #c084fc;
+            font-size: 0.78rem;
+            background: rgba(0, 0, 0, 0.75);
+            padding: 4px 10px;
+            border-radius: 20px;
+            display: none;
+            pointer-events: none;
+            border: 1px solid rgba(192, 132, 252, 0.3);
+        }
+
+        .channel-card-pip {
+            background: rgba(139, 92, 246, 0.12) !important;
+            color: #c084fc !important;
+            border-color: rgba(139, 92, 246, 0.25) !important;
+        }
+
+        .channel-card-pip:hover {
+            background: rgba(139, 92, 246, 0.3) !important;
+            border-color: #a855f7 !important;
+            transform: scale(1.08);
+        }
+
+        @media (max-width: 600px) {
+            .pip-floating-container {
+                width: calc(100vw - 32px);
+                right: 16px;
+                bottom: 16px;
+                height: 220px;
+            }
+        }
+
         /* Barra de perfiles de búfer y audio */
         .buffer-toolbar {
             display: flex;
@@ -1639,6 +1925,19 @@
                             <span id="current-group" class="pill">General</span>
                             <span id="current-type" class="pill pill-hls">HLS</span>
                             <span id="current-source" class="pill pill-source">M3U</span>
+                            <div class="sources-wrapper" id="channel-sources-wrapper" style="display:none;">
+                                <span id="channel-sources-badge" class="pill pill-sources" onclick="toggleSourcesDropdown(event)"
+                                    title="Ver y cambiar entre fuentes/emisiones alternativas disponibles">📡 1 fuente ▾</span>
+                                <div class="sources-dropdown-menu" id="sources-dropdown-menu">
+                                    <div class="sources-menu-header">
+                                        <span>📡 Fuentes Alternativas</span>
+                                        <span style="cursor:pointer;" onclick="closeSourcesDropdown(event)">✕</span>
+                                    </div>
+                                    <div id="sources-dropdown-list">
+                                        <!-- Rellenado dinámicamente -->
+                                    </div>
+                                </div>
+                            </div>
                             <span id="hud-peers-badge" class="pill pill-peers" style="display:none;"
                                 onclick="toggleHud()" title="Peers conectados en vivo (Clic para abrir HUD)">👥 0
                                 peers</span>
@@ -1683,7 +1982,7 @@
 
                     <button class="btn" id="audio-boost-btn" onclick="cycleAudioBoost()"
                         title="Amplificar volumen del stream">🔊 Vol: 100%</button>
-                    <button class="btn" onclick="togglePiP()" title="Modo PiP flotante">🔲 PiP</button>
+                    <button class="btn" id="main-pip-btn" onclick="handleMainPipToggle()" title="Modo PiP flotante o Multivisión">🔲 PiP</button>
                     <button class="btn btn-danger" id="delete-current-ch-btn" style="display:none;"
                         onclick="deleteCurrentPlayingChannel()" title="Eliminar este canal personalizado">🗑️
                         Eliminar</button>
@@ -1779,6 +2078,25 @@
                 </div>
             </div>
         </aside>
+
+        <!-- In-App Floating PiP Mini-Player (Dual Multiview) -->
+        <div id="pip-floating-container" class="pip-floating-container">
+            <div class="pip-header" id="pip-header">
+                <div class="pip-header-left">
+                    <img id="pip-logo" class="pip-header-logo" src="" alt="PiP" onerror="this.onerror=null;this.src=FALLBACK_SVG;">
+                    <span id="pip-title" class="pip-header-title">Canal en PiP</span>
+                </div>
+                <div class="pip-actions">
+                    <button class="pip-act-btn" id="pip-audio-btn" onclick="togglePipAudioFocus()" title="Conmutar foco de audio (escuchar este canal)">🔇 Audio</button>
+                    <button class="pip-act-btn" onclick="swapPipWithMain()" title="Intercambiar con el reproductor principal">⇄ Swap</button>
+                    <button class="pip-act-btn btn-close-pip" onclick="closePipPlayer()" title="Cerrar mini-reproductor">✕</button>
+                </div>
+            </div>
+            <div class="pip-video-area">
+                <video id="pip-video" playsinline muted></video>
+                <div id="pip-spinner" class="pip-spinner">Cargando...</div>
+            </div>
+        </div>
 
     </main>
 
@@ -2345,6 +2663,15 @@
         let gainNode = null;
         let audioBoostLevel = 1.0;
         let currentAudioTracks = [];
+        let currentAceAudioLang = "";
+        let currentChannelSources = [];
+
+        // Estado PiP / Multivisión Dual
+        let pipHls = null;
+        let pipShaka = null;
+        let pipChannel = null;
+        let pipAudioActive = false; // false = principal activo, true = PiP activo
+
         let bufferCheckInterval = null;
         let currentLoadedChannels = [];
         let activeFilter = {
@@ -2362,6 +2689,7 @@
         window.addEventListener("DOMContentLoaded", async () => {
             initSidebarResizer();
             initTitleWrap();
+            initPipDraggable();
             setupHlsAutoRecovery();
             await loadSettings();
             await loadAceServers();
@@ -2623,6 +2951,30 @@
         function checkHlsAudioTracks(audioTracks) {
             if (!hls) return;
             const tracks = audioTracks || hls.audioTracks || [];
+
+            // Si es un canal AceStream y el stream tiene 1 o menos pistas explícitas en el manifiesto,
+            // ofrecemos selector directo de idiomas al motor AceStream (preferred_audio_language)
+            if (currentChannel && currentChannel.acestream_id && (!tracks || tracks.length <= 1)) {
+                const aceLangs = [
+                    { id: 'spa', name: 'Español (Castellano)', lang: 'spa' },
+                    { id: 'eng', name: 'Inglés (English)', lang: 'eng' },
+                    { id: 'default', name: 'Audio Original del Stream', lang: '' }
+                ];
+                currentAudioTracks = aceLangs.map((al, idx) => ({
+                    id: al.id,
+                    index: idx,
+                    name: al.name,
+                    lang: al.lang,
+                    channels: '',
+                    role: al.id === 'default' ? 'Por defecto' : 'AceStream P2P',
+                    active: (currentAceAudioLang === al.lang),
+                    type: 'acestream_backend',
+                    displayName: al.name
+                }));
+                updateAudioTrackUI();
+                return;
+            }
+
             if (!tracks || tracks.length === 0) return;
 
             const currentTrackId = hls.audioTrack;
@@ -2712,7 +3064,23 @@
             const track = currentAudioTracks[index];
             if (!track) return;
 
-            if (track.type === 'hls' && hls) {
+            if (track.type === 'acestream_backend') {
+                currentAceAudioLang = track.lang;
+                const base = window.location.origin;
+                const targetServerId = currentChannel.acestream_server_id || (activeAceServerId && activeAceServerId !== 'direct' ? activeAceServerId : '');
+                let queryParts = [];
+                if (targetServerId) queryParts.push(`server_id=${encodeURIComponent(targetServerId)}`);
+                if (currentAceAudioLang) queryParts.push(`preferred_audio_language=${encodeURIComponent(currentAceAudioLang)}`);
+                const queryStr = queryParts.length > 0 ? `?${queryParts.join("&")}` : "";
+                const newUrl = `${base}/ace/manifest/${currentChannel.acestream_id}.m3u8${queryStr}`;
+                currentStreamUrl = newUrl;
+                loadStreamInPlayer(newUrl);
+                currentAudioTracks.forEach((t, i) => t.active = (i === index));
+                updateAudioTrackUI();
+                closeAudioTrackMenu();
+                showToast(`🎧 Solicitando audio "${track.displayName}" al motor AceStream...`);
+                return;
+            } else if (track.type === 'hls' && hls) {
                 hls.audioTrack = track.id;
                 currentAudioTracks.forEach((t, i) => t.active = (i === index));
                 updateAudioTrackUI();
@@ -2756,12 +3124,18 @@
             }
         }
 
-        // Cerrar menú al hacer clic fuera
+        // Cerrar menús al hacer clic fuera
         document.addEventListener('click', (e) => {
             const menu = document.getElementById('audio-track-menu');
             const btn = document.getElementById('audio-track-btn');
-            if (menu && menu.classList.contains('is-open') && !menu.contains(e.target) && !btn.contains(e.target)) {
+            if (menu && menu.classList.contains('is-open') && !menu.contains(e.target) && (!btn || !btn.contains(e.target))) {
                 closeAudioTrackMenu();
+            }
+
+            const sourcesMenu = document.getElementById('sources-dropdown-menu');
+            const sourcesBadge = document.getElementById('channel-sources-badge');
+            if (sourcesMenu && sourcesMenu.classList.contains('is-open') && !sourcesMenu.contains(e.target) && (!sourcesBadge || !sourcesBadge.contains(e.target))) {
+                closeSourcesDropdown();
             }
         });
 
@@ -3041,7 +3415,9 @@
             hideDrmWarning();
             resetAudioTrackUI();
             currentChannel = channel;
+            currentAceAudioLang = "";
             updateChannelUI(channel);
+            loadChannelAlternativeSources(channel.id);
 
             let streamUrl = "";
             const base = window.location.origin;
@@ -3049,8 +3425,11 @@
             if (channel.acestream_id) {
                 // Modo AceStream
                 const targetServerId = channel.acestream_server_id || (activeAceServerId && activeAceServerId !== 'direct' ? activeAceServerId : '');
-                const serverParam = targetServerId ? `?server_id=${encodeURIComponent(targetServerId)}` : '';
-                streamUrl = `${base}/ace/manifest/${channel.acestream_id}.m3u8${serverParam}`;
+                let queryParts = [];
+                if (targetServerId) queryParts.push(`server_id=${encodeURIComponent(targetServerId)}`);
+                if (currentAceAudioLang) queryParts.push(`preferred_audio_language=${encodeURIComponent(currentAceAudioLang)}`);
+                const queryStr = queryParts.length > 0 ? `?${queryParts.join("&")}` : "";
+                streamUrl = `${base}/ace/manifest/${channel.acestream_id}.m3u8${queryStr}`;
                 document.getElementById("open-ace-btn").style.display = "inline-flex";
                 startAceStreamStatsMonitor(channel.acestream_id, targetServerId);
                 currentStreamUrl = streamUrl;
@@ -3128,6 +3507,9 @@
                 hls.on(Hls.Events.MANIFEST_PARSED, () => {
                     hideSpinner();
                     checkHlsAudioTracks(hls.audioTracks);
+                    if (currentChannel && currentChannel.acestream_id && (!hls.audioTracks || hls.audioTracks.length <= 1)) {
+                        checkHlsAudioTracks([]);
+                    }
                     const playPromise = video.play();
                     if (playPromise !== undefined) {
                         playPromise.catch(e => {
@@ -3526,6 +3908,7 @@
                             </div>
                         </div>
                         <div class="channel-card-actions">
+                            <button class="channel-card-btn channel-card-pip" onclick="openChannelInPip(event, '${ch.id}')" title="Ver en mini-reproductor PiP (Multivisión)">🔲</button>
                             <button class="channel-card-btn channel-card-copy" onclick="copyChannelLink(event, '${ch.id}')" title="Copiar enlace para otro dispositivo (VLC, Kodi, etc.)">📋</button>
                             <button class="channel-card-btn channel-card-fav ${starClass}" onclick="toggleFavFromCard(event, '${ch.id}')" title="Favorito">⭐</button>
                             ${delBtn}
@@ -3680,11 +4063,375 @@
             copyToClipboard(null, targetUrl, `📋 Enlace de "${name}" copiado para VLC / Kodi`);
         }
 
-        function togglePiP() {
+        // --------------------------------------------------------------------
+        // Picture-in-Picture (PiP) Nativo, In-App y Multivisión Dual
+        // --------------------------------------------------------------------
+        async function handleMainPipToggle() {
+            // 1. Si el PiP nativo del navegador ya está activo, salir
             if (document.pictureInPictureElement) {
-                document.exitPictureInPicture();
-            } else if (video && video.requestPictureInPicture) {
-                video.requestPictureInPicture();
+                try {
+                    await document.exitPictureInPicture();
+                    return;
+                } catch (e) {
+                    console.warn("Error saliendo de PiP nativo:", e);
+                }
+            }
+
+            // 2. Si el navegador soporta PiP nativo en el elemento de video principal
+            if (video && video.requestPictureInPicture && !video.paused) {
+                try {
+                    await video.requestPictureInPicture();
+                    return;
+                } catch (e) {
+                    console.log("PiP nativo no disponible o falló, utilizando mini-reproductor In-App:", e);
+                }
+            } else if (video && video.webkitSetPresentationMode) {
+                try {
+                    video.webkitSetPresentationMode('picture-in-picture');
+                    return;
+                } catch (e) {
+                    console.log("WebKit PiP falló:", e);
+                }
+            }
+
+            // 3. Fallback: Abrir canal actual en el mini-reproductor In-App flotante
+            if (currentChannel) {
+                openChannelInPip(null, currentChannel.id, currentChannel);
+            } else {
+                showToast("Selecciona un canal para activar PiP");
+            }
+        }
+
+        // Compatibilidad con botones que llamaban a togglePiP()
+        function togglePiP() {
+            handleMainPipToggle();
+        }
+
+        async function openChannelInPip(event, channelId, preloadedChannel = null) {
+            if (event) {
+                event.stopPropagation();
+                event.preventDefault();
+            }
+
+            let channel = preloadedChannel;
+            if (!channel && channelId) {
+                try {
+                    const res = await fetch(`/api/channels/${encodeURIComponent(channelId)}`);
+                    if (res.ok) {
+                        channel = await res.json();
+                    }
+                } catch (e) {
+                    console.error("Error cargando canal para PiP:", e);
+                }
+            }
+
+            if (!channel) {
+                showToast("No se pudo cargar el canal para PiP");
+                return;
+            }
+
+            pipChannel = channel;
+            const pipContainer = document.getElementById("pip-floating-container");
+            const pipVideo = document.getElementById("pip-video");
+            const pipTitle = document.getElementById("pip-title");
+            const pipLogo = document.getElementById("pip-logo");
+            const pipSpinner = document.getElementById("pip-spinner");
+
+            if (pipTitle) pipTitle.textContent = channel.name || "Canal en PiP";
+            if (pipLogo) pipLogo.src = channel.tvg_logo || FALLBACK_SVG;
+            if (pipContainer) pipContainer.classList.add("is-active");
+
+            // Limpiar reproductor PiP previo
+            if (pipHls) {
+                pipHls.destroy();
+                pipHls = null;
+            }
+            if (pipShaka) {
+                try { pipShaka.unload(); } catch (e) { }
+                pipShaka = null;
+            }
+
+            if (pipSpinner) pipSpinner.style.display = "block";
+
+            // En silencio por defecto para no interferir con el canal principal
+            if (pipVideo) {
+                pipVideo.muted = !pipAudioActive;
+            }
+            updatePipAudioUI();
+
+            const base = window.location.origin;
+            let streamUrl = "";
+
+            if (channel.acestream_id) {
+                const targetServerId = channel.acestream_server_id || (activeAceServerId && activeAceServerId !== 'direct' ? activeAceServerId : '');
+                const serverParam = targetServerId ? `?server_id=${encodeURIComponent(targetServerId)}` : '';
+                streamUrl = `${base}/ace/manifest/${channel.acestream_id}.m3u8${serverParam}`;
+            } else if (channel.stream_type === "dash" || (channel.url && (channel.url.includes('.mpd') || channel.url.includes('cenc.mpd')))) {
+                streamUrl = channel.url;
+            } else {
+                streamUrl = `${base}/stream/proxy.m3u8?url=${encodeURIComponent(channel.url)}`;
+            }
+
+            const isDash = channel.stream_type === "dash" || (channel.url && (channel.url.includes('.mpd') || channel.url.includes('cenc.mpd')));
+
+            if (isDash && window.shaka) {
+                try {
+                    pipShaka = new shaka.Player(pipVideo);
+                    if (channel.license_key && channel.license_key.includes(":")) {
+                        const [kid, key] = channel.license_key.split(":");
+                        const drmConfig = { clearKeys: {} };
+                        drmConfig.clearKeys[kid.trim()] = key.trim();
+                        pipShaka.configure({ drm: drmConfig });
+                    }
+                    await pipShaka.load(streamUrl);
+                    pipVideo.play().catch(() => {});
+                    if (pipSpinner) pipSpinner.style.display = "none";
+                } catch (e) {
+                    console.error("Error DASH en PiP:", e);
+                    if (pipSpinner) pipSpinner.style.display = "none";
+                    showToast("Error reproduciendo DASH en PiP");
+                }
+            } else if (Hls.isSupported()) {
+                pipHls = new Hls({
+                    enableWorker: true,
+                    lowLatencyMode: false,
+                    maxBufferLength: 10,
+                    maxMaxBufferLength: 20
+                });
+                pipHls.loadSource(streamUrl);
+                pipHls.attachMedia(pipVideo);
+                pipHls.on(Hls.Events.MANIFEST_PARSED, () => {
+                    pipVideo.play().catch(() => {});
+                    if (pipSpinner) pipSpinner.style.display = "none";
+                });
+                pipHls.on(Hls.Events.FRAG_LOADED, () => {
+                    if (pipSpinner) pipSpinner.style.display = "none";
+                });
+                pipHls.on(Hls.Events.ERROR, (evt, data) => {
+                    if (data.fatal) {
+                        if (pipSpinner) pipSpinner.style.display = "none";
+                        showToast("Error de stream en PiP");
+                    }
+                });
+            } else {
+                pipVideo.src = streamUrl;
+                pipVideo.play().catch(() => {});
+                if (pipSpinner) pipSpinner.style.display = "none";
+            }
+
+            showToast(`🔲 Reproduciendo "${channel.name}" en PiP`);
+        }
+
+        function togglePipAudioFocus() {
+            const pipVideo = document.getElementById("pip-video");
+            if (!pipVideo || !video) return;
+
+            pipAudioActive = !pipAudioActive;
+            if (pipAudioActive) {
+                pipVideo.muted = false;
+                video.muted = true;
+                showToast(`🔊 Audio conmutado a: ${pipChannel ? pipChannel.name : 'PiP'}`);
+            } else {
+                pipVideo.muted = true;
+                video.muted = false;
+                showToast(`🔊 Audio conmutado a: ${currentChannel ? currentChannel.name : 'Principal'}`);
+            }
+            updatePipAudioUI();
+        }
+
+        function updatePipAudioUI() {
+            const pipAudioBtn = document.getElementById("pip-audio-btn");
+            if (!pipAudioBtn) return;
+            if (pipAudioActive) {
+                pipAudioBtn.textContent = "🔊 Audio Activo";
+                pipAudioBtn.classList.add("active-audio");
+            } else {
+                pipAudioBtn.textContent = "🔇 En Silencio";
+                pipAudioBtn.classList.remove("active-audio");
+            }
+        }
+
+        function swapPipWithMain() {
+            if (!pipChannel || !currentChannel) {
+                showToast("Se necesitan canales en ambos reproductores para intercambiar");
+                return;
+            }
+            const tempMain = currentChannel;
+            const tempPip = pipChannel;
+
+            playChannel(tempPip);
+            openChannelInPip(null, tempMain.id, tempMain);
+            showToast(`⇄ Intercambiado: ${tempPip.name} en principal, ${tempMain.name} en PiP`);
+        }
+
+        function closePipPlayer() {
+            const pipContainer = document.getElementById("pip-floating-container");
+            const pipVideo = document.getElementById("pip-video");
+            if (pipContainer) pipContainer.classList.remove("is-active");
+
+            if (pipHls) {
+                pipHls.destroy();
+                pipHls = null;
+            }
+            if (pipShaka) {
+                try { pipShaka.unload(); } catch (e) { }
+                pipShaka = null;
+            }
+            if (pipVideo) {
+                pipVideo.pause();
+                pipVideo.removeAttribute("src");
+                pipVideo.load();
+            }
+            pipChannel = null;
+
+            if (pipAudioActive) {
+                pipAudioActive = false;
+                if (video) video.muted = false;
+            }
+            updatePipAudioUI();
+        }
+
+        function initPipDraggable() {
+            const container = document.getElementById("pip-floating-container");
+            const header = document.getElementById("pip-header");
+            if (!container || !header) return;
+
+            let isDragging = false;
+            let startX, startY, origLeft, origTop;
+
+            function onPointerDown(e) {
+                if (e.target.closest(".pip-actions")) return;
+                isDragging = true;
+                const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+                const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+                startX = clientX;
+                startY = clientY;
+
+                const rect = container.getBoundingClientRect();
+                origLeft = rect.left;
+                origTop = rect.top;
+
+                container.style.bottom = "auto";
+                container.style.right = "auto";
+                container.style.left = `${origLeft}px`;
+                container.style.top = `${origTop}px`;
+
+                document.addEventListener("mousemove", onPointerMove);
+                document.addEventListener("mouseup", onPointerUp);
+                document.addEventListener("touchmove", onPointerMove, { passive: false });
+                document.addEventListener("touchend", onPointerUp);
+            }
+
+            function onPointerMove(e) {
+                if (!isDragging) return;
+                if (e.cancelable) e.preventDefault();
+                const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+                const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+                const dx = clientX - startX;
+                const dy = clientY - startY;
+
+                let newX = origLeft + dx;
+                let newY = origTop + dy;
+
+                const maxW = window.innerWidth - container.offsetWidth;
+                const maxH = window.innerHeight - container.offsetHeight;
+                newX = Math.max(10, Math.min(newX, maxW - 10));
+                newY = Math.max(10, Math.min(newY, maxH - 10));
+
+                container.style.left = `${newX}px`;
+                container.style.top = `${newY}px`;
+            }
+
+            function onPointerUp() {
+                isDragging = false;
+                document.removeEventListener("mousemove", onPointerMove);
+                document.removeEventListener("mouseup", onPointerUp);
+                document.removeEventListener("touchmove", onPointerMove);
+                document.removeEventListener("touchend", onPointerUp);
+            }
+
+            header.addEventListener("mousedown", onPointerDown);
+            header.addEventListener("touchstart", onPointerDown, { passive: true });
+        }
+
+        // --------------------------------------------------------------------
+        // Fuentes y Emisiones Alternativas Multi-Proveedor
+        // --------------------------------------------------------------------
+        async function loadChannelAlternativeSources(channelId) {
+            const wrapper = document.getElementById("channel-sources-wrapper");
+            const badge = document.getElementById("channel-sources-badge");
+            const list = document.getElementById("sources-dropdown-list");
+            if (!wrapper || !badge || !list) return;
+
+            wrapper.style.display = "none";
+            list.innerHTML = "";
+            currentChannelSources = [];
+
+            try {
+                const res = await fetch(`/api/channels/${encodeURIComponent(channelId)}/sources`);
+                if (!res.ok) return;
+                const data = await res.json();
+
+                if (data.alternatives && data.alternatives.length > 0) {
+                    currentChannelSources = data.alternatives;
+                    badge.textContent = `📡 ${data.total_sources} fuentes ▾`;
+                    badge.title = `${data.total_sources} fuentes alternativas encontradas en otras listas (Clic para ver/cambiar)`;
+
+                    let html = "";
+                    for (const alt of data.alternatives) {
+                        const typeLabel = alt.is_acestream ? "ACE" : (alt.stream_type === "dash" ? "DASH" : "HLS");
+                        const typeClass = alt.is_acestream ? "tag-ace" : (alt.stream_type === "dash" ? "tag-dash" : "tag-hls");
+                        html += `
+                            <div class="sources-menu-item">
+                                <div class="source-item-info">
+                                    <div class="source-item-name" title="${escapeHtml(alt.name)}">${escapeHtml(alt.name)}</div>
+                                    <div class="source-item-meta">
+                                        <span class="card-type-tag ${typeClass}" style="font-size:0.65rem; padding:1px 5px;">${typeLabel}</span>
+                                        <span>${escapeHtml(alt.source_name || alt.group || 'M3U')}</span>
+                                    </div>
+                                </div>
+                                <div class="source-item-actions">
+                                    <button class="source-item-btn" onclick="switchChannelSource('${alt.id}')" title="Reproducir esta fuente en el reproductor principal">▶ Ver</button>
+                                    <button class="source-item-btn source-item-btn-pip" onclick="openChannelInPip(event, '${alt.id}')" title="Abrir esta fuente en modo PiP flotante (Multivisión)">🔲 PiP</button>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    list.innerHTML = html;
+                    wrapper.style.display = "inline-flex";
+                }
+            } catch (e) {
+                console.warn("Error cargando fuentes alternativas:", e);
+            }
+        }
+
+        async function switchChannelSource(altChannelId) {
+            closeSourcesDropdown();
+            try {
+                const res = await fetch(`/api/channels/${encodeURIComponent(altChannelId)}`);
+                if (res.ok) {
+                    const ch = await res.json();
+                    playChannel(ch);
+                    showToast(`Cambiado a fuente alternativa: ${ch.source_name || ch.name}`);
+                }
+            } catch (e) {
+                console.error("Error cambiando de fuente:", e);
+            }
+        }
+
+        function toggleSourcesDropdown(event) {
+            if (event) event.stopPropagation();
+            const menu = document.getElementById("sources-dropdown-menu");
+            if (menu) {
+                menu.classList.toggle("is-open");
+            }
+        }
+
+        function closeSourcesDropdown(event) {
+            if (event) event.stopPropagation();
+            const menu = document.getElementById("sources-dropdown-menu");
+            if (menu) {
+                menu.classList.remove("is-open");
             }
         }
 
