@@ -1074,12 +1074,81 @@
             color: #fff;
         }
 
+        .pip-act-btn.audio-main {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.12);
+            color: #cbd5e1;
+        }
+
+        .pip-act-btn.audio-pip,
         .pip-act-btn.active-audio {
             background: rgba(16, 185, 129, 0.25);
             border-color: #10b981;
             color: #34d399;
             font-weight: 600;
             box-shadow: 0 0 8px rgba(16, 185, 129, 0.35);
+        }
+
+        .pip-act-btn.audio-both {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.35), rgba(56, 189, 248, 0.35));
+            border-color: #a855f7;
+            color: #f1f5f9;
+            font-weight: 700;
+            box-shadow: 0 0 10px rgba(168, 85, 247, 0.45);
+        }
+
+        .pip-bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 30px;
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(8px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            gap: 8px;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: all 0.2s ease;
+            z-index: 10;
+        }
+
+        .pip-floating-container:hover .pip-bottom-bar,
+        .pip-floating-container:focus-within .pip-bottom-bar {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .pip-vol-label {
+            font-size: 0.68rem;
+            color: #94a3b8;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex-shrink: 0;
+        }
+
+        .pip-vol-range {
+            flex: 1;
+            height: 5px;
+            accent-color: #a855f7;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+
+        .pip-vol-val {
+            font-size: 0.68rem;
+            color: #cbd5e1;
+            font-family: 'JetBrains Mono', monospace;
+            width: 32px;
+            text-align: right;
+            flex-shrink: 0;
         }
 
         .pip-act-btn.btn-close-pip:hover {
@@ -2087,7 +2156,7 @@
                     <span id="pip-title" class="pip-header-title">Canal en PiP</span>
                 </div>
                 <div class="pip-actions">
-                    <button class="pip-act-btn" id="pip-audio-btn" onclick="togglePipAudioFocus()" title="Conmutar foco de audio (escuchar este canal)">🔇 Audio</button>
+                    <button class="pip-act-btn audio-main" id="pip-audio-btn" onclick="cyclePipAudioMode()" title="Cambiar modo de audio: Solo Principal, Solo PiP o Ambos a la vez">🔇 Solo Principal</button>
                     <button class="pip-act-btn" onclick="swapPipWithMain()" title="Intercambiar con el reproductor principal">⇄ Swap</button>
                     <button class="pip-act-btn btn-close-pip" onclick="closePipPlayer()" title="Cerrar mini-reproductor">✕</button>
                 </div>
@@ -2095,6 +2164,11 @@
             <div class="pip-video-area">
                 <video id="pip-video" playsinline muted></video>
                 <div id="pip-spinner" class="pip-spinner">Cargando...</div>
+                <div class="pip-bottom-bar">
+                    <span class="pip-vol-label">🔊 PiP:</span>
+                    <input type="range" class="pip-vol-range" id="pip-volume-slider" min="0" max="1" step="0.05" value="1" oninput="setPipVolume(this.value)" title="Ajustar volumen del canal en PiP">
+                    <span class="pip-vol-val" id="pip-vol-val">100%</span>
+                </div>
             </div>
         </div>
 
@@ -2670,7 +2744,7 @@
         let pipHls = null;
         let pipShaka = null;
         let pipChannel = null;
-        let pipAudioActive = false; // false = principal activo, true = PiP activo
+        let pipAudioMode = "main"; // 'main' = solo principal, 'pip' = solo PiP, 'both' = ambos a la vez (Dual)
 
         let bufferCheckInterval = null;
         let currentLoadedChannels = [];
@@ -4153,9 +4227,18 @@
 
             if (pipSpinner) pipSpinner.style.display = "block";
 
-            // En silencio por defecto para no interferir con el canal principal
+            // Según pipAudioMode, configurar silencio inicial
             if (pipVideo) {
-                pipVideo.muted = !pipAudioActive;
+                if (pipAudioMode === "both") {
+                    pipVideo.muted = false;
+                    if (video) video.muted = false;
+                } else if (pipAudioMode === "pip") {
+                    pipVideo.muted = false;
+                    if (video) video.muted = true;
+                } else {
+                    pipVideo.muted = true;
+                    if (video) video.muted = false;
+                }
             }
             updatePipAudioUI();
 
@@ -4222,32 +4305,72 @@
             showToast(`🔲 Reproduciendo "${channel.name}" en PiP`);
         }
 
-        function togglePipAudioFocus() {
+        function cyclePipAudioMode() {
             const pipVideo = document.getElementById("pip-video");
             if (!pipVideo || !video) return;
 
-            pipAudioActive = !pipAudioActive;
-            if (pipAudioActive) {
-                pipVideo.muted = false;
+            if (pipAudioMode === "main") {
+                pipAudioMode = "pip";
                 video.muted = true;
-                showToast(`🔊 Audio conmutado a: ${pipChannel ? pipChannel.name : 'PiP'}`);
-            } else {
-                pipVideo.muted = true;
+                pipVideo.muted = false;
+                showToast(`🔊 Audio: Solo PiP ("${pipChannel ? pipChannel.name : 'PiP'}")`);
+            } else if (pipAudioMode === "pip") {
+                pipAudioMode = "both";
                 video.muted = false;
-                showToast(`🔊 Audio conmutado a: ${currentChannel ? currentChannel.name : 'Principal'}`);
+                pipVideo.muted = false;
+                showToast(`🎧 Audio Dual: Escuchando AMBOS canales a la vez`);
+            } else {
+                pipAudioMode = "main";
+                video.muted = false;
+                pipVideo.muted = true;
+                showToast(`🔊 Audio: Solo Principal ("${currentChannel ? currentChannel.name : 'Principal'}")`);
             }
             updatePipAudioUI();
+        }
+
+        // Mantener compatibilidad con llamadas a togglePipAudioFocus
+        function togglePipAudioFocus() {
+            cyclePipAudioMode();
+        }
+
+        function setPipVolume(val) {
+            const pipVideo = document.getElementById("pip-video");
+            const textEl = document.getElementById("pip-vol-val");
+            const v = parseFloat(val);
+            if (pipVideo) {
+                pipVideo.volume = v;
+                // Si el volumen se sube y estaba silenciado en modo solo principal, activar modo dual automáticamente
+                if (v > 0 && pipVideo.muted && pipAudioMode === "main") {
+                    pipAudioMode = "both";
+                    pipVideo.muted = false;
+                    video.muted = false;
+                    updatePipAudioUI();
+                    showToast("🎧 Audio Dual: Escuchando ambos canales a la vez");
+                }
+            }
+            if (textEl) {
+                textEl.textContent = `${Math.round(v * 100)}%`;
+            }
         }
 
         function updatePipAudioUI() {
             const pipAudioBtn = document.getElementById("pip-audio-btn");
             if (!pipAudioBtn) return;
-            if (pipAudioActive) {
-                pipAudioBtn.textContent = "🔊 Audio Activo";
-                pipAudioBtn.classList.add("active-audio");
+
+            pipAudioBtn.classList.remove("audio-main", "audio-pip", "audio-both");
+
+            if (pipAudioMode === "both") {
+                pipAudioBtn.textContent = "🎧 Ambos (Dual)";
+                pipAudioBtn.classList.add("audio-both");
+                pipAudioBtn.title = "Modo Dual: escuchando ambos canales a la vez (Clic para volver a Solo Principal)";
+            } else if (pipAudioMode === "pip") {
+                pipAudioBtn.textContent = "🔊 Solo PiP";
+                pipAudioBtn.classList.add("audio-pip");
+                pipAudioBtn.title = "Escuchando solo canal PiP (Clic para escuchar Ambos a la vez)";
             } else {
-                pipAudioBtn.textContent = "🔇 En Silencio";
-                pipAudioBtn.classList.remove("active-audio");
+                pipAudioBtn.textContent = "🔇 Solo Principal";
+                pipAudioBtn.classList.add("audio-main");
+                pipAudioBtn.title = "Escuchando solo canal Principal (Clic para escuchar solo PiP)";
             }
         }
 
@@ -4284,10 +4407,10 @@
             }
             pipChannel = null;
 
-            if (pipAudioActive) {
-                pipAudioActive = false;
+            if (pipAudioMode === "pip") {
                 if (video) video.muted = false;
             }
+            pipAudioMode = "main";
             updatePipAudioUI();
         }
 

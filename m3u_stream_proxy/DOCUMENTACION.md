@@ -399,7 +399,10 @@ Accede desde tu navegador a `http://<IP_PROXY>:8899`:
 1. **Picture-in-Picture (PiP) Dual y Multivisión Flotante:**
    - **PiP Nativo del Navegador:** Botón `🔲 PiP` para desacoplar el video en una ventana flotante del sistema operativo (compatible con Chrome, Firefox, Safari WebKit, Android y macOS).
    - **Mini-Reproductor In-App Arrastrable:** Ventana flotante integrada en la propia página para ver un segundo canal simultáneamente mientras navegas por la lista de canales.
-   - **Conmutador de Foco de Audio (1-Click Swap):** Botón `🔇 / 🔊 Audio` en la cabecera del PiP para alternar el sonido entre el reproductor principal y el mini-reproductor en 1 clic.
+   - **Control de Audio Dual y Mezcla Simultánea:** Botón de 3 estados en la cabecera del PiP:
+     - `🔇 Solo Principal`: Solo suena el reproductor principal.
+     - `🔊 Solo PiP`: Solo suena el mini-reproductor flotante.
+     - `🎧 Ambos (Dual)`: **¡Permite escuchar ambos canales al mismo tiempo!** Incluye una barra de volumen independiente en la base del PiP (aparece al pasar el ratón) para graduar la mezcla (ej. canal principal al 100% y PiP de fondo al 30%).
    - **Intercambio Rápido (`⇄ Swap`):** Pasa al instante el canal que estás viendo en PiP a la pantalla principal y viceversa sin recargar el navegador.
    - **Botón `🔲` en Tarjetas de Canales:** Lanza cualquier canal de la lista directamente al mini-reproductor PiP sin interrumpir el canal principal.
 
