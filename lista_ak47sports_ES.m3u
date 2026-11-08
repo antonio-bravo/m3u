@@ -1,2 +1,30 @@
 #EXTM3U x-tvg-url=""
 
+#EXTINF:-1 tvg-name="Real Sociedad vs Rayo Vallecano --- CH 1" tvg-logo="https://pbs.twimg.com/profile_images/2115751976109563904/8xS96H15_400x400.jpg" group-title="AK47Sports - Eventos España",Real Sociedad vs Rayo Vallecano --- CH 1
+http://193.47.62.44/hls/S666A.m3u8
+
+#EXTINF:-1 tvg-name="Real Sociedad vs Rayo Vallecano --- CH 2" tvg-logo="https://pbs.twimg.com/profile_images/2115751976109563904/8xS96H15_400x400.jpg" group-title="AK47Sports - Eventos España",Real Sociedad vs Rayo Vallecano --- CH 2
+https://www.rtmpcdn.com/live/f572031a-a9a8-4561-8390-1acda6369a19.m3u8
+
+#EXTINF:-1 tvg-name="Girona vs Almeria" tvg-logo="https://pbs.twimg.com/profile_images/2115751359991472128/NE-p-czZ_400x400.jpg" group-title="AK47Sports - Eventos España",Girona vs Almeria
+http://193.47.62.44/hls/S666.m3u8
+
+#EXTINF:-1 tvg-name="Barcelona W vs Madrid CFF W" tvg-logo="https://pbs.twimg.com/profile_images/2115726006921162752/iZLalX8u_400x400.jpg" group-title="AK47Sports - Eventos España",Barcelona W vs Madrid CFF W
+http://193.47.62.44/hls/G555AA.m3u8
+
+#EXTINF:-1 tvg-name="Elche vs Real Betis --- CH 1" tvg-logo="https://pbs.twimg.com/profile_images/2115751976109563904/8xS96H15_400x400.jpg" group-title="AK47Sports - Eventos España",Elche vs Real Betis --- CH 1
+http://193.47.62.44/hls/Q222AA.m3u8
+
+#EXTINF:-1 tvg-name="Elche vs Real Betis --- CH 2" tvg-logo="https://pbs.twimg.com/profile_images/2115751976109563904/8xS96H15_400x400.jpg" group-title="AK47Sports - Eventos España",Elche vs Real Betis --- CH 2
+https://www.rtmpcdn.com/live/f2ca051f-c624-40e6-9096-fe5d6e79793d.m3u8
+
+#EXTINF:-1 tvg-name="[DRM] ENG | Real Sociedad Vs Rayo Vallecano" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4247684_53004_RS_RVL_FC-Web.png" group-title="AK47Sports - Eventos España",[DRM] ENG | Real Sociedad Vs Rayo Vallecano
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.drm_legacy=org.w3.clearkey|{"keys":[{"k":"_rtxx9hpjpdvz4sxizupq","kid":"y2iohtgbql6vbtvsllcqqw","kty":"oct"}],"type":"temporary"}
+#KODIPROP:inputstream.adaptive.drm={"org.w3.clearkey":{"keyids":{"{"keys"":"[{"k":"_rtxx9hpjpdvz4sxizupq","kid":"y2iohtgbql6vbtvsllcqqw","kty":"oct"}],"type":"temporary"}"}}}
+https://in-mc-flive.fancode.com/mumbai/4247684_english_dash_32042_1drmta-di_h264/index.mpd
+
+#EXTINF:-1 tvg-name="ENG | Crystal Palace Women Vs Charlton Athletic F.c Women" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg" group-title="AK47Sports - Eventos España",ENG | Crystal Palace Women Vs Charlton Athletic F.c Women
+https://dai-fancode.pages.dev/mumbai/4250759_english_hls_b773074ee222390_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+
