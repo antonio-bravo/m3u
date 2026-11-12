@@ -1,5 +1,5 @@
 #EXTM3U
-# Arena4Viewer - Actualizado: 2026-11-12 10:56:41
+# Arena4Viewer - Actualizado: 2026-11-12 18:51:32
 # Fuente: https://www.arena4viewer.in
 
 #EXTINF:-1 tvg-id="AV1" tvg-logo="" group-title="VACIO",AV1 
@@ -14,29 +14,26 @@ http://127.0.0.1:6878/ace/getstream?id=7a949c4fcdb7031281a7bb69b2227945854bfb37
 #EXTINF:-1 tvg-id="AV4" tvg-logo="" group-title="VACIO",AV4 
 http://127.0.0.1:6878/ace/getstream?id=1b449fcf682ca2980e91371dd9b76f65f40c8b7a
 
-#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="VACIO",AV5 
+#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="TENNIS",AV 5 - TENNIS - STOCKHOLM TOURNAMENT - FINAL [14/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
+
+#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="TENNIS",AV 5 - TENNIS - ATP FINALS - ROUND ROBIN [15/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
+
+#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="TENNIS",AV 5 - TENNIS - ATP FINALS - ROUND ROBIN [16/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
+
+#EXTINF:-1 tvg-id="AV5" tvg-logo="" group-title="TENNIS",AV 5 - TENNIS - ATP FINALS - ROUND ROBIN [17/11/2026 - 14:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
 
 #EXTINF:-1 tvg-id="AV6" tvg-logo="" group-title="VACIO",AV6 
 http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
-
-#EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="SOCCER",AV 7 - SOCCER - SPANISH CUP - ANAITASUNA-ALAVES [10/11/2026 - 19:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
-
-#EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="SOCCER",AV 7 - SOCCER - SPANISH LEAGUE - TAVERNES-VALENCIA [10/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
 
 #EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="SOCCER",AV 7 - SOCCER - SPANISH CUP - NAVALCARNERO-REAL BETIS [12/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
 
 #EXTINF:-1 tvg-id="AV7" tvg-logo="" group-title="SOCCER",AV 7 - SOCCER - SPANISH CUP - SALAMANCA-CELTA [13/11/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
-
-#EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="SOCCER",AV 8 - SOCCER - SPANISH CUP - ANAITASUNA-ALAVES [10/11/2026 - 19:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
-
-#EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="SOCCER",AV 8 - SOCCER - SPANISH LEAGUE - TAVERNES-VALENCIA [10/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
 
 #EXTINF:-1 tvg-id="AV8" tvg-logo="" group-title="SOCCER",AV 8 - SOCCER - SPANISH CUP - NAVALCARNERO-REAL BETIS [12/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
@@ -71,6 +68,18 @@ http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
 #EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",AV 13 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN QUARTERS [13/11/2026 - 18:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
 
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",AV 13 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN SEMIFINAL [14/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
+
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",AV 13 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN SEMIFINAL [14/11/2026 - 14:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
+
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",AV 13 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN FINAL [15/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
+
+#EXTINF:-1 tvg-id="AV13" tvg-logo="" group-title="PADDLE",AV 13 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN FINAL [15/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
+
 #EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",AV 14 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN QUARTERS [13/11/2026 - 09:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
 
@@ -86,8 +95,17 @@ http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
 #EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",AV 14 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN QUARTERS [13/11/2026 - 18:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
 
-#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="BASKETBALL",AV 15 - BASKETBALL - EUROCUP - SIAULIAI-TENERIFE [11/11/2026 - 17:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",AV 14 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN SEMIFINAL [14/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
+
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",AV 14 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN SEMIFINAL [14/11/2026 - 14:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
+
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",AV 14 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN FINAL [15/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
+
+#EXTINF:-1 tvg-id="AV14" tvg-logo="" group-title="PADDLE",AV 14 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN FINAL [15/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
 
 #EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="BASKETBALL",AV 15 - BASKETBALL - EUROLEAGUE - VALENCIA-BAYERN [12/11/2026 - 20:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
@@ -101,8 +119,14 @@ http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 #EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="SOCCER",AV 15 - SOCCER - FRIENDLY MATCH - ARGENTINA-URUGUAY [14/11/2026 - 00:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 
-#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="BASKETBALL",AV 16 - BASKETBALL - EUROCUP - SIAULIAI-TENERIFE [11/11/2026 - 17:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="PADDLE",AV 15 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN SEMIFINAL [14/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
+
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="PADDLE",AV 15 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN FINAL [15/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
+
+#EXTINF:-1 tvg-id="AV15" tvg-logo="" group-title="PADDLE",AV 15 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN FINAL [15/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 
 #EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="BASKETBALL",AV 16 - BASKETBALL - EUROLEAGUE - VALENCIA-BAYERN [12/11/2026 - 20:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
@@ -116,17 +140,86 @@ http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 #EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="SOCCER",AV 16 - SOCCER - FRIENDLY MATCH - ARGENTINA-URUGUAY [14/11/2026 - 00:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 
-#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="VACIO",AV17 
-http://127.0.0.1:6878/ace/getstream?id=4756343043f30011fa304c6635bfe36fd3429da9
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="PADDLE",AV 16 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN SEMIFINAL [14/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 
-#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="VACIO",AV18 
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="PADDLE",AV 16 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN FINAL [15/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
+
+#EXTINF:-1 tvg-id="AV16" tvg-logo="" group-title="PADDLE",AV 16 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN FINAL [15/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
+
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SOCCER (W)",AV 17 - SOCCER (W) - SPANISH LEAGUE - ESPANYOL-TENERIFE [14/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=43572587b8e9fd112d43b66a36f8ab2c591d87d1
+
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SOCCER (W)",AV 17 - SOCCER (W) - SPANISH LEAGUE - ALAVES-EIBAR [14/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=43572587b8e9fd112d43b66a36f8ab2c591d87d1
+
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SOCCER (W)",AV 17 - SOCCER (W) - SPANISH LEAGUE - REAL MADRID-BADALONA [14/11/2026 - 20:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=43572587b8e9fd112d43b66a36f8ab2c591d87d1
+
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SOCCER (W)",AV 17 - SOCCER (W) - SPANISH LEAGUE - REAL SOCIEDAD-AHTLETIC CLUB [15/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=43572587b8e9fd112d43b66a36f8ab2c591d87d1
+
+#EXTINF:-1 tvg-id="AV17" tvg-logo="" group-title="SOCCER (W)",AV 17 - SOCCER (W) - SPANISH LEAGUE - DEPORTIVO ABANCA-BARCELONA [15/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=43572587b8e9fd112d43b66a36f8ab2c591d87d1
+
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SOCCER (W)",AV 18 - SOCCER (W) - SPANISH LEAGUE - ESPANYOL-TENERIFE [14/11/2026 - 12:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
 
-#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="VACIO",AV19 
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SOCCER (W)",AV 18 - SOCCER (W) - SPANISH LEAGUE - ALAVES-EIBAR [14/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
+
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SOCCER (W)",AV 18 - SOCCER (W) - SPANISH LEAGUE - REAL MADRID-BADALONA [14/11/2026 - 20:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
+
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SOCCER (W)",AV 18 - SOCCER (W) - SPANISH LEAGUE - REAL SOCIEDAD-AHTLETIC CLUB [15/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
+
+#EXTINF:-1 tvg-id="AV18" tvg-logo="" group-title="SOCCER (W)",AV 18 - SOCCER (W) - SPANISH LEAGUE - DEPORTIVO ABANCA-BARCELONA [15/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="BOXING",AV 19 - BOXING - BOXING EVENT - RILEY-COUPE [14/11/2026 - 20:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
 
-#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="VACIO",AV20 
-http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="BOXING",AV 19 - BOXING - BOXING EVENT - PACHECO-FULGHUM [15/11/2026 - 02:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="SOCCER (W)",AV 19 - SOCCER (W) - SPANISH LEAGUE - MADRID CFF-LOGROÑO [15/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="SOCCER (W)",AV 19 - SOCCER (W) - SPANISH LEAGUE - SEVILLA-ATLETICO DE MADRID [15/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="SOCCER (W)",AV 19 - SOCCER (W) - SPANISH LEAGUE - VALENCIA-GRANADA [15/11/2026 - 18:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="FOOTBALL",AV 19 - FOOTBALL - USA NFL - BENGALS-STEELERS [16/11/2026 - 02:20 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV19" tvg-logo="" group-title="FOOTBALL",AV 19 - FOOTBALL - USA NFL - RAVENS-CHARGERS [17/11/2026 - 02:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="BOXING",AV 20 - BOXING - BOXING EVENT - RILEY-COUPE [14/11/2026 - 20:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="BOXING",AV 20 - BOXING - BOXING EVENT - PACHECO-FULGHUM [15/11/2026 - 02:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="SOCCER (W)",AV 20 - SOCCER (W) - SPANISH LEAGUE - MADRID CFF-LOGROÑO [15/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="SOCCER (W)",AV 20 - SOCCER (W) - SPANISH LEAGUE - SEVILLA-ATLETICO DE MADRID [15/11/2026 - 16:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="SOCCER (W)",AV 20 - SOCCER (W) - SPANISH LEAGUE - VALENCIA-GRANADA [15/11/2026 - 18:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="FOOTBALL",AV 20 - FOOTBALL - USA NFL - BENGALS-STEELERS [16/11/2026 - 02:20 CET]
+http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
+
+#EXTINF:-1 tvg-id="AV20" tvg-logo="" group-title="FOOTBALL",AV 20 - FOOTBALL - USA NFL - RAVENS-CHARGERS [17/11/2026 - 02:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
 
 #EXTINF:-1 tvg-id="AV21" tvg-logo="" group-title="VACIO",AV21 
 http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
@@ -161,17 +254,23 @@ http://127.0.0.1:6878/ace/getstream?id=7bd9d072b65919352bda907b472961641e6e2930
 #EXTINF:-1 tvg-id="AV31" tvg-logo="" group-title="VACIO",AV31 
 http://127.0.0.1:6878/ace/getstream?id=7a8c26ece4d1ce106225a2bc66260f6a5b9be913
 
-#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="HANDBALL",AV 32 - HANDBALL - SPANISH LEAGUE - BARCELONA-CIUDAD REAL [10/11/2026 - 19:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=ca185612d5b5b6e863a16fc0177e8a6db1d1d3c2
+#EXTINF:-1 tvg-id="AV32" tvg-logo="" group-title="VACIO",AV32 
+http://127.0.0.1:6878/ace/getstream?id=3b2bd7daedec3ef9fb72de78ea05b58a26fd452b
 
-#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="HANDBALL",AV 33 - HANDBALL - SPANISH LEAGUE - BARCELONA-CIUDAD REAL [10/11/2026 - 19:00 CET]
+#EXTINF:-1 tvg-id="AV33" tvg-logo="" group-title="VACIO",AV33 
 http://127.0.0.1:6878/ace/getstream?id=818735480ae40a4207ece5153ef9a3e798cef7aa
 
 #EXTINF:-1 tvg-id="AV34" tvg-logo="" group-title="HANDBALL",AV 34 - HANDBALL - SPANISH LEAGUE - BARCELONA-SEVILLA [13/11/2026 - 20:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=dcc3be2e16b61b10557d8a7e954c5496ba5e4b60
 
+#EXTINF:-1 tvg-id="AV34" tvg-logo="" group-title="HANDBALL",AV 34 - HANDBALL - SPANISH LEAGUE - LOGROÑO-GRANOLLERS [14/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=dcc3be2e16b61b10557d8a7e954c5496ba5e4b60
+
 #EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="HANDBALL",AV 35 - HANDBALL - SPANISH LEAGUE - BARCELONA-SEVILLA [13/11/2026 - 20:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=ce85dfd81162036f5d113343332e523ca94ce825
+http://127.0.0.1:6878/ace/getstream?id=f23811d7cebed9847ae7497bb082c1052d11b0b1
+
+#EXTINF:-1 tvg-id="AV35" tvg-logo="" group-title="HANDBALL",AV 35 - HANDBALL - SPANISH LEAGUE - LOGROÑO-GRANOLLERS [14/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=f23811d7cebed9847ae7497bb082c1052d11b0b1
 
 #EXTINF:-1 tvg-id="AV36" tvg-logo="" group-title="VACIO",AV36 
 http://127.0.0.1:6878/ace/getstream?id=231a1698890b6d930fc678ce8189bc7034ea2cda
@@ -200,7 +299,16 @@ http://127.0.0.1:6878/ace/getstream?id=09e4b75e26a663329264fc386e0193bd3a7b0071
 #EXTINF:-1 tvg-id="AV44" tvg-logo="" group-title="VACIO",AV44 
 http://127.0.0.1:6878/ace/getstream?id=92fbff88dddba7ed9c86dfb87e59652ec6e1d40a
 
-#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="VACIO",AV45 
+#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="TENNIS",AV 45 - TENNIS - STOCKHOLM TOURNAMENT - FINAL [14/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
+
+#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="TENNIS",AV 45 - TENNIS - ATP FINALS - ROUND ROBIN [15/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
+
+#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="TENNIS",AV 45 - TENNIS - ATP FINALS - ROUND ROBIN [16/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
+
+#EXTINF:-1 tvg-id="AV45" tvg-logo="" group-title="TENNIS",AV 45 - TENNIS - ATP FINALS - ROUND ROBIN [17/11/2026 - 14:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
 
 #EXTINF:-1 tvg-id="AV46" tvg-logo="" group-title="PADDLE",AV 46 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN QUARTERS [13/11/2026 - 09:00 CET]
@@ -210,6 +318,9 @@ http://127.0.0.1:6878/ace/getstream?id=239fc67555e053a344d0259560ae23c37a96e64b
 http://127.0.0.1:6878/ace/getstream?id=239fc67555e053a344d0259560ae23c37a96e64b
 
 #EXTINF:-1 tvg-id="AV46" tvg-logo="" group-title="PADDLE",AV 46 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN QUARTERS [13/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=239fc67555e053a344d0259560ae23c37a96e64b
+
+#EXTINF:-1 tvg-id="AV46" tvg-logo="" group-title="RUGBY",AV 46 - RUGBY - NATIONS CHAMPIONSHIP - SCOTLAND-AUSTRALIA [15/11/2026 - 16:10 CET]
 http://127.0.0.1:6878/ace/getstream?id=239fc67555e053a344d0259560ae23c37a96e64b
 
 #EXTINF:-1 tvg-id="AV47" tvg-logo="" group-title="VACIO",AV47 
@@ -222,7 +333,7 @@ http://127.0.0.1:6878/ace/getstream?id=bfcc1ccd2ce52dd947731a8d8fc9de85d5dbe4c3
 http://127.0.0.1:6878/ace/getstream?id=cb389520f92a6ec25a14e9887103fb7463c0ced4
 
 #EXTINF:-1 tvg-id="AV50" tvg-logo="" group-title="VACIO",AV50 
-http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
+http://127.0.0.1:6878/ace/getstream?id=cc1e589254acacb246733233397d50e3ab3591a7
 
 #EXTINF:-1 tvg-id="AV51" tvg-logo="" group-title="VACIO",AV51 
 http://127.0.0.1:6878/ace/getstream?id=4236714aa65e854f90bb6b710369bfb6e862cb23
@@ -231,12 +342,21 @@ http://127.0.0.1:6878/ace/getstream?id=4236714aa65e854f90bb6b710369bfb6e862cb23
 http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
 
 #EXTINF:-1 tvg-id="AV53" tvg-logo="" group-title="VACIO",AV53 
-http://127.0.0.1:6878/ace/getstream?id=f8cc362318bc6b667dd6ba90969e3b34675c9a85
+http://127.0.0.1:6878/ace/getstream?id=ba499561ddbfa192bc37fe84808ac72e155ec7d5
 
 #EXTINF:-1 tvg-id="AV54" tvg-logo="" group-title="VACIO",AV54 
 http://127.0.0.1:6878/ace/getstream?id=dc149729d6b4be6ae8199eae450611d1d06e5149
 
-#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="VACIO",AV55 
+#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="TENNIS",AV 55 - TENNIS - STOCKHOLM TOURNAMENT - FINAL [14/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=d06ea95ca6e1ed2df8f12346ff2d42306ec21408
+
+#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="TENNIS",AV 55 - TENNIS - ATP FINALS - ROUND ROBIN [15/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=d06ea95ca6e1ed2df8f12346ff2d42306ec21408
+
+#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="TENNIS",AV 55 - TENNIS - ATP FINALS - ROUND ROBIN [16/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=d06ea95ca6e1ed2df8f12346ff2d42306ec21408
+
+#EXTINF:-1 tvg-id="AV55" tvg-logo="" group-title="TENNIS",AV 55 - TENNIS - ATP FINALS - ROUND ROBIN [17/11/2026 - 14:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=d06ea95ca6e1ed2df8f12346ff2d42306ec21408
 
 #EXTINF:-1 tvg-id="AV56" tvg-logo="" group-title="PADDLE",AV 56 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN QUARTERS [13/11/2026 - 09:00 CET]
@@ -246,6 +366,9 @@ http://127.0.0.1:6878/ace/getstream?id=335b8e8849b99763fe51b7aecef2338ffb8d0101
 http://127.0.0.1:6878/ace/getstream?id=335b8e8849b99763fe51b7aecef2338ffb8d0101
 
 #EXTINF:-1 tvg-id="AV56" tvg-logo="" group-title="PADDLE",AV 56 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN QUARTERS [13/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=335b8e8849b99763fe51b7aecef2338ffb8d0101
+
+#EXTINF:-1 tvg-id="AV56" tvg-logo="" group-title="RUGBY",AV 56 - RUGBY - NATIONS CHAMPIONSHIP - SCOTLAND-AUSTRALIA [15/11/2026 - 16:10 CET]
 http://127.0.0.1:6878/ace/getstream?id=335b8e8849b99763fe51b7aecef2338ffb8d0101
 
 #EXTINF:-1 tvg-id="AV57" tvg-logo="" group-title="VACIO",AV57 
@@ -284,10 +407,58 @@ http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
 #EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - NASTIC TARRAGONA-RM CASTILLA [13/11/2026 - 21:15 CET]
 http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
 
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - BILBAO AHTLETIC-RACING FERROL [14/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - REAL UNION-CULTURAL LEONESA [14/11/2026 - 16:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - HERCULES-VILLARREAL B [14/11/2026 - 18:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - REAL JAEN-REAL ZARAGOZA [14/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - EXTREMADURA-PONTEVEDRA [15/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - ZAMORA-REAL AVILES [15/11/2026 - 14:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - LUGO-MIRANDES [15/11/2026 - 16:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
+#EXTINF:-1 tvg-id="AV67" tvg-logo="" group-title="SOCCER",AV 67 - SOCCER - 1ST REF - REAL MURCIA-ALCORCON [15/11/2026 - 18:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+
 #EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - PONFERRADINA-CACEREÑO [13/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 
 #EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - NASTIC TARRAGONA-RM CASTILLA [13/11/2026 - 21:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - BILBAO AHTLETIC-RACING FERROL [14/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - REAL UNION-CULTURAL LEONESA [14/11/2026 - 16:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - HERCULES-VILLARREAL B [14/11/2026 - 18:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - REAL JAEN-REAL ZARAGOZA [14/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - EXTREMADURA-PONTEVEDRA [15/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - ZAMORA-REAL AVILES [15/11/2026 - 14:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - LUGO-MIRANDES [15/11/2026 - 16:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+
+#EXTINF:-1 tvg-id="AV68" tvg-logo="" group-title="SOCCER",AV 68 - SOCCER - 1ST REF - REAL MURCIA-ALCORCON [15/11/2026 - 18:45 CET]
 http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 
 #EXTINF:-1 tvg-id="AV69" tvg-logo="" group-title="VACIO",AV69 
@@ -308,6 +479,18 @@ http://127.0.0.1:6878/ace/getstream?id=63307e32e9cbf51e7ca610f9fac0b9910217ea49
 #EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",AV 70 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN QUARTERS [13/11/2026 - 18:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=63307e32e9cbf51e7ca610f9fac0b9910217ea49
 
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",AV 70 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN SEMIFINAL [14/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=63307e32e9cbf51e7ca610f9fac0b9910217ea49
+
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",AV 70 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN SEMIFINAL [14/11/2026 - 14:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=63307e32e9cbf51e7ca610f9fac0b9910217ea49
+
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",AV 70 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN FINAL [15/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=63307e32e9cbf51e7ca610f9fac0b9910217ea49
+
+#EXTINF:-1 tvg-id="AV70" tvg-logo="" group-title="PADDLE",AV 70 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN FINAL [15/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=63307e32e9cbf51e7ca610f9fac0b9910217ea49
+
 #EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",AV 71 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN QUARTERS [13/11/2026 - 09:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
 
@@ -323,8 +506,17 @@ http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
 #EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",AV 71 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN QUARTERS [13/11/2026 - 18:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
 
-#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="BASKETBALL",AV 72 - BASKETBALL - EUROCUP - SIAULIAI-TENERIFE [11/11/2026 - 17:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",AV 71 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN SEMIFINAL [14/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
+
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",AV 71 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN SEMIFINAL [14/11/2026 - 14:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
+
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",AV 71 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN FINAL [15/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
+
+#EXTINF:-1 tvg-id="AV71" tvg-logo="" group-title="PADDLE",AV 71 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN FINAL [15/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
 
 #EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="BASKETBALL",AV 72 - BASKETBALL - EUROLEAGUE - VALENCIA-BAYERN [12/11/2026 - 20:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
@@ -338,8 +530,14 @@ http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
 #EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="SOCCER",AV 72 - SOCCER - FRIENDLY MATCH - ARGENTINA-URUGUAY [14/11/2026 - 00:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
 
-#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="BASKETBALL",AV 73 - BASKETBALL - EUROCUP - SIAULIAI-TENERIFE [11/11/2026 - 17:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="PADDLE",AV 72 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN SEMIFINAL [14/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
+
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="PADDLE",AV 72 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN FINAL [15/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
+
+#EXTINF:-1 tvg-id="AV72" tvg-logo="" group-title="PADDLE",AV 72 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN FINAL [15/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=64cc8ad0e9e37b978004996d334b6eb0db521a5d
 
 #EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="BASKETBALL",AV 73 - BASKETBALL - EUROLEAGUE - VALENCIA-BAYERN [12/11/2026 - 20:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
@@ -351,6 +549,15 @@ http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
 http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
 
 #EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="SOCCER",AV 73 - SOCCER - FRIENDLY MATCH - ARGENTINA-URUGUAY [14/11/2026 - 00:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
+
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="PADDLE",AV 73 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN SEMIFINAL [14/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
+
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="PADDLE",AV 73 - PADDLE - PREMIER PADDLE - DUBAI OPEN-WOMEN FINAL [15/11/2026 - 15:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
+
+#EXTINF:-1 tvg-id="AV73" tvg-logo="" group-title="PADDLE",AV 73 - PADDLE - PREMIER PADDLE - DUBAI OPEN-MEN FINAL [15/11/2026 - 17:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
 
 #EXTINF:-1 tvg-id="AV74" tvg-logo="" group-title="VACIO",AV74 
@@ -389,35 +596,77 @@ http://127.0.0.1:6878/ace/getstream?id=4ef8d5f781b709d479cfc3961de9c92f0f0dcb0c
 #EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - LEGANES-BURGOS [13/11/2026 - 20:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
 
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - REAL VALLADOLID-CASTELLON [14/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - REAL SOCIEDAD B-SPORTING GIJON [14/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - ALMERIA-ANDORRA [14/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - REAL OVIEDO-GIRONA [14/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - TENERIFE-CEUTA [15/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - GRANADA-LAS PALMAS [15/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - EIBAR-CADIZ [15/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
+#EXTINF:-1 tvg-id="AV85" tvg-logo="" group-title="SOCCER",AV 85 - SOCCER - SPANISH LEAGUE 2 - ALBACETE-CELTA B [16/11/2026 - 20:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+
 #EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - LEGANES-BURGOS [13/11/2026 - 20:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
 
-#EXTINF:-1 tvg-id="AV87" tvg-logo="" group-title="VACIO",AV87 
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - REAL VALLADOLID-CASTELLON [14/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - REAL SOCIEDAD B-SPORTING GIJON [14/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - ALMERIA-ANDORRA [14/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - REAL OVIEDO-GIRONA [14/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - TENERIFE-CEUTA [15/11/2026 - 14:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - GRANADA-LAS PALMAS [15/11/2026 - 16:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - EIBAR-CADIZ [15/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV86" tvg-logo="" group-title="SOCCER",AV 86 - SOCCER - SPANISH LEAGUE 2 - ALBACETE-CELTA B [16/11/2026 - 20:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+
+#EXTINF:-1 tvg-id="AV87" tvg-logo="" group-title="SOCCER",AV 87 - SOCCER - SPANISH LEAGUE 2 - MALLORCA-CORDOBA [14/11/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=e3138f1a8f174892b7b7f3af6daf7ee3a15888c6
 
-#EXTINF:-1 tvg-id="AV88" tvg-logo="" group-title="VACIO",AV88 
+#EXTINF:-1 tvg-id="AV87" tvg-logo="" group-title="SOCCER",AV 87 - SOCCER - SPANISH LEAGUE 2 - ELDENSE-SABADELL [15/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=e3138f1a8f174892b7b7f3af6daf7ee3a15888c6
+
+#EXTINF:-1 tvg-id="AV88" tvg-logo="" group-title="SOCCER",AV 88 - SOCCER - SPANISH LEAGUE 2 - MALLORCA-CORDOBA [14/11/2026 - 18:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=bf511b771c3f2e3cc81fbf9d6c70935fc6eb5fdb
+
+#EXTINF:-1 tvg-id="AV88" tvg-logo="" group-title="SOCCER",AV 88 - SOCCER - SPANISH LEAGUE 2 - ELDENSE-SABADELL [15/11/2026 - 18:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=bf511b771c3f2e3cc81fbf9d6c70935fc6eb5fdb
 
 #EXTINF:-1 tvg-id="AV89" tvg-logo="" group-title="VACIO",AV89 
 http://127.0.0.1:6878/ace/getstream?id=5bf898b0ffc2ca662b898a424a988a922ab88abd
-
-#EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="SOCCER",AV 90 - SOCCER - SPANISH CUP - ANAITASUNA-ALAVES [10/11/2026 - 19:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
-
-#EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="SOCCER",AV 90 - SOCCER - SPANISH LEAGUE - TAVERNES-VALENCIA [10/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 
 #EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="SOCCER",AV 90 - SOCCER - SPANISH CUP - NAVALCARNERO-REAL BETIS [12/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 
 #EXTINF:-1 tvg-id="AV90" tvg-logo="" group-title="SOCCER",AV 90 - SOCCER - SPANISH CUP - SALAMANCA-CELTA [13/11/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
-
-#EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="SOCCER",AV 91 - SOCCER - SPANISH CUP - ANAITASUNA-ALAVES [10/11/2026 - 19:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
-
-#EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="SOCCER",AV 91 - SOCCER - SPANISH LEAGUE - TAVERNES-VALENCIA [10/11/2026 - 21:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
 
 #EXTINF:-1 tvg-id="AV91" tvg-logo="" group-title="SOCCER",AV 91 - SOCCER - SPANISH CUP - NAVALCARNERO-REAL BETIS [12/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
@@ -435,15 +684,18 @@ http://127.0.0.1:6878/ace/getstream?id=f65cb972f42c09fa89fb3eb6c3a11a8cfb339d41
 http://127.0.0.1:6878/ace/getstream?id=56ef80b811b65df74edae1f2a23805c45600caad
 
 #EXTINF:-1 tvg-id="AV95" tvg-logo="" group-title="VACIO",AV95 
-http://127.0.0.1:6878/ace/getstream?id=e2a49cf36681e4b44a01e9561518a285c0ea1d8d
+http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
 
 #EXTINF:-1 tvg-id="AV96" tvg-logo="" group-title="VACIO",AV96 
-http://127.0.0.1:6878/ace/getstream?id=9abec634bfed7cf5d481abbc1575ef1972026498
+http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
 
 #EXTINF:-1 tvg-id="AV97" tvg-logo="" group-title="SOCCER",AV 97 - SOCCER - UEFA NATIONS LEAGUE - CZECH REPUBLIC-SPAIN [12/11/2026 - 20:45 CET]
 http://127.0.0.1:6878/ace/getstream?id=4ce1d784cf9b1fda3f73a5a1eedcd342b952bc29
 
 #EXTINF:-1 tvg-id="AV97" tvg-logo="" group-title="SOCCER",AV 97 - SOCCER - UEFA NATIONS LEAGUE - SERBIA-GERMANY [13/11/2026 - 20:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=4ce1d784cf9b1fda3f73a5a1eedcd342b952bc29
+
+#EXTINF:-1 tvg-id="AV97" tvg-logo="" group-title="SOCCER",AV 97 - SOCCER - UEFA NATIONS LEAGUE - SPAIN-ENGLAND [15/11/2026 - 20:45 CET]
 http://127.0.0.1:6878/ace/getstream?id=4ce1d784cf9b1fda3f73a5a1eedcd342b952bc29
 
 #EXTINF:-1 tvg-id="AV98" tvg-logo="" group-title="SOCCER",AV 98 - SOCCER - UEFA NATIONS LEAGUE - CZECH REPUBLIC-SPAIN [12/11/2026 - 20:45 CET]
@@ -452,10 +704,19 @@ http://127.0.0.1:6878/ace/getstream?id=02622fa2fab63847d88dc14fd9fa5c2fc35de8a8
 #EXTINF:-1 tvg-id="AV98" tvg-logo="" group-title="SOCCER",AV 98 - SOCCER - UEFA NATIONS LEAGUE - SERBIA-GERMANY [13/11/2026 - 20:45 CET]
 http://127.0.0.1:6878/ace/getstream?id=02622fa2fab63847d88dc14fd9fa5c2fc35de8a8
 
+#EXTINF:-1 tvg-id="AV98" tvg-logo="" group-title="SOCCER",AV 98 - SOCCER - UEFA NATIONS LEAGUE - SPAIN-ENGLAND [15/11/2026 - 20:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=02622fa2fab63847d88dc14fd9fa5c2fc35de8a8
+
 #EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="SOCCER",AV 99 - SOCCER - SPANISH CUP - NAVALCARNERO-REAL BETIS [12/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=0b05fa66cfd62f9d4f686ff42f0c52ff3196a9fa
 
 #EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="BASKETBALL",AV 99 - BASKETBALL - EUROLEAGUE - PANATHINAIKOS-BARCELONA [13/11/2026 - 20:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=0b05fa66cfd62f9d4f686ff42f0c52ff3196a9fa
+
+#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="BASKETBALL",AV 99 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-ZARAGOZA [14/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0b05fa66cfd62f9d4f686ff42f0c52ff3196a9fa
+
+#EXTINF:-1 tvg-id="AV99" tvg-logo="" group-title="BASKETBALL",AV 99 - BASKETBALL - SPANISH LEAGUE - BASKONIA-REAL MADRID [15/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=0b05fa66cfd62f9d4f686ff42f0c52ff3196a9fa
 
 #EXTINF:-1 tvg-id="AV100" tvg-logo="" group-title="SOCCER",AV 100 - SOCCER - SPANISH CUP - NAVALCARNERO-REAL BETIS [12/11/2026 - 19:00 CET]
@@ -464,10 +725,22 @@ http://127.0.0.1:6878/ace/getstream?id=a2d33536b7d55727c8f6bea010624d6478c3ba2d
 #EXTINF:-1 tvg-id="AV100" tvg-logo="" group-title="BASKETBALL",AV 100 - BASKETBALL - EUROLEAGUE - PANATHINAIKOS-BARCELONA [13/11/2026 - 20:15 CET]
 http://127.0.0.1:6878/ace/getstream?id=a2d33536b7d55727c8f6bea010624d6478c3ba2d
 
+#EXTINF:-1 tvg-id="AV100" tvg-logo="" group-title="BASKETBALL",AV 100 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-ZARAGOZA [14/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=a2d33536b7d55727c8f6bea010624d6478c3ba2d
+
+#EXTINF:-1 tvg-id="AV100" tvg-logo="" group-title="BASKETBALL",AV 100 - BASKETBALL - SPANISH LEAGUE - BASKONIA-REAL MADRID [15/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=a2d33536b7d55727c8f6bea010624d6478c3ba2d
+
 #EXTINF:-1 tvg-id="AV101" tvg-logo="" group-title="SOCCER",AV 101 - SOCCER - SPANISH CUP - NAVALCARNERO-REAL BETIS [12/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
 
 #EXTINF:-1 tvg-id="AV101" tvg-logo="" group-title="BASKETBALL",AV 101 - BASKETBALL - EUROLEAGUE - PANATHINAIKOS-BARCELONA [13/11/2026 - 20:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
+
+#EXTINF:-1 tvg-id="AV101" tvg-logo="" group-title="BASKETBALL",AV 101 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-ZARAGOZA [14/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
+
+#EXTINF:-1 tvg-id="AV101" tvg-logo="" group-title="BASKETBALL",AV 101 - BASKETBALL - SPANISH LEAGUE - BASKONIA-REAL MADRID [15/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
 
 #EXTINF:-1 tvg-id="AV102" tvg-logo="" group-title="VACIO",AV102 
@@ -479,47 +752,77 @@ http://127.0.0.1:6878/ace/getstream?id=b96a9b23b5343ca748e126c9257f42e204d3f52c
 #EXTINF:-1 tvg-id="AV105" tvg-logo="" group-title="VACIO",AV105 
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
 
-#EXTINF:-1 tvg-id="AV106" tvg-logo="" group-title="VACIO",AV106 
+#EXTINF:-1 tvg-id="AV106" tvg-logo="" group-title="SOCCER (W)",AV 106 - SOCCER (W) - SPANISH LEAGUE - MADRID CFF-LOGROÑO [15/11/2026 - 12:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=acc2d46eaf6a0b4c3dbd299ffcd67c2b946c2c3e
 
-#EXTINF:-1 tvg-id="AV107" tvg-logo="" group-title="VACIO",AV107 
+#EXTINF:-1 tvg-id="AV107" tvg-logo="" group-title="SOCCER (W)",AV 107 - SOCCER (W) - SPANISH LEAGUE - MADRID CFF-LOGROÑO [15/11/2026 - 12:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=8d752ceceaa26b063d8edfa9c70352ada62c424d
 
-#EXTINF:-1 tvg-id="AV108" tvg-logo="" group-title="VACIO",AV108 
-http://127.0.0.1:6878/ace/getstream?id=973094e625613b693cffb05a3f98fabe2d59dafa
+#EXTINF:-1 tvg-id="AV108" tvg-logo="" group-title="SOCCER (W)",AV 108 - SOCCER (W) - SPANISH LEAGUE - DEPORTIVO ABANCA-BARCELONA [15/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=eadc069bbd45d77cb33ca3bac6f6d86281597122
 
-#EXTINF:-1 tvg-id="AV109" tvg-logo="" group-title="VACIO",AV109 
+#EXTINF:-1 tvg-id="AV109" tvg-logo="" group-title="SOCCER (W)",AV 109 - SOCCER (W) - SPANISH LEAGUE - DEPORTIVO ABANCA-BARCELONA [15/11/2026 - 18:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=8fd3ab88c95744e502aca1cdb369e07941914344
-
-#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - USA NBA - 76ERS-CELTICS [11/11/2026 - 02:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
-
-#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - USA NBA - KNICKS-CAVALIERS [12/11/2026 - 01:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
 
 #EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - USA NBA - 76ERS-RAPTORS [13/11/2026 - 01:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
 
-#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - USA NBA - 76ERS-CELTICS [11/11/2026 - 02:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
+#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - U LEAGUE - VALENCIA B-REAL MADRID B [14/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
 
-#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - USA NBA - KNICKS-CAVALIERS [12/11/2026 - 01:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
+#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - SPANISH LEAGUE - RIO BREOGAN-BURGOS [14/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
+
+#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - USA NBA - CAVALIERS-MAVERICKS [15/11/2026 - 01:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
+
+#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - SPANISH LEAGUE - UNICAJA-GIRONA [15/11/2026 - 12:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
+
+#EXTINF:-1 tvg-id="AV110" tvg-logo="" group-title="BASKETBALL",AV 110 - BASKETBALL - SPANISH LEAGUE - BASKONIA-REAL MADRID [15/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
 
 #EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - USA NBA - 76ERS-RAPTORS [13/11/2026 - 01:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
 
-#EXTINF:-1 tvg-id="AV112" tvg-logo="" group-title="BASKETBALL",AV 112 - BASKETBALL - USA NBA - ROCKETS-WARRIORS [12/11/2026 - 03:30 CET]
+#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - U LEAGUE - VALENCIA B-REAL MADRID B [14/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
+
+#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - SPANISH LEAGUE - RIO BREOGAN-BURGOS [14/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
+
+#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - USA NBA - CAVALIERS-MAVERICKS [15/11/2026 - 01:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
+
+#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - SPANISH LEAGUE - UNICAJA-GIRONA [15/11/2026 - 12:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
+
+#EXTINF:-1 tvg-id="AV111" tvg-logo="" group-title="BASKETBALL",AV 111 - BASKETBALL - SPANISH LEAGUE - BASKONIA-REAL MADRID [15/11/2026 - 19:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
+
+#EXTINF:-1 tvg-id="AV112" tvg-logo="" group-title="BASKETBALL",AV 112 - BASKETBALL - SPANISH LEAGUE - ANDORRA-TENERIFE [14/11/2026 - 19:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=8edc606f4b349f43db14f5190180e2873659e972
 
-#EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="VACIO",AV113 
-http://127.0.0.1:6878/ace/getstream?id=39ec223a912728d4483766b0cb35c0a5a478aa9e
+#EXTINF:-1 tvg-id="AV112" tvg-logo="" group-title="BASKETBALL",AV 112 - BASKETBALL - SPANISH LEAGUE - VALENCIA-CORULA [15/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=8edc606f4b349f43db14f5190180e2873659e972
 
-#EXTINF:-1 tvg-id="AV114" tvg-logo="" group-title="BASKETBALL",AV 114 - BASKETBALL - EUROCUP - MANRESA-BOSNA [10/11/2026 - 20:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
+#EXTINF:-1 tvg-id="AV112" tvg-logo="" group-title="BASKETBALL",AV 112 - BASKETBALL - SPANISH LEAGUE - BILBAO-UCAM MURCIA [15/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=8edc606f4b349f43db14f5190180e2873659e972
 
-#EXTINF:-1 tvg-id="AV114" tvg-logo="" group-title="BASKETBALL",AV 114 - BASKETBALL - EUROLEAGUE - PARTIZAN-BASKONIA [11/11/2026 - 20:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
+#EXTINF:-1 tvg-id="AV112" tvg-logo="" group-title="BASKETBALL",AV 112 - BASKETBALL - USA NBA - JAZZ-SPURS [15/11/2026 - 23:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=8edc606f4b349f43db14f5190180e2873659e972
+
+#EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="BASKETBALL",AV 113 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-ZARAGOZA [14/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0ca08fccd1d403b33a6eca52f9a0b6215140e162
+
+#EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="BASKETBALL",AV 113 - BASKETBALL - SPANISH LEAGUE - LLEIDA-MANRESA [15/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0ca08fccd1d403b33a6eca52f9a0b6215140e162
+
+#EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="BASKETBALL",AV 113 - BASKETBALL - SPANISH LEAGUE - BARCELONA-OBRADOIRO [15/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0ca08fccd1d403b33a6eca52f9a0b6215140e162
+
+#EXTINF:-1 tvg-id="AV113" tvg-logo="" group-title="BASKETBALL",AV 113 - BASKETBALL - USA NBA - SUNS-LAKERS [15/11/2026 - 22:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=0ca08fccd1d403b33a6eca52f9a0b6215140e162
 
 #EXTINF:-1 tvg-id="AV114" tvg-logo="" group-title="BASKETBALL",AV 114 - BASKETBALL - EUROLEAGUE - REAL MADRID-CRVENA ZVEZDA [12/11/2026 - 21:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
@@ -527,17 +830,11 @@ http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
 #EXTINF:-1 tvg-id="AV114" tvg-logo="" group-title="BASKETBALL",AV 114 - BASKETBALL - EUROLEAGUE - PANATHINAIKOS-BARCELONA [13/11/2026 - 20:15 CET]
 http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
 
-#EXTINF:-1 tvg-id="AV115" tvg-logo="" group-title="BASKETBALL",AV 115 - BASKETBALL - EUROLEAGUE - PARIS-FENERBAHCE [11/11/2026 - 20:45 CET]
-http://127.0.0.1:6878/ace/getstream?id=e9c285968edade2d0ce4cdcaa32bbe5f97716fb5
-
 #EXTINF:-1 tvg-id="AV115" tvg-logo="" group-title="BASKETBALL",AV 115 - BASKETBALL - EUROLEAGUE - OLYMPIACOS-DUBAI [12/11/2026 - 20:15 CET]
-http://127.0.0.1:6878/ace/getstream?id=e9c285968edade2d0ce4cdcaa32bbe5f97716fb5
+http://127.0.0.1:6878/ace/getstream?id=1aedb9d609bbfec87c2614d126a384a1f0ae136f
 
 #EXTINF:-1 tvg-id="AV115" tvg-logo="" group-title="BASKETBALL",AV 115 - BASKETBALL - EUROLEAGUE - ANADOLU-VIRTUS [13/11/2026 - 18:30 CET]
-http://127.0.0.1:6878/ace/getstream?id=e9c285968edade2d0ce4cdcaa32bbe5f97716fb5
-
-#EXTINF:-1 tvg-id="AV116" tvg-logo="" group-title="BASKETBALL",AV 116 - BASKETBALL - EUROCUP - LE MANS-BURGOS [11/11/2026 - 20:00 CET]
-http://127.0.0.1:6878/ace/getstream?id=e675aecf437124d37f7f2daf31669f1af532a50c
+http://127.0.0.1:6878/ace/getstream?id=1aedb9d609bbfec87c2614d126a384a1f0ae136f
 
 #EXTINF:-1 tvg-id="AV116" tvg-logo="" group-title="BASKETBALL",AV 116 - BASKETBALL - EUROLEAGUE - MACCABI-HAPOEL [12/11/2026 - 20:05 CET]
 http://127.0.0.1:6878/ace/getstream?id=e675aecf437124d37f7f2daf31669f1af532a50c
@@ -551,10 +848,58 @@ http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 #EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - NASTIC TARRAGONA-RM CASTILLA [13/11/2026 - 21:15 CET]
 http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - BILBAO AHTLETIC-RACING FERROL [14/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - REAL UNION-CULTURAL LEONESA [14/11/2026 - 16:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - HERCULES-VILLARREAL B [14/11/2026 - 18:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - REAL JAEN-REAL ZARAGOZA [14/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - EXTREMADURA-PONTEVEDRA [15/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - ZAMORA-REAL AVILES [15/11/2026 - 14:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - LUGO-MIRANDES [15/11/2026 - 16:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
+#EXTINF:-1 tvg-id="AV117" tvg-logo="" group-title="SOCCER",AV 117 - SOCCER - 1ST REF - REAL MURCIA-ALCORCON [15/11/2026 - 18:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
+
 #EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - PONFERRADINA-CACEREÑO [13/11/2026 - 19:00 CET]
 http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
 
 #EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - NASTIC TARRAGONA-RM CASTILLA [13/11/2026 - 21:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - BILBAO AHTLETIC-RACING FERROL [14/11/2026 - 13:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - REAL UNION-CULTURAL LEONESA [14/11/2026 - 16:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - HERCULES-VILLARREAL B [14/11/2026 - 18:45 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - REAL JAEN-REAL ZARAGOZA [14/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - EXTREMADURA-PONTEVEDRA [15/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - ZAMORA-REAL AVILES [15/11/2026 - 14:15 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - LUGO-MIRANDES [15/11/2026 - 16:30 CET]
+http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+
+#EXTINF:-1 tvg-id="AV118" tvg-logo="" group-title="SOCCER",AV 118 - SOCCER - 1ST REF - REAL MURCIA-ALCORCON [15/11/2026 - 18:45 CET]
 http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
 
 #EXTINF:-1 tvg-id="AV119" tvg-logo="" group-title="VACIO",AV119 
@@ -566,11 +911,29 @@ http://127.0.0.1:6878/ace/getstream?id=e7ddca738693a902ce34fb80788b220676c15801
 #EXTINF:-1 tvg-id="AV121" tvg-logo="" group-title="VACIO",AV121 
 http://127.0.0.1:6878/ace/getstream?id=1e3451ef86d34c96aabece2ac7bcae70ba9ed767
 
-#EXTINF:-1 tvg-id="AV122" tvg-logo="" group-title="BASKETBALL",AV 122 - BASKETBALL - USA NBA - ROCKETS-WARRIORS [12/11/2026 - 03:30 CET]
+#EXTINF:-1 tvg-id="AV122" tvg-logo="" group-title="BASKETBALL",AV 122 - BASKETBALL - SPANISH LEAGUE - ANDORRA-TENERIFE [14/11/2026 - 19:30 CET]
 http://127.0.0.1:6878/ace/getstream?id=09ee8afc1d9b468d3b470c682cfcacd58a95e273
 
-#EXTINF:-1 tvg-id="AV123" tvg-logo="" group-title="VACIO",AV123 
-http://127.0.0.1:6878/ace/getstream?id=95125f755562c0ffcb44abd94e338bd65472afea
+#EXTINF:-1 tvg-id="AV122" tvg-logo="" group-title="BASKETBALL",AV 122 - BASKETBALL - SPANISH LEAGUE - VALENCIA-CORULA [15/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=09ee8afc1d9b468d3b470c682cfcacd58a95e273
+
+#EXTINF:-1 tvg-id="AV122" tvg-logo="" group-title="BASKETBALL",AV 122 - BASKETBALL - SPANISH LEAGUE - BILBAO-UCAM MURCIA [15/11/2026 - 18:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=09ee8afc1d9b468d3b470c682cfcacd58a95e273
+
+#EXTINF:-1 tvg-id="AV122" tvg-logo="" group-title="BASKETBALL",AV 122 - BASKETBALL - USA NBA - JAZZ-SPURS [15/11/2026 - 23:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=09ee8afc1d9b468d3b470c682cfcacd58a95e273
+
+#EXTINF:-1 tvg-id="AV123" tvg-logo="" group-title="BASKETBALL",AV 123 - BASKETBALL - SPANISH LEAGUE - JOVENTUT-ZARAGOZA [14/11/2026 - 21:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=8e2f1e1f1fdc8e7d324dc931a6fb65fc4d1a71da
+
+#EXTINF:-1 tvg-id="AV123" tvg-logo="" group-title="BASKETBALL",AV 123 - BASKETBALL - SPANISH LEAGUE - LLEIDA-MANRESA [15/11/2026 - 12:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=8e2f1e1f1fdc8e7d324dc931a6fb65fc4d1a71da
+
+#EXTINF:-1 tvg-id="AV123" tvg-logo="" group-title="BASKETBALL",AV 123 - BASKETBALL - SPANISH LEAGUE - BARCELONA-OBRADOIRO [15/11/2026 - 17:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=8e2f1e1f1fdc8e7d324dc931a6fb65fc4d1a71da
+
+#EXTINF:-1 tvg-id="AV123" tvg-logo="" group-title="BASKETBALL",AV 123 - BASKETBALL - USA NBA - SUNS-LAKERS [15/11/2026 - 22:00 CET]
+http://127.0.0.1:6878/ace/getstream?id=8e2f1e1f1fdc8e7d324dc931a6fb65fc4d1a71da
 
 #EXTINF:-1 tvg-id="AV124" tvg-logo="" group-title="VACIO",AV124 
 http://127.0.0.1:6878/ace/getstream?id=21bc11d195f5753c396e390c215952d21541d04d
@@ -620,13 +983,13 @@ http://127.0.0.1:6878/ace/getstream?id=03350f8996d41efb71c3e7a9a777e41d11df702f
 #EXTINF:-1 tvg-id="AV155" tvg-logo="" group-title="VACIO",AV155 
 http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
 
-#EXTINF:-1 tvg-id="AV160" tvg-logo="" group-title="BASKETBALL",AV 160 - BASKETBALL - USA NBA - BLAZERS-THUNDERS [12/11/2026 - 04:00 CET]
+#EXTINF:-1 tvg-id="AV160" tvg-logo="" group-title="VACIO",AV160 
 http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
 
-#EXTINF:-1 tvg-id="AV161" tvg-logo="" group-title="BASKETBALL",AV 161 - BASKETBALL - USA NBA - BLAZERS-THUNDERS [12/11/2026 - 04:00 CET]
+#EXTINF:-1 tvg-id="AV161" tvg-logo="" group-title="VACIO",AV161 
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
 
-#EXTINF:-1 tvg-id="AV162" tvg-logo="" group-title="BASKETBALL",AV 162 - BASKETBALL - USA NBA - BLAZERS-THUNDERS [12/11/2026 - 04:00 CET]
+#EXTINF:-1 tvg-id="AV162" tvg-logo="" group-title="VACIO",AV162 
 http://127.0.0.1:6878/ace/getstream?id=0d8baa9c49a73dc9310adeec38d2c2df03271180
 
 #EXTINF:-1 tvg-id="AV163" tvg-logo="" group-title="VACIO",AV163 
