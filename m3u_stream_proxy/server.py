@@ -677,14 +677,15 @@ async def delete_channel(channel_id: str):
 # Proxy de Streaming HLS (CORS & Búfer PRO)
 # ---------------------------------------------------------------------------
 @app.get("/stream/proxy.m3u8")
-async def stream_proxy_m3u8(request: Request, url: str = Query(...)):
-    """CORS Proxy para manifiestos HLS remotos."""
+async def stream_proxy_m3u8(request: Request, url: str = Query(...), stream_id: Optional[str] = Query(None)):
+    """CORS Proxy para manifiestos HLS remotos con soporte de ventana deslizante PRO."""
     target_url = unquote(url)
     ref = request.query_params.get("ref")
     ua = request.query_params.get("ua")
+    sid = stream_id or request.query_params.get("stream_id")
     base_url = str(request.base_url).rstrip("/")
     offset = manager.settings.get("buffer_offset_seconds", 16.0)
-    return await proxy_m3u8_manifest(target_url, request_base_url=base_url, buffer_offset=offset, custom_ref=ref, custom_ua=ua)
+    return await proxy_m3u8_manifest(target_url, request_base_url=base_url, buffer_offset=offset, custom_ref=ref, custom_ua=ua, stream_id=sid)
 
 
 @app.get("/stream/segment")
@@ -775,7 +776,7 @@ async def get_channel_live_m3u8(
         return RedirectResponse(url=clean_target)
 
     buf_offset = offset if offset is not None else manager.settings.get("buffer_offset_seconds", 16.0)
-    return await proxy_m3u8_manifest(target_url, request_base_url=base_url, buffer_offset=buf_offset)
+    return await proxy_m3u8_manifest(target_url, request_base_url=base_url, buffer_offset=buf_offset, stream_id=channel_id)
 
 
 @app.get("/live/{channel_id}.ts")
@@ -958,7 +959,7 @@ async def _serve_hdhomerun_stream(
     target_url = ch.get("url", "")
     if ".m3u8" in target_url.lower() or ch.get("stream_type") == "hls":
         buf_offset = manager.settings.get("buffer_offset_seconds", 16.0)
-        return await proxy_m3u8_manifest(target_url, request_base_url=base_url, buffer_offset=buf_offset)
+        return await proxy_m3u8_manifest(target_url, request_base_url=base_url, buffer_offset=buf_offset, stream_id=target_id)
 
     return RedirectResponse(url=target_url)
 
