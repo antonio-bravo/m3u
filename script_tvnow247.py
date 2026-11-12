@@ -11,8 +11,8 @@ HEADERS = {
 }
 
 BASE_SITES = [
-    'https://tvnow247.today',
-    'https://tvnow247.top'
+    'https://tvnow247.top',
+    'https://tvnow247.today'
 ]
 
 OUTPUT_M3U = 'lista_tvnow247.m3u'
@@ -110,6 +110,9 @@ def descubrir_proxy_domain_100_dinamico(res_html, js_texts, active_host, base_si
     # Añadir el hostname activo como opción
     if active_host not in candidatos:
         candidatos.append(active_host)
+
+    # Priorizar dominios principales sobre subdominios dedicados exclusivamente a chunks
+    candidatos.sort(key=lambda d: 1 if d.startswith("chunk.") else 0)
 
     # 5. Sondear cada candidato extraído dinámicamente de la web mediante sonda HTTP real
     for d in candidatos:

@@ -31,7 +31,7 @@ app = FastAPI(
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
 }
-BASE_SITES = ["https://tvnow247.today", "https://tvnow247.top"]
+BASE_SITES = ["https://tvnow247.top", "https://tvnow247.today"]
 
 # Configuración de búfer y caché optimizados
 MAX_SEGMENT_CACHE_ITEMS = int(os.environ.get("MAX_CACHE_ITEMS", 120))
@@ -99,14 +99,51 @@ segment_cache = SegmentCache(max_items=MAX_SEGMENT_CACHE_ITEMS)
 # ---------------------------------------------------------------------------
 # Gestor de Ventana Deslizante de Canales (Sliding Window & Buffer Offset)
 # ---------------------------------------------------------------------------
+def get_canonical_segment_key(raw_url: str) -> str:
+    """
+    Extrae la clave única canónica de un segmento para deduplicación exacta.
+    Soporta:
+    1. Proxies upstream que encapsulan la URL real en parámetro 'u=' (ej. canales 500-520 con /api/proxy/seg?token=...&u=https%3A%2F%2F...%2Ftwourqvinvybv-1009839510.ts).
+    2. CDNs con rutas únicas directas (ej. TikTok CDN /tos-.../hash~tplv-tiktokx-origin.image?...).
+    3. URLs genéricas donde la query string define el fragmento descartando tokens efímeros.
+    """
+    if not raw_url:
+        return ""
+
+    # 1. Parámetro 'u=' con URL destino encapsulada (canales 500-520 y proxies upstream)
+    u_match = re.search(r'[?&]u=([^&]+)', raw_url)
+    if u_match:
+        try:
+            target_url = unquote(u_match.group(1))
+            target_parsed = urlparse(target_url)
+            if target_parsed.path and target_parsed.path != "/":
+                return target_parsed.path
+            return target_url
+        except Exception:
+            pass
+
+    parsed = urlparse(raw_url)
+    path = parsed.path or ""
+
+    # 2. Si el path es genérico (ej. /api/proxy/seg, /segment, /proxy, etc.) o no tiene extensión
+    generic_paths = {"/api/proxy/seg", "/segment", "/proxy", "/seg", ""}
+    if path in generic_paths or not re.search(r'\.[a-zA-Z0-9]+$', path):
+        # Descartar parámetros volátiles de timestamp o firma que cambian en cada refresh
+        clean_q = re.sub(r'[?&](?:ts|token|expires|signature|x-signature|x-expires)=\d+', '', parsed.query or '')
+        clean_q = re.sub(r'[?&]token=[^&]+', '', clean_q).strip('&')
+        return f"{path}?{clean_q}" if clean_q else raw_url
+
+    # 3. CDN directa con path único (ej. TikTok CDN)
+    return path
+
+
 class SegmentItem:
     def __init__(self, seq: int, inf: str, raw_url: str):
         self.seq = seq
         self.inf = inf
         self.raw_url = raw_url
-        # Extraer key canónica por path de CDN para deduplicación exacta
-        parsed = urlparse(raw_url)
-        self.path_key = parsed.path if parsed.path else raw_url
+        # Clave canónica única para deduplicación exacta (soporta tanto CDNs como proxies upstream)
+        self.path_key = get_canonical_segment_key(raw_url)
 
 
 class ChannelWindowManager:
@@ -151,18 +188,20 @@ class ChannelWindowManager:
         self.last_updated[channel_id] = now
         self.last_target_dur[channel_id] = target_dur
 
-        # Si el canal ha estado inactivo más de 35 segundos (más de una lista upstream completa),
+        # Si el canal ha estado inactivo más tiempo del umbral de expiración,
         # la ventana previa es discontinua y debe reiniciarse limpiamente para evitar huecos temporales.
-        if now - last_t > 35.0:
+        # Ajustamos dinámicamente según target_dur (mínimo 60s, o 6x target_dur para listas de 10s-17s)
+        max_inactivity = max(60.0, float(target_dur) * 6.0)
+        if last_t > 0 and (now - last_t) > max_inactivity:
             self.windows.pop(channel_id, None)
             self.last_seq_assigned.pop(channel_id, None)
 
         existing = self.windows.get(channel_id, [])
 
-        # Comprobar solapamiento real con la ventana existente
+        # Comprobar solapamiento real con la ventana existente usando clave canónica
         if existing:
             existing_paths = {item.path_key for item in existing}
-            incoming_paths = {urlparse(url).path or url for _, url in incoming}
+            incoming_paths = {get_canonical_segment_key(url) for _, url in incoming}
             overlap = existing_paths.intersection(incoming_paths)
             if not overlap:
                 logger.info(f"Salto/desconexión detectada en canal {channel_id} (0 solapamiento). Reiniciando ventana deslizante limpia manteniendo secuencia creciente.")
@@ -190,7 +229,7 @@ class ChannelWindowManager:
 
             new_items = []
             for inf, url in incoming:
-                p_key = urlparse(url).path or url
+                p_key = get_canonical_segment_key(url)
                 if p_key not in existing_paths:
                     last_seq += 1
                     new_item = SegmentItem(seq=last_seq, inf=inf, raw_url=url)
@@ -254,7 +293,7 @@ window_manager = ChannelWindowManager(max_segments=WINDOW_MAX_SEGMENTS)
 # Estado global y cliente HTTP
 # ---------------------------------------------------------------------------
 class ProxyState:
-    active_domain: str = "chunk.tvnow247.today"
+    active_domain: str = "tvnow247.top"
     domain_last_checked: float = 0
     channels: List[dict] = []
     channels_last_loaded: float = 0
@@ -331,8 +370,8 @@ async def discover_proxy_domain() -> str:
                 except Exception:
                     pass
 
-            # Probar candidatos comunes
-            candidates = ["chunk.tvnow247.today", "tvnow247.top", active_host]
+            # Probar candidatos comunes priorizando tvnow247.top
+            candidates = ["tvnow247.top", "tvnow247.today", active_host]
             for cand in candidates:
                 if await probe_proxy_domain(cand):
                     logger.info(f"Dominio proxy validado: {cand}")
@@ -542,13 +581,17 @@ async def get_live_playlist(
     token = encode_token(channel_id)
     time_offset = offset if offset is not None else DEFAULT_BUFFER_OFFSET
 
-    # Construir lista de dominios candidatos priorizando el preferido y tvnow247.top (el más rápido y fiable)
+    # Construir lista de dominios candidatos priorizando tvnow247.top y el preferido si no es chunk.*
     candidate_domains = []
+    if preferred_domain and not preferred_domain.startswith("chunk.") and preferred_domain not in candidate_domains:
+        candidate_domains.append(preferred_domain)
+    for d in ["tvnow247.top", state.active_domain, "tvnow247.today"]:
+        if d and not d.startswith("chunk.") and d not in candidate_domains:
+            candidate_domains.append(d)
+    if not candidate_domains:
+        candidate_domains.append("tvnow247.top")
     if preferred_domain and preferred_domain not in candidate_domains:
         candidate_domains.append(preferred_domain)
-    for d in ["tvnow247.top", "chunk.tvnow247.today", state.active_domain, "tvnow247.today"]:
-        if d and d not in candidate_domains:
-            candidate_domains.append(d)
 
     r = None
     last_res = None
