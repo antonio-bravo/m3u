@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-11-19 12:45</datetime>
-    <league>UEFA Women's Champions League</league>
-    <teams>Real Madrid vs Inter</teams>
+    <datetime>2026-11-19 10:30</datetime>
+    <league>Copa Mundial Sub-17</league>
+    <teams>Catar vs Panamá</teams>
     <channels>
       <channel>
-        <channel_name>Capo Deportes</channel_name>
+        <channel_name>Capo Deportes 2</channel_name>
         <channel_id>1-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes.php</url>
+        <url>https://pirlotv.la/capo-deportes-2.php</url>
       </channel>
       <channel>
         <channel_name>Canal 1</channel_name>
@@ -28,9 +28,9 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-11-19 15:00</datetime>
-    <league>UEFA Women's Champions League</league>
-    <teams>Chelsea vs Paris Saint-Germain</teams>
+    <datetime>2026-11-19 11:00</datetime>
+    <league>Copa Mundial Sub-17</league>
+    <teams>Argentina vs Australia</teams>
     <channels>
       <channel>
         <channel_name>Capo Deportes</channel_name>
@@ -55,14 +55,14 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-11-19 15:00</datetime>
-    <league>Liga de Peru</league>
-    <teams>Alianza Atlético vs Melgar</teams>
+    <datetime>2026-11-19 12:45</datetime>
+    <league>UEFA Women's Champions League</league>
+    <teams>Austria Viena vs Bayern Munich</teams>
     <channels>
       <channel>
-        <channel_name>Liga 1 Max</channel_name>
+        <channel_name>Capo Deportes 2</channel_name>
         <channel_id>3-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/liga-1-max.php</url>
+        <url>https://pirlotv.la/capo-deportes-2.php</url>
       </channel>
       <channel>
         <channel_name>Canal 7</channel_name>
@@ -82,14 +82,14 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-11-19 17:30</datetime>
-    <league>Brasileirao</league>
-    <teams>Coritiba vs Santos FC</teams>
+    <datetime>2026-11-19 14:30</datetime>
+    <league>Liga de Uruguay</league>
+    <teams>Peñarol vs Cerro Largo</teams>
     <channels>
       <channel>
-        <channel_name>Win Sports +</channel_name>
+        <channel_name>Capo Deportes</channel_name>
         <channel_id>4-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/win-sports-plus.php</url>
+        <url>https://pirlotv.la/capo-deportes.php</url>
       </channel>
       <channel>
         <channel_name>Canal 10</channel_name>
@@ -109,9 +109,9 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-11-19 18:00</datetime>
-    <league>Brasileirao</league>
-    <teams>Remo vs Chapecoense</teams>
+    <datetime>2026-11-19 14:30</datetime>
+    <league>Liga de Uruguay</league>
+    <teams>Progreso vs Torque</teams>
     <channels>
       <channel>
         <channel_name>Canal 13 (HD)</channel_name>
@@ -126,58 +126,58 @@
     </channels>
   </event>
   <event>
-    <datetime>2026-11-19 18:30</datetime>
-    <league>Brasileirao</league>
-    <teams>Cruzeiro vs Palmeiras</teams>
+    <datetime>2026-11-19 14:30</datetime>
+    <league>Liga de Uruguay</league>
+    <teams>Boston River vs Deportivo Maldonado</teams>
     <channels>
       <channel>
-        <channel_name>Win Sports</channel_name>
+        <channel_name>Canal 15 (HD)</channel_name>
         <channel_id>6-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/win-sports.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 15</channel_name>
-        <channel_id>6-2</channel_id>
         <url>https://pirlotv.la/canal-15.php</url>
       </channel>
       <channel>
         <channel_name>Canal 16 (HD)</channel_name>
-        <channel_id>6-3</channel_id>
+        <channel_id>6-2</channel_id>
         <url>https://pirlotv.la/canal-16.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 17 (HD)</channel_name>
-        <channel_id>6-4</channel_id>
-        <url>https://pirlotv.la/canal-17.php</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-11-19 18:30</datetime>
-    <league>Brasileirao</league>
-    <teams>Flamengo vs Atlético Paranaense</teams>
+    <datetime>2026-11-19 15:00</datetime>
+    <league>UEFA Women's Champions League</league>
+    <teams>Barcelona vs Servette</teams>
     <channels>
       <channel>
-        <channel_name>Canal 18 (HD)</channel_name>
+        <channel_name>Capo Deportes 2</channel_name>
         <channel_id>7-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-2.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 17</channel_name>
+        <channel_id>7-2</channel_id>
+        <url>https://pirlotv.la/canal-17.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 18 (HD)</channel_name>
+        <channel_id>7-3</channel_id>
         <url>https://pirlotv.la/canal-18.php</url>
       </channel>
       <channel>
         <channel_name>Canal 19 (HD)</channel_name>
-        <channel_id>7-2</channel_id>
+        <channel_id>7-4</channel_id>
         <url>https://pirlotv.la/canal-19.php</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-11-19 19:00</datetime>
-    <league>NBA</league>
-    <teams>Milwaukee Bucks vs Miami Heat</teams>
+    <datetime>2026-11-19 15:00</datetime>
+    <league>UEFA Women's Champions League</league>
+    <teams>Arsenal vs Olympique Lyon</teams>
     <channels>
       <channel>
-        <channel_name>Capo Deportes</channel_name>
+        <channel_name>Capo Deportes 9</channel_name>
         <channel_id>8-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes.php</url>
+        <url>https://pirlotv.la/capo-deportes-9.php</url>
       </channel>
       <channel>
         <channel_name>Canal 20</channel_name>
@@ -193,77 +193,6 @@
         <channel_name>Canal 22 (HD)</channel_name>
         <channel_id>8-4</channel_id>
         <url>https://pirlotv.la/canal-22.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-11-19 19:30</datetime>
-    <league>Brasileirao</league>
-    <teams>Corinthians vs Botafogo</teams>
-    <channels>
-      <channel>
-        <channel_name>Win Sports +</channel_name>
-        <channel_id>9-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/win-sports-plus.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 23</channel_name>
-        <channel_id>9-2</channel_id>
-        <url>https://pirlotv.la/canal-23.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 24 (HD)</channel_name>
-        <channel_id>9-3</channel_id>
-        <url>https://pirlotv.la/canal-24.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 25 (HD)</channel_name>
-        <channel_id>9-4</channel_id>
-        <url>https://pirlotv.la/canal-25.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-11-19 19:30</datetime>
-    <league>Brasileirao</league>
-    <teams>Gremio vs Bahia</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 26 (HD)</channel_name>
-        <channel_id>10-1</channel_id>
-        <url>https://pirlotv.la/canal-26.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 27 (HD)</channel_name>
-        <channel_id>10-2</channel_id>
-        <url>https://pirlotv.la/canal-27.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-11-19 21:30</datetime>
-    <league>NBA</league>
-    <teams>Boston Celtics vs Denver Nuggets</teams>
-    <channels>
-      <channel>
-        <channel_name>Capo Deportes</channel_name>
-        <channel_id>11-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 28</channel_name>
-        <channel_id>11-2</channel_id>
-        <url>https://pirlotv.la/canal-28.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 29 (HD)</channel_name>
-        <channel_id>11-3</channel_id>
-        <url>https://pirlotv.la/canal-29.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 30 (HD)</channel_name>
-        <channel_id>11-4</channel_id>
-        <url>https://pirlotv.la/canal-30.php</url>
       </channel>
     </channels>
   </event>
