@@ -1,6 +1,8 @@
-2026-11-19 21:01:18,609 [INFO] Semillas descubiertas dinamicamente (6): ['https://www.fctv33go.monster', 'https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
-2026-11-19 21:01:19,603 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33go.monster': https://www.fctv33go.beauty
-2026-11-19 21:01:20,460 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
-2026-11-19 21:01:20,460 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
-2026-11-19 21:01:21,244 [INFO] OK https://apis-data10.tcpwe138stya.ru: 175 partidos recibidos
-2026-11-19 21:01:21,248 [INFO] Generado lista_rbtv_futbol.m3u con 173 partidos de futbol (SITE_BASE: https://www.fctv33go.beauty)
+2026-11-20 02:40:27,252 [INFO] Semillas descubiertas dinamicamente (6): ['https://www.fctv33go.beauty', 'https://www.fctv33hd.host', 'https://www.fctv33hd.club', 'http://rbtv77.com', 'http://superabbit77.com', 'https://superabbit77.com']
+2026-11-20 02:40:32,356 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1147)'))': /
+2026-11-20 02:40:38,053 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1147)'))': /
+2026-11-20 02:40:43,171 [INFO] SITE_BASE resuelto dinamicamente (score 3) desde semilla 'https://www.fctv33hd.host': https://www.fctv33go.beauty
+2026-11-20 02:40:43,625 [INFO] Plantilla de ruta de partidos descubierta dinamicamente desde JS: '/football/:leagueLink([^/]+)-match-:matchId/:teamLink([^/]+)-:matchDateMMYYYY([^/]+)/:tabType.html'
+2026-11-20 02:40:43,626 [INFO] DATA_HOSTS extraidos dinamicamente desde JS (2): ['https://apis-data10.tcpwe138stya.ru', 'https://apis-data-defra10.tcpwe138stya.ru']
+2026-11-20 02:40:44,253 [INFO] OK https://apis-data10.tcpwe138stya.ru: 177 partidos recibidos
+2026-11-20 02:40:44,257 [INFO] Generado lista_rbtv_futbol.m3u con 175 partidos de futbol (SITE_BASE: https://www.fctv33go.beauty)
