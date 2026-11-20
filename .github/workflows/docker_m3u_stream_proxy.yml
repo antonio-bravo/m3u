@@ -70,3 +70,4 @@ jobs:
           package-name: ${{ env.docker_image_name }}
           package-type: 'container'
           min-versions-to-keep: ${{ inputs.keepLatestNoOfDockerImages || 10 }}
+          prune-untagged: true
