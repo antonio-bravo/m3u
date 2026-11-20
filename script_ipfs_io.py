@@ -2,7 +2,7 @@
 """
 Script para descargar canales de IPFS y generar un archivo .m3u
 Descarga el JSON desde una gateway IPFS propia configurada con IPFS_GATEWAY_URL.
-Por defecto usa Kubo local: http://127.0.0.1:8080
+Por defecto usa Kubo local (http://127.0.0.1:8080) con reintentos y pasarelas de respaldo.
 Genera: ipfs_io.m3u
 """
 
@@ -10,9 +10,15 @@ import requests
 import json
 from datetime import datetime
 import os
+import time
 
 IPNS_PATH = "/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json"
 DEFAULT_GATEWAY_URL = "http://127.0.0.1:8080"
+DEFAULT_FALLBACK_GATEWAYS = [
+    "https://dweb.link",
+    "https://ipfs.io",
+    "https://gateway.pinata.cloud",
+]
 
 
 def construir_url_gateway(gateway_url):
@@ -20,29 +26,54 @@ def construir_url_gateway(gateway_url):
     return f"{gateway_url.rstrip('/')}{IPNS_PATH}"
 
 def descargar_json_ipfs():
-    """Descargar el JSON con los hashes de canales desde IPFS"""
-    gateway_url = os.environ.get("IPFS_GATEWAY_URL", DEFAULT_GATEWAY_URL)
-    fallback_url = os.environ.get("IPFS_FALLBACK_GATEWAY_URL")
-    gateway_urls = [gateway_url]
-    if fallback_url and fallback_url.rstrip("/") != gateway_url.rstrip("/"):
-        gateway_urls.append(fallback_url)
+    """Descargar el JSON con los hashes de canales desde IPFS con reintentos y fallbacks"""
+    primary_gateway = os.environ.get("IPFS_GATEWAY_URL", DEFAULT_GATEWAY_URL).strip()
+
+    # Construir lista de gateways sin duplicados
+    gateway_urls = [primary_gateway]
+    fallbacks_env = os.environ.get("IPFS_FALLBACK_GATEWAYS") or os.environ.get("IPFS_FALLBACK_GATEWAY_URL")
+
+    if fallbacks_env:
+        for gw in fallbacks_env.split(","):
+            gw = gw.strip()
+            if gw and gw not in gateway_urls:
+                gateway_urls.append(gw)
+    else:
+        for gw in DEFAULT_FALLBACK_GATEWAYS:
+            if gw not in gateway_urls:
+                gateway_urls.append(gw)
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
 
     for current_gateway_url in gateway_urls:
         url = construir_url_gateway(current_gateway_url)
-        try:
-            print(f"Descargando JSON desde la gateway IPFS: {current_gateway_url}")
-            response = requests.get(url, timeout=30)
-            response.raise_for_status()
+        es_local = "127.0.0.1" in current_gateway_url or "localhost" in current_gateway_url
+        max_intentos = 3 if es_local else 2
+        timeout = 60 if es_local else 45
 
-            data = response.json()
-            print(f"✓ JSON descargado correctamente")
-            print(f"  - Total de canales: {data.get('count', len(data.get('hashes', [])))}")
-            print(f"  - Fecha de generación: {data.get('generated', 'N/A')}")
-            return data
-        except requests.exceptions.RequestException as e:
-            print(f"✗ Error al descargar el JSON desde {current_gateway_url}: {e}")
-        except json.JSONDecodeError as e:
-            print(f"✗ Error al parsear el JSON desde {current_gateway_url}: {e}")
+        print(f"\nProbando gateway IPFS: {current_gateway_url}")
+        for intento in range(1, max_intentos + 1):
+            try:
+                print(f"  → Intento {intento}/{max_intentos} (timeout={timeout}s)...")
+                response = requests.get(url, timeout=timeout, headers=headers)
+                response.raise_for_status()
+
+                data = response.json()
+                print(f"✓ JSON descargado correctamente desde {current_gateway_url}")
+                print(f"  - Total de canales: {data.get('count', len(data.get('hashes', [])))}")
+                print(f"  - Fecha de generación: {data.get('generated', 'N/A')}")
+                return data
+            except requests.exceptions.RequestException as e:
+                print(f"  ✗ Intento {intento} falló: {e}")
+                if intento < max_intentos:
+                    espera = intento * 10
+                    print(f"    Esperando {espera}s para reintentar...")
+                    time.sleep(espera)
+            except json.JSONDecodeError as e:
+                print(f"  ✗ Error al parsear JSON desde {current_gateway_url}: {e}")
+                break
 
     return None
 

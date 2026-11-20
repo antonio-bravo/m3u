@@ -49,9 +49,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
 
+      - name: Esperar conexión de Kubo IPFS
+        run: |
+          echo "Dando tiempo al nodo Kubo para conectarse a peers en la red IPFS..."
+          sleep 15
+
       - name: Run update script
         env:
           IPFS_GATEWAY_URL: http://127.0.0.1:8080
+          IPFS_FALLBACK_GATEWAYS: https://dweb.link,https://ipfs.io,https://gateway.pinata.cloud
         run: python script_ipfs_io.py
 
       - name: Verificar y Subir cambios
