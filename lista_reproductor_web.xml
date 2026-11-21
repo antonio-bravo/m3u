@@ -1,331 +1,582 @@
 <?xml version='1.0' encoding='utf-8'?>
 <events>
   <event>
-    <datetime>2026-11-21 16:30</datetime>
-    <league>Liga de Colombia</league>
-    <teams>Independiente Medellín vs Independiente Santa Fe</teams>
+    <datetime>2026-11-21 07:30</datetime>
+    <league>Premier League</league>
+    <teams>Manchester City vs Fulham</teams>
     <channels>
       <channel>
-        <channel_name>Win Sports</channel_name>
+        <channel_name>Capo Deportes 2</channel_name>
         <channel_id>1-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/win-sports.php</url>
+        <url>https://pirlotv.la/capo-deportes-2.php</url>
       </channel>
       <channel>
-        <channel_name>Canal 23</channel_name>
+        <channel_name>Premier League 1</channel_name>
         <channel_id>1-2</channel_id>
-        <url>https://pirlotv.la/canal-23.php</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyMS5waHA=</url>
       </channel>
       <channel>
-        <channel_name>Canal 24 (HD)</channel_name>
+        <channel_name>Premier League 2 (HD)</channel_name>
         <channel_id>1-3</channel_id>
-        <url>https://pirlotv.la/canal-24.php</url>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyMi5waHA=</url>
       </channel>
       <channel>
-        <channel_name>Canal 25 (HD)</channel_name>
+        <channel_name>Premier League 3 (HD)</channel_name>
         <channel_id>1-4</channel_id>
-        <url>https://pirlotv.la/canal-25.php</url>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyMy5waHA=</url>
+      </channel>
+      <channel>
+        <channel_name>Premier League 4 (HD)</channel_name>
+        <channel_id>1-5</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyNC5waHA=</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-11-21 18:00</datetime>
-    <league>Liga de Argentina</league>
-    <teams>Vélez Sarsfield vs Belgrano (Córdoba)</teams>
+    <datetime>2026-11-21 08:00</datetime>
+    <league>LaLiga</league>
+    <teams>Deportivo Alavés vs Deportivo La Coruña</teams>
     <channels>
       <channel>
-        <channel_name>TNT Sports</channel_name>
+        <channel_name>Capo Deportes</channel_name>
         <channel_id>2-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/tnt-sports-argentina.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 26</channel_name>
-        <channel_id>2-2</channel_id>
-        <url>https://pirlotv.la/canal-26.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 27 (HD)</channel_name>
-        <channel_id>2-3</channel_id>
-        <url>https://pirlotv.la/canal-27.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 28 (HD)</channel_name>
-        <channel_id>2-4</channel_id>
-        <url>https://pirlotv.la/canal-28.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-11-21 18:30</datetime>
-    <league>Liga de Chile</league>
-    <teams>Palestino vs Unión La Calera</teams>
-    <channels>
-      <channel>
-        <channel_name>TNT Sports Chile</channel_name>
-        <channel_id>3-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/tnt-sports-chile.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 29</channel_name>
-        <channel_id>3-2</channel_id>
-        <url>https://pirlotv.la/canal-29.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 30 (HD)</channel_name>
-        <channel_id>3-3</channel_id>
-        <url>https://pirlotv.la/canal-30.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 31 (HD)</channel_name>
-        <channel_id>3-4</channel_id>
-        <url>https://pirlotv.la/canal-31.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-11-21 18:35</datetime>
-    <league>Liga de Colombia</league>
-    <teams>Atlético Bucaramanga vs América de Cali</teams>
-    <channels>
-      <channel>
-        <channel_name>Win Sports +</channel_name>
-        <channel_id>4-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/win-sports-plus.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 32</channel_name>
-        <channel_id>4-2</channel_id>
-        <url>https://pirlotv.la/canal-32.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 33 (HD)</channel_name>
-        <channel_id>4-3</channel_id>
-        <url>https://pirlotv.la/canal-33.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 34 (HD)</channel_name>
-        <channel_id>4-4</channel_id>
-        <url>https://pirlotv.la/canal-34.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-11-21 19:30</datetime>
-    <league>Formula 1</league>
-    <teams>Gran Premio de Las Vegas, Practicas Libres 3</teams>
-    <channels>
-      <channel>
-        <channel_name>Fórmula 1</channel_name>
-        <channel_id>5-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/formula-1.php</url>
+        <url>https://pirlotv.la/capo-deportes.php</url>
       </channel>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>5-2</channel_id>
+        <channel_id>2-2</channel_id>
         <url>https://pirlotv.la/canal-1.php</url>
       </channel>
       <channel>
         <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>5-3</channel_id>
+        <channel_id>2-3</channel_id>
         <url>https://pirlotv.la/canal-2.php</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>5-4</channel_id>
+        <channel_id>2-4</channel_id>
         <url>https://pirlotv.la/canal-3.php</url>
       </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 08:00</datetime>
+    <league>LaLiga 2</league>
+    <teams>Sabadell vs Granada</teams>
+    <channels>
       <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>5-5</channel_id>
+        <channel_name>Capo Deportes 14</channel_name>
+        <channel_id>3-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-14.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4</channel_name>
+        <channel_id>3-2</channel_id>
         <url>https://pirlotv.la/canal-4.php</url>
       </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>3-3</channel_id>
+        <url>https://pirlotv.la/canal-5.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 6 (HD)</channel_name>
+        <channel_id>3-4</channel_id>
+        <url>https://pirlotv.la/canal-6.php</url>
+      </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-11-21 19:30</datetime>
-    <league>NBA</league>
-    <teams>Toronto Raptors vs Detroit Pistons</teams>
+    <datetime>2026-11-21 08:00</datetime>
+    <league>Super Lig de Turquía</league>
+    <teams>Galatasaray vs Samsunspor</teams>
     <channels>
       <channel>
-        <channel_name>Canal 35 (HD)</channel_name>
+        <channel_name>Capo Deportes 9</channel_name>
+        <channel_id>4-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-9.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 7</channel_name>
+        <channel_id>4-2</channel_id>
+        <url>https://pirlotv.la/canal-7.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 8 (HD)</channel_name>
+        <channel_id>4-3</channel_id>
+        <url>https://pirlotv.la/canal-8.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 9 (HD)</channel_name>
+        <channel_id>4-4</channel_id>
+        <url>https://pirlotv.la/canal-9.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 08:30</datetime>
+    <league>Copa Mundial Sub-17</league>
+    <teams>Camerún vs Venezuela</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 10 (HD)</channel_name>
+        <channel_id>5-1</channel_id>
+        <url>https://pirlotv.la/canal-10.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 11 (HD)</channel_name>
+        <channel_id>5-2</channel_id>
+        <url>https://pirlotv.la/canal-11.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 09:00</datetime>
+    <league>Serie A</league>
+    <teams>Lazio Roma vs Lecce</teams>
+    <channels>
+      <channel>
+        <channel_name>Capo Deportes 10</channel_name>
         <channel_id>6-1</channel_id>
-        <url>https://pirlotv.la/canal-35.php</url>
+        <url>https://pirlotv.la/capo-deportes-10.php</url>
       </channel>
       <channel>
-        <channel_name>Canal 36 (HD)</channel_name>
+        <channel_name>Canal 12</channel_name>
         <channel_id>6-2</channel_id>
-        <url>https://pirlotv.la/canal-36.php</url>
+        <url>https://pirlotv.la/canal-12.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 13 (HD)</channel_name>
+        <channel_id>6-3</channel_id>
+        <url>https://pirlotv.la/canal-13.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 14 (HD)</channel_name>
+        <channel_id>6-4</channel_id>
+        <url>https://pirlotv.la/canal-14.php</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-11-21 20:00</datetime>
-    <league>Liga MX</league>
-    <teams>Puebla vs Atlético San Luis</teams>
+    <datetime>2026-11-21 09:00</datetime>
+    <league>Serie A</league>
+    <teams>Como vs Cagliari</teams>
     <channels>
       <channel>
-        <channel_name>Capo Deportes</channel_name>
+        <channel_name>Canal 15 (HD)</channel_name>
         <channel_id>7-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes.php</url>
+        <url>https://pirlotv.la/canal-15.php</url>
       </channel>
       <channel>
-        <channel_name>Liga MX 1</channel_name>
+        <channel_name>Canal 16 (HD)</channel_name>
         <channel_id>7-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXgxLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Liga MX 2 (HD)</channel_name>
-        <channel_id>7-3</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXgyLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Liga MX 3 (HD)</channel_name>
-        <channel_id>7-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXgzLnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Liga MX 4 (HD)</channel_name>
-        <channel_id>7-5</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXg0LnBocA==</url>
+        <url>https://pirlotv.la/canal-16.php</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-11-21 20:40</datetime>
-    <league>Liga de Colombia</league>
-    <teams>Deportivo Cali vs Millonarios</teams>
+    <datetime>2026-11-21 09:30</datetime>
+    <league>Bundesliga</league>
+    <teams>Borussia Monchengladbach vs Borussia Dortmund</teams>
     <channels>
       <channel>
-        <channel_name>Win Sports +</channel_name>
+        <channel_name>Capo Deportes 5</channel_name>
         <channel_id>8-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/win-sports-plus.php</url>
+        <url>https://pirlotv.la/capo-deportes-5.php</url>
       </channel>
       <channel>
-        <channel_name>Canal 37</channel_name>
+        <channel_name>Bundesliga 1</channel_name>
         <channel_id>8-2</channel_id>
-        <url>https://pirlotv.la/canal-37.php</url>
+        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9idW5kZXNsaWdhMS5waHA=</url>
       </channel>
       <channel>
-        <channel_name>Canal 38 (HD)</channel_name>
+        <channel_name>Bundesliga 2 (HD)</channel_name>
         <channel_id>8-3</channel_id>
-        <url>https://pirlotv.la/canal-38.php</url>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9idW5kZXNsaWdhMi5waHA=</url>
       </channel>
       <channel>
-        <channel_name>Canal 39 (HD)</channel_name>
+        <channel_name>Bundesliga 3 (HD)</channel_name>
         <channel_id>8-4</channel_id>
-        <url>https://pirlotv.la/canal-39.php</url>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9idW5kZXNsaWdhMy5waHA=</url>
+      </channel>
+      <channel>
+        <channel_name>Bundesliga 4 (HD)</channel_name>
+        <channel_id>8-5</channel_id>
+        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9idW5kZXNsaWdhNC5waHA=</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-11-21 22:00</datetime>
-    <league>Liga MX</league>
-    <teams>FC Juárez vs Atlas</teams>
+    <datetime>2026-11-21 09:30</datetime>
+    <league>Bundesliga</league>
+    <teams>Bayer Leverkusen vs Paderborn 07</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 17 (HD)</channel_name>
+        <channel_id>9-1</channel_id>
+        <url>https://pirlotv.la/canal-17.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 18 (HD)</channel_name>
+        <channel_id>9-2</channel_id>
+        <url>https://pirlotv.la/canal-18.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 09:30</datetime>
+    <league>Bundesliga</league>
+    <teams>Unión Berlín vs RB Leipzig</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 19 (HD)</channel_name>
+        <channel_id>10-1</channel_id>
+        <url>https://pirlotv.la/canal-19.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 20 (HD)</channel_name>
+        <channel_id>10-2</channel_id>
+        <url>https://pirlotv.la/canal-20.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 09:30</datetime>
+    <league>Bundesliga</league>
+    <teams>Eintracht Frankfurt vs Hoffenheim</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 21 (HD)</channel_name>
+        <channel_id>11-1</channel_id>
+        <url>https://pirlotv.la/canal-21.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 22 (HD)</channel_name>
+        <channel_id>11-2</channel_id>
+        <url>https://pirlotv.la/canal-22.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 09:30</datetime>
+    <league>Bundesliga</league>
+    <teams>Elversberg vs Friburgo</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 23 (HD)</channel_name>
+        <channel_id>12-1</channel_id>
+        <url>https://pirlotv.la/canal-23.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 24 (HD)</channel_name>
+        <channel_id>12-2</channel_id>
+        <url>https://pirlotv.la/canal-24.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 10:00</datetime>
+    <league>Premier League</league>
+    <teams>Chelsea vs Leeds United</teams>
     <channels>
       <channel>
         <channel_name>Capo Deportes 2</channel_name>
-        <channel_id>9-1</channel_id>
+        <channel_id>13-1</channel_id>
         <url>https://pirlotv.la/capo-deportes-2.php</url>
       </channel>
       <channel>
-        <channel_name>Liga MX 5</channel_name>
-        <channel_id>9-2</channel_id>
-        <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXg1LnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Liga MX 6 (HD)</channel_name>
-        <channel_id>9-3</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXg2LnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Liga MX 7 (HD)</channel_name>
-        <channel_id>9-4</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXg3LnBocA==</url>
-      </channel>
-      <channel>
-        <channel_name>Liga MX 8 (HD)</channel_name>
-        <channel_id>9-5</channel_id>
-        <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9saWdhbXg4LnBocA==</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-11-21 22:00</datetime>
-    <league>NBA</league>
-    <teams>Houston Rockets vs Denver Nuggets</teams>
-    <channels>
-      <channel>
-        <channel_name>Canal 40 (HD)</channel_name>
-        <channel_id>10-1</channel_id>
-        <url>https://pirlotv.la/canal-40.php</url>
-      </channel>
-      <channel>
-        <channel_name>Canal 41 (HD)</channel_name>
-        <channel_id>10-2</channel_id>
-        <url>https://pirlotv.la/canal-41.php</url>
-      </channel>
-    </channels>
-  </event>
-  <event>
-    <datetime>2026-11-21 22:10</datetime>
-    <league>Liga MX</league>
-    <teams>Tijuana Xolos vs Atlante</teams>
-    <channels>
-      <channel>
-        <channel_name>Capo Deportes</channel_name>
-        <channel_id>11-1</channel_id>
-        <url>https://pirlotv.la/capo-deportes.php</url>
-      </channel>
-      <channel>
         <channel_name>Premier League 5</channel_name>
-        <channel_id>11-2</channel_id>
+        <channel_id>13-2</channel_id>
         <url>https://pirlotv.la/eventos.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyNS5waHA=</url>
       </channel>
       <channel>
         <channel_name>Premier League 6 (HD)</channel_name>
-        <channel_id>11-3</channel_id>
+        <channel_id>13-3</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyNi5waHA=</url>
       </channel>
       <channel>
         <channel_name>Premier League 7 (HD)</channel_name>
-        <channel_id>11-4</channel_id>
+        <channel_id>13-4</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyNy5waHA=</url>
       </channel>
       <channel>
         <channel_name>Premier League 8 (HD)</channel_name>
-        <channel_id>11-5</channel_id>
+        <channel_id>13-5</channel_id>
         <url>https://pirlotv.la/eventoshd.php?r=aHR0cHM6Ly9jZHBsYXkubGl2ZS9wcmVtaWVyOC5waHA=</url>
       </channel>
     </channels>
   </event>
   <event>
-    <datetime>2026-11-21 23:00</datetime>
-    <league>Formula 1</league>
-    <teams>Gran Premio de Las Vegas, Clasificación</teams>
+    <datetime>2026-11-21 10:00</datetime>
+    <league>Premier League</league>
+    <teams>Tottenham Hotspur vs Ipswich Town</teams>
     <channels>
       <channel>
-        <channel_name>Fórmula 1</channel_name>
-        <channel_id>12-1</channel_id>
-        <url>https://pirlotv.la/en-vivo/formula-1.php</url>
+        <channel_name>Capo Deportes 4</channel_name>
+        <channel_id>14-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-4.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 25</channel_name>
+        <channel_id>14-2</channel_id>
+        <url>https://pirlotv.la/canal-25.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 26 (HD)</channel_name>
+        <channel_id>14-3</channel_id>
+        <url>https://pirlotv.la/canal-26.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 27 (HD)</channel_name>
+        <channel_id>14-4</channel_id>
+        <url>https://pirlotv.la/canal-27.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 10:00</datetime>
+    <league>Premier League</league>
+    <teams>Aston Villa vs Sunderland</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 28 (HD)</channel_name>
+        <channel_id>15-1</channel_id>
+        <url>https://pirlotv.la/canal-28.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 29 (HD)</channel_name>
+        <channel_id>15-2</channel_id>
+        <url>https://pirlotv.la/canal-29.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 10:00</datetime>
+    <league>Premier League</league>
+    <teams>Coventry City vs Crystal Palace</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 30 (HD)</channel_name>
+        <channel_id>16-1</channel_id>
+        <url>https://pirlotv.la/canal-30.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 31 (HD)</channel_name>
+        <channel_id>16-2</channel_id>
+        <url>https://pirlotv.la/canal-31.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 10:00</datetime>
+    <league>Premier League</league>
+    <teams>Bournemouth vs Nottingham Forest</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 32 (HD)</channel_name>
+        <channel_id>17-1</channel_id>
+        <url>https://pirlotv.la/canal-32.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 33 (HD)</channel_name>
+        <channel_id>17-2</channel_id>
+        <url>https://pirlotv.la/canal-33.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 10:00</datetime>
+    <league>Copa Mundial Sub-17</league>
+    <teams>Brasil vs República de Irlanda</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 34 (HD)</channel_name>
+        <channel_id>18-1</channel_id>
+        <url>https://pirlotv.la/canal-34.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 35 (HD)</channel_name>
+        <channel_id>18-2</channel_id>
+        <url>https://pirlotv.la/canal-35.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 10:00</datetime>
+    <league>Liga de Chile</league>
+    <teams>Coquimbo Unido vs Everton Viña del Mar</teams>
+    <channels>
+      <channel>
+        <channel_name>TNT Sports Chile</channel_name>
+        <channel_id>19-1</channel_id>
+        <url>https://pirlotv.la/en-vivo/tnt-sports-chile.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 36</channel_name>
+        <channel_id>19-2</channel_id>
+        <url>https://pirlotv.la/canal-36.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 37 (HD)</channel_name>
+        <channel_id>19-3</channel_id>
+        <url>https://pirlotv.la/canal-37.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 38 (HD)</channel_name>
+        <channel_id>19-4</channel_id>
+        <url>https://pirlotv.la/canal-38.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 10:15</datetime>
+    <league>LaLiga</league>
+    <teams>Rayo Vallecano vs Valencia</teams>
+    <channels>
+      <channel>
+        <channel_name>Capo Deportes 6</channel_name>
+        <channel_id>20-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-6.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 39</channel_name>
+        <channel_id>20-2</channel_id>
+        <url>https://pirlotv.la/canal-39.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 40 (HD)</channel_name>
+        <channel_id>20-3</channel_id>
+        <url>https://pirlotv.la/canal-40.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 41 (HD)</channel_name>
+        <channel_id>20-4</channel_id>
+        <url>https://pirlotv.la/canal-41.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 10:15</datetime>
+    <league>LaLiga 2</league>
+    <teams>Real Sociedad B vs Cádiz</teams>
+    <channels>
+      <channel>
+        <channel_name>Capo Deportes 14</channel_name>
+        <channel_id>21-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-14.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 42</channel_name>
+        <channel_id>21-2</channel_id>
+        <url>https://pirlotv.la/canal-42.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 43 (HD)</channel_name>
+        <channel_id>21-3</channel_id>
+        <url>https://pirlotv.la/canal-43.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 44 (HD)</channel_name>
+        <channel_id>21-4</channel_id>
+        <url>https://pirlotv.la/canal-44.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 10:30</datetime>
+    <league>Copa Mundial Sub-17</league>
+    <teams>México vs Rumania</teams>
+    <channels>
+      <channel>
+        <channel_name>Capo Deportes</channel_name>
+        <channel_id>22-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 45</channel_name>
+        <channel_id>22-2</channel_id>
+        <url>https://pirlotv.la/canal-45.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 46 (HD)</channel_name>
+        <channel_id>22-3</channel_id>
+        <url>https://pirlotv.la/canal-46.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 47 (HD)</channel_name>
+        <channel_id>22-4</channel_id>
+        <url>https://pirlotv.la/canal-47.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 10:30</datetime>
+    <league>Copa Mundial Sub-17</league>
+    <teams>Chile vs Argelia</teams>
+    <channels>
+      <channel>
+        <channel_name>Canal 48 (HD)</channel_name>
+        <channel_id>23-1</channel_id>
+        <url>https://pirlotv.la/canal-48.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 49 (HD)</channel_name>
+        <channel_id>23-2</channel_id>
+        <url>https://pirlotv.la/canal-49.php</url>
+      </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 10:30</datetime>
+    <league>Eredivisie</league>
+    <teams>NEC Nijmegen vs PSV Eindhoven</teams>
+    <channels>
+      <channel>
+        <channel_name>Capo Deportes 11</channel_name>
+        <channel_id>24-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-11.php</url>
       </channel>
       <channel>
         <channel_name>Canal 1</channel_name>
-        <channel_id>12-2</channel_id>
+        <channel_id>24-2</channel_id>
         <url>https://pirlotv.la/canal-1.php</url>
       </channel>
       <channel>
         <channel_name>Canal 2 (HD)</channel_name>
-        <channel_id>12-3</channel_id>
+        <channel_id>24-3</channel_id>
         <url>https://pirlotv.la/canal-2.php</url>
       </channel>
       <channel>
         <channel_name>Canal 3 (HD)</channel_name>
-        <channel_id>12-4</channel_id>
+        <channel_id>24-4</channel_id>
         <url>https://pirlotv.la/canal-3.php</url>
       </channel>
+    </channels>
+  </event>
+  <event>
+    <datetime>2026-11-21 11:00</datetime>
+    <league>Super Lig de Turquía</league>
+    <teams>Kocaelispor vs Fenerbahce</teams>
+    <channels>
       <channel>
-        <channel_name>Canal 4 (HD)</channel_name>
-        <channel_id>12-5</channel_id>
+        <channel_name>Capo Deportes 12</channel_name>
+        <channel_id>25-1</channel_id>
+        <url>https://pirlotv.la/capo-deportes-12.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 4</channel_name>
+        <channel_id>25-2</channel_id>
         <url>https://pirlotv.la/canal-4.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 5 (HD)</channel_name>
+        <channel_id>25-3</channel_id>
+        <url>https://pirlotv.la/canal-5.php</url>
+      </channel>
+      <channel>
+        <channel_name>Canal 6 (HD)</channel_name>
+        <channel_id>25-4</channel_id>
+        <url>https://pirlotv.la/canal-6.php</url>
       </channel>
     </channels>
   </event>
