@@ -63,12 +63,16 @@ Una vez que el contenedor esté corriendo en el puerto `8080`:
 | :--- | :--- | :--- |
 | **Reproductor Web PRO** | `http://localhost:8888/` | Reproductor web moderno con medidor de búfer y explorador |
 | **Canal Directo Web** | `http://localhost:8888/player/{id}` | Ej: `http://localhost:8888/player/303` (reproduce directamente) |
-| **Lista M3U Completa** | `http://localhost:8888/channels.m3u` | Para TiviMate, OTT Navigator, IPTV Smarters, etc. |
-| **Canal Específico HLS** | `http://localhost:8888/live/{id}.m3u8` | Con ventana ampliada y TIME-OFFSET |
+| **Lista M3U Completa (TVNow247)** | `http://localhost:8888/channels.m3u` | Para TiviMate, OTT Navigator, IPTV Smarters, etc. |
+| **Lista M3U ZicoTV (Deportes)** | `http://localhost:8888/zico/playlist.m3u` | Lista M3U con todos los canales ZicoTV (DAZN, Movistar+, etc.) |
+| **Canal Específico HLS (TVNow)** | `http://localhost:8888/live/{id}.m3u8` | Con ventana ampliada y TIME-OFFSET |
+| **Canal Específico HLS (ZicoTV)** | `http://localhost:8888/zico/live/{id}.m3u8` | HLS con auto-renovación de tokens de 3h y prefetching |
 | **Canal con Offset Personalizado** | `http://localhost:8888/live/{id}.m3u8?offset=20` | Ajusta los segundos de colchón de búfer (ej. 20s) |
 | **Proxy de URL Directa** | `http://localhost:8888/proxy?url=...` | Pasa la URL que tenías directamente |
-| **API de Canales (JSON)** | `http://localhost:8888/api/channels` | Catálogo de canales con logos y grupos |
+| **API de Canales TVNow (JSON)** | `http://localhost:8888/api/channels` | Catálogo de canales con logos y grupos |
+| **API de Canales ZicoTV (JSON)** | `http://localhost:8888/zico/api/channels` | Catálogo de eventos deportivos y canales 24/7 de ZicoTV |
 | **Estado y Rendimiento** | `http://localhost:8888/api/status` | Métricas de aciertos de caché, prefetches y salud |
+| **Estado ZicoTV** | `http://localhost:8888/zico/api/status` | Métricas de tokens, streams activos y TTL restante |
 
 ---
 

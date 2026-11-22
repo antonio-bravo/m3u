@@ -17,7 +17,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copiar el código de la aplicación
-COPY deobfuscator.py proxy_server.py ./
+COPY deobfuscator.py zicotv_proxy.py proxy_server.py ./
 
 # Exponer el puerto del servidor
 EXPOSE 8080

@@ -12,10 +12,11 @@ from collections import OrderedDict
 
 import httpx
 from fastapi import FastAPI, Request, Query, HTTPException, Response
-from fastapi.responses import HTMLResponse, PlainTextResponse, JSONResponse
+from fastapi.responses import HTMLResponse, PlainTextResponse, JSONResponse, RedirectResponse
 from PIL import Image
 
 from deobfuscator import deobfuscate_segment, decode_token, encode_token
+from zicotv_proxy import zico_manager
 
 # Configuración de logs
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -302,11 +303,18 @@ state = ProxyState()
 http_client: Optional[httpx.AsyncClient] = None
 
 
+def get_http_client() -> httpx.AsyncClient:
+    global http_client
+    if http_client is None or http_client.is_closed:
+        http_client = httpx.AsyncClient(headers=HEADERS, timeout=12.0, follow_redirects=True)
+    return http_client
+
+
 @app.on_event("startup")
 async def startup_event():
-    global http_client
-    http_client = httpx.AsyncClient(headers=HEADERS, timeout=12.0, follow_redirects=True)
+    get_http_client()
     asyncio.create_task(refresh_domain_and_channels_background())
+    asyncio.create_task(zico_manager.get_channel_catalog())
 
 
 @app.on_event("shutdown")
@@ -314,6 +322,7 @@ async def shutdown_event():
     global http_client
     if http_client:
         await http_client.aclose()
+    await zico_manager.close()
 
 
 # ---------------------------------------------------------------------------
@@ -450,15 +459,13 @@ async def refresh_domain_and_channels_background():
 # ---------------------------------------------------------------------------
 async def fetch_and_deobfuscate_segment(raw_url: str) -> bytes:
     """Descarga de la CDN con reintentos y desofusca el contenedor WebP/PNG a MPEG-TS limpio."""
-    global http_client
-    if not http_client:
-        raise HTTPException(status_code=500, detail="HTTP client no inicializado")
+    client = get_http_client()
 
     raw_bytes = None
     last_err = None
     for attempt in range(3):
         try:
-            r = await http_client.get(raw_url, headers=HEADERS, timeout=8.0)
+            r = await client.get(raw_url, headers=HEADERS, timeout=8.0)
             if r.status_code == 200:
                 raw_bytes = r.content
                 break
@@ -573,6 +580,19 @@ async def get_live_playlist(
     preferred_domain: Optional[str] = None
 ):
     """Obtiene, amplía la ventana deslizante y reescribe la lista M3U8 para un canal con buffer offset."""
+    # Soporte para canales de ZicoTV (ej. zicotv-9, zico_9, zico-9)
+    zico_match = re.match(r'^(?:zicotv[-_]|zico[-_])?(\d+)$', channel_id)
+    if zico_match and (channel_id.startswith("zico") or channel_id.startswith("zicotv")):
+        cid = int(zico_match.group(1))
+        time_offset = offset if offset is not None else DEFAULT_BUFFER_OFFSET
+        return await zico_manager.proxy_channel_hls(
+            channel_id=cid,
+            request=request,
+            window_manager=window_manager,
+            prefetch_task=prefetch_segments_task,
+            buffer_offset=time_offset
+        )
+
     global http_client
     if not http_client:
         raise HTTPException(status_code=500, detail="HTTP client no inicializado")
@@ -816,7 +836,7 @@ async def health():
 
 @app.get("/channels.m3u", response_class=PlainTextResponse)
 @app.get("/playlist.m3u", response_class=PlainTextResponse)
-async def get_channels_m3u(request: Request):
+async def get_channels_m3u(request: Request, include_zico: bool = Query(False, description="Incluir canales ZicoTV")):
     """Genera la lista M3U completa con todos los canales apuntando a este proxy."""
     if not state.channels:
         state.channels = await load_channels()
@@ -833,12 +853,88 @@ async def get_channels_m3u(request: Request):
         lines.append(f'#EXTINF:-1 tvg-id="{cid}" tvg-name="{cname}" tvg-logo="{clogo}" group-title="{cgroup}",{cname}')
         lines.append(stream_url)
 
+    if include_zico or request.query_params.get("zico") == "1":
+        zico_cat = await zico_manager.get_channel_catalog()
+        for ch in zico_cat:
+            cid = ch["id"]
+            cname = ch["name"]
+            cgroup = ch["group"]
+            clogo = ch.get("logo", "")
+            stream_url = f"{base_url}/zico/live/{cid}.m3u8"
+            logo_attr = f' tvg-logo="{clogo}"' if clogo else ""
+            lines.append(f'#EXTINF:-1 tvg-id="zicotv-{cid}" tvg-name="{cname}"{logo_attr} group-title="{cgroup}",{cname}')
+            lines.append(stream_url)
+
     content = "\n".join(lines) + "\n"
     return Response(
         content=content,
         media_type="application/vnd.apple.mpegurl",
-        headers={"Content-Disposition": 'inline; filename="tvnow247.m3u"'}
+        headers={"Content-Disposition": 'inline; filename="channels.m3u"'}
     )
+
+
+# ---------------------------------------------------------------------------
+# Microproxy de ZicoTV (HLS & Auto-Renew Token PRO)
+# ---------------------------------------------------------------------------
+@app.get("/zico/live/{channel_id}.m3u8")
+@app.head("/zico/live/{channel_id}.m3u8")
+async def get_zico_live_m3u8(channel_id: int, request: Request, offset: Optional[float] = Query(None)):
+    """
+    Reproducción HLS en vivo de canales ZicoTV con renovación automática de tokens (3h TTL).
+    CORS habilitado y búfer extendido PRO para estabilidad en VLC, TiviMate, Kodi o navegador.
+    """
+    buf_offset = offset if offset is not None else DEFAULT_BUFFER_OFFSET
+    return await zico_manager.proxy_channel_hls(
+        channel_id=channel_id,
+        request=request,
+        window_manager=window_manager,
+        prefetch_task=prefetch_segments_task,
+        buffer_offset=buf_offset
+    )
+
+
+@app.get("/zico/live/{channel_id}.ts")
+@app.get("/zico/live/{channel_id}")
+async def get_zico_direct_stream(channel_id: int):
+    """Redirección directa al flujo HLS activo de ZicoTV con token válido."""
+    stream_info = await zico_manager.resolve_stream(channel_id)
+    return RedirectResponse(url=stream_info["media_url"])
+
+
+@app.get("/zico/channels.m3u", response_class=PlainTextResponse)
+@app.get("/zico/playlist.m3u", response_class=PlainTextResponse)
+async def get_zico_channels_m3u(request: Request):
+    """Genera la lista M3U completa de ZicoTV con todos los canales apuntando a este microproxy."""
+    base_url = str(request.base_url).rstrip("/")
+    content = await zico_manager.generate_m3u_playlist(base_url)
+    return Response(
+        content=content,
+        media_type="application/vnd.apple.mpegurl",
+        headers={"Content-Disposition": 'inline; filename="zicotv.m3u"'}
+    )
+
+
+@app.get("/zico/api/channels")
+async def get_zico_channels_api(force: bool = False):
+    """Devuelve el catálogo de canales fijos y eventos deportivos en directo de ZicoTV en JSON."""
+    return await zico_manager.get_channel_catalog(force=force)
+
+
+@app.get("/zico/api/status")
+async def get_zico_status_api():
+    """Devuelve el estado de la caché de streams, métricas de tokens y salud del microproxy ZicoTV."""
+    return zico_manager.get_status()
+
+
+@app.get("/zico/segment")
+@app.head("/zico/segment")
+async def get_zico_segment_alias(
+    request: Request,
+    b64: Optional[str] = Query(None),
+    url: Optional[str] = Query(None)
+):
+    """Alias para fragmentos de video enrutados desde /zico/."""
+    return await get_segment(request, b64=b64, url=url)
 
 
 # ---------------------------------------------------------------------------
