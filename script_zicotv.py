@@ -348,7 +348,7 @@
 #     sys.exit(0 if ok else 1)
 #!/usr/bin/env python3
 """
-Script de descarga y actualización de canales ZicoTV (HLS / M3U) - Versión Token Extendido
+Script de descarga y actualización de canales ZicoTV (HLS / M3U)
 Extrae canales 24/7 y emisiones de eventos deportivos en directo.
 Genera: lista_zicotv.m3u
 """
@@ -361,8 +361,6 @@ import sys
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
 
 BASE_URLS = [
     'https://bp.zicotv.cc',
@@ -372,14 +370,13 @@ BASE_URLS = [
 OUTPUT_M3U = 'lista_zicotv.m3u'
 LOGOS_XML_PATH = 'LOGOS-CANALES-TV.xml'
 
+# CABECERAS ORIGINALES (las que ya te funcionaban)
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
     'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
-    'Accept-Encoding': 'gzip, deflate, br',
 }
 
-# Canales fijos 24/7 conocidos (sirven como base para mantener nombres limpios)
 CANALES_FIJOS = {
     1: {'name': 'DAZN LaLiga', 'group': 'Fútbol'},
     2: {'name': 'DAZN 1 Spain', 'group': 'Deportes'},
@@ -451,7 +448,7 @@ def cargar_diccionario_logos(xml_path=LOGOS_XML_PATH):
                 if clean_name not in logos_dict:
                     logos_dict[clean_name] = logo.text.strip()
     except Exception as e:
-        print(f"[!] Nota: No se pudo parsear {xml_path}: {e}")
+        print(f"Nota: No se pudo parsear {xml_path}: {e}")
     return logos_dict
 
 def buscar_logo(channel_name, logos_dict):
@@ -477,44 +474,42 @@ def normalizar_grupo(sport):
         return 'General'
     return traducciones.get(sport.lower().strip(), sport.capitalize())
 
-def obtener_base_url_activa(session):
+def obtener_base_url_activa():
     for base in BASE_URLS:
         try:
-            r = session.get(f"{base}/api/v1/events", headers=HEADERS, timeout=5)
+            r = requests.get(f"{base}/api/v1/events", headers=HEADERS, timeout=5)
             if r.status_code == 200:
                 return base
         except Exception:
             pass
     return BASE_URLS[0]
 
-def resolver_stream_canal(base_url, channel_id, channel_name, group_title, logos_dict, session):
+def resolver_stream_canal(base_url, channel_id, channel_name, group_title, logos_dict, session=None):
+    s = session or requests.Session()
     player_url = f"{base_url}/api/player/{channel_id}"
+
     try:
-        r_player = session.get(player_url, headers=HEADERS, timeout=6)
+        r_player = s.get(player_url, headers=HEADERS, timeout=6)
         if r_player.status_code != 200:
             return None
 
         html = r_player.text
+        m_title = re.search(r'<title>Reproductor\s*-\s*([^<]+)</title>', html)
+        if m_title and m_title.group(1).strip():
+            channel_name = m_title.group(1).strip()
+
         m_renew = re.search(r'var\s+ZT_RENEW\s*=\s*(\{.*?\});', html, re.DOTALL)
         if not m_renew:
-            m_renew = re.search(r'ZT_RENEW\s*=\s*(\{.*?\})(?:;|,|\n)', html, re.DOTALL)
-            
-        if not m_renew:
             return None
 
-        try:
-            renew_info = json.loads(m_renew.group(1))
-        except json.JSONDecodeError:
-            return None
-
+        renew_info = json.loads(m_renew.group(1))
         renew_rel_path = renew_info.get('url')
         if not renew_rel_path:
             return None
 
         renew_full_url = f"{base_url}{renew_rel_path}"
-        
-        # 🚀 MEJORA CLAVE: Usar application/json y payload {'native': True} 
-        # para extender la vida del token de 20 min (1200s) a 3 horas (10800s).
+
+        # 🚀 MEJORA: Payload para token de 3 horas (10800s) en lugar de 20 min (1200s)
         post_headers = {
             **HEADERS,
             'Referer': player_url,
@@ -522,15 +517,11 @@ def resolver_stream_canal(base_url, channel_id, channel_name, group_title, logos
             'X-Requested-With': 'XMLHttpRequest'
         }
         
-        r_renew = session.post(renew_full_url, data=json.dumps({'native': True}), headers=post_headers, timeout=6)
+        r_renew = s.post(renew_full_url, data=json.dumps({'native': True}), headers=post_headers, timeout=6)
         if r_renew.status_code != 200:
             return None
 
-        try:
-            renew_data = r_renew.json()
-        except json.JSONDecodeError:
-            return None
-
+        renew_data = r_renew.json()
         sources = renew_data.get('sources', [])
         valid_sources = [src for src in sources if src.get('url') and not src.get('locked')]
 
@@ -538,32 +529,34 @@ def resolver_stream_canal(base_url, channel_id, channel_name, group_title, logos
             return None
 
         chosen_source = valid_sources[0]
+        logo_url = buscar_logo(channel_name, logos_dict)
+
         return {
             'id': channel_id,
             'name': channel_name,
             'group': group_title,
-            'logo': buscar_logo(channel_name, logos_dict),
+            'logo': logo_url,
             'url': chosen_source.get('url'),
             'cdn_label': chosen_source.get('label', 'CDN')
         }
     except Exception:
         return None
 
-def recolectar_canales_disponibles(base_url, session):
+def recolectar_canales_disponibles(base_url):
     canales_dict = {}
 
-    # 1. Precargar canales fijos para mantener sus nombres limpios y prioritarios
+    # 1. Agregar canales fijos 24/7
     for cid, info in CANALES_FIJOS.items():
         canales_dict[cid] = {'name': info['name'], 'group': info['group'], 'is_fixed': True}
 
-    # 2. Consultar eventos para capturar TODOS los canales 'own' disponibles dinámicamente
+    # 2. Consultar eventos para capturar canales dinámicos y variantes múltiples
     events_url = f"{base_url}/api/v1/events"
     try:
-        print(f"[*] Consultando eventos en directo desde {events_url}...")
-        r_events = session.get(events_url, headers=HEADERS, timeout=10)
+        print(f"Consultando eventos en directo desde {events_url}...")
+        r_events = requests.get(events_url, headers=HEADERS, timeout=8)
         if r_events.status_code == 200:
             events_data = r_events.json().get('data', [])
-            print(f"[*] Eventos obtenidos: {len(events_data)}")
+            print(f"Eventos obtenidos: {len(events_data)}")
             
             canales_descubiertos = 0
             for event in events_data:
@@ -577,27 +570,27 @@ def recolectar_canales_disponibles(base_url, session):
                         
                         if cid:
                             if cid in canales_dict:
-                                # Si ya existe, solo actualizamos si es un canal genérico sin nombre claro
+                                # Si ya existe, actualizamos solo si es un nombre genérico
                                 existing = canales_dict[cid]
                                 if not existing.get('is_fixed') and existing['name'].startswith('Canal '):
                                     full_name = f"{cname} - {event_title}" if event_title else cname
                                     canales_dict[cid] = {'name': full_name, 'group': sport, 'is_fixed': False}
                             else:
-                                # Nuevo canal descubierto dinámicamente (ej. variantes de un mismo evento)
+                                # Nuevo canal descubierto (ej. variante de un mismo evento)
                                 full_name = f"{cname} - {event_title}" if event_title and event_title != cname else cname
                                 canales_dict[cid] = {'name': full_name, 'group': sport, 'is_fixed': False}
                                 canales_descubiertos += 1
                                 
-            print(f"[*] Canales dinámicos nuevos descubiertos: {canales_descubiertos}")
+            print(f"Canales dinámicos nuevos descubiertos: {canales_descubiertos}")
     except Exception as e:
-        print(f"[!] Advertencia al consultar eventos de ZicoTV: {e}")
+        print(f"Advertencia al consultar eventos de ZicoTV: {e}")
 
-    print(f"[*] Total de canales únicos identificados para resolver: {len(canales_dict)}")
+    print(f"Total de canales identificados para resolver: {len(canales_dict)}")
     return canales_dict
 
 def generar_lista_m3u(canales_resueltos, archivo_salida=OUTPUT_M3U):
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    contenido = "#EXTM3U url-tvg=\"\"\n"
+    contenido = "#EXTM3U\n"
     contenido += f"# ZicoTV Channels List - {timestamp}\n"
     contenido += f"# Canales activos: {len(canales_resueltos)}\n\n"
 
@@ -610,7 +603,7 @@ def generar_lista_m3u(canales_resueltos, archivo_salida=OUTPUT_M3U):
             contenido += f"\n# -------- {grupo_actual.upper()} --------\n"
 
         tvg_id = f"zicotv-{c['id']}"
-        safe_name = c['name'].replace('"', '\\"') # Escapar comillas para evitar errores en el reproductor
+        safe_name = c['name'].replace('"', '\\"')
         logo_attr = f' tvg-logo="{c["logo"]}"' if c.get('logo') else ''
         contenido += f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{safe_name}"{logo_attr} group-title="{c["group"]}",{safe_name}\n'
         contenido += f"{c['url']}\n"
@@ -619,39 +612,28 @@ def generar_lista_m3u(canales_resueltos, archivo_salida=OUTPUT_M3U):
         f.write(contenido)
 
     tamano = os.path.getsize(archivo_salida)
-    print(f"\n[✓] Archivo '{archivo_salida}' generado correctamente:")
-    print(f"    - Canales activos incluidos: {len(canales_resueltos)}")
-    print(f"    - Tamaño del archivo: {tamano:,} bytes")
+    print(f"\n✓ Archivo '{archivo_salida}' generado correctamente:")
+    print(f"  - Canales activos incluidos: {len(canales_resueltos)}")
+    print(f"  - Tamaño del archivo: {tamano:,} bytes")
 
 def main():
-    print("=" * 70)
-    print(" Script de Actualización de Canales ZicoTV (Token Extendido 3h)")
-    print("=" * 70)
-
-    # Configurar sesión con reintentos para mayor robustez y velocidad (Connection Pooling)
-    session = requests.Session()
-    retry = Retry(connect=3, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
-    adapter = HTTPAdapter(max_retries=retry, pool_connections=20, pool_maxsize=20)
-    session.mount('http://', adapter)
-    session.mount('https://', adapter)
+    print("=" * 60)
+    print("Script de Actualización de Canales ZicoTV")
+    print("=" * 60)
 
     logos_dict = cargar_diccionario_logos()
-    print(f"[*] Diccionario de logos cargado ({len(logos_dict)} referencias).")
+    print(f"Diccionario de logos cargado ({len(logos_dict)} referencias).")
 
-    base_url = obtener_base_url_activa(session)
-    if not base_url:
-        print("[!] No se pudo determinar una URL base activa.")
-        return False
-    print(f"[*] Usando dominio base: {base_url}")
+    base_url = obtener_base_url_activa()
+    print(f"Usando dominio base: {base_url}")
 
-    canales_meta = recolectar_canales_disponibles(base_url, session)
-    print("\n[*] Resolviendo enlaces HLS con tokens de 3 horas en paralelo...")
+    canales_meta = recolectar_canales_disponibles(base_url)
+    print("\nResolviendo enlaces HLS con tokens de 3 horas en paralelo...")
     
     canales_resueltos = []
-    exitosos = 0
-    fallidos = 0
+    session = requests.Session() # Reutilizamos sesión para eficiencia, como en el original mejorado
 
-    with ThreadPoolExecutor(max_workers=15) as executor:
+    with ThreadPoolExecutor(max_workers=10) as executor:
         futuros = {
             executor.submit(
                 resolver_stream_canal, base_url, cid, meta['name'], meta['group'], logos_dict, session
@@ -663,22 +645,17 @@ def main():
             try:
                 res = f.result()
                 if res and res.get('url'):
-                    print(f"  ✓ [{res['id']:5d}] {res['name']:<40} ({res['cdn_label']})")
+                    print(f"  ✓ [{res['id']:5d}] {res['name']:<35} ({res['cdn_label']})")
                     canales_resueltos.append(res)
-                    exitosos += 1
-                else:
-                    fallidos += 1
             except Exception:
-                fallidos += 1
-
-    print(f"\n[*] Resumen: {exitosos} resueltos correctamente, {fallidos} fallidos/omitidos.")
+                pass
 
     if not canales_resueltos:
-        print("\n[!] No se pudieron resolver canales válidos.")
+        print("\n✗ No se pudieron resolver canales válidos.")
         return False
 
     generar_lista_m3u(canales_resueltos)
-    print("\n[✓] Proceso completado exitosamente.")
+    print("\n✓ Proceso completado exitosamente.")
     return True
 
 if __name__ == '__main__':
