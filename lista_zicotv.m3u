@@ -1,30 +1,123 @@
 #EXTM3U
+<<<<<<< Updated upstream
 # ZicoTV Channels List - 2026-11-22 16:41:35
+||||||| Stash base
+# ZicoTV Channels List - 2026-11-22 14:01:16
+=======
+# ZicoTV Channels List - 2026-11-22 17:58:12
+>>>>>>> Stashed changes
 # Canales activos: 120
 
 
 # -------- BALONCESTO --------
 #EXTINF:-1 tvg-id="zicotv-42898" tvg-name="DAZN Baloncesto 1" group-title="Baloncesto",DAZN Baloncesto 1
+<<<<<<< Updated upstream
 https://cdn8.zicotv.cc/dazn-baloncesto-1/index.m3u8?token=5e70df08bacb759c547b28f567c1aec67f90ec87-9497a3ebd79b17c50e8a6ac14cd1ad91-1795366881-
 #EXTINF:-1 tvg-id="zicotv-43194" tvg-name="DAZN Baloncesto 2" group-title="Baloncesto",DAZN Baloncesto 2
 https://cdn2.zicotv.cc/dazn-baloncesto-2/index.m3u8?token=2199b55d59413c966991704ee2c278fb713c2f3e-9011a59120a7b7ef2a97a9ac905f5c2d-1795366882-
 #EXTINF:-1 tvg-id="zicotv-43195" tvg-name="DAZN Baloncesto 3" group-title="Baloncesto",DAZN Baloncesto 3
 https://cdn7.zicotv.cc/dazn-baloncesto-3/index.m3u8?token=8f4ac0c5f8c4e8a997d6160a6249576dbf6d4dac-98463f60900b1d230254212fb5d13657-1795366882-
+||||||| Stash base
+=======
+https://cdn3.zicotv.cc/dazn-baloncesto-1/index.m3u8?token=1ffa82f9d22536b1585a229cb6722916f4c19ee4-4405c4d8290e89b61745df8790809745-1795377485-
+#EXTINF:-1 tvg-id="zicotv-43194" tvg-name="DAZN Baloncesto 2" group-title="Baloncesto",DAZN Baloncesto 2
+https://cdn8.zicotv.cc/dazn-baloncesto-2/index.m3u8?token=188e9cd7c7efb08f9bdc4755c703161172904fc6-d65cac40d680ef82b41d0483f943c421-1795377485-
+#EXTINF:-1 tvg-id="zicotv-43195" tvg-name="DAZN Baloncesto 3" group-title="Baloncesto",DAZN Baloncesto 3
+https://cdn6.zicotv.cc/dazn-baloncesto-3/index.m3u8?token=f9a2a4cf1c1074099c7f8d07c3af248e6ab1d24e-fad8009f2201a1ea1bccde4cea6d6d8b-1795377485-
+>>>>>>> Stashed changes
 #EXTINF:-1 tvg-id="zicotv-25" tvg-name="NBA 1" group-title="Baloncesto",NBA 1
+<<<<<<< Updated upstream
 https://cdn3.zicotv.cc/nba-1/index.m3u8?token=46daa035d991c6c4a876e2e4b37478aafb8470b3-e19a72065fd505f661f05149971c4dc2-1795366880-
 #EXTINF:-1 tvg-id="zicotv-57020" tvg-name="NBA TV" tvg-logo="https://seeklogo.com/images/N/nba-tv-logo-9865A907F8-seeklogo.com.png" group-title="Baloncesto",NBA TV
 https://cdn5.zicotv.cc/iptv_nbatv_usa/index.m3u8?token=1aac11eb8f1a3174b1f9c2010ed7b7d510c6afc8-872426b97876ad836b481a809542dfac-1795366881-
 #EXTINF:-1 tvg-id="zicotv-57125" tvg-name="TSN3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/TSN3.svg/2560px-TSN3.svg.png" group-title="Baloncesto",TSN3
 https://cdn7.zicotv.cc/iptv_tsn3_ca/index.m3u8?token=0fac37bd3c45bf80d1629a18e3327bf797510f15-112d6e43c2368b939c63dda21256ed47-1795366881-
+||||||| Stash base
+https://cdn3.zicotv.cc/nba-1/index.m3u8?token=9f22f767b6fcf18ab96190a8f438fd264c9fca93-e208068052df08b666311c7aa149e316-1795353673-
+
+# -------- BASKETBALL --------
+#EXTINF:-1 tvg-id="zicotv-42898" tvg-name="DAZN Baloncesto 1" group-title="Basketball",DAZN Baloncesto 1
+https://cdn8.zicotv.cc/dazn-baloncesto-1/index.m3u8?token=4e0bbbc4a208105c323e3e8ac747aaed47a60c19-8034bcbceba7c39ecf0817a2cfe9f390-1795353673-
+#EXTINF:-1 tvg-id="zicotv-43194" tvg-name="DAZN Baloncesto 2" group-title="Basketball",DAZN Baloncesto 2
+https://cdn8.zicotv.cc/dazn-baloncesto-2/index.m3u8?token=77da446b5477b10f2ed402d68b3d9a15b9ba665e-86aa5b45b8e3bd7ed4e3203c1478e739-1795353674-
+#EXTINF:-1 tvg-id="zicotv-43195" tvg-name="DAZN Baloncesto 3" group-title="Basketball",DAZN Baloncesto 3
+https://cdn3.zicotv.cc/dazn-baloncesto-3/index.m3u8?token=f6e756cd33d936e17b0c662e8984684fe0e32a0b-1fa1c08125b7ee7f51890e9368b0b9d3-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57020" tvg-name="NBA TV" group-title="Basketball",NBA TV
+https://cdn8.zicotv.cc/iptv_nbatv_usa/index.m3u8?token=628d424d6f012bf6b3d50d7c5a6123834713e2fa-ebb9b2901de9f7bbf23a381ca9436dcd-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57125" tvg-name="TSN3" group-title="Basketball",TSN3
+https://cdn8.zicotv.cc/iptv_tsn3_ca/index.m3u8?token=1ec18725ef4848bd4141e11ec3c9cdf72385d77b-11280f33bc00d28ef65ee3c2460846cc-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57384" tvg-name="[RAVEN] Baloncesto TV 1" group-title="Basketball",[RAVEN] Baloncesto TV 1
+https://cdn8.zicotv.cc/raven_baloncesto_tv_1/index.m3u8?token=2c12dee9f740e80246fad5513cf3c88ee798e523-5c30f922a68cc2212b1b4f5af3ebc32b-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57394" tvg-name="[RAVEN] Baloncesto TV 10" group-title="Basketball",[RAVEN] Baloncesto TV 10
+https://cdn8.zicotv.cc/raven_baloncesto_tv_10/index.m3u8?token=38ed048316226cd8a3de6ff47ff675ade0f4f50c-7f7ecf691abc6bd8b86dd2cac8f530ea-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57395" tvg-name="[RAVEN] Baloncesto TV 11" group-title="Basketball",[RAVEN] Baloncesto TV 11
+https://cdn5.zicotv.cc/raven_baloncesto_tv_11/index.m3u8?token=7404422c990336b74ac9fdeba4ff2ffcce757f0c-ff476a66512380ef6b270a6fe4e5a1a8-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57396" tvg-name="[RAVEN] Baloncesto TV 12" group-title="Basketball",[RAVEN] Baloncesto TV 12
+https://cdn5.zicotv.cc/raven_baloncesto_tv_12/index.m3u8?token=96eb081b53af1ba8d8b4950267156d3cfd9ce0b4-6653b37dc65aed2ff4eed402db34c706-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57397" tvg-name="[RAVEN] Baloncesto TV 13" group-title="Basketball",[RAVEN] Baloncesto TV 13
+https://cdn8.zicotv.cc/raven_baloncesto_tv_13/index.m3u8?token=4cb67069cb97a2ef7986bd766c3009bceb94533e-ab3a1bac1b9041bb7d41c76f9279a646-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57398" tvg-name="[RAVEN] Baloncesto TV 14" group-title="Basketball",[RAVEN] Baloncesto TV 14
+https://cdn8.zicotv.cc/raven_baloncesto_tv_14/index.m3u8?token=4ec56af5837bdc4688e320e05c34b54e4803b928-b755aa58a8bc0695d44c21c787875168-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57405" tvg-name="[RAVEN] Baloncesto TV 15" group-title="Basketball",[RAVEN] Baloncesto TV 15
+https://cdn8.zicotv.cc/raven_baloncesto_tv_15/index.m3u8?token=4c532cbe72c7caf47de3df6608669c7baa07f92e-48d6b2558c6883ca8b7cd3459df8dcb3-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57406" tvg-name="[RAVEN] Baloncesto TV 16" group-title="Basketball",[RAVEN] Baloncesto TV 16
+https://cdn3.zicotv.cc/raven_baloncesto_tv_16/index.m3u8?token=cd43aadae5c71d8fce119a98be3f35e78894b144-06fa274183f448e2bf8a7e69f7326038-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57407" tvg-name="[RAVEN] Baloncesto TV 17" group-title="Basketball",[RAVEN] Baloncesto TV 17
+https://cdn8.zicotv.cc/raven_baloncesto_tv_17/index.m3u8?token=37af18111eae961da757997f97885b648fea319c-bd691d8543d74b7ae2b004ebd27cfaa0-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57408" tvg-name="[RAVEN] Baloncesto TV 18" group-title="Basketball",[RAVEN] Baloncesto TV 18
+https://cdn8.zicotv.cc/raven_baloncesto_tv_18/index.m3u8?token=a29015cecc13fa9b8d4a23134f016f019380cdb7-709b6a649fca0f4b632670386198246c-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57409" tvg-name="[RAVEN] Baloncesto TV 19" group-title="Basketball",[RAVEN] Baloncesto TV 19
+https://cdn8.zicotv.cc/raven_baloncesto_tv_19/index.m3u8?token=c0551695351c5639374fe56a87baaa4d85471c50-c04dbeb8b44faa1dcb3e63c7d59776d8-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57385" tvg-name="[RAVEN] Baloncesto TV 2" group-title="Basketball",[RAVEN] Baloncesto TV 2
+https://cdn5.zicotv.cc/raven_baloncesto_tv_2/index.m3u8?token=b0ec98862feac10983804636c91cb6c8b5568032-979cebfb0dcc794a845b38f2a6a630e7-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57387" tvg-name="[RAVEN] Baloncesto TV 3" group-title="Basketball",[RAVEN] Baloncesto TV 3
+https://cdn8.zicotv.cc/raven_baloncesto_tv_3/index.m3u8?token=82dec126f5c8e90949ce24a2891f55f08411f229-d23be35d8bd5768eb9ba5575637ca1a1-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57388" tvg-name="[RAVEN] Baloncesto TV 4" group-title="Basketball",[RAVEN] Baloncesto TV 4
+https://cdn8.zicotv.cc/raven_baloncesto_tv_4/index.m3u8?token=f972e445eeae68fe02b6470e66f4939e4bf33901-523623a690597db9368988c08a018cf2-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57389" tvg-name="[RAVEN] Baloncesto TV 5" group-title="Basketball",[RAVEN] Baloncesto TV 5
+https://cdn8.zicotv.cc/raven_baloncesto_tv_5/index.m3u8?token=5d2a54f266b32453b4076869f29d4bca4bfdebb1-ce171c418816f5785c923baa6fbf2608-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57390" tvg-name="[RAVEN] Baloncesto TV 6" group-title="Basketball",[RAVEN] Baloncesto TV 6
+https://cdn8.zicotv.cc/raven_baloncesto_tv_6/index.m3u8?token=6313630eb2c1bc7b315de4327a3b7d0f5235769e-1849645efb98512f93137f5b21cb7f31-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57391" tvg-name="[RAVEN] Baloncesto TV 7" group-title="Basketball",[RAVEN] Baloncesto TV 7
+https://cdn8.zicotv.cc/raven_baloncesto_tv_7/index.m3u8?token=4f252362dd6698abaae8b6d913e50cb1b29b0f6d-47f239383b0e3fac0a79437d2e694833-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57392" tvg-name="[RAVEN] Baloncesto TV 8" group-title="Basketball",[RAVEN] Baloncesto TV 8
+https://cdn8.zicotv.cc/raven_baloncesto_tv_8/index.m3u8?token=3fc1d040801d957e68e409932ea1c65f1891779d-ac60d46c74166ccd634c7f3b4980b7c2-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57393" tvg-name="[RAVEN] Baloncesto TV 9" group-title="Basketball",[RAVEN] Baloncesto TV 9
+https://cdn8.zicotv.cc/raven_baloncesto_tv_9/index.m3u8?token=5ecc1d2011eb0e95cdad18f875ba60b9eb640843-92cea1e876866fb45c579aad5ea5b634-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57403" tvg-name="[RAVEN] DAZN EVENTOS 31" group-title="Basketball",[RAVEN] DAZN EVENTOS 31
+https://cdn5.zicotv.cc/raven_dazn_eventos_31/index.m3u8?token=14768156f9495d7cacfc64d33e32e56ed80c9101-bb0d14b385dc6e61d9b4b22e6b8b1024-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57404" tvg-name="[RAVEN] DAZN EVENTOS 32" group-title="Basketball",[RAVEN] DAZN EVENTOS 32
+https://cdn8.zicotv.cc/raven_dazn_eventos_32/index.m3u8?token=1dab29f0880518dbf30408953d6ee439c3bade0e-2b201a0cc2da8a3aef9fa8862231474e-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57415" tvg-name="[RAVEN] DAZN EVENTOS 36" group-title="Basketball",[RAVEN] DAZN EVENTOS 36
+https://cdn8.zicotv.cc/raven_dazn_eventos_36/index.m3u8?token=10a5092e69c70758fd91c943752ef8bf45a71ae9-e049931d9961e802e82649e0ce8505a9-1795353675-
+=======
+https://cdn7.zicotv.cc/nba-1/index.m3u8?token=4f1a57608b9a039e688e5997501b3f48eea4cd10-a3e456a4a14ded53c8f89fbb202e9764-1795377484-
+#EXTINF:-1 tvg-id="zicotv-57020" tvg-name="NBA TV" tvg-logo="https://seeklogo.com/images/N/nba-tv-logo-9865A907F8-seeklogo.com.png" group-title="Baloncesto",NBA TV
+https://cdn5.zicotv.cc/iptv_nbatv_usa/index.m3u8?token=7bc9095c7ce7e44cfd4bd9865c5438cff438da98-c71b0b5b240884efdd3a90258454fd25-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57125" tvg-name="TSN3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/TSN3.svg/2560px-TSN3.svg.png" group-title="Baloncesto",TSN3
+https://cdn8.zicotv.cc/iptv_tsn3_ca/index.m3u8?token=7551d6756bbda104e1f598c7ca5152c7c20fcc55-f02c3baf2e901d24f40a331df54e261e-1795377485-
+>>>>>>> Stashed changes
 
 # -------- COMBATE --------
 #EXTINF:-1 tvg-id="zicotv-36823" tvg-name="HBO Max Spain" tvg-logo="https://tse2.mm.bing.net/th?id=OIP.XAiac6UAb3-XIAFP1_RddwHaEB&pid=Api&P=0&w=300&h=300" group-title="Combate",HBO Max Spain
+<<<<<<< Updated upstream
 https://cdn7.zicotv.cc/hbo-max/index.m3u8?token=1999d80c09454b3ebd728cffa4e2c9258c825cce-8f95a2cabc57730eb78c867a75a02606-1795366881-
+||||||| Stash base
+=======
+https://cdn5.zicotv.cc/hbo-max/index.m3u8?token=0b8daf5793efc290bc1c81e79c7b97d66eed682e-e6bf58c909b08992b287b8b439f9d1c8-1795377485-
+>>>>>>> Stashed changes
 #EXTINF:-1 tvg-id="zicotv-21" tvg-name="UFC" group-title="Combate",UFC
+<<<<<<< Updated upstream
 https://cdn7.zicotv.cc/ufc/index.m3u8?token=b92be97d137e203503e5735f51b6b95c01768c7d-9b1d6228ef32d6c45930101cc3ad6e4d-1795366880-
+||||||| Stash base
+https://cdn8.zicotv.cc/ufc/index.m3u8?token=b47129bbda9e41ddda3cb24310c058c63d57601e-0dbccd754dce15c7b426559a7f14c3e1-1795353673-
+=======
+https://cdn6.zicotv.cc/ufc/index.m3u8?token=47fcb025d53213e48c96b11798d0ee9322096819-24a3d838927ac642df5223e342016bff-1795377484-
+>>>>>>> Stashed changes
 
 # -------- DEPORTES --------
 #EXTINF:-1 tvg-id="zicotv-17" tvg-name="Amazon Prime Video Spain" group-title="Deportes",Amazon Prime Video Spain
+<<<<<<< Updated upstream
 https://cdn8.zicotv.cc/hypermotion/embed.html/index.m3u8?token=58bc0d368976e278ea32d1f7076042c6ca0f8c91-ef2a0db7f2a0160405fbf3fd9cc8598c-1795366880-
 #EXTINF:-1 tvg-id="zicotv-2" tvg-name="DAZN 1 Spain" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a2/DAZN_1_Logo.svg" group-title="Deportes",DAZN 1 Spain
 https://cdn7.zicotv.cc/dazn-1/index.m3u8?token=6b11f344de62165aa5d4d354f2d72a0c5567849c-8a229a5fe0db376446b2b960282d7fae-1795366879-
@@ -38,7 +131,37 @@ https://cdn8.zicotv.cc/dazn-4/index.m3u8?token=7bb3724bfbab0b18fe7c8e321aded8624
 https://cdn6.zicotv.cc/espn-arg/index.m3u8?token=9fbd65c9acfffcf74c4930a965a57da96adc1d1b-c7e81de97b5753c9283f445715df30ad-1795366879-
 #EXTINF:-1 tvg-id="zicotv-36" tvg-name="Eurosport 2 Spain" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Eurosport_2_Logo_2015.svg/512px-Eurosport_2_Logo_2015.svg.png" group-title="Deportes",Eurosport 2 Spain
 https://cdn5.zicotv.cc/eurosport-2/index.m3u8?token=165ffa05f0117a88ff18484fbeb22077587214fd-5da5d197032d020f09d688961df6768a-1795366880-
+||||||| Stash base
+https://cdn7.zicotv.cc/hypermotion/embed.html/index.m3u8?token=4abc28b759fa577d662ac584b30ff154aa20be9a-64623924801ee5fd449eecd150e1885f-1795353673-
+#EXTINF:-1 tvg-id="zicotv-2" tvg-name="DAZN 1 Spain" group-title="Deportes",DAZN 1 Spain
+https://cdn8.zicotv.cc/dazn-1/index.m3u8?token=081e02856d1f220afa44c8a5d7cadd083a7245b9-9edec91f3ff56e0c1889af85ba12c560-1795353673-
+#EXTINF:-1 tvg-id="zicotv-3" tvg-name="DAZN 2 Spain" group-title="Deportes",DAZN 2 Spain
+https://cdn2.zicotv.cc/dazn-2/index.m3u8?token=1e4b8b6eaf0ba5f0fba0a7b5366eb702c838b1ec-0d14e1f78af73c650e88659288563a28-1795353673-
+#EXTINF:-1 tvg-id="zicotv-34" tvg-name="DAZN 3 Spain" group-title="Deportes",DAZN 3 Spain
+https://cdn7.zicotv.cc/dazn-3/index.m3u8?token=c813ba38fdf8e59d55e90367e5b230d705df0786-a1478b2c0e576d9c5e5a9255f0fe36d6-1795353673-
+#EXTINF:-1 tvg-id="zicotv-37" tvg-name="DAZN 4 Spain" group-title="Deportes",DAZN 4 Spain
+https://cdn7.zicotv.cc/dazn-4/index.m3u8?token=a510ec3a14391a19a793ac93b3d7851845cecee3-b4614512f2803c39eb27901223a9b7b5-1795353673-
+#EXTINF:-1 tvg-id="zicotv-10" tvg-name="ESPN Deportes" group-title="Deportes",ESPN Deportes
+https://cdn5.zicotv.cc/espn-arg/index.m3u8?token=f3086250c34fd6c2117ea21c353a5b8f64e449ea-b16b6eb49f21f0a8dc5f02f3e6540d62-1795353673-
+#EXTINF:-1 tvg-id="zicotv-36" tvg-name="Eurosport 2 Spain" group-title="Deportes",Eurosport 2 Spain
+https://cdn8.zicotv.cc/eurosport-2/index.m3u8?token=5db2259f9d43f219547a873c89851d8767d4cfae-c5f09da69ca7c179c92904230e3aee5f-1795353673-
+=======
+https://cdn7.zicotv.cc/hypermotion/embed.html/index.m3u8?token=b4ca8fdc41924d9e46dfe26bb0523c0e58d77cac-a69ab5d524c2563cc5236fe2cca0fd66-1795377484-
+#EXTINF:-1 tvg-id="zicotv-2" tvg-name="DAZN 1 Spain" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a2/DAZN_1_Logo.svg" group-title="Deportes",DAZN 1 Spain
+https://cdn7.zicotv.cc/dazn-1/index.m3u8?token=320835f17cb2b6e446e32284a982a5ad1a57c3a1-83f4afb4c2c0f009fbc53c7c0432b157-1795377484-
+#EXTINF:-1 tvg-id="zicotv-3" tvg-name="DAZN 2 Spain" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a2/DAZN_1_Logo.svg" group-title="Deportes",DAZN 2 Spain
+https://cdn7.zicotv.cc/dazn-2/index.m3u8?token=5429587e00a16dee887b2adb344630e72160e666-a89047e9dcde48e8eec96ce136cf3cc5-1795377484-
+#EXTINF:-1 tvg-id="zicotv-34" tvg-name="DAZN 3 Spain" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/ba/DAZN_3.svg" group-title="Deportes",DAZN 3 Spain
+https://cdn8.zicotv.cc/dazn-3/index.m3u8?token=3f2ae0e905d23854c0fc7fa8c48f6d885b26608c-03dca6dcf8243cadcdc38b39d1501227-1795377484-
+#EXTINF:-1 tvg-id="zicotv-37" tvg-name="DAZN 4 Spain" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/DAZN_Logo_Master.svg/2048px-DAZN_Logo_Master.svg.png" group-title="Deportes",DAZN 4 Spain
+https://cdn5.zicotv.cc/dazn-4/index.m3u8?token=4da8a5bf80b06555e5ae53a4af5d619c06c57f05-78f427b4f3d3488b669f2d10c4547402-1795377484-
+#EXTINF:-1 tvg-id="zicotv-10" tvg-name="ESPN Deportes" tvg-logo="https://tse2.mm.bing.net/th?id=OIP.ic05rdlSH7nTIjKQRRo6VAHaFj&pid=Api&P=0&w=300&h=300" group-title="Deportes",ESPN Deportes
+https://cdn6.zicotv.cc/espn-arg/index.m3u8?token=dfe73dd8918577240bab67eef96f2052dc7085ca-1de7bc5b9c115ed25bc5e7cb9e3cb1ed-1795377484-
+#EXTINF:-1 tvg-id="zicotv-36" tvg-name="Eurosport 2 Spain" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Eurosport_2_Logo_2015.svg/512px-Eurosport_2_Logo_2015.svg.png" group-title="Deportes",Eurosport 2 Spain
+https://cdn8.zicotv.cc/eurosport-2/index.m3u8?token=f1d2215bf197f7a607e7cf3e91a71e65a5c6422d-226eed0a4c3fff2c3be0fa82c08690b6-1795377484-
+>>>>>>> Stashed changes
 #EXTINF:-1 tvg-id="zicotv-23" tvg-name="Eurosport Player Spain" group-title="Deportes",Eurosport Player Spain
+<<<<<<< Updated upstream
 https://cdn7.zicotv.cc/eurosport-1/index.m3u8?token=3cc792e8fa85cfba5dca8dec78e1d2416b46e693-15071103404e725350f70c5ee9b82319-1795366880-
 #EXTINF:-1 tvg-id="zicotv-9" tvg-name="Movistar #Vamos" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Vamos_logo_2021.svg/512px-Vamos_logo_2021.svg.png" group-title="Deportes",Movistar #Vamos
 https://cdn6.zicotv.cc/vamos/index.m3u8?token=2087b15ff1dc6b2087bcc282df47413d66497613-267c9d4336430d257dc13fbf0fb63e10-1795366879-
@@ -52,11 +175,47 @@ https://cdn7.zicotv.cc/m-deportes-3/index.m3u8?token=bf523e489079e44a07346467421
 https://cdn7.zicotv.cc/deportes-6/index.m3u8?token=8cdac96cdb81e5b6682f2ad94cc08b530ecf3dd1-0db583d69992faa0fdf615d8665d3406-1795366880-
 #EXTINF:-1 tvg-id="zicotv-13" tvg-name="Sky Sports Main Event" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e8/Sky-sports-main-event.jpg" group-title="Deportes",Sky Sports Main Event
 https://cdn3.zicotv.cc/sky-sports-1/index.m3u8?token=95cacb24cd6dfaa6f3598a45da50d775f34b41ce-5efafba5fd588272ccae830687a048a7-1795366879-
+||||||| Stash base
+https://cdn8.zicotv.cc/eurosport-1/index.m3u8?token=78701ff79b3731a69700416f98e4c572e0630ad6-5fc3b0ba7994e9b0faeb69cfbd6a4b1c-1795353673-
+#EXTINF:-1 tvg-id="zicotv-9" tvg-name="Movistar #Vamos" group-title="Deportes",Movistar #Vamos
+https://cdn8.zicotv.cc/vamos/index.m3u8?token=66fcc0c924112fb6d85b80da9de790c8aa24230b-63657475b0d8532433ad746740dd429c-1795353673-
+#EXTINF:-1 tvg-id="zicotv-19" tvg-name="Movistar Deportes" group-title="Deportes",Movistar Deportes
+https://cdn2.zicotv.cc/m-deportes-1/index.m3u8?token=ecc912dd2cbb1dd814c6dba90a826f7acac6a3f5-bc9f37c2439ab710529ec5ed812ccc48-1795353673-
+#EXTINF:-1 tvg-id="zicotv-35" tvg-name="Movistar Deportes 2" group-title="Deportes",Movistar Deportes 2
+https://cdn8.zicotv.cc/m-deportes-2/index.m3u8?token=d3582d15945214d3502962d21455a248627bc555-3ee878111d23cf48d28a9258a8a8aa3a-1795353673-
+#EXTINF:-1 tvg-id="zicotv-18" tvg-name="Movistar Deportes 3" group-title="Deportes",Movistar Deportes 3
+https://cdn8.zicotv.cc/m-deportes-3/index.m3u8?token=8305a8f894a47bf46f205831ce854ec1fc45fecb-a9977d8ac08a6881714723135048acab-1795353673-
+#EXTINF:-1 tvg-id="zicotv-20" tvg-name="Movistar Deportes 6" group-title="Deportes",Movistar Deportes 6
+https://cdn8.zicotv.cc/deportes-6/index.m3u8?token=e607a359b3dfe469a0da980e2668c5a7756a0b79-dfc748f812fd9ec517e059286e13f814-1795353673-
+#EXTINF:-1 tvg-id="zicotv-13" tvg-name="Sky Sports Main Event" group-title="Deportes",Sky Sports Main Event
+https://cdn2.zicotv.cc/sky-sports-1/index.m3u8?token=e0f629746e62eb8921f80b58a0fb473c9504e41d-db400a09e36eadee0fa22eb514dce355-1795353673-
+=======
+https://cdn6.zicotv.cc/eurosport-1/index.m3u8?token=435fb2b477b10011c60255a1135b0217ecea57c3-0cf2a2afa72c2526c4e8ab26abb7d807-1795377484-
+#EXTINF:-1 tvg-id="zicotv-9" tvg-name="Movistar #Vamos" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Vamos_logo_2021.svg/512px-Vamos_logo_2021.svg.png" group-title="Deportes",Movistar #Vamos
+https://cdn7.zicotv.cc/vamos/index.m3u8?token=261cae8150c2f255b34381340595574309feb71c-d32b41b48570fca0e090ad797f4047a5-1795377484-
+#EXTINF:-1 tvg-id="zicotv-19" tvg-name="Movistar Deportes" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Movistar_Deportes.svg/1280px-Movistar_Deportes.svg.png" group-title="Deportes",Movistar Deportes
+https://cdn3.zicotv.cc/m-deportes-1/index.m3u8?token=b1614d387be87d0beefcf9fe7012453fc8bdbede-4d8b9c1c1cbab69761cc7af4ca2e64f0-1795377484-
+#EXTINF:-1 tvg-id="zicotv-35" tvg-name="Movistar Deportes 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Movistar_Deportes_2.svg/2560px-Movistar_Deportes_2.svg.png" group-title="Deportes",Movistar Deportes 2
+https://cdn7.zicotv.cc/m-deportes-2/index.m3u8?token=7621c12ab29005d6f32a2c77de431813707ede18-c659b503107eb994ea2b4b9be15818a0-1795377484-
+#EXTINF:-1 tvg-id="zicotv-18" tvg-name="Movistar Deportes 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Movistar_Deportes.svg/1280px-Movistar_Deportes.svg.png" group-title="Deportes",Movistar Deportes 3
+https://cdn8.zicotv.cc/m-deportes-3/index.m3u8?token=2901d80a7c2d9388401a74f80ea25f95fbd008de-6209fa51e00e481be1a3c75026f9e04a-1795377484-
+#EXTINF:-1 tvg-id="zicotv-20" tvg-name="Movistar Deportes 6" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Movistar_Deportes.svg/1280px-Movistar_Deportes.svg.png" group-title="Deportes",Movistar Deportes 6
+https://cdn6.zicotv.cc/deportes-6/index.m3u8?token=3d079f9bdaaecb91ad937fdc8cd1cd2173e5c085-15e949ca7909d5efa4822832f09bb7bd-1795377484-
+#EXTINF:-1 tvg-id="zicotv-13" tvg-name="Sky Sports Main Event" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e8/Sky-sports-main-event.jpg" group-title="Deportes",Sky Sports Main Event
+https://cdn6.zicotv.cc/sky-sports-1/index.m3u8?token=e094b525bc39a85ba5d4b6ec3797f1bd22a56431-fa726f53b8d0c91f3c741b3c783be806-1795377484-
+>>>>>>> Stashed changes
 #EXTINF:-1 tvg-id="zicotv-16" tvg-name="Sport TV 2" group-title="Deportes",Sport TV 2
+<<<<<<< Updated upstream
 https://cdn8.zicotv.cc/sport-tv-2/index.m3u8?token=da672be6719f6266c4c86ec3ca1ef64a44961b9b-aab65d1c38ee42ecbbfebb7ddfb5d165-1795366880-
+||||||| Stash base
+https://cdn7.zicotv.cc/sport-tv-2/index.m3u8?token=c5d608feec5a0ff807015bed39f3c8257772a7f2-cdbe2d4fa440cedb33fdf1580561aede-1795353673-
+=======
+https://cdn3.zicotv.cc/sport-tv-2/index.m3u8?token=c13b7feddf0091b2cf52ed1882ecff55dc777667-195bd1a7d875d7deb0fed91657c47d39-1795377484-
+>>>>>>> Stashed changes
 
 # -------- EVENTOS EN DIRECTO --------
 #EXTINF:-1 tvg-id="zicotv-56946" tvg-name="Big Ten Network" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Big_Ten_Network_Logo.svg/1200px-Big_Ten_Network_Logo.svg.png" group-title="Eventos en Directo",Big Ten Network
+<<<<<<< Updated upstream
 https://cdn5.zicotv.cc/iptv_big10_usa/index.m3u8?token=003a9f1e3ae1d0b40965f5533babb7cebb83c3f3-4c3dc2fe8706b6f9d45c1d83223f92af-1795366883-
 #EXTINF:-1 tvg-id="zicotv-56950" tvg-name="CANAL+ Extra 2" tvg-logo="https://tse1.mm.bing.net/th?id=OIP.JiYxf9_qqYBPFrm1-wLOFQHaEK&pid=Api&P=0&w=300&h=300" group-title="Eventos en Directo",CANAL+ Extra 2
 https://cdn7.zicotv.cc/iptv_canalextra2_pl/index.m3u8?token=8f7602a53658cdef7babbbdb26ee378710a4f23c-747305007719aec03be45ceacc3a14ce-1795366882-
@@ -66,7 +225,26 @@ https://cdn8.zicotv.cc/iptv_espnu_usa/index.m3u8?token=284a9527404cc503af3f3d413
 https://cdn7.zicotv.cc/iptv_brasileirao_401841318/index.m3u8?token=8cf13790c1d75cdd112243b06150a035d7127785-95fc0721dfa90faecca87aee25dd80ce-1795366884-
 #EXTINF:-1 tvg-id="zicotv-57451" tvg-name="Fanatiz" group-title="Eventos en Directo",Fanatiz
 https://cdn6.zicotv.cc/iptv_argentina_401933759/index.m3u8?token=cb5a8d6786223e3bc6dc5ce7a3f4044912606261-a4e5d0d1c8c08a95cc972290951ba7e2-1795366884-
+||||||| Stash base
+#EXTINF:-1 tvg-id="zicotv-56946" tvg-name="Big Ten Network" group-title="Eventos en Directo",Big Ten Network
+https://cdn8.zicotv.cc/iptv_big10_usa/index.m3u8?token=493aa017f93feaa97fe7c0a4f133ebe04046d3c9-c0b788e717b45408a534d4ab9bce4053-1795353674-
+#EXTINF:-1 tvg-id="zicotv-56950" tvg-name="CANAL+ Extra 2" group-title="Eventos en Directo",CANAL+ Extra 2
+https://cdn8.zicotv.cc/iptv_canalextra2_pl/index.m3u8?token=8b782f56e134ffc8f4826830daceb2f639feb2d9-a5bce6907012770f8de218cfa8c49358-1795353674-
+#EXTINF:-1 tvg-id="zicotv-56983" tvg-name="ESPNU" group-title="Eventos en Directo",ESPNU
+https://cdn8.zicotv.cc/iptv_espnu_usa/index.m3u8?token=2f1cccfcf70c7390d5a369b6d2778b3d0e1f4434-9eb7efab998c1bbe756d256872722ad8-1795353675-
+=======
+https://cdn6.zicotv.cc/iptv_big10_usa/index.m3u8?token=83f1a17dcbae97b5fc5f3a6f22507e127df005f2-dcaf4a35c92556df90d54b1665bf04c7-1795377485-
+#EXTINF:-1 tvg-id="zicotv-56950" tvg-name="CANAL+ Extra 2" tvg-logo="https://tse1.mm.bing.net/th?id=OIP.JiYxf9_qqYBPFrm1-wLOFQHaEK&pid=Api&P=0&w=300&h=300" group-title="Eventos en Directo",CANAL+ Extra 2
+https://cdn8.zicotv.cc/iptv_canalextra2_pl/index.m3u8?token=d80c91f7a35ae499667829d3a4cba8b3472b6500-d38dfe5d49e6fcc89541bd83b69303c8-1795377485-
+#EXTINF:-1 tvg-id="zicotv-56983" tvg-name="ESPNU" tvg-logo="https://tse2.mm.bing.net/th?id=OIP.aGYAUHwBq_g1BudSXwVprAHaFj&pid=Api&P=0&w=300&h=300" group-title="Eventos en Directo",ESPNU
+https://cdn8.zicotv.cc/iptv_espnu_usa/index.m3u8?token=93fd3adaefa37107e14f160ae06ebdaac591e121-a4e9014acb49fda136da0d29e04ab799-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57451" tvg-name="Fanatiz" group-title="Eventos en Directo",Fanatiz
+https://cdn8.zicotv.cc/iptv_argentina_401933759/index.m3u8?token=c2af40d2d3e5c12811218dd89532c757663f6e53-47b01557f4e1c016cd61ff42da537b27-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57450" tvg-name="Fanatiz" group-title="Eventos en Directo",Fanatiz
+https://cdn5.zicotv.cc/iptv_brasileirao_401841318/index.m3u8?token=6cb1a04b6316ea8e927ed2892c8a791baa9e4434-fd60c9c9433349c6edfaac318b3ebbe1-1795377486-
+>>>>>>> Stashed changes
 #EXTINF:-1 tvg-id="zicotv-46939" tvg-name="M+ Golf HD" group-title="Eventos en Directo",M+ Golf HD
+<<<<<<< Updated upstream
 https://cdn6.zicotv.cc/m-golf-hd/index.m3u8?token=db629fe03fc528c60f6eb72ed944f32787f6d782-0d3342ad813b9096701c191d0d743d6b-1795366882-
 #EXTINF:-1 tvg-id="zicotv-57486" tvg-name="[DAZN 🇨🇦] Domingo de carreras | GP Repsol de Portugal" group-title="Eventos en Directo",[DAZN 🇨🇦] Domingo de carreras | GP Repsol de Portugal
 https://cdn8.zicotv.cc/danca_domingo_de_carreras_gp_repsol_de_portugal/index.m3u8?token=f3448185eea29e71807c153b1955c825be921438-b1c2b818895b708c8de56c9014d51b74-1795366884-
@@ -90,9 +268,47 @@ https://cdn3.zicotv.cc/daznit_sigel_seap_marsala_volley_itas_trentino_volley/ind
 https://cdn5.zicotv.cc/daznit_verona_longines_global_champions_tour_super_cup_final/index.m3u8?token=94c17c73f44b54baa82954faf746624b6abf9df6-b450d69220d56b85b5272b9ec0fb006e-1795366884-
 #EXTINF:-1 tvg-id="zicotv-57612" tvg-name="[DAZN 🇮🇹] Wash4Green Monviso Volley - Cosedil F3 Motors Akademia Messina" group-title="Eventos en Directo",[DAZN 🇮🇹] Wash4Green Monviso Volley - Cosedil F3 Motors Akademia Messina
 https://cdn6.zicotv.cc/daznit_wash4green_monviso_volley_cosedil_f3_motors_akademia_messina/index.m3u8?token=ffef9c28fcee9107e7b31badf82f40c4979801cd-0475275aee941cc21670d26e6e1633d7-1795366885-
+||||||| Stash base
+https://cdn8.zicotv.cc/m-golf-hd/index.m3u8?token=5cbaf370cf44f7e6379d0de6bedeb9b4873e56a5-5e7db50b9b7a4b23dd52ab53a1b9a7fa-1795353674-
+
+# -------- FIGHTING --------
+#EXTINF:-1 tvg-id="zicotv-36823" tvg-name="HBO Max Spain" group-title="Fighting",HBO Max Spain
+https://cdn7.zicotv.cc/hbo-max/index.m3u8?token=79ade51603ef8bd3cecac61e70c318a3993ac153-833b2e1f032a4f550340699dc2280a0b-1795353674-
+=======
+https://cdn3.zicotv.cc/m-golf-hd/index.m3u8?token=0383dfed2bc6622c5b98a36649be92fa7e63630f-6419594bc73c1a3011260e23ef7f37df-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57486" tvg-name="[DAZN 🇨🇦] Domingo de carreras | GP Repsol de Portugal" group-title="Eventos en Directo",[DAZN 🇨🇦] Domingo de carreras | GP Repsol de Portugal
+https://cdn3.zicotv.cc/danca_domingo_de_carreras_gp_repsol_de_portugal/index.m3u8?token=1320563c90277c162d0a2346f3a6651bacd28ccb-b57cfa20267f67fb26115eeea98c815b-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57493" tvg-name="[DAZN 🇨🇦] Sydney, Nova Scotia - Day 6 - Women’s Final" group-title="Eventos en Directo",[DAZN 🇨🇦] Sydney, Nova Scotia - Day 6 - Women’s Final
+https://cdn6.zicotv.cc/danca_sydney_nova_scotia_day_6_womens_final/index.m3u8?token=e3e8b7dfa92a89b756165e3d67b5699b5e864396-828d6931f892dccb421ffa4db29f79c4-1795377487-
+#EXTINF:-1 tvg-id="zicotv-57588" tvg-name="[DAZN 🇩🇪] Benfica - Ovarense" group-title="Eventos en Directo",[DAZN 🇩🇪] Benfica - Ovarense
+https://cdn5.zicotv.cc/daznde_benfica_ovarense/index.m3u8?token=ad22f94a8968ff7377ff4e55c3dfff5d132230a8-1b9e2db7583366fb22e086e472583e5f-1795377487-
+#EXTINF:-1 tvg-id="zicotv-57565" tvg-name="[DAZN 🇩🇪] Domingo de carreras | GP Repsol de Portugal" group-title="Eventos en Directo",[DAZN 🇩🇪] Domingo de carreras | GP Repsol de Portugal
+https://cdn3.zicotv.cc/daznde_domingo_de_carreras_gp_repsol_de_portugal/index.m3u8?token=d7452b40470c031c78982d1685bc547871296d63-71b6cd1289ccc79f7b28e2067f6c4d19-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57579" tvg-name="[DAZN 🇩🇪] Fiorentina - Como" group-title="Eventos en Directo",[DAZN 🇩🇪] Fiorentina - Como
+https://cdn5.zicotv.cc/daznde_fiorentina_como/index.m3u8?token=7548af5c1978d7f241a69f18417d167e22174f0d-66f623b756189e65c3fff4ba5c3e36d7-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57587" tvg-name="[DAZN 🇩🇪] Sydney, Nova Scotia - Day 6 - Women’s Final" group-title="Eventos en Directo",[DAZN 🇩🇪] Sydney, Nova Scotia - Day 6 - Women’s Final
+https://cdn5.zicotv.cc/daznde_sydney_nova_scotia_day_6_womens_final/index.m3u8?token=abc02dc0447eee06460f14f46e481bdccecb12d9-40bd5be64c443589715d75b99ae54092-1795377487-
+#EXTINF:-1 tvg-id="zicotv-57554" tvg-name="[DAZN 🇪🇸] Benfica - Ovarense" group-title="Eventos en Directo",[DAZN 🇪🇸] Benfica - Ovarense
+https://cdn8.zicotv.cc/benfica_ovarense/index.m3u8?token=2c52c7fd02f7965e5ebfc83d711f0eeaa47bb85a-938106b3522da202598c452f2c451ff4-1795377487-
+#EXTINF:-1 tvg-id="zicotv-57533" tvg-name="[DAZN 🇪🇸] Domingo de carreras | GP Repsol de Portugal" group-title="Eventos en Directo",[DAZN 🇪🇸] Domingo de carreras | GP Repsol de Portugal
+https://cdn6.zicotv.cc/domingo_de_carreras_gp_repsol_de_portugal/index.m3u8?token=5964bbce67e51e585c753195a8d82a1357510c0f-78bccb5799d3241807fe06125772a156-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57546" tvg-name="[DAZN 🇪🇸] Fiorentina - Como" group-title="Eventos en Directo",[DAZN 🇪🇸] Fiorentina - Como
+https://cdn5.zicotv.cc/fiorentina_como/index.m3u8?token=bb64714195a17f3a285a579757002a7d46f34d9e-a6792f53e022b5baf8973b75db7a4a3a-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57553" tvg-name="[DAZN 🇪🇸] Sydney, Nova Scotia - Day 6 - Women’s Final" group-title="Eventos en Directo",[DAZN 🇪🇸] Sydney, Nova Scotia - Day 6 - Women’s Final
+https://cdn8.zicotv.cc/sydney_nova_scotia_day_6_womens_final/index.m3u8?token=ecc64d6db41edfcf254eccd493d02f8825548606-903070d8cc7ef25cb5356af222d8da37-1795377487-
+#EXTINF:-1 tvg-id="zicotv-57599" tvg-name="[DAZN 🇮🇹] HPP Open | Giorno 7" group-title="Eventos en Directo",[DAZN 🇮🇹] HPP Open | Giorno 7
+https://cdn6.zicotv.cc/daznit_hpp_open_giorno_7/index.m3u8?token=26f22b503a8cceb896917b006242e3c9210aa5fa-288540f23a30e77bda7451b9e8a7ca13-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57609" tvg-name="[DAZN 🇮🇹] Sigel Seap Marsala Volley - Itas Trentino Volley" group-title="Eventos en Directo",[DAZN 🇮🇹] Sigel Seap Marsala Volley - Itas Trentino Volley
+https://cdn7.zicotv.cc/daznit_sigel_seap_marsala_volley_itas_trentino_volley/index.m3u8?token=cf5b5deb0edab0544541e0309b90343e6d7e608d-14f7d9a6dd67b24cae23dae033b37008-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57617" tvg-name="[DAZN 🇮🇹] Sydney, Nova Scotia - Day 6 - Women’s Final" group-title="Eventos en Directo",[DAZN 🇮🇹] Sydney, Nova Scotia - Day 6 - Women’s Final
+https://cdn5.zicotv.cc/daznit_sydney_nova_scotia_day_6_womens_final/index.m3u8?token=b8887cac4fcec8be8493c3201b305b6c6ca408a7-1f5766aeabfa84875c02df150ffa8c86-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57612" tvg-name="[DAZN 🇮🇹] Wash4Green Monviso Volley - Cosedil F3 Motors Akademia Messina" group-title="Eventos en Directo",[DAZN 🇮🇹] Wash4Green Monviso Volley - Cosedil F3 Motors Akademia Messina
+https://cdn6.zicotv.cc/daznit_wash4green_monviso_volley_cosedil_f3_motors_akademia_messina/index.m3u8?token=b1c2bd825bb82a6a2b732e6c6859ae3f3b997f16-d6dc56e34a332b82b270448ea6be1a1f-1795377486-
+>>>>>>> Stashed changes
 
 # -------- FÚTBOL --------
 #EXTINF:-1 tvg-id="zicotv-1" tvg-name="DAZN LaLiga" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/98/DAZN_LaLiga_2023_Logo.svg" group-title="Fútbol",DAZN LaLiga
+<<<<<<< Updated upstream
 https://cdn7.zicotv.cc/dazn-liga-1/index.m3u8?token=f3e441e27dff499c7def9bb47873d6568226be25-2f7cefdd079176b44c6fe0a83039ac8f-1795366879-
 #EXTINF:-1 tvg-id="zicotv-56970" tvg-name="DAZN LaLiga" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/98/DAZN_LaLiga_2023_Logo.svg" group-title="Fútbol",DAZN LaLiga
 https://cdn7.zicotv.cc/iptv_daznlaliga_es/index.m3u8?token=67d12d2e6ce56c3e9e3ccffbd4620fababb04509-5a6b55aeaf44af2b0cc48b196610bbf5-1795366884-
@@ -102,11 +318,40 @@ https://cdn3.zicotv.cc/dazn-liga-2/index.m3u8?token=5994e6dfcd2249cba9d47ddb2f83
 https://cdn6.zicotv.cc/iptv_dazn1_de/index.m3u8?token=ed05377d9ee40d3afccfa4003d7f86f2ec06fff3-17dedffb7adeeb282292f22d9b2b4a1f-1795366886-
 #EXTINF:-1 tvg-id="zicotv-37934" tvg-name="Esport 3" tvg-logo="https://tse1.mm.bing.net/th?id=OIP.LbFcXIxFu90ixD5UaJZq-gHaCC&pid=Api&P=0&w=300&h=300" group-title="Fútbol",Esport 3
 https://cdn7.zicotv.cc/esport-3/index.m3u8?token=7076dccd1d616be616004dbba596eb62c5c26714-cd2c7d4243ba671a7ab6a847d7783534-1795366881-
+||||||| Stash base
+#EXTINF:-1 tvg-id="zicotv-1" tvg-name="DAZN LaLiga" group-title="Fútbol",DAZN LaLiga
+https://cdn8.zicotv.cc/dazn-liga-1/index.m3u8?token=c180e822b7c01cbba5da3f46ce66e5bf088dde4d-4d8374bc3085d9a4e8a4989d8257bee8-1795353673-
+#EXTINF:-1 tvg-id="zicotv-15" tvg-name="DAZN LaLiga 2" group-title="Fútbol",DAZN LaLiga 2
+https://cdn8.zicotv.cc/dazn-liga-2/index.m3u8?token=ca16975129a48128dc712a5ecb138feaa2829ca3-a67f11afd235e01849c164507b836e0c-1795353673-
+=======
+https://cdn7.zicotv.cc/dazn-liga-1/index.m3u8?token=4dc1380bd5475dd3ed470a818e4a47994c5a5979-15bd4ff6ab79b1e8bf50ba893ed1cef6-1795377484-
+#EXTINF:-1 tvg-id="zicotv-56970" tvg-name="DAZN LaLiga" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/98/DAZN_LaLiga_2023_Logo.svg" group-title="Fútbol",DAZN LaLiga
+https://cdn6.zicotv.cc/iptv_daznlaliga_es/index.m3u8?token=30470ab933611696a522426b6d07bdc3d7103f65-3b66fe12c1a7228b24c89a5768f94895-1795377486-
+#EXTINF:-1 tvg-id="zicotv-15" tvg-name="DAZN LaLiga 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/98/DAZN_LaLiga_2023_Logo.svg" group-title="Fútbol",DAZN LaLiga 2
+https://cdn3.zicotv.cc/dazn-liga-2/index.m3u8?token=7e01c4c9e36787c60e07ff81792032a88f884daf-6e6618c267b3ac9f903cf2f05f486bdc-1795377484-
+#EXTINF:-1 tvg-id="zicotv-56962" tvg-name="DAZN1 Germany" group-title="Fútbol",DAZN1 Germany
+https://cdn6.zicotv.cc/iptv_dazn1_de/index.m3u8?token=9451b44d8802709416713e52fd5329b0a4d2382c-912ba413d2cd63841e622e7e140ad655-1795377486-
+#EXTINF:-1 tvg-id="zicotv-37934" tvg-name="Esport 3" tvg-logo="https://tse1.mm.bing.net/th?id=OIP.LbFcXIxFu90ixD5UaJZq-gHaCC&pid=Api&P=0&w=300&h=300" group-title="Fútbol",Esport 3
+https://cdn7.zicotv.cc/esport-3/index.m3u8?token=7e48be7baadcc86f6a03b0a788ddba66cf14bf08-480a8ee3df2d98614182f7397b0b6c39-1795377485-
+>>>>>>> Stashed changes
 #EXTINF:-1 tvg-id="zicotv-22" tvg-name="LaLiga TV 2 por Movistar Plus" group-title="Fútbol",LaLiga TV 2 por Movistar Plus
+<<<<<<< Updated upstream
 https://cdn8.zicotv.cc/m-liga-2/index.m3u8?token=431ba51d6d8c025ca800225fbc7381c5dd2df7f6-926b498b4e50ee75112332dcd5eeabe1-1795366880-
+||||||| Stash base
+https://cdn5.zicotv.cc/m-liga-2/index.m3u8?token=0c645119014a64a9aad90c7a43e88826a86349e2-f95aefbd27ea25989a7b9414d6e027a1-1795353673-
+=======
+https://cdn5.zicotv.cc/m-liga-2/index.m3u8?token=ac63c1ee539e46156fdbbe43214aca59f8a815ca-70c9e6d1ab8ada165416d663d9161b8e-1795377484-
+>>>>>>> Stashed changes
 #EXTINF:-1 tvg-id="zicotv-4" tvg-name="LaLiga TV Bar" group-title="Fútbol",LaLiga TV Bar
+<<<<<<< Updated upstream
 https://cdn6.zicotv.cc/m-liga/index.m3u8?token=3638648244cbde5c2667ab1f1e3c20caf4f227f2-d5bb558cb83427368a5b20890072edf8-1795366879-
+||||||| Stash base
+https://cdn5.zicotv.cc/m-liga/index.m3u8?token=57054151ebbf7d64e9b7d6f6ac85137d34c74639-57b16dc4533e3ab0a262c48bd8b9d7fd-1795353673-
+=======
+https://cdn3.zicotv.cc/m-liga/index.m3u8?token=1050bc93f35fced94399b374e997dbdb65a12f65-f81521793ad1db4f58790a2ba8ab5af3-1795377484-
+>>>>>>> Stashed changes
 #EXTINF:-1 tvg-id="zicotv-38" tvg-name="LaLiga TV Bar Aux" group-title="Fútbol",LaLiga TV Bar Aux
+<<<<<<< Updated upstream
 https://cdn6.zicotv.cc/m-liga-2/index.m3u8?token=2d8d5f32a2b958adec0f012823f4e6db5cecb1f6-2c94ee7f47c7b4cf55eaffd2857cb586-1795366880-
 #EXTINF:-1 tvg-id="zicotv-12" tvg-name="LaLiga TV Hypermotion" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/28/Ion_logo.svg" group-title="Fútbol",LaLiga TV Hypermotion
 https://cdn3.zicotv.cc/hypermotion/index.m3u8?token=ecb1401f122d14d014b5b43dad8b59f3885d90c4-715d4e5b3c9265428ab58ea74914b028-1795366879-
@@ -224,13 +469,162 @@ https://cdn7.zicotv.cc/iptv_fox_sports_1/index.m3u8?token=b7f6273c1f29296d60820f
 https://cdn8.zicotv.cc/iptv_nbc_usa/index.m3u8?token=18a2797de807e9b2f33f13b684fe659bc0b01cd5-4b4bccf0260c6faf63622d450e2e3075-1795366883-
 #EXTINF:-1 tvg-id="zicotv-57116" tvg-name="TNT" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/ec/TNT_%28TV_Channel%29.svg" group-title="Fútbol Americano",TNT
 https://cdn7.zicotv.cc/iptv_tnt_usa/index.m3u8?token=1db71c269fc232b77c9ac4cd4d805f2495ead0fb-6325e24602a0ff2735bdd5f539e8b09e-1795366881-
+||||||| Stash base
+https://cdn5.zicotv.cc/m-liga-2/index.m3u8?token=be1008ca4bfa7e9ed7813f7bfad5d8bcbbf4e83f-c666c6c7ecec45fd4e60ca71dd9bc1f5-1795353673-
+#EXTINF:-1 tvg-id="zicotv-12" tvg-name="LaLiga TV Hypermotion" group-title="Fútbol",LaLiga TV Hypermotion
+https://cdn8.zicotv.cc/hypermotion/index.m3u8?token=2aa3a481334e9cb4f09c27f3075a10c6241f0b5a-77f22a1c536b5ea94fa910de66845c96-1795353673-
+#EXTINF:-1 tvg-id="zicotv-24" tvg-name="LaLiga TV Hypermotion 2" group-title="Fútbol",LaLiga TV Hypermotion 2
+https://cdn8.zicotv.cc/hypermotion-2/index.m3u8?token=1d33166967a49beeeb17c0c864fb8c9f459e0699-e94c9012f84c58f2ee6a80cdb99ca4b1-1795353673-
+#EXTINF:-1 tvg-id="zicotv-41" tvg-name="Movistar LaLiga 3" group-title="Fútbol",Movistar LaLiga 3
+https://cdn7.zicotv.cc/m-liga-3/index.m3u8?token=65ac604f5116fb6c7d814252f848e29b0a9537a2-2e5fe0b980765935a94bef4442d37fe5-1795353673-
+#EXTINF:-1 tvg-id="zicotv-39" tvg-name="Movistar LaLiga 4" group-title="Fútbol",Movistar LaLiga 4
+https://cdn3.zicotv.cc/m-liga-4/index.m3u8?token=775fcc9a8d0dd1e2df51da7b5248b4b5bea80e13-2d79bdc3884bfaf6dda347bc7d6880c5-1795353673-
+#EXTINF:-1 tvg-id="zicotv-6" tvg-name="Movistar Liga de Campeones" group-title="Fútbol",Movistar Liga de Campeones
+https://cdn8.zicotv.cc/liga-campeones/index.m3u8?token=a1e1efc42418a690595d7210ec8dedd19f5dd2db-4e06bd333c8585b2de4cf4627c5cb88a-1795353673-
+#EXTINF:-1 tvg-id="zicotv-8" tvg-name="Movistar Liga de Campeones 2" group-title="Fútbol",Movistar Liga de Campeones 2
+https://cdn3.zicotv.cc/liga-campeones-2/index.m3u8?token=c456e9815ad23cbc728d5a9b882774cd2e8327e1-239c8df4e14fb05bf47741886192a070-1795353673-
+#EXTINF:-1 tvg-id="zicotv-5" tvg-name="Movistar Liga de Campeones 3" group-title="Fútbol",Movistar Liga de Campeones 3
+https://cdn3.zicotv.cc/liga-campeones-3/index.m3u8?token=811190964e0e537f23431684ef927ee1e7aa87eb-f9e61126ccddf20460067417f0239bcf-1795353673-
+#EXTINF:-1 tvg-id="zicotv-7" tvg-name="Movistar Liga de Campeones 4" group-title="Fútbol",Movistar Liga de Campeones 4
+https://cdn8.zicotv.cc/liga-campeones-4/index.m3u8?token=e5d2c2e82e95cf057386a8ab3326178cde80aa6e-6c1963d90ef8d40250ab91de97629179-1795353673-
+#EXTINF:-1 tvg-id="zicotv-14" tvg-name="Movistar Liga de Campeones 5" group-title="Fútbol",Movistar Liga de Campeones 5
+https://cdn8.zicotv.cc/liga-campeones-5/index.m3u8?token=6be355096b2e82117b4b50e134e1a96ad250d78a-79c3e7293f8981c237d5858da76ffdae-1795353673-
+#EXTINF:-1 tvg-id="zicotv-48" tvg-name="Movistar Liga de Campeones 6" group-title="Fútbol",Movistar Liga de Campeones 6
+https://cdn2.zicotv.cc/liga-campeones-6/index.m3u8?token=bcfd8d1d03a97422acfb89ccb87f91e68d3277a0-19b7a6675fcc588c2f5346570d2da675-1795353673-
+#EXTINF:-1 tvg-id="zicotv-47" tvg-name="Movistar Liga de Campeones 7" group-title="Fútbol",Movistar Liga de Campeones 7
+https://cdn2.zicotv.cc/liga-campeones-7/index.m3u8?token=c1a7e6946e2bf4230a35e8e5837c3394d3522de7-e1e8f090096553173be8db588a12ffe5-1795353673-
+#EXTINF:-1 tvg-id="zicotv-46" tvg-name="Movistar Liga de Campeones 8" group-title="Fútbol",Movistar Liga de Campeones 8
+https://cdn8.zicotv.cc/liga-campeones-8/index.m3u8?token=5c9f5ca8229d16532f46adde7f70b75ed19f9306-5e57b8f4b757281d5affa0b9ed2f890d-1795353673-
+#EXTINF:-1 tvg-id="zicotv-32" tvg-name="Multichampions" group-title="Fútbol",Multichampions
+https://cdn8.zicotv.cc/liga-campeones-4/index.m3u8?token=1ab3e6bc1f3c3f1a06a89bad72f9ef02f4fecc1f-9d143469cd6d3ecaf142e4e8a1d60d7d-1795353673-
+=======
+https://cdn7.zicotv.cc/m-liga-2/index.m3u8?token=3700419cc072134ab5172ac0dd98ad244c547579-9d1447b9ce4b33291fec79714eadfc53-1795377484-
+#EXTINF:-1 tvg-id="zicotv-12" tvg-name="LaLiga TV Hypermotion" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/28/Ion_logo.svg" group-title="Fútbol",LaLiga TV Hypermotion
+https://cdn8.zicotv.cc/hypermotion/index.m3u8?token=90fbae87d17cfab60230cfd937365046bbece430-99de15922cc005860589760ee5646060-1795377484-
+#EXTINF:-1 tvg-id="zicotv-24" tvg-name="LaLiga TV Hypermotion 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/28/Ion_logo.svg" group-title="Fútbol",LaLiga TV Hypermotion 2
+https://cdn7.zicotv.cc/hypermotion-2/index.m3u8?token=acb80d3266a04cd8a73a36c56337cbe016bec6b9-8097e402f65db524bd85ea0e65cfe098-1795377484-
+#EXTINF:-1 tvg-id="zicotv-42771" tvg-name="Movistar LaLiga 1" tvg-logo="https://tse3.mm.bing.net/th?id=OIP.RzdPVT_B5jQSn9AyjcqrvQHaCl&pid=Api&P=0&w=300&h=300" group-title="Fútbol",Movistar LaLiga 1
+https://cdn8.zicotv.cc/m-liga/index.m3u8?token=6b9aaaaeb711d0d217e695906b936a0d19664899-f5d76a4f437c42e8388d351d4614e155-1795377485-
+#EXTINF:-1 tvg-id="zicotv-41" tvg-name="Movistar LaLiga 3" tvg-logo="https://tse3.mm.bing.net/th?id=OIP.RzdPVT_B5jQSn9AyjcqrvQHaCl&pid=Api&P=0&w=300&h=300" group-title="Fútbol",Movistar LaLiga 3
+https://cdn6.zicotv.cc/m-liga-3/index.m3u8?token=ac167417b4629203f3d681a3e974f2759dd7e9c5-def43afb1b2cf925088852202191e15d-1795377484-
+#EXTINF:-1 tvg-id="zicotv-39" tvg-name="Movistar LaLiga 4" tvg-logo="https://tse3.mm.bing.net/th?id=OIP.RzdPVT_B5jQSn9AyjcqrvQHaCl&pid=Api&P=0&w=300&h=300" group-title="Fútbol",Movistar LaLiga 4
+https://cdn7.zicotv.cc/m-liga-4/index.m3u8?token=a70b0c53727b6ecc0cd4a5b3f3b46716c2e921e5-c85801ce2bde7460674893c713634c56-1795377484-
+#EXTINF:-1 tvg-id="zicotv-6" tvg-name="Movistar Liga de Campeones" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Movistar_Liga_de_Campeones.svg/2560px-Movistar_Liga_de_Campeones.svg.png" group-title="Fútbol",Movistar Liga de Campeones
+https://cdn8.zicotv.cc/liga-campeones/index.m3u8?token=0027e7c7534ed7b25b746e407e784d5b6cb8d05c-e34c42746a7fbf5593ef997fc10c486e-1795377484-
+#EXTINF:-1 tvg-id="zicotv-8" tvg-name="Movistar Liga de Campeones 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Movistar_Liga_de_Campeones.svg/2560px-Movistar_Liga_de_Campeones.svg.png" group-title="Fútbol",Movistar Liga de Campeones 2
+https://cdn8.zicotv.cc/liga-campeones-2/index.m3u8?token=a5e814143a6ce532074e5dc497e1338ccee829d2-379bc503b3c67eec06d1c04579c59b4f-1795377484-
+#EXTINF:-1 tvg-id="zicotv-5" tvg-name="Movistar Liga de Campeones 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Movistar_Liga_de_Campeones.svg/2560px-Movistar_Liga_de_Campeones.svg.png" group-title="Fútbol",Movistar Liga de Campeones 3
+https://cdn5.zicotv.cc/liga-campeones-3/index.m3u8?token=b8e416a8c04f656dd66d83d68af382734fd69da7-f57a276191a154c0f40e0612762f0e9a-1795377484-
+#EXTINF:-1 tvg-id="zicotv-7" tvg-name="Movistar Liga de Campeones 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Movistar_Liga_de_Campeones.svg/2560px-Movistar_Liga_de_Campeones.svg.png" group-title="Fútbol",Movistar Liga de Campeones 4
+https://cdn5.zicotv.cc/liga-campeones-4/index.m3u8?token=79456f4ad8749af7ee2d9a1928a76211388ecedc-52db1dd26f36b863c2d12b762ad42fbb-1795377484-
+#EXTINF:-1 tvg-id="zicotv-14" tvg-name="Movistar Liga de Campeones 5" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Movistar_Liga_de_Campeones.svg/2560px-Movistar_Liga_de_Campeones.svg.png" group-title="Fútbol",Movistar Liga de Campeones 5
+https://cdn6.zicotv.cc/liga-campeones-5/index.m3u8?token=ced693e92a0a3e7ab771d9486da47a0a9d8b9638-d3e71141bb913c6a9e96ac6691641587-1795377484-
+#EXTINF:-1 tvg-id="zicotv-48" tvg-name="Movistar Liga de Campeones 6" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Movistar_Liga_de_Campeones.svg/2560px-Movistar_Liga_de_Campeones.svg.png" group-title="Fútbol",Movistar Liga de Campeones 6
+https://cdn7.zicotv.cc/liga-campeones-6/index.m3u8?token=92fc9d109f3a68e7127f0f20a6f92a0933d47e89-9ab220173d757ee412b5e235ee152f88-1795377485-
+#EXTINF:-1 tvg-id="zicotv-47" tvg-name="Movistar Liga de Campeones 7" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Movistar_Liga_de_Campeones.svg/2560px-Movistar_Liga_de_Campeones.svg.png" group-title="Fútbol",Movistar Liga de Campeones 7
+https://cdn8.zicotv.cc/liga-campeones-7/index.m3u8?token=83971495c6fbf2b3ca642943503e73459072b47f-f7653e83800518bf6ba7e707b915b762-1795377484-
+#EXTINF:-1 tvg-id="zicotv-46" tvg-name="Movistar Liga de Campeones 8" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Movistar_Liga_de_Campeones.svg/2560px-Movistar_Liga_de_Campeones.svg.png" group-title="Fútbol",Movistar Liga de Campeones 8
+https://cdn6.zicotv.cc/liga-campeones-8/index.m3u8?token=0aaf6d2c43e6897f79624abe03844461be0516af-d287ad18461dacd881a89f38319efa9e-1795377484-
+#EXTINF:-1 tvg-id="zicotv-32" tvg-name="Multichampions" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/28/Ion_logo.svg" group-title="Fútbol",Multichampions
+https://cdn6.zicotv.cc/liga-campeones-4/index.m3u8?token=9f30873e96c922c49d3045592c5e68fbd3dae38e-9b7047fa52f27e197142ac6887b253ba-1795377484-
+#EXTINF:-1 tvg-id="zicotv-57034" tvg-name="Premier Sports 1 IE" group-title="Fútbol",Premier Sports 1 IE
+https://cdn7.zicotv.cc/iptv_premiersports1_ie/index.m3u8?token=24986712ed704b75701fc765b6caa82a364f89f5-71be1f5303a05a3cd6470fa49b40d86b-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57097" tvg-name="SPORTDIGITAL FUSSBALL" tvg-logo="https://svgmix.com/uploads/e624dc-sportdigital-fussball-dark.svg" group-title="Fútbol",SPORTDIGITAL FUSSBALL
+https://cdn3.zicotv.cc/iptv_sportdigitalfussball_de/index.m3u8?token=842dd9615a3eb399237ef7e14f9202615a6eba9b-57034960440e6a527c32aa5545fd91ce-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57057" tvg-name="Sky Sport 3 NZ" tvg-logo="https://upload.wikimedia.org/wikipedia/en/archive/c/c1/20231124021550%21Sky_Sport_NZ_2019.svg" group-title="Fútbol",Sky Sport 3 NZ
+https://cdn5.zicotv.cc/iptv_skysport3_nz/index.m3u8?token=3882dfb636e0017ae2751d05a43b5500946df6cf-efaa538024b7eafd524df49bd35ddd1a-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57059" tvg-name="Sky Sport 5 NZ" tvg-logo="https://upload.wikimedia.org/wikipedia/en/c/c1/Sky_Sport_NZ_2019.svg" group-title="Fútbol",Sky Sport 5 NZ
+https://cdn5.zicotv.cc/iptv_skysport5_nz/index.m3u8?token=b6df1cb2071577567c8353ed0e7f897fd3e9aefc-a408ff3111c1d3276093f7c3f0d46338-1795377486-
+#EXTINF:-1 tvg-id="zicotv-50163" tvg-name="Sky Sport 6 NZ" tvg-logo="https://upload.wikimedia.org/wikipedia/en/c/c1/Sky_Sport_NZ_2019.svg" group-title="Fútbol",Sky Sport 6 NZ
+https://cdn2.zicotv.cc/iptv_wghuk9nx_1967/index.m3u8?token=7c8904e7a5ee53e64bf7a1b6b8d1be12ce0c4cc9-822f7c7cc5f29435cb060e46b7fef0d6-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57062" tvg-name="Sky Sport 9 NZ" tvg-logo="https://upload.wikimedia.org/wikipedia/en/c/c1/Sky_Sport_NZ_2019.svg" group-title="Fútbol",Sky Sport 9 NZ
+https://cdn7.zicotv.cc/iptv_skysport9_nz/index.m3u8?token=d1f6d16722efa73bdb5cc591eca82b0d5a5a79f7-94569aa3a99686911b8fc868b1d9f2c1-1795377485-
+#EXTINF:-1 tvg-id="zicotv-56897" tvg-name="Sky Sport Bundesliga" tvg-logo="https://svgmix.com/uploads/d8b6c9-sky-sport-bundesliga-1.svg" group-title="Fútbol",Sky Sport Bundesliga
+https://cdn6.zicotv.cc/iptv_skysportbundesliga_de/index.m3u8?token=4cf4c35edac36b16e82a71286e3ac09677ef7666-6e7b784314fa4c88585eb4fb2c0b22f4-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57068" tvg-name="Sky Sport Select NZ" tvg-logo="https://upload.wikimedia.org/wikipedia/en/c/c1/Sky_Sport_NZ_2019.svg" group-title="Fútbol",Sky Sport Select NZ
+https://cdn8.zicotv.cc/iptv_skysportselect_nz/index.m3u8?token=2df84307862a6ca992525826b9f9837a442011d0-13cf1259171277817e9f3ae2679c947b-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57076" tvg-name="Sky Sports Football" tvg-logo="https://tse2.mm.bing.net/th?id=OIP.hB7fIlRXJ1Y8nsSDWv2SWgHaBN&pid=Api&P=0&w=300&h=300" group-title="Fútbol",Sky Sports Football
+https://cdn7.zicotv.cc/iptv_skysportsfootball_uk/index.m3u8?token=630f5b1745ad47e48eb2843cded2c97c49418940-bff919433b514d8d0316a69c0d3e0f30-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57092" tvg-name="Sport TV1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2e/Sport_TV1_%282023%29.svg" group-title="Fútbol",Sport TV1
+https://cdn6.zicotv.cc/iptv_sporttv1_pt/index.m3u8?token=e8e9a0466acace0d45c32f25d3adbffbba6a054a-e0d4addb8b1e359661e1dd69f538b408-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57095" tvg-name="Sport TV4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f1/Sport_TV4_%282023%29.svg" group-title="Fútbol",Sport TV4
+https://cdn6.zicotv.cc/iptv_sporttv4_pt/index.m3u8?token=f43f752601583fe1dd584fc7d2a1c9120eef99d0-50746adc815bd6e733b088b2c4469d25-1795377485-
+#EXTINF:-1 tvg-id="zicotv-56899" tvg-name="SuperSport LaLiga" tvg-logo="https://tse2.mm.bing.net/th?id=OIP.liUPjvlcBva4M5bnT06WRwHaCw&pid=Api&P=0&w=300&h=300" group-title="Fútbol",SuperSport LaLiga
+https://cdn6.zicotv.cc/iptv_supersportlaliga_za/index.m3u8?token=5b13d0b494d3f91a919715f6bb41e2761da6d34b-ebbc219f680592f5ab2f3b908a745ea3-1795377485-
+#EXTINF:-1 tvg-id="zicotv-41973" tvg-name="Teledeporte" tvg-logo="https://tse1.mm.bing.net/th?id=OIP.-eUNwjGTxCNxCoi7_fw-JwHaHa&pid=Api&P=0&w=300&h=300" group-title="Fútbol",Teledeporte
+https://cdn8.zicotv.cc/teledeporte/index.m3u8?token=1ee9ad523bd7bc56358e233f928b0dd1fc135b0a-7f5442d0f7de08239e1cdbe84099cd11-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57113" tvg-name="Telemundo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/68/Telemundo_logo_2018.svg" group-title="Fútbol",Telemundo
+https://cdn6.zicotv.cc/iptv_telemundo_usa/index.m3u8?token=d1672b5e99a16182df983ca6c38dd9db2d6f5ea9-2a0cce1d7eb1498025ecaea3f22114fc-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57582" tvg-name="[DAZN 🇩🇪] Augsburg - Mainz 05" tvg-logo="https://upload.wikimedia.org/wikipedia/en/c/cb/Channel_5_%28UK%29_2016.svg" group-title="Fútbol",[DAZN 🇩🇪] Augsburg - Mainz 05
+https://cdn6.zicotv.cc/daznde_augsburg_mainz_05/index.m3u8?token=869b19e4e8e4e6f18b141eab55ee0683787a40a7-7721c6fa2d3fb86866b87f97172e3e3d-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57580" tvg-name="[DAZN 🇩🇪] Bologna - Udinese" group-title="Fútbol",[DAZN 🇩🇪] Bologna - Udinese
+https://cdn5.zicotv.cc/daznde_bologna_udinese/index.m3u8?token=34924788a3cb0c1f8083b132c9ffe1f3ae762f72-8e546705d0e283b15b9d00d00ac4ba63-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57550" tvg-name="[DAZN 🇪🇸] Augsburg - Mainz 05" tvg-logo="https://upload.wikimedia.org/wikipedia/en/c/cb/Channel_5_%28UK%29_2016.svg" group-title="Fútbol",[DAZN 🇪🇸] Augsburg - Mainz 05
+https://cdn6.zicotv.cc/augsburg_mainz_05/index.m3u8?token=3f297a5228a4c968ce876d7ba2b320972415d1f8-e2be4857405a22ed1184ef26fe6e5b83-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57547" tvg-name="[DAZN 🇪🇸] Bologna - Udinese" group-title="Fútbol",[DAZN 🇪🇸] Bologna - Udinese
+https://cdn7.zicotv.cc/bologna_udinese/index.m3u8?token=93af588aef7fea13e8f87c6db9de01e505bf8f42-d06107d5e65d73e6595c691e4a72531b-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57606" tvg-name="[DAZN 🇮🇹] Bologna - Udinese" group-title="Fútbol",[DAZN 🇮🇹] Bologna - Udinese
+https://cdn7.zicotv.cc/daznit_bologna_udinese/index.m3u8?token=a86030a1c14d070ce9b065cd03b46815a80bc26a-4a1b14721806876f7521a374afe3d1bb-1795377486-
+#EXTINF:-1 tvg-id="zicotv-55010" tvg-name="[DAZN 🇮🇹] Serie A Live" group-title="Fútbol",[DAZN 🇮🇹] Serie A Live
+https://cdn3.zicotv.cc/daznit_serie_a_live/index.m3u8?token=fa801e15503baf7ae80ad34ea785dccfb8495dbf-ba667c03c0c50ce69d4ba92ea00ebc68-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57607" tvg-name="[DAZN 🇮🇹] Zona Serie A Enilive | BOL-UDI, SAS-GEN" group-title="Fútbol",[DAZN 🇮🇹] Zona Serie A Enilive | BOL-UDI, SAS-GEN
+https://cdn8.zicotv.cc/daznit_zona_serie_a_enilive_bol_udi_sas_gen/index.m3u8?token=701cd92cfdbb7d607d3ef4689452dde85aac8523-a21d76b9c76c38a25a7b8218529d5b0e-1795377486-
+#EXTINF:-1 tvg-id="zicotv-47808" tvg-name="[LALIGA+] Primera Federación" group-title="Fútbol",[LALIGA+] Primera Federación
+https://cdn8.zicotv.cc/laliga_primerafederacin/index.m3u8?token=7d1751cf5fa2d87c0c4e7b2130f934933c3a7155-6f19d41caf75be1be8ff86094833da31-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57643" tvg-name="[RAVEN] DAZN EVENTOS 24" group-title="Fútbol",[RAVEN] DAZN EVENTOS 24
+https://cdn8.zicotv.cc/raven_dazn_eventos_24/index.m3u8?token=dc419715cb9f9b194e42bec0ec90e2f6cefda853-189151629e0fc2df00875ea29693d16c-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57483" tvg-name="[RAVEN] DAZN EVENTOS 26" group-title="Fútbol",[RAVEN] DAZN EVENTOS 26
+https://cdn3.zicotv.cc/raven_dazn_eventos_26/index.m3u8?token=7a8ecdd0931a8b9904f2732ef8ed6c46bfd6321b-81f492cb2721e6e2b09e04a899798d9a-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57482" tvg-name="[RAVEN] DAZN EVENTOS 27" group-title="Fútbol",[RAVEN] DAZN EVENTOS 27
+https://cdn6.zicotv.cc/raven_dazn_eventos_27/index.m3u8?token=49f905111fce23e48d488d0ab6ad2c4d62e69f27-55f2a55b89acba337b873f8677f69c31-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57481" tvg-name="[RAVEN] DAZN EVENTOS 28" group-title="Fútbol",[RAVEN] DAZN EVENTOS 28
+https://cdn6.zicotv.cc/raven_dazn_eventos_28/index.m3u8?token=08cc6ac5b3a73477f8208d700133a1f802bb5383-055620d453a636807b105064292531e1-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57480" tvg-name="[RAVEN] DAZN EVENTOS 29" group-title="Fútbol",[RAVEN] DAZN EVENTOS 29
+https://cdn7.zicotv.cc/raven_dazn_eventos_29/index.m3u8?token=919eb9f72a41c971ab1fd5a224a43ea3e0aa2614-25d6b188031692e05f74383b6d949138-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57427" tvg-name="[RAVEN] DAZN EVENTOS 30" group-title="Fútbol",[RAVEN] DAZN EVENTOS 30
+https://cdn3.zicotv.cc/raven_dazn_eventos_30/index.m3u8?token=e1273af8624d7ee71dc16999892f921764a2b57a-30c2b51c2a5663995676df37fcc7bde5-1795377486-
+#EXTINF:-1 tvg-id="zicotv-57426" tvg-name="[RAVEN] DAZN EVENTOS 5" tvg-logo="https://upload.wikimedia.org/wikipedia/en/c/cb/Channel_5_%28UK%29_2016.svg" group-title="Fútbol",[RAVEN] DAZN EVENTOS 5
+https://cdn6.zicotv.cc/raven_dazn_eventos_5/index.m3u8?token=dacf62dd363fa9585429e744991c73200f4833ae-919cea2e16333eb0c6204f38eca94244-1795377486-
+#EXTINF:-1 tvg-id="zicotv-55009" tvg-name="beIN Sports USA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/BeIN-Sports-Logo.svg/2560px-BeIN-Sports-Logo.svg.png" group-title="Fútbol",beIN Sports USA
+https://cdn6.zicotv.cc/bein-sports-usa/index.m3u8?token=128ecc10a0203c7ddce6ea24d3476438bcf10562-15422e521827410fffdc51426202630b-1795377485-
+
+# -------- FÚTBOL AMERICANO --------
+#EXTINF:-1 tvg-id="zicotv-56919" tvg-name="ABC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/54/American_Broadcasting_Company_Logo.svg" group-title="Fútbol Americano",ABC
+https://cdn3.zicotv.cc/iptv_abc_usa/index.m3u8?token=4f629711be4c652c8d870c4bddb6829ce0355fbf-5e76fa29a435613ca8be1f6c98019f2a-1795377485-
+#EXTINF:-1 tvg-id="zicotv-56920" tvg-name="ACC Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/ACC_Network_ESPN_logo.svg/1200px-ACC_Network_ESPN_logo.svg.png" group-title="Fútbol Americano",ACC Network
+https://cdn5.zicotv.cc/iptv_accn_usa/index.m3u8?token=beabb3b5a60ecac7298d726427a6087c8300cdb8-0a5d97d7a2490e10463655d686444a9a-1795377485-
+#EXTINF:-1 tvg-id="zicotv-56957" tvg-name="CBS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/ee/CBS_logo_%282020%29.svg" group-title="Fútbol Americano",CBS
+https://cdn6.zicotv.cc/iptv_cbs_usa/index.m3u8?token=cb67277198593bed46ff74bd5bb759f2d656ccdd-67cf8d8c5b4a146eaf4eb8464733948d-1795377485-
+#EXTINF:-1 tvg-id="zicotv-56958" tvg-name="CBS Sports Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/04/CBS_Sports_Network_2021.svg" group-title="Fútbol Americano",CBS Sports Network
+https://cdn5.zicotv.cc/iptv_cbssn_usa/index.m3u8?token=8c3944a72e5ff1a34c030da5f9ab982bf9d03309-bf7a3f5f66470ec4a93a90fc4f651fb6-1795377485-
+#EXTINF:-1 tvg-id="zicotv-56912" tvg-name="CW" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/The_CW.svg/2560px-The_CW.svg.png" group-title="Fútbol Americano",CW
+https://cdn8.zicotv.cc/iptv_cw_usa/index.m3u8?token=dbe281a55d6459fd97111a0a9c4e08cfda8e655d-2ee51b3db69766d520ab48e0be2a44ca-1795377485-
+#EXTINF:-1 tvg-id="zicotv-56905" tvg-name="ESPN" tvg-logo="https://tse2.mm.bing.net/th?id=OIP.MiekxPfGMLvOFb4LBwtERwHaD6&pid=Api&P=0&w=300&h=300" group-title="Fútbol Americano",ESPN
+https://cdn8.zicotv.cc/iptv_espn_usa/index.m3u8?token=b382083ab3b7cbf7a4c77490f05669334f6ea776-c6a4edb0ef48d3de7172e193d03ad37e-1795377485-
+#EXTINF:-1 tvg-id="zicotv-56904" tvg-name="ESPN2" tvg-logo="https://tse2.mm.bing.net/th?id=OIP.MiekxPfGMLvOFb4LBwtERwHaD6&pid=Api&P=0&w=300&h=300" group-title="Fútbol Americano",ESPN2
+https://cdn6.zicotv.cc/iptv_espn2_usa/index.m3u8?token=dcd9e6f49e077335fbeca504fb5a3042f1cabeec-cc1d597127479dde48235b5778ee7c39-1795377485-
+#EXTINF:-1 tvg-id="zicotv-56902" tvg-name="Fox Sports 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Fox_Sports_1_logo.svg/1280px-Fox_Sports_1_logo.svg.png" group-title="Fútbol Americano",Fox Sports 1
+https://cdn6.zicotv.cc/iptv_fox_sports_1/index.m3u8?token=2b7d9ca61a112f64745ec436e7af12552a1e7b16-6bee01ba4758e3f870b6194377405a6d-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57021" tvg-name="NBC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3f/NBC_logo.svg" group-title="Fútbol Americano",NBC
+https://cdn2.zicotv.cc/iptv_nbc_usa/index.m3u8?token=a24fb497ec955fbcad8a10c344226fa83dbc0338-7693e0fededd62f06a5bf7199b3fc548-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57116" tvg-name="TNT" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/ec/TNT_%28TV_Channel%29.svg" group-title="Fútbol Americano",TNT
+https://cdn5.zicotv.cc/iptv_tnt_usa/index.m3u8?token=7f063b9b0f5d4a993224162c488be621f5d89c05-93ce635432e5b3a483f9ffa96a3b8bcb-1795377485-
+>>>>>>> Stashed changes
 
 # -------- GENERAL --------
 #EXTINF:-1 tvg-id="zicotv-28" tvg-name="Movistar Plus+" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Movistar_Plus%2B_2023_logo.svg/512px-Movistar_Plus%2B_2023_logo.svg.png" group-title="General",Movistar Plus+
+<<<<<<< Updated upstream
 https://cdn7.zicotv.cc/m-plus/index.m3u8?token=d9048fc8990d7f2dc16fe3e02879d5813173e2e9-0fc834303dbf022a97a8a810ba93fca5-1795366880-
+||||||| Stash base
+#EXTINF:-1 tvg-id="zicotv-28" tvg-name="Movistar Plus+" group-title="General",Movistar Plus+
+https://cdn8.zicotv.cc/m-plus/index.m3u8?token=abdee026ff511593ac26853d13a303557c408ced-d2a474631d874169812add4a0065e2b4-1795353673-
+=======
+https://cdn3.zicotv.cc/m-plus/index.m3u8?token=468d28381ca3c65d9962d733ae9522132b745ac9-f93264a7ba5e2e8182137a8abe72f691-1795377484-
+>>>>>>> Stashed changes
 
 # -------- HOCKEY HIELO --------
 #EXTINF:-1 tvg-id="zicotv-57098" tvg-name="Sportsnet 360" tvg-logo="https://download.logo.wine/logo/Sportsnet_360/Sportsnet_360-Logo.wine.png" group-title="Hockey Hielo",Sportsnet 360
+<<<<<<< Updated upstream
 https://cdn5.zicotv.cc/iptv_sportsnet360_ca/index.m3u8?token=4306ff5a9dbc0992b408451b51a6737124a7a388-36a176d0526684355f425d85e90aa9fa-1795366882-
 #EXTINF:-1 tvg-id="zicotv-57099" tvg-name="Sportsnet East" tvg-logo="https://download.logo.wine/logo/Sportsnet/Sportsnet-Logo.wine.png" group-title="Hockey Hielo",Sportsnet East
 https://cdn6.zicotv.cc/iptv_sportsneteast_ca/index.m3u8?token=ac89af558cad1e8902e51d3b6811ad4e093b7d17-1f94e982a86bb310a288520db19a964a-1795366882-
@@ -240,9 +634,39 @@ https://cdn6.zicotv.cc/iptv_sportsnetone_ca/index.m3u8?token=c8c31e8d271d93aa5af
 https://cdn5.zicotv.cc/iptv_sportsnetontario_ca/index.m3u8?token=75acd6cb2ebdf4658afb79665ccf9b099325ac93-0e6100146bd9216e753a73c95e8bb249-1795366881-
 #EXTINF:-1 tvg-id="zicotv-57103" tvg-name="Sportsnet West" tvg-logo="https://tse4.mm.bing.net/th?id=OIP.nq9igQD47cZy-5sYLtY_1QHaCU&pid=Api&P=0&w=300&h=300" group-title="Hockey Hielo",Sportsnet West
 https://cdn7.zicotv.cc/iptv_sportsnetwest_ca/index.m3u8?token=6b65d99b85f74874285d088830f5a3d711d8602e-f9ffc5073427ce077f1a61e3a28cd19b-1795366882-
+||||||| Stash base
+# -------- HANDBALL --------
+#EXTINF:-1 tvg-id="zicotv-57386" tvg-name="[RAVEN] Liga ASOBAL 1" group-title="Handball",[RAVEN] Liga ASOBAL 1
+https://cdn3.zicotv.cc/raven_liga_asobal_1/index.m3u8?token=4fbf4723fb6e64ebf1ad54f0ef4ed9b37180118f-9f913823949db98fdae82be48559b008-1795353675-
+
+# -------- ICE HOCKEY --------
+#EXTINF:-1 tvg-id="zicotv-57025" tvg-name="NHL Network" group-title="Ice Hockey",NHL Network
+https://cdn3.zicotv.cc/iptv_nhlnetwork_usa/index.m3u8?token=a64b2cded8f4de41de3d33c45345db1d29913047-06c6a4a1d2f4f279bbbda8a2ce101290-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57098" tvg-name="Sportsnet 360" group-title="Ice Hockey",Sportsnet 360
+https://cdn8.zicotv.cc/iptv_sportsnet360_ca/index.m3u8?token=80258e1d61681945c5d5469723b8af2b18042267-0dbbf8903c90e128f264a9f261812043-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57099" tvg-name="Sportsnet East" group-title="Ice Hockey",Sportsnet East
+https://cdn8.zicotv.cc/iptv_sportsneteast_ca/index.m3u8?token=be8e3db67c8c9f6e3066bf308cd77c14582f4030-a00cb5f2d3afe49591eb0232610f50be-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57100" tvg-name="Sportsnet ONE" group-title="Ice Hockey",Sportsnet ONE
+https://cdn3.zicotv.cc/iptv_sportsnetone_ca/index.m3u8?token=08ca8041445c109e2a5d183c7a43c148e6487def-762268b990cf2afab457de83a120f8e3-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57101" tvg-name="Sportsnet Ontario" group-title="Ice Hockey",Sportsnet Ontario
+https://cdn3.zicotv.cc/iptv_sportsnetontario_ca/index.m3u8?token=c2187f8bce0779e7349fb1b8b0996ff594cfd8a2-9aff64a56fce8622e6bbc0e4b894b453-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57103" tvg-name="Sportsnet West" group-title="Ice Hockey",Sportsnet West
+https://cdn8.zicotv.cc/iptv_sportsnetwest_ca/index.m3u8?token=445a9fd43f500e1e3786ec4cc59b13b73306ebe0-70a7f869e9f6df29a554f95b045c6b6c-1795353674-
+=======
+https://cdn3.zicotv.cc/iptv_sportsnet360_ca/index.m3u8?token=acb962d122eb3ddf2603e1ceb28898be1763f973-bd7c8911f5d85a270d6af0b8b05286ba-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57099" tvg-name="Sportsnet East" tvg-logo="https://download.logo.wine/logo/Sportsnet/Sportsnet-Logo.wine.png" group-title="Hockey Hielo",Sportsnet East
+https://cdn7.zicotv.cc/iptv_sportsneteast_ca/index.m3u8?token=bb785a249c77037643e1e0c4607e0f9dd892e486-8e69c2f5c99d16a9402e6b45bb613344-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57100" tvg-name="Sportsnet ONE" tvg-logo="https://tse4.mm.bing.net/th?id=OIP.Zfqoq-u7l4c4ddfphvd8qQHaE8&pid=Api&P=0&w=300&h=300" group-title="Hockey Hielo",Sportsnet ONE
+https://cdn7.zicotv.cc/iptv_sportsnetone_ca/index.m3u8?token=b994fda0de936dbc025aadad17ca45ac215b2626-b797190ac5d96ca65b4931159378d385-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57101" tvg-name="Sportsnet Ontario" tvg-logo="https://tse3.mm.bing.net/th?id=OIP.Jr81jqitaVjJAvBHW2f5FwAAAA&pid=Api&P=0&w=300&h=300" group-title="Hockey Hielo",Sportsnet Ontario
+https://cdn8.zicotv.cc/iptv_sportsnetontario_ca/index.m3u8?token=114cf991cd83a55ea75ecea96de822e8472d874f-227459e5bd7805ce018d8ef4f211bbbb-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57103" tvg-name="Sportsnet West" tvg-logo="https://tse4.mm.bing.net/th?id=OIP.nq9igQD47cZy-5sYLtY_1QHaCU&pid=Api&P=0&w=300&h=300" group-title="Hockey Hielo",Sportsnet West
+https://cdn7.zicotv.cc/iptv_sportsnetwest_ca/index.m3u8?token=a82dd6c583c548a18c532df180b0cd7a771e1952-4ccb77acdbfe6aebae47df403e1cfbd4-1795377485-
+>>>>>>> Stashed changes
 
 # -------- MOTOR --------
 #EXTINF:-1 tvg-id="zicotv-56969" tvg-name="DAZN F1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/DAZN_F1_logo.png/512px-DAZN_F1_logo.png" group-title="Motor",DAZN F1
+<<<<<<< Updated upstream
 https://cdn6.zicotv.cc/iptv_daznf1_es/index.m3u8?token=c51eadfb9ddb78f6333b1dbab0bd056f28798c37-ac09fef9ba38b7de3f62febd7e55bd4d-1795366883-
 #EXTINF:-1 tvg-id="zicotv-11" tvg-name="DAZN F1 Spain" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/DAZN_F1_logo.png/512px-DAZN_F1_logo.png" group-title="Motor",DAZN F1 Spain
 https://cdn8.zicotv.cc/dazn-f1/index.m3u8?token=b20be67efe61daa1364e88d0cb52c3ce8843b55e-32f7185d5aac7fcd5beadef5b60bf629-1795366880-
@@ -258,7 +682,101 @@ https://cdn7.zicotv.cc/iptv_skysportsf1uhd_uk/index.m3u8?token=d86eddf4c86fe3f41
 https://cdn8.zicotv.cc/iptv_skysportsf1_uk/index.m3u8?token=b44e7b107628ecda5e5ec6027e6faf74b4532342-075ee591c854d2bf1dfae49df153d216-1795366883-
 #EXTINF:-1 tvg-id="zicotv-57110" tvg-name="SuperSport MotorSport" tvg-logo="https://e7.pngegg.com/pngimages/97/609/png-clipart-supersport-dstv-television-channel-others-miscellaneous-television-thumbnail.png" group-title="Motor",SuperSport MotorSport
 https://cdn5.zicotv.cc/iptv_supersportmotorsport_za/index.m3u8?token=6aeb7fc66f7adad900150a4df9e028b39164582c-01386adbf79cf814c99d0890c1b5b302-1795366883-
+||||||| Stash base
+#EXTINF:-1 tvg-id="zicotv-11" tvg-name="DAZN F1 Spain" group-title="Motor",DAZN F1 Spain
+https://cdn8.zicotv.cc/dazn-f1/index.m3u8?token=80d9a55c756cf7cec50018eb3b0386cfff74b5a3-f28923145969a64323557ab4b1f4db04-1795353673-
+=======
+https://cdn6.zicotv.cc/iptv_daznf1_es/index.m3u8?token=2b025039e5ea3b19db004e133fcefbc1f6cd816f-62dad179cd3c119932e12734d4d69ba0-1795377486-
+#EXTINF:-1 tvg-id="zicotv-11" tvg-name="DAZN F1 Spain" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/DAZN_F1_logo.png/512px-DAZN_F1_logo.png" group-title="Motor",DAZN F1 Spain
+https://cdn7.zicotv.cc/dazn-f1/index.m3u8?token=ef40e2c03b2ce799190986af987fbcfc99edf1fa-8c3529b4aba8d8324ec2c4398005e68c-1795377484-
+#EXTINF:-1 tvg-id="zicotv-43048" tvg-name="DAZN MotoGP" tvg-logo="https://raw.githubusercontent.com/Icastresana/logos/main/dazn_motogp.png" group-title="Motor",DAZN MotoGP
+https://cdn3.zicotv.cc/dazn-motogp/index.m3u8?token=8909e773c44836f9c33fe2c8e49a1e12e923296c-eb08ead5a64a044daecfc1a792e42608-1795377485-
+#EXTINF:-1 tvg-id="zicotv-56978" tvg-name="Eleven Sports 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/49/Eleven_Sports.png" group-title="Motor",Eleven Sports 1
+https://cdn6.zicotv.cc/iptv_elevensports1_pl/index.m3u8?token=ef2aaa18d175d0be072c5c64dfe21bec01f3c6d5-da732f4873c0162a59e83de0cfddfd9b-1795377486-
+#EXTINF:-1 tvg-id="zicotv-56994" tvg-name="Fox Sports 506" tvg-logo="https://tse2.mm.bing.net/th?id=OIP.N73cPt3YkOaK-pIoNyX7vAAAAA&pid=Api&P=0&w=300&h=300" group-title="Motor",Fox Sports 506
+https://cdn7.zicotv.cc/iptv_fox_sports_506/index.m3u8?token=52a6b5b1d1243f26425112e0f6ebc6a1d0e6a53f-17ee7fdb4e25101777cf9bc9f6d92b22-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57075" tvg-name="Sky Sports F1: 4K HEVC" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/Sky_Sports_F1_logo_2020.svg/2560px-Sky_Sports_F1_logo_2020.svg.png" group-title="Motor",Sky Sports F1: 4K HEVC
+https://cdn5.zicotv.cc/iptv_skysportsf1uhd_uk/index.m3u8?token=bc3d3762b4e04f902f5020b59b34d8d2ac5fbc7e-1616c27003ded2cd06bab52e80843969-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57073" tvg-name="Sky Sports F1: English" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/Sky_Sports_F1_logo_2020.svg/2560px-Sky_Sports_F1_logo_2020.svg.png" group-title="Motor",Sky Sports F1: English
+https://cdn5.zicotv.cc/iptv_skysportsf1_uk/index.m3u8?token=c863b7e29438c3b1eef60c235b8c35ce95accf9c-178e39262f6f55c0ea110c8f7164bf04-1795377485-
+#EXTINF:-1 tvg-id="zicotv-57110" tvg-name="SuperSport MotorSport" tvg-logo="https://e7.pngegg.com/pngimages/97/609/png-clipart-supersport-dstv-television-channel-others-miscellaneous-television-thumbnail.png" group-title="Motor",SuperSport MotorSport
+https://cdn8.zicotv.cc/iptv_supersportmotorsport_za/index.m3u8?token=3dfd0ffe80c22d46c3800080bb674d84188ac236-407944cacfa0ade18d930326cfeacf18-1795377486-
+>>>>>>> Stashed changes
 
 # -------- TENIS --------
 #EXTINF:-1 tvg-id="zicotv-46359" tvg-name="M+ Deportes 2" group-title="Tenis",M+ Deportes 2
+<<<<<<< Updated upstream
 https://cdn7.zicotv.cc/m-deportes-2/index.m3u8?token=a75dea6fea6968d8db8f990d159a91c8c82edb56-d86c4805e417abfe62aee919e7515207-1795366885-
+||||||| Stash base
+# -------- MOTORSPORT --------
+#EXTINF:-1 tvg-id="zicotv-56969" tvg-name="DAZN F1" group-title="Motorsport",DAZN F1
+https://cdn8.zicotv.cc/iptv_daznf1_es/index.m3u8?token=001742459754f27201ad248e599a282283701c9b-582ccf790a3b3c021795526fda04be43-1795353675-
+#EXTINF:-1 tvg-id="zicotv-43048" tvg-name="DAZN MotoGP" group-title="Motorsport",DAZN MotoGP
+https://cdn3.zicotv.cc/dazn-motogp/index.m3u8?token=72066eb2fa4c1bd6d665b070ee71013f6ee5009c-1e116ca5500ea836f26c593806559d91-1795353674-
+#EXTINF:-1 tvg-id="zicotv-56978" tvg-name="Eleven Sports 1" group-title="Motorsport",Eleven Sports 1
+https://cdn3.zicotv.cc/iptv_elevensports1_pl/index.m3u8?token=0efd2c5619a3826e009d3a4ed620039ebaa3925c-f2411aa29be0b10cb15137dc4a9fd535-1795353675-
+#EXTINF:-1 tvg-id="zicotv-56994" tvg-name="Fox Sports 506" group-title="Motorsport",Fox Sports 506
+https://cdn8.zicotv.cc/iptv_fox_sports_506/index.m3u8?token=6e8ad5941fa1be744feb1ce4fdf733dde328a5fe-c703935d01d540099884c2ff8f9aea3f-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57075" tvg-name="Sky Sports F1: 4K HEVC" group-title="Motorsport",Sky Sports F1: 4K HEVC
+https://cdn8.zicotv.cc/iptv_skysportsf1uhd_uk/index.m3u8?token=beeb9836a634cf21500cbec44ec4d16cd45a0036-91122c180c0dea1938b14eb5add04792-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57073" tvg-name="Sky Sports F1: English" group-title="Motorsport",Sky Sports F1: English
+https://cdn8.zicotv.cc/iptv_skysportsf1_uk/index.m3u8?token=ad6b206a8a3a069770d0c5768e8fa951ad1bc432-af6f68d6d41f01eecef9638a3badf7c1-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57110" tvg-name="SuperSport MotorSport" group-title="Motorsport",SuperSport MotorSport
+https://cdn8.zicotv.cc/iptv_supersportmotorsport_za/index.m3u8?token=1033b4ae79f6303df5ca822f853ac64449cb1a5b-0f47e9f55596aec4f489a62ca8ca6ba7-1795353675-
+
+# -------- SOCCER --------
+#EXTINF:-1 tvg-id="zicotv-56896" tvg-name="CANAL+ Sport 3 PL" group-title="Soccer",CANAL+ Sport 3 PL
+https://cdn8.zicotv.cc/iptv_canalsport3_pl/index.m3u8?token=c17f7b8e1f5e0b3823840be94035c7e5c5844fd4-3f5f4a477534e0aaa33ee95603bd06ed-1795353674-
+#EXTINF:-1 tvg-id="zicotv-37934" tvg-name="Esport 3" group-title="Soccer",Esport 3
+https://cdn8.zicotv.cc/esport-3/index.m3u8?token=8a5aaf4250879c6af21589556d654efb6fc3bfaf-c42782712017299bc45aa452d1a3bd53-1795353673-
+#EXTINF:-1 tvg-id="zicotv-42771" tvg-name="Movistar LaLiga 1" group-title="Soccer",Movistar LaLiga 1
+https://cdn8.zicotv.cc/m-liga/index.m3u8?token=0f4c39f32caefa4f76fe5dbf29408deaab128467-4d5e41c1529c465d9551258c95883608-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57034" tvg-name="Premier Sports 1 IE" group-title="Soccer",Premier Sports 1 IE
+https://cdn8.zicotv.cc/iptv_premiersports1_ie/index.m3u8?token=a433fb963eeea00c6b664babd963a7c02f76de2e-f0ec2f3c81abd0cb5ea4e0de8b16959d-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57057" tvg-name="Sky Sport 3 NZ" group-title="Soccer",Sky Sport 3 NZ
+https://cdn8.zicotv.cc/iptv_skysport3_nz/index.m3u8?token=86e7b5c439014bb19c697f28fc06281f2074f69c-e2b8ff53c6c2a832e0fd22c4f0af79ce-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57062" tvg-name="Sky Sport 9 NZ" group-title="Soccer",Sky Sport 9 NZ
+https://cdn3.zicotv.cc/iptv_skysport9_nz/index.m3u8?token=b7c37f758d54b2e4e3f7c6dca1a0688f86460c2f-635661c723a8369ab865b852a751365e-1795353673-
+#EXTINF:-1 tvg-id="zicotv-56897" tvg-name="Sky Sport Bundesliga" group-title="Soccer",Sky Sport Bundesliga
+https://cdn8.zicotv.cc/iptv_skysportbundesliga_de/index.m3u8?token=384477450d521ae7291a1ca800a94ef9b1c70b95-23836fc6e4924a14385460bd74410612-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57076" tvg-name="Sky Sports Football" group-title="Soccer",Sky Sports Football
+https://cdn8.zicotv.cc/iptv_skysportsfootball_uk/index.m3u8?token=74a305061c02a08ae54b16ba8c5aa81f9290608e-8d343190e6304bffaae6b0952746c41c-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57082" tvg-name="Sky Sports Premier League" group-title="Soccer",Sky Sports Premier League
+https://cdn8.zicotv.cc/iptv_skysportspremierleague_uk/index.m3u8?token=b34f3fd82851a7457a8ac238e995fe1f56bc45cc-c494faf33ce7818be7f56a0f6e8dbaaf-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57095" tvg-name="Sport TV4" group-title="Soccer",Sport TV4
+https://cdn8.zicotv.cc/iptv_sporttv4_pt/index.m3u8?token=55d0fa712e6a99341a8491fe0d31136ad76640bd-028d539771c0f8b7843bda72cc4f9b4a-1795353674-
+#EXTINF:-1 tvg-id="zicotv-56899" tvg-name="SuperSport LaLiga" group-title="Soccer",SuperSport LaLiga
+https://cdn8.zicotv.cc/iptv_supersportlaliga_za/index.m3u8?token=efe9169be5bf10c941b66f28b6664a4d961bfdd0-af513513a3248b0373c3cc363f1dc02a-1795353674-
+#EXTINF:-1 tvg-id="zicotv-41973" tvg-name="Teledeporte" group-title="Soccer",Teledeporte
+https://cdn5.zicotv.cc/teledeporte/index.m3u8?token=4a0344778e2927f4e3719df6692871a913e9d5e9-7785d43f982acc1283c71542c39e7f6a-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57113" tvg-name="Telemundo" group-title="Soccer",Telemundo
+https://cdn5.zicotv.cc/iptv_telemundo_usa/index.m3u8?token=01f3ba8c167c885b9e90a410a7a3fbf7d48b5a28-0d6c196b60441631ed9ab9624e8762dd-1795353674-
+#EXTINF:-1 tvg-id="zicotv-54777" tvg-name="[DAZN 🇮🇹] Juventus - Venezia" group-title="Soccer",[DAZN 🇮🇹] Juventus - Venezia
+https://cdn3.zicotv.cc/daznit_juventus_venezia/index.m3u8?token=ef3f5df5c2f4a873d6f35caa05143db116a88c73-1f9f4c9f3dfe5ad18af155587e123c34-1795353675-
+#EXTINF:-1 tvg-id="zicotv-47808" tvg-name="[LALIGA+] Primera Federación" group-title="Soccer",[LALIGA+] Primera Federación
+https://cdn8.zicotv.cc/laliga_primerafederacin/index.m3u8?token=12fbd6eaa10c2595b8a62418ec8f1aabf9e608b1-1ce7292393687a9db9bd1eac3da25be3-1795353674-
+#EXTINF:-1 tvg-id="zicotv-57401" tvg-name="[RAVEN] DAZN EVENTOS 33" group-title="Soccer",[RAVEN] DAZN EVENTOS 33
+https://cdn3.zicotv.cc/raven_dazn_eventos_33/index.m3u8?token=5595b9e67e768163089f66b4fcff8daa9dd540b4-5553c47e5497c01d9b67ea702f6ced13-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57402" tvg-name="[RAVEN] DAZN EVENTOS 34" group-title="Soccer",[RAVEN] DAZN EVENTOS 34
+https://cdn8.zicotv.cc/raven_dazn_eventos_34/index.m3u8?token=9b7036e7b1d47ce63b8b6ce9c96ecf28ec23cab1-d29f24c860a4662c1746549fa5d4d33d-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57411" tvg-name="[RAVEN] DAZN EVENTOS 37" group-title="Soccer",[RAVEN] DAZN EVENTOS 37
+https://cdn8.zicotv.cc/raven_dazn_eventos_37/index.m3u8?token=14d1685d09cea2719b16299e1127bc8ef5a3ea99-a2c89b83bcc8ffd6551e7ae8a3c20ba8-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57412" tvg-name="[RAVEN] DAZN EVENTOS 38" group-title="Soccer",[RAVEN] DAZN EVENTOS 38
+https://cdn5.zicotv.cc/raven_dazn_eventos_38/index.m3u8?token=40b6c0e2f8bc26d22fc9d40f8ce34ee0be6229b6-448955f839d7383b7431b3d42bb908f8-1795353676-
+#EXTINF:-1 tvg-id="zicotv-57413" tvg-name="[RAVEN] DAZN EVENTOS 39" group-title="Soccer",[RAVEN] DAZN EVENTOS 39
+https://cdn8.zicotv.cc/raven_dazn_eventos_39/index.m3u8?token=839e5f50500c17f53e8520d49e587dd2f6e0eed4-e32643d0ea4f98c91265a7a9e85cb39c-1795353676-
+#EXTINF:-1 tvg-id="zicotv-57414" tvg-name="[RAVEN] DAZN EVENTOS 40" group-title="Soccer",[RAVEN] DAZN EVENTOS 40
+https://cdn2.zicotv.cc/raven_dazn_eventos_40/index.m3u8?token=1c309fda842a4eaa9206141e3e5ca99ac0e08ae8-857b661a99f73df06791a70ea6646560-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57418" tvg-name="[RAVEN] DAZN EVENTOS 41" group-title="Soccer",[RAVEN] DAZN EVENTOS 41
+https://cdn8.zicotv.cc/raven_dazn_eventos_41/index.m3u8?token=748627412cbfb705d125b67fbc294905ffad75f3-42fc0ba8283a7c0b2c6bb8c546ebdb76-1795353676-
+#EXTINF:-1 tvg-id="zicotv-57399" tvg-name="[RAVEN] DAZN LIGA F 1" group-title="Soccer",[RAVEN] DAZN LIGA F 1
+https://cdn5.zicotv.cc/raven_dazn_liga_f_1/index.m3u8?token=697d1eb4821008ad69faade5d4fc3ba4b30a6c9b-7d261326139cd89312beb169366f472a-1795353675-
+#EXTINF:-1 tvg-id="zicotv-57400" tvg-name="[RAVEN] DAZN LIGA F 2" group-title="Soccer",[RAVEN] DAZN LIGA F 2
+https://cdn8.zicotv.cc/raven_dazn_liga_f_2/index.m3u8?token=a032940290963305cad39122764fad24819a8f48-cb99fd487f6a91dae36d8466b4b44a27-1795353675-
+#EXTINF:-1 tvg-id="zicotv-56933" tvg-name="beIN Sports" group-title="Soccer",beIN Sports
+https://cdn3.zicotv.cc/iptv_beinsports_usa/index.m3u8?token=38f0691ac1ea7ce861a359e66a01cd1565569dad-438d3ee9323b24379f957110a17c4de3-1795353674-
+#EXTINF:-1 tvg-id="zicotv-55009" tvg-name="beIN Sports USA" group-title="Soccer",beIN Sports USA
+https://cdn8.zicotv.cc/bein-sports-usa/index.m3u8?token=e5099802ff4b8419093a4a0e0235766528c9d746-35345afbdb3b225d804b7f61be812c14-1795353674-
+=======
+https://cdn5.zicotv.cc/m-deportes-2/index.m3u8?token=c39109040a2cf4e982476da95d164ceec4a6758f-28c5aed3a992efc36026f208b8975758-1795377486-
+>>>>>>> Stashed changes

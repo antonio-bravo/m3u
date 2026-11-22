@@ -189,13 +189,15 @@ def resolver_stream_canal(base_url, channel_id, channel_name, group_title, logos
 
         renew_full_url = f"{base_url}{renew_rel_path}"
 
-        # Realizar POST de renovación
+        # Solicitar token de larga duración (modo nativo HLS: 3 horas de validez en lugar de 20 minutos)
         post_headers = {
             **HEADERS,
             'Referer': player_url,
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
         }
-        r_renew = s.post(renew_full_url, data='', headers=post_headers, timeout=6)
+        payload = json.dumps({'native': True})
+        r_renew = s.post(renew_full_url, data=payload, headers=post_headers, timeout=6)
         if r_renew.status_code != 200:
             return None
 
