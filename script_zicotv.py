@@ -271,9 +271,13 @@ def recolectar_canales_disponibles(base_url):
 def generar_lista_m3u(canales_resueltos, archivo_salida=OUTPUT_M3U):
     """Genera el archivo M3U con los canales y sus URLs resueltas."""
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    proxy_base = os.environ.get("PROXY_BASE_URL", "").rstrip("/")
     contenido = "#EXTM3U\n"
     contenido += f"# ZicoTV Channels List - {timestamp}\n"
-    contenido += f"# Canales activos: {len(canales_resueltos)}\n\n"
+    contenido += f"# Canales activos: {len(canales_resueltos)}\n"
+    if proxy_base:
+        contenido += f"# Modo Proxy activado: {proxy_base}\n"
+    contenido += "\n"
 
     # Ordenar por grupo y luego por nombre
     canales_ordenados = sorted(canales_resueltos, key=lambda c: (c['group'], c['name']))
@@ -287,7 +291,8 @@ def generar_lista_m3u(canales_resueltos, archivo_salida=OUTPUT_M3U):
         tvg_id = f"zicotv-{c['id']}"
         logo_attr = f' tvg-logo="{c["logo"]}"' if c.get('logo') else ''
         contenido += f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{c["name"]}"{logo_attr} group-title="{c["group"]}",{c["name"]}\n'
-        contenido += f"{c['url']}\n"
+        stream_url = f"{proxy_base}/zico/live/{c['id']}.m3u8" if proxy_base else c['url']
+        contenido += f"{stream_url}\n"
 
     with open(archivo_salida, 'w', encoding='utf-8') as f:
         f.write(contenido)

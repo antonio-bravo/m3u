@@ -19,7 +19,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copiar el código fuente y las plantillas
-COPY m3u_parser.py github_scanner.py playlist_manager.py acestream_proxy.py cors_hls_proxy.py default_template.py server.py ./
+COPY m3u_parser.py github_scanner.py playlist_manager.py acestream_proxy.py cors_hls_proxy.py zicotv_proxy.py default_template.py server.py ./
 COPY templates/ ./templates/
 COPY templates/ /opt/templates/
 

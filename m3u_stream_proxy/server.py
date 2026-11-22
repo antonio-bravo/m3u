@@ -16,6 +16,7 @@ from playlist_manager import PlaylistManager
 from github_scanner import scan_github_repository, normalize_github_url
 from acestream_proxy import AceStreamProxy
 from cors_hls_proxy import proxy_m3u8_manifest, proxy_segment_request
+from zicotv_proxy import zico_manager
 
 # Configuración de logs
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
@@ -192,6 +193,13 @@ async def startup_event():
     asyncio.create_task(manager.sync_all_enabled_sources())
     # Iniciar worker periódico
     asyncio.create_task(background_sync_worker())
+    # Inicializar catálogo de ZicoTV en segundo plano
+    asyncio.create_task(zico_manager.get_channel_catalog())
+
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    await zico_manager.close()
 
 
 # ---------------------------------------------------------------------------
@@ -760,6 +768,12 @@ async def get_channel_live_m3u8(
     """
     ch = manager.channels.get(channel_id)
     if not ch:
+        # Soporte para reproducir directamente identificadores zicotv-{id} o zico_{id} o numéricos
+        zico_match = re.match(r'^(?:zicotv[-_]|zico[-_])?(\d+)$', channel_id)
+        if zico_match and (channel_id.startswith("zico") or channel_id.isdigit()):
+            cid = int(zico_match.group(1))
+            buf_offset = offset if offset is not None else manager.settings.get("buffer_offset_seconds", 16.0)
+            return await zico_manager.proxy_channel_hls(cid, request, buffer_offset=buf_offset)
         raise HTTPException(status_code=404, detail="Canal no encontrado")
 
     base_url = str(request.base_url).rstrip("/")
@@ -770,6 +784,13 @@ async def get_channel_live_m3u8(
     target_url = ch.get("url")
     if not target_url:
         raise HTTPException(status_code=400, detail="El canal no tiene URL válida")
+
+    # Si la URL apunta a un canal ZicoTV proxificado, delegar al gestor ZicoTV
+    zico_url_match = re.search(r'/zico/live/(\d+)\.m3u8', target_url)
+    if zico_url_match:
+        cid = int(zico_url_match.group(1))
+        buf_offset = offset if offset is not None else manager.settings.get("buffer_offset_seconds", 16.0)
+        return await zico_manager.proxy_channel_hls(cid, request, buffer_offset=buf_offset)
 
     if ch.get("stream_type") == "dash":
         clean_target = target_url.split("|")[0].strip()
@@ -787,6 +808,11 @@ async def get_channel_live_ts(channel_id: str, request: Request, server_id: Opti
     """
     ch = manager.channels.get(channel_id)
     if not ch:
+        zico_match = re.match(r'^(?:zicotv[-_]|zico[-_])?(\d+)$', channel_id)
+        if zico_match and (channel_id.startswith("zico") or channel_id.isdigit()):
+            cid = int(zico_match.group(1))
+            stream_info = await zico_manager.resolve_stream(cid)
+            return RedirectResponse(url=stream_info["media_url"])
         raise HTTPException(status_code=404, detail="Canal no encontrado")
 
     if ch.get("acestream_id"):
@@ -797,7 +823,67 @@ async def get_channel_live_ts(channel_id: str, request: Request, server_id: Opti
     if not target_url:
         raise HTTPException(status_code=400, detail="El canal no tiene URL válida")
 
+    zico_url_match = re.search(r'/zico/live/(\d+)\.m3u8', target_url)
+    if zico_url_match:
+        cid = int(zico_url_match.group(1))
+        stream_info = await zico_manager.resolve_stream(cid)
+        return RedirectResponse(url=stream_info["media_url"])
+
     return RedirectResponse(url=target_url)
+
+
+# ---------------------------------------------------------------------------
+# Microproxy de ZicoTV (HLS & Renovación Automática de Token PRO)
+# ---------------------------------------------------------------------------
+@app.get("/zico/live/{channel_id}.m3u8")
+@app.head("/zico/live/{channel_id}.m3u8")
+async def get_zico_live_m3u8(channel_id: int, request: Request, offset: Optional[float] = Query(None)):
+    """
+    Reproducción HLS en vivo de canales ZicoTV con renovación automática de tokens (3h TTL).
+    CORS habilitado y búfer extendido PRO para estabilidad en VLC, TiviMate, Kodi o navegador.
+    """
+    buf_offset = offset if offset is not None else manager.settings.get("buffer_offset_seconds", 16.0)
+    return await zico_manager.proxy_channel_hls(channel_id, request, buffer_offset=buf_offset)
+
+
+@app.get("/zico/live/{channel_id}.ts")
+@app.get("/zico/live/{channel_id}")
+async def get_zico_direct_stream(channel_id: int):
+    """Redirección directa al flujo HLS activo de ZicoTV con token válido."""
+    stream_info = await zico_manager.resolve_stream(channel_id)
+    return RedirectResponse(url=stream_info["media_url"])
+
+
+@app.get("/zico/channels.m3u", response_class=PlainTextResponse)
+@app.get("/zico/playlist.m3u", response_class=PlainTextResponse)
+async def get_zico_channels_m3u(request: Request):
+    """Genera la lista M3U completa de ZicoTV con todos los canales apuntando a este microproxy."""
+    base_url = str(request.base_url).rstrip("/")
+    content = await zico_manager.generate_m3u_playlist(base_url)
+    return Response(
+        content=content,
+        media_type="application/vnd.apple.mpegurl",
+        headers={"Content-Disposition": 'inline; filename="zicotv.m3u"'}
+    )
+
+
+@app.get("/zico/api/channels")
+async def get_zico_channels_api(force: bool = False):
+    """Devuelve el catálogo de canales fijos y eventos deportivos en directo de ZicoTV en JSON."""
+    return await zico_manager.get_channel_catalog(force=force)
+
+
+@app.get("/zico/api/status")
+async def get_zico_status_api():
+    """Devuelve el estado de la caché de streams, métricas de tokens y salud del microproxy ZicoTV."""
+    return zico_manager.get_status()
+
+
+@app.get("/zico/segment")
+async def get_zico_segment_alias(request: Request, url: str = Query(...)):
+    """Alias para fragmentos de video enrutados desde /zico/."""
+    target_url = unquote(url)
+    return await proxy_segment_request(target_url, request)
 
 
 # ---------------------------------------------------------------------------

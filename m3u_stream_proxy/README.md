@@ -39,6 +39,11 @@ Un centro multimedia moderno y servidor proxy en **Docker** para gestionar, esca
 6. **📋 Exportador M3U para Dispositivos Externos:**
    - Endpoint `/playlist.m3u` con URLs proxificadas para usar en **TiviMate, Kodi, OTT Navigator, IPTV Smarters o VLC**.
 
+7. **⚡ Microproxy ZicoTV con Renovación Automática de Tokens (3h TTL):**
+   - **Renovación Transparente On-Demand:** Resuelve y renueva tokens HMAC Flussonic de 3 horas en segundo plano sin interrumpir la emisión en reproductores externos.
+   - **Endpoint M3U dedicado:** `/zico/playlist.m3u` (o `/zico/channels.m3u`) con todos los canales 24/7 y eventos deportivos en vivo apuntando a `/zico/live/{id}.m3u8` que nunca caducan.
+   - **Catálogo y Estadísticas:** `/zico/api/channels` y `/zico/api/status`.
+
 ---
 
 ## 📦 Puesta en Marcha con Docker
