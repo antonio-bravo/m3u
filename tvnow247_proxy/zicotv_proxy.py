@@ -13,7 +13,13 @@ from fastapi import Request, HTTPException, Response
 
 logger = logging.getLogger("tvnow247_proxy.zicotv")
 
-DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+USER_AGENTS = [
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15",
+    "Mozilla/5.0 (iPad; CPU OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1",
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:134.0) Gecko/20100101 Firefox/134.0",
+]
+DEFAULT_USER_AGENT = USER_AGENTS[0]
 
 # ---------------------------------------------------------------------------
 # Canales fijos 24/7 conocidos de la plataforma ZicoTV
@@ -318,22 +324,28 @@ class ZicoTVManager:
 
             renew_full_url = urljoin(base, renew_rel_path)
 
-            post_headers = {
-                "Referer": player_url,
-                "Content-Type": "application/json",
-                "Accept": "application/json",
-            }
-            r_renew = await client.post(
-                renew_full_url,
-                json={"native": True},
-                headers=post_headers,
-                timeout=8.0
-            )
+            # Solicitar token de 3 horas en modo nativo HLS (native: true) con rotación de User-Agent ante 403
+            r_renew = None
+            for ua in USER_AGENTS:
+                post_headers = {
+                    "User-Agent": ua,
+                    "Referer": player_url,
+                    "Content-Type": "application/json",
+                    "Accept": "application/json",
+                }
+                r_renew = await client.post(
+                    renew_full_url,
+                    json={"native": True},
+                    headers=post_headers,
+                    timeout=8.0
+                )
+                if r_renew.status_code == 200:
+                    break
 
-            if r_renew.status_code != 200:
+            if not r_renew or r_renew.status_code != 200:
                 raise HTTPException(
-                    status_code=r_renew.status_code,
-                    detail=f"Error en endpoint de renovación ZicoTV: {r_renew.status_code}"
+                    status_code=r_renew.status_code if r_renew else 502,
+                    detail=f"Error en endpoint de renovación ZicoTV: {r_renew.status_code if r_renew else 'Timeout'}"
                 )
 
             renew_data = r_renew.json()
@@ -412,6 +424,16 @@ class ZicoTVManager:
 
         try:
             r = await client.get(media_url, headers=headers, timeout=8.0)
+            # Si el token caducó o fue revocado upstream, forzar renovación inmediata del token y reintentar
+            if r.status_code in (401, 403):
+                logger.warning(
+                    f"Token upstream expirado o denegado ({r.status_code}) para canal {channel_id}. Renovando automáticamente de inmediato..."
+                )
+                stream_info = await self.resolve_stream(channel_id, force_renew=True)
+                media_url = stream_info["media_url"]
+                headers["Referer"] = stream_info.get("player_url", "https://bp.zicotv.cc/")
+                r = await client.get(media_url, headers=headers, timeout=8.0)
+
             if r.status_code != 200:
                 cached_m3u = window_manager.get_cached_m3u8(f"zicotv_{channel_id}")
                 if cached_m3u:
