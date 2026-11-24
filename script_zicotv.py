@@ -189,7 +189,7 @@ def resolver_stream_canal(base_url, channel_id, channel_name, group_title, logos
         if b not in candidate_bases:
             candidate_bases.append(b)
 
-    debug_channel = channel_id in (1, 2, 3, 4, 5)
+    debug_channel = (os.environ.get("DEBUG_ZICOTV") == "1") and (channel_id in (1, 2, 3, 4, 5))
 
     for current_base in candidate_bases:
         player_url = f"{current_base}/api/player/{channel_id}"
@@ -396,6 +396,24 @@ def main():
 
     canales_meta = recolectar_canales_disponibles(base_url)
 
+    proxy_base = os.environ.get("PROXY_BASE_URL", "").rstrip("/")
+    if proxy_base:
+        print(f"\n[Modo Microproxy] Generando lista M3U enlazada a {proxy_base}...")
+        canales_proxy = []
+        for cid, meta in canales_meta.items():
+            logo_url = buscar_logo(meta['name'], logos_dict)
+            canales_proxy.append({
+                'id': cid,
+                'name': meta['name'],
+                'group': meta['group'],
+                'logo': logo_url,
+                'url': f"{proxy_base}/zico/live/{cid}.m3u8",
+                'cdn_label': 'Proxy'
+            })
+        generar_lista_m3u(canales_proxy)
+        print(f"\n✓ Lista generada con éxito ({len(canales_proxy)} canales) apuntando al microproxy.")
+        return True
+
     print(f"\nResolviendo enlaces HLS con tokens activos en paralelo ({'curl_cffi HTTP/3' if USE_CURL_CFFI else 'requests'})...")
     canales_resueltos = []
     fallos = []
@@ -425,11 +443,20 @@ def main():
                 fallos.append(f"[{cid}] {cname}: {e}")
 
     if not canales_resueltos:
-        print("\n✗ No se pudieron resolver canales válidos.")
-        if fallos:
-            print(f"Muestra de canales no resueltos ({min(5, len(fallos))} de {len(fallos)}):")
-            for fal in fallos[:5]:
-                print(f"  - {fal}")
+        print("\n⚠ AVISO:")
+        print("El servidor upstream de ZicoTV bloquea la generación de tokens HLS (HTTP 403 Forbidden)")
+        print("desde rangos de IP de centros de datos en la nube (como Microsoft Azure / GitHub Actions).")
+        print("\nOpciones recomendadas:")
+        print("  1. Usar los microproxies locales incluidos en este repositorio (tvnow247_proxy / m3u_stream_proxy)")
+        print("     en tu red local (IP residencial en España) donde no hay bloqueo de Nginx:")
+        print("     - Lista M3U directa del proxy: http://<TU_IP_LOCAL>:8888/zico/playlist.m3u (o :8899)")
+        print("     - Monitor de reproducción en tiempo real: http://<TU_IP_LOCAL>:8888/zico/status (o :8899)")
+        print("  2. Para generar la lista M3U desde GitHub Actions apuntando a tu proxy, define la variable")
+        print("     o secreto de GitHub PROXY_BASE_URL (ej. http://midominio.duckdns.org:8888).")
+
+        if os.path.exists(OUTPUT_M3U):
+            print(f"\n✓ Se conserva el archivo existente '{OUTPUT_M3U}' sin alteraciones.")
+            return True
         return False
 
     generar_lista_m3u(canales_resueltos)
