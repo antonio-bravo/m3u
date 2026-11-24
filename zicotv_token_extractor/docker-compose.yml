@@ -1,0 +1,16 @@
+services:
+  zicotv-extractor:
+    build:
+      context: .
+      dockerfile: Containerfile
+    image: ghcr.io/antonio-bravo/m3u/zicotv-extractor:latest
+    container_name: zicotv-extractor
+    ports:
+      - "8085:8085"
+    restart: unless-stopped
+    volumes:
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+      # Duración por defecto del token ('3h', '20m', '1h', etc.)
+      - DEFAULT_TOKEN_DURATION=3h

@@ -32,10 +32,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests curl_cffi
 
+      - name: Setup Cloudflare WARP
+        uses: fscarmen/warp-on-actions@v1.3
+
       - name: Run update script
         run: python script_zicotv.py
-        env:
-          PROXY_BASE_URL: ${{ secrets.PROXY_BASE_URL }}
 
       - name: Verificar y Subir cambios
         uses: ./.github/actions/commit-and-push

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Script de descarga y actualización de canales ZicoTV (HLS / M3U)
-Extrae canales 24/7 y emisiones de eventos deportivos en directo (DAZN MotoGP, DAZN LaLiga, Movistar+, etc.)
+Extrae canales 24/7 y emisiones de eventos deportivos en directo con tokens activos HLS (3 horas de validez).
 Genera: lista_zicotv.m3u
 """
 
@@ -28,15 +28,10 @@ BASE_URLS = [
 OUTPUT_M3U = 'lista_zicotv.m3u'
 LOGOS_XML_PATH = 'LOGOS-CANALES-TV.xml'
 
-USER_AGENTS = [
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15',
-    'Mozilla/5.0 (iPad; CPU OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1',
-    'Mozilla/5.0 (iPhone; CPU iPhone OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:134.0) Gecko/20100101 Firefox/134.0',
-]
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15'
 
 HEADERS = {
-    'User-Agent': USER_AGENTS[0],
+    'User-Agent': USER_AGENT,
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
 }
@@ -126,11 +121,9 @@ def buscar_logo(channel_name, logos_dict):
         return ""
     name_clean = channel_name.lower().strip()
 
-    # Coincidencia exacta
     if name_clean in logos_dict:
         return logos_dict[name_clean]
 
-    # Coincidencia parcial
     for k, v in logos_dict.items():
         if k in name_clean or name_clean in k:
             return v
@@ -161,11 +154,10 @@ def normalizar_grupo(sport):
     return traducciones.get(sport.lower().strip(), sport.capitalize())
 
 def crear_sesion():
-    """Crea una sesión HTTP optimizada con soporte para browser TLS impersonation."""
+    """Crea una sesión HTTP optimizada."""
     if USE_CURL_CFFI:
         return requests.Session(impersonate="safari17_0")
-    s = requests.Session()
-    return s
+    return requests.Session()
 
 def obtener_base_url_activa():
     """Determina qué dominio base responde correctamente."""
@@ -181,127 +173,82 @@ def obtener_base_url_activa():
 
 def resolver_stream_canal(base_url, channel_id, channel_name, group_title, logos_dict, session=None):
     """
-    Obtiene el reproductor del canal, realiza el POST de renovación y extrae la URL HLS activa.
-    Soporta curl_cffi (Safari/Chrome), requests estándar, múltiples dominios base y diagnósticos detallados.
+    Obtiene el reproductor del canal, realiza el POST de renovación y extrae la URL HLS activa (3 horas).
     """
     candidate_bases = [base_url]
     for b in BASE_URLS:
         if b not in candidate_bases:
             candidate_bases.append(b)
 
-    debug_channel = (os.environ.get("DEBUG_ZICOTV") == "1") and (channel_id in (1, 2, 3, 4, 5))
+    s = session or crear_sesion()
 
     for current_base in candidate_bases:
         player_url = f"{current_base}/api/player/{channel_id}"
+        req_headers = {
+            'User-Agent': USER_AGENT,
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
+        }
 
-        for ua in USER_AGENTS:
-            # Probar sesiones: curl_cffi y standard requests como fallback
-            sessions_to_try = []
-            if session:
-                sessions_to_try.append(("custom_session", session))
-            else:
-                if USE_CURL_CFFI:
-                    try:
-                        sessions_to_try.append(("curl_cffi_safari", requests.Session(impersonate="safari17_0")))
-                    except Exception:
-                        pass
-                    try:
-                        sessions_to_try.append(("curl_cffi_chrome", requests.Session(impersonate="chrome124")))
-                    except Exception:
-                        pass
-                try:
-                    import requests as std_req
-                    sessions_to_try.append(("std_requests", std_req.Session()))
-                except Exception:
-                    pass
+        try:
+            r_player = s.get(player_url, headers=req_headers, timeout=10)
+            if r_player.status_code != 200:
+                continue
 
-            for s_name, s in sessions_to_try:
-                # Probar sin Referer (como en un iframe limpio) y con Referer
-                for send_referer in [False, True]:
-                    req_headers = {
-                        'User-Agent': ua,
-                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                        'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
-                    }
-                    if send_referer:
-                        req_headers['Referer'] = f"{current_base}/"
+            html = r_player.text
 
-                    try:
-                        r_player = s.get(player_url, headers=req_headers, timeout=10)
-                        if r_player.status_code != 200:
-                            if debug_channel and not send_referer and s_name.startswith("curl"):
-                                print(f"  [DEBUG {channel_id} | {s_name}] GET {player_url} -> HTTP {r_player.status_code} ({len(r_player.text)}b)")
-                            continue
+            # Obtener título real si está disponible
+            m_title = re.search(r'<title>Reproductor\s*-\s*([^<]+)</title>', html)
+            if m_title and m_title.group(1).strip():
+                channel_name = m_title.group(1).strip()
 
-                        html = r_player.text
+            # Extraer firma ZT_RENEW
+            m_renew = re.search(r'var\s+ZT_RENEW\s*=\s*(\{.*?\});', html)
+            if not m_renew:
+                continue
 
-                        # Obtener título real si está disponible
-                        m_title = re.search(r'<title>Reproductor\s*-\s*([^<]+)</title>', html)
-                        if m_title and m_title.group(1).strip():
-                            channel_name = m_title.group(1).strip()
+            renew_info = json.loads(m_renew.group(1))
+            renew_rel_path = renew_info.get('url')
+            if not renew_rel_path:
+                continue
 
-                        # Extraer ZT_RENEW
-                        m_renew = re.search(r'var\s+ZT_RENEW\s*=\s*(\{.*?\});', html)
-                        if not m_renew:
-                            if debug_channel and not send_referer:
-                                print(f"  [DEBUG {channel_id} | {s_name}] ZT_RENEW no encontrado. Título: {m_title.group(0) if m_title else 'None'}, HTML: {html[:150]!r}")
-                            continue
+            renew_full_url = f"{current_base}{renew_rel_path}"
 
-                        renew_info = json.loads(m_renew.group(1))
-                        renew_rel_path = renew_info.get('url')
-                        if not renew_rel_path:
-                            continue
+            post_headers = {
+                'User-Agent': USER_AGENT,
+                'Referer': player_url,
+                'Origin': current_base,
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
 
-                        renew_full_url = f"{current_base}{renew_rel_path}"
+            # Solicitar token de 3 horas (native: true)
+            r_renew = s.post(renew_full_url, json={'native': True}, headers=post_headers, timeout=10)
+            if r_renew.status_code != 200:
+                continue
 
-                        post_headers = {
-                            'User-Agent': ua,
-                            'Accept': 'application/json, text/plain, */*',
-                            'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
-                            'Content-Type': 'application/json',
-                            'Referer': player_url,
-                            'Origin': current_base,
-                        }
+            renew_data = r_renew.json()
+            sources = renew_data.get('sources', [])
+            valid_sources = [src for src in sources if src.get('url') and not src.get('locked')]
 
-                        # Probar renovación con native: true primero (3 horas) y fallback a sin native
-                        r_renew = None
-                        for payload in [{'native': True}, {'native': True, 'view': True}, {}]:
-                            try:
-                                r_renew = s.post(renew_full_url, json=payload, headers=post_headers, timeout=10)
-                                if r_renew.status_code == 200:
-                                    break
-                            except Exception:
-                                pass
+            if not valid_sources:
+                continue
 
-                        if not r_renew or r_renew.status_code != 200:
-                            if debug_channel and not send_referer:
-                                print(f"  [DEBUG {channel_id} | {s_name}] POST renew -> HTTP {r_renew.status_code if r_renew else 'None'}, Resp: {r_renew.text[:100] if r_renew else ''!r}")
-                            continue
+            # Tomar la primera CDN disponible
+            chosen_source = valid_sources[0]
+            stream_url = chosen_source.get('url')
+            logo_url = buscar_logo(channel_name, logos_dict)
 
-                        renew_data = r_renew.json()
-                        sources = renew_data.get('sources', [])
-                        valid_sources = [src for src in sources if src.get('url') and not src.get('locked')]
-
-                        if not valid_sources:
-                            continue
-
-                        # Tomar la primera CDN disponible
-                        chosen_source = valid_sources[0]
-                        stream_url = chosen_source.get('url')
-                        logo_url = buscar_logo(channel_name, logos_dict)
-
-                        return {
-                            'id': channel_id,
-                            'name': channel_name,
-                            'group': group_title,
-                            'logo': logo_url,
-                            'url': stream_url,
-                            'cdn_label': chosen_source.get('label', 'CDN')
-                        }
-                    except Exception as e:
-                        if debug_channel and not send_referer and s_name.startswith("curl"):
-                            print(f"  [DEBUG {channel_id} | {s_name}] Excepción: {type(e).__name__}: {e}")
-                        continue
+            return {
+                'id': channel_id,
+                'name': channel_name,
+                'group': group_title,
+                'logo': logo_url,
+                'url': stream_url,
+                'cdn_label': chosen_source.get('label', 'CDN')
+            }
+        except Exception:
+            continue
     return None
 
 def recolectar_canales_disponibles(base_url):
@@ -350,15 +297,11 @@ def recolectar_canales_disponibles(base_url):
     return canales_dict
 
 def generar_lista_m3u(canales_resueltos, archivo_salida=OUTPUT_M3U):
-    """Genera el archivo M3U con los canales y sus URLs resueltas."""
+    """Genera el archivo M3U con los canales y sus URLs directas HLS resueltas (tokens 3h)."""
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    proxy_base = os.environ.get("PROXY_BASE_URL", "").rstrip("/")
     contenido = "#EXTM3U\n"
-    contenido += f"# ZicoTV Channels List - {timestamp}\n"
-    contenido += f"# Canales activos: {len(canales_resueltos)}\n"
-    if proxy_base:
-        contenido += f"# Modo Proxy activado: {proxy_base}\n"
-    contenido += "\n"
+    contenido += f"# ZicoTV Channels List (3h direct tokens) - {timestamp}\n"
+    contenido += f"# Canales activos: {len(canales_resueltos)}\n\n"
 
     # Ordenar por grupo y luego por nombre
     canales_ordenados = sorted(canales_resueltos, key=lambda c: (c['group'], c['name']))
@@ -372,8 +315,7 @@ def generar_lista_m3u(canales_resueltos, archivo_salida=OUTPUT_M3U):
         tvg_id = f"zicotv-{c['id']}"
         logo_attr = f' tvg-logo="{c["logo"]}"' if c.get('logo') else ''
         contenido += f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{c["name"]}"{logo_attr} group-title="{c["group"]}",{c["name"]}\n'
-        stream_url = f"{proxy_base}/zico/live/{c['id']}.m3u8" if proxy_base else c['url']
-        contenido += f"{stream_url}\n"
+        contenido += f"{c['url']}\n"
 
     with open(archivo_salida, 'w', encoding='utf-8') as f:
         f.write(contenido)
@@ -385,7 +327,7 @@ def generar_lista_m3u(canales_resueltos, archivo_salida=OUTPUT_M3U):
 
 def main():
     print("=" * 60)
-    print("Script de Actualización de Canales ZicoTV")
+    print("Script de Actualización de Canales ZicoTV (Tokens 3h)")
     print("=" * 60)
 
     logos_dict = cargar_diccionario_logos()
@@ -396,29 +338,11 @@ def main():
 
     canales_meta = recolectar_canales_disponibles(base_url)
 
-    proxy_base = os.environ.get("PROXY_BASE_URL", "").rstrip("/")
-    if proxy_base:
-        print(f"\n[Modo Microproxy] Generando lista M3U enlazada a {proxy_base}...")
-        canales_proxy = []
-        for cid, meta in canales_meta.items():
-            logo_url = buscar_logo(meta['name'], logos_dict)
-            canales_proxy.append({
-                'id': cid,
-                'name': meta['name'],
-                'group': meta['group'],
-                'logo': logo_url,
-                'url': f"{proxy_base}/zico/live/{cid}.m3u8",
-                'cdn_label': 'Proxy'
-            })
-        generar_lista_m3u(canales_proxy)
-        print(f"\n✓ Lista generada con éxito ({len(canales_proxy)} canales) apuntando al microproxy.")
-        return True
-
-    print(f"\nResolviendo enlaces HLS con tokens activos en paralelo ({'curl_cffi HTTP/3' if USE_CURL_CFFI else 'requests'})...")
+    print("\nResolviendo enlaces HLS con tokens de 3 horas en paralelo...")
     canales_resueltos = []
     fallos = []
 
-    with ThreadPoolExecutor(max_workers=6) as executor:
+    with ThreadPoolExecutor(max_workers=8) as executor:
         futuros = {
             executor.submit(
                 resolver_stream_canal,
@@ -443,24 +367,14 @@ def main():
                 fallos.append(f"[{cid}] {cname}: {e}")
 
     if not canales_resueltos:
-        print("\n⚠ AVISO:")
-        print("El servidor upstream de ZicoTV bloquea la generación de tokens HLS (HTTP 403 Forbidden)")
-        print("desde rangos de IP de centros de datos en la nube (como Microsoft Azure / GitHub Actions).")
-        print("\nOpciones recomendadas:")
-        print("  1. Usar los microproxies locales incluidos en este repositorio (tvnow247_proxy / m3u_stream_proxy)")
-        print("     en tu red local (IP residencial en España) donde no hay bloqueo de Nginx:")
-        print("     - Lista M3U directa del proxy: http://<TU_IP_LOCAL>:8888/zico/playlist.m3u (o :8899)")
-        print("     - Monitor de reproducción en tiempo real: http://<TU_IP_LOCAL>:8888/zico/status (o :8899)")
-        print("  2. Para generar la lista M3U desde GitHub Actions apuntando a tu proxy, define la variable")
-        print("     o secreto de GitHub PROXY_BASE_URL (ej. http://midominio.duckdns.org:8888).")
-
+        print("\n✗ No se pudieron resolver canales válidos.")
         if os.path.exists(OUTPUT_M3U):
-            print(f"\n✓ Se conserva el archivo existente '{OUTPUT_M3U}' sin alteraciones.")
+            print(f"  (Se mantiene la lista anterior '{OUTPUT_M3U}' sin cambios).")
             return True
         return False
 
     generar_lista_m3u(canales_resueltos)
-    print("\n✓ Proceso completado exitosamente.")
+    print("\n✓ Proceso completado exitosamente con enlaces HLS directos (3h).")
     return True
 
 if __name__ == '__main__':
