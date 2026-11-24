@@ -5,7 +5,6 @@ Extrae canales 24/7 y emisiones de eventos deportivos en directo (DAZN MotoGP, D
 Genera: lista_zicotv.m3u
 """
 
-import requests
 import json
 import re
 import os
@@ -13,6 +12,13 @@ import sys
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+try:
+    from curl_cffi import requests
+    USE_CURL_CFFI = True
+except ImportError:
+    import requests
+    USE_CURL_CFFI = False
 
 BASE_URLS = [
     'https://bp.zicotv.cc',
@@ -154,11 +160,19 @@ def normalizar_grupo(sport):
         return 'General'
     return traducciones.get(sport.lower().strip(), sport.capitalize())
 
+def crear_sesion():
+    """Crea una sesión HTTP optimizada con soporte para browser TLS impersonation."""
+    if USE_CURL_CFFI:
+        return requests.Session(impersonate="safari17_0")
+    s = requests.Session()
+    return s
+
 def obtener_base_url_activa():
     """Determina qué dominio base responde correctamente."""
+    s = crear_sesion()
     for base in BASE_URLS:
         try:
-            r = requests.get(f"{base}/api/v1", headers=HEADERS, timeout=5)
+            r = s.get(f"{base}/api/v1", headers=HEADERS, timeout=6)
             if r.status_code == 200:
                 return base
         except Exception:
@@ -168,18 +182,24 @@ def obtener_base_url_activa():
 def resolver_stream_canal(base_url, channel_id, channel_name, group_title, logos_dict, session=None):
     """
     Obtiene el reproductor del canal, realiza el POST de renovación y extrae la URL HLS activa.
-    Soporta rotación de User-Agents y reintentos ante bloqueos de Cloudflare/Nginx.
+    Soporta curl_cffi (HTTP/3 + TLS Safari 17), rotación de User-Agents y cabeceras de navegador.
     """
-    s = session or requests.Session()
+    s = session or crear_sesion()
     player_url = f"{base_url}/api/player/{channel_id}"
 
     for ua in USER_AGENTS:
         req_headers = {
-            **HEADERS,
             'User-Agent': ua,
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+            'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
+            'Referer': f"{base_url}/",
+            'Sec-Fetch-Dest': 'document',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'same-origin',
+            'Upgrade-Insecure-Requests': '1',
         }
         try:
-            r_player = s.get(player_url, headers=req_headers, timeout=6)
+            r_player = s.get(player_url, headers=req_headers, timeout=10)
             if r_player.status_code != 200:
                 continue
 
@@ -202,18 +222,29 @@ def resolver_stream_canal(base_url, channel_id, channel_name, group_title, logos
 
             renew_full_url = f"{base_url}{renew_rel_path}"
 
-            # Solicitar token de larga duración (modo nativo HLS: 3 horas de validez en lugar de 20 minutos)
             post_headers = {
-                **req_headers,
-                'Referer': player_url,
+                'User-Agent': ua,
+                'Accept': 'application/json, text/plain, */*',
+                'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
                 'Content-Type': 'application/json',
-                'Accept': 'application/json'
+                'Referer': player_url,
+                'Origin': base_url,
+                'Sec-Fetch-Dest': 'empty',
+                'Sec-Fetch-Mode': 'cors',
+                'Sec-Fetch-Site': 'same-origin',
             }
-            r_renew = s.post(renew_full_url, json={'native': True}, headers=post_headers, timeout=6)
-            if r_renew.status_code == 403:
-                # Probar con siguiente User-Agent si 403
-                continue
-            if r_renew.status_code != 200:
+
+            # Probar renovación con native: true primero (3 horas) y fallback a sin native
+            r_renew = None
+            for payload in [{'native': True}, {'native': True, 'view': True}, {}]:
+                try:
+                    r_renew = s.post(renew_full_url, json=payload, headers=post_headers, timeout=10)
+                    if r_renew.status_code == 200:
+                        break
+                except Exception:
+                    pass
+
+            if not r_renew or r_renew.status_code != 200:
                 continue
 
             renew_data = r_renew.json()
@@ -258,7 +289,8 @@ def recolectar_canales_disponibles(base_url):
     events_url = f"{base_url}/api/v1/events"
     try:
         print(f"Consultando eventos en directo desde {events_url}...")
-        r_events = requests.get(events_url, headers=HEADERS, timeout=8)
+        s = crear_sesion()
+        r_events = s.get(events_url, headers=HEADERS, timeout=10)
         if r_events.status_code == 200:
             events_data = r_events.json().get('data', [])
             print(f"Eventos obtenidos: {len(events_data)}")
@@ -331,10 +363,11 @@ def main():
 
     canales_meta = recolectar_canales_disponibles(base_url)
 
-    print("\nResolviendo enlaces HLS con tokens activos en paralelo...")
+    print(f"\nResolviendo enlaces HLS con tokens activos en paralelo ({'curl_cffi HTTP/3' if USE_CURL_CFFI else 'requests'})...")
     canales_resueltos = []
+    fallos = []
 
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=6) as executor:
         futuros = {
             executor.submit(
                 resolver_stream_canal,
@@ -343,21 +376,27 @@ def main():
                 meta['name'],
                 meta['group'],
                 logos_dict
-            ): cid for cid, meta in canales_meta.items()
+            ): (cid, meta['name']) for cid, meta in canales_meta.items()
         }
 
         for f in as_completed(futuros):
-            cid = futuros[f]
+            cid, cname = futuros[f]
             try:
                 res = f.result()
                 if res and res.get('url'):
                     print(f"  ✓ [{res['id']:5d}] {res['name']:<35} ({res['cdn_label']})")
                     canales_resueltos.append(res)
-            except Exception:
-                pass
+                else:
+                    fallos.append(f"[{cid}] {cname}")
+            except Exception as e:
+                fallos.append(f"[{cid}] {cname}: {e}")
 
     if not canales_resueltos:
         print("\n✗ No se pudieron resolver canales válidos.")
+        if fallos:
+            print(f"Muestra de canales no resueltos ({min(5, len(fallos))} de {len(fallos)}):")
+            for fal in fallos[:5]:
+                print(f"  - {fal}")
         return False
 
     generar_lista_m3u(canales_resueltos)
