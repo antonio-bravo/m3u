@@ -70,9 +70,10 @@ Una vez que el contenedor esté corriendo en el puerto `8080`:
 | **Canal con Offset Personalizado** | `http://localhost:8888/live/{id}.m3u8?offset=20` | Ajusta los segundos de colchón de búfer (ej. 20s) |
 | **Proxy de URL Directa** | `http://localhost:8888/proxy?url=...` | Pasa la URL que tenías directamente |
 | **API de Canales TVNow (JSON)** | `http://localhost:8888/api/channels` | Catálogo de canales con logos y grupos |
+| **Panel En Vivo ZicoTV (HTML)** | `http://localhost:8888/zico/status` | Panel visual con canales reproduciéndose en vivo y clientes conectados |
 | **API de Canales ZicoTV (JSON)** | `http://localhost:8888/zico/api/channels` | Catálogo de eventos deportivos y canales 24/7 de ZicoTV |
 | **Estado y Rendimiento** | `http://localhost:8888/api/status` | Métricas de aciertos de caché, prefetches y salud |
-| **Estado ZicoTV** | `http://localhost:8888/zico/api/status` | Métricas de tokens, streams activos y TTL restante |
+| **Estado ZicoTV (JSON)** | `http://localhost:8888/zico/api/status` | Métricas de tokens, streams activos, clientes y TTL restante |
 
 ---
 

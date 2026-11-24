@@ -410,6 +410,19 @@ class ZicoTVManager:
         offset = buffer_offset if buffer_offset is not None else 16.0
         media_url = stream_info["media_url"]
 
+        # Seguimiento en tiempo real de clientes y canales en reproducción activa
+        client_ip = request.client.host if request.client else "desconocido"
+        now = time.time()
+        last_req = stream_info.get("last_requested_at", 0)
+        if now - last_req > 60:
+            logger.info(
+                f"▶ [ZicoTV] Canal activo: [{channel_id}] {stream_info['name']} | "
+                f"Dispositivo: {client_ip} | CDN: {stream_info.get('cdn_label', 'CDN')}"
+            )
+        stream_info["last_requested_at"] = now
+        stream_info["last_client_ip"] = client_ip
+        stream_info["request_count"] = stream_info.get("request_count", 0) + 1
+
         client = await self.get_client()
         headers = {
             "User-Agent": DEFAULT_USER_AGENT,
@@ -523,22 +536,273 @@ class ZicoTVManager:
         streams_status = []
         for cid, s in self.cached_streams.items():
             remaining = max(0, int(s["expires_at"] - now))
+            last_req = s.get("last_requested_at", s.get("updated_at", now))
+            diff_req = max(0, int(now - last_req))
+            is_active = diff_req < 60  # Si hubo petición en los últimos 60 segundos
             streams_status.append({
                 "channel_id": cid,
                 "name": s["name"],
+                "is_playing_now": is_active,
+                "status": "REPRODUCIENDO_EN_VIVO" if is_active else "INACTIVO",
+                "seconds_since_last_request": diff_req,
+                "client_ip": s.get("last_client_ip", "desconocido"),
+                "requests_served": s.get("request_count", 0),
                 "remaining_seconds": remaining,
                 "remaining_minutes": round(remaining / 60, 1),
                 "cdn": s.get("cdn_label", ""),
                 "slug": s.get("slug", ""),
             })
 
+        # Ordenar primero los que se están viendo ahora, luego por tiempo desde última petición
+        streams_status.sort(key=lambda x: (not x["is_playing_now"], x["seconds_since_last_request"]))
+        active_now_count = sum(1 for s in streams_status if s["is_playing_now"])
+
         return {
             "active_base_url": self.active_base_url,
             "catalog_count": len(self.cached_catalog),
             "catalog_last_updated": self.catalog_last_updated,
-            "active_streams_count": len(self.cached_streams),
+            "playing_now_count": active_now_count,
+            "cached_tokens_count": len(self.cached_streams),
             "active_streams": streams_status,
         }
+
+    def render_status_dashboard(self, request_base_url: str) -> str:
+        """Genera un panel HTML interactivo con auto-refresco que muestra en vivo los canales en reproducción."""
+        status = self.get_status()
+        active_count = status["playing_now_count"]
+        cached_count = status["cached_tokens_count"]
+        catalog_count = status["catalog_count"]
+        active_streams = status["active_streams"]
+
+        rows_html = ""
+        if not active_streams:
+            rows_html = """
+            <tr>
+                <td colspan="6" style="text-align: center; padding: 36px; color: #94a3b8;">
+                    No hay ningún canal en reproducción en este momento.<br>
+                    <small style="color: #64748b;">Abre cualquier canal en VLC, TiviMate o Smart TV para verlo reflejado aquí en tiempo real.</small>
+                </td>
+            </tr>
+            """
+        else:
+            for s in active_streams:
+                is_active = s["is_playing_now"]
+                status_badge = (
+                    '<span class="badge badge-active">🟢 EN REPRODUCCIÓN</span>'
+                    if is_active
+                    else '<span class="badge badge-idle">⚪ INACTIVO</span>'
+                )
+                last_seen = f"{s['seconds_since_last_request']}s" if s['seconds_since_last_request'] < 60 else f"{s['seconds_since_last_request'] // 60}m"
+                cid = s['channel_id']
+                cname = s['name']
+                cdn = s['cdn']
+                client_ip = s['client_ip']
+                rem_min = s['remaining_minutes']
+
+                rows_html += f"""
+                <tr class="{'row-active' if is_active else 'row-idle'}">
+                    <td><strong>[{cid}]</strong> {cname}</td>
+                    <td>{status_badge}</td>
+                    <td><code class="ip-code">{client_ip}</code></td>
+                    <td>hace {last_seen}</td>
+                    <td><span class="token-ttl">{rem_min} min</span> (Auto-renovable)</td>
+                    <td><span class="cdn-tag">{cdn}</span></td>
+                </tr>
+                """
+
+        return f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="4">
+    <title>ZicoTV - Canales en Reproducción Activa</title>
+    <style>
+        :root {{
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --success: #22c55e;
+            --warning: #f59e0b;
+        }}
+        body {{
+            background: var(--bg-dark);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 24px;
+        }}
+        .container {{
+            max-width: 1000px;
+            margin: 0 auto;
+        }}
+        .header {{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+        }}
+        h1 {{
+            margin: 0;
+            font-size: 1.5rem;
+            color: var(--accent);
+        }}
+        .stats-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }}
+        .stat-card {{
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }}
+        .stat-val {{
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+        }}
+        .stat-val.active {{
+            color: var(--success);
+        }}
+        .stat-label {{
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }}
+        .card {{
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }}
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }}
+        th, td {{
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }}
+        th {{
+            background: rgba(0,0,0,0.25);
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }}
+        .row-active {{
+            background: rgba(34, 197, 94, 0.06);
+        }}
+        .badge {{
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }}
+        .badge-active {{
+            background: rgba(34, 197, 94, 0.2);
+            color: var(--success);
+            border: 1px solid rgba(34, 197, 94, 0.4);
+        }}
+        .badge-idle {{
+            background: rgba(148, 163, 184, 0.1);
+            color: var(--text-muted);
+        }}
+        .ip-code {{
+            background: rgba(0,0,0,0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: var(--accent);
+        }}
+        .token-ttl {{
+            color: var(--warning);
+            font-weight: 600;
+        }}
+        .cdn-tag {{
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }}
+        .footer {{
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }}
+        a {{
+            color: var(--accent);
+            text-decoration: none;
+        }}
+        a:hover {{
+            text-decoration: underline;
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📡 Canales ZicoTV en Reproducción Activa</h1>
+            <div>
+                <a href="{request_base_url}/zico/playlist.m3u" target="_blank" style="padding: 6px 12px; background: rgba(56,189,248,0.15); border: 1px solid var(--accent); border-radius: 6px;">📥 Lista M3U</a>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-val active">{active_count}</div>
+                <div class="stat-label">🟢 Canales viéndose ahora</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val">{cached_count}</div>
+                <div class="stat-label">🔑 Tokens activos en RAM (3h)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val">{catalog_count}</div>
+                <div class="stat-label">📺 Canales en catálogo</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Canal</th>
+                        <th>Estado</th>
+                        <th>Dispositivo / IP</th>
+                        <th>Última Petición</th>
+                        <th>Token Restante</th>
+                        <th>CDN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {rows_html}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <div>Auto-refresco cada 4 segundos • <a href="{request_base_url}/zico/api/status" target="_blank">Ver JSON de estado</a></div>
+            <div>Microproxy ZicoTV PRO</div>
+        </div>
+    </div>
+</body>
+</html>
+"""
 
     async def close(self):
         """Cierra el cliente HTTP al apagar el servidor."""

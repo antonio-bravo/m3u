@@ -182,93 +182,126 @@ def obtener_base_url_activa():
 def resolver_stream_canal(base_url, channel_id, channel_name, group_title, logos_dict, session=None):
     """
     Obtiene el reproductor del canal, realiza el POST de renovación y extrae la URL HLS activa.
-    Soporta curl_cffi (HTTP/3 + TLS Safari 17), rotación de User-Agents y cabeceras de navegador.
+    Soporta curl_cffi (Safari/Chrome), requests estándar, múltiples dominios base y diagnósticos detallados.
     """
-    s = session or crear_sesion()
-    player_url = f"{base_url}/api/player/{channel_id}"
+    candidate_bases = [base_url]
+    for b in BASE_URLS:
+        if b not in candidate_bases:
+            candidate_bases.append(b)
 
-    for ua in USER_AGENTS:
-        req_headers = {
-            'User-Agent': ua,
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-            'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
-            'Referer': f"{base_url}/",
-            'Sec-Fetch-Dest': 'document',
-            'Sec-Fetch-Mode': 'navigate',
-            'Sec-Fetch-Site': 'same-origin',
-            'Upgrade-Insecure-Requests': '1',
-        }
-        try:
-            r_player = s.get(player_url, headers=req_headers, timeout=10)
-            if r_player.status_code != 200:
-                continue
+    debug_channel = channel_id in (1, 2, 3, 4, 5)
 
-            html = r_player.text
+    for current_base in candidate_bases:
+        player_url = f"{current_base}/api/player/{channel_id}"
 
-            # Obtener título real si está disponible
-            m_title = re.search(r'<title>Reproductor\s*-\s*([^<]+)</title>', html)
-            if m_title and m_title.group(1).strip():
-                channel_name = m_title.group(1).strip()
-
-            # Extraer ZT_RENEW
-            m_renew = re.search(r'var\s+ZT_RENEW\s*=\s*(\{.*?\});', html)
-            if not m_renew:
-                continue
-
-            renew_info = json.loads(m_renew.group(1))
-            renew_rel_path = renew_info.get('url')
-            if not renew_rel_path:
-                continue
-
-            renew_full_url = f"{base_url}{renew_rel_path}"
-
-            post_headers = {
-                'User-Agent': ua,
-                'Accept': 'application/json, text/plain, */*',
-                'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
-                'Content-Type': 'application/json',
-                'Referer': player_url,
-                'Origin': base_url,
-                'Sec-Fetch-Dest': 'empty',
-                'Sec-Fetch-Mode': 'cors',
-                'Sec-Fetch-Site': 'same-origin',
-            }
-
-            # Probar renovación con native: true primero (3 horas) y fallback a sin native
-            r_renew = None
-            for payload in [{'native': True}, {'native': True, 'view': True}, {}]:
+        for ua in USER_AGENTS:
+            # Probar sesiones: curl_cffi y standard requests como fallback
+            sessions_to_try = []
+            if session:
+                sessions_to_try.append(("custom_session", session))
+            else:
+                if USE_CURL_CFFI:
+                    try:
+                        sessions_to_try.append(("curl_cffi_safari", requests.Session(impersonate="safari17_0")))
+                    except Exception:
+                        pass
+                    try:
+                        sessions_to_try.append(("curl_cffi_chrome", requests.Session(impersonate="chrome124")))
+                    except Exception:
+                        pass
                 try:
-                    r_renew = s.post(renew_full_url, json=payload, headers=post_headers, timeout=10)
-                    if r_renew.status_code == 200:
-                        break
+                    import requests as std_req
+                    sessions_to_try.append(("std_requests", std_req.Session()))
                 except Exception:
                     pass
 
-            if not r_renew or r_renew.status_code != 200:
-                continue
+            for s_name, s in sessions_to_try:
+                # Probar sin Referer (como en un iframe limpio) y con Referer
+                for send_referer in [False, True]:
+                    req_headers = {
+                        'User-Agent': ua,
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                        'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
+                    }
+                    if send_referer:
+                        req_headers['Referer'] = f"{current_base}/"
 
-            renew_data = r_renew.json()
-            sources = renew_data.get('sources', [])
-            valid_sources = [src for src in sources if src.get('url') and not src.get('locked')]
+                    try:
+                        r_player = s.get(player_url, headers=req_headers, timeout=10)
+                        if r_player.status_code != 200:
+                            if debug_channel and not send_referer and s_name.startswith("curl"):
+                                print(f"  [DEBUG {channel_id} | {s_name}] GET {player_url} -> HTTP {r_player.status_code} ({len(r_player.text)}b)")
+                            continue
 
-            if not valid_sources:
-                continue
+                        html = r_player.text
 
-            # Tomar la primera CDN disponible
-            chosen_source = valid_sources[0]
-            stream_url = chosen_source.get('url')
-            logo_url = buscar_logo(channel_name, logos_dict)
+                        # Obtener título real si está disponible
+                        m_title = re.search(r'<title>Reproductor\s*-\s*([^<]+)</title>', html)
+                        if m_title and m_title.group(1).strip():
+                            channel_name = m_title.group(1).strip()
 
-            return {
-                'id': channel_id,
-                'name': channel_name,
-                'group': group_title,
-                'logo': logo_url,
-                'url': stream_url,
-                'cdn_label': chosen_source.get('label', 'CDN')
-            }
-        except Exception:
-            continue
+                        # Extraer ZT_RENEW
+                        m_renew = re.search(r'var\s+ZT_RENEW\s*=\s*(\{.*?\});', html)
+                        if not m_renew:
+                            if debug_channel and not send_referer:
+                                print(f"  [DEBUG {channel_id} | {s_name}] ZT_RENEW no encontrado. Título: {m_title.group(0) if m_title else 'None'}, HTML: {html[:150]!r}")
+                            continue
+
+                        renew_info = json.loads(m_renew.group(1))
+                        renew_rel_path = renew_info.get('url')
+                        if not renew_rel_path:
+                            continue
+
+                        renew_full_url = f"{current_base}{renew_rel_path}"
+
+                        post_headers = {
+                            'User-Agent': ua,
+                            'Accept': 'application/json, text/plain, */*',
+                            'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
+                            'Content-Type': 'application/json',
+                            'Referer': player_url,
+                            'Origin': current_base,
+                        }
+
+                        # Probar renovación con native: true primero (3 horas) y fallback a sin native
+                        r_renew = None
+                        for payload in [{'native': True}, {'native': True, 'view': True}, {}]:
+                            try:
+                                r_renew = s.post(renew_full_url, json=payload, headers=post_headers, timeout=10)
+                                if r_renew.status_code == 200:
+                                    break
+                            except Exception:
+                                pass
+
+                        if not r_renew or r_renew.status_code != 200:
+                            if debug_channel and not send_referer:
+                                print(f"  [DEBUG {channel_id} | {s_name}] POST renew -> HTTP {r_renew.status_code if r_renew else 'None'}, Resp: {r_renew.text[:100] if r_renew else ''!r}")
+                            continue
+
+                        renew_data = r_renew.json()
+                        sources = renew_data.get('sources', [])
+                        valid_sources = [src for src in sources if src.get('url') and not src.get('locked')]
+
+                        if not valid_sources:
+                            continue
+
+                        # Tomar la primera CDN disponible
+                        chosen_source = valid_sources[0]
+                        stream_url = chosen_source.get('url')
+                        logo_url = buscar_logo(channel_name, logos_dict)
+
+                        return {
+                            'id': channel_id,
+                            'name': channel_name,
+                            'group': group_title,
+                            'logo': logo_url,
+                            'url': stream_url,
+                            'cdn_label': chosen_source.get('label', 'CDN')
+                        }
+                    except Exception as e:
+                        if debug_channel and not send_referer and s_name.startswith("curl"):
+                            print(f"  [DEBUG {channel_id} | {s_name}] Excepción: {type(e).__name__}: {e}")
+                        continue
     return None
 
 def recolectar_canales_disponibles(base_url):

@@ -126,6 +126,9 @@ El contenedor emula un sintonizador **SiliconDust HDHomeRun**. Plex lo detecta c
 | Endpoint | Método | Descripción |
 | :--- | :--- | :--- |
 | `/health` | `GET` | Estado de salud, uptime y canales cargados. |
+| `/zico/status` | `GET` | **Panel visual (HTML)** con canales ZicoTV en reproducción activa y dispositivos. |
+| `/zico/api/status` | `GET` | Estado de streams ZicoTV en JSON, tokens y clientes conectados. |
+| `/zico/playlist.m3u` | `GET` | Lista M3U dedicada con todos los canales ZicoTV auto-renovables. |
 | `/api/channels` | `GET` | Catálogo de canales paginado (`?search=`, `?favorites=1`, `?group=`). |
 | `/api/favorites` | `GET` | Lista de IDs de canales marcados como favoritos. |
 | `/api/favorites/{id}` | `POST` | Alternar estado favorito de un canal. |

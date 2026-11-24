@@ -926,6 +926,13 @@ async def get_zico_status_api():
     return zico_manager.get_status()
 
 
+@app.get("/zico/status", response_class=HTMLResponse)
+async def get_zico_status_dashboard(request: Request):
+    """Panel visual interactivo para monitorizar en tiempo real los canales de ZicoTV que se están viendo."""
+    base_url = str(request.base_url).rstrip("/")
+    return HTMLResponse(content=zico_manager.render_status_dashboard(base_url))
+
+
 @app.get("/zico/segment")
 @app.head("/zico/segment")
 async def get_zico_segment_alias(
