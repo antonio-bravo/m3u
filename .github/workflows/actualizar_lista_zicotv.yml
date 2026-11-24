@@ -35,8 +35,8 @@ jobs:
       - name: Setup Cloudflare WARP
         uses: fscarmen/warp-on-actions@v1.4
         with:
-        stack: ipv4        # Optional. Support [ ipv4, ipv6, dual ]. Default is dual.
-        mode: wireguard    # Optional. Support [ wireguard, client ]. Default is wireguard.
+          stack: ipv4        # Optional. Support [ ipv4, ipv6, dual ]. Default is dual.
+          mode: wireguard    # Optional. Support [ wireguard, client ]. Default is wireguard.
 
       - name: Run update script
         run: python script_zicotv.py
