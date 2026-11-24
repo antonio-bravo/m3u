@@ -33,7 +33,7 @@ jobs:
           pip install requests curl_cffi
 
       - name: Setup Cloudflare WARP
-        uses: fscarmen/warp-on-actions@v1.3
+        uses: fscarmen/warp-on-actions@v1.4
 
       - name: Run update script
         run: python script_zicotv.py
