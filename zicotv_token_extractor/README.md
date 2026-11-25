@@ -104,30 +104,30 @@ podman run --rm ghcr.io/antonio-bravo/m3u/zicotv-extractor:latest python extract
 ============================================================
 Extrayendo Token para Canal 1 (Duración: 3h)...
 ============================================================
-Canal:      [1] DAZN LaLiga
+Canal:      [1] D@ZN L@Lig@
 CDN:        CDN 6 Draco
 Duración:   3h (10800s)
 Fuentes:    7 CDNs disponibles
 
 TOKEN ACTIVO:
-1b331788715f82a64e8edae933aa9600d2e24634-1a93df6a434e320637fd6aab8c5fe794-1795529793-
+1b331788715f*************************************************************-1795529793-
 
 URL HLS COMPLETA:
-https://cdn6.zicotv.cc/dazn-liga-1/index.m3u8?token=1b331788715f82a64e8edae933aa9600d2e24634-1a93df6a434e320637fd6aab8c5fe794-1795529793-
+https://cdn6.zicotv.cc/dazn-liga-1/index.m3u8?token=1b331788715f*************************************************************-1795529793-
 ============================================================
 ```
 
 ---
 
 ## 📺 Canales Frecuentes
-- **1:** DAZN LaLiga
-- **2:** DAZN 1 Spain
-- **3:** DAZN 2 Spain
-- **6:** Movistar Liga de Campeones
-- **9:** Movistar #Vamos
-- **11:** DAZN F1 Spain
-- **12:** LaLiga TV Hypermotion
-- **15:** DAZN LaLiga 2
-- **19:** Movistar Deportes
-- **25:** NBA 1
-- **28:** Movistar Plus+
+- **1:** D@ZN L@Lig@
+- **2:** D@ZN 1 Sp@in
+- **3:** D@ZN 2 Spain
+- **6:** M0vist@r Lig@ de C@mp30n3s
+- **9:** M0vist@r #V@mos
+- **11:** D@ZN F1 Sp@in
+- **12:** L@Lig@ TV Hyperm0ti0n
+- **15:** D@ZN L@Lig@ 2
+- **19:** M0vist@r D3port3s
+- **25:** NB@ 1
+- **28:** M0vist@r P/ys+
