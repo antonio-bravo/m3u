@@ -1559,6 +1559,12 @@
             color: #c084fc;
         }
 
+        .tag-zico {
+            background: rgba(16, 185, 129, 0.2);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.35);
+        }
+
         .channel-card-actions {
             display: flex;
             align-items: center;
@@ -2111,6 +2117,7 @@
 
                 <div class="type-pills">
                     <button class="type-pill active" onclick="setTypeFilter('all', this)">Todos</button>
+                    <button class="type-pill" onclick="setTypeFilter('zicotv', this)">⚽ ZicoTV</button>
                     <button class="type-pill" onclick="setTypeFilter('fav', this)">⭐ Favoritos</button>
                     <button class="type-pill" onclick="setTypeFilter('acestream', this)">⚡ AceStream</button>
                     <button class="type-pill" onclick="setTypeFilter('hls', this)">📺 HLS</button>
@@ -3485,6 +3492,22 @@
             startBufferMonitor();
         }
 
+        function getZicoId(channel) {
+            if (!channel) return null;
+            if (channel.zico_id) return String(channel.zico_id);
+            for (const val of [channel.tvg_id, channel.id]) {
+                if (val) {
+                    const m = String(val).trim().match(/^(?:zicotv[-_]|zico[-_])(\d+)$/i);
+                    if (m) return m[1];
+                }
+            }
+            if (channel.url) {
+                const mUrl = String(channel.url).match(/\/zico\/live\/(\d+)\.m3u8/);
+                if (mUrl) return mUrl[1];
+            }
+            return null;
+        }
+
         function playChannel(channel) {
             hideDrmWarning();
             resetAudioTrackUI();
@@ -3495,6 +3518,7 @@
 
             let streamUrl = "";
             const base = window.location.origin;
+            const zicoId = getZicoId(channel);
 
             if (channel.acestream_id) {
                 // Modo AceStream
@@ -3506,6 +3530,13 @@
                 streamUrl = `${base}/ace/manifest/${channel.acestream_id}.m3u8${queryStr}`;
                 document.getElementById("open-ace-btn").style.display = "inline-flex";
                 startAceStreamStatsMonitor(channel.acestream_id, targetServerId);
+                currentStreamUrl = streamUrl;
+                loadStreamInPlayer(streamUrl);
+            } else if (zicoId) {
+                // Modo ZicoTV -> Microproxy con auto-renovación de token de 3h
+                streamUrl = `${base}/zico/live/${zicoId}.m3u8`;
+                document.getElementById("open-ace-btn").style.display = "none";
+                stopAceStreamStatsMonitor();
                 currentStreamUrl = streamUrl;
                 loadStreamInPlayer(streamUrl);
             } else if (channel.stream_type === "dash" || (channel.url && (channel.url.includes('.mpd') || channel.url.includes('cenc.mpd')))) {
@@ -3684,9 +3715,13 @@
             logoEl.src = ch.tvg_logo || FALLBACK_SVG;
 
             const typePill = document.getElementById("current-type");
+            const zicoId = getZicoId(ch);
             if (ch.acestream_id) {
                 typePill.textContent = "⚡ AceStream";
                 typePill.className = "pill pill-ace";
+            } else if (zicoId) {
+                typePill.textContent = "⚽ ZicoTV (Auto-Token)";
+                typePill.className = "pill pill-hls";
             } else if (ch.stream_type === "dash" || ch.license_key) {
                 typePill.textContent = ch.license_key ? "🔒 DASH ClearKey" : "🔒 DASH";
                 typePill.className = "pill pill-dash";
@@ -3708,6 +3743,8 @@
             let hudTypeTxt = 'HLS Direct';
             if (ch.acestream_id) {
                 hudTypeTxt = `AceStream (${ch.acestream_id.slice(0, 8)}...)`;
+            } else if (zicoId) {
+                hudTypeTxt = `ZicoTV HLS (Token 3h auto-renovable)`;
             } else if (ch.stream_type === "dash" || ch.license_key) {
                 hudTypeTxt = ch.license_key ? 'DASH (ClearKey DRM)' : 'DASH Direct';
             }
@@ -3958,10 +3995,13 @@
             for (const ch of channels) {
                 const isCurrent = currentChannel && currentChannel.id === ch.id;
                 const isAce = !!ch.acestream_id;
+                const isZico = !!getZicoId(ch);
                 const isDash = ch.stream_type === "dash" || !!ch.license_key;
                 let typeTag = "";
                 if (isAce) {
                     typeTag = `<span class="card-type-tag tag-ace">ACE</span>`;
+                } else if (isZico) {
+                    typeTag = `<span class="card-type-tag tag-zico">ZicoTV</span>`;
                 } else if (isDash) {
                     typeTag = `<span class="card-type-tag tag-dash">DASH</span>`;
                 } else {
@@ -4132,7 +4172,8 @@
             }
 
             const base = window.location.origin;
-            const targetUrl = `${base}/live/${chId}.m3u8`;
+            const zicoId = getZicoId(ch);
+            const targetUrl = zicoId ? `${base}/zico/live/${zicoId}.m3u8` : `${base}/live/${chId}.m3u8`;
             const name = ch ? ch.name : "Canal";
             copyToClipboard(null, targetUrl, `📋 Enlace de "${name}" copiado para VLC / Kodi`);
         }
@@ -4243,12 +4284,15 @@
             updatePipAudioUI();
 
             const base = window.location.origin;
+            const zicoId = getZicoId(channel);
             let streamUrl = "";
 
             if (channel.acestream_id) {
                 const targetServerId = channel.acestream_server_id || (activeAceServerId && activeAceServerId !== 'direct' ? activeAceServerId : '');
                 const serverParam = targetServerId ? `?server_id=${encodeURIComponent(targetServerId)}` : '';
                 streamUrl = `${base}/ace/manifest/${channel.acestream_id}.m3u8${serverParam}`;
+            } else if (zicoId) {
+                streamUrl = `${base}/zico/live/${zicoId}.m3u8`;
             } else if (channel.stream_type === "dash" || (channel.url && (channel.url.includes('.mpd') || channel.url.includes('cenc.mpd')))) {
                 streamUrl = channel.url;
             } else {
@@ -5039,8 +5083,8 @@
                             </div>
                             <div style="display:flex; align-items:center; gap:6px;">
                                 <button class="btn" style="padding:4px 8px; font-size:0.75rem;" onclick="syncSource('${s.id}')">🔄 Sync</button>
-                                <button class="btn" style="padding:4px 8px; font-size:0.75rem;" onclick="toggleSource('${s.id}')">${s.enabled ? 'Pausar' : 'Activar'}</button>
-                                <button class="btn btn-danger" style="padding:4px 8px; font-size:0.75rem;" onclick="deleteSource('${s.id}')">🗑️</button>
+                                ${s.readonly ? '' : `<button class="btn" style="padding:4px 8px; font-size:0.75rem;" onclick="toggleSource('${s.id}')">${s.enabled ? 'Pausar' : 'Activar'}</button>
+                                <button class="btn btn-danger" style="padding:4px 8px; font-size:0.75rem;" onclick="deleteSource('${s.id}')">🗑️</button>`}
                             </div>
                         </div>
                     `;

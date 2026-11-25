@@ -236,6 +236,79 @@ async def health_check():
 
 
 # ---------------------------------------------------------------------------
+# Helpers de Integración ZicoTV
+# ---------------------------------------------------------------------------
+ZICO_SOURCE_ID = "zicotv_live"
+ZICO_SOURCE_NAME = "ZicoTV (En Vivo - Auto Token)"
+
+
+def extract_zico_id(ch: Optional[Dict]) -> Optional[int]:
+    """Extrae el ID numérico de ZicoTV si el canal pertenece a ZicoTV (virtual o M3U)."""
+    if not ch:
+        return None
+    if ch.get("zico_id"):
+        try:
+            return int(ch["zico_id"])
+        except (TypeError, ValueError):
+            pass
+
+    for field in (ch.get("tvg_id"), ch.get("id")):
+        if field:
+            m = re.match(r'^(?:zicotv[-_]|zico[-_])(\d+)$', str(field).strip(), re.IGNORECASE)
+            if m:
+                return int(m.group(1))
+
+    url = ch.get("url") or ""
+    m_url = re.search(r'/zico/live/(\d+)\.m3u8', url)
+    if m_url:
+        return int(m_url.group(1))
+    if "zicotv.cc" in url and ch.get("tvg_id"):
+        m_num = re.search(r'(\d+)$', str(ch["tvg_id"]).strip())
+        if m_num:
+            return int(m_num.group(1))
+    return None
+
+
+def enrich_channel_with_zico(ch: Dict) -> Dict:
+    """Añade metadatos ZicoTV a un canal de M3U si corresponde."""
+    item = dict(ch)
+    zid = extract_zico_id(item)
+    if zid is not None:
+        item["is_zicotv"] = True
+        item["zico_id"] = zid
+    return item
+
+
+async def get_zico_virtual_channels() -> List[Dict]:
+    """Convierte el catálogo en vivo de ZicoTV al formato estándar de canales de m3u_stream_proxy."""
+    catalog = await zico_manager.get_channel_catalog()
+    items: List[Dict] = []
+    for ch in catalog:
+        cid = ch["id"]
+        ch_uid = f"zicotv-{cid}"
+        items.append({
+            "id": ch_uid,
+            "zico_id": cid,
+            "is_zicotv": True,
+            "source_id": ZICO_SOURCE_ID,
+            "source_name": ZICO_SOURCE_NAME,
+            "name": ch["name"],
+            "tvg_id": ch_uid,
+            "tvg_name": ch["name"],
+            "tvg_logo": ch.get("logo", ""),
+            "group": ch.get("group", "Deportes"),
+            "url": f"/zico/live/{cid}.m3u8",
+            "acestream_id": None,
+            "stream_type": "hls",
+            "license_type": None,
+            "license_key": None,
+            "is_favorite": ch_uid in manager.favorites,
+            "is_custom": False,
+        })
+    return items
+
+
+# ---------------------------------------------------------------------------
 # API REST: Canales, Grupos y Favoritos
 # ---------------------------------------------------------------------------
 @app.get("/api/channels")
@@ -248,6 +321,136 @@ async def get_channels(
     page: int = Query(1, ge=1),
     limit: int = Query(60, ge=1, le=500)
 ):
+    include_zico_source = (source_id is None or source_id == "" or source_id == ZICO_SOURCE_ID)
+
+    # Si piden explícitamente la fuente ZicoTV o el filtro de tipo ZicoTV, combinamos con el catálogo en vivo
+    if stream_type == "zicotv" or include_zico_source:
+        zico_items = await get_zico_virtual_channels() if include_zico_source else []
+
+        # Obtener canales de PlaylistManager (si no están filtrando exclusivamente por zicotv_live)
+        if source_id == ZICO_SOURCE_ID:
+            manager_items = []
+        else:
+            # Consultar todos los canales coincidentes de PlaylistManager si hace falta mezclar o filtrar por zicotv
+            if stream_type == "zicotv":
+                raw_res = manager.query_channels(
+                    search=search,
+                    source_id=source_id,
+                    group=group,
+                    stream_type=None,
+                    favorite_only=favorite_only,
+                    page=1,
+                    limit=50000
+                )
+                manager_items = [
+                    enrich_channel_with_zico(ch)
+                    for ch in raw_res["channels"]
+                    if extract_zico_id(ch) is not None
+                ]
+            elif zico_items:
+                # Filtrar ZicoTV según los mismos criterios
+                search_terms = search.lower().strip().split() if search else []
+                filtered_zico = []
+                for ch in zico_items:
+                    if stream_type and stream_type not in ("all", "hls", "zicotv"):
+                        continue
+                    if group and group != "all" and ch.get("group") != group:
+                        continue
+                    if favorite_only and not ch.get("is_favorite"):
+                        continue
+                    if search_terms:
+                        haystack = f"{ch.get('name', '')} {ch.get('group', '')} {ch.get('tvg_id', '')} zicotv".lower()
+                        if not all(term in haystack for term in search_terms):
+                            continue
+                    filtered_zico.append(ch)
+
+                # Si estamos en página 1 o ZicoTV aporta resultados, mezclamos en orden: ZicoTV primero
+                total_zico = len(filtered_zico)
+                start_idx = (page - 1) * limit
+                end_idx = start_idx + limit
+
+                mgr_summary = manager.query_channels(
+                    search=search,
+                    source_id=source_id,
+                    group=group,
+                    stream_type=stream_type,
+                    favorite_only=favorite_only,
+                    page=1,
+                    limit=1
+                )
+                total_mgr = mgr_summary["total"]
+                total_combined = total_zico + total_mgr
+
+                page_items: List[Dict] = []
+                if start_idx < total_zico:
+                    page_items.extend(filtered_zico[start_idx:end_idx])
+
+                remaining = limit - len(page_items)
+                if remaining > 0 and total_mgr > 0:
+                    mgr_offset = max(0, start_idx - total_zico)
+                    mgr_page = (mgr_offset // limit) + 1
+                    # Consultar bloque suficiente si mgr_offset no es múltiplo exacto de limit
+                    inner_skip = mgr_offset % limit
+                    mgr_res = manager.query_channels(
+                        search=search,
+                        source_id=source_id,
+                        group=group,
+                        stream_type=stream_type,
+                        favorite_only=favorite_only,
+                        page=mgr_page,
+                        limit=limit
+                    )
+                    batch = [enrich_channel_with_zico(c) for c in mgr_res["channels"][inner_skip:]]
+                    if len(batch) < remaining and mgr_res["total_pages"] > mgr_page:
+                        mgr_res2 = manager.query_channels(
+                            search=search,
+                            source_id=source_id,
+                            group=group,
+                            stream_type=stream_type,
+                            favorite_only=favorite_only,
+                            page=mgr_page + 1,
+                            limit=limit
+                        )
+                        batch.extend(enrich_channel_with_zico(c) for c in mgr_res2["channels"])
+                    page_items.extend(batch[:remaining])
+
+                return JSONResponse({
+                    "total": total_combined,
+                    "page": page,
+                    "limit": limit,
+                    "total_pages": (total_combined + limit - 1) // limit if total_combined > 0 else 1,
+                    "channels": page_items
+                })
+            else:
+                manager_items = None
+
+        if manager_items is not None:
+            search_terms = search.lower().strip().split() if search else []
+            filtered_zico = []
+            for ch in zico_items:
+                if stream_type and stream_type not in ("all", "hls", "zicotv"):
+                    continue
+                if group and group != "all" and ch.get("group") != group:
+                    continue
+                if favorite_only and not ch.get("is_favorite"):
+                    continue
+                if search_terms:
+                    haystack = f"{ch.get('name', '')} {ch.get('group', '')} {ch.get('tvg_id', '')} zicotv".lower()
+                    if not all(term in haystack for term in search_terms):
+                        continue
+                filtered_zico.append(ch)
+
+            combined = filtered_zico + manager_items
+            total_combined = len(combined)
+            start_idx = (page - 1) * limit
+            return JSONResponse({
+                "total": total_combined,
+                "page": page,
+                "limit": limit,
+                "total_pages": (total_combined + limit - 1) // limit if total_combined > 0 else 1,
+                "channels": combined[start_idx:start_idx + limit]
+            })
+
     result = manager.query_channels(
         search=search,
         source_id=source_id,
@@ -257,6 +460,7 @@ async def get_channels(
         page=page,
         limit=limit
     )
+    result["channels"] = [enrich_channel_with_zico(c) for c in result["channels"]]
     return JSONResponse(result)
 
 
@@ -268,35 +472,70 @@ async def get_custom_channels():
 
 @app.get("/api/channels/{channel_id}")
 async def get_channel_by_id(channel_id: str, request: Request):
-    ch = manager.get_channel_by_id(channel_id)
-    if not ch:
-        raise HTTPException(status_code=404, detail="Canal no encontrado")
     base_url = str(request.base_url).rstrip("/")
-    res = dict(ch)
-    res["live_url"] = f"{base_url}/live/{channel_id}.mpd" if ch.get("stream_type") == "dash" else f"{base_url}/live/{channel_id}.m3u8"
-    if ch.get("acestream_id"):
-        res["ts_url"] = f"{base_url}/ace/stream/{ch['acestream_id']}"
-        res["ace_uri"] = f"acestream://{ch['acestream_id']}"
-        res["engine_urls"] = [
-            {
-                "id": s["id"],
-                "name": s.get("name", s["id"]),
-                "url": f"{s['url'].rstrip('/')}/ace/getstream?id={ch['acestream_id']}",
-                "manifest_url": f"{s['url'].rstrip('/')}/ace/manifest.m3u8?id={ch['acestream_id']}"
+    ch = manager.get_channel_by_id(channel_id)
+    if ch:
+        res = enrich_channel_with_zico(ch)
+        if res.get("is_zicotv") and res.get("zico_id"):
+            res["live_url"] = f"{base_url}/zico/live/{res['zico_id']}.m3u8"
+        else:
+            res["live_url"] = f"{base_url}/live/{channel_id}.mpd" if ch.get("stream_type") == "dash" else f"{base_url}/live/{channel_id}.m3u8"
+        if ch.get("acestream_id"):
+            res["ts_url"] = f"{base_url}/ace/stream/{ch['acestream_id']}"
+            res["ace_uri"] = f"acestream://{ch['acestream_id']}"
+            res["engine_urls"] = [
+                {
+                    "id": s["id"],
+                    "name": s.get("name", s["id"]),
+                    "url": f"{s['url'].rstrip('/')}/ace/getstream?id={ch['acestream_id']}",
+                    "manifest_url": f"{s['url'].rstrip('/')}/ace/manifest.m3u8?id={ch['acestream_id']}"
+                }
+                for s in ace_proxy.get_server_list()
+            ]
+        return JSONResponse(res)
+
+    # Comprobar si corresponde a un canal en vivo de ZicoTV
+    zico_match = re.match(r'^(?:zicotv[-_]|zico[-_])(\d+)$', channel_id, re.IGNORECASE)
+    if zico_match:
+        cid = int(zico_match.group(1))
+        zico_items = await get_zico_virtual_channels()
+        found = next((z for z in zico_items if z["zico_id"] == cid), None)
+        if not found:
+            found = {
+                "id": f"zicotv-{cid}",
+                "zico_id": cid,
+                "is_zicotv": True,
+                "source_id": ZICO_SOURCE_ID,
+                "source_name": ZICO_SOURCE_NAME,
+                "name": f"ZicoTV Canal {cid}",
+                "tvg_id": f"zicotv-{cid}",
+                "tvg_name": f"ZicoTV Canal {cid}",
+                "tvg_logo": "",
+                "group": "Deportes",
+                "url": f"/zico/live/{cid}.m3u8",
+                "acestream_id": None,
+                "stream_type": "hls",
+                "license_type": None,
+                "license_key": None,
+                "is_favorite": f"zicotv-{cid}" in manager.favorites,
+                "is_custom": False,
             }
-            for s in ace_proxy.get_server_list()
-        ]
-    return JSONResponse(res)
+        found["live_url"] = f"{base_url}/zico/live/{cid}.m3u8"
+        return JSONResponse(found)
+
+    raise HTTPException(status_code=404, detail="Canal no encontrado")
 
 
 @app.get("/api/channels/{channel_id}/sources")
 async def get_channel_alternative_sources(channel_id: str):
     """Devuelve transmisiones y fuentes alternativas disponibles para el mismo canal en otras listas."""
     target = manager.channels.get(channel_id)
+    zico_items = await get_zico_virtual_channels()
+    if not target:
+        target = next((z for z in zico_items if z["id"] == channel_id), None)
     if not target:
         raise HTTPException(status_code=404, detail="Canal no encontrado")
 
-    import re
     def normalize_name(n: str) -> str:
         n = (n or "").lower()
         n = re.sub(r'\(.*?\)|\[.*?\]', '', n)
@@ -308,7 +547,9 @@ async def get_channel_alternative_sources(channel_id: str):
     target_tvg = (target.get("tvg_id") or "").lower().strip()
 
     alternatives = []
-    for cid, ch in manager.channels.items():
+    all_candidates = list(zico_items) + list(manager.channels.values())
+    for ch in all_candidates:
+        cid = ch["id"]
         if cid == channel_id:
             continue
 
@@ -325,10 +566,12 @@ async def get_channel_alternative_sources(channel_id: str):
             alternatives.append({
                 "id": ch["id"],
                 "name": ch.get("name", "Canal"),
-                "source_name": ch.get("source_name", "M3U"),
+                "source_name": ch.get("source_name") or manager.sources.get(ch.get("source_id", ""), {}).get("name", "M3U"),
                 "source_id": ch.get("source_id", ""),
                 "stream_type": ch.get("stream_type", "hls"),
                 "is_acestream": bool(ch.get("acestream_id")),
+                "is_zicotv": bool(ch.get("is_zicotv") or extract_zico_id(ch) is not None),
+                "zico_id": extract_zico_id(ch),
                 "group": ch.get("group", "General"),
                 "tvg_logo": ch.get("tvg_logo", "")
             })
@@ -345,7 +588,21 @@ async def get_channel_alternative_sources(channel_id: str):
 
 @app.get("/api/groups")
 async def get_groups(source_id: Optional[str] = Query(None)):
+    zico_items = await get_zico_virtual_channels() if (source_id is None or source_id == "" or source_id == ZICO_SOURCE_ID) else []
+    if source_id == ZICO_SOURCE_ID:
+        counts: Dict[str, int] = {}
+        for ch in zico_items:
+            grp = ch.get("group") or "General"
+            counts[grp] = counts.get(grp, 0) + 1
+        return JSONResponse(sorted([{"name": k, "count": v} for k, v in counts.items()], key=lambda x: (-x["count"], x["name"].lower())))
+
     groups = manager.get_groups(source_id=source_id)
+    if zico_items:
+        counts = {g["name"]: g["count"] for g in groups}
+        for ch in zico_items:
+            grp = ch.get("group") or "General"
+            counts[grp] = counts.get(grp, 0) + 1
+        groups = sorted([{"name": k, "count": v} for k, v in counts.items()], key=lambda x: (-x["count"], x["name"].lower()))
     return JSONResponse(groups)
 
 
@@ -365,7 +622,21 @@ async def toggle_favorite(channel_id: str):
 # ---------------------------------------------------------------------------
 @app.get("/api/sources")
 async def get_sources():
-    return JSONResponse(manager.get_sources_summary())
+    summary = manager.get_sources_summary()
+    zico_catalog = await zico_manager.get_channel_catalog()
+    summary.insert(0, {
+        "id": ZICO_SOURCE_ID,
+        "name": ZICO_SOURCE_NAME,
+        "type": "zicotv",
+        "url_or_path": "/zico/playlist.m3u",
+        "enabled": True,
+        "channel_count": len(zico_catalog),
+        "last_synced": int(zico_manager.catalog_last_updated) or int(time.time()),
+        "status": "ok",
+        "error_message": "",
+        "readonly": True
+    })
+    return JSONResponse(summary)
 
 
 @app.post("/api/sources")
@@ -385,6 +656,8 @@ async def add_source(payload: AddSourcePayload):
 
 @app.post("/api/sources/{source_id}/toggle")
 async def toggle_source(source_id: str):
+    if source_id == ZICO_SOURCE_ID:
+        return JSONResponse({"source_id": source_id, "enabled": True})
     try:
         new_state = await manager.toggle_source(source_id)
         return JSONResponse({"source_id": source_id, "enabled": new_state})
@@ -394,6 +667,9 @@ async def toggle_source(source_id: str):
 
 @app.post("/api/sources/{source_id}/sync")
 async def sync_source(source_id: str, background_tasks: BackgroundTasks):
+    if source_id == ZICO_SOURCE_ID:
+        background_tasks.add_task(zico_manager.get_channel_catalog, True)
+        return JSONResponse({"status": "sync_started", "source_id": source_id})
     if source_id not in manager.sources:
         raise HTTPException(status_code=404, detail="Fuente no encontrada")
     background_tasks.add_task(manager.sync_source, source_id)
@@ -785,12 +1061,11 @@ async def get_channel_live_m3u8(
     if not target_url:
         raise HTTPException(status_code=400, detail="El canal no tiene URL válida")
 
-    # Si la URL apunta a un canal ZicoTV proxificado, delegar al gestor ZicoTV
-    zico_url_match = re.search(r'/zico/live/(\d+)\.m3u8', target_url)
-    if zico_url_match:
-        cid = int(zico_url_match.group(1))
+    # Si el canal pertenece a ZicoTV (por URL proxificada, tvg-id o dominio zicotv.cc), usar gestor auto-renovable
+    zico_cid = extract_zico_id(ch)
+    if zico_cid is not None:
         buf_offset = offset if offset is not None else manager.settings.get("buffer_offset_seconds", 16.0)
-        return await zico_manager.proxy_channel_hls(cid, request, buffer_offset=buf_offset)
+        return await zico_manager.proxy_channel_hls(zico_cid, request, buffer_offset=buf_offset)
 
     if ch.get("stream_type") == "dash":
         clean_target = target_url.split("|")[0].strip()
@@ -823,10 +1098,9 @@ async def get_channel_live_ts(channel_id: str, request: Request, server_id: Opti
     if not target_url:
         raise HTTPException(status_code=400, detail="El canal no tiene URL válida")
 
-    zico_url_match = re.search(r'/zico/live/(\d+)\.m3u8', target_url)
-    if zico_url_match:
-        cid = int(zico_url_match.group(1))
-        stream_info = await zico_manager.resolve_stream(cid)
+    zico_cid = extract_zico_id(ch)
+    if zico_cid is not None:
+        stream_info = await zico_manager.resolve_stream(zico_cid)
         return RedirectResponse(url=stream_info["media_url"])
 
     return RedirectResponse(url=target_url)
@@ -1163,24 +1437,34 @@ async def export_m3u_playlist(
             pass
 
     exported_count = 0
-    for ch in manager.channels.values():
+    candidate_channels = []
+    if source_id == ZICO_SOURCE_ID:
+        candidate_channels = await get_zico_virtual_channels()
+    else:
+        if source_id is None or source_id == "" or (filter_type and filter_type.lower() == "zicotv"):
+            candidate_channels.extend(await get_zico_virtual_channels())
+        candidate_channels.extend(manager.channels.values())
+
+    for ch in candidate_channels:
         if only_fav and ch.get("id") not in manager.favorites:
             continue
         if search:
             s_low = search.lower()
             ch_name = (ch.get("name") or "").lower()
             ch_grp = (ch.get("group") or "").lower()
-            if s_low not in ch_name and s_low not in ch_grp:
+            if s_low not in ch_name and s_low not in ch_grp and not (ch.get("is_zicotv") and "zico" in s_low):
                 continue
         if source_id and ch.get("source_id") != source_id:
             continue
         if filter_type:
             ft = filter_type.lower()
-            if ft in ("ace", "acestream") and not ch.get("acestream_id"):
+            if ft == "zicotv" and not (ch.get("is_zicotv") or extract_zico_id(ch) is not None):
+                continue
+            elif ft in ("ace", "acestream") and not ch.get("acestream_id"):
                 continue
             elif ft == "hls" and (ch.get("stream_type") != "hls" or ch.get("acestream_id")):
                 continue
-            elif ft not in ("ace", "acestream", "hls") and ch.get("stream_type") != filter_type:
+            elif ft not in ("ace", "acestream", "hls", "zicotv") and ch.get("stream_type") != filter_type:
                 continue
         if group and ch.get("group") != group:
             continue

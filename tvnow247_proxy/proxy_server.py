@@ -1360,6 +1360,21 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
             background: var(--bg-elevated);
             padding: 0.1rem 0.4rem;
             border-radius: 4px;
+            flex-shrink: 0;
+        }}
+        .source-badge {{
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            flex-shrink: 0;
+        }}
+        .source-zico {{
+            background: rgba(16, 185, 129, 0.18);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.35);
         }}
         /* Modal */
         .modal-backdrop {{
@@ -1497,10 +1512,11 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
             <div class="sidebar-header">
                 <div class="search-box">
                     <span class="search-icon">🔍</span>
-                    <input type="text" id="channel-search" class="search-input" placeholder="Buscar entre 800+ canales..." oninput="filterChannels()">
+                    <input type="text" id="channel-search" class="search-input" placeholder="Buscar canales (TVNow247 y ZicoTV)..." oninput="filterChannels()">
                 </div>
                 <div class="filter-tabs">
                     <button class="filter-tab active" onclick="setCategoryFilter('ALL', this)">Todos</button>
+                    <button class="filter-tab" onclick="setCategoryFilter('ZICO', this)">⚽ ZicoTV</button>
                     <button class="filter-tab" onclick="setCategoryFilter('US', this)">USA</button>
                     <button class="filter-tab" onclick="setCategoryFilter('ES', this)">España</button>
                     <button class="filter-tab" onclick="setCategoryFilter('UK', this)">UK</button>
@@ -1543,8 +1559,16 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
                 <button class="close-btn" onclick="closeModal('m3u-modal')">&times;</button>
             </div>
             <div class="form-group">
-                <label class="form-label">Lista M3U Completa (TiviMate, Kodi, VLC, OTT Navigator):</label>
+                <label class="form-label">Lista M3U TVNow247 (TiviMate, Kodi, VLC, OTT Navigator):</label>
                 <input type="text" class="form-input" readonly value="{base_url}/channels.m3u" onclick="this.select()">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Lista M3U ZicoTV (Deportes y Eventos):</label>
+                <input type="text" class="form-input" readonly value="{base_url}/zico/playlist.m3u" onclick="this.select()">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Lista M3U Combinada (TVNow247 + ZicoTV):</label>
+                <input type="text" class="form-input" readonly value="{base_url}/channels.m3u?include_zico=true" onclick="this.select()">
             </div>
             <div class="form-group">
                 <label class="form-label">URL del canal actual:</label>
@@ -1588,15 +1612,52 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
             }}
         }});
 
+        function escapeHtml(str) {{
+            return String(str || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }}
+
         async function loadChannelsCatalog(autoSelect = true) {{
             try {{
-                const res = await fetch('/api/channels');
-                allChannels = await res.json();
+                const [tvRes, zicoRes] = await Promise.allSettled([
+                    fetch('/api/channels'),
+                    fetch('/zico/api/channels')
+                ]);
+
+                let tvChannels = [];
+                if (tvRes.status === 'fulfilled' && tvRes.value.ok) {{
+                    const rawTv = await tvRes.value.json();
+                    tvChannels = rawTv.map(c => ({{
+                        ...c,
+                        uid: String(c.id),
+                        rawId: String(c.id),
+                        source: 'tvnow',
+                        streamPath: `/live/${{c.id}}.m3u8`
+                    }}));
+                }}
+
+                let zicoChannels = [];
+                if (zicoRes.status === 'fulfilled' && zicoRes.value.ok) {{
+                    const rawZico = await zicoRes.value.json();
+                    zicoChannels = rawZico.map(c => ({{
+                        ...c,
+                        uid: `zico-${{c.id}}`,
+                        rawId: String(c.id),
+                        source: 'zico',
+                        streamPath: `/zico/live/${{c.id}}.m3u8`
+                    }}));
+                }}
+
+                allChannels = [...zicoChannels, ...tvChannels];
                 renderChannelList(allChannels);
 
                 // Seleccionar canal inicial
                 if (autoSelect) {{
-                    let target = allChannels.find(c => c.id === INITIAL_CHANNEL_ID);
+                    let target = allChannels.find(c => c.uid === INITIAL_CHANNEL_ID);
                     if (!target && allChannels.length > 0) target = allChannels[0];
                     if (target) selectChannel(target);
                 }}
@@ -1613,41 +1674,49 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
                 return;
             }}
 
-            const html = channels.map(c => `
-                <div class="channel-item ${{currentChannel && currentChannel.id === c.id ? 'active' : ''}}" onclick="onChannelClick('${{c.id}}')">
-                    <img class="channel-item-logo" src="${{c.logo || '/placeholder.png'}}" alt="" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'30\\' height=\\'30\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'%2394a3b8\\' stroke-width=\\'2\\'><rect x=\\'2\\' y=\\'7\\' width=\\'20\\' height=\\'15\\' rx=\\'2\\'/><polyline points=\\'17 2 12 7 7 2\\'/></svg>'">
-                    <span class="channel-item-name">${{c.name}}</span>
-                    <span class="channel-item-group">${{c.group || 'Live'}}</span>
+            const html = channels.map(c => {{
+                const isActive = currentChannel && currentChannel.uid === c.uid;
+                const sourceBadge = c.source === 'zico'
+                    ? '<span class="source-badge source-zico">ZicoTV</span>'
+                    : '';
+                return `
+                <div class="channel-item ${{isActive ? 'active' : ''}}" data-uid="${{escapeHtml(c.uid)}}" onclick="onChannelClick('${{escapeHtml(c.uid)}}')">
+                    <img class="channel-item-logo" src="${{escapeHtml(c.logo || '/placeholder.png')}}" alt="" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'30\\' height=\\'30\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'%2394a3b8\\' stroke-width=\\'2\\'><rect x=\\'2\\' y=\\'7\\' width=\\'20\\' height=\\'15\\' rx=\\'2\\'/><polyline points=\\'17 2 12 7 7 2\\'/></svg>'">
+                    <span class="channel-item-name">${{escapeHtml(c.name)}}</span>
+                    ${{sourceBadge}}
+                    <span class="channel-item-group">${{escapeHtml(c.group || 'Live')}}</span>
                 </div>
-            `).join('');
+            `;
+            }}).join('');
             container.innerHTML = html;
         }}
 
-        function onChannelClick(cid) {{
-            const target = allChannels.find(c => c.id === cid);
+        function onChannelClick(uid) {{
+            const target = allChannels.find(c => c.uid === uid);
             if (target) selectChannel(target);
         }}
 
         function selectChannel(ch) {{
             currentChannel = ch;
             currentCustomUrl = null;
-            document.getElementById('current-name').textContent = ch.name;
+            document.getElementById('current-name').textContent = ch.source === 'zico' ? `[ZicoTV] ${{ch.name}}` : ch.name;
             document.getElementById('current-logo').src = ch.logo || '/placeholder.png';
-            document.getElementById('current-group').textContent = ch.group || 'Live';
-            document.getElementById('current-m3u8-url').value = `${{BASE_URL}}/live/${{ch.id}}.m3u8`;
+            document.getElementById('current-group').textContent = ch.source === 'zico' ? `ZicoTV • ${{ch.group || 'Deportes'}}` : (ch.group || 'Live');
+            document.getElementById('current-stream-info').textContent = ch.source === 'zico'
+                ? 'ZicoTV HLS (Token 3h auto-renovable)'
+                : 'HLS Desofuscado MPEG-TS';
+            document.getElementById('current-m3u8-url').value = `${{BASE_URL}}${{ch.streamPath}}`;
 
             // Actualizar clase activa en la lista
             document.querySelectorAll('.channel-item').forEach(el => {{
-                el.classList.remove('active');
+                el.classList.toggle('active', el.dataset.uid === ch.uid);
             }});
-            const clicked = Array.from(document.querySelectorAll('.channel-item')).find(el => el.textContent.includes(ch.name));
-            if (clicked) clicked.classList.add('active');
 
             // Actualizar URL del navegador sin recarga
-            history.replaceState(null, '', `/player/${{ch.id}}`);
+            history.replaceState(null, '', `/player/${{ch.uid}}`);
 
             // Cargar stream con el offset de búfer configurado
-            const streamUrl = `/live/${{ch.id}}.m3u8?offset=${{currentBufferOffset}}`;
+            const streamUrl = `${{ch.streamPath}}?offset=${{currentBufferOffset}}`;
             loadStream(streamUrl);
         }}
 
@@ -1942,7 +2011,7 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
                 const proxyUrl = `/proxy?url=${{encodeURIComponent(currentCustomUrl)}}&offset=${{currentBufferOffset}}`;
                 loadStream(proxyUrl);
             }} else if (currentChannel) {{
-                const streamUrl = `/live/${{currentChannel.id}}.m3u8?offset=${{currentBufferOffset}}`;
+                const streamUrl = `${{currentChannel.streamPath}}?offset=${{currentBufferOffset}}`;
                 loadStream(streamUrl);
             }} else if (currentStreamUrl) {{
                 try {{
@@ -2012,13 +2081,21 @@ def render_pro_web_player(base_url: str, initial_cid: str = "303") -> str:
         function filterChannels() {{
             const query = document.getElementById('channel-search').value.toLowerCase().trim();
             const filtered = allChannels.filter(c => {{
-                const matchesQuery = c.name.toLowerCase().includes(query) || (c.group && c.group.toLowerCase().includes(query));
+                const sourceLabel = c.source === 'zico' ? 'zicotv' : 'tvnow247';
+                const matchesQuery = !query
+                    || c.name.toLowerCase().includes(query)
+                    || (c.group && c.group.toLowerCase().includes(query))
+                    || sourceLabel.includes(query);
                 if (!matchesQuery) return false;
                 if (activeCategory === 'ALL') return true;
+                if (activeCategory === 'ZICO') return c.source === 'zico';
                 if (activeCategory === 'US') return c.group && (c.group.includes('US') || c.group.includes('USA'));
-                if (activeCategory === 'ES') return c.group && (c.group.includes('ES') || c.group.includes('Spain'));
+                if (activeCategory === 'ES') return (c.group && (c.group.includes('ES') || c.group.includes('Spain')))
+                    || (c.source === 'zico' && /spain|movistar|laliga|dazn|vamos/i.test(c.name));
                 if (activeCategory === 'UK') return c.group && (c.group.includes('UK') || c.group.includes('GB'));
-                if (activeCategory === 'Sports') return c.name.toLowerCase().includes('sport') || (c.group && c.group.toLowerCase().includes('sport'));
+                if (activeCategory === 'Sports') return c.source === 'zico'
+                    || c.name.toLowerCase().includes('sport')
+                    || (c.group && c.group.toLowerCase().includes('sport'));
                 if (activeCategory === 'News') return c.name.toLowerCase().includes('news') || (c.group && c.group.toLowerCase().includes('news'));
                 return true;
             }});
@@ -2112,6 +2189,14 @@ async def player_direct_channel(channel_id: str, request: Request):
     """Abre el reproductor web apuntando directamente a un canal específico."""
     base_url = str(request.base_url).rstrip("/")
     return render_pro_web_player(base_url, initial_cid=channel_id)
+
+
+@app.get("/zico/player/{channel_id}", response_class=HTMLResponse)
+@app.get("/zico/play/{channel_id}", response_class=HTMLResponse)
+async def player_direct_zico_channel(channel_id: int, request: Request):
+    """Abre el reproductor web apuntando directamente a un canal específico de ZicoTV."""
+    base_url = str(request.base_url).rstrip("/")
+    return render_pro_web_player(base_url, initial_cid=f"zico-{channel_id}")
 
 
 if __name__ == "__main__":
