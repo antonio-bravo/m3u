@@ -10,6 +10,9 @@ import os
 import re
 import json
 import time
+import base64
+import binascii
+import secrets
 import argparse
 from datetime import datetime, timezone
 from typing import Dict, List, Optional, Tuple
@@ -17,7 +20,7 @@ from urllib.parse import urlparse, parse_qs
 
 try:
     import httpx
-    from fastapi import FastAPI, HTTPException, Query
+    from fastapi import FastAPI, HTTPException, Query, Request, Response
     from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse, PlainTextResponse
     HAS_FASTAPI = True
 except ImportError:
@@ -28,6 +31,8 @@ except ImportError:
 # Configuración base
 BASE_URL = os.environ.get("ZICOTV_BASE_URL", "https://bp.zicotv.cc")
 DEFAULT_DURATION = os.environ.get("DEFAULT_TOKEN_DURATION", "3h")
+AUTH_USER = os.environ.get("AUTH_USER", "").strip()
+AUTH_PASS = os.environ.get("AUTH_PASS", "")
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15"
 
 HEADERS = {
@@ -313,6 +318,35 @@ extractor = TokenExtractor()
 
 if HAS_FASTAPI:
     app = FastAPI(title="ZicoTV Token Extractor API", version="1.1.0")
+
+    if bool(AUTH_USER) != bool(AUTH_PASS):
+        print("[Aviso] AUTH_USER y AUTH_PASS deben definirse juntos para activar la autenticación; acceso abierto activo.")
+
+    @app.middleware("http")
+    async def optional_basic_auth_middleware(request: Request, call_next):
+        """Aplica HTTP Basic Auth solo si AUTH_USER y AUTH_PASS están configurados."""
+        if not (AUTH_USER and AUTH_PASS) or request.url.path == "/health":
+            return await call_next(request)
+
+        auth_header = request.headers.get("Authorization", "")
+        if auth_header.startswith("Basic "):
+            encoded = auth_header[6:].strip()
+            try:
+                decoded = base64.b64decode(encoded, validate=True).decode("utf-8")
+                username, sep, password = decoded.partition(":")
+                if sep and (
+                    secrets.compare_digest(username.encode("utf-8"), AUTH_USER.encode("utf-8"))
+                    and secrets.compare_digest(password.encode("utf-8"), AUTH_PASS.encode("utf-8"))
+                ):
+                    return await call_next(request)
+            except (binascii.Error, UnicodeDecodeError, ValueError):
+                pass
+
+        return Response(
+            content="Autenticación requerida",
+            status_code=401,
+            headers={"WWW-Authenticate": 'Basic realm="ZicoTV Token Extractor"'},
+        )
 
     @app.get("/health")
     async def health():

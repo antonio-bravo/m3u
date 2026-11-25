@@ -10,7 +10,13 @@ services:
     restart: unless-stopped
     volumes:
       - ./output:/app/output
+    env_file:
+      - path: .env
+        required: false
     environment:
       - PYTHONUNBUFFERED=1
       # Duración por defecto del token ('3h', '20m', '1h', etc.)
-      - DEFAULT_TOKEN_DURATION=3h
+      - DEFAULT_TOKEN_DURATION=${DEFAULT_TOKEN_DURATION:-3h}
+      # Autenticación opcional (se lee desde .env; si están vacías funciona sin contraseña)
+      - AUTH_USER=${AUTH_USER:-}
+      - AUTH_PASS=${AUTH_PASS:-}

@@ -34,6 +34,32 @@ docker compose up -d
 
 ---
 
+## 🔒 Autenticación Opcional (Usuario y Contraseña)
+
+Por defecto, el contenedor funciona **sin contraseña** (acceso abierto igual que siempre). Si quieres proteger el panel web y los endpoints con **HTTP Basic Auth**, solo tienes que definir las variables de entorno `AUTH_USER` y `AUTH_PASS`:
+
+- **Con archivo `.env` (recomendado con Compose):**
+  ```bash
+  cd zicotv_token_extractor
+  cp .env.example .env
+  ```
+  Edita `.env` y rellena `AUTH_USER` y `AUTH_PASS` (si los dejas vacíos o borras el `.env`, vuelve a funcionar sin contraseña).
+- **En `docker run` / `podman run`:**
+  ```bash
+  docker run -d \
+    --name zicotv-extractor \
+    -p 8085:8085 \
+    --env-file zicotv_token_extractor/.env \
+    ghcr.io/antonio-bravo/m3u/zicotv-extractor:latest
+  ```
+
+> **Notas:**
+> - El endpoint `/health` permanece accesible sin contraseña para que el `HEALTHCHECK` del contenedor siga funcionando.
+> - En reproductores como VLC, Kodi o TiviMate puedes pasar las credenciales en la URL: `http://mi_usuario:mi_contraseña@localhost:8085/playlist.m3u?mode=redirect`.
+> - Si eliminas o dejas vacías `AUTH_USER` / `AUTH_PASS`, vuelve a funcionar sin autenticación.
+
+---
+
 ## ⏱️ Control de Duración del Token (20 min, 1h, 3h máx)
 
 ZicoTV admite dos modalidades de token nativas upstream:
