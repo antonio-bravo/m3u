@@ -1,7 +1,7 @@
 #EXTM3U
-# IPFS Acestream Channels - 2026-11-25 12:45:42
-# Total Channels: 101
-# Generated: 2026-11-25T12:32:35Z
+# IPFS Acestream Channels - 2026-11-25 22:28:48
+# Total Channels: 96
+# Generated: 2026-11-25T22:00:09Z
 
 # -------- BALONCESTO --------
 #EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2025/12/dazn-baloncesto-movistar-plus.png" group-title="BALONCESTO",DAZN Baloncesto 1080p *
@@ -16,6 +16,9 @@ http://127.0.0.1:6878/ace/getstream?id=5ebe8c2bc85fb9c555403031b7af759b05aa4087
 #EXTINF:-1 tvg-id="DAZN Baloncesto 3" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2025/12/dazn-baloncesto-movistar-plus.png" group-title="BALONCESTO",DAZN Baloncesto 3 720p *
 http://127.0.0.1:6878/ace/getstream?id=57bcbd9728b5016e48438630b7e30627a68429bf
 
+#EXTINF:-1 tvg-id="DAZN Baloncesto 3" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2025/12/dazn-baloncesto-movistar-plus.png" group-title="BALONCESTO",DAZN Baloncesto 3 1080p **
+http://127.0.0.1:6878/ace/getstream?id=8b12412b5f48abb3e56a1d27731ba0015627ec7a
+
 #EXTINF:-1 tvg-id="M+ Baloncesto" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg" group-title="BALONCESTO",M+ Baloncesto 1080p *
 http://127.0.0.1:6878/ace/getstream?id=b6f59d236c44a331fe435c00f2e4d4b2226474ca
 
@@ -28,11 +31,11 @@ http://127.0.0.1:6878/ace/getstream?id=3924a58c2fcc1f97c973a3320cc65bf69c5ac30f
 #EXTINF:-1 tvg-id="M+ Baloncesto 2" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg" group-title="BALONCESTO",M+ Baloncesto 2 1080p **
 http://127.0.0.1:6878/ace/getstream?id=ff111347ca63e00527540c8457736dfd0a9134c2
 
+#EXTINF:-1 tvg-id="" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg" group-title="BALONCESTO",M+ Baloncesto 3 1080p *
+http://127.0.0.1:6878/ace/getstream?id=65e0f97103b374c40f53001c5bf38d95f9470db2
+
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg" group-title="BALONCESTO",M+ Baloncesto 3 1080p **
 http://127.0.0.1:6878/ace/getstream?id=ae561eef41780388e1a69280027b79a9027eabe5
-
-#EXTINF:-1 tvg-id="" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg" group-title="BALONCESTO",M+ Baloncesto 4 1080p *
-http://127.0.0.1:6878/ace/getstream?id=067c48855642547ddac789239aec60c5910821c0
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.adslzone.net/app/uploads-adslzone.net/2026/04/baloncesto-movistar-plus-canales.jpg" group-title="BALONCESTO",M+ Baloncesto 4 1080p **
 http://127.0.0.1:6878/ace/getstream?id=e7256fdef30fe8f97b0a060b1cab9c6af2d14c21
@@ -44,6 +47,12 @@ http://127.0.0.1:6878/ace/getstream?id=71892f06a6186573476b2fb4ef543b1a44a1c78e
 http://127.0.0.1:6878/ace/getstream?id=a42e875cf6809d8995aeff48f5f10e9ab31b2a9a
 
 # -------- DAZN --------
+#EXTINF:-1 tvg-id="DAZN 1 HD" tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" group-title="DAZN",DAZN 1 720p **
+http://127.0.0.1:6878/ace/getstream?id=3d2ede5e3041763b932aa76db82422a875447df8
+
+#EXTINF:-1 tvg-id="DAZN 1 HD" tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" group-title="DAZN",DAZN 1 1080p **
+http://127.0.0.1:6878/ace/getstream?id=9da98f665f9c6092e574fa59484ceb664c032e4c
+
 #EXTINF:-1 tvg-id="DAZN 2 HD" tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" group-title="DAZN",DAZN 2 720p **
 http://127.0.0.1:6878/ace/getstream?id=02832ee6e69d089509c0efa55ab4004e334a8d81
 
@@ -92,10 +101,10 @@ http://127.0.0.1:6878/ace/getstream?id=98782100a7051092897feaf91b176ca2bbbcb825
 http://127.0.0.1:6878/ace/getstream?id=3a996d7b2b971e9e3ddd42784081de12f8d1c483
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 1080p **
-http://127.0.0.1:6878/ace/getstream?id=909a56d579cb72b4e2c381fe43c549f81300f513
+http://127.0.0.1:6878/ace/getstream?id=5612c93eac3ff7572f2f6d328ade4927f120b87f
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 1080p **
-http://127.0.0.1:6878/ace/getstream?id=5612c93eac3ff7572f2f6d328ade4927f120b87f
+http://127.0.0.1:6878/ace/getstream?id=909a56d579cb72b4e2c381fe43c549f81300f513
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 2 720p *
 http://127.0.0.1:6878/ace/getstream?id=8308bca81e6e712089b1b42b4a4cc29f7cb2c0d0
@@ -103,29 +112,20 @@ http://127.0.0.1:6878/ace/getstream?id=8308bca81e6e712089b1b42b4a4cc29f7cb2c0d0
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 2 720p **
 http://127.0.0.1:6878/ace/getstream?id=492c28464ae2304e22f8c59efa9ab8c0fcf112e4
 
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 2 1080p *
-http://127.0.0.1:6878/ace/getstream?id=2d2d00f3c0bb8867dd2938b9eb508da23d0f83c3
-
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 2 1080p **
-http://127.0.0.1:6878/ace/getstream?id=ecbca54159ba47f1873b90f0ea2db6f35f15465b
-
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 2 1080p **
 http://127.0.0.1:6878/ace/getstream?id=ac20504bee06346caf416de2ec22f5eabae31998
 
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 3 720p *
-http://127.0.0.1:6878/ace/getstream?id=ba65b116a89c2c2fd50a44e497ec7508e61fba70
-
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 3 720p **
-http://127.0.0.1:6878/ace/getstream?id=0f456a24bd967d963f3023dcaf9b85fc18c60b32
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 2 1080p **
+http://127.0.0.1:6878/ace/getstream?id=ecbca54159ba47f1873b90f0ea2db6f35f15465b
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 3 1080p *
 http://127.0.0.1:6878/ace/getstream?id=ad312a4e135c1a2e9f5ca0e65a382dda794eb5f4
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 3 1080p **
-http://127.0.0.1:6878/ace/getstream?id=367a107c9521fc82cdd3cc0fa4987bc82b3dcc41
+http://127.0.0.1:6878/ace/getstream?id=9ecf7d06c6ed24a6b4a7a76f7ff4951bd89e9f7a
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 3 1080p **
-http://127.0.0.1:6878/ace/getstream?id=9ecf7d06c6ed24a6b4a7a76f7ff4951bd89e9f7a
+http://127.0.0.1:6878/ace/getstream?id=367a107c9521fc82cdd3cc0fa4987bc82b3dcc41
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 4" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 4 720p **
 http://127.0.0.1:6878/ace/getstream?id=f864e99d6190874b1dd0a19759ffa6c06c779a7d
@@ -134,13 +134,10 @@ http://127.0.0.1:6878/ace/getstream?id=f864e99d6190874b1dd0a19759ffa6c06c779a7d
 http://127.0.0.1:6878/ace/getstream?id=2f258bc82c512417b24a2ab88e36c41358bc4224
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 4" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 4 1080p **
-http://127.0.0.1:6878/ace/getstream?id=bf0fd04f544d9c1f555bc8f4b53ff9c2d292b295
-
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 4" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 4 1080p **
 http://127.0.0.1:6878/ace/getstream?id=680695cb3706332b7c52fa8daa07a4774391487f
 
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 5" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 5 1080p *
-http://127.0.0.1:6878/ace/getstream?id=b1244005ea12aa296f7b194712be3b9e4acc7a94
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 4" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 4 1080p **
+http://127.0.0.1:6878/ace/getstream?id=bf0fd04f544d9c1f555bc8f4b53ff9c2d292b295
 
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 5" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 5 1080p **
 http://127.0.0.1:6878/ace/getstream?id=99a9841f76ab2db5faa8885e983f36e0a1ce78b8
@@ -151,14 +148,11 @@ http://127.0.0.1:6878/ace/getstream?id=f7320b8a8e3f915f3762d214ac5b437bcc1a545e
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 6 720p **
 http://127.0.0.1:6878/ace/getstream?id=4659ca99508f8b806ed290a435135ed9d064307a
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 6 1080p *
-http://127.0.0.1:6878/ace/getstream?id=1f82efcb3d4fbf728c23dd67ce82ccd9cf964ff8
+#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 6 1080p **
+http://127.0.0.1:6878/ace/getstream?id=2dac20ec61a17e1bf675ff8cfc7700339e4c28de
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 6 1080p **
 http://127.0.0.1:6878/ace/getstream?id=bf07328a31f7d02c5c71fa2b12e81a9c52f70291
-
-#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 6 1080p **
-http://127.0.0.1:6878/ace/getstream?id=2dac20ec61a17e1bf675ff8cfc7700339e4c28de
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 7 1080p *
 http://127.0.0.1:6878/ace/getstream?id=d53bd1bac92af0000b78c0973268201b1fe877a5
@@ -172,9 +166,6 @@ http://127.0.0.1:6878/ace/getstream?id=127550116ee809bdba0b63d94a3af855312eda38
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 8 1080p **
 http://127.0.0.1:6878/ace/getstream?id=948ed67d293fc4ae64f1869c18f2fdcf74287d0e
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 9 1080p **
-http://127.0.0.1:6878/ace/getstream?id=2961690517fee9fefc3ded900cfa1bd914b47892
-
 # -------- MOTOGP --------
 #EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 720p *
 http://127.0.0.1:6878/ace/getstream?id=b3d78787faa84fdfa4dd2593480e9bb82a4c067e
@@ -186,10 +177,19 @@ http://127.0.0.1:6878/ace/getstream?id=0ede54943cb9471a6a0c66417f2fb54c5c457873
 http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
 
 #EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p **
+http://127.0.0.1:6878/ace/getstream?id=da0e753297be3820bab96bb472bd9d2a148d10c1
+
+#EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p **
 http://127.0.0.1:6878/ace/getstream?id=ee6338ddc4fba29bb800769ed714afb825ab26eb
 
 #EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p **
-http://127.0.0.1:6878/ace/getstream?id=da0e753297be3820bab96bb472bd9d2a148d10c1
+http://127.0.0.1:6878/ace/getstream?id=e99cb297cf1caf3ab108f4a6ee05d13674a3a880
+
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="MOTOGP",luz *
+http://127.0.0.1:6878/ace/getstream?id=25013d91a53c4caf513d42de0a6f554812df0e9d
+
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="MOTOGP",luz **
+http://127.0.0.1:6878/ace/getstream?id=81f79877748f2303ceb1c1162a27cd0bb26b3918
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://yt3.googleusercontent.com/hXinMW0gpJZ21tefgfVij_aZ3V1g3zS2-Dw5HN2zOXkFZiYrWSHhcEDp9xIKN93eVAgH550-Og=s900-c-k-c0x00ffffff-no-rj" group-title="MOTOGP",Sky Sport MotoGP 1080p **
 http://127.0.0.1:6878/ace/getstream?id=6edb28f0d30a4114bb204f69bd95203461f2078c
@@ -216,9 +216,6 @@ http://127.0.0.1:6878/ace/getstream?id=586a6d8ed7296a65289496b967f4080abb15e01a
 
 #EXTINF:-1 tvg-id="M+ Deportes HD" tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" group-title="MOVISTAR DEPORTES",M+ Deportes 1080p **
 http://127.0.0.1:6878/ace/getstream?id=f31322f8487cffce5b77a00d11f9be76a968f465
-
-#EXTINF:-1 tvg-id="M+ Deportes 2 HD" tvg-logo="https://i.ibb.co/q95fBKV/deportes2.png" group-title="MOVISTAR DEPORTES",M+ Deportes 2 720p *
-http://127.0.0.1:6878/ace/getstream?id=ccf6c29e9525fa504abecf34f20481c9d8ea5172
 
 #EXTINF:-1 tvg-id="M+ Deportes 2 HD" tvg-logo="https://i.ibb.co/q95fBKV/deportes2.png" group-title="MOVISTAR DEPORTES",M+ Deportes 2 720p **
 http://127.0.0.1:6878/ace/getstream?id=a1f8f7f65edfd3a7ca91e5f1c9bcbd65b6180ff5
@@ -256,9 +253,6 @@ http://127.0.0.1:6878/ace/getstream?id=dccce18ddbcda2cc399b5a1502f2ddf810a3ce5e
 #EXTINF:-1 tvg-id="M+ Deportes 6" tvg-logo="https://www.movistarplus.es/recorte/n/caratula5/M2114916V1621463" group-title="MOVISTAR DEPORTES",M+ Deportes 6 1080p **
 http://127.0.0.1:6878/ace/getstream?id=b708b05830daf86e3509507d3168444e110cf0de
 
-#EXTINF:-1 tvg-id="M+ Deportes 7" tvg-logo="https://www.movistarplus.es/recorte/n/caratula5/M2114916V1621463" group-title="MOVISTAR DEPORTES",M+ Deportes 7 1080p *
-http://127.0.0.1:6878/ace/getstream?id=b2101db82d40bfb41caf2336a9bf688d2c885778
-
 #EXTINF:-1 tvg-id="M+ Deportes 7" tvg-logo="https://www.movistarplus.es/recorte/n/caratula5/M2114916V1621463" group-title="MOVISTAR DEPORTES",M+ Deportes 7 1080p **
 http://127.0.0.1:6878/ace/getstream?id=98651009dc5535db5b2ca6885b071af79343251f
 
@@ -274,9 +268,6 @@ http://127.0.0.1:6878/ace/getstream?id=cdc332904a0f9be7db0328b0046c56ac1c0b73c9
 #EXTINF:-1 tvg-id="M+ Vamos HD" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ Vamos 720p **
 http://127.0.0.1:6878/ace/getstream?id=34b6a3ea34ffc8ea20b7c2da0f252e203128f9b7
 
-#EXTINF:-1 tvg-id="M+ Vamos 2" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 2 720p *
-http://127.0.0.1:6878/ace/getstream?id=3c4481f7915bb3787cd5f9045cd8d4c85ca90e1d
-
 #EXTINF:-1 tvg-id="M+ Vamos 2" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 2 1080p *
 http://127.0.0.1:6878/ace/getstream?id=aecd6ff5dd67481531fba73c1647a85ab32a5764
 
@@ -289,12 +280,6 @@ http://127.0.0.1:6878/ace/getstream?id=fdcae9a9f055bce6ba137c0a249bb968fb934852
 #EXTINF:-1 tvg-id="M+ Vamos 3" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 3 720p **
 http://127.0.0.1:6878/ace/getstream?id=f6d98ae1d78de8536c4d9ce7d7e283e12cb75cb5
 
-#EXTINF:-1 tvg-id="M+ Vamos 3" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 3 1080p *
-http://127.0.0.1:6878/ace/getstream?id=dde9d4a56007994e0a7cc0a5ed5bd68093eeb825
-
-#EXTINF:-1 tvg-id="M+ Vamos 3" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 3 1080p *
-http://127.0.0.1:6878/ace/getstream?id=e70568f92b6df6e75af27c8cb77ed1cf2608db9b
-
 #EXTINF:-1 tvg-id="M+ Vamos 3" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 3 1080p **
 http://127.0.0.1:6878/ace/getstream?id=49e604e5fe6d9cde0b669abb806456f1def2933e
 
@@ -303,10 +288,10 @@ http://127.0.0.1:6878/ace/getstream?id=49e604e5fe6d9cde0b669abb806456f1def2933e
 http://127.0.0.1:6878/ace/getstream?id=cb5a1f48efe2c30db178955bdc2fddf89d547ab4
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png" group-title="NBA",NBA League Pass 1080p *
-http://127.0.0.1:6878/ace/getstream?id=181701bdaa643087bf99bf9916ede42df6eaf543
+http://127.0.0.1:6878/ace/getstream?id=e95c5979ab7b798ca43e29a8e4a6923638980749
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png" group-title="NBA",NBA League Pass 1080p *
-http://127.0.0.1:6878/ace/getstream?id=e95c5979ab7b798ca43e29a8e4a6923638980749
+http://127.0.0.1:6878/ace/getstream?id=181701bdaa643087bf99bf9916ede42df6eaf543
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png" group-title="NBA",NBA League Pass 1080p *
 http://127.0.0.1:6878/ace/getstream?id=9821bfd262dd41a791b9cb5175314fa227dc139e
